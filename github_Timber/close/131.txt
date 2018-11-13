@@ -1,0 +1,5 @@
+title:Bug: Not visible as media player
+
+Timber isn't visible as a media player in many apps. One example includes AutoMate
+Duplicate of #94.
+Duplicate of #94.

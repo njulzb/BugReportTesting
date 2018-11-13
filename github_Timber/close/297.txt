@@ -1,0 +1,46 @@
+title:Force closing since v0.21b
+
+The app won't start at all. V0.14 works fine. Here is the log with device info:
+build.board: hawaii
+build.brand: samsung
+build.cpu_abi: armeabi-v7a
+build.cpu_abi2: armeabi
+build.device: vivaltonfc3g
+build.hardware: hawaii_ss_vivaltonfc3g
+build.host: ArchLinux
+build.manufacturer: samsung
+build.model: SM-G313HN
+build.product: cm_vivaltonfc3g
+version.release: 4.4.4
+version.sdk_int: 19
+06-04 23:09:23.832 I/Timeline(21661): Timeline: Activity_launch_request id:naman14.timber time:41957326
+06-04 23:09:23.832 I/ActivityManager(2684): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=naman14.timber/com.naman14.timber.activities.MainActivity} from pid 21661
+06-04 23:09:24.113 I/ActivityManager(2684): Start proc naman14.timber for activity naman14.timber/com.naman14.timber.activities.MainActivity: pid=23527 uid=10354 gids={50354, 1028, 1015, 3003}
+06-04 23:09:24.153 D/ActivityThread(23527): handleBindApplication:naman14.timber
+06-04 23:09:24.223 I/dalvikvm(23527): Could not find method android.app.Activity.requestPermissions, referenced from method com.naman14.timber.permissions.Nammu.askForPermission
+06-04 23:09:24.223 I/dalvikvm(23527): Could not find method android.content.Context.checkSelfPermission, referenced from method com.naman14.timber.permissions.Nammu.checkPermission
+06-04 23:09:24.223 I/dalvikvm(23527): Could not find method android.content.Context.checkSelfPermission, referenced from method com.naman14.timber.permissions.Nammu.getGrantedPermissions
+06-04 23:09:24.223 I/dalvikvm(23527): Could not find method android.app.Activity.checkSelfPermission, referenced from method com.naman14.timber.permissions.Nammu.hasPermission
+06-04 23:09:24.223 I/dalvikvm(23527): Could not find method android.app.Activity.checkSelfPermission, referenced from method com.naman14.timber.permissions.Nammu.hasPermission
+06-04 23:09:24.233 I/dalvikvm(23527): Could not find method android.app.Activity.shouldShowRequestPermissionRationale, referenced from method com.naman14.timber.permissions.Nammu.shouldShowRequestPermissionRationale
+06-04 23:09:24.473 I/MediaFocusControl(2684):   Remote Control   registerMediaButtonIntent() for PendingIntent{41ff8968: PendingIntentRecord{42018818 naman14.timber broadcastIntent}}
+06-04 23:09:25.004 E/dalvikvm(23527): Could not find class 'android.app.ActivityManager$TaskDescription', referenced from method com.naman14.timber.utils.ATEUtils.applyTaskDescription
+06-04 23:09:25.004 W/dalvikvm(23527): VFY: unable to resolve new-instance 25 (Landroid/app/ActivityManager$TaskDescription;) in Lcom/naman14/timber/utils/ATEUtils;
+06-04 23:09:25.004 I/dalvikvm(23527): Could not find method android.view.Window.setStatusBarColor, referenced from method com.naman14.timber.utils.ATEUtils.setStatusBarColor
+06-04 23:09:25.004 I/dalvikvm(23527): Could not find method android.view.Window.setStatusBarColor, referenced from method com.naman14.timber.utils.ATEUtils.setStatusBarColor
+06-04 23:09:25.004 I/dalvikvm(23527): Could not find method android.view.Window.setStatusBarColor, referenced from method com.naman14.timber.utils.ATEUtils.setStatusBarColor
+06-04 23:09:25.004 D/dalvikvm(23527): DexOpt: unable to opt direct call 0x008e at 0x1a in Lcom/naman14/timber/utils/ATEUtils;.applyTaskDescription
+06-04 23:09:25.154 I/dalvikvm(23527): Could not find method android.app.ActivityOptions.makeSceneTransitionAnimation, referenced from method com.naman14.timber.utils.NavigationUtils.navigateToPlaylistDetail
+06-04 23:09:25.254 E/AndroidRuntime(23527): Process: naman14.timber, PID: 23527
+06-04 23:09:25.254 E/AndroidRuntime(23527): java.lang.RuntimeException: Unable to start receiver com.naman14.timber.widgets.desktop.StandardWidget: java.lang.IllegalArgumentException: RemoteViews for widget update exceeds maximum bitmap memory usage (used: 2467440, max: 2304000) The total memory cannot exceed that required to fill the device's screen once.
+06-04 23:09:25.254 E/AndroidRuntime(23527): 	at com.naman14.timber.widgets.desktop.StandardWidget.onUpdate(StandardWidget.java:84)
+06-04 23:09:25.254 E/AndroidRuntime(23527): 	at com.naman14.timber.widgets.desktop.StandardWidget.onReceive(StandardWidget.java:94)
+06-04 23:09:25.264 W/ActivityManager(2684):   Force finishing activity naman14.timber/com.naman14.timber.activities.MainActivity
+06-04 23:09:25.564 I/WindowManager(2684): Screenshot max retries 4 of Token{41ef0e70 ActivityRecord{41a1ca68 u0 naman14.timber/com.naman14.timber.activities.MainActivity t178 f}} appWin=Window{42057ab8 u0 Starting naman14.timber} drawState=4
+06-04 23:09:26.065 W/ActivityManager(2684): Activity pause timeout for ActivityRecord{41a1ca68 u0 naman14.timber/com.naman14.timber.activities.MainActivity t178 f}
+06-04 23:09:27.316 I/ActivityManager(2684): Process naman14.timber (pid 23527) has died.
+06-04 23:09:27.316 W/InputDispatcher(2684): channel '42757610 naman14.timber/com.naman14.timber.activities.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+06-04 23:09:27.316 E/InputDispatcher(2684): channel '42757610 naman14.timber/com.naman14.timber.activities.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+06-04 23:09:27.316 W/InputDispatcher(2684): Attempted to unregister already unregistered input channel '42757610 naman14.timber/com.naman14.timber.activities.MainActivity (server)'
+06-04 23:09:27.316 I/WindowState(2684): WIN DEATH: Window{42757610 u0 naman14.timber/com.naman14.timber.activities.MainActivity}
+06-04 23:09:27.386 I/MediaFocusControl(2684):  AudioFocus  abandonAudioFocus() from android.media.AudioManager@41eb8bf0com.naman14.timber.MusicService$1@41eae880

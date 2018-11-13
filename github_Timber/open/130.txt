@@ -1,0 +1,49 @@
+title:Feature Request: View by Album Artist
+
+On albums created by a collaboration of artists, the album gets split into sometime 5-10 pieces for each artist. This is very frustrating when trying to listen to one Album from start to finish which is made my multiple Artists. A possible solution is to allow using the "Album Artist" ID3 tag as priority over "Artist" when it exists.
+Another possible solution (both could be implemented) is to not separate the Albums by their Artist in the "Albums" tab. The is what VLC for Android does, and it works great.
+Another possible solution (both could be implemented) is to not separate the Albums by their Artist in the "Albums" tab. The is what VLC for Android does, and it works great.
+to not separate the Albums by their Artist in the "Albums" tab.
+Imo that should be the case anyway, an album is an album, no matter the artists
+That aside, I found that album artist is actually already used when no artist is present in the tags (as a fallback), it should just be the other way round (and/or optional).
+I have some test files which I just added an album artist for testing with various players (it's amazing how few players actually have album artist sorting), and that shows up. Another set of files had album artist and artist, where all artists show up in the artist tab.
+Now I don't know how the code works, maybe it's just android's fallback...
+If I were to take a wild guess (not an Android developer), I'd say this would be the line that needs changing:
+Timber/app/src/main/java/com/naman14/timber/dataloaders/ArtistLoader.java
+Line 71
+      in
+      d6deac6
+to not separate the Albums by their Artist in the "Albums" tab.
+Imo that should be the case anyway, an album is an album, no matter the artists
+That aside, I found that album artist is actually already used when no artist is present in the tags (as a fallback), it should just be the other way round (and/or optional).
+I have some test files which I just added an album artist for testing with various players (it's amazing how few players actually have album artist sorting), and that shows up. Another set of files had album artist and artist, where all artists show up in the artist tab.
+Now I don't know how the code works, maybe it's just android's fallback...
+If I were to take a wild guess (not an Android developer), I'd say this would be the line that needs changing:
+Timber/app/src/main/java/com/naman14/timber/dataloaders/ArtistLoader.java
+Line 71
+      in
+      d6deac6
+@mihawk90 It doesn't work :( It says the column doesn't exists.
+@mihawk90 It doesn't work :( It says the column doesn't exists.
+@rivaldi8 of course, it doesn't work, there is no such column in MediaStore.Audio.ArtistColumns. It's an issue in Android since 1.0 (API 1). The only solution would be to implement custom music scanning with support for Album Artist tag. This is the way it's implemented in Google Play Music.
+@rivaldi8 of course, it doesn't work, there is no such column in MediaStore.Audio.ArtistColumns. It's an issue in Android since 1.0 (API 1). The only solution would be to implement custom music scanning with support for Album Artist tag. This is the way it's implemented in Google Play Music.
+@vanyasem Yes, I found out later. Implementing a custom music scanning would be quite a lot of work. Are you sure about Google Play Music? I get the same list as with Timber.
+@vanyasem Yes, I found out later. Implementing a custom music scanning would be quite a lot of work. Are you sure about Google Play Music? I get the same list as with Timber.
+@rivaldi8 yep, Google Play Music gives expected results
+
+(note missing tracks)
+
+(all tracks are displayed)
+@rivaldi8 yep, Google Play Music gives expected results
+
+(note missing tracks)
+
+(all tracks are displayed)
+Shuttle music player has found a solution and I think they don't have a custom music scanner. They're not open source, but maybe one could ask? Also it would be possible to use MediaStore for scanning but building an own database from there with separate ID3-tag-reading. This would facilitate better cover art recognition too.
+/edit: apparently Shuttle is Open Source and I am dearly sorry. All the more reason to take a look.
+Shuttle music player has found a solution and I think they don't have a custom music scanner. They're not open source, but maybe one could ask? Also it would be possible to use MediaStore for scanning but building an own database from there with separate ID3-tag-reading. This would facilitate better cover art recognition too.
+/edit: apparently Shuttle is Open Source and I am dearly sorry. All the more reason to take a look.
+https://github.com/timusus/Shuttle is it really not open source lol? you are really mistaken @neubland
+https://github.com/timusus/Shuttle is it really not open source lol? you are really mistaken @neubland
+i compiled it myself from source and have been using it for a few months now
+i compiled it myself from source and have been using it for a few months now

@@ -1,0 +1,21 @@
+title:Headphones button presses
+
+Do not play/pause or play next track.
+It's not implemented or ?
+VanillaMusicPlayer/VLC work ok: 1 press pause/play, 2 presses next track.
+The function seems to be implemented. I can change tracks ny long pressing the volume buttons, ALTHOUGH I did report a bug where it would clash with Vanilla and causes the phone to lockup.
+The function seems to be implemented. I can change tracks ny long pressing the volume buttons, ALTHOUGH I did report a bug where it would clash with Vanilla and causes the phone to lockup.
+Not working here.
+If Vanilla is installed, even if not started, it will start and play on button press.
+Uninstall Vanilla and the button does not work, not even with Timber started and in view.
+Vanilla has a feature named "Emulate stock broadcasts" maybe that's the key.
+Not working here.
+If Vanilla is installed, even if not started, it will start and play on button press.
+Uninstall Vanilla and the button does not work, not even with Timber started and in view.
+Vanilla has a feature named "Emulate stock broadcasts" maybe that's the key.
+Hm, actually you are right. I uninstalled Vanilla and it doesnt work anymore. Reinstalling it too does not change anything, it launches vanilla and plays music in that player while pausing Timber. I have had issues in the past where sometimes they play simultaneously and my phone ended up locking down on me. So I cannot recommend trying to use both at the moment.
+Hm, actually you are right. I uninstalled Vanilla and it doesnt work anymore. Reinstalling it too does not change anything, it launches vanilla and plays music in that player while pausing Timber. I have had issues in the past where sometimes they play simultaneously and my phone ended up locking down on me. So I cannot recommend trying to use both at the moment.
+It wasn't working in previous versions for me but with the latest, it does.
+It wasn't working in previous versions for me but with the latest, it does.
+Not working for me either (v 0.14b)
+Not working for me either (v 0.14b)

@@ -1,0 +1,34 @@
+title:owncloud integration
+
+It would be useful to have synchronization support to owncloud, in addition to the dropbox/gdrive ones.
+See http://www.owncloud.org
+Support for ownCloud is already present in the develop branch and will be
+released in the future
+On Sun, Apr 24, 2016 at 7:01 PM, Sandro Santilli notifications@github.com
+wrote:
+It would be useful to have synchronization support to owncloud, in
+addition to the dropbox/gdrive ones.
+See http://www.owncloud.org
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly or view it on GitHub
+#497
+Support for ownCloud is already present in the develop branch and will be
+released in the future
+On Sun, Apr 24, 2016 at 7:01 PM, Sandro Santilli notifications@github.com
+wrote:
+It would be useful to have synchronization support to owncloud, in
+addition to the dropbox/gdrive ones.
+See http://www.owncloud.org
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly or view it on GitHub
+#497
+Do  you have a commit reference ? Also, when is next release expected ?
+Do  you have a commit reference ? Also, when is next release expected ?
+Fixed in  8e907f9
+No date on the next minor release (which will support ownCloud).
+But patch releases will be coming out often. The next one is in a few days.
+Fixed in  8e907f9
+No date on the next minor release (which will support ownCloud).
+But patch releases will be coming out often. The next one is in a few days.

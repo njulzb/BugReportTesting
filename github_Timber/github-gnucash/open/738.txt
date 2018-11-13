@@ -1,0 +1,20 @@
+title:Feature Request: Choosing the Account on the New Transaction screen
+
+I find the current way of quick-entering new transactions quite cumbersome. Correct me if I'm wrong, please.
+It seems that the quickest way to enter a transaction is to create a widget and then tap the plus sign, fill in the details and tap Save. However, this only works for one account. Entering transactions for 2 or 3 accounts becomes heavy on home screen realestate as multiple widgets are needed to accomplish the same thing for multiple accounts.
+It would be great if we could choose the source account on the New Transaction screen.
+This way, only one widget would be enough to enter new transactions for any account in the book.
+In addition, I would really appreciate if the widget would scale correctly when resized onto 1x1 square. This is more than enough to display the balance of the selected account and a '+' sign for entering new transactions. Takes the same amount of space as an icon but serves multiple purposes.
+The "from" account list might be made useful if it would filter only the Favorite accounts, as well. Then, entering new transactions (i.e. right after shopping) would be a breeze. If it is cumbersome, nobody will bother to enter expenses, which defeats the purpose of actively using Personal Finance app and budgeting.
+For an example of the described functionality, you can have a look at MoneyManagerEx for Android app and source code.
+This goes hand-in-hand with #110, which would allow quick selection of the destination account.
+I think I understand what you mean. The interaction was modeled after GnuCash desktop, which means that  new transactions can only be created inside an account and then the transfer account selected.
+As I mentioned in #110 , the quickest way for entering transactions is via auto complete in the transaction description box. Although it doesn't help much if users regularly delete old transactions.
+The fastest way I can think for entering transactions via widget is the use of templates: see #383 .  One way that would work would be to allow the user to specify templates in the code which are then saved and never deleted (unless explicitly requested).
+The widget button would then just pull up the list of transaction templates and allow the user to modify the amount and save. In the normal create transaction UI, the user can just use autocomplete as usual.
+Templates is somewhat implemented already (scheduled transactions are based on it). But exposing it to the user would require reworking of recurring transactions scheduler logic. However, there is a database restructuring coming (a long time now 😄 ) which could potentially allow templates to be realized.
+I think I understand what you mean. The interaction was modeled after GnuCash desktop, which means that  new transactions can only be created inside an account and then the transfer account selected.
+As I mentioned in #110 , the quickest way for entering transactions is via auto complete in the transaction description box. Although it doesn't help much if users regularly delete old transactions.
+The fastest way I can think for entering transactions via widget is the use of templates: see #383 .  One way that would work would be to allow the user to specify templates in the code which are then saved and never deleted (unless explicitly requested).
+The widget button would then just pull up the list of transaction templates and allow the user to modify the amount and save. In the normal create transaction UI, the user can just use autocomplete as usual.
+Templates is somewhat implemented already (scheduled transactions are based on it). But exposing it to the user would require reworking of recurring transactions scheduler logic. However, there is a database restructuring coming (a long time now 😄 ) which could potentially allow templates to be realized.

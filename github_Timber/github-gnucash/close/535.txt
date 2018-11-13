@@ -1,0 +1,6 @@
+title:App drains device battery
+
+This is an issue in the current v2.1.0-beta1.
+Android energy monitor shows the device consuming the most battery power and holding a CPU wake lock. This might be related to the scheduled actions service.
+Yes, I think it's something with scheduled actions too. The other day, while testing with scheduled transactions, I found about a hundred of transactions that had been created. I still haven't been able to look into it, though.
+Yes, I think it's something with scheduled actions too. The other day, while testing with scheduled transactions, I found about a hundred of transactions that had been created. I still haven't been able to look into it, though.

@@ -1,0 +1,24 @@
+title:Edition on account resets transactions exported status
+
+On 1.4.2, when I edit an account, say change the account's default transfer account, all transactions associated with the account would be marked as un-exported. The next export will export everything relating to this account.
+I think a more strict criterion should be imposed when reseting exported status. Only changing default transfer account should not trigger this.
+BTW, #188 brings more problem: some AccountID is invalidated by the update (as replace is used), which results in a crash. v1.4.2 does not crash.
+In TransactionActivity.setTitleIndicatorColor(), the mAccountId is invalidated, and getAccountUID() returned null.
+That is weird. Changing just the default transfer account should not modify transactions at all.
+Or do you mean changing the transfer account of the transaction?
+That is weird. Changing just the default transfer account should not modify transactions at all.
+Or do you mean changing the transfer account of the transaction?
+In the Edit Account view, after the placeholder check-box, there's Parent Account and Default Transfer Account (at least the Chinese translation says so). It is the second that I changed.
+In the Edit Account view, after the placeholder check-box, there's Parent Account and Default Transfer Account (at least the Chinese translation says so). It is the second that I changed.
+ok, I'll look into it.
+ok, I'll look into it.
+addAccount calls addTransaction, which in turn calls addSplit.
+At the end of addSplit, it resets the exported status of related transactions.
+And this should also be the reason why some Account related operations are slow, as all related transactions and splits are retrieved or updated one by one.
+addAccount calls addTransaction, which in turn calls addSplit.
+At the end of addSplit, it resets the exported status of related transactions.
+And this should also be the reason why some Account related operations are slow, as all related transactions and splits are retrieved or updated one by one.
+The solution here will be to use AccountsDbAdapter.buildSimpleAccountInstance() when loading the account for editing. That way the transactions are not loaded and touched when saving as well.
+The solution here will be to use AccountsDbAdapter.buildSimpleAccountInstance() when loading the account for editing. That way the transactions are not loaded and touched when saving as well.
+Fixed by #206
+Fixed by #206

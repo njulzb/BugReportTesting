@@ -1,0 +1,22 @@
+title:Translation
+
+Hi, I'd like to translate your app into Italian and Esperanto but I don't know how to do that.
+Could someone explain it in a "How to contribute" section of README.md? Thank you very much!
+Go to https://github.com/naman14/Timber/blob/master/app/src/main/res/values-it/strings.xml
+click on the pencil on the right of History button -> edit -> write something in Propose file change -> press green "Propose file change" -> press green Pull request -> done ;)
+If the language has no /app/src/main/res/values/ folder you need to fork, create etc, or ask the dev to make a /app/src/main/res/values-eo/strings.xml (for Esperanto) and then edit it here.
+Go to https://github.com/naman14/Timber/blob/master/app/src/main/res/values-it/strings.xml
+click on the pencil on the right of History button -> edit -> write something in Propose file change -> press green "Propose file change" -> press green Pull request -> done ;)
+If the language has no /app/src/main/res/values/ folder you need to fork, create etc, or ask the dev to make a /app/src/main/res/values-eo/strings.xml (for Esperanto) and then edit it here.
+Ok, I just need to know where the files are located :P
+Is the file updated to the latest version or do I have to add by hand missing keys (i.e. app_name is missing)?
+Thank you very much
+Ok, I just need to know where the files are located :P
+Is the file updated to the latest version or do I have to add by hand missing keys (i.e. app_name is missing)?
+Thank you very much
+I guess it should be updated, do open the one: https://github.com/naman14/Timber/blob/master/app/src/main/res/values/strings.xml in a side window and make sure.
+Translate the strings but omit all lines with translatable="false"
+I guess it should be updated, do open the one: https://github.com/naman14/Timber/blob/master/app/src/main/res/values/strings.xml in a side window and make sure.
+Translate the strings but omit all lines with translatable="false"
+Done: #87
+Done: #87

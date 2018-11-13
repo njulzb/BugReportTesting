@@ -1,0 +1,10 @@
+title:Error while importing the project : Create Process Error = 2
+
+Hi All,
+I am trying to import the project into my android studio. I am facing the following error.
+Create Process error=2, The system cannot find the file specified
+Could some one  help me rectifying this error.
+That seems more like an system problem than the project.
+Can you run ./gradlew build from inside the project folder?
+That seems more like an system problem than the project.
+Can you run ./gradlew build from inside the project folder?

@@ -1,0 +1,20 @@
+title:XML Export of transactions to GDrive generates broken XML since latest version
+
+codinguser
+Transactions->Export
+Save As... (file in Google Drive), Format XML
+Export
+Open...
+Choose file from Google Drive
+=> 'An error occurred while importing the GnuCash accounts At line 1, column 2: not well-formed (invalid token)'
+Export and Open works, as before the latest update.
+Hi, please let me share the findings regarding this issue. With version 2.2.1, the XML export is zipped, while the importer expects a plain XML file (uncompressed).
+As workaround, until the bug is fixed, one can just unzip the exported file, before importing.
+Hi, please let me share the findings regarding this issue. With version 2.2.1, the XML export is zipped, while the importer expects a plain XML file (uncompressed).
+As workaround, until the bug is fixed, one can just unzip the exported file, before importing.
+@m8nky Thanks for the report and the workaround. I think I have an idea where to look for the problem.
+We will fix this for the next release. Normally, GnuCash Android should open even files which are gzipped.
+@m8nky Thanks for the report and the workaround. I think I have an idea where to look for the problem.
+We will fix this for the next release. Normally, GnuCash Android should open even files which are gzipped.
+Seems to be fixed in develop branch by c4f6a26..bd8725f.
+Seems to be fixed in develop branch by c4f6a26..bd8725f.

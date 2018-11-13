@@ -1,0 +1,4 @@
+title:Setup an FDroid App Repo
+
+To get easy/automatic upgrades for those who don't want to sign up for a Google account, it would be useful to setup an independent f-droid repository (given the official one won't ship gnucash-android as per #435).
+See https://f-droid.org/wiki/page/Setup_an_FDroid_App_Repo for instructions.

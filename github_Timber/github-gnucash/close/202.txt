@@ -1,0 +1,174 @@
+title:saving is slow since 1.4
+
+codinguser
+Since the update to 1.4 every save I do (add or change a transaction) takes about 10 seconds on my HTC Desire S. (1.4.3 did not fix it)
+Before the update it took less than a second.
+Please let me know if you need more information or if I can do some testing to help find the problem.
+@nikopp what version of Android are you using? Do you have double-entry enabled?
+@fefe982 interested in doing some speed magic here? ;)
+@nikopp what version of Android are you using? Do you have double-entry enabled?
+@fefe982 interested in doing some speed magic here? ;)
+Yeah, but I haven't successfully reproduced this yet ...
+Will keep on.
+Yeah, but I haven't successfully reproduced this yet ...
+Will keep on.
+@nikopp https://github.com/nikopp what version of Android are you
+using?
+4.1.1
+Do you have double-entry enabled?
+Yes.
+@nikopp https://github.com/nikopp what version of Android are you
+using?
+4.1.1
+Do you have double-entry enabled?
+Yes.
+I've not been able to reproduce it either. Will keep trying as well.
+@nikopp if there is anything else special about your setup, please let us know
+I've not been able to reproduce it either. Will keep trying as well.
+@nikopp if there is anything else special about your setup, please let us know
+For me, editing transaction is not taking too much time. However, editing Account does.
+For me, editing transaction is not taking too much time. However, editing Account does.
+If I delete all transactions then everything (add/update) is fast again.
+But that definitely changed with 1.4. Before 1.4 the performance was good
+without deleting all transactions.
+If I delete all transactions then everything (add/update) is fast again.
+But that definitely changed with 1.4. Before 1.4 the performance was good
+without deleting all transactions.
+I just exported and deleted all transactions because it was slow again. And there were only 67 transactions.
+I have 154 accounts in the tree.
+Can I do something else to help you reproduce the behaviour?
+I just exported and deleted all transactions because it was slow again. And there were only 67 transactions.
+I have 154 accounts in the tree.
+Can I do something else to help you reproduce the behaviour?
+Do you mean that saving starts out fast and then gets slower as you add
+more transactions to the system?
+Or is it always slow from the get-go?
+On Sat, Nov 8, 2014 at 9:37 PM, nikopp notifications@github.com wrote:
+I just exported and deleted all transactions because it was slow again.
+And there were only 67 transactions.
+I have 154 accounts in the tree.
+Can I do something else to help you reproduce the behaviour?
+—
+Reply to this email directly or view it on GitHub
+#202 (comment)
+.
+Do you mean that saving starts out fast and then gets slower as you add
+more transactions to the system?
+Or is it always slow from the get-go?
+On Sat, Nov 8, 2014 at 9:37 PM, nikopp notifications@github.com wrote:
+I just exported and deleted all transactions because it was slow again.
+And there were only 67 transactions.
+I have 154 accounts in the tree.
+Can I do something else to help you reproduce the behaviour?
+—
+Reply to this email directly or view it on GitHub
+#202 (comment)
+.
+Do you mean that saving starts out fast and then gets slower as you add
+more transactions to the system?
+Exactly.
+Or is it always slow from the get-go?
+No. It's fast as long as there are few transactions.
+Do you mean that saving starts out fast and then gets slower as you add
+more transactions to the system?
+Exactly.
+Or is it always slow from the get-go?
+No. It's fast as long as there are few transactions.
+hmm, ok, this I didn't know.
+Provides some new directions to look! Thanks
+On Thu, Nov 20, 2014 at 12:07 AM, nikopp notifications@github.com wrote:
+Do you mean that saving starts out fast and then gets slower as you add
+more transactions to the system?
+Exactly.
+Or is it always slow from the get-go?
+No. It's fast as long as there are few transactions.
+—
+Reply to this email directly or view it on GitHub
+#202 (comment)
+.
+hmm, ok, this I didn't know.
+Provides some new directions to look! Thanks
+On Thu, Nov 20, 2014 at 12:07 AM, nikopp notifications@github.com wrote:
+Do you mean that saving starts out fast and then gets slower as you add
+more transactions to the system?
+Exactly.
+Or is it always slow from the get-go?
+No. It's fast as long as there are few transactions.
+—
+Reply to this email directly or view it on GitHub
+#202 (comment)
+.
+Hi again,
+in the meantime I got the Sony Xperia Z3 compact and the problem also appears on that phone although it's high end hardware.
+Is there any progress on this issue?
+Can I help somehow?
+Hi again,
+in the meantime I got the Sony Xperia Z3 compact and the problem also appears on that phone although it's high end hardware.
+Is there any progress on this issue?
+Can I help somehow?
+Not much, it is hard to replicate the issue and that is what is stalling progress on fixing it.
+So far, my observation is that one either experiences it, or not.
+We will review the code to eliminate any potential bottlenecks and hopefully that helps.
+Not much, it is hard to replicate the issue and that is what is stalling progress on fixing it.
+So far, my observation is that one either experiences it, or not.
+We will review the code to eliminate any potential bottlenecks and hopefully that helps.
+I exported all transactions and attached the qif file after replacing the
+names by rather meaningless terms.
+I hope that helps in finding the bug.
+On Wed, Apr 8, 2015 at 5:05 PM, Ngewi Fet notifications@github.com wrote:
+Not much, it is hard to replicate the issue and that is what is stalling
+progress on fixing it.
+So far, my observation is that one either experiences it, or not.
+We will review the code to eliminate any potential bottlenecks and
+hopefully that helps.
+—
+Reply to this email directly or view it on GitHub
+#202 (comment)
+.
+I exported all transactions and attached the qif file after replacing the
+names by rather meaningless terms.
+I hope that helps in finding the bug.
+On Wed, Apr 8, 2015 at 5:05 PM, Ngewi Fet notifications@github.com wrote:
+Not much, it is hard to replicate the issue and that is what is stalling
+progress on fixing it.
+So far, my observation is that one either experiences it, or not.
+We will review the code to eliminate any potential bottlenecks and
+hopefully that helps.
+—
+Reply to this email directly or view it on GitHub
+#202 (comment)
+.
+@nikopp is this still an issue?
+@nikopp is this still an issue?
+Some days ago I did an export because I noticed that it became slower again.
+I will observe the behaviour and comment again in a couple of weeks.
+Furthermore I noticed, that the attachment from my comment on 10 Apr was not attached to the issue because I sent it via mail and the file type is not supported.
+I did the upload again as a TXT but it is in fact a QIF:
+20150410_094837_gnucash_export_EUR.qif
+Some days ago I did an export because I noticed that it became slower again.
+I will observe the behaviour and comment again in a couple of weeks.
+Furthermore I noticed, that the attachment from my comment on 10 Apr was not attached to the issue because I sent it via mail and the file type is not supported.
+I did the upload again as a TXT but it is in fact a QIF:
+20150410_094837_gnucash_export_EUR.qif
+@nikopp Another user reported this and seemed to identify the problem. It happens only when you have a homescreen widget. We will work on a fix for this
+@nikopp Another user reported this and seemed to identify the problem. It happens only when you have a homescreen widget. We will work on a fix for this
+@codinguser: Thanks for the info. I indeed use widgets. But since the new
+major version, the slowdown is not as significant as before.
+Ngewi Fet notifications@github.com schrieb am Mi., 13. Jan. 2016 08:52:
+@nikopp https://github.com/nikopp Another user reported this and seemed
+to identify the problem. It happens only when you have a homescreen widget.
+We will work on a fix for this
+—
+Reply to this email directly or view it on GitHub
+#202 (comment)
+.
+@codinguser: Thanks for the info. I indeed use widgets. But since the new
+major version, the slowdown is not as significant as before.
+Ngewi Fet notifications@github.com schrieb am Mi., 13. Jan. 2016 08:52:
+@nikopp https://github.com/nikopp Another user reported this and seemed
+to identify the problem. It happens only when you have a homescreen widget.
+We will work on a fix for this
+—
+Reply to this email directly or view it on GitHub
+#202 (comment)
+.

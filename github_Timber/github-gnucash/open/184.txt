@@ -1,0 +1,51 @@
+title:On the widget, negatives values are green in 1.4.0
+
+On the widget, negative values are now green, they used to be red as I would have expected.
+This is dependent on the normal balance of the account.
+Previous versions of the app simply added credits and subtracted debits,
+but GnuCash account types handle things differently. For some accounts,
+like Expense accounts, debits increase the balance while debits decrease
+it. Look at it this way, if you buy something, your expenses go up, and
+your assets (cash) goes down.
+On Sat, Aug 23, 2014 at 10:11 PM, johngray1965 notifications@github.com
+wrote:
+On the widget, negative values are now green, they used to red as I would
+have expected.
+—
+Reply to this email directly or view it on GitHub
+#184.
+This is dependent on the normal balance of the account.
+Previous versions of the app simply added credits and subtracted debits,
+but GnuCash account types handle things differently. For some accounts,
+like Expense accounts, debits increase the balance while debits decrease
+it. Look at it this way, if you buy something, your expenses go up, and
+your assets (cash) goes down.
+On Sat, Aug 23, 2014 at 10:11 PM, johngray1965 notifications@github.com
+wrote:
+On the widget, negative values are now green, they used to red as I would
+have expected.
+—
+Reply to this email directly or view it on GitHub
+#184.
+For me, this on credit card account.  The balance displays as negative, but its displayed in green.  I believe it should be display in red.  It used to be display in red.
+For me, this on credit card account.  The balance displays as negative, but its displayed in green.  I believe it should be display in red.  It used to be display in red.
+ok, I'll look into it. Thanks
+On Sat, Aug 23, 2014 at 11:49 PM, johngray1965 notifications@github.com
+wrote:
+For me, this on credit card account. The balance displays as negative, but
+its displayed in green. I believe it should be display in red. It used to
+be display in red.
+—
+Reply to this email directly or view it on GitHub
+#184 (comment)
+.
+ok, I'll look into it. Thanks
+On Sat, Aug 23, 2014 at 11:49 PM, johngray1965 notifications@github.com
+wrote:
+For me, this on credit card account. The balance displays as negative, but
+its displayed in green. I believe it should be display in red. It used to
+be display in red.
+—
+Reply to this email directly or view it on GitHub
+#184 (comment)
+.

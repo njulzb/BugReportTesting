@@ -1,0 +1,4 @@
+title:Restrict creating/modifying transactions in Accounts with Payable and Receivable types
+
+Those account types are used internally by GnuCash’s business features. Users should not manually modify or enter transactions in these account types.
+http://www.gnucash.org/docs/v2.6/C/gnucash-help/acct-types.html

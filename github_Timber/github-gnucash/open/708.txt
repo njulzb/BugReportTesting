@@ -1,0 +1,3 @@
+title:[UNVERIFIED] Crash when opening transactions
+
+Strangely the cash account doesn't have this problem!.

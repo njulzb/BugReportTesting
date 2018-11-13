@@ -1,0 +1,9 @@
+title:AlarmManager.set is treated as inexact after API 19
+
+Hi, for your information, after API 19, AlarmManager.set will not schedule the alarms at the exact time specified.(doc) I found it is used in MusicService to schedule a shutdown. If sending the alarm at the exact time is desired, setExact will be an alternative.
+Is there timer shutdown in Timber? I didn't know that...
+Is there timer shutdown in Timber? I didn't know that...
+@anburocky3 seems yes? After some time not playing anything, the MusicService will be shutdown
+@anburocky3 seems yes? After some time not playing anything, the MusicService will be shutdown
+Is there any AutoTimer feature in Timber? That will execute the shutdown after specific time?
+Is there any AutoTimer feature in Timber? That will execute the shutdown after specific time?

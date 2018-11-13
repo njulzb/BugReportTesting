@@ -1,0 +1,3 @@
+title:Long press menu
+
+Playing a completed album is good but I like to play some song from various albums or artists. Can you add a long press menu that offer possibility to play only one song and add to playing queue a song? Maybe an album too?

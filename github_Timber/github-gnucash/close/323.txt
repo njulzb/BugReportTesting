@@ -1,0 +1,7 @@
+title:Improvements
+
+I want to suggest two improvements:
+1 To change the order of transactions when exporting (when I import the transactions into gnucash, within the same day they go on the contrary, latest - first, first - last)
+2 To change the order of prompts with the introduction of new transactions, the latter should be at the top
+For 1, when I tried previously, GnuCash Desktop will ignore the order in the QIF file. The the order in QIF export file may be irrelevant. See #204
+For 1, when I tried previously, GnuCash Desktop will ignore the order in the QIF file. The the order in QIF export file may be irrelevant. See #204

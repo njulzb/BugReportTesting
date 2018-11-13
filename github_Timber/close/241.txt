@@ -1,0 +1,6 @@
+title:Switching device orientation causes music to hang
+
+Hi
+When I rotate my device, the music hangs for a fraction of a second. Can this be fixed? I'm using a Nexus 6p.
+The issue vanished some time ago :)
+The issue vanished some time ago :)

@@ -1,0 +1,44 @@
+title:Feature Request: Business functions
+
+My main use of the app is for work. I deal with vendors and customers all day, and the app already saves me a butt ton of bookkeeping work in the office at the end of the day. But there still is work, because anyplace I buy parts and supplies where I have an account can't be entered into the app. Nor can I attach those receipts to customers or job orders.
+So I, for one, would really appreciate the addition of those functions. :)
+Hi,
+To be honest, business features would be great to have,  but are not
+currently a priority. The focus is on making the consumer features refined
+and working well. And there is still stuff like budgets under development.
+When that is done, then maybe focus will shift to business. But this is
+very long term planning. Unless of course someone starts sending in code
+for business features.
+Thanks for the feedback.
+Cheers,
+On Apr 5, 2016 8:49 PM, "Blackhawke" notifications@github.com wrote:
+My main use of the app is for work. I deal with vendors and customers all
+day, and the app already saves me a butt ton of bookkeeping work in the
+office at the end of the day. But there still is work, because anyplace I
+buy parts and supplies where I have an account can't be entered into the
+app. Nor can I attach those receipts to customers or job orders.
+So I, for one, would really appreciate the addition of those functions. :)
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly or view it on GitHub
+#486
+Hi,
+To be honest, business features would be great to have,  but are not
+currently a priority. The focus is on making the consumer features refined
+and working well. And there is still stuff like budgets under development.
+When that is done, then maybe focus will shift to business. But this is
+very long term planning. Unless of course someone starts sending in code
+for business features.
+Thanks for the feedback.
+Cheers,
+On Apr 5, 2016 8:49 PM, "Blackhawke" notifications@github.com wrote:
+My main use of the app is for work. I deal with vendors and customers all
+day, and the app already saves me a butt ton of bookkeeping work in the
+office at the end of the day. But there still is work, because anyplace I
+buy parts and supplies where I have an account can't be entered into the
+app. Nor can I attach those receipts to customers or job orders.
+So I, for one, would really appreciate the addition of those functions. :)
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly or view it on GitHub
+#486

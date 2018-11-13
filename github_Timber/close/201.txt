@@ -1,0 +1,7 @@
+title:How to delete and edit song
+
+Hi,
+I would like to thank you for this repository. You did awesome work :). But, I am new to android development, would anyone please tell me how I can add feature that allows the user to edit the song in the app.
+Thank you in advance.
+Deleting song has been added
+Deleting song has been added

@@ -1,0 +1,3 @@
+title:[Feature Request] Shuffle tracks of a particular artist
+
+The "shuffle all" functionality is pretty cool, but it would also be nice to shuffle on just one artist.

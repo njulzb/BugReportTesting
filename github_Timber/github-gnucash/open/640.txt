@@ -1,0 +1,9 @@
+title:Sometimes modifications are not reflected in the account list
+
+The account is listed with the new name.
+Sometimes the account appears with the old name.
+I just reproduced it once, but the user (reported through User Voice 152) claims it happens every time for him.
+Strange one this is...
+I wonder if it is at UI level or DB level
+Strange one this is...
+I wonder if it is at UI level or DB level

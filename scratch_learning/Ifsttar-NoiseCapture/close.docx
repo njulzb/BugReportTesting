@@ -1,0 +1,15 @@
+The Pan doesn't work if the density layer is disable
+Error reversed bearing and speed
+Crash 0.5.0 Network operation on main thread
+SecurityException when trying to unmute application
+Octave band center frequencies for calibration
+Check calibration frequencies
+Disable file transert on an item History when already upload
+Applying correction factor
+java.lang.NullPointerException: Attempt to get length of null array
+Disable upload to community action
+Post-Processing of measures
+Fix computation of LA90, LA50
+No measurement after stopping recording
+Full frequency axis on the spectrogram
+Bug of the time scale of the spectrogram

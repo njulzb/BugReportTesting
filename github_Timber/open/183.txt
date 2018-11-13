@@ -1,0 +1,3 @@
+title:Does not detect SD card
+
+All my music is on an SD card and Timber does not show anything.

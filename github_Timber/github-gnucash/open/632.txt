@@ -1,0 +1,20 @@
+title:Not able to export to "Encrypt with OpenKeychain"
+
+I want to be able to use the app OpenKeychain for encrypting files when sending files back and forth between devices. However it does not work with gnucash app.
+Being able to use this toolchain would also in some way solve feature request #488
+Expects to be able to select "Encrypt with openkeychain" as destination for the export. After that, the external app will send the encrypted file to final destination.
+Do not find "Encrypt with openkeychain" in list of destinations. (Do, however, get the option of sending to "Decrypt with openkeychain".)
+We are aware of this problem, but haven't been able to fix it. In case it's useful to someone, I'm adding here some notes from when I tried to fix it:
+I've tried different combinations of: adding a "content" scheme, removing some attributes from <data>, and removing the leading "/" in pathPattern.
+I've tested opening a .gnucash file from "Downloads" app, OpenExplorer, CyanogenMod File Manager and ownCloud app.
+Software specifications:
+We are aware of this problem, but haven't been able to fix it. In case it's useful to someone, I'm adding here some notes from when I tried to fix it:
+I've tried different combinations of: adding a "content" scheme, removing some attributes from <data>, and removing the leading "/" in pathPattern.
+I've tested opening a .gnucash file from "Downloads" app, OpenExplorer, CyanogenMod File Manager and ownCloud app.
+Software specifications:
+This also ties in with the feature of allowing GnuCash Android to show up in the "Open with.." list when handling .gnucash files. It doesn't show up at the moment, and I haven't also figured out how to do it yet.
+This also ties in with the feature of allowing GnuCash Android to show up in the "Open with.." list when handling .gnucash files. It doesn't show up at the moment, and I haven't also figured out how to do it yet.
+@kelteren v2.1.5 switched to FileProviders for sharing exported files.
+Does that fix the issue for you?
+@kelteren v2.1.5 switched to FileProviders for sharing exported files.
+Does that fix the issue for you?

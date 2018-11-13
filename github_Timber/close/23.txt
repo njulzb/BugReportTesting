@@ -1,0 +1,26 @@
+title:Slide album art to skip track
+
+This an idea for an enhancement.
+Allow changing tracks by sliding album art to the left or right.
+Saves some time and is more comfortable than hitting a small skip button.
+Probably only works great in some playback screen styles
+Working on it but this will take some time (requires significant code
+changes).
+On Oct 7, 2015 6:12 PM, "utack" notifications@github.com wrote:
+This an idea for an enhancement.
+Allow changing tracks by sliding album art to the left or right.
+Saves some time and is more comfortable than hitting a small skip button.
+—
+Reply to this email directly or view it on GitHub
+#23.
+Working on it but this will take some time (requires significant code
+changes).
+On Oct 7, 2015 6:12 PM, "utack" notifications@github.com wrote:
+This an idea for an enhancement.
+Allow changing tracks by sliding album art to the left or right.
+Saves some time and is more comfortable than hitting a small skip button.
+—
+Reply to this email directly or view it on GitHub
+#23.
+Have been added
+Have been added

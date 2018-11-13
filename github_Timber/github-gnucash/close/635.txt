@@ -1,0 +1,31 @@
+title:BYN currency support not stable
+
+rivaldi8
+This currency isn't supported by Java until the latests releases (see this OpenJDK bug report). It seems it's possible to add new currencies, but only from Java 7 onwards.
+One possibility would be to use Joda-Money. It supports BYN and can be easily extended to support any new currency. It's not API stable yet, so we should check other alternatives first.
+We should also avoid crashes in these situations.
+By the way, Joda-Money also provides a Money class which we could evaluate to replace ours.
+This currency isn't supported by Java until the latests releases (see this OpenJDK bug report). It seems it's possible to add new currencies, but only from Java 7 onwards.
+One possibility would be to use Joda-Money. It supports BYN and can be easily extended to support any new currency. It's not API stable yet, so we should check other alternatives first.
+We should also avoid crashes in these situations.
+By the way, Joda-Money also provides a Money class which we could evaluate to replace ours.
+This is can (and probably should) be fixable. We now use our own commodities and if I recall correctly, @rivaldi8 you once did some cleanup to use only our Commodities instead of java Currency.
+Maybe there is some place where Currency is still used. If we change it to commodity, this issue should be fixed. BYN was added to the commodities a while back I think, although I don't recall if only to new installations or also for existing ones. The latter case can easily be fixed with a database migration.
+This is can (and probably should) be fixable. We now use our own commodities and if I recall correctly, @rivaldi8 you once did some cleanup to use only our Commodities instead of java Currency.
+Maybe there is some place where Currency is still used. If we change it to commodity, this issue should be fixed. BYN was added to the commodities a while back I think, although I don't recall if only to new installations or also for existing ones. The latter case can easily be fixed with a database migration.
+About Joda-Money, well, it is still evolving. If they get to a 1.0 at some point we can evaluate it.
+Although I'm beginning to have increasing inertia to new libraries as we have quite a few already. Build time keeps going up and the apk  is starting to hit the 65k method limit in the develop branch.
+About Joda-Money, well, it is still evolving. If they get to a 1.0 at some point we can evaluate it.
+Although I'm beginning to have increasing inertia to new libraries as we have quite a few already. Build time keeps going up and the apk  is starting to hit the 65k method limit in the develop branch.
+Ok, I was convinced that Commodity worked on top of Currency internally. Now I see that's not the case. After quick look at uses of Currency, it seems they could be handled by Commodity. I'll work then on finishing the migration.
+Ok, I was convinced that Commodity worked on top of Currency internally. Now I see that's not the case. After quick look at uses of Currency, it seems they could be handled by Commodity. I'll work then on finishing the migration.
+@shrddr @rivaldi8 is this issue fixed in v2.1.5?
+I recall having to make some adjustments for BYN in that release
+@shrddr @rivaldi8 is this issue fixed in v2.1.5?
+I recall having to make some adjustments for BYN in that release
+@codinguser I have v2.1.5 and it seems that BYN is supported now (at least for importing data from gnucash for desktop)
+@codinguser I have v2.1.5 and it seems that BYN is supported now (at least for importing data from gnucash for desktop)
+@codinguser The issues reported here seem to be fixed now. There are still a few uses of Currency which may make the application crash, though. I hope to finish the migration to Commodity shortly.
+@codinguser The issues reported here seem to be fixed now. There are still a few uses of Currency which may make the application crash, though. I hope to finish the migration to Commodity shortly.
+I've just finished the migration to Commodity.
+I've just finished the migration to Commodity.

@@ -1,0 +1,5 @@
+title:Implement Settings activity
+
+codinguser
+Settings option from the menu does not open anything.
+Using a Samsung Galaxy S3, Android 4.0.4

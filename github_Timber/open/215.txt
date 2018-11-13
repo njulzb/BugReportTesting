@@ -1,0 +1,7 @@
+title:[Feature request] Add support for Bluetooth headset controls
+
+Hi!
+It would be nice, if Timber would support Bluetooth headset remote controls (like eg. Apollo does).
+There should be an intent for that right?
+Looks like a duplicate of #15
+Looks like a duplicate of #15

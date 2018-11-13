@@ -1,0 +1,7 @@
+title:Reports of short time ranges (days)
+
+I would like to create a report over an arbitrary time interval. My current reason is, that I would like to have a report of my expenses during business trips of a few days.
+In version 2.0.7, if I pick a custom range of a few days within a month:
+For my purpose, it would also be useful to have a textual summary of the custom range.
+A very related issue is that while the bar and line charts allow you to choose arbitrary periods, the only options for aggregating values are month, quarter and year. This makes the "current month" line chart unusable, since it only shows a single point for the whole month.
+A very related issue is that while the bar and line charts allow you to choose arbitrary periods, the only options for aggregating values are month, quarter and year. This makes the "current month" line chart unusable, since it only shows a single point for the whole month.

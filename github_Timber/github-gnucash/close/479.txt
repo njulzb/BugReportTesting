@@ -1,0 +1,43 @@
+title:Precision may be lost when saving the exchange rate in the database
+
+When the user enters an exchange rate, it's not saved directly. Instead, the
+relation between the original amount and the converted amount is stored. As a
+consequence, the exchange rate precision will depend on the precision of the
+two currencies.
+In addition, the converted amount is (wrongly) stored with the currency of the
+original amount and rounded to its decimal places. If the original amount has
+no decimal places, even more precision is lost.
+For example, if the user transfers from a Yens account (no decimal places) to an
+Euros account (2 decimal places) and enters:
+GnuCash calculates:
+GnuCash should store directly the exchange rate instead of calculating it.
+I'm working on a fix.
+By the way, should we be storing the exchange rate calculated from the user entered  converted amount? Given the precision problems, I'd rather store exchange rate only when the user enters it explicitly.
+I'm working on a fix.
+By the way, should we be storing the exchange rate calculated from the user entered  converted amount? Given the precision problems, I'd rather store exchange rate only when the user enters it explicitly.
+Thanks for catching this @rivaldi8
+You're right, we try to compute the exchange rate even when it was explicity entered. I think we should save the exchange rate which the user entered. We should only compute the exchange rate when the user enters the converted amount directly.
+And yes, we should still save the rate when the user only entered the converted amount. This is used for convenience the next time the user creates another transaction with the same currencies.
+The user is still shown the dialog to confirm, but the value is pre-filled.
+Thanks for catching this @rivaldi8
+You're right, we try to compute the exchange rate even when it was explicity entered. I think we should save the exchange rate which the user entered. We should only compute the exchange rate when the user enters the converted amount directly.
+And yes, we should still save the rate when the user only entered the converted amount. This is used for convenience the next time the user creates another transaction with the same currencies.
+The user is still shown the dialog to confirm, but the value is pre-filled.
+@rivaldi8 The PriceDbAdapterTest.shouldOnlySaveOnePricePerCommodityPair() now fails in develop branch (after merging hotfix/patches). It seems when a Price is saved to the database, it's value is halved. You added a call to reduce() when getting the value numerator Price.getValueNum(). What does that do?
+(you can checkout the current develop and test this)
+@rivaldi8 The PriceDbAdapterTest.shouldOnlySaveOnePricePerCommodityPair() now fails in develop branch (after merging hotfix/patches). It seems when a Price is saved to the database, it's value is halved. You added a call to reduce() when getting the value numerator Price.getValueNum(). What does that do?
+(you can checkout the current develop and test this)
+The call to reduce() in Price.getValueNum() (and getValueDenom()) is to avoid having to do this call. If we are to store it reduced, I think it's better to just do it automatically.
+If you are ok with it, I can fix the unit test.
+The call to reduce() in Price.getValueNum() (and getValueDenom()) is to avoid having to do this call. If we are to store it reduced, I think it's better to just do it automatically.
+If you are ok with it, I can fix the unit test.
+oh sure, please go ahead and fix the test. Thanks 👍
+And please add some documentation to the reduce() method.
+It took me a while to figure out what the method does. I guess we need to work on our documentation.  :)
+oh sure, please go ahead and fix the test. Thanks 👍
+And please add some documentation to the reduce() method.
+It took me a while to figure out what the method does. I guess we need to work on our documentation.  :)
+@rivaldi8 never mind. I'll fix it. I'm in the midst of some changes already anyway :)
+@rivaldi8 never mind. I'll fix it. I'm in the midst of some changes already anyway :)
+Ok, as you will :)
+Ok, as you will :)

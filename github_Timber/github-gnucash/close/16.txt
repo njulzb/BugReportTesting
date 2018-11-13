@@ -1,0 +1,41 @@
+title:OFX file has no encoding information
+
+codinguser
+And it seems has no OFX header section at all, I mean:
+(http://www.ofx.net/OFXExamplesPage/OFXExamples.aspx)
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:102
+SECURITY:NONE
+ENCODING:USASCII
+CHARSET:1252
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+Contents of the exported file look like only clean xml.
+So, when I try to import file in Gnucash 2.4.2 on my Linux I see scrabbled characters instead of Russian (UTF-8).
+If I add at the beginning of the file this: "ENCODING:UTF-8" Gnucash shows all characters fine.
+Hi!
+Today I've made apk from latest develop and tried export OFX and import.
+Suppose fix didn't resolve problem... GnuCash cannot understand encoding (version 2.4.11 too).
+I dug more about OFX file format and found out this:
+Old version of OFX header was a set of parameters as I wrote in previous post including "ENCODING:UTF-8",
+new version has only several required params and another syntax (that one you use):
+And parameter ENCODING="UTF-8" hasn't to be there and should be ignored by software.
+So, latest changes should be rolled back :(. Sorry.
+Idea is xml header () already has encoding information.
+Only way I can make Gnucash show correct encoding is to add old OFX version header part "ENCODING:UTF-8" in the beginning of OFX.
+It seems problem is in Gnucash, I'll try inform developers.
+But only as walk-around is it possible add old styte header in OFX?
+Hi!
+Today I've made apk from latest develop and tried export OFX and import.
+Suppose fix didn't resolve problem... GnuCash cannot understand encoding (version 2.4.11 too).
+I dug more about OFX file format and found out this:
+Old version of OFX header was a set of parameters as I wrote in previous post including "ENCODING:UTF-8",
+new version has only several required params and another syntax (that one you use):
+And parameter ENCODING="UTF-8" hasn't to be there and should be ignored by software.
+So, latest changes should be rolled back :(. Sorry.
+Idea is xml header () already has encoding information.
+Only way I can make Gnucash show correct encoding is to add old OFX version header part "ENCODING:UTF-8" in the beginning of OFX.
+It seems problem is in Gnucash, I'll try inform developers.
+But only as walk-around is it possible add old styte header in OFX?

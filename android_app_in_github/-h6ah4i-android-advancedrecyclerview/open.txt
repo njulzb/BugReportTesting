@@ -1,0 +1,5 @@
+Basic draggable dances
+Expand group only performed after scrolling.
+There is an issue while expanding group item with recyclerview-v7:22.2.0... when there are more than one viewtype it looks like kind of some instability. please fix it as soon as possible.
+ARV doesn't work with SDK 11 on tablet
+NPE

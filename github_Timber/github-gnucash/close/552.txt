@@ -1,0 +1,4 @@
+title:Migrate DropBox support to API v2
+
+codinguser
+Also, DropBox Sync API is now deprecated. So migrate to DropBox Core API v2

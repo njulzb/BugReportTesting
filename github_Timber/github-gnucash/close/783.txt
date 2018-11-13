@@ -1,0 +1,23 @@
+title:Default edit action as floating action button (FAB)
+
+Many screens have "+" floating action button (FAB) for the main action, but the transaction overview screen does not.
+"Edit" button as FAB in bottom-right
+"Edit" button in top-left
+Thanks for the suggestion. Why would it be better to have the button at the bottom?
+Thanks for the suggestion. Why would it be better to have the button at the bottom?
+most of the single-action screens in the app use FAB.
+Also, it's recommended by Google's Material design:
+A floating action button (FAB) represents the primary action of a screen.
+most of the single-action screens in the app use FAB.
+Also, it's recommended by Google's Material design:
+A floating action button (FAB) represents the primary action of a screen.
+I can even volunteer to do the change - just need the approval.
+I can even volunteer to do the change - just need the approval.
+@pnemonic78
+The Material design guide does say that the FAB represents the primary action of a screen. But the edit action is not really the primary action of the transaction detail screen. And that is my issue with moving it down and making it bigger.
+The transaction detail screen is meant for just viewing the transaction details, and you happen to have the possibility to edit. But editing is not the primary action you are expected to perform when you get there. Moving the button down gives it prominent placement which would suggest that.
+Also, if you look at the Placement section of the FAB design page, you can see that the FAB can also be attached to "top app bars and the edge of some components."
+@pnemonic78
+The Material design guide does say that the FAB represents the primary action of a screen. But the edit action is not really the primary action of the transaction detail screen. And that is my issue with moving it down and making it bigger.
+The transaction detail screen is meant for just viewing the transaction details, and you happen to have the possibility to edit. But editing is not the primary action you are expected to perform when you get there. Moving the button down gives it prominent placement which would suggest that.
+Also, if you look at the Placement section of the FAB design page, you can see that the FAB can also be attached to "top app bars and the edge of some components."

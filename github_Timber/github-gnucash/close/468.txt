@@ -1,0 +1,96 @@
+title:Toolbar Icons I'd Love to Have
+
+Could you explain a bit more what you mean?
+There are icons for deleting splits in the split editor and you can edit scheduled transactions as well already.
+Could you explain a bit more what you mean?
+There are icons for deleting splits in the split editor and you can edit scheduled transactions as well already.
+Hi, Ngewi,
+The split editor? What's that? Ah, now I see that when I am in a split, the Delete icon deletes that split. But, of course, it's the same icon as for deleting the whole transaction when I am in an unsplit transaction. Only just now, for the first time did I hold my mouse over the icon and read the pop-up text. Thanks, now OK with that one.
+To edit existing scheduled transactions, I have to click Actions, Scheduled Transactions, Scheduled Transaction Editor. Is there a quicker way to open the Scheduled Transaction Editor?
+Peter
+----- Original Message -----
+From: Ngewi Fet
+To: codinguser/gnucash-android
+Cc: pjridge
+Sent: Thursday, January 21, 2016 12:57 AM
+Subject: Re: [gnucash-android] Toolbar Icons I'd Love to Have (#468)
+Could you explain a bit more what you mean?
+There are icons for deleting splits in the split editor and you can edit scheduled transactions as well already.
+—
+Reply to this email directly or view it on GitHub.
+No virus found in this message.
+Checked by AVG - www.avg.com
+Version: 2016.0.7357 / Virus Database: 4522/11450 - Release Date: 01/21/16
+Hi, Ngewi,
+The split editor? What's that? Ah, now I see that when I am in a split, the Delete icon deletes that split. But, of course, it's the same icon as for deleting the whole transaction when I am in an unsplit transaction. Only just now, for the first time did I hold my mouse over the icon and read the pop-up text. Thanks, now OK with that one.
+To edit existing scheduled transactions, I have to click Actions, Scheduled Transactions, Scheduled Transaction Editor. Is there a quicker way to open the Scheduled Transaction Editor?
+Peter
+----- Original Message -----
+From: Ngewi Fet
+To: codinguser/gnucash-android
+Cc: pjridge
+Sent: Thursday, January 21, 2016 12:57 AM
+Subject: Re: [gnucash-android] Toolbar Icons I'd Love to Have (#468)
+Could you explain a bit more what you mean?
+There are icons for deleting splits in the split editor and you can edit scheduled transactions as well already.
+—
+Reply to this email directly or view it on GitHub.
+No virus found in this message.
+Checked by AVG - www.avg.com
+Version: 2016.0.7357 / Virus Database: 4522/11450 - Release Date: 01/21/16
+@pjridge Are you talking about the desktop GnuCash or the Android app?
+GnuCash Android only caters to the mobile app
+@pjridge Are you talking about the desktop GnuCash or the Android app?
+GnuCash Android only caters to the mobile app
+desktop
+----- Original Message -----
+From: Ngewi Fet
+To: codinguser/gnucash-android
+Cc: pjridge
+Sent: Thursday, January 21, 2016 9:17 PM
+Subject: Re: [gnucash-android] Toolbar Icons I'd Love to Have (#468)
+@pjridge Are you talking about the desktop GnuCash or the Android app?
+GnuCash Android only caters to the mobile app
+—
+Reply to this email directly or view it on GitHub.
+No virus found in this message.
+Checked by AVG - www.avg.com
+Version: 2016.0.7357 / Virus Database: 4522/11463 - Release Date: 01/22/16
+desktop
+----- Original Message -----
+From: Ngewi Fet
+To: codinguser/gnucash-android
+Cc: pjridge
+Sent: Thursday, January 21, 2016 9:17 PM
+Subject: Re: [gnucash-android] Toolbar Icons I'd Love to Have (#468)
+@pjridge Are you talking about the desktop GnuCash or the Android app?
+GnuCash Android only caters to the mobile app
+—
+Reply to this email directly or view it on GitHub.
+No virus found in this message.
+Checked by AVG - www.avg.com
+Version: 2016.0.7357 / Virus Database: 4522/11463 - Release Date: 01/22/16
+Thanks, Ngewi,
+Didn't realise I was in the Android forum.
+Peter
+----- Original Message -----
+From: Ngewi Fet
+To: codinguser/gnucash-android
+Cc: pjridge
+Sent: Monday, January 25, 2016 3:06 AM
+Subject: Re: [gnucash-android] Toolbar Icons I'd Love to Have (#468)
+Closed #468.
+—
+Reply to this email directly or view it on GitHub.
+Thanks, Ngewi,
+Didn't realise I was in the Android forum.
+Peter
+----- Original Message -----
+From: Ngewi Fet
+To: codinguser/gnucash-android
+Cc: pjridge
+Sent: Monday, January 25, 2016 3:06 AM
+Subject: Re: [gnucash-android] Toolbar Icons I'd Love to Have (#468)
+Closed #468.
+—
+Reply to this email directly or view it on GitHub.

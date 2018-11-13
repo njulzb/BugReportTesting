@@ -1,0 +1,4 @@
+title:Add dialog with extra checkbox for irreversible actions
+
+rivaldi8
+Actions such as deleting book, deleting all accounts, deleting all transactions

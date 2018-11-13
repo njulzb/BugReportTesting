@@ -1,0 +1,3 @@
+title:The application may be doing too much work on its main thread get this error
+
+It is happen many device for example  asus api leve 19 and model number ASUS_ZEN PHONE when i go in BaseNowplayingFragment and click next music it stuck and change music after 3 second.

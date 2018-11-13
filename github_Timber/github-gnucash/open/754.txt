@@ -1,0 +1,46 @@
+title:Lost all exported data to Dropbox
+
+Generate a file in DropBox folder and delete the data
+Didn't generate the file but the data was gone! The app took longer than usual (maybe 20" instead of 2") and said that the file was generated, but that wasn't the case and I lost a couple of weeks of data. I've used same procedure several times (11 to be more precise) without any problem. And after the failure, without closing the app, I've created a new transaction, exported again and the NEW file was generated successfully. But my old data is gone...
+I'm so sorry about that. Data loss is something we worked hard to prevent, so it's sad when it happens.
+The DropBox library was updated in the current beta (pending release soon), and I think that might help resolve this issue.
+We will keep tracking this issue and see if we can characterize and fix it
+I'm so sorry about that. Data loss is something we worked hard to prevent, so it's sad when it happens.
+The DropBox library was updated in the current beta (pending release soon), and I think that might help resolve this issue.
+We will keep tracking this issue and see if we can characterize and fix it
+I think that the problem is that something has changed in DropBox (the last update was Dec 13). The strange thing is that the test I did after that worked ok.
+Maybe you should implement a verification to see if the "created"backup file exists previous data erase?
+I think that the problem is that something has changed in DropBox (the last update was Dec 13). The strange thing is that the test I did after that worked ok.
+Maybe you should implement a verification to see if the "created"backup file exists previous data erase?
+Kind of the same thing just happened to me with export via email (option "Send to..." in the export screen): I had the option "Delete Data after Export" checked and (inadvertently, I actually wanted to go back) clicked on "Export". The Android notification "Send to External Service" popped up, prompting me to choose an application. I clicked on "Cancel", only to discover that no email had been sent, but the not-yet-exported data had nevertheless been deleted.
+I believe the issue is kind of the same here - don't delete transactions until you're actually sure they got exported properly - however the mechanism for fixing this for email export is probably very different from the DropBox case. Do you want me to open a new issue for this?
+Kind of the same thing just happened to me with export via email (option "Send to..." in the export screen): I had the option "Delete Data after Export" checked and (inadvertently, I actually wanted to go back) clicked on "Export". The Android notification "Send to External Service" popped up, prompting me to choose an application. I clicked on "Cancel", only to discover that no email had been sent, but the not-yet-exported data had nevertheless been deleted.
+I believe the issue is kind of the same here - don't delete transactions until you're actually sure they got exported properly - however the mechanism for fixing this for email export is probably very different from the DropBox case. Do you want me to open a new issue for this?
+@fmux first off, I hope you were able to recover your data from a backup. Sorry to hear that.
+The challenge is that once we hand off control to a 3rd party app in the system, we do not get any feedback of what happens there (either success or failure). The Android system itself is the broker of information sharing.
+The user may cancel the email send, or upload operation and GnuCash will not know. That is why the app just creates a backup and then goes on to delete.
+The other option is to remove the delete operation completely when exporting to 3rd party services. It is something we'd have to consider.
+@fmux first off, I hope you were able to recover your data from a backup. Sorry to hear that.
+The challenge is that once we hand off control to a 3rd party app in the system, we do not get any feedback of what happens there (either success or failure). The Android system itself is the broker of information sharing.
+The user may cancel the email send, or upload operation and GnuCash will not know. That is why the app just creates a backup and then goes on to delete.
+The other option is to remove the delete operation completely when exporting to 3rd party services. It is something we'd have to consider.
+@codinguser Unfortunately the data was gone, but it was only a week's worth of cash expenses that I was able to reconstruct from memory.
+As for getting feedback after handing off control, you seem to be quite right - I guess the relevant line is
+gnucash-android/app/src/main/java/org/gnucash/android/export/ExportAsyncTask.java
+Lines 506 to 507
+      in
+      879596c
+So to mitigate this, how about having a button somewhere to "Delete already exported transactions"? That way anyone who likes the current behaviour could keep it like it is, while anyone who has been bitten by this issue could make it a two-step process (i.e., switch off automatic deletion and do it manually after verifying that the export worked)?
+@codinguser Unfortunately the data was gone, but it was only a week's worth of cash expenses that I was able to reconstruct from memory.
+As for getting feedback after handing off control, you seem to be quite right - I guess the relevant line is
+gnucash-android/app/src/main/java/org/gnucash/android/export/ExportAsyncTask.java
+Lines 506 to 507
+      in
+      879596c
+So to mitigate this, how about having a button somewhere to "Delete already exported transactions"? That way anyone who likes the current behaviour could keep it like it is, while anyone who has been bitten by this issue could make it a two-step process (i.e., switch off automatic deletion and do it manually after verifying that the export worked)?
+Good idea to have an explicit delete button.
+Of course the deletion would have to work via timestamps (of last deletion). But at least we could warn the user to be absolutely sure before they delete.
+Also, I would rather just remove the option when exporting and only have it as a standalone explicit delete option.
+Good idea to have an explicit delete button.
+Of course the deletion would have to work via timestamps (of last deletion). But at least we could warn the user to be absolutely sure before they delete.
+Also, I would rather just remove the option when exporting and only have it as a standalone explicit delete option.

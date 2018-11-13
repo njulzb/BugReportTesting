@@ -1,0 +1,28 @@
+title:Set the date to export transactions from (set exporting period)
+
+Occurrence:
+Sometimes the application fails to export “last transactions” (gives zero-length QIF on output).
+Consequences:
+As the result there is only one way to get data to PC: export "All transactions" (it could be a long period!!) and mark many hundreds transactions as duplicates (during importing to PC app) to import one hundred of new one.
+Solution:
+It would be perfect to get possibility to set up the date to export from in Export dialog.
+hmm, I thought this issue was fixed. What version of the app are you on?
+I also like your idea of exporting transactions from a particular date. Have to give it some more thought to see if it covers all our use-cases.
+@fefe982 what do you think of this? Instead of the exported flag, we could just store the last export timestamp and then export everything else that was created/modified after that.
+Of course we will need a created_at and maybe modified_at timestamp for all tables in the db which will be automatically updated but I was planning on adding it anyways.
+hmm, I thought this issue was fixed. What version of the app are you on?
+I also like your idea of exporting transactions from a particular date. Have to give it some more thought to see if it covers all our use-cases.
+@fefe982 what do you think of this? Instead of the exported flag, we could just store the last export timestamp and then export everything else that was created/modified after that.
+Of course we will need a created_at and maybe modified_at timestamp for all tables in the db which will be automatically updated but I was planning on adding it anyways.
+Well, I cannot figure out the exact reason why the zero-length QIF is generated. And lot of fixes made recently are not added to v1.4.3 , including the new QIF export code.
+I suggested export by date once myself, in response to some other issue. But at that time, I meant to use the user-entered transaction time. Adding time stamps is also a good idea.
+And also redo last export (this may not help in this case, as the file in internal storage may be also empty).
+Well, I cannot figure out the exact reason why the zero-length QIF is generated. And lot of fixes made recently are not added to v1.4.3 , including the new QIF export code.
+I suggested export by date once myself, in response to some other issue. But at that time, I meant to use the user-entered transaction time. Adding time stamps is also a good idea.
+And also redo last export (this may not help in this case, as the file in internal storage may be also empty).
+It is impossible to find out exact reason: I got the problem on different versions and sometimes right after upgrading the app with non-exported transactions. Furthermore, I can suggest that the issue depends more on the place to export to: overfilled internal storage or SD-card, buggy KDE Connect, fails in OwnCloud db and so on.
+Every transaction have an exported flag which is dropped after export finish, am I right? So there is no any way to export transactions with the creation date I need, until you will implement the subject?
+It is impossible to find out exact reason: I got the problem on different versions and sometimes right after upgrading the app with non-exported transactions. Furthermore, I can suggest that the issue depends more on the place to export to: overfilled internal storage or SD-card, buggy KDE Connect, fails in OwnCloud db and so on.
+Every transaction have an exported flag which is dropped after export finish, am I right? So there is no any way to export transactions with the creation date I need, until you will implement the subject?
+Fixed in v2.0.2
+Fixed in v2.0.2

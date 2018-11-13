@@ -1,0 +1,8 @@
+title:Incomplete translation in transaction list
+
+codinguser
+Steps to reproduce:
+Actual result:
+String "sub-accounts" not translated.
+(see upper-left corner of a screenshot)
+

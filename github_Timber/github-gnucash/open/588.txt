@@ -1,0 +1,8 @@
+title:Setting default transaction type doesn't stick
+
+When I set the default transaction type in the preferences pane to 'credit', return to the application and immediately reopen the preferences pane, the default transaction type is still displayed as 'debit'. Instead the transaction type should be listed as 'credit'.
+Also all new transactions are in fact created as 'debit'.
+Notes to self: Does the default transaction type setting still make sense? Maybe automatically use a default depending on the type of account. E.g. Expense accounts default to expenses, Income accounts to incomes, etc.
+Notes to self: Does the default transaction type setting still make sense? Maybe automatically use a default depending on the type of account. E.g. Expense accounts default to expenses, Income accounts to incomes, etc.
+I don't know whether the cash account that I monitor using the app would count as income or expense. But I really need my default transaction to be an expense (because 90% of my transactions are expenses on that account). Conversely, I could very well imagine another use case where the predominant transactions on a cash accout are incomes. So, for me, it makes sense to let the user choose a default transaction type.
+I don't know whether the cash account that I monitor using the app would count as income or expense. But I really need my default transaction to be an expense (because 90% of my transactions are expenses on that account). Conversely, I could very well imagine another use case where the predominant transactions on a cash accout are incomes. So, for me, it makes sense to let the user choose a default transaction type.

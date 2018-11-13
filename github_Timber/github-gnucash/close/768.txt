@@ -1,0 +1,7 @@
+title:ScheduledActionService crashes on Android 8
+
+rivaldi8
+Scheduled actions are run periodically.
+The service crashes due to the new Android 8 restrictions on background services.
+Fixed in develop (94bfc01).
+Fixed in develop (94bfc01).

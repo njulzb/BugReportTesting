@@ -1,0 +1,17 @@
+title:Buttons are no longer shown in action bars
+
+Buttons like "Save" and "Cancel" in transaction's action bar menu, are no longer shown.
+The issue was introduced in commit bc84bc2 with the change of buildToolsVersion from version 21.1.2 to 22.0.1.
+This new version of build tools removes the showAsAction attribute from the resource file when assembling the APK. I guess, because it's an attribute only supported since API level 11, while GnuCash defines minSdkVersion 10.
+In this Stack Overflow question they suggest to change the attribute's namespace, but then it doesn't compile. I guess it only works with ActionBarCompat.
+If there's no reason behind the build tools version change other than using the latest, it could be reverted to the previously working one.
+Another possibility would be to migrate to ActionBarCompat. Not sure how hard it would be or if it would even solve the problem. By the way, is this change in planned? I could do it if needed.
+This happens with version 1.6.0 of GnuCash from a Huawei Ascend G300 (Android 2.3.6, API 10).
+I think the build tools version change would be the better course of action at the moment.
+I will make the changes. Thanks for reporting this.
+Migrating to ActionBarCompat is not trivial but will have to be done eventually for other reasons like eventually supporting Material Design. You could start working on it. 👍
+I think the build tools version change would be the better course of action at the moment.
+I will make the changes. Thanks for reporting this.
+Migrating to ActionBarCompat is not trivial but will have to be done eventually for other reasons like eventually supporting Material Design. You could start working on it. 👍
+Ok, I'll start looking into it.
+Ok, I'll start looking into it.

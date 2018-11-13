@@ -1,0 +1,50 @@
+title:Search should ignore case
+
+Search in account list should ignore case.
+Steps to reproduce:
+Expected results:
+Actual results:
+This is an issue with non-ascii characters. In case anyone is reading this, suggestions to fix this are welcome.
+sqlite3 LIKE is only case-insensitive for ascii. I would prefer a non-invasive fix which does not involve modifying the database or adding columns (in case someone is reading this).
+This is an issue with non-ascii characters. In case anyone is reading this, suggestions to fix this are welcome.
+sqlite3 LIKE is only case-insensitive for ascii. I would prefer a non-invasive fix which does not involve modifying the database or adding columns (in case someone is reading this).
+Is adding/enabling the ICU extension a viable option on Android?
+Source:
+http://stackoverflow.com/questions/973541/how-to-set-sqlite3-to-be-case-insensitive-when-string-comparing
+http://stackoverflow.com/questions/611459/how-to-sort-text-in-sqlite3-with-specified-locale
+http://stackoverflow.com/questions/1818678/compiling-the-icu-sqlite-extension-statically-linked-to-icu
+Is adding/enabling the ICU extension a viable option on Android?
+Source:
+http://stackoverflow.com/questions/973541/how-to-set-sqlite3-to-be-case-insensitive-when-string-comparing
+http://stackoverflow.com/questions/611459/how-to-sort-text-in-sqlite3-with-specified-locale
+http://stackoverflow.com/questions/1818678/compiling-the-icu-sqlite-extension-statically-linked-to-icu
+That would maybe have done, except that enabling the ICU extension needs to
+the done at compile time AFAIK.
+It is not enabled by default for most Android devices
+On Tue, Jan 14, 2014 at 3:45 AM, alexg notifications@github.com wrote:
+Is adding/enabling the ICU extension a viable option on Android?
+Source:
+http://stackoverflow.com/questions/973541/how-to-set-sqlite3-to-be-case-insensitive-when-string-comparing
+http://stackoverflow.com/questions/611459/how-to-sort-text-in-sqlite3-with-specified-locale
+http://stackoverflow.com/questions/1818678/compiling-the-icu-sqlite-extension-statically-linked-to-icu
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/120#issuecomment-32234431
+.
+That would maybe have done, except that enabling the ICU extension needs to
+the done at compile time AFAIK.
+It is not enabled by default for most Android devices
+On Tue, Jan 14, 2014 at 3:45 AM, alexg notifications@github.com wrote:
+Is adding/enabling the ICU extension a viable option on Android?
+Source:
+http://stackoverflow.com/questions/973541/how-to-set-sqlite3-to-be-case-insensitive-when-string-comparing
+http://stackoverflow.com/questions/611459/how-to-sort-text-in-sqlite3-with-specified-locale
+http://stackoverflow.com/questions/1818678/compiling-the-icu-sqlite-extension-statically-linked-to-icu
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/120#issuecomment-32234431
+.
+I followed the steps above on Android 6.0.1 and failed to reproduce the issue.
+It looks like it was fixed in Android 5.0. See https://issuetracker.google.com/36918562#comment11.
+I followed the steps above on Android 6.0.1 and failed to reproduce the issue.
+It looks like it was fixed in Android 5.0. See https://issuetracker.google.com/36918562#comment11.
+Works on Android 6.
+Works on Android 6.

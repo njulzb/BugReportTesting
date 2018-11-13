@@ -1,0 +1,16 @@
+title:Option to invert the transaction color for DEBIT/CREDIT accounts
+
+I have a liability (credit card) account. I think that charges should be red, and payments should be green. I look at the color, only later do I read the writing on the button (charge or payment). For a non-bookkeeper person red is "negative" and charging things is "bad" (red). Paying down the balance of the credit card is "positive" (green).
+I know this is part of the debit / credit, which I still struggle to keep straight. And on a credit card, charging an item is "adding" to the balance, meaning increasing the amount you owe.
+Credit Card is a type of "liability". So in a liability account, spending is increasing the liability, hence its adding to it, so it is green. Adding money to liability reduces it, so its red.
+Credit Card is a type of "liability". So in a liability account, spending is increasing the liability, hence its adding to it, so it is green. Adding money to liability reduces it, so its red.
+@dhwaneetbhatt yes, the point is that increasing a liability should be red because it is more natural (red="bad", green="good").
+@dhwaneetbhatt yes, the point is that increasing a liability should be red because it is more natural (red="bad", green="good").
+I agree with this, the color scheme should be reversed for liabilities, it makes more sense.
+I agree with this, the color scheme should be reversed for liabilities, it makes more sense.
+Just info: In GnuCash desktop, this setting is under Edit -> Preferences -> Accounts -> Reverse Balanced Accounts
+Just info: In GnuCash desktop, this setting is under Edit -> Preferences -> Accounts -> Reverse Balanced Accounts
+I would like an option to ignore the type of account such that debit is always green and credit is always red.
+The colours now are so confusing which makes tracking money flow difficult. In accounting terms money flows from credit to debit, regardless of asset, liability / equity, revenue / expense.
+I would like an option to ignore the type of account such that debit is always green and credit is always red.
+The colours now are so confusing which makes tracking money flow difficult. In accounting terms money flows from credit to debit, regardless of asset, liability / equity, revenue / expense.

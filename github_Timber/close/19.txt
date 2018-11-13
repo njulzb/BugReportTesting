@@ -1,0 +1,18 @@
+title:Publishing on F-Droid
+
+What should be done in order to publish this on F-Droid?
+Are there any proprietary dependencies? Is it possible to build without Google Play Services, in case it is used?
+The only thing that "might" be problematic are the jcenter repositories but I can't find what needs it... And it builds fine without it, they probably aren't used anymore
+I can create the request for F-Droid if @naman14 wills it
+The only thing that "might" be problematic are the jcenter repositories but I can't find what needs it... And it builds fine without it, they probably aren't used anymore
+I can create the request for F-Droid if @naman14 wills it
+@Allsimon jcenter is used to build most of the libraries in gradle.
+You can surely try creating the request for F-Droid inclusion.
+@Allsimon jcenter is used to build most of the libraries in gradle.
+You can surely try creating the request for F-Droid inclusion.
+Doh! I mistook jcenter for sonatype. My merge request has been accepted, the app should be there in a few hours/days
+Doh! I mistook jcenter for sonatype. My merge request has been accepted, the app should be there in a few hours/days
+I think this can be closed and marked as fixed now?
+I think this can be closed and marked as fixed now?
+Yeah sure, this can be closed now
+Yeah sure, this can be closed now

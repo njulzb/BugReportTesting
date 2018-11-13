@@ -1,0 +1,22 @@
+Stretched album cover in the 4x1 widget
+BT - Playlists and crashing
+Music doesn't pause when manually turning off bluetooth
+Track order for albums with multiple discs gets mixed together
+Pressing play on a folder grabs songs from similarly named folders
+Widget doesn't retain music info after reboot/idling for a while
+No closing album animation in the artist view.
+Playlist not updated when adding duplicates
+In the "folders" tab, the breadcrumb does not work in "/ > Storage > emulated >" part
+Unknown release year when tag has been set as full date
+White/light primary color issues
+Music doesnt resume/notification gone after long call
+Can't select list item immediately after scrolling.
+Broken multiwindow UI in the now playing screen.
+Scroll position lost
+Creating a playlist from a folder in Folders view hangs the application
+Skipping songs makes Shuttle stop playing music
+Very slow loading of library
+Unnecessary space for status bar icons in multi-window mode
+"Play (album)" doesn't work as expected
+'Ghost' notification
+Bluetooth control not working after connection

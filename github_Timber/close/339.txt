@@ -1,0 +1,8 @@
+title:Visualizer is not stopping after changing music in playlists
+
+mstburak
+When click many musics to play in playlists, all musics visualizer is starting to play and not stopping until close to activity.
+I solved this problem. Can you assign this issue to me please?
+I solved this problem. Can you assign this issue to me please?
+Fixed in 9c688c0
+Fixed in 9c688c0

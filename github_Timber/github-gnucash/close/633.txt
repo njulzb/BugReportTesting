@@ -1,0 +1,6 @@
+title:App crashes when changing orientation while viewing reports
+
+Report shows in the new screen orientation.
+App crashes.
+Confirmed.
+Confirmed.

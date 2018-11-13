@@ -1,0 +1,4 @@
+title:Add BYN (Belarus rouble)
+
+New Belarus currency (after denomination).
+See Gnucash/gnucash@0e17ebd & Gnucash/gnucash#63 (PR was with mistake)

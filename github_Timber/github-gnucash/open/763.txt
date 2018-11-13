@@ -1,0 +1,71 @@
+title:QIF Import error
+
+QIF files from the beta app are still not importing into GNUCash. The app exports just fine, just as it always has, but the exported QIF file produces the error:
+"Transaction amount: Unrecognized or inconsistent format."
+This error materialized out of the blue back in October.
+Does the error message say anything about the transaction entry at which point the error occurred?
+Could you please upload a minimal QIF file with which we could reproduce this error?
+Make sure to redact it to remove any sensitive information and then you can upload the minimal file to this issue.
+Does the error message say anything about the transaction entry at which point the error occurred?
+Could you please upload a minimal QIF file with which we could reproduce this error?
+Make sure to redact it to remove any sensitive information and then you can upload the minimal file to this issue.
+No, it doesn't say anything about the transaction at which the error occurs. Let me see what I can do about producing a small QIF.
+No, it doesn't say anything about the transaction at which the error occurs. Let me see what I can do about producing a small QIF.
+Same here, but App version 2.3.0 (1/9/18), Desktop version 2.6.19. Last time I used it (1/1/18) it worked OK.
+I've tried exporting just yesterday and today and I get another error: First a window with a red mark "A bug was detected while parsing the QIF file." and the same message on the import assistant window. I had to go back to the start of the assistant in order to work. I'll see if I can locate the problematic source line.
+Found it!
+I had (verbatim):
+M
+comment
+And it should be:
+Mcomment
+So the problem is an enter when I entered the comment on the android App!
+Same here, but App version 2.3.0 (1/9/18), Desktop version 2.6.19. Last time I used it (1/1/18) it worked OK.
+I've tried exporting just yesterday and today and I get another error: First a window with a red mark "A bug was detected while parsing the QIF file." and the same message on the import assistant window. I had to go back to the start of the assistant in order to work. I'll see if I can locate the problematic source line.
+Found it!
+I had (verbatim):
+M
+comment
+And it should be:
+Mcomment
+So the problem is an enter when I entered the comment on the android App!
+Sorry for the delay in replying here. I've been traveling (hence my need for the app.
+Anyway, in my case, I'm now wondering if it's the app at all. I can't import PayPal QIF files either. Does GnuCash use a specific library for processing QIF files, and if so, could it be corrupted?
+Sorry for the delay in replying here. I've been traveling (hence my need for the app.
+Anyway, in my case, I'm now wondering if it's the app at all. I can't import PayPal QIF files either. Does GnuCash use a specific library for processing QIF files, and if so, could it be corrupted?
+Thanks for the additional info @Blackhawke and @Djago
+@Djago We should look into trimming spaces around memo comments. After making the change did it work alright for you?
+@Blackhawke It could indeed be something that changed on the desktop side. We'd have to investigate that.
+Thanks for the additional info @Blackhawke and @Djago
+@Djago We should look into trimming spaces around memo comments. After making the change did it work alright for you?
+@Blackhawke It could indeed be something that changed on the desktop side. We'd have to investigate that.
+Okay, so I reinstalled GnuCash, and it changed nothing. So I looked at the QIF file itself, compared it to an annotated example (I'm no expert on QIF, obviously), and it looks to me like this is not correct. At least, it doesn't follow description of the required order of entry that I looked at. For one thing, the "!Type:???" isn't the first line of entry, and I gather it's supposed to be the header line that identifies the "account register" to use for the subsequent entries. For another, the amount ($--2,400) has that double dash, rather than a single one.
+Those are the two things my (non)expert eye caught.
+!Account
+NAssets:Current Assets:*****
+^
+!Type:Oth A
+D2017/12/1
+PTransfer to *****
+M
+SEquity:*******
+$--2400.00
+^
+!Account
+NExpenses:*****:*******
+Anyway, I'm sure you'll see more, and I'm probably wrong anyway.
+Okay, so I reinstalled GnuCash, and it changed nothing. So I looked at the QIF file itself, compared it to an annotated example (I'm no expert on QIF, obviously), and it looks to me like this is not correct. At least, it doesn't follow description of the required order of entry that I looked at. For one thing, the "!Type:???" isn't the first line of entry, and I gather it's supposed to be the header line that identifies the "account register" to use for the subsequent entries. For another, the amount ($--2,400) has that double dash, rather than a single one.
+Those are the two things my (non)expert eye caught.
+!Account
+NAssets:Current Assets:*****
+^
+!Type:Oth A
+D2017/12/1
+PTransfer to *****
+M
+SEquity:*******
+$--2400.00
+^
+!Account
+NExpenses:*****:*******
+Anyway, I'm sure you'll see more, and I'm probably wrong anyway.

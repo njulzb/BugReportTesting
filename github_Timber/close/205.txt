@@ -1,0 +1,7 @@
+title:getListView() cannot access
+
+cannot access getListView() in android.support.v4.view.menu.ShowMenuList
+Fixed in d2b0c96
+Automatic tinting is removed for popup menus now
+Fixed in d2b0c96
+Automatic tinting is removed for popup menus now

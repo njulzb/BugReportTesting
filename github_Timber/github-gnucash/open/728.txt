@@ -1,0 +1,2 @@
+title:[unverified] Crash when viewing transaction details with >4 nested account levels
+

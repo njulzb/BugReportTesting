@@ -1,0 +1,12 @@
+title:Export always exports entire transaction list
+
+v2.0.1
+Expected: after loading ledger from desktop app, no transactions would be exported.
+After creating some new transactions, only those would be exported.
+Running two exports after another, the second export would not export anything.
+Actual result: in all cases, the list contains all transactions that the app knows about.
+Tested with settings: xml, qif, sdcard, dropbox
+Fixed in v2.0.2.
+You can now select the date and time from which to export
+Fixed in v2.0.2.
+You can now select the date and time from which to export

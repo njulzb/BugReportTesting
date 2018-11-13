@@ -1,0 +1,5 @@
+title:Music not playing on Click in folders View
+
+How to fix the issue that music files are not playing when tapping onto in folders view?
+It is working fine.
+It is working fine.

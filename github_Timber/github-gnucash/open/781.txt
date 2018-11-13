@@ -1,0 +1,7 @@
+title:Export since date exports previous dates as well
+
+PS: No I do not have scheduled export turned on. I did have it when I was beta testing months ago.
+PS 2: I do not import into Gnucash Android as per your question on this issue.
+Export only transactions dated after the "since date"
+Export includes previous dates (seems random).
+For example I tried exporting since May 10 and I got 5 random records from April. I did this  multiple times.

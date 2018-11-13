@@ -1,0 +1,8 @@
+title:Hide transfer account when in single-entry mode
+
+codinguser
+Even when double-entry accounting is disabled in the settings, every transaction mentions the counter account in the overview.
+Fixed in d871cf2 and f66163b
+This is implemented in v2.1.0 which is currently in beta
+Fixed in d871cf2 and f66163b
+This is implemented in v2.1.0 which is currently in beta

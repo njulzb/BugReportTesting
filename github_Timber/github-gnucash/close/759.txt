@@ -1,0 +1,60 @@
+title:Cannot export to non-ZIP format
+
+Export a file.
+Exports would remain unzipped and be in the file format that the users selects for the export (like .qif)
+While it may make sense for certain users that the export files be zipped to save on bandwidth, it doesn't make sense for all. In fact, most US users would rather not have to unzip the export files in order to import them into native gnucash.
+Additionally, for some exports, the ZIP file is LARGER than the unzipped one.
+At least provide the end user the option as to whether the export files are zipped or not.
+All exports are zipped and the user can't change that in the settings
+@twunder It is hard to imagine that zips for text files are larger than non-zipped files. Do you have any examples of this?
+@rivaldi8 maybe we should rethink it for the qif and upcoming csv formats. It might make sense to leave those unzipped. What do you think?
+@twunder It is hard to imagine that zips for text files are larger than non-zipped files. Do you have any examples of this?
+@rivaldi8 maybe we should rethink it for the qif and upcoming csv formats. It might make sense to leave those unzipped. What do you think?
+My lone example would be an export of a single transaction to .qif.
+Unzipped size: 187 B
+Zipped size: 402 B
+Zip files have some decompression overhead, I would suppose.
+FWIW, a "normal" export of transactions as QIF (about a week's worth of credit card transactions) was:
+Unzipped: 905 B
+Zipped: 628 B
+For me, typical file sizes for exported GnuCash app data run anywhere from 250 B to 1.5 KiB.
+I suggest leaving .qif and .csv unzipped, if it isn't practical to have the user select whether file formats exported are zipped or not.
+My lone example would be an export of a single transaction to .qif.
+Unzipped size: 187 B
+Zipped size: 402 B
+Zip files have some decompression overhead, I would suppose.
+FWIW, a "normal" export of transactions as QIF (about a week's worth of credit card transactions) was:
+Unzipped: 905 B
+Zipped: 628 B
+For me, typical file sizes for exported GnuCash app data run anywhere from 250 B to 1.5 KiB.
+I suggest leaving .qif and .csv unzipped, if it isn't practical to have the user select whether file formats exported are zipped or not.
+I would also like to be able to choose the export format.
+Zip is bad for my usecase
+I would also like to be able to choose the export format.
+Zip is bad for my usecase
+I agree with my predecessors: Zip bad for usecase.
+Usecase:
+Send target is the Nextcloud app which pushes the file to the Nextcloud server. From there I import it to GnuCash Desktop app.
+This was possible until recently without any unzipping of files. Now there is extra effort to unzip the QIF file first.
+Issue perhaps related to #714?
+I agree with my predecessors: Zip bad for usecase.
+Usecase:
+Send target is the Nextcloud app which pushes the file to the Nextcloud server. From there I import it to GnuCash Desktop app.
+This was possible until recently without any unzipping of files. Now there is extra effort to unzip the QIF file first.
+Issue perhaps related to #714?
+I export my data every week. My weekly qif-file is about 1 or 2 KB. Why i need zipped it?
+I export my data every week. My weekly qif-file is about 1 or 2 KB. Why i need zipped it?
++1 to non-ZIP...
+Also, I'm having problem with the QIF inside, I can't import it in my PC (I'm getting "Transaction amount: Unrecognized or inconsistent format".
+It was working fine and I used it a lot (actually, I had a problem last time that the Android app told me that the file was created and I believed it, deleted all records but the file was NOT created, and I lost several days... I've reported the incident).
++1 to non-ZIP...
+Also, I'm having problem with the QIF inside, I can't import it in my PC (I'm getting "Transaction amount: Unrecognized or inconsistent format".
+It was working fine and I used it a lot (actually, I had a problem last time that the Android app told me that the file was created and I believed it, deleted all records but the file was NOT created, and I lost several days... I've reported the incident).
+Fixed in develop branch (880aab7).
+Fixed in develop branch (880aab7).
+@rivaldi8 I think the file name still has the extension ".zip".
+Could we just always leave it as ".qif" and only append the ".zip" extension when the zipQif() method is called?
+@rivaldi8 I think the file name still has the extension ".zip".
+Could we just always leave it as ".qif" and only append the ".zip" extension when the zipQif() method is called?
+@codinguser I see it happens with the "Save as..." option, but I'm not sure how to deal with it. The extension is set when the user picks a file, but it's not really known until the export has been done. We could show the file picker after the export, but it still would be a problem for scheduled exports.
+@codinguser I see it happens with the "Save as..." option, but I'm not sure how to deal with it. The extension is set when the user picks a file, but it's not really known until the export has been done. We could show the file picker after the export, but it still would be a problem for scheduled exports.

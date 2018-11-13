@@ -1,0 +1,16 @@
+title:Currency marker shown in incorrect location for AUD
+
+codinguser
+The Accounts screen and widget show values as "0.00 $" but the correct formatting for Australian Dollar is "$0.00" ("$" to left, no space).
+I suspect that the display formatting is probably currency- or maybe locale-specific.  Not sure whether the following link proves that the problem is already solved for Android, but hope it helps:
+http://www.java2s.com/Code/Java/I18N/JavaI18NFormatNumberFormat.htm
+Possibly more relevant since it's an Android-specific discussion:
+http://stackoverflow.com/questions/7131922/how-to-format-a-float-value-with-the-device-currency-format
+Possibly more relevant since it's an Android-specific discussion:
+http://stackoverflow.com/questions/7131922/how-to-format-a-float-value-with-the-device-currency-format
+I'll look into improving this for future releases. It was not a priority for the first release, so did not consider locale.
+Thanks for the pointer links.
+I'll look into improving this for future releases. It was not a priority for the first release, so did not consider locale.
+Thanks for the pointer links.
+This is tricky to do since it is not just about formatting the currency according to locale (as done by NumberFormat), but the account currency can likely be different from the locale of the user. So if a user is in Europe and is using US Dollars on an account, we do not want to format it according to Euros, but rather according to Dollars. This means for every currency, checking whether the symbol is in front or behind the amount and formatting accordingly. For now, I am lowering priority of this issue. (unless of course, someone has a pull request ;)
+This is tricky to do since it is not just about formatting the currency according to locale (as done by NumberFormat), but the account currency can likely be different from the locale of the user. So if a user is in Europe and is using US Dollars on an account, we do not want to format it according to Euros, but rather according to Dollars. This means for every currency, checking whether the symbol is in front or behind the amount and formatting accordingly. For now, I am lowering priority of this issue. (unless of course, someone has a pull request ;)

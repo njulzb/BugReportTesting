@@ -1,0 +1,8 @@
+title:Timestamp 0 when never exported.
+
+A message like Never exported.
+Last exported: 1970-01-à1 01-00-00.0
+Fixed in hotfix/patches.
+By the way, I could only reproduce it by going through the first run wizard and choosing to create the account myself. Creating a new book in any other way would always set the current date as last exported.
+Fixed in hotfix/patches.
+By the way, I could only reproduce it by going through the first run wizard and choosing to create the account myself. Creating a new book in any other way would always set the current date as last exported.

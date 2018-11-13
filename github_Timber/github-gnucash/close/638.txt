@@ -1,0 +1,12 @@
+title:[UNVERIFIED] App closes on launch instead of displaying wizard
+
+codinguser
+Hello Sir/Madam,
+I installed GNUCash app on my android phone OnePlus 3T which is running on MarshMallow version today.
+When I tried to load the app, it showed me welcome message and asked me to choose how to set up my accounts, when I clicked finish button, app disappeared. I tried reinstalling the app multiple times, but each time the same issue is repeating. Kindly help. Thanks in advance.
+The app should continue through the wizard and guide user through setup.
+The app closes.   In fact once the app crashes, next time it wont even load unless I goto Settings->Apps->GnuCash->Clear Data.
+This issue occurred when the option to "let me handle it" for account creation was selected in the wizard.
+Now fixed since v2.1.5
+This issue occurred when the option to "let me handle it" for account creation was selected in the wizard.
+Now fixed since v2.1.5

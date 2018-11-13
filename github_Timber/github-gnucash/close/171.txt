@@ -1,0 +1,42 @@
+title:transactions are marked as exported although the export was not completed
+
+I started an export as qif but switched to home screen instead of selecting a location where the export should be saved.
+When I switched back to GnuCash, I had to restart the export but it was empty. So it seems that the incomplete export marked all transactions as exported.
+That is correct, the transactions are marked as exported as long as the export is generated. Thing is, the app has little control over what happens with the file when you select the location it should go. So there is no way to know for certain that you have saved the file (and then mark it as exported).
+What you could do is generate a new export and check "export all transactions".
+(I know that this will probably mean even older transactions which you had exported will be exported again.)
+That is correct, the transactions are marked as exported as long as the export is generated. Thing is, the app has little control over what happens with the file when you select the location it should go. So there is no way to know for certain that you have saved the file (and then mark it as exported).
+What you could do is generate a new export and check "export all transactions".
+(I know that this will probably mean even older transactions which you had exported will be exported again.)
+Thank you for the quick response. I see your point. I'm a little bit surprised that there is no alternative to this fire-and-forget-file-handling-approach but I don't know enough about android coding to know a solution.
+Maybe you could add some sort of dialog that says "Export successful" after the file was send and where the user has to tap an OK-button. The transactions are only marked as exported if the button is tapped.
+Thank you for the quick response. I see your point. I'm a little bit surprised that there is no alternative to this fire-and-forget-file-handling-approach but I don't know enough about android coding to know a solution.
+Maybe you could add some sort of dialog that says "Export successful" after the file was send and where the user has to tap an OK-button. The transactions are only marked as exported if the button is tapped.
+That is an interesting solution. However after the file is handed over to the external app (Dropbox etc) the dialog will immediately be shown in GnuCash.
+If the user cancels the export (e.g. in Dropbox or it gets interrupted) then the transactions are still not exported and will nonetheless be marked exported when you click "ok" in GnuCash. So this does not really solve the problem.
+I'll look of there are some system hooks to know if the other app is done.
+On 12.07.2014, at 11:10, nikopp notifications@github.com wrote:
+Thank you for the quick response. I see your point. I'm a little bit surprised that there is no alternative to this fire-and-forget-file-handling-approach but I don't know enough about android coding to know a solution.
+Maybe you could add some sort of dialog that says "Export successful" after the file was send and where the user has to tap an OK-button. The transactions are only marked as exported if the button is tapped.
+—
+Reply to this email directly or view it on GitHub.
+That is an interesting solution. However after the file is handed over to the external app (Dropbox etc) the dialog will immediately be shown in GnuCash.
+If the user cancels the export (e.g. in Dropbox or it gets interrupted) then the transactions are still not exported and will nonetheless be marked exported when you click "ok" in GnuCash. So this does not really solve the problem.
+I'll look of there are some system hooks to know if the other app is done.
+On 12.07.2014, at 11:10, nikopp notifications@github.com wrote:
+Thank you for the quick response. I see your point. I'm a little bit surprised that there is no alternative to this fire-and-forget-file-handling-approach but I don't know enough about android coding to know a solution.
+Maybe you could add some sort of dialog that says "Export successful" after the file was send and where the user has to tap an OK-button. The transactions are only marked as exported if the button is tapped.
+—
+Reply to this email directly or view it on GitHub.
+A suggestion, what about always generating the export file on SD card (if SD card exists), or save it on some internal storage area? In this way, if other App fails, at least we can still get the last export file on SD card. And maybe add an option to redo the last export, and just retrieve the saved backup export.
+A suggestion, what about always generating the export file on SD card (if SD card exists), or save it on some internal storage area? In this way, if other App fails, at least we can still get the last export file on SD card. And maybe add an option to redo the last export, and just retrieve the saved backup export.
+I like the idea of undoing the last export. If the export fails for whatever reason, the user can remove the exported-flag from the transactions to redo the export.
+I like the idea of undoing the last export. If the export fails for whatever reason, the user can remove the exported-flag from the transactions to redo the export.
+At the moment, the file is always exported to internal memory, before moved to wherever the user wants it. The thing is we cannot know when the 3rd party app has failed.
+Undo will be tricky to keep track of the transactions and mark them flagged. But adding a "redo export" flag could be possible and just reusing the saved file.
+At the moment, the file is always exported to internal memory, before moved to wherever the user wants it. The thing is we cannot know when the 3rd party app has failed.
+Undo will be tricky to keep track of the transactions and mark them flagged. But adding a "redo export" flag could be possible and just reusing the saved file.
+The "redo export" sounds promising.
+The "redo export" sounds promising.
+You can now select the date from which to export since v2.0.2
+You can now select the date from which to export since v2.0.2

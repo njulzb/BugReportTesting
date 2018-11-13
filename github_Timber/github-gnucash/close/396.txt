@@ -1,0 +1,9 @@
+title:Crash on settings page open
+
+codinguser
+Steps to reproduce:
+Expected result:
+Actual result:
+Application version: 2.0.0-beta1
+Not reproducible in 2.0.0-beta3.
+Not reproducible in 2.0.0-beta3.

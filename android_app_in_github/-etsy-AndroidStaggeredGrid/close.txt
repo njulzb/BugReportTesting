@@ -1,0 +1,11 @@
+onItemClick id is incorrect
+Fix bug that the default case on Touch event
+onItemClick will be triggered when two finger tap the screen
+NullPointerException  on make view
+Unintentional onClick event on scroll down
+can not trigger onScrollStateChanged
+OnItemClickListener not run for first position
+Calling notifyDataSetChanged refresh the grid but don't mantain the position for the first elements
+Not Honoring Padding On Initial Scroll Position
+onScrollStateChanged never get called
+Extremely High Fling Velocities Leads To Stopping

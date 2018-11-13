@@ -1,0 +1,6 @@
+title:When trying to import accounts a list of audio files is shown.
+
+I'm trying to import my gnucash desktop accounts to gnucash mobile. My android is 4.2. When I choose "Import GnuCash accounts" in "Account Preferences" menu a list of musics is shown to select. My .gnucash file isn't visible in that list.
+My cellphone is a Blu Dash Music 4.0 . Anyone has the same problem?
+Your device probably does not have any app which can supply files to GnuCash Android. See this: http://www.codinguser.com/2014/03/gnucash-android-account-import-guide/
+Your device probably does not have any app which can supply files to GnuCash Android. See this: http://www.codinguser.com/2014/03/gnucash-android-account-import-guide/

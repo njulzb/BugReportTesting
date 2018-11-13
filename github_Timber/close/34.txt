@@ -1,0 +1,24 @@
+title:On fourth now playing style, 10+ minute times are not shown correctly
+
+How to reproduce:
+Expected result: 10:00 is displayed in playing time
+Actual result: 0:00 is displayed in playing time
+Workaround: Background app and foreground it again, which causes the time to be displayed correctly
+Hmm, never tested on 10+ minute song. Looking into it
+Hmm, never tested on 10+ minute song. Looking into it
+With a 1 hour and 28 minute song, I managed to confirms something even more messed up happens at the 60 minute mark: The timer goes from 59:59 to 19:09, somehow, and stays stuck on it, only updating to 19:19/19:29/19:39, etc.?!
+The song I used to test is available from https://telepathtelepath.bandcamp.com/album/--30.
+With a 1 hour and 28 minute song, I managed to confirms something even more messed up happens at the 60 minute mark: The timer goes from 59:59 to 19:09, somehow, and stays stuck on it, only updating to 19:19/19:29/19:39, etc.?!
+The song I used to test is available from https://telepathtelepath.bandcamp.com/album/--30.
+It gets even better at the end of the song:
+It gets even better at the end of the song:
+@TheLastProject the wrapper around TimelyTextView I used is not tested for songs greater than 10 minutes.The problem is TimelyTextView only supports transitioning between single digits.(It's not a simple setText to any other number) It can animate between 4 and 5 but it can't animate between 45 to 46. So for overcoming this, I created a wrapper around it which individually animates each digits to the next respective digits. Things starts to get complicated when even a single digit is added to the numbers. So for animating 6:40 to 6:41, there's three separate but continuous transitions. As you can understand now, if we reach 4 digits and then 5 digits, things gets even more complicated. Since I didn't had any 10+minute song, so i didn't tested it properly.
+Anyways,working on it, this should be fixed soon.
+@TheLastProject the wrapper around TimelyTextView I used is not tested for songs greater than 10 minutes.The problem is TimelyTextView only supports transitioning between single digits.(It's not a simple setText to any other number) It can animate between 4 and 5 but it can't animate between 45 to 46. So for overcoming this, I created a wrapper around it which individually animates each digits to the next respective digits. Things starts to get complicated when even a single digit is added to the numbers. So for animating 6:40 to 6:41, there's three separate but continuous transitions. As you can understand now, if we reach 4 digits and then 5 digits, things gets even more complicated. Since I didn't had any 10+minute song, so i didn't tested it properly.
+Anyways,working on it, this should be fixed soon.
+Now it should work for songs upto 9 hours 59 minutes :)
+Now it should work for songs upto 9 hours 59 minutes :)
+Only 9hrs 59minutes? :( (somewhat kidding)
+Only 9hrs 59minutes? :( (somewhat kidding)
+Assuming this got into release 0.122b (I don't see that number in the commit history), it wasn't properly fixed. Put on a song, skip to 9:50 or so and wait for it to switch from 9:59 to... 0:00.
+Assuming this got into release 0.122b (I don't see that number in the commit history), it wasn't properly fixed. Put on a song, skip to 9:50 or so and wait for it to switch from 9:59 to... 0:00.

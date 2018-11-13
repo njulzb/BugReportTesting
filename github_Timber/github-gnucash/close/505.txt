@@ -1,0 +1,17 @@
+title:NullPointerException on empty value in currency-converted amount
+
+If no value is entered in the converted amount text box in the "Transfer funds" dialog, the application crashes with a NullPointerException:
+Steps to reproduce:
+Received as Crashlytics issue #205.
+I'm working on a fix.
+I'm working on a fix.
+@rivaldi8 ok, thanks.
+Please base the fix on develop. I'm trying to round up for v2.1 soon
+@rivaldi8 ok, thanks.
+Please base the fix on develop. I'm trying to round up for v2.1 soon
+Done!
+Done!
+Oh, wait! I forgot the javadoc... I'll send it later.
+Oh, wait! I forgot the javadoc... I'll send it later.
+Fixed in develop branch.
+Fixed in develop branch.

@@ -1,0 +1,12 @@
+title:Accounts totals not updated after exporting and deleting all transactions
+
+Version:
+The current develop branch 8c95f3b
+To produce:
+(pre-condition: With some transactions in the accounts tree, the totals shown on the right hand of each account are not zero at the top level accounts view.)
+At the top level accounts view, choose "export transaction", and check "export all transaction", "delete all transactions after export".
+When the export and delete of transactions are successfully done, the totals for each account remains unchanged.
+What is expected:
+When the export and delete of transactions are successfully done, the view is refreshed and every total goes to zero.
+P.S.
+I checked the exported file, the transactions are successfully exported. And when goes into sub-account view or exits and enters the program again, the totals become zero.

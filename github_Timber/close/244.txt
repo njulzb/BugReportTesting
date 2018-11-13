@@ -1,0 +1,16 @@
+title:Null Pointer Exception for Folder view
+
+ListFiles() in FolderLoader class returning null for lower versions of android like 4.4 and 5
+resulting in null pointer exception and forcing the app to close
+i solved it by replacing to
+public String getDirectoryFolder()
+{
+return mPreferences.getString(LAST_DIRECTORY_FOLDER, Environment.getExternalStorageDirectory().getPath());
+}
+in Preference Utility
+i solved it by replacing to
+public String getDirectoryFolder()
+{
+return mPreferences.getString(LAST_DIRECTORY_FOLDER, Environment.getExternalStorageDirectory().getPath());
+}
+in Preference Utility

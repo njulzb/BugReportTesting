@@ -1,0 +1,27 @@
+title:Java.lang.IllegalArgumentException: accounts Record ID -9223372036854775808 does not exist in the db
+
+Fresh install on cm-13.0-20160201-NIGHTLY-mako.zip and gnucash 2.0.5.
+I've only added one account (= completely manual setup) in EUR and am trying to add my first transaction.
+Naming of the accounts & altering the amount of money to book does not change anything.
+Exception below.
+Please let me know in case you require any help to reproduce this issue.
+Thanks,
+Raoul
+Same issue with version 2.0.4
+Same issue with version 2.0.4
+Same issue with version 2.0.2 - I am stopping "bisecting" now.
+Same issue with version 2.0.2 - I am stopping "bisecting" now.
+We are aware of this issue and know how to fix it.
+Coming soon, right @rivaldi8 ? ;)
+@raoulbhatia By the way, are you using the app in double-entry mode or single-entry mode? If you only use one account, then you have to go to the settings and disable double-entry mode. Else you need to have at least two accounts
+We are aware of this issue and know how to fix it.
+Coming soon, right @rivaldi8 ? ;)
+@raoulbhatia By the way, are you using the app in double-entry mode or single-entry mode? If you only use one account, then you have to go to the settings and disable double-entry mode. Else you need to have at least two accounts
+@codinguser i have now disabled double entry but, as you will probably know, am still seeing a crash.
+Note: I created a new account after changing the setting. Happy to test  fix for this issue.
+Raoul
+@codinguser i have now disabled double entry but, as you will probably know, am still seeing a crash.
+Note: I created a new account after changing the setting. Happy to test  fix for this issue.
+Raoul
+@raoulbhatia thanks for reporting the issue! We were trying to figure out under which conditions this was happening and your information helps a lot! I'll work on a fix for you to test as soon as possible.
+@raoulbhatia thanks for reporting the issue! We were trying to figure out under which conditions this was happening and your information helps a lot! I'll work on a fix for you to test as soon as possible.

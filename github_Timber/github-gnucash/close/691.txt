@@ -1,0 +1,8 @@
+title:Can't compile the project
+
+I'm trying to build the project from the current source tree, using the 'develop' branch. However, it is failing with the error
+I'm behind a proxy so that could be an issue. Is there a way around?
+Aha, I found it now:
+Aha, I found it now:
+Resolved by adding the proxy settings to the gradle.properties file.
+Resolved by adding the proxy settings to the gradle.properties file.

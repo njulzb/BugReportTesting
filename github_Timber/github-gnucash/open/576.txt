@@ -1,0 +1,17 @@
+title:[User email] Currency exchange keypad does not show (comma) decimal separator for some locales
+
+I created an account in the actual android app v.2.0.7, for foreign currencies. But unfortunatly I can't enter proper exchange rates. The keypad offers me only a dot, which is interpreted as indicator at the thousands.
+So when I want to enter an exchange rate of for example 0.014 it will change to 14. By this I only get ridiculous high numbers.
+My divice is a samsung galaxy s5 mini, with android 5.1.1. Actually the set up is in german.
+@codinguser Have you been able to reproduce it? In my phone (5.0) and from an emulator (5.1) the keypads both have the comma and the dot, and are interpreted correctly. Also the keypads look totally different from the one in the screenshot. Maybe the user has some non-standard keyboard installed.
+@codinguser Have you been able to reproduce it? In my phone (5.0) and from an emulator (5.1) the keypads both have the comma and the dot, and are interpreted correctly. Also the keypads look totally different from the one in the screenshot. Maybe the user has some non-standard keyboard installed.
+@rivaldi8 No I haven't, which is why there is no progress here.
+This is low priority because I guess it affects a very small subset of devices which set a special customized keyboard. The combination of this and something with the locale for the interpretation of period.
+I only ever got one user report of this, no it is low priority.
+I'm also not sure if this was fixed by the fixes you made some time back for the currency exchange.
+@rivaldi8 No I haven't, which is why there is no progress here.
+This is low priority because I guess it affects a very small subset of devices which set a special customized keyboard. The combination of this and something with the locale for the interpretation of period.
+I only ever got one user report of this, no it is low priority.
+I'm also not sure if this was fixed by the fixes you made some time back for the currency exchange.
+Ok, then as long as we don't get more complains about this It should be better to leave it as it is.
+Ok, then as long as we don't get more complains about this It should be better to leave it as it is.

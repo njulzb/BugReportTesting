@@ -1,0 +1,144 @@
+title:Easy transaction creation(feature)
+
+Hi.
+The general thing I want is easy transaction creation. For example I spent some money in the shop and I want to make a transaction that I bought some food in my mobile gnucash.
+Here I will talk about how this can be released in ui.
+Below the double-entry book-keeping is discussed.
+To do the transaction I need two things: Select two Accounts(from & to) and type a sum. In our case this will be cashes "Wallet" and "Spendings/food".
+So what I offer: I press the "new fast transaction" button(blue or red circle) and black buttons to left of the accounts appear. I press two, in order - from/to. Then the screen to type the sum and the comment appears. That's it.
+This is not the only solution. For example making the list of common transaction samples is also a way.
+So, let's discuss it?
+I don't quite understand how this suggestion is different from what is currently implemented. The plus button to the right of the account name are for entering a new transaction quickly. It immediately opens the new transaction page in the respective account.
+Also, one fast way to enter transactions especially similar transactions is to use the transaction autocomplete feature. You start typing the name and the rest of the fields are completed for you.
+Not that this feature is case-sensitive for non-latin alphabets due to the SQLITE database.
+A feature for setting a default transfer account is also planned which should make transaction entry faster.
+I don't quite understand how this suggestion is different from what is currently implemented. The plus button to the right of the account name are for entering a new transaction quickly. It immediately opens the new transaction page in the respective account.
+Also, one fast way to enter transactions especially similar transactions is to use the transaction autocomplete feature. You start typing the name and the rest of the fields are completed for you.
+Not that this feature is case-sensitive for non-latin alphabets due to the SQLITE database.
+A feature for setting a default transfer account is also planned which should make transaction entry faster.
+Well, I have two points:
+The first one is that selecting credit and debit accounts from the one list is faster than existing solution. Now there are two lists user is dealing with, they contain the same elements, but they look in a different way, situated in a different part of the screen, so it's harder to search elements there.
+My second point is that now. on opening new transaction screen there are fields I probably don't want to fill in - the description. the remark. On the center of the screen there is date & time field, that are filled automaticly most of the time and I need very rarely! Sometimes I want to skip description and remark fields, and on the existing interface I have to scroll down, which is not that convenient.
+Default transfer account feature can also be a solution, but it depends on the realization.
+Well, I have two points:
+The first one is that selecting credit and debit accounts from the one list is faster than existing solution. Now there are two lists user is dealing with, they contain the same elements, but they look in a different way, situated in a different part of the screen, so it's harder to search elements there.
+My second point is that now. on opening new transaction screen there are fields I probably don't want to fill in - the description. the remark. On the center of the screen there is date & time field, that are filled automaticly most of the time and I need very rarely! Sometimes I want to skip description and remark fields, and on the existing interface I have to scroll down, which is not that convenient.
+Default transfer account feature can also be a solution, but it depends on the realization.
+By two lists, I guess you mean accounts lists? Well, they look different
+because they are different.
+Most of those other fields you mention are not required and you can skip
+them. A transaction only needs an amount.
+So the only other thing you might want is the transfer account. if there is
+a default one, then there will be no need to scroll.
+On Mon, Jan 6, 2014 at 2:28 PM, Dronte notifications@github.com wrote:
+Well, I have two points:
+The first one is that selecting credit and debit accounts from the one
+list is faster than existing solution. Now there are two lists user is
+dealing with, they contain the same elements, but they look in a different
+way, situated in a different part of the screen, so it's harder to search
+elements there.
+My second point is that now. on opening new transaction screen there are
+fields I probably don't want to fill in - the description. the remark. On
+the center of the screen there is date & time field, that are filled
+automaticly most of the time and I need very rarely! Sometimes I want to
+skip description and remark fields, and on the existing interface I have to
+scroll down, which is not that convenient.
+Default transfer account feature can also be a solution, but it depends on
+the realization.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/130#issuecomment-31647893
+.
+By two lists, I guess you mean accounts lists? Well, they look different
+because they are different.
+Most of those other fields you mention are not required and you can skip
+them. A transaction only needs an amount.
+So the only other thing you might want is the transfer account. if there is
+a default one, then there will be no need to scroll.
+On Mon, Jan 6, 2014 at 2:28 PM, Dronte notifications@github.com wrote:
+Well, I have two points:
+The first one is that selecting credit and debit accounts from the one
+list is faster than existing solution. Now there are two lists user is
+dealing with, they contain the same elements, but they look in a different
+way, situated in a different part of the screen, so it's harder to search
+elements there.
+My second point is that now. on opening new transaction screen there are
+fields I probably don't want to fill in - the description. the remark. On
+the center of the screen there is date & time field, that are filled
+automaticly most of the time and I need very rarely! Sometimes I want to
+skip description and remark fields, and on the existing interface I have to
+scroll down, which is not that convenient.
+Default transfer account feature can also be a solution, but it depends on
+the realization.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/130#issuecomment-31647893
+.
+By to lists I mean account lists, yes. The first we see on the main screen, the second we see when we create the transaction. Why are they different?
+What I am talking about is ui convenience. I can skip them, of course, but skipping itself takes time. But it shouldn't.
+Default transfer account is n't that convenient. I may want to create transaction about buying bread and wurst with different transfer accounts, and both of the transactions I want to create fast.
+By to lists I mean account lists, yes. The first we see on the main screen, the second we see when we create the transaction. Why are they different?
+What I am talking about is ui convenience. I can skip them, of course, but skipping itself takes time. But it shouldn't.
+Default transfer account is n't that convenient. I may want to create transaction about buying bread and wurst with different transfer accounts, and both of the transactions I want to create fast.
+Wait, what? Unless I am misunderstanding you, first the main screen shows
+the list of all accounts. Then you can open an account and see its
+transactions and/or sub-accounts.
+Second there is an input field with a drop-down list of possible transfer
+accounts when creating a transaction.
+Of course they are different, some accounts are not eligible for use as
+transfer accounts (e.g. placeholder accounts). Also, you always create a
+transaction in the FROM account and then specify a TO account.
+If you have to buy bread with different transfer accounts, then you have to
+change it each time. There is no way to save time. You might want to skip
+these fields, but others use them. There is no way to dynamically determine
+per user which fields they want to fill for which transactions. And some
+others don't even use transfer accounts at all.
+On Mon, Jan 6, 2014 at 3:46 PM, Dronte notifications@github.com wrote:
+By to lists I mean account lists, yes. The first we see on the main
+screen, the second we see when we create the transaction. Why are they
+different?
+What I am talking about is ui convenience. I can skip them, of course, but
+skipping itself takes time. But it shouldn't.
+Default transfer account is n't that convenient. I may want to create
+transaction about buying bread and wurst with different transfer accounts,
+and both of the transactions I want to create fast.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/130#issuecomment-31653077
+.
+Wait, what? Unless I am misunderstanding you, first the main screen shows
+the list of all accounts. Then you can open an account and see its
+transactions and/or sub-accounts.
+Second there is an input field with a drop-down list of possible transfer
+accounts when creating a transaction.
+Of course they are different, some accounts are not eligible for use as
+transfer accounts (e.g. placeholder accounts). Also, you always create a
+transaction in the FROM account and then specify a TO account.
+If you have to buy bread with different transfer accounts, then you have to
+change it each time. There is no way to save time. You might want to skip
+these fields, but others use them. There is no way to dynamically determine
+per user which fields they want to fill for which transactions. And some
+others don't even use transfer accounts at all.
+On Mon, Jan 6, 2014 at 3:46 PM, Dronte notifications@github.com wrote:
+By to lists I mean account lists, yes. The first we see on the main
+screen, the second we see when we create the transaction. Why are they
+different?
+What I am talking about is ui convenience. I can skip them, of course, but
+skipping itself takes time. But it shouldn't.
+Default transfer account is n't that convenient. I may want to create
+transaction about buying bread and wurst with different transfer accounts,
+and both of the transactions I want to create fast.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/130#issuecomment-31653077
+.
+Yes, you understood what lists I am talking about. As they are not the same, they are pretty similar.
+My point is: It is faster to take two elements from one list than two elements from two lists.
+That's what the description in the first post is based.
+By the way I know one way, to to dynamically determine fields for transaction: geographic location. But this is offtopc.
+Yes, you understood what lists I am talking about. As they are not the same, they are pretty similar.
+My point is: It is faster to take two elements from one list than two elements from two lists.
+That's what the description in the first post is based.
+By the way I know one way, to to dynamically determine fields for transaction: geographic location. But this is offtopc.
+I disagree with @Dronte's suggestion, but somewhat agree with the scrolling part of the complaint. IMHO, it would be faster to input new transactions if the fields that we need most of the time were the first ones. They are (based on my experience):
+I rarely edit the date/time and have never used the note field. Right now both of these fields are positioned before the transfer account field, which I always use. I think the transfer account field would be faster to access if it was put right under the amount field, specially on smartphones with smaller screens where the user would have to scroll to reach it.
+I disagree with @Dronte's suggestion, but somewhat agree with the scrolling part of the complaint. IMHO, it would be faster to input new transactions if the fields that we need most of the time were the first ones. They are (based on my experience):
+I rarely edit the date/time and have never used the note field. Right now both of these fields are positioned before the transfer account field, which I always use. I think the transfer account field would be faster to access if it was put right under the amount field, specially on smartphones with smaller screens where the user would have to scroll to reach it.
+I agree that moving the transfer account up would be a good approach to increasing speed.
+I agree that moving the transfer account up would be a good approach to increasing speed.

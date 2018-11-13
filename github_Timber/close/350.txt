@@ -1,0 +1,11 @@
+title:Music plays from phone even when connected to a chromecast
+
+Hey.
+On a Pixel 2, Android 8.1, Version 1.6 of Timber, I can connect to a Chromecast (Audio), but when I then select to play music, it does play through the phone instead of being streamed to the Chromecast. Here is a screenshot showing the popup of the Chromecast dialog, which shows that no media is selected, while in the background, media is played.
+It also doesn't work to first play a song and then select to Chromecast to stream to, same issue.
+Hmm, this is weird. Your device is a chromecast audio? I haven't tested with an audio only device but api should have been the same for both normal chromecast and chromecast audio.
+Hmm, this is weird. Your device is a chromecast audio? I haven't tested with an audio only device but api should have been the same for both normal chromecast and chromecast audio.
+Yes, I wanted to use this on the chromecast audio. I also have a Google Home Mini and a normal Chromecast (the round one, but not Ultra), I just tested it with both of them, they both also connect but don't play let me play any media.
+Is there any specific format used for chromecast?
+Yes, I wanted to use this on the chromecast audio. I also have a Google Home Mini and a normal Chromecast (the round one, but not Ultra), I just tested it with both of them, they both also connect but don't play let me play any media.
+Is there any specific format used for chromecast?

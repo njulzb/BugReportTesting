@@ -1,0 +1,4 @@
+title:[Feature Request] Make "Cover Loading via Internet" optional!
+
+The cover loading via internet while playing a song or displaying an album/artist is a nice feature.
+But please add the possibility to disable this feature in the options (saving bandwidth).

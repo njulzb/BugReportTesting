@@ -1,0 +1,21 @@
+title:feature request: seekbar in notification
+
+No description provided.
+Is this possible? I haven't seen it yet in any app. Progress bar maybe be possible but I dont think seekbar can be possible(if trying to slide the seekbar, I think notification will slide instead).
+Is this possible? I haven't seen it yet in any app. Progress bar maybe be possible but I dont think seekbar can be possible(if trying to slide the seekbar, I think notification will slide instead).
+Will it be possible in the lockscreen widget then ?
+On 14 October 2015 at 13:33, Naman Dwivedi notifications@github.com wrote:
+Is this possible? I haven't seen it yet in any app. Progress bar maybe be
+possible but I dont think seekbar can be possible(if trying to slide the
+seekbar, I think notification will slide instead).
+—
+Reply to this email directly or view it on GitHub
+#60 (comment).
+Will it be possible in the lockscreen widget then ?
+On 14 October 2015 at 13:33, Naman Dwivedi notifications@github.com wrote:
+Is this possible? I haven't seen it yet in any app. Progress bar maybe be
+possible but I dont think seekbar can be possible(if trying to slide the
+seekbar, I think notification will slide instead).
+—
+Reply to this email directly or view it on GitHub
+#60 (comment).

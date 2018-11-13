@@ -1,0 +1,5 @@
+title:artists grid toggle bug
+
+The artists in grid toggle doesn't work unless the activity is recreated.
+473204f - Moved option between grid and list to menu item
+473204f - Moved option between grid and list to menu item

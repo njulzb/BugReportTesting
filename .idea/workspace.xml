@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="95673b60-1343-42ba-b837-2601b0ab8a92" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/LibarySetUp/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/LibarySetUp/final_test.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/LibarySetUp/get_sentences.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/LibarySetUp/problems.xlsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/LibarySetUp/setupLib.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/LibarySetUp/word_segment.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-Glucosio-glucosio-android/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-LawnchairLauncher-Lawnchair/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-LawnchairLauncher-Lawnchair/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-MirakelX-mirakel-android/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-MirakelX-mirakel-android/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-QMUI-QMUI_Android/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-QuantumBadger-RedReader/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-QuantumBadger-RedReader/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-bingoogolapple-BGAQRCode-Android/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-bingoogolapple-BGAQRCode-Android/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-bitcoin-wallet-bitcoin-wallet/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-cSploit-android/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-cSploit-android/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-daimajia-AndroidSwipeLayout/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-daimajia-AndroidSwipeLayout/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-etsy-AndroidStaggeredGrid/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-etsy-AndroidStaggeredGrid/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-futuresimple-android-floating-action-button/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-h6ah4i-android-advancedrecyclerview/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-h6ah4i-android-advancedrecyclerview/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-jonan-ForkHub/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-jonan-ForkHub/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-k0shk0sh-FastHub/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-k0shk0sh-FastHub/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-liaohuqiu-android-Ultra-Pull-To-Refresh/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-ligi-gobandroid/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-loopj-android-async-http/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-loopj-android-async-http/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-microg-android_packages_apps_GmsCore/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-microg-android_packages_apps_GmsCore/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-microg-android_packages_apps_UnifiedNlp/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-microg-android_packages_apps_UnifiedNlp/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-nikclayton-android-squeezer/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-surespot-android/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-surespot-android/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-timusus-Shuttle/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/-timusus-Shuttle/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/AntennaPod-AntennaPod/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/AntennaPod-AntennaPod/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/android.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/bumptech-glide/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/bumptech-glide/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/if_has_versions.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/k0shk0sh-FastHub/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/k0shk0sh-FastHub/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/nameList.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/nameList2.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/pockethub-PocketHub/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/pockethub-PocketHub/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/projectNameList.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android_app_in_github/searchList.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/github/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/github/get_issue.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/github/searchList1.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/github/search_project.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/github_Timber/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/github_Timber/github-gnucash/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/github_Timber/github-gnucash/issue&amp;Content.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/github_Timber/issue&amp;Content.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/gitlab_scratch/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/gitlab_scratch/closeIssue.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/gitlab_scratch/openIssue.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/gitlab_scratch/scratch.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mission1/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mission1/date_fetch.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/njuftp/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/njuftp/scratch.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/njuftp/torrent/60000.torrent" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/real_test/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/real_test/buglist.xlsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/real_test/final_test.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/real_test/get_sentences.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/real_test/main.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/real_test/problems.xlsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/real_test/real_bug.xlsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/real_test/real_bug_sheet.xlsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/real_test/setupLib.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/real_test/word_segment.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/BoogieMAN2K-Beem/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/BoogieMAN2K-Beem/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/BoogieMAN2K-Beem/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/BoogieMAN2K-Beem/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/BoogieMAN2K-Beem/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/BoogieMAN2K-Beem/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/BoogieMAN2K-Beem/v0.1.7rc1.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Commit451-LabCoat/2.2.4.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Commit451-LabCoat/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Commit451-LabCoat/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Commit451-LabCoat/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Commit451-LabCoat/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Commit451-LabCoat/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Commit451-LabCoat/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/DCubix-OpenMF/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/DCubix-OpenMF/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/DCubix-OpenMF/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/DCubix-OpenMF/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/DCubix-OpenMF/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/DCubix-OpenMF/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/DCubix-OpenMF/v1.0.1.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Ifsttar-NoiseCapture/0.4.2b.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Ifsttar-NoiseCapture/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Ifsttar-NoiseCapture/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Ifsttar-NoiseCapture/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Ifsttar-NoiseCapture/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Ifsttar-NoiseCapture/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/Ifsttar-NoiseCapture/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/ankidroid-Anki-Android/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/ankidroid-Anki-Android/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/ankidroid-Anki-Android/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/ankidroid-Anki-Android/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/ankidroid-Anki-Android/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/ankidroid-Anki-Android/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/ankidroid-Anki-Android/v2.7beta1.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/ankidroid-Anki-Android/v2.8.1.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/app_download.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/codinguser-gnucash-android/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/codinguser-gnucash-android/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/codinguser-gnucash-android/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/codinguser-gnucash-android/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/codinguser-gnucash-android/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/codinguser-gnucash-android/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/codinguser-gnucash-android/v2.0.5.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/codinguser-gnucash-android/v2.1.3.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/codinguser-gnucash-android/v2.1.4.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/connectbot-connectbot/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/connectbot-connectbot/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/connectbot-connectbot/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/connectbot-connectbot/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/connectbot-connectbot/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/connectbot-connectbot/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/connectbot-connectbot/v1.9.2.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/erickok-transdroid/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/erickok-transdroid/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/erickok-transdroid/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/erickok-transdroid/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/erickok-transdroid/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/erickok-transdroid/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/erickok-transdroid/v2.5.0-beta1.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/f-droid-fdroidclient/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/f-droid-fdroidclient/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/f-droid-fdroidclient/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/f-droid-fdroidclient/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/f-droid-fdroidclient/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/f-droid-fdroidclient/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/f-droid-fdroidclient/v0.103.2.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/f-droid-fdroidclient/v0.98.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/helloworld1-AnyMemo/10.10.1.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/helloworld1-AnyMemo/10.9.992.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/helloworld1-AnyMemo/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/helloworld1-AnyMemo/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/helloworld1-AnyMemo/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/helloworld1-AnyMemo/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/helloworld1-AnyMemo/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/helloworld1-AnyMemo/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/kriztan-Pix-Art-Messenger/1.17.0.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/kriztan-Pix-Art-Messenger/1.17.1.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/kriztan-Pix-Art-Messenger/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/kriztan-Pix-Art-Messenger/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/kriztan-Pix-Art-Messenger/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/kriztan-Pix-Art-Messenger/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/kriztan-Pix-Art-Messenger/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/kriztan-Pix-Art-Messenger/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/scoute-dich-K9-MailClient/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/scoute-dich-K9-MailClient/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/scoute-dich-K9-MailClient/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/scoute-dich-K9-MailClient/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/scoute-dich-K9-MailClient/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/scoute-dich-K9-MailClient/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/scoute-dich-K9-MailClient/v5.207.4.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/scratch.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/scratch_learning.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/test.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/y20k-transistor/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/y20k-transistor/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/y20k-transistor/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/y20k-transistor/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/y20k-transistor/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/y20k-transistor/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/y20k-transistor/v1.1.5.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/y20k-transistor/v1.2.3.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/yeriomin-YalpStore/0.17.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/yeriomin-YalpStore/close" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/yeriomin-YalpStore/close.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/yeriomin-YalpStore/close.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/yeriomin-YalpStore/open" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/yeriomin-YalpStore/open.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scratch_learning/yeriomin-YalpStore/open.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/lybblue.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/BugReportTesting$final_test__1_.coverage" NAME="final_test (1) Coverage Results" MODIFIED="1535383719699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/real_test" />
+    <SUITE FILE_PATH="coverage/BugReportTesting$main.coverage" NAME="main Coverage Results" MODIFIED="1535381808522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/real_test" />
+    <SUITE FILE_PATH="coverage/BugReportTesting$setupLib.coverage" NAME="setupLib Coverage Results" MODIFIED="1533746287506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LibarySetUp" />
+    <SUITE FILE_PATH="coverage/BugReportTesting$lybblue.coverage" NAME="lybblue Coverage Results" MODIFIED="1534160463718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/BugReportTesting$issue_Content__1_.coverage" NAME="issue&amp;Content (1) Coverage Results" MODIFIED="1535983931109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/github_Timber/github-gnucash" />
+    <SUITE FILE_PATH="coverage/BugReportTesting$word_segment.coverage" NAME="word_segment Coverage Results" MODIFIED="1533726620581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LibarySetUp" />
+    <SUITE FILE_PATH="coverage/BugReportTesting$get_sentences.coverage" NAME="get_sentences Coverage Results" MODIFIED="1533648347852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LibarySetUp" />
+    <SUITE FILE_PATH="coverage/BugReportTesting$final_test.coverage" NAME="final_test Coverage Results" MODIFIED="1533774798933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LibarySetUp" />
+    <SUITE FILE_PATH="coverage/BugReportTesting$issue_Content.coverage" NAME="issue&amp;Content Coverage Results" MODIFIED="1533989584811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/github_Timber" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file leaf-file-name="issue&amp;Content.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/issue&amp;Content.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1530">
+              <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="issue&amp;Content.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/github_Timber/issue&amp;Content.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="27" column="56" lean-forward="true" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mission1/date_fetch.py" />
+        <option value="$PROJECT_DIR$/LibarySetUp/get_sentences.py" />
+        <option value="$PROJECT_DIR$/LibarySetUp/word_segment.py" />
+        <option value="$PROJECT_DIR$/LibarySetUp/setupLib.py" />
+        <option value="$PROJECT_DIR$/LibarySetUp/final_test.py" />
+        <option value="$PROJECT_DIR$/test/lybblue.py" />
+        <option value="$PROJECT_DIR$/real_test/setupLib.py" />
+        <option value="$PROJECT_DIR$/real_test/get_sentences.py" />
+        <option value="$PROJECT_DIR$/real_test/main.py" />
+        <option value="$PROJECT_DIR$/real_test/final_test.py" />
+        <option value="$PROJECT_DIR$/github_Timber/github-gnucash/issue&amp;Content.py" />
+        <option value="$PROJECT_DIR$/github_Timber/issue&amp;Content.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="950" />
+    <option name="width" value="980" />
+    <option name="height" value="1030" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BugReportTesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BugReportTesting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BugReportTesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BugReportTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="github_Timber" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lzb\Desktop\github_projects\BugReportTesting\github_Timber\github-gnucash" />
+      <recent name="C:\Users\lzb\Desktop\github_projects\BugReportTesting\real_test" />
+      <recent name="C:\Users\lzb\Desktop\github_projects\BugReportTesting" />
+      <recent name="C:\Users\lzb\Desktop\github_projects\BugReportTesting\LibarySetUp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.issue&amp;Content (1)">
+    <configuration name="final_test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/real_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BugReportTesting" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/real_test/final_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="issue&amp;Content (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/github_Timber/github-gnucash" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BugReportTesting" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/github_Timber/github-gnucash/issue&amp;Content.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="issue&amp;Content" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/github_Timber" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BugReportTesting" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/github_Timber/issue&amp;Content.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="lybblue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BugReportTesting" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/lybblue.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/real_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BugReportTesting" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/real_test/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.issue&amp;Content" />
+      <item index="1" class="java.lang.String" itemvalue="Python.lybblue" />
+      <item index="2" class="java.lang.String" itemvalue="Python.main" />
+      <item index="3" class="java.lang.String" itemvalue="Python.final_test (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.issue&amp;Content (1)" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.issue&amp;Content (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.final_test (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.main" />
+        <item index="3" class="java.lang.String" itemvalue="Python.lybblue" />
+        <item index="4" class="java.lang.String" itemvalue="Python.issue&amp;Content" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95673b60-1343-42ba-b837-2601b0ab8a92" name="Default" comment="" />
+      <created>1532874518105</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532874518105</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.70734745" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30370775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988003" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.42216688" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="10" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/issue&amp;Content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/urllib3/connectionpool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36900">
+          <caret line="863" column="22" lean-forward="true" selection-start-line="863" selection-start-column="22" selection-end-line="863" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/real_test/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/real_test/get_sentences.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/real_test/setupLib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/issue&amp;Content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lybblue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/issue&amp;Content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github/get_issue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/final_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/setupLib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="26" column="129" lean-forward="false" selection-start-line="26" selection-start-column="129" selection-end-line="26" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/word_segment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="46" column="81" lean-forward="false" selection-start-line="46" selection-start-column="81" selection-end-line="46" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/final_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/setupLib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="26" column="129" lean-forward="false" selection-start-line="26" selection-start-column="129" selection-end-line="26" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/word_segment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="46" column="81" lean-forward="false" selection-start-line="46" selection-start-column="81" selection-end-line="46" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/final_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/setupLib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="26" column="129" lean-forward="false" selection-start-line="26" selection-start-column="129" selection-end-line="26" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/word_segment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="46" column="81" lean-forward="true" selection-start-line="46" selection-start-column="81" selection-end-line="46" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mission1/date_fetch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mission1/date_fetch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mission1/date_fetch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/buglist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70246">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/get_sentences.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/word_segment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="46" column="81" lean-forward="false" selection-start-line="46" selection-start-column="81" selection-end-line="46" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/setupLib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="26" column="129" lean-forward="false" selection-start-line="26" selection-start-column="129" selection-end-line="26" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LibarySetUp/final_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github/search_project.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/398.txt" />
+    <entry file="file://$PROJECT_DIR$/github/get_issue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lybblue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/real_test/get_sentences.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/real_test/setupLib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/real_test/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/real_test/word_segment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="53" column="3" lean-forward="false" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/real_test/final_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/open/793.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/open/796.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/open/776.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/close/642.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/close/641.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/close/571.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/close/544.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/close/635.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/close/693.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/close/788.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/open/792.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/open/738.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/urllib3/connectionpool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1974">
+          <caret line="863" column="22" lean-forward="false" selection-start-line="863" selection-start-column="22" selection-end-line="863" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/github-gnucash/issue&amp;Content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1530">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_Timber/issue&amp;Content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="27" column="56" lean-forward="true" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

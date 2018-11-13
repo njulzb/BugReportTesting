@@ -1,0 +1,9 @@
+title:Translate Problem (PR-BR)
+
+Hello,
+In config -> General -> Delete exported transactions or Delete transactions after export
+There is a typo in Portuguese,  The title sould be "Deletar" instead of "Delear"
+Thanks!
+Will try out this app.
+👍 Thanks
+👍 Thanks

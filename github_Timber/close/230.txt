@@ -1,0 +1,9 @@
+title:If I use this source code and redistribute the app should I release the corresponding source code also?
+
+Since this is GPL licensed should I release the source code of the application I built by modifying this source code?
+https://www.gnu.org/licenses/gpl-faq.en.html#GPLRequireSourcePostedPublic
+if you release the modified version to the public in some way, the GPL requires you to make the modified source code available to the program's users, under the GPL.
+So yeah if you release an app based on this code you must release the source code and also license it in GPL.
+https://www.gnu.org/licenses/gpl-faq.en.html#GPLRequireSourcePostedPublic
+if you release the modified version to the public in some way, the GPL requires you to make the modified source code available to the program's users, under the GPL.
+So yeah if you release an app based on this code you must release the source code and also license it in GPL.

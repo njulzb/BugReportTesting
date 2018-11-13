@@ -1,0 +1,23 @@
+title:Suggestion: support an alternative cloud “jianguoyun” for the dropbox-blocked users
+
+For Chinese users, dropbox is blocked. We desire the sync function as well, and we hope that you can support the alternative jianguoyun. jianguoyun is almost the same with dropbox, and keepass for android support it too.
+Hi @TheKiteRunning ,
+unfortunately we do not have the resources to support many individual sync solutions.
+However GnuCash desktop does work with the Android Storage Access Framework (SAF) APIs. So if your sync provider supports that, you can use it with GnuCash Android.
+Android SAF is the recommended path for file/sync providers to use. So you could encourage your provider to add support for this.
+Cheers,
+Hi @TheKiteRunning ,
+unfortunately we do not have the resources to support many individual sync solutions.
+However GnuCash desktop does work with the Android Storage Access Framework (SAF) APIs. So if your sync provider supports that, you can use it with GnuCash Android.
+Android SAF is the recommended path for file/sync providers to use. So you could encourage your provider to add support for this.
+Cheers,
+Thank you for your help
+Thank you for your help
+@codinguser I find the SAF APIs is supported by my phone, and now I can open it and add transactions  directly from my sync tool. However, though the account appears modified in gnucash android, the .gnucash file remains unchanged.
+Does not the modified imformation edited with gnucash app direcitly add into the .gnucash file?
+Looking forward to your reply.
+@codinguser I find the SAF APIs is supported by my phone, and now I can open it and add transactions  directly from my sync tool. However, though the account appears modified in gnucash android, the .gnucash file remains unchanged.
+Does not the modified imformation edited with gnucash app direcitly add into the .gnucash file?
+Looking forward to your reply.
+@TheKiteRunning No, the modified information is not directly written back to the .gnucash file. There is no "sync" in that sense. To get the information back to the .gnucash file, you would need to export from the app and then import into the desktop Gnucash.
+@TheKiteRunning No, the modified information is not directly written back to the .gnucash file. There is no "sync" in that sense. To get the information back to the .gnucash file, you would need to export from the app and then import into the desktop Gnucash.

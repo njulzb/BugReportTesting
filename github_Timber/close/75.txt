@@ -1,0 +1,16 @@
+title:[Bug] Track numbers are wrong
+
+What is happening to this guy is happening to me too:
+https://plus.google.com/111511296692653457081/posts/8yUxw652gKf
+For example, Timber shows one of my albums, which has 10 tracks (all in .mp3 format) like this:
+With the last one (10th track) being "101" instead of "100" for some reason.
+I am facing the same issue. I have done some tinkering and I think i have found the situation that causes the above problem.
+As we all know, audio files have tags associated with them. In the tags is a field called "Disc Number". This field can be used to separate tracks from one disc to another. However, this app seems to have an issue with any files having this field non empty, that is having a value.
+Temporary work around is to use a tag editor and remove any values in the tag names "Disc Number". However, this might cause issues with albums having multiple parts and the tracks get mixed up.
+However, I would encourage the developer to use this knowledge to solve the issue in the app.
+EDIT: The issue is solved with the latest update! Well done dev!
+I am facing the same issue. I have done some tinkering and I think i have found the situation that causes the above problem.
+As we all know, audio files have tags associated with them. In the tags is a field called "Disc Number". This field can be used to separate tracks from one disc to another. However, this app seems to have an issue with any files having this field non empty, that is having a value.
+Temporary work around is to use a tag editor and remove any values in the tag names "Disc Number". However, this might cause issues with albums having multiple parts and the tracks get mixed up.
+However, I would encourage the developer to use this knowledge to solve the issue in the app.
+EDIT: The issue is solved with the latest update! Well done dev!

@@ -1,0 +1,70 @@
+title:"Negative" account in pie chart
+
+Haven't read the code, but:
+When pie chart is shown, the absolute value is used. It will be an error if the sign of some accounts are different from others.
+In my account tree, under INCOME, one account only has splits whose type if different from all other accounts under INCOME. In pie chart, its absolute value is shown together with all other accounts, taking a (big) portion of the pie chart.
+E.g, under INOCOME
+subAccount1 : -10000
+subAccount2 :  20000
+subAccount3 :  30000
+subAccount1 now takes 1/6 of the pie chart.
+@aint I guess this falls in your domain ;)
+@aint I guess this falls in your domain ;)
+Hi all, I'm sorry for the delay in replying, will answer all posts today.
+So what is right solution for this issue? Should we just ignore all negative values like GnuCash Desktop?
+BTW, what about a line chart in the same situation?
+Hi all, I'm sorry for the delay in replying, will answer all posts today.
+So what is right solution for this issue? Should we just ignore all negative values like GnuCash Desktop?
+BTW, what about a line chart in the same situation?
+Currently, MPAndroidChart doesn't have proper support for negative values, so I think the best approach is to add ability to user to select: ignore negatives or use absolute values.
+Currently, MPAndroidChart doesn't have proper support for negative values, so I think the best approach is to add ability to user to select: ignore negatives or use absolute values.
+@aint is this issue fixed?
+I think we updated the version of the library in the app right?
+http://stackoverflow.com/questions/26626517/i-cannot-draw-negative-y-values-and-positive-y-values-in-one-barchart-using-mpan
+@aint is this issue fixed?
+I think we updated the version of the library in the app right?
+http://stackoverflow.com/questions/26626517/i-cannot-draw-negative-y-values-and-positive-y-values-in-one-barchart-using-mpan
+I'm so sorry. I just forgot about it.
+I'm so sorry. I just forgot about it.
+@aint It seems the barchart still shows just absolute values and the axis always starts at zero.
+Do we not need the method setStartAtZero(false)?
+Or maybe I'm missing something in how to make entries to visualize negative values in the barchart
+@aint It seems the barchart still shows just absolute values and the axis always starts at zero.
+Do we not need the method setStartAtZero(false)?
+Or maybe I'm missing something in how to make entries to visualize negative values in the barchart
+The bar chart should displays negative values by default. setStartAtZero(false) already used
+https://github.com/codinguser/gnucash-android/blob/develop/app/src/main/java/org/gnucash/android/ui/report/BarChartFragment.java#L151
+
+The bar chart should displays negative values by default. setStartAtZero(false) already used
+https://github.com/codinguser/gnucash-android/blob/develop/app/src/main/java/org/gnucash/android/ui/report/BarChartFragment.java#L151
+
+Oh alright. My bad, I missed that.
+Thanks.
+On Nov 6, 2015 18:59, "Oleksandr Tyshkovets" notifications@github.com
+wrote:
+The bar chart should displays negative values by default.
+setStartAtZero(false) already used
+https://github.com/codinguser/gnucash-android/blob/develop/app/src/main/java/org/gnucash/android/ui/report/BarChartFragment.java#L151
+[image: 2015-11-06 19 46 10]
+https://cloud.githubusercontent.com/assets/3179252/11004279/fca5f0aa-84bf-11e5-8cfb-e9034ae7d92a.png
+[image: zkxgwzpwkzdfuluvk8o8vm5sazwjapeyrjh6qlei1rw]
+https://cloud.githubusercontent.com/assets/3179252/11004282/00bd0b60-84c0-11e5-8d3c-449849b98f4e.png
+—
+Reply to this email directly or view it on GitHub
+#320 (comment)
+.
+Oh alright. My bad, I missed that.
+Thanks.
+On Nov 6, 2015 18:59, "Oleksandr Tyshkovets" notifications@github.com
+wrote:
+The bar chart should displays negative values by default.
+setStartAtZero(false) already used
+https://github.com/codinguser/gnucash-android/blob/develop/app/src/main/java/org/gnucash/android/ui/report/BarChartFragment.java#L151
+[image: 2015-11-06 19 46 10]
+https://cloud.githubusercontent.com/assets/3179252/11004279/fca5f0aa-84bf-11e5-8cfb-e9034ae7d92a.png
+[image: zkxgwzpwkzdfuluvk8o8vm5sazwjapeyrjh6qlei1rw]
+https://cloud.githubusercontent.com/assets/3179252/11004282/00bd0b60-84c0-11e5-8d3c-449849b98f4e.png
+—
+Reply to this email directly or view it on GitHub
+#320 (comment)
+.

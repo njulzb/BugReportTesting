@@ -1,0 +1,16 @@
+title:Allow the application to be installed on the external storage
+
+Right now it's not possible to move the application to the external storage (SD card). This is a problem for old phones with small internal memory.
+It should be possible to move it to the external storage.
+We will consider this. However at the moment, there will be several changes that need to be made to allow the app to go to external storage.
+The app (at least in develop branch) uses features (like service, widgets) which when present, it is recommended that it should not be installed on external storage. See here: http://developer.android.com/guide/topics/data/install-location.html
+We will consider this. However at the moment, there will be several changes that need to be made to allow the app to go to external storage.
+The app (at least in develop branch) uses features (like service, widgets) which when present, it is recommended that it should not be installed on external storage. See here: http://developer.android.com/guide/topics/data/install-location.html
+Ok, I wasn't aware of these new features problematic with external storage.
+I've checked for a solution for the service case, but it seems there isn't an easy way to solve it. There is a broadcast Intent that should be received when the external storage is remounted, but it doesn't work:
+https://code.google.com/p/android/issues/detail?id=8485
+I'm not sure it's worth complicating the code to allow this. At least in my case I can live building my own APK with the change.
+Ok, I wasn't aware of these new features problematic with external storage.
+I've checked for a solution for the service case, but it seems there isn't an easy way to solve it. There is a broadcast Intent that should be received when the external storage is remounted, but it doesn't work:
+https://code.google.com/p/android/issues/detail?id=8485
+I'm not sure it's worth complicating the code to allow this. At least in my case I can live building my own APK with the change.

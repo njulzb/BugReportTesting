@@ -1,0 +1,31 @@
+title:error
+
+android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha not found in drawable path
+me too ，I Replace the other pictures  but run In the following error :
+java.lang.ClassNotFoundException: Didn't find class "android.support.v7.widget.TintManager"
+me too ，I Replace the other pictures  but run In the following error :
+java.lang.ClassNotFoundException: Didn't find class "android.support.v7.widget.TintManager"
+I have an exam in some time, will check this after that. Probably something to do with support library. Maybe they removed this drawable in latest appcompat
+I have an exam in some time, will check this after that. Probably something to do with support library. Maybe they removed this drawable in latest appcompat
+If you have this problem, you can change the android.support.v7 dependencies version to a newer version, such as 23.2.1
+If you have this problem, you can change the android.support.v7 dependencies version to a newer version, such as 23.2.1
+Hi @lisenhei,
+Even if I change the android.support.v7 dependencies version to a newer version, such as 23.2.1,
+I am getting the below error for android:src="@drawable/ic_menu_moreoverflow_mtrl_alpha"
+No resource found that matches the given name (at 'src' with value '@drawable/ic_menu_moreoverflow_mtrl_alpha')
+Please help !!
+Cheers 👍
+Hi @lisenhei,
+Even if I change the android.support.v7 dependencies version to a newer version, such as 23.2.1,
+I am getting the below error for android:src="@drawable/ic_menu_moreoverflow_mtrl_alpha"
+No resource found that matches the given name (at 'src' with value '@drawable/ic_menu_moreoverflow_mtrl_alpha')
+Please help !!
+Cheers 👍
+Hi @RahulSDeshpande  I change the android.support.v7 dependencies version to  23.3.0, and the issue is solved.
+Hi @RahulSDeshpande  I change the android.support.v7 dependencies version to  23.3.0, and the issue is solved.
+I change the android.support.v7 dependencies version to 23.3.0, and the issue is solved too
+I change the android.support.v7 dependencies version to 23.3.0, and the issue is solved too
+android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha not found in drawable path
+error work by # android.support.v7 dependencies version # 23.3.0 or newer
+android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha not found in drawable path
+error work by # android.support.v7 dependencies version # 23.3.0 or newer

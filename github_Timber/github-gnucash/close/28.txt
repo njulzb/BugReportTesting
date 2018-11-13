@@ -1,0 +1,40 @@
+title:GNUChash cannot detect encoding in new version of OFX file  (my comment in issue #16)
+
+Hi, recently I reported incorrect encoding detection problem upon OFX import still exists (my commnent in issue #16), seems nobody noticed...
+So I repost it here:
+Hi!
+Today I've made apk from latest develop and tried export OFX and import.
+Suppose fix didn't resolve problem... GnuCash cannot understand encoding (version 2.4.11 too).
+I dug more about OFX file format and found out this:
+Old version of OFX header was a set of parameters as I wrote in previous post including "ENCODING:UTF-8",
+new version has only several required params and another syntax (that one you use):
+And parameter ENCODING="UTF-8" hasn't to be there and should be ignored by software.
+So, latest changes should be rolled back :(. Sorry.
+Idea is xml header () already has encoding information.
+Only way I can make Gnucash show correct encoding is to add old OFX version header part "ENCODING:UTF-8" in the very beginning of OFX.
+It seems problem is in Gnucash, I'll try inform developers.
+But only as walk-around is it possible add old styte header in OFX?
+As you said, this is probably something to be looked at on the GnuCash desktop side.
+But can you please explain some more what you mean by "add old OFX version header part "ENCODING:UTF-8" in the very beginning of OFX."
+Where do you add it exactly and what version of the OFX header format do you use in that case?
+As you said, this is probably something to be looked at on the GnuCash desktop side.
+But can you please explain some more what you mean by "add old OFX version header part "ENCODING:UTF-8" in the very beginning of OFX."
+Where do you add it exactly and what version of the OFX header format do you use in that case?
+But can you please explain some more what you mean by "add old OFX version header part "ENCODING:UTF-8" in the very beginning of OFX."
+Insert string "ENCODING:UTF-8" into the beginning of a file. This makes exported OFX readable for desktop GnuCash.
+Example:
+But can you please explain some more what you mean by "add old OFX version header part "ENCODING:UTF-8" in the very beginning of OFX."
+Insert string "ENCODING:UTF-8" into the beginning of a file. This makes exported OFX readable for desktop GnuCash.
+Example:
+I see. But then it becomes neither valid OFX nor XML.
+I see. But then it becomes neither valid OFX nor XML.
+I suppose you generate OFX file only for importing it in GnuCash...
+After inserting code "ENCODING:UTF-8" I can import OFX file with no problem.
+Also previous version OFX header has notation like I described in issue #16  i.e. without XML tags... not sure this will breake OFX and make it invalid.
+Why not apply workaround while GnuCash cannot correctly parse XML encoding tag?
+I suppose you generate OFX file only for importing it in GnuCash...
+After inserting code "ENCODING:UTF-8" I can import OFX file with no problem.
+Also previous version OFX header has notation like I described in issue #16  i.e. without XML tags... not sure this will breake OFX and make it invalid.
+Why not apply workaround while GnuCash cannot correctly parse XML encoding tag?
+I would rather not sacrifice the OFX conformity & validity. It seems strange because I could import the OFX files with no problem. I will test it again
+I would rather not sacrifice the OFX conformity & validity. It seems strange because I could import the OFX files with no problem. I will test it again

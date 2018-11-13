@@ -1,0 +1,5 @@
+title:Allow to Duplicate a transaction
+
+codinguser
+Please add the ability to Duplicate a transaction. Such that I can simply change the date. I often have a same trasaction, but the scheduled transactions feature is not useful for me, because these are recurring at random, irregular times, not by any schedule.
+Thank you for the app!

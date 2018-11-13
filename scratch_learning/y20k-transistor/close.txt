@@ -1,0 +1,29 @@
+I think you made a misprint)))
+App crash when adding a station
+Timer [bug]
+Cannot close player in notification drawer when stopped
+[issue] station currently playing
+Crash on fast multiple clicks on Play/Stop button
+Stream changes, when transistor comes up from recently used apps
+GUI shows multiple active livestreams
+Playback doesn't resume after being interrupted by alarm clock
+Transistor shows wrong metadata (StreamUrl instead of StreamTitle)
+Player screen says "Loading stream", when it is actually not
+Multiple streams playing simultaneously
+Back button doesn't work after tapping on Transistor notification
+Playback stops and restarts periodically
+MPD stream?
+After one start of stream app doesn't allow to change stream -> disconnect
+Bluetooth receiver metadata does not update after directly switching stations
+Problem with a pls station
+Renaming a station may overwrite another station
+Crash when adding empty link
+Transistor does not add certain m3u links
+Wrong entry is marked as playing when order changes
+Renaming Station Fails
+Back button does not work properly when choosing new icon
+Doesn't reconnect if stream failsSimultaneous playback of several radiostations
+IllegalStateException when you try to change the icon
+Unable to add somafmSimultaneous playback of several radiostations
+IllegalStateException when you try to change the icon
+Unable to add somafm

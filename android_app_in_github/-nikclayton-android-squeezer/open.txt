@@ -1,0 +1,13 @@
+Keyboard control supprot
+Can't play any song from Deezer
+GoogleMusic plugin menu items not shown
+Skipping to location in iplayer tracks restarts track
+Squeezer 1.1.1 Spotify App shows no content
+wimp plugin - search function not working
+cannot switch between players or switch them on and off in New version of squeezer
+squeezer successfully connects to lms, but media files and players fail to show up
+Can't queue/play Spotify playlist
+Apps not showing in main menu
+Squeezer enters Standby after playback of a file
+No album art when playing last.fm through squeezescrobbler
+Squeeze silently fails when trying to connect to server

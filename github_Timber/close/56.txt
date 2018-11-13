@@ -1,0 +1,11 @@
+title:Titles played in wrong order for Multi-CD albums
+
+Songs of a Multi-CD album are not played in the order they are displayed in.
+Hey naman14, is it alright if my peers and I work on this bug and #55? :)
+Hey naman14, is it alright if my peers and I work on this bug and #55? :)
+@Tangleworm Of course, that would be great!
+@Tangleworm Of course, that would be great!
+@naman14 Awesome, thanks!
+@naman14 Awesome, thanks!
+Looks fixed to me. Thank you, good work!
+Looks fixed to me. Thank you, good work!

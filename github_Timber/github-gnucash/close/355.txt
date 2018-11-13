@@ -1,0 +1,217 @@
+title:Can't Restore Backup
+
+I did a backup and the next time i opened gnucash, all of my transactions were gone and all that is showing is the original acconts chart.  I am trying to restore the  backup but keep getting the message,  "an error occurred while importing the gnucash accounts.  Multiple root accounts exist in book".
+How to remedy?
+Peter
+Thanks for the report. We're looking into this
+cc @fefe982
+Thanks for the report. We're looking into this
+cc @fefe982
+Thanks.
+Could I send you the file?
+It may be of interest that the file was one I built from scratch rather than taking the standard chart and adding accounts. I started with a simple chart of about five expenses, two credit cards and two banks (which was all I would need for my three weeks holiday).Then I added some placeholder accounts and attached the original accounts to them (had some time on my hands and wanted to play with the system to see how it all worked). Ended up with a three level hierarchy. Then I thought I should do a backup so as not to lose it all. Don't know what I did to make it all disappear.
+Of interest, I'm off on holidays again next week, this time for ten weeks and did want to use the app on the way. Wonder if I start with the standard chart and fill in my own accounts under that will I have more success. I'll certainly try backing up early in the process, so If it does happen again, I won't lose too  much.
+Peter
+Thanks.
+Could I send you the file?
+It may be of interest that the file was one I built from scratch rather than taking the standard chart and adding accounts. I started with a simple chart of about five expenses, two credit cards and two banks (which was all I would need for my three weeks holiday).Then I added some placeholder accounts and attached the original accounts to them (had some time on my hands and wanted to play with the system to see how it all worked). Ended up with a three level hierarchy. Then I thought I should do a backup so as not to lose it all. Don't know what I did to make it all disappear.
+Of interest, I'm off on holidays again next week, this time for ten weeks and did want to use the app on the way. Wonder if I start with the standard chart and fill in my own accounts under that will I have more success. I'll certainly try backing up early in the process, so If it does happen again, I won't lose too  much.
+Peter
+Yes, it would be helpful if you could send me the file.
+You can send it to gnucash.org@gmail.com
+Thanks!
+On Thu, Jul 30, 2015 at 6:04 AM, pjridge notifications@github.com wrote:
+Thanks.
+Could I send you the file?
+It may be of interest that the file was one I built from scratch rather
+than taking the standard chart and adding accounts. I started with a simple
+chart of about five expenses, two credit cards and two banks (which was all
+I would need for my three weeks holiday).Then I added some placeholder
+accounts and attached the original accounts to them (had some time on my
+hands and wanted to play with the system to see how it all worked). Ended
+up with a three level hierarchy. Then I thought I should do a backup so as
+not to lose it all. Don't know what I did to make it all disappear.
+Of interest, I'm off on holidays again next week, this time for ten weeks
+and did want to use the app on the way. Wonder if I start with the standard
+chart and fill in my own accounts under that will I have more success. I'll
+certainly try backing up early in the process, so If it does happen again,
+I won't lose too much.
+Peter
+—
+Reply to this email directly or view it on GitHub
+#355 (comment)
+.
+Yes, it would be helpful if you could send me the file.
+You can send it to gnucash.org@gmail.com
+Thanks!
+On Thu, Jul 30, 2015 at 6:04 AM, pjridge notifications@github.com wrote:
+Thanks.
+Could I send you the file?
+It may be of interest that the file was one I built from scratch rather
+than taking the standard chart and adding accounts. I started with a simple
+chart of about five expenses, two credit cards and two banks (which was all
+I would need for my three weeks holiday).Then I added some placeholder
+accounts and attached the original accounts to them (had some time on my
+hands and wanted to play with the system to see how it all worked). Ended
+up with a three level hierarchy. Then I thought I should do a backup so as
+not to lose it all. Don't know what I did to make it all disappear.
+Of interest, I'm off on holidays again next week, this time for ten weeks
+and did want to use the app on the way. Wonder if I start with the standard
+chart and fill in my own accounts under that will I have more success. I'll
+certainly try backing up early in the process, so If it does happen again,
+I won't lose too much.
+Peter
+—
+Reply to this email directly or view it on GitHub
+#355 (comment)
+.
+@codinguser Have you got the file? Would you send the file to me?
+Sorry if you have already forwarded me the file, I may have missed some emails when I went to attend a conference.
+@codinguser Have you got the file? Would you send the file to me?
+Sorry if you have already forwarded me the file, I may have missed some emails when I went to attend a conference.
+@fefe982 no, I don't have it yet.
+@pjridge if you could send us the file that would be great!
+@fefe982 no, I don't have it yet.
+@pjridge if you could send us the file that would be great!
+file attached. thanks
+----- Original Message -----
+From: Ngewi Fet
+To: codinguser/gnucash-android
+Cc: pjridge
+Sent: Tuesday, August 04, 2015 2:05 AM
+Subject: Re: [gnucash-android] Can't Restore Backup (#355)
+@fefe982 no, I don't have it yet.
+@pjridge if you could send us the file that would be great!
+—
+Reply to this email directly or view it on GitHub.
+No virus found in this message.
+Checked by AVG - www.avg.com
+Version: 2015.0.6086 / Virus Database: 4392/10361 - Release Date: 08/02/15
+file attached. thanks
+----- Original Message -----
+From: Ngewi Fet
+To: codinguser/gnucash-android
+Cc: pjridge
+Sent: Tuesday, August 04, 2015 2:05 AM
+Subject: Re: [gnucash-android] Can't Restore Backup (#355)
+@fefe982 no, I don't have it yet.
+@pjridge if you could send us the file that would be great!
+—
+Reply to this email directly or view it on GitHub.
+No virus found in this message.
+Checked by AVG - www.avg.com
+Version: 2015.0.6086 / Virus Database: 4392/10361 - Release Date: 08/02/15
+----- Original Message -----
+From: Yongxin Wang
+To: codinguser/gnucash-android
+Cc: pjridge
+Sent: Tuesday, August 04, 2015 12:28 AM
+Subject: Re: [gnucash-android] Can't Restore Backup (#355)
+@codinguser Have you got the file? Would you send the file to me?
+Sorry if you have already forwarded me the file, I may have missed some emails when I went to attend a conference.
+—
+Reply to this email directly or view it on GitHub.
+No virus found in this message.
+Checked by AVG - www.avg.com
+Version: 2015.0.6086 / Virus Database: 4392/10361 - Release Date: 08/02/15
+----- Original Message -----
+From: Yongxin Wang
+To: codinguser/gnucash-android
+Cc: pjridge
+Sent: Tuesday, August 04, 2015 12:28 AM
+Subject: Re: [gnucash-android] Can't Restore Backup (#355)
+@codinguser Have you got the file? Would you send the file to me?
+Sorry if you have already forwarded me the file, I may have missed some emails when I went to attend a conference.
+—
+Reply to this email directly or view it on GitHub.
+No virus found in this message.
+Checked by AVG - www.avg.com
+Version: 2015.0.6086 / Virus Database: 4392/10361 - Release Date: 08/02/15
+@pjridge it seems you cannot attach files (only pics) on GitHub. Please try sending via email to gnucash.org@gmail.com
+@pjridge it seems you cannot attach files (only pics) on GitHub. Please try sending via email to gnucash.org@gmail.com
+@pjridge do you still experience this issue?
+@pjridge do you still experience this issue?
+Hi, Ngewi. Funny thing is that, although I was using GNUCash while I was travelling 4 Aug to 10 Oct, I wasn't game to back up in case I had the same problem as last time (ie June). I seem to remember seeing some sort of auto backups anyway.
+I just tried a backup and restore just now and it worked fine. I must say, however, that this time I was using a stock standard file structure, not a structure that I had mucked around with as much as I did when the problem arose last time.
+Give me a few days. I will do some adjustments to the structure, then back up and see if it will restore.
+Peter
+Hi, Ngewi. Funny thing is that, although I was using GNUCash while I was travelling 4 Aug to 10 Oct, I wasn't game to back up in case I had the same problem as last time (ie June). I seem to remember seeing some sort of auto backups anyway.
+I just tried a backup and restore just now and it worked fine. I must say, however, that this time I was using a stock standard file structure, not a structure that I had mucked around with as much as I did when the problem arose last time.
+Give me a few days. I will do some adjustments to the structure, then back up and see if it will restore.
+Peter
+After a few more tries with a couple of files, it all seems to work fine. Thanks.
+After a few more tries with a couple of files, it all seems to work fine. Thanks.
+i have the same problem... anyone can help me to recover my data?
+i have the same problem... anyone can help me to recover my data?
+@maksue sorry about this issue. We are still trying to identify what causes it so as to fix it.
+If you like, you can send me your file to gnucash.org@gmail.com and I can try to modify it for you so that it can be restored.
+@maksue sorry about this issue. We are still trying to identify what causes it so as to fix it.
+If you like, you can send me your file to gnucash.org@gmail.com and I can try to modify it for you so that it can be restored.
+Hi Ngewi....
+Thank you for your respond. Herewith the backup file.... really appriacte
+if you can get back my data.
+Thanks again.
+On 21 Jul 2016 22:37, "Ngewi Fet" notifications@github.com wrote:
+@maksue https://github.com/maksue sorry about this issue. We are still
+trying to identify what causes it so as to fix it.
+If you like, you can send me your file to gnucash.org@gmail.com and I can
+try to modify it for you so that it can be restored.
+—
+You are receiving this because you were mentioned.
+Reply to this email directly, view it on GitHub
+#355 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AIXCaE10LltlNerHHQPUlhj96DtThm3Oks5qX4QwgaJpZM4FfnF_
+.
+Hi Ngewi....
+Thank you for your respond. Herewith the backup file.... really appriacte
+if you can get back my data.
+Thanks again.
+On 21 Jul 2016 22:37, "Ngewi Fet" notifications@github.com wrote:
+@maksue https://github.com/maksue sorry about this issue. We are still
+trying to identify what causes it so as to fix it.
+If you like, you can send me your file to gnucash.org@gmail.com and I can
+try to modify it for you so that it can be restored.
+—
+You are receiving this because you were mentioned.
+Reply to this email directly, view it on GitHub
+#355 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AIXCaE10LltlNerHHQPUlhj96DtThm3Oks5qX4QwgaJpZM4FfnF_
+.
+@maksue it seems you forgot to send the file.
+Send it to the email I gave, instead of using the reply button which will instead post a new comment.
+@maksue it seems you forgot to send the file.
+Send it to the email I gave, instead of using the reply button which will instead post a new comment.
+Sorry... already resend the email 👍
+Sorry... already resend the email 👍
+The file is in OFX format. GnuCash Android can only restore backups from
+XML.
+You can try to import the OFX file in GnuCash desktop, and then save again
+as .gnucash file (which is in XML).
+Then you can import the .gnucash file into GnuCash Android.
+On Tue, Jul 26, 2016 at 3:19 AM, Maksue Jannah notifications@github.com
+wrote:
+Sorry... already resend the email 👍
+—
+You are receiving this because you modified the open/close state.
+Reply to this email directly, view it on GitHub
+#355 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AAQ42wSbHJ_zvNyAlOinr4IEgPKF63Xeks5qZWCvgaJpZM4FfnF_
+.
+The file is in OFX format. GnuCash Android can only restore backups from
+XML.
+You can try to import the OFX file in GnuCash desktop, and then save again
+as .gnucash file (which is in XML).
+Then you can import the .gnucash file into GnuCash Android.
+On Tue, Jul 26, 2016 at 3:19 AM, Maksue Jannah notifications@github.com
+wrote:
+Sorry... already resend the email 👍
+—
+You are receiving this because you modified the open/close state.
+Reply to this email directly, view it on GitHub
+#355 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AAQ42wSbHJ_zvNyAlOinr4IEgPKF63Xeks5qZWCvgaJpZM4FfnF_
+.

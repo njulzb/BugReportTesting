@@ -1,0 +1,11 @@
+title:App close
+
+Hello Naman,
+I am too android developer like to test apps.
+If you scroll songs very fast, then while scrolling songs gets override one above another while displaying.
+If you are playing songs and then removes app from notification bar, it gets removed, this should not happen and then again if you play song then blank space is showed in notification bar.
+Please find screenshots.
+There should be option of repeat one song also.
+
+
+

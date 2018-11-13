@@ -1,0 +1,4 @@
+title:Date of transaction in list as "2 days ago" is annoying, please show real date
+
+codinguser
+Since 2.0 or so, the date of transactions in the transaction list in an account is shown as a date in words, such as "yesterday", "3 days ago" or such. This is annoying, especially the "3 days ago" form. If I want to check whether I have made some specific expense on some day of the past, I have to look at my calendar anyway and to remember, "huh, did I record that coffee I bought on Monday?". But I don't know whether Monday is 3 or 4 or 5 days ago. Hence, I would very much prefer to see the normal date again. Maybe "today" and "yesterday" are the two exceptions where the word makes some sense, but then again, maybe only "today" is sufficient and everything else is better viewed with the normal date for. Then again, I'd say I would like to switch to "date always" anyway.

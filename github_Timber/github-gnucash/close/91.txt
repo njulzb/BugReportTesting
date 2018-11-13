@@ -1,0 +1,7 @@
+title:Duplicate transaction
+
+Please implemente a way to duplicate transactions.
+This feature is a priority for the next release and has been requested in #45
+Stay tuned, coming soon.
+This feature is a priority for the next release and has been requested in #45
+Stay tuned, coming soon.

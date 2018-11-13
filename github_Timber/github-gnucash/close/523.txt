@@ -1,0 +1,53 @@
+title:file default_accounts.gnucash
+
+hi,
+I new and have a question... for serving the file default_accounts.gnucash  of raw folder
+Thanks in advance :)
+I'm sorry, I do not quite understand what your question is?
+I'm sorry, I do not quite understand what your question is?
+sorry for not making me understand,
+what's it for file default_accounts.gnucash located in the folder raw of app
+Thanks
+sorry for not making me understand,
+what's it for file default_accounts.gnucash located in the folder raw of app
+Thanks
+This file contains the default accounts which are loaded into the database
+if the user requests it.
+The user can ask for default accounts immediately after installing the app,
+or anytime from Settings->Accounts
+There are many such files for the different locales (languages) supported
+by the app. These files are the same used by GnuCash desktop.
+On Thu, Jul 21, 2016 at 5:13 PM, Juan Diego Silva notifications@github.com
+wrote:
+sorry for not making me understand,
+what's it for file default_accounts.gnucash located in the folder raw
+of app
+Thanks
+—
+You are receiving this because you commented.
+Reply to this email directly, view it on GitHub
+#523 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AAQ42_0doUHaYUgHTdsf0m4Yw58gDYIhks5qX4x-gaJpZM4JRQh-
+.
+This file contains the default accounts which are loaded into the database
+if the user requests it.
+The user can ask for default accounts immediately after installing the app,
+or anytime from Settings->Accounts
+There are many such files for the different locales (languages) supported
+by the app. These files are the same used by GnuCash desktop.
+On Thu, Jul 21, 2016 at 5:13 PM, Juan Diego Silva notifications@github.com
+wrote:
+sorry for not making me understand,
+what's it for file default_accounts.gnucash located in the folder raw
+of app
+Thanks
+—
+You are receiving this because you commented.
+Reply to this email directly, view it on GitHub
+#523 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AAQ42_0doUHaYUgHTdsf0m4Yw58gDYIhks5qX4x-gaJpZM4JRQh-
+.
+Thanks  codinguser
+Thanks  codinguser

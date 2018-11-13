@@ -1,0 +1,12 @@
+title:Bitcoin currency support
+
+rivaldi8
+Please add support for the Bitcoin currency. It does not have an official ISO 4217 currency code yet, but XBT is commonly used.
+For inspiration: there's a patch I use to do it for GnuCash desktop.
+It doesn't add the maximum precision allowed by Bitcoin, but works well enough in practice.
+For inspiration: there's a patch I use to do it for GnuCash desktop.
+It doesn't add the maximum precision allowed by Bitcoin, but works well enough in practice.
+@chrisberkhout Thanks for the patch! However, simply adding the currency won't be enough. There's still the problem reported in #635, to be solved by finishing the migration from Currency to Commodity.
+@chrisberkhout Thanks for the patch! However, simply adding the currency won't be enough. There's still the problem reported in #635, to be solved by finishing the migration from Currency to Commodity.
+Fixed in develop (947cd7d).
+Fixed in develop (947cd7d).

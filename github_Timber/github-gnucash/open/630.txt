@@ -1,0 +1,15 @@
+title:Cannot perform operation on Money instances with different currencies
+
+The new gnucash data imports as expected.
+The import fails with "Cannot perform operation on Money instances with different currencies." If I delete app data and import the same file, it works as expected.
+I would like to provide more information but don't know how to do so without sending my private financial data. Is there a straight-forward way to identify the offending transaction during the import? Is there a log/debugging file?
+Do you have multiple currencies in your books? What are they?
+It might not be a conflict with your transactions but with the way the import is handled in the app. You said it is the same (only updated) book, so the root account might be the same.
+We'll have to take a look into the import again. If we need further info, we'll let you know.
+Thanks for reporting this!
+Do you have multiple currencies in your books? What are they?
+It might not be a conflict with your transactions but with the way the import is handled in the app. You said it is the same (only updated) book, so the root account might be the same.
+We'll have to take a look into the import again. If we need further info, we'll let you know.
+Thanks for reporting this!
+I use EUR and USD in my books. Here's what's interesting: If I delete the application data in android settings before the import and I set the default currency to EUR, the import works exactly once. But every subsequent import of the same book fails. If I don't clear the data (or am not on a fresh installation), the import always fails. If I leave the default currency of the app set to USD, the import also always fails.
+I use EUR and USD in my books. Here's what's interesting: If I delete the application data in android settings before the import and I set the default currency to EUR, the import works exactly once. But every subsequent import of the same book fails. If I don't clear the data (or am not on a fresh installation), the import always fails. If I leave the default currency of the app set to USD, the import also always fails.

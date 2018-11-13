@@ -1,0 +1,7 @@
+Maps API v2 Animation
+Crashed when clicking Self-check,Google Cloud Messaging,and all the colmn(with logcat)
+Uber map zooms from top-left corner
+RainAlarm App by mdiener shows distorted gmap after screen rotate
+Severe Weather App - map tile click and default centered location problem
+Location Sharing and Google+ Crashes
+Reduce wakelock usage of heartbeat

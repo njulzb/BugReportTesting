@@ -1,0 +1,10 @@
+title:Latest update won't let us pick the file to open
+
+When hitting "open", be asked what app to use for selecting the file.  Used "Amaze" to allow choosing files from any folder.
+A crippled menu appears that only allows picking files from drive or downloads.
+This is a change in functionality which should be documented better, sorry.
+The Open menu only allows access to files which are reachable through the Storage Access Framework.
+In order to access all kinds as before, go through Settings --> Accounts --> Import GnuCash XML
+This is a change in functionality which should be documented better, sorry.
+The Open menu only allows access to files which are reachable through the Storage Access Framework.
+In order to access all kinds as before, go through Settings --> Accounts --> Import GnuCash XML

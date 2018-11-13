@@ -1,0 +1,159 @@
+title:New transaction is not saved correctly (sign issue)
+
+rivaldi8
+The amount has been substracted.
+The amount has been added.
+Funfact: It seems to work correct when hitting "split" after step 3. and then hitting "save" twice
+It occurred with the last update on google-play a few days ago. No issues in previous version.
+@cmburg In step 2, is the switch next to the amount in green, with the text Deposit, and it changes to red Withdrawal when you start typing the amount?
+Have you changed the setting Default Transaction Type in Settings > Transactions? What's its value?
+When you say:
+It seems to work correct when hitting "split" after step 4. and then hitting "save" twice
+Do you really mean before step 4? Or you mean you edit the transaction again and hit split?
+It's strange because in my tests I always see the same behaviour: transactions entered from a bank account increase the account's balance by default. I've gone back until 2.1.6 and the behaviour is the same. It doesn't seem to have changed in a long time, so I don't know why it has changed for you (and you're not the only one :).
+@cmburg In step 2, is the switch next to the amount in green, with the text Deposit, and it changes to red Withdrawal when you start typing the amount?
+Have you changed the setting Default Transaction Type in Settings > Transactions? What's its value?
+When you say:
+It seems to work correct when hitting "split" after step 4. and then hitting "save" twice
+Do you really mean before step 4? Or you mean you edit the transaction again and hit split?
+It's strange because in my tests I always see the same behaviour: transactions entered from a bank account increase the account's balance by default. I've gone back until 2.1.6 and the behaviour is the same. It doesn't seem to have changed in a long time, so I don't know why it has changed for you (and you're not the only one :).
+Hi, I've been having this problem too. I use a Xiaomi Mi Max. The switch does not change when I am typing the amount, the transactions I enter increase account balance regardless of whether it is a receive/spend transaction. This issue seems to have cropped up with the last update, at least for me.
+Hi, I've been having this problem too. I use a Xiaomi Mi Max. The switch does not change when I am typing the amount, the transactions I enter increase account balance regardless of whether it is a receive/spend transaction. This issue seems to have cropped up with the last update, at least for me.
+As for settings, my default transaction type is Debit, when I changed it to Credit and did a spend transaction it deducts from account balance as expected. Is that the solution? What changed?
+As for settings, my default transaction type is Debit, when I changed it to Credit and did a spend transaction it deducts from account balance as expected. Is that the solution? What changed?
+@cmburg @nicolelexo we are trying to locate the problem and fix it. The first step is to replicate the problem, which I haven't managed to do so far. It would be great if you could provide us the following info:
+@cmburg @nicolelexo we are trying to locate the problem and fix it. The first step is to replicate the problem, which I haven't managed to do so far. It would be great if you could provide us the following info:
+@codinguser I invite you to also see my report/details in #726
+@codinguser I invite you to also see my report/details in #726
+@mutedbytes I saw your post, I followed the steps as best as I understood them and could not reproduce the problem.
+I created a transaction in a new ASSET account, with the "Decrease" transaction type. The transfer account is EXPENSE. This added a negative sign to the amount value and shows it in red. When I save it, the balance of the account decreases as expected.  I've tried switching the default transaction type, but no unexpected effect was observed.
+@rivaldi8 As I am using a new installation of the app, I have a feeling that this issue depends on some pre-existing transactions in the account. So we have to figure out what all those affected by this have in common.
+@mutedbytes I saw your post, I followed the steps as best as I understood them and could not reproduce the problem.
+I created a transaction in a new ASSET account, with the "Decrease" transaction type. The transfer account is EXPENSE. This added a negative sign to the amount value and shows it in red. When I save it, the balance of the account decreases as expected.  I've tried switching the default transaction type, but no unexpected effect was observed.
+@rivaldi8 As I am using a new installation of the app, I have a feeling that this issue depends on some pre-existing transactions in the account. So we have to figure out what all those affected by this have in common.
+@rivaldi8
+In step 2, is the switch next to the amount in green, with the text Deposit, and it changes to red Withdrawal when you start typing the amount?
+At first both the number and the text is green and changes red when hitting withdrawal.
+Have you changed the setting Default Transaction Type in Settings > Transactions?
+No.
+What's its value?
+It's in German 'Haben' but it's 'credit' in English. When I hit the button to change its value both radio buttons are empty/ not set.
+Do you really mean before step 4?
+Yes, my fault. I meant after 3 / before 4.
+Or you mean you edit the transaction again and hit split?
+Tapping 'edit', split, save twice corrects the wrong transaction.
+@codinguser
+Are you using double-entry accounting? (Settings --> Transactions --> Activate Double Entry)
+Yes.
+What are the types of the accounts you are using when you see the issue (I am not able to reproduce it with BANK and EXPENSE type accounts as described by @cmburg )
+A quick test with two accounts (asset/ bank) reproduces it.
+Does it happen when creating new transactions or when editing old ones?
+Both.
+Does the problem occur when you use the split editor to edit the splits?
+No.
+Do you have any issues with the account balances of existing accounts with old transactions?
+Unsure since I deleted all and entered them again.
+Do you regularly import from /export to GnuCash desktop?
+No. I only export.
+@rivaldi8
+In step 2, is the switch next to the amount in green, with the text Deposit, and it changes to red Withdrawal when you start typing the amount?
+At first both the number and the text is green and changes red when hitting withdrawal.
+Have you changed the setting Default Transaction Type in Settings > Transactions?
+No.
+What's its value?
+It's in German 'Haben' but it's 'credit' in English. When I hit the button to change its value both radio buttons are empty/ not set.
+Do you really mean before step 4?
+Yes, my fault. I meant after 3 / before 4.
+Or you mean you edit the transaction again and hit split?
+Tapping 'edit', split, save twice corrects the wrong transaction.
+@codinguser
+Are you using double-entry accounting? (Settings --> Transactions --> Activate Double Entry)
+Yes.
+What are the types of the accounts you are using when you see the issue (I am not able to reproduce it with BANK and EXPENSE type accounts as described by @cmburg )
+A quick test with two accounts (asset/ bank) reproduces it.
+Does it happen when creating new transactions or when editing old ones?
+Both.
+Does the problem occur when you use the split editor to edit the splits?
+No.
+Do you have any issues with the account balances of existing accounts with old transactions?
+Unsure since I deleted all and entered them again.
+Do you regularly import from /export to GnuCash desktop?
+No. I only export.
+@rivaldi8 As I am using a new installation of the app, I have a feeling that this issue depends on some pre-existing transactions in the account. So we have to figure out what all those affected by this have in common.
+@codinguser Yes, I also thought I could depend on previous data, so I spent some time testing. Install a 2.2.0 version (pre-2353957), add some transactions, update to 2.2.1, add some transactions again and compare the results.
+In the UI I always get the bank account balance increased. In the database all seems correct in the splits table. All amounts are positive and with the correct type (debit/credit).
+I get the same following @mutedbytes's steps. No difference changing the default transaction type.
+@rivaldi8 As I am using a new installation of the app, I have a feeling that this issue depends on some pre-existing transactions in the account. So we have to figure out what all those affected by this have in common.
+@codinguser Yes, I also thought I could depend on previous data, so I spent some time testing. Install a 2.2.0 version (pre-2353957), add some transactions, update to 2.2.1, add some transactions again and compare the results.
+In the UI I always get the bank account balance increased. In the database all seems correct in the splits table. All amounts are positive and with the correct type (debit/credit).
+I get the same following @mutedbytes's steps. No difference changing the default transaction type.
+@codinguser
+Are you using double-entry accounting? (Settings --> Transactions --> Activate Double Entry)
+Yes I am, I changed to Default --> Credit and it seems to have resolved itself, unless I key in old transactions (predictive) then it reverts to the same double negative problem.
+What are the types of the accounts you are using when you see the issue (I am not able to reproduce it with BANK and EXPENSE type accounts as described by @cmburg )
+I am using an Asset account I named Cash In Wallet and an Expense account Dining, I have not noticed any problems with other account types as I haven't really been spending on things other than food. Post switch from Debit to Credit default (see previous question) there has been no problem with a Liability Credit Card/Expense Petrol charge transaction.
+Does it happen when creating new transactions or when editing old ones?
+It happened when creating new transactions in Debit default mode, after switching the Credit default mode and trying to create a copy of an old pre switch transaction (predictive input feature) it also happens.
+Does the problem occur when you use the split editor to edit the splits?
+Haven't had the chance to use this as I don't usually split my transactions.
+Do you have any issues with the account balances of existing accounts with old transactions?
+Nope, only transactions after the most recent update.
+Do you regularly import from /export to GnuCash desktop?
+I used to, but now no.
+@codinguser
+Are you using double-entry accounting? (Settings --> Transactions --> Activate Double Entry)
+Yes I am, I changed to Default --> Credit and it seems to have resolved itself, unless I key in old transactions (predictive) then it reverts to the same double negative problem.
+What are the types of the accounts you are using when you see the issue (I am not able to reproduce it with BANK and EXPENSE type accounts as described by @cmburg )
+I am using an Asset account I named Cash In Wallet and an Expense account Dining, I have not noticed any problems with other account types as I haven't really been spending on things other than food. Post switch from Debit to Credit default (see previous question) there has been no problem with a Liability Credit Card/Expense Petrol charge transaction.
+Does it happen when creating new transactions or when editing old ones?
+It happened when creating new transactions in Debit default mode, after switching the Credit default mode and trying to create a copy of an old pre switch transaction (predictive input feature) it also happens.
+Does the problem occur when you use the split editor to edit the splits?
+Haven't had the chance to use this as I don't usually split my transactions.
+Do you have any issues with the account balances of existing accounts with old transactions?
+Nope, only transactions after the most recent update.
+Do you regularly import from /export to GnuCash desktop?
+I used to, but now no.
+@codinguser Specifically, I see the bug occur when editing one of these transactions.
+@codinguser Specifically, I see the bug occur when editing one of these transactions.
+Same problem here. It starts happening like four weeks ago in my device. At least then I realized my account balance was wrong.
+Splitting the transaction, switching twice the direction and saving fixes the problem.
+It affects the same way with new transactions and editing old ones.
+Same problem here. It starts happening like four weeks ago in my device. At least then I realized my account balance was wrong.
+Splitting the transaction, switching twice the direction and saving fixes the problem.
+It affects the same way with new transactions and editing old ones.
+I still haven't been able to reproduce the issue, nor have I found what might be the cause. It would help if you could answer these questions. Thanks!
+I still haven't been able to reproduce the issue, nor have I found what might be the cause. It would help if you could answer these questions. Thanks!
+Can you reproduce the issue from a new book (menu button > books drop-down > Manage books... > "+" button)? If you can, please, export it to XML and attach it here.
+No.
+What language are you using in your device?
+German
+What's the main currency you are using in GnuCash? Do you use other currencies?
+Just euro
+Can you reproduce the issue from a new book (menu button > books drop-down > Manage books... > "+" button)? If you can, please, export it to XML and attach it here.
+No.
+What language are you using in your device?
+German
+What's the main currency you are using in GnuCash? Do you use other currencies?
+Just euro
+I've done all kinds of tests with no luck reproducing the issue, which makes it quite hard to find the cause. I've also spent some time reviewing all code paths I could think of and all related changes since the last version, but I couldn't find anything wrong.
+So, before I give you some APKs to test, I'd like you to do a last test to discard a possible UI refresh issue:
+If this doesn't make any difference, try killing the application and opening it again. To do so, press the Android square button to show all your opened applications, then press the cross (x) in GnuCash.
+Thanks for your help!
+I've done all kinds of tests with no luck reproducing the issue, which makes it quite hard to find the cause. I've also spent some time reviewing all code paths I could think of and all related changes since the last version, but I couldn't find anything wrong.
+So, before I give you some APKs to test, I'd like you to do a last test to discard a possible UI refresh issue:
+If this doesn't make any difference, try killing the application and opening it again. To do so, press the Android square button to show all your opened applications, then press the cross (x) in GnuCash.
+Thanks for your help!
+I tried changing the account name but it does not fix the wrong balance. The only way, as said before is splitting and switching the transaction type twice.
+I tried changing the account name but it does not fix the wrong balance. The only way, as said before is splitting and switching the transaction type twice.
+Sorry, big mistake from my part. Finally I could spend some calm time looking into it. Then I noticed that the branch from were I was testing included commits that weren't in master, as I had assumed. These commits fixed the problem.
+It seems the issue was introduced in 957ae86. 4c7c241 fixes it but, as they are related, I would also include f490f9f and 07a1470. @codinguser could you please verify it and cherry-pick the commits?
+Sorry, big mistake from my part. Finally I could spend some calm time looking into it. Then I noticed that the branch from were I was testing included commits that weren't in master, as I had assumed. These commits fixed the problem.
+It seems the issue was introduced in 957ae86. 4c7c241 fixes it but, as they are related, I would also include f490f9f and 07a1470. @codinguser could you please verify it and cherry-pick the commits?
+My cash account balance was messed up and I didn't know which transaction caused it.
+I removed all '-' signs from the withdrawals (in the edit transaction screen).
+Now the account balance is OK again.
+Waiting for a new release...
+My cash account balance was messed up and I didn't know which transaction caused it.
+I removed all '-' signs from the withdrawals (in the edit transaction screen).
+Now the account balance is OK again.
+Waiting for a new release...

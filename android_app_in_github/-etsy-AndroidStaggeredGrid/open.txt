@@ -1,0 +1,6 @@
+setColumnCount() problem
+Grid incorrectly overscroll's beyond last item
+ArrayIndexOutOfBoundsException
+SetEmptyView doesn't work properly
+NullPointerException ListAdapter.getCount();
+Strange behaviour when an item cell in a column is taller than screen height

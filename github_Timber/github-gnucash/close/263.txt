@@ -1,0 +1,14 @@
+title:Crash when enabling and setting passcode permanently locks user out.
+
+I installed from the play store on 4.4.2.
+I can repeat the bug following these steps.
+If I instead go back to settings after step 7 and try to set the passcode again, the same thing happens.
+I am currently just not using a passcode and everything is working, but I would like to be able to use that feature.
+@aint Could you look into this?
+@aint Could you look into this?
+Sorry but I cannot reproduce this issue.
+Sorry but I cannot reproduce this issue.
+@jordonbiondo do you still experience this on latest versions?
+@jordonbiondo do you still experience this on latest versions?
+Sorry I don't have an android device any more to test it.
+Sorry I don't have an android device any more to test it.

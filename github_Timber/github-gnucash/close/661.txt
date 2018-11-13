@@ -1,0 +1,27 @@
+title:Eliminate need for SD_CARD permission
+
+codinguser
+I assume you meant the expected/actual behaviours to be the other way round. So it's just make it stop asking for the permissions from the wizard and when the AccountsActivity is started, isn't it?
+I assume you meant the expected/actual behaviours to be the other way round. So it's just make it stop asking for the permissions from the wizard and when the AccountsActivity is started, isn't it?
+Well, it also asks when the export form is opened. I guess we should be asking only when the user presses Export and has selected an export target that needs to write to the SD card.
+Well, it also asks when the export form is opened. I guess we should be asking only when the user presses Export and has selected an export target that needs to write to the SD card.
+I've just remembered you were working in the export package. I don't think you are changing ExportFormFragment much or anything at all, but I'll wait for your confirmation just in case.
+I've just remembered you were working in the export package. I don't think you are changing ExportFormFragment much or anything at all, but I'll wait for your confirmation just in case.
+@rivaldi8  yes, you are right about the expected/actual behaviour. I've updated the issue to reflect this.
+The reason SD_CARD permission was asked for, was so that default auto backups could be made directly to the external SD card. In case of crash or anything happening, the user could still then easily access the files.
+But I am now of the opinion that we move the default backups to the app private external file storage. Then we would not need the SD_CARD permission at all.
+I would suggest that we add a migration in 2.1.6 which moves the files from existing backup locations to the new internal one (we still need the SD_CARD permission for this). But then from the next releases, we can get rid of the permission completely. We've done this kind of migration before, so we can use that code.
+@rivaldi8 Btw, you can also go ahead with any export related optimization/fixes (e.g. #485 ). SAF use for backup/export is not feasible at the moment.
+@rivaldi8  yes, you are right about the expected/actual behaviour. I've updated the issue to reflect this.
+The reason SD_CARD permission was asked for, was so that default auto backups could be made directly to the external SD card. In case of crash or anything happening, the user could still then easily access the files.
+But I am now of the opinion that we move the default backups to the app private external file storage. Then we would not need the SD_CARD permission at all.
+I would suggest that we add a migration in 2.1.6 which moves the files from existing backup locations to the new internal one (we still need the SD_CARD permission for this). But then from the next releases, we can get rid of the permission completely. We've done this kind of migration before, so we can use that code.
+@rivaldi8 Btw, you can also go ahead with any export related optimization/fixes (e.g. #485 ). SAF use for backup/export is not feasible at the moment.
+Ok, I'll work on the migration of backup files then.
+Ok, I'll work on the migration of backup files then.
+@rivaldi8 I could do the migration of the files for v2.1.6 if you'd like.
+I want to make a small release which fixes one rotation crash bug and updates translations, so I could bundle it in. Shall I?
+@rivaldi8 I could do the migration of the files for v2.1.6 if you'd like.
+I want to make a small release which fixes one rotation crash bug and updates translations, so I could bundle it in. Shall I?
+@codinguser Sure, go ahead! :)
+@codinguser Sure, go ahead! :)

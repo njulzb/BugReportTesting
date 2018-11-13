@@ -1,0 +1,15 @@
+title:Crash on android.view.MenuItem.setIcon(int)
+
+F-Droid 0.21b, Xperia 5.1.1
+logcat: https://gist.github.com/licaon-kter/c3dde2d65340faa6c7db9a97f1e8e55a
+Note that I get logcat spammed by the first part only when running Timber.
+The version of f-droid is not latest. The latest version is v14(0.2b) on play store. On f-droid the current version is v13(0.21b).
+Will update the version on f-droid
+The issue was fixed in 0cb2c09
+The version of f-droid is not latest. The latest version is v14(0.2b) on play store. On f-droid the current version is v13(0.21b).
+Will update the version on f-droid
+The issue was fixed in 0cb2c09
+Indeed.
+Thanks
+Indeed.
+Thanks

@@ -1,0 +1,3 @@
+title:How change package name
+
+How change package name and app name?

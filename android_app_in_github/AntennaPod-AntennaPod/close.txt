@@ -1,0 +1,310 @@
+FileUriExposedException
+Chapter marks are displayed twice
+A few minor commits in master but not in develop
+Stuck notification for "Downloading postcast data"
+Unexpected char 0x2019
+automatic feed update should not be done, when there's no network connection
+Queue section of expanded notification does not update until queue is empty
+Playback progress bar is falsely filled after reopening the app
+Issue with deleting a podcast that is still playing
+DateTime Parsing
+gradle assembleDebug fails with too many method references
+All downloads from Ensign podcast won't play
+Random crashes in 1.6.2.2.
+Not able to Play Episode with OGG (application/octet-stream)
+Subscription list sorting
+Switch fall-through
+http://mikrooekonomen .de m4a feed download failure
+FeedRemover.onPostExecute(): View not attached
+CircleCI builds fail intermittently
+HTML not rendered
+MediaMetadataRetriever.finalize() timed out
+MediaplayerActivity fails to load
+OnlineFeedViewActivity: SQLiteDatabaseLockedException
+MediaplayerActivity.loadMediaInfo NPE
+Queue: IllegalArgumentException when image url is nullRegression: "Mark all as seen" stopped working
+User Input lost on Device Rotation
+Scrollable View changes position on Device Rotation
+Full cache dialog shown on wrong element
+Apply Actions: On rotate, list disappears
+Context Menu Disappears on Device Rotation
+Dialog Disappears on Device Rotation
+OPML Import: SecurityException - Permission Denial: starting Intent
+OpmlImportFromPathActivity: onActivityResult NPE
+FeedInfoActivity: IllegalStateException
+CastManager.addMediaRouterButton NPE
+PlaybackController.onServiceConnected ClassCastException
+VideoplayerActivity.surfaceDestroyed NPE
+StorageErrorActivity.onActivityResult NPE
+Filtered feed lists take forever to load
+Statistics doesn't record
+DownloadService attempt to re-open an already-closed SQLiteDatabase
+Can't download TEDTalks
+Chromecast: playing a video episode when casting crashes AP
+Possible causes of Hang-Bugs Found
+Antennapod crashes every time when starting app
+Video player causes NPE when destroying video surface
+AudioPlayerActivity: NPE onStop()
+StorageErrorActivity: statvfs failed: EACCES (Permission denied)
+Auto-download skips episodes in certain feedThreats of Crash on some Samsung devices
+Swipe gestures in episode details - description not updated
+Sync with gpodder after fresh install does not restore played episodes
+Downloader: Handle 403 Forbidden
+Non-functional options menu entry
+Issues with subscriptions view in 1.6 alpha
+"(Not) In the queue" filter in 'apply actions' doesn't work
+Navbar highlights count of wrong feed
+NPE MainActivity::ConfirmationDialog.onConfirmButtonPressed()
+RejectedExecutionException in PlaybackController.bindToService()
+NumberFormatException when parsing episode duration
+Feed refresh not working properly
+Playback progress bar stays at end after episode is done
+AudioplayerActivity: InstanceCountViolation (Memory leak)
+OPML Scheme not working on Marshmallow
+Reordering episodes in queue causes mis-ordering, crashes
+Refreshing and opening episode list is too slow
+iTunes search: IllegalStateException
+MediaplayerActivity: OnErrorNotImplementedException
+Issue: Old Episodes show up in Episodes view
+Play/pause button can stop working
+Unlimited episode cache shown as full with icon
+AudioplayerActivity.notifyMediaPositionChanged NPE
+CoverFragment.loadMediaInfo IAE
+OpmlImportBaseActivity.importUri NPENPE: NetworkUtils' context not initialized
+DateUtils.formatAbbrev NPE
+Video player: NPE when rewind/fast-forward time changed
+Embedded chapters are not loaded
+Gpodder sync causes duplicate subscriptions
+NPE FeedMedia.getFeedTitle()
+On mobile network, file size fails to load and shows loading spinners
+Can't see all audio controls
+Resuming incomplete downloads sometimes results in duplicated content
+AudioPlayer NPEs
+Skipping episode does not update player view
+Playback speed option confusion
+Changing playback speed unpauses playback
+Problem with seeking in a particular podcast.
+Feed view: 'Add to queue' when already queued
+OPML Import: Ask for read ext permission on Android 6
+Limited space for show notes in landscape
+Shownotes aren't displayed correctly
+ItemListFragment: NPE onListItemClick()
+SQL error when fetching podcast art
+DownloadLogAdapter: NPE onClick()
+PreferenceActivity Memory leak
+Escape SQL
+OPML import from local filesystem doesn't work
+GpodnetEpisodeAction: NPE <init>CursorWindowAllocationException: getFeedMedia(id)
+Currently playing item on Playback history screen does not respect the theme highlight
+DownloadService: NPE FeedMedia.item
+Playback controls (play/pause, skip) not responding from external source (Pebble)
+Filters not working
+Feed URL redirect is not parsed properly
+Queue order is not respected after moving episodes
+Wound up with duplicates in the Queue
+GpodnetTag: BadParcelableException
+Removing podcast crash AntennaPod
+"Defected In The House" will not play
+NullPointerException in 1.4.0.5 (reported via Google Play)
+Case-insensitive ordering of podcast feed list (Reopen issue 339)
+NPE: AlarmUpdateReceiver
+TypeGetter: InputStreamReader not closed
+AntennaPod crashes at startup after adding CCC Podcast
+FeedRemover: already running
+Crash when copying URL in episode description/shownotes
+Download retry loop when out of storage space
+NPE: MainActivity.onContextItemSelected
+NPE: ItemFragment Loader.loadInBackground()
+Larger Font: Texts don’t fit in labels
+Info not updated after reset playback position
+PROTOCOL_ERROR
+superego podcast causes player to hangPrestissimo has to be installed for Playback Speeds preference
+Bug in sleep timer when shake to reset is not set
+NPE in PreferenceActivity when rotating while dialog is open
+IllegalStateException in onCreateOptionsMenu
+OnErrorNotImplementedException via getFeedMediaSizeObservable
+APod freezes on fast forwarding to end of episode
+Fails to save episodes with special characters in the title
+NullPointerException when 'chapters' is null
+Feed and item images are not updated
+IllegalArgumentException from NetworkUtils
+'About' screen doesn't respect theme
+Needless spaces in feed or episode title
+Using Glide form a destroyed activity
+Translation: string missing
+NullPointerException in PreferenceActivity
+Won't resume playback on Bluetooth headset after pause
+NullPointerException when using 'targetView'
+IllegalArgumentException in GpodnetService
+Can't build release version
+SQLiteException caused by raw SQL query
+Deadlock in DownloadService
+Set Subscription Counter doesn't work
+NullPointerException for some Gpodder Actions
+Explicitly Download an Episode when on mobile data doesn't work
+External Storage Required?Downloads a lot of data after update
+Shownotes don't display line breaks
+iTunes search doesn't work with Japanese Characters?
+URL Encoding not being done properly for iTunes search
+If AntennaPod force closes images are no longer refreshed
+episode was downloaded even after disabling auto download
+FeedMediaSizeService is overactive
+Cannot load next page for paged feeds
+Grey text in "recently listened"
+Incorrect loading of a former session's fragment
+Volume incremented on play.
+PodcastListFragment tries to call loadChildFragment on a null activity
+"No external storage is available" on Cyanogenmod 12 / Lollipop (LG Optimus G)
+NullPointerException in PlaybackController when media is null
+NullPointerException in ExternalPlayerFragment
+IndexOutOfBoundsException in RunningDownloadsFragment
+DefaultActionButtonCallback tries to create GpodnetEpisodeAction when there's no episode
+Apod crashes when start playing a pcast on Huawei P8 lite
+Another MediaRequestHandler Erro
+Feed is slow to update
+Deadlock in PlaybackService.saveCurrentPosition
+Rewind / Fast forward settings aren't remembered after the first launch
+Feed picture not displayed
+Episode necromancy
+Unable to interpret correct dates on a podcast #3Misbehaviour at end of playback when next in Queue is undownloaded
+Parts of some episodes not deleted
+Podcast URL in info window partially off screen
+Podcast icon in playback view really small
+AntennaPod shows up as audio playback app, but behaves strangely when so used
+Menu navigation Queue button doesn't always open Queue
+NullPointerException in DragSortListView.doDragFlowView
+NullPointerException in DownloadLogAdapter OnClickListener
+IndexOutOfBoundsException when removing item via DSLV
+NullPointerException in PicassoProvider
+force close with version 1.2 and XIAOMI MIUI devices
+Link with typo crashes Antennapod
+APP becomes unresponsive when trying to download/stream file that returns 404
+NoClassDefFoundError after setting Gpodder.net preferences
+IllegalStateException in MainActivity.loadFragment
+Clips often fail to play when using BT headset
+End of clip cut off when playing at >1x speed
+AntennaPod not proposed anymore to play externally downloaded audio file
+Deadlock during playback in 1.2 alpha
+OPML Import not working with Podcast Addict backup
+Minor UI issue: "1 Downloads Left"
+'Search' displays in toolbar as word and not icon
+NullPointerException in DragSortController.onScroll
+Stopping downloads does not work
+Major missed use case: Managing everything from 'All Episodes'Issues Reported from Google Groups "Please(!) bring back the "all episodes" list"
+RuntimeException: Unable to start activity
+NullPointerException in onScroll
+NullPointerException in onPrepareOptionsMenu
+RuntimeException: Unable to instantiate application
+PlaybackTests currently failing
+Autodownload based on charging isn't working in the 1.1rc1 release.
+When playing, pause doesn't work in the lists
+Playback turns choppy in a few minutes intervals.
+"Unknown Error" when resuming streamed podcast and streaming podcast suggestion
+Password protected pods fail to load
+Thumbnails zoomed in too far
+Update F-Droid
+Antennapod data loss after upgrade
+IOError: ENAMETOOLONG when downloading episode with long title
+SSLHandshakeException:  gpodder.net Login Issue
+AntennaPod fails on protocol relative urls
+Automatic feed updates not working
+Hitting 'menu' button force closes in 0.9.9.5
+No fullscreen video in android 5.0
+Can't switch to a different podcast while one is playing in v0.9.9.5
+Queue doesn't work since update
+Playback speed controls missing since latest update 0.9.9.5
+Unable to interpret correct dates on a podcast
+Issue in downloading over wifiPlayback history doesn't work
+Can't subscribe to podcast on specific device
+Crash at end of downloads
+Can't seek backwards by less than 30sec in OGG/OGA files
+Broken episode entries when having 2 podcasts with the same title (case insensitive)
+App keeps device awake
+Antennapod crashes on opening settings
+Queue count doesn't update when a podcast is removed
+Progress bar no longer updates during playback
+Crash when clicking the refresh icon too soon
+Cannot remove episode without file
+Missing "Mark as read" for individual items without media attachment in "All Episodes" view
+Continuous playback of videos not working (have to press "PLAY" manually)
+A podcast's Icon will not download.
+New UI: "Downloading podcast data" in notification area
+This feed only works one time, after being added
+Peer certificare error when trying to add podcast from gpodder
+Unable to add Flattr connection
+Item download not working
+Problem with adding audio and video rss feeds from the same website
+Play via widget after reboot
+App exits after changing theme
+Icon for some downloaded episodes disappears when completed (in nightly)
+Playback and queue corrupts when an episode that was played outside of the queue finishes.
+None of the CNN podcast feeds work.The AC360 podcast shows 0 bytes episodes
+Bad Voltage Podcast Download is not working
+Make it possible to remove last podcast of playlist
+File doesn't stop playing?!
+Feed does not correctly update
+Handling of bad XML?
+"Bad response code: 404" when try to login to gpodder
+Case-insensitive ordering of podcast feed list
+Problem with derTag Podcast - 0 byte files vanish
+Playback finishes early on Android 4.4.2
+Frequent corruption and deletion of Antennapod.db
+Media content not shown and not loaded, when added to existing rss item
+Last played: sort order
+Sudden stops and wrong resume time.
+Auto downloading doesn't download new podcasts immediately but waits for the next interval
+Video aspect ratio wrong
+Crashes often when using Prestissimo and queue is over 20 episodes (and wastes space)
+Pause button delays for minutes
+prioritise episode details
+Version 0.9.7.5 does not show play button, does not play (F-Droid build)
+Bug: reading autostart on unlocking
+Back 30 seconds does not work if less than 30 seconds have been played
+Regression in 0.9.7.5: "Settings" menu does not update itself for changes in submenus.
+Most Recent Episode incorrect following podcast with no episodes
+Most bitmaps/icons not showingGoogle TV AnntenaPod issue - Pause key on the Google TV remote does not pause playback
+Google TV AntennaPod issue - Video no longer plays in full screen
+Bug: Google TV AntennaPod crashes when settings is selected
+Variable speed not working in 0.9.7.5
+Sort mecanism broken
+Iframes are open separately
+Force close when downloading an episode
+AntennaPod forgets about already downloaded podcast episodes
+Deleted feed is recreated after update
+Crash + wiped all settings/etc.
+Force close loop with a cursor message
+Moving the time index circle or pressing skip forward at the end of an episode crashes AntennaPod.
+Option to disable lockscreen control
+Antennapod always crashes at startup after playing corrupt m4a file once
+ANR on resuming
+One specific download fails
+Image handling in show notes
+Moving podcast in organise queue moves different podcast
+Lockscreen widget flickering
+Automatic Download option does not work.
+Continuous Playback Not Working.
+Delay before playing an episode
+New feeds not working
+Initial Flattr authorization does not work when using Chrome
+AntennaPod crashes during wakeup when in landscape (on Nexus 7)failing Downloads through shutdown wifi?
+Back button in Settings menu exits app
+Can't see items when in Dark theme
+Overlay of the track list
+same title, different rss feed
+Regression in 0.9.6.3: Download of videos from "All CNET Video Podcasts (HD)" fails
+AntennaPod starts playing audio on its own
+Files from failed downloads are never deleted.
+Appears to have issues with gzip encoded feeds.
+Doesn't check whether downloaded files still exist
+Can't play audio from guardian.co.uk podcast
+AntennaPod forgets downloaded podcasts
+Crash after feed removal
+Problem with RSS feed
+AntennaPod does not follow HTTP redirects
+Does not recover from failed file deletion.
+New podcasts overwrite existing files if filenames coincide
+Podcast image not loading
+Wrong episode downloaded in "Display only episodes" mode
+Video: control bar animation looks wrong
+Playlist jumps to the first entry when an episode is listened.
+Possible Bug - Lockscreen

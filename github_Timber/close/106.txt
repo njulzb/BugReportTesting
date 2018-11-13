@@ -1,0 +1,28 @@
+title:Portuguese translation of timber
+
+Hi,
+I´ve created the resources for Portuguese locale. Since I don´t have git on my computer I´ve uploaded the values-pt folder in here
+Thanks! I will include translations in next release
+Thanks! I will include translations in next release
+Downloading on Chrome says values-pt.zip is malicious, and Chrome has blocked it. Any idea?
+Downloading on Chrome says values-pt.zip is malicious, and Chrome has blocked it. Any idea?
+@naman14 you can disable that with this instructions...
+@naman14 you can disable that with this instructions...
+@naman14
+I can assure you that it´s not malicious, but maybe the website could be used for malicious contents. What I can do is send you an e-mail with the files. Is that ok for you?
+But for you knowledge, you can use crowdin or transifex for translations. Both provide free hosting for open source software.
+@naman14
+I can assure you that it´s not malicious, but maybe the website could be used for malicious contents. What I can do is send you an e-mail with the files. Is that ok for you?
+But for you knowledge, you can use crowdin or transifex for translations. Both provide free hosting for open source software.
+I managed to download the file and test it on my side. I can make a pull request for you if you want, @smarquespt.
+I managed to download the file and test it on my side. I can make a pull request for you if you want, @smarquespt.
+@smarquespt I didn't thought that it was malicious. I already downloaded it but hadn't committed yet
+@jparvela if your PR is ready, then send it or I will directly commit it
+I will setup crowdin today for translations
+@smarquespt I didn't thought that it was malicious. I already downloaded it but hadn't committed yet
+@jparvela if your PR is ready, then send it or I will directly commit it
+I will setup crowdin today for translations
+@naman14
+I´ve seen that you´ve already buit the project at crowdin, but it should not be completey correct because there is nothing there to translate. If I access my locale (Portuguese) it tell me that there are no files. Can you please check it?
+@naman14
+I´ve seen that you´ve already buit the project at crowdin, but it should not be completey correct because there is nothing there to translate. If I access my locale (Portuguese) it tell me that there are no files. Can you please check it?

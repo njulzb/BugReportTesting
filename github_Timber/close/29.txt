@@ -1,0 +1,3 @@
+title:show the long of the song on the screen play
+
+The app should show the long of the song, And the time left on the screen play to get better the user interface

@@ -1,0 +1,11 @@
+title:Notification tool doesn't change aspect of playlist
+
+When i open music in playlists, notification is open. And when i click next, previous or stop; it is doing action in background but nothing happen visually in playlist activity. For example;
+At start, I chose 1 music.
+As you see, in notification tool we started to see now playing music.
+Then, I clicked next button to open next music, and Timber started to play next music.
+But in playlistactivity nothing happened.
+Can you assign this issue to me please?
+Can you assign this issue to me please?
+Fixed in 9c688c0
+Fixed in 9c688c0

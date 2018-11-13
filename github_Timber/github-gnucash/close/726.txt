@@ -1,0 +1,7 @@
+title:Asset accounts gets (-) negative sign prepended when editing, causing double negative
+
+This behavior occurred after changing default transactions to be "credit" rather than "debit" in settings. Not sure if this is relevant.
+Expected behavior would be to have the negative not included in the calculation.
+Negative sign seems to be prepended upon a decrease transaction type. After editing and saving, the negative seems to be included in the resulting calculations, causing the transaction to increase the asset balance rather than decreasing it as should be.
+This has already been reported in #723. Please, add any further comments there. Thanks!
+This has already been reported in #723. Please, add any further comments there. Thanks!

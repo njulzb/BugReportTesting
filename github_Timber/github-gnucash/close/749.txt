@@ -1,0 +1,44 @@
+title:Application no longer opens successfully and crashes when opening.
+
+The app should open and run normally.
+The app crashes at opening.
+I have updated the phone to Android 6.0.1 but the issue remains:  "Unfortunately, GnuCash has stopped."
+I have updated the phone to Android 6.0.1 but the issue remains:  "Unfortunately, GnuCash has stopped."
+Any particular reason not to use the latest release?
+Any particular reason not to use the latest release?
+I wasn't able to install it the last time I tried. (I tried the 2.2.1 and tried 1.6.something, can't remember exactly).
+I wasn't able to install it the last time I tried. (I tried the 2.2.1 and tried 1.6.something, can't remember exactly).
+Retried the installation of 2.2.1 and it worked. However, the problem persists. "Unfortunately, GnuCash has stopped."
+Retried the installation of 2.2.1 and it worked. However, the problem persists. "Unfortunately, GnuCash has stopped."
+Interesting. In any case, if you are on the net then I'm sure they are getting the crash reports.
+Interesting. In any case, if you are on the net then I'm sure they are getting the crash reports.
+Is there any way to backup my Gnucash data when I am not able to open the app?
+(yes, I am on the net and I suppose they are getting the crash reports)
+Is there any way to backup my Gnucash data when I am not able to open the app?
+(yes, I am on the net and I suppose they are getting the crash reports)
+Sorry, unless your phone is rooted it's not possible, as far as I know.
+The only temporary solution I can think of, is to offer you a devel APK. It will be installed as a separate GnuCash application which you can use while we try to fix the issue. Then, when you update to the version with the fix, you'll be able to access your data again.
+This is only really worth if you use it to enter transactions on the go and import them later on the desktop. Otherwise you would have to manually re-enter the transactions from the devel version into the production one.
+I haven't found your crash report yet. Sometimes it takes a while. Or maybe I've just overlooked it. I'll continue looking and working on fixing possible start-up crashes.
+Sorry, unless your phone is rooted it's not possible, as far as I know.
+The only temporary solution I can think of, is to offer you a devel APK. It will be installed as a separate GnuCash application which you can use while we try to fix the issue. Then, when you update to the version with the fix, you'll be able to access your data again.
+This is only really worth if you use it to enter transactions on the go and import them later on the desktop. Otherwise you would have to manually re-enter the transactions from the devel version into the production one.
+I haven't found your crash report yet. Sometimes it takes a while. Or maybe I've just overlooked it. I'll continue looking and working on fixing possible start-up crashes.
+I forgot we make automatic backups on version updates. Look into Android/data/org.gnucash.android/files/ of your internal storage.
+I forgot we make automatic backups on version updates. Look into Android/data/org.gnucash.android/files/ of your internal storage.
+I haven't found any crash report referencing your device, but some of them might be related to multiple books.
+Are you using multiple books? If that's the case, how did you add them (opening/importing a .gnca file, creating it from "manage books"...)?
+I haven't found any crash report referencing your device, but some of them might be related to multiple books.
+Are you using multiple books? If that's the case, how did you add them (opening/importing a .gnca file, creating it from "manage books"...)?
+Please, could you verify if version 2.3.0 has solved the problem?
+Please, could you verify if version 2.3.0 has solved the problem?
+Hi,
+Sorry for not having replied previously.
+No, version 2.3.0 did not solve the problem. I tried the updates as they were appearing but nothing solved the issue. I ended up uninstalling it on the Xperia phone last weekend :(
+I will reinstall it later and restart using it from scartch and this time I will keep my data backed up elsewhere too. If some other issue should arise then, I'll report it.
+Thanks
+Hi,
+Sorry for not having replied previously.
+No, version 2.3.0 did not solve the problem. I tried the updates as they were appearing but nothing solved the issue. I ended up uninstalling it on the Xperia phone last weekend :(
+I will reinstall it later and restart using it from scartch and this time I will keep my data backed up elsewhere too. If some other issue should arise then, I'll report it.
+Thanks

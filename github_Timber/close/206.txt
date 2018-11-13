@@ -1,0 +1,4 @@
+title:Bug with "go To Artist" context menu action
+
+When I click on "Go to Artist" on song's context menu, Artist showed up it's alway different from the originally song.
+For example it open songs from 1995 (French rappers) when I click on "Petit Biscuit - Palm" songs.

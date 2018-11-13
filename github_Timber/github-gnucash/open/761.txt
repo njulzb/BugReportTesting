@@ -1,0 +1,62 @@
+title:crash on export
+
+Open App pull from the left and select export. App crashes.
+01-23 13:44:24.184  1273  5682 I ActivityManager: START u0 {act=android.intent.action.CREATE_DOCUMENT cat=[android.intent.category.OPENABLE] typ=application/zip (has extras)} from uid 10088
+01-23 13:44:24.184 11997 11997 D AndroidRuntime: Shutting down VM
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: FATAL EXCEPTION: main
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: Process: org.gnucash.android, PID: 11997
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.CREATE_DOCUMENT cat=[android.intent.category.OPENABLE] typ=application/zip (has extras) }
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1937)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1616)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:4487)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.support.v4.app.BaseFragmentActivityApi16.startActivityForResult(BaseFragmentActivityApi16.java:54)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.startActivityForResult(FragmentActivity.java:65)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.support.v4.app.ActivityCompat.startActivityForResult(ActivityCompat.java:152)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.startActivityFromFragment(FragmentActivity.java:789)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity$HostCallbacks.onStartActivityFromFragment(FragmentActivity.java:898)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.support.v4.app.Fragment.startActivityForResult(Fragment.java:1018)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.support.v4.app.Fragment.startActivityForResult(Fragment.java:1007)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at org.gnucash.android.ui.export.ExportFormFragment.selectExportFile(ExportFormFragment.java:513)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at org.gnucash.android.ui.export.ExportFormFragment.access$300(ExportFormFragment.java:90)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at org.gnucash.android.ui.export.ExportFormFragment$1.onItemSelected(ExportFormFragment.java:334)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.widget.AdapterView.fireOnSelected(AdapterView.java:944)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.widget.AdapterView.dispatchOnItemSelected(AdapterView.java:933)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.widget.AdapterView.-wrap1(Unknown Source:0)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.widget.AdapterView$SelectionNotifier.run(AdapterView.java:898)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:790)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6515)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:440)
+01-23 13:44:24.186 11997 11997 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+01-23 13:44:24.253  1273 14116 W ActivityManager:   Force finishing activity org.gnucash.android/.ui.common.FormActivity
+01-23 13:44:24.255  1273 14116 W ActivityManager:   Force finishing activity org.gnucash.android/.ui.account.AccountsActivity
+01-23 13:44:24.257  1273  1432 I ActivityManager: Showing crash dialog for package org.gnucash.android u0
+I also get a crash when I goto settings > backup & export > select backup file.
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: Process: org.gnucash.android, PID: 15093
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.CREATE_DOCUMENT cat=[android.intent.category.OPENABLE] typ=/ (has extras) }
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1937)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1616)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:4487)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.support.v4.app.BaseFragmentActivityApi16.startActivityForResult(BaseFragmentActivityApi16.java:54)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.startActivityForResult(FragmentActivity.java:65)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.support.v4.app.ActivityCompat.startActivityForResult(ActivityCompat.java:152)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity.startActivityFromFragment(FragmentActivity.java:789)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.support.v4.app.FragmentActivity$HostCallbacks.onStartActivityFromFragment(FragmentActivity.java:898)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.support.v4.app.Fragment.startActivityForResult(Fragment.java:1018)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.support.v4.app.Fragment.startActivityForResult(Fragment.java:1007)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at org.gnucash.android.ui.settings.BackupPreferenceFragment.onPreferenceClick(BackupPreferenceFragment.java:182)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.support.v7.preference.Preference.performClick(Preference.java:1117)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.support.v7.preference.Preference.performClick(Preference.java:1100)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.support.v7.preference.Preference$1.onClick(Preference.java:170)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.view.View.performClick(View.java:6294)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:24770)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:790)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6515)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:440)
+01-23 13:55:09.971 15093 15093 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+01-23 13:55:10.056  1273 23893 W ActivityManager:   Force finishing activity org.gnucash.android/.ui.settings.PreferenceActivity

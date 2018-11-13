@@ -1,0 +1,17 @@
+title:This is test
+
+No description provided.
+Are you sure you've done the refactoring correct. It look like you are using com.turbo.musicplayer and still have references to *timber.
+Change all your references and try again.
+Are you sure you've done the refactoring correct. It look like you are using com.turbo.musicplayer and still have references to *timber.
+Change all your references and try again.
+What is com.turbo.musicplayer and why does it have references to Timber??
+(Sorry, I'm just a passerby and I got curious.)
+What is com.turbo.musicplayer and why does it have references to Timber??
+(Sorry, I'm just a passerby and I got curious.)
+@okungnyo https://play.google.com/store/apps/details?id=com.turbo.musicplayer
+@TheOrangeTester Don't make a new issue if you are having crashes in ripping off
+@okungnyo https://play.google.com/store/apps/details?id=com.turbo.musicplayer
+@TheOrangeTester Don't make a new issue if you are having crashes in ripping off
+What is it and why hasn't it been taken down??
+What is it and why hasn't it been taken down??

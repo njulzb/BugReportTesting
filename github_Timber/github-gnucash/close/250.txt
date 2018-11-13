@@ -1,0 +1,19 @@
+title:Project structure
+
+Let's continue our dicussion in #247 here, as it is already unrelated with the original topic.
+So I'm suggesting project structure like this:
+----master
+----hotfix
+----develop
+Bugfix (pull requests) can be made on hotfix. bugfix/hotfix will be merged to both master and develop.
+New feature and bugfixes for bugs introduced by new features will be on develop.
+When hotfix is ready, it can be merged to master to get v1.5.4 , and a new bugfix branch should be branched from v1.5.4.
+Like #248 and #249 , I started these bugfixes both from seeing #247. But as the new features on develop, master and develop branches behave differently. It will hard to get a fix on master if we work only on develop.
+I understand what you mean. I agree that this would be a better model going forward.
+I actually have such a branch locally and have now published it to GitHub. It is called 'hotfix/patches' and is based on master.
+We can do the patch commits into that branch and the cross-merge for release as you explained.
+I understand what you mean. I agree that this would be a better model going forward.
+I actually have such a branch locally and have now published it to GitHub. It is called 'hotfix/patches' and is based on master.
+We can do the patch commits into that branch and the cross-merge for release as you explained.
+hotfix/patches branch created and in use
+hotfix/patches branch created and in use

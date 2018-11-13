@@ -1,0 +1,8 @@
+title:Albums are split when ID3 versions differ
+
+On my phone, some of my albums are shown twice in the "Albums" tab. Some songs are in one instance, some in the other, but each song is only shown once. I've checked the ID3 attributes of the files (album name and artist are the same with all songs), and other players (BlackPlayer and VLC) show these as only one album.
+I am using version 0.15 from the Play Store. I cleared the app data (to force timber to re-read the files).
+I found where the problem is. The ID3 versions of the files differ, so Timber doesn't identify the album titles. This should still be considered a bug.
+However, this bug is also present in the eleven player, so it's probably part of Eleven's legacy in Timber. Maybe I should report it there... Anyway, it would still be great if it was fixed in Timber.
+I found where the problem is. The ID3 versions of the files differ, so Timber doesn't identify the album titles. This should still be considered a bug.
+However, this bug is also present in the eleven player, so it's probably part of Eleven's legacy in Timber. Maybe I should report it there... Anyway, it would still be great if it was fixed in Timber.

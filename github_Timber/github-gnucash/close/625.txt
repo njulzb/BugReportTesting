@@ -1,0 +1,28 @@
+title:Hourly backup schedules set as monthly
+
+codinguser
+
+Hourly schedule is actually setting to hours
+Hourly schedule is setting to monthly, not the hourly
+@schvabodka-man We do not handle hourly schedules at the moment. But since the dialog is generated through a library, there was no easy way to remove it from the UI.
+We could consider implementing an hourly schedule if there is demand for that. This is the first request I've had on that.
+What do you think @rivaldi8 ?
+@schvabodka-man We do not handle hourly schedules at the moment. But since the dialog is generated through a library, there was no easy way to remove it from the UI.
+We could consider implementing an hourly schedule if there is demand for that. This is the first request I've had on that.
+What do you think @rivaldi8 ?
+@codinguser I'm not sure. At least now, it seems to me that it would add complexity for little benefit. I'd like to know some use cases for it first. We are also still having issues with scheduled exports and missing other features like specifying multiple weekdays. So again, I'd rather define first what features we want to support to help decide how to deal with the whole thing.
+@schvabodka-man why do you need to export hourly?
+@codinguser I'm not sure. At least now, it seems to me that it would add complexity for little benefit. I'd like to know some use cases for it first. We are also still having issues with scheduled exports and missing other features like specifying multiple weekdays. So again, I'd rather define first what features we want to support to help decide how to deal with the whole thing.
+@schvabodka-man why do you need to export hourly?
+Because i like to have hourly backups obliviously
+Because i like to have hourly backups obliviously
+@rivaldi8 I agree with you, priority should be on fixing the existing bugs. But we have HOURLY in the UI as well. My preference would be to remove it from there and not have to deal with it.
+But at the moment, someone could set a schedule for hourly backup and then proceed to delete a book thinking they have a backup, only to find themselves very mistaken. That would be on us.
+@rivaldi8 I agree with you, priority should be on fixing the existing bugs. But we have HOURLY in the UI as well. My preference would be to remove it from there and not have to deal with it.
+But at the moment, someone could set a schedule for hourly backup and then proceed to delete a book thinking they have a backup, only to find themselves very mistaken. That would be on us.
+@codinguser Is it even possible to remove the hourly recurrence option from this dialog? There's no documentation and, after a quick look at the code, I can't see how to do so.
+@codinguser Is it even possible to remove the hourly recurrence option from this dialog? There's no documentation and, after a quick look at the code, I can't see how to do so.
+Then, if it's something we can't workaround easily, I'd try to fix #641, which might make it easier to implement hourly schedules. Otherwise, we'll have to look harder into finding out how to remove the option.
+Then, if it's something we can't workaround easily, I'd try to fix #641, which might make it easier to implement hourly schedules. Otherwise, we'll have to look harder into finding out how to remove the option.
+@rivaldi8 so you can go ahead with #641 given the latest roadblock on the Storage Access Framework
+@rivaldi8 so you can go ahead with #641 given the latest roadblock on the Storage Access Framework

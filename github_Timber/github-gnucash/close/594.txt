@@ -1,0 +1,25 @@
+title:Scheduled actions don't run due to #583
+
+rivaldi8
+A scheduled action computes its next scheduled run based on its current execution count. Due to bug #583 the execution count might've got high and, as a consequence, the next scheduled date will be far in the future, so it won't run.
+For example, I had a weekly export set up recently which should have had just a few executions but, due to the bug, it got 44.
+@codinguser if #591 is solved with the pull request I've sent, my plan is to reset execution counts to 1 on database upgrade so they get adjusted to the correct value.
+@codinguser if #591 is solved with the pull request I've sent, my plan is to reset execution counts to 1 on database upgrade so they get adjusted to the correct value.
+So does this only occur for people who already experienced bug #583, but the rest are unaffected?
+I would rather not reset execution counts, they are very important for scheduled transactions.
+The route I would suggest is that we completely ignore executionCount for exports/backups. Only look at the lastRunTime, the period and the end date. If a whole period has passed since lastRun, then execute once again as long as end date is not reached. I think this would also fix #591 and supersede #593.
+What do you think?
+P.S. ScheduledActions always have an end date
+So does this only occur for people who already experienced bug #583, but the rest are unaffected?
+I would rather not reset execution counts, they are very important for scheduled transactions.
+The route I would suggest is that we completely ignore executionCount for exports/backups. Only look at the lastRunTime, the period and the end date. If a whole period has passed since lastRun, then execute once again as long as end date is not reached. I think this would also fix #591 and supersede #593.
+What do you think?
+P.S. ScheduledActions always have an end date
+Yes, it should only affect people from #583.
+Well, my idea was to reset the execution count only for scheduled backups. Now I see that I didn't mention it. Anyway, if you are ok with ignoring the execution count for exports, I also think it's better. I evaluated the possibility of doing so but, as the UI allows to set a maximum execution count, I didn't want to break it. But to be fair, I don't see it very useful for exports and I think we should be save from having anyone using it.
+I'll prepare another pull request then...
+Yes, it should only affect people from #583.
+Well, my idea was to reset the execution count only for scheduled backups. Now I see that I didn't mention it. Anyway, if you are ok with ignoring the execution count for exports, I also think it's better. I evaluated the possibility of doing so but, as the UI allows to set a maximum execution count, I didn't want to break it. But to be fair, I don't see it very useful for exports and I think we should be save from having anyone using it.
+I'll prepare another pull request then...
+Fixed in hotfix/patches.
+Fixed in hotfix/patches.

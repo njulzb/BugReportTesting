@@ -1,0 +1,32 @@
+title:Exported QIF file: we cannot import it in GnuCash desktop
+
+Problem
+I'm trying to import the following QIF files generated in GnuCash Android inside GnuCash desktop but the desktop application exits without messages or warnings and the import is NOT successful.
+can-not-import-desktop.zip
+Additional information
+I think there is an issue with importing qif's into desktop version 2.6.10 regardless of origin so this may be your problem. Version 2.6.9 and the soon to be released 2.6.11 are good for qif imports apparently.
+Cheers Dave H.
+On 12 Jan 2016, at 5:19 AM, alceurneto notifications@github.com wrote:
+Problem
+I'm trying to import the following QIF files generated in GnuCash Android inside GnuCash desktop but the desktop application exits without messages or warnings and the import is NOT successful
+can-not-import-desktopzip
+Additional information
+I've installed GCA 205 on my Nexus 5 running Android 601;
+I've tested the files in GnuCash Desktop 2610 for Windows and for Mac with the same behavior
+—
+Reply to this email directly or view it on GitHub.
+I think there is an issue with importing qif's into desktop version 2.6.10 regardless of origin so this may be your problem. Version 2.6.9 and the soon to be released 2.6.11 are good for qif imports apparently.
+Cheers Dave H.
+On 12 Jan 2016, at 5:19 AM, alceurneto notifications@github.com wrote:
+Problem
+I'm trying to import the following QIF files generated in GnuCash Android inside GnuCash desktop but the desktop application exits without messages or warnings and the import is NOT successful
+can-not-import-desktopzip
+Additional information
+I've installed GCA 205 on my Nexus 5 running Android 601;
+I've tested the files in GnuCash Desktop 2610 for Windows and for Mac with the same behavior
+—
+Reply to this email directly or view it on GitHub.
+Thanks for the update @halvey
+Thanks for the update @halvey
+After updated GnuCash Desktop to version 2.6.11 attached files are imported successfully.
+After updated GnuCash Desktop to version 2.6.11 attached files are imported successfully.

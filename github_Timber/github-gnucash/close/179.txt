@@ -1,0 +1,89 @@
+title:Positive expenses and negative income
+
+Hi There!
+I'm really confused about the ability of the Expenses account to be profitable.
+I debited a charge to my Cash in Wallet sub account (say $15) then I would credit it to the Expenses:Book account but now the expenses account is considered positive cash flow
+
+and now Expenses showing up as a profit.
+
+It is extremely confusing.
+Similarly, is possible to make the Income account negative.
+I suggest to make the Income account always positive and the Expenses account always negative.
+It is following the accounting principles described here: http://www.gnucash.org/docs/v2.4/C/gnucash-guide/basics-accounting1.html
+Look at it this way. If you buy a book for $15, your expenses increase by $15 while your Assets:Current Account decreases by $15
+This is also how the desktop version of GnuCash works.
+It is following the accounting principles described here: http://www.gnucash.org/docs/v2.4/C/gnucash-guide/basics-accounting1.html
+Look at it this way. If you buy a book for $15, your expenses increase by $15 while your Assets:Current Account decreases by $15
+This is also how the desktop version of GnuCash works.
+I glanced over that docs.
+But there are some exceptions to the general concept. http://www.gnucash.org/docs/v2.4/C/gnucash-guide/accts-types1.html#accts-gc-ie2
+So in these special income accounts, when you transfer money from (credit) the income account to another account, the balance of the income account increases. For example, when you deposit a paycheck and record the transaction as a transfer from an income account to a bank account, the balances of both accounts increase.
+Why not do something similar for expenses? At least make expenses always red.
+I glanced over that docs.
+But there are some exceptions to the general concept. http://www.gnucash.org/docs/v2.4/C/gnucash-guide/accts-types1.html#accts-gc-ie2
+So in these special income accounts, when you transfer money from (credit) the income account to another account, the balance of the income account increases. For example, when you deposit a paycheck and record the transaction as a transfer from an income account to a bank account, the balances of both accounts increase.
+Why not do something similar for expenses? At least make expenses always red.
+The app already does that.
+The movement of the balance of an account (increase or decrease) caused by
+a split depends on the account type. Expense accounts have a debit normal
+balance. That means splits which are debits cause the Expense balance to go
+up, and those which are credits cause the balance to go down.
+So yes, if you do a transfer between two accounts with opposite normal
+balances (e.g. one credit, the other debit), both accounts could
+potentially go up or down.
+I understand that this is a departure from the simple debits are red and
+credits are green which the app has been using until now. But as the goal
+of this app is to be a companion to the GnuCash app, it is better for both
+to work similarly.
+You could edit your Expense account and change the account type to
+something like CREDIT or INCOME, if you really want the balances to be
+shown in red.
+On Sun, Aug 17, 2014 at 9:19 PM, Oleksandr Tyshkovets <
+notifications@github.com> wrote:
+I glanced over that docs.
+But there are some exceptions to the general concept.
+http://www.gnucash.org/docs/v2.4/C/gnucash-guide/accts-types1.html#accts-gc-ie2
+So in these special income accounts, when you transfer money from (credit)
+the income account to another account, the balance of the income account
+increases. For example, when you deposit a paycheck and record the
+transaction as a transfer from an income account to a bank account, the
+balances of both accounts increase.
+Why not do something similar for expenses? At least make expenses always
+red.
+—
+Reply to this email directly or view it on GitHub
+#179 (comment)
+.
+The app already does that.
+The movement of the balance of an account (increase or decrease) caused by
+a split depends on the account type. Expense accounts have a debit normal
+balance. That means splits which are debits cause the Expense balance to go
+up, and those which are credits cause the balance to go down.
+So yes, if you do a transfer between two accounts with opposite normal
+balances (e.g. one credit, the other debit), both accounts could
+potentially go up or down.
+I understand that this is a departure from the simple debits are red and
+credits are green which the app has been using until now. But as the goal
+of this app is to be a companion to the GnuCash app, it is better for both
+to work similarly.
+You could edit your Expense account and change the account type to
+something like CREDIT or INCOME, if you really want the balances to be
+shown in red.
+On Sun, Aug 17, 2014 at 9:19 PM, Oleksandr Tyshkovets <
+notifications@github.com> wrote:
+I glanced over that docs.
+But there are some exceptions to the general concept.
+http://www.gnucash.org/docs/v2.4/C/gnucash-guide/accts-types1.html#accts-gc-ie2
+So in these special income accounts, when you transfer money from (credit)
+the income account to another account, the balance of the income account
+increases. For example, when you deposit a paycheck and record the
+transaction as a transfer from an income account to a bank account, the
+balances of both accounts increase.
+Why not do something similar for expenses? At least make expenses always
+red.
+—
+Reply to this email directly or view it on GitHub
+#179 (comment)
+.
+Okay, thanks.
+Okay, thanks.

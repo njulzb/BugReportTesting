@@ -1,0 +1,38 @@
+title:allow more than one book?
+
+codinguser
+Suppose I use GnuCash to track my own accounts, and also those of an organization I belong to. On the desktop, I'd simply keep them in two different books (foo.gnucash files).
+It would be nice if the Android app could separately import the different trees of accounts, and have a 'select other book' option somewhere to permit switching between them, and exporting one or the other at a time.
+I'm unsure whether the passcode feature request (#39) would best allow different passcodes for different books, or just one for the app overall. Something to think about....
+I'd like to see this feature implemented. (Couldn't finde a vote-button...)
+I'd like to see this feature implemented. (Couldn't finde a vote-button...)
++1 Very useful
++1 Very useful
+Having the option of multiple ledgers would also be usefull to workaround the issue with missing currency code in QIF exports for syncing with the desktop app.
+The user might setup a separate ledger for each currency in use and then import to a single .gnucash file on desktop with appropriate currency denomination.
+Having the option of multiple ledgers would also be usefull to workaround the issue with missing currency code in QIF exports for syncing with the desktop app.
+The user might setup a separate ledger for each currency in use and then import to a single .gnucash file on desktop with appropriate currency denomination.
+On Sep 24, 2015 08:11, "milankni" notifications@github.com wrote:
+Having the option of multiple ledgers would also be usefull to workaround
+the issue with missing currency code in QIF exports for syncing with the
+desktop app.
+The Android app already exports one QIF file per currency in your book. So you
+can just import those separately on the desktop. You get to choose the
+currency during import.
+The user might setup a separate ledger for each currency in use and then
+import to a single .gnucash file on desktop with appropriate currency
+denomination.
+You cannot import .gnucash files on the desktop.
+On Sep 24, 2015 08:11, "milankni" notifications@github.com wrote:
+Having the option of multiple ledgers would also be usefull to workaround
+the issue with missing currency code in QIF exports for syncing with the
+desktop app.
+The Android app already exports one QIF file per currency in your book. So you
+can just import those separately on the desktop. You get to choose the
+currency during import.
+The user might setup a separate ledger for each currency in use and then
+import to a single .gnucash file on desktop with appropriate currency
+denomination.
+You cannot import .gnucash files on the desktop.
+v2.1.0 (in beta) has support for multiple books
+v2.1.0 (in beta) has support for multiple books

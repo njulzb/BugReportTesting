@@ -1,0 +1,6 @@
+title:[IMPROVMENT] Pre-load of album covers while scrolling through "Album List"
+
+When I am scrolling through the album list (in raster/thumbnail-mode) the covers are only loaded/displayed at the moment when I am reaching this album.
+If I scroll fast, loading/displaying the covers are slower than the scroll speed, which results in empty covers. Loading takes about ~0.5seconds, which is way to long.
+--> It would be better if all covers are loaded when entering the "Album View" mode. Or at least assure enough covers are prefetched that scrolling can be performed without display-lacks.
+Thanks!

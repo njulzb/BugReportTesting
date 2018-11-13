@@ -1,0 +1,17 @@
+title:'export' status when import
+
+When importing the whole book with transactions, it seem that all transactions export status is false. This is true for the new bulk import #188 and should be also true for the old import procedure.
+I would not like to export these transactions again, only new transactions entered afterwards, so maybe all imported transactions should be marked as 'already exported'?
+If be backup restoration process shares the import procedure (didn't check), things would get more complicated. In backup XML, there are no place to store the 'export' status, they are just lost. So maybe it would be also useful to add a 'export transactions after a certain date (and time)' function, when export status does not work properly.
+I see your point. I think the way to handle this would be to include the exported status in the backup XML.
+When we read any file which does not have an exported status, we default to exported=true.
+How does that sound?
+I see your point. I think the way to handle this would be to include the exported status in the backup XML.
+When we read any file which does not have an exported status, we default to exported=true.
+How does that sound?
+That sounds OK.
+That sounds OK.
+Can we close this? I think it is fixed in #193 right?
+Can we close this? I think it is fixed in #193 right?
+Yes, I'll close this. It is fixed by #188 (import) and #193 (export).
+Yes, I'll close this. It is fixed by #188 (import) and #193 (export).

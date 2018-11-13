@@ -1,0 +1,7 @@
+title:Custom date range doesn't work properly in reports
+
+From user email:
+I found a small bug where when viewing charts using custom range period, the chart always display the data until today.
+So the beginning date is correct, but the data shown always include everything until today, and not until the specified end date.
+I can confirm the problem. In my tests, there's also some problem with the start date. For some reason it always starts at the 16th of the month where the range starts.
+I can confirm the problem. In my tests, there's also some problem with the start date. For some reason it always starts at the 16th of the month where the range starts.

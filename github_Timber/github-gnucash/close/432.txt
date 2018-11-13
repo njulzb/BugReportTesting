@@ -1,0 +1,21 @@
+title:It's not possible to enter a decimal point into an split amount
+
+Nothing happens when pressing the decimal point key on a split amount text box. In my case with Euro currency, but originally reported by an UK user through User voice.
+Should be fixed in v2.0.3
+On Nov 23, 2015 08:06, "Àlex Magaz Graça" notifications@github.com wrote:
+Nothing happens when pressing the decimal point key on a split amount text
+box. In my case with Euro currency, but originally reported by an UK user
+through User voice.
+—
+Reply to this email directly or view it on GitHub
+#432.
+Should be fixed in v2.0.3
+On Nov 23, 2015 08:06, "Àlex Magaz Graça" notifications@github.com wrote:
+Nothing happens when pressing the decimal point key on a split amount text
+box. In my case with Euro currency, but originally reported by an UK user
+through User voice.
+—
+Reply to this email directly or view it on GitHub
+#432.
+Sorry, it turns out I wasn't running the latest version from master as I thought.
+Sorry, it turns out I wasn't running the latest version from master as I thought.

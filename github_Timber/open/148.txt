@@ -1,0 +1,6 @@
+title:Randomly pauses between tracks
+
+Occasionally I find that Timber has paused itself between tracks while listening and I need to press Skip for it to come back (Play doesn't seem to work). I listen to music almost exclusively over Bluetooth, so I don't know if this will occur in other contexts. The problem does not seem to occur with Vanilla Music.
+Looking at my log, this appears to be the relevant message starting the process of pausing the audio system.
+V/AudioFlinger(316): Audio hardware entering standby, mixer 0xb2a51008, suspend count 0
+If you need me to, I can get a fuller log of the event.

@@ -1,0 +1,15 @@
+title:Wrong song order in albums
+
+I don't know why the order of the songs in the album are wrong, as you can see in the screenshots below, the order is totally random:
+
+Is this a known issue? Thanks for the app, it's wonderful nonetheless 😄
+Yeah, its a known issue, will fix it in next release, forgot to add the sorting order for album songs😑
+Yeah, its a known issue, will fix it in next release, forgot to add the sorting order for album songs😑
+Totally normal stuff hahaha. Don't worry, you're doing a great job!
+Totally normal stuff hahaha. Don't worry, you're doing a great job!
+Hey, just checked the code and I am sorting the albums with default sort order. As you can see in the screenshot, the songs are sorted alphabetically. Maybe I will add options for more sort orders probably in some next releases
+Hey, just checked the code and I am sorting the albums with default sort order. As you can see in the screenshot, the songs are sorted alphabetically. Maybe I will add options for more sort orders probably in some next releases
+I think that the default order should be by song number and not alphabetically, but an option to choose between them would be great!
+I think that the default order should be by song number and not alphabetically, but an option to choose between them would be great!
+Added in 8a6717d. Album songs can be sorted by A-Z,  Z-A, Year, Track Number and by Duration. Sort orders have also been added for songs, albums and artists -  c47a2b5
+Added in 8a6717d. Album songs can be sorted by A-Z,  Z-A, Year, Track Number and by Duration. Sort orders have also been added for songs, albums and artists -  c47a2b5

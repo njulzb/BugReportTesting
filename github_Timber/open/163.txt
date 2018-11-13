@@ -1,0 +1,35 @@
+title:[QUESTION] Are these GitHub-Issues read by the programmers?
+
+I am new in using Timber, but I like it very much and want to help to improve it.
+Therefore I opened some issue tickets one week ago.
+But I wonder, why no discussion continues about it....are at least any reaction....?
+Also older posts are rarely commented or moderated....
+So my question:
+--> Is this Issue-Tracker read by the programmer(s)? <--
+If I can't see any reaction within the next 2 weeks I feels not anymore confident that I want support timber anymore...
+So, lets see any reaction....
+Thanks, Robert
+Hey,
+Thanks for your interest in Timber. Yes, the issues are definitely read but the only difference is that there's only one person (me) working on this project. I am a 2nd year Engineering student with lots of other things to work on including studies and other side projects. I can only contribute small amount of time on Timber and that's why Timber is completely free ond open source so that other developers can contribute to it.
+I do read all the issues and work on them when I have free time to work upon. I will try to contribute more time on this project though in future.
+Thanks,
+Naman
+Hey,
+Thanks for your interest in Timber. Yes, the issues are definitely read but the only difference is that there's only one person (me) working on this project. I am a 2nd year Engineering student with lots of other things to work on including studies and other side projects. I can only contribute small amount of time on Timber and that's why Timber is completely free ond open source so that other developers can contribute to it.
+I do read all the issues and work on them when I have free time to work upon. I will try to contribute more time on this project though in future.
+Thanks,
+Naman
+Thanks for your kind response.
+Maybe you can just make a comment to the different open issues, if they need much work or if it can be easily integrated to the next version.
+...and in which timeframe you could imagine to release a next update ....
+I more wanted to say that it would be nice to read some short updates of information while I don't wanted to force you to take more of your time to program Timber....
+Best regards, Robert
+Thanks for your kind response.
+Maybe you can just make a comment to the different open issues, if they need much work or if it can be easily integrated to the next version.
+...and in which timeframe you could imagine to release a next update ....
+I more wanted to say that it would be nice to read some short updates of information while I don't wanted to force you to take more of your time to program Timber....
+Best regards, Robert
+I will make sure to provide updates on issues from now on so that it's easy for people to track the progress.
+Regards, Naman
+I will make sure to provide updates on issues from now on so that it's easy for people to track the progress.
+Regards, Naman

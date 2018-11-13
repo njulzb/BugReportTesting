@@ -1,0 +1,29 @@
+title:New release 1.2.0 crash when cilck on 'settings'
+
+Hello,
+I've just update to the new release of gnucash-android and checking new options I've seen that every time I try to open settings, the app crash. Everytime.
+I use a Samsung Galaxy Mini 2 (GT-S6500D) running Androind 2.3.6
+Oops, will look into it.
+On Jun 21, 2013 9:17 PM, "Jesus-M" notifications@github.com wrote:
+Hello,
+I've just update to the new release of gnucash-android and checking new
+options I've seen that every time I try to open settings, the app crash.
+Everytime.
+I use a Samsung Galaxy Mini 2 (GT-S6500D) running Androind 2.3.6
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/95
+.
+Oops, will look into it.
+On Jun 21, 2013 9:17 PM, "Jesus-M" notifications@github.com wrote:
+Hello,
+I've just update to the new release of gnucash-android and checking new
+options I've seen that every time I try to open settings, the app crash.
+Everytime.
+I use a Samsung Galaxy Mini 2 (GT-S6500D) running Androind 2.3.6
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/95
+.
+Tested on a Samsung Galaxy Mini (GT-S5570) with Android 2.3.6 (GINGERBREAD.XWKTS), rooted.
+Same crash doing the same.
+Tested on a Samsung Galaxy Mini (GT-S5570) with Android 2.3.6 (GINGERBREAD.XWKTS), rooted.
+Same crash doing the same.

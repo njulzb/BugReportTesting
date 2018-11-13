@@ -1,0 +1,14 @@
+title:Cannot easily import accounts from Desktop using Google Drive
+
+Weird, weird result when trying to import an accounts export from (Windows) GnuCash 2.4.13 to GnuCash Android 1.4.3, CyanogenMod 11:
+Selecting "Keep on this device" in Google Drive makes no difference.
+Renaming to a different file extension (even .log) still shows the file greyed out
+Selecting download ot device in Google Drive shows it does not appear in the local File Manager under Downloads folder
+Workaround is to download a third-party file manager (e.g. Astro) to locate the file in Downloads folder. This is not seamless.
+Is this expected behaviour for Drive? Sending QIF exports work the other way around, but more on that in another issue.
+I can replicate on 1.5.0-beta1. It almost appears some kind of filter is being requested by the import browser (Drive, local file manager) to either skip display of certain items (file browser) or leave them greyed and inactive (Drive) that e.g. Astro ignores. Browsing to the same location in local File Manager and Astro shows different content: Astro shows the entire folder, local File Manager is a subest, Drive is clearly filtering out some items but neither of the last two are on file extension or length. Can anyone replicate?
+I can replicate on 1.5.0-beta1. It almost appears some kind of filter is being requested by the import browser (Drive, local file manager) to either skip display of certain items (file browser) or leave them greyed and inactive (Drive) that e.g. Astro ignores. Browsing to the same location in local File Manager and Astro shows different content: Astro shows the entire folder, local File Manager is a subest, Drive is clearly filtering out some items but neither of the last two are on file extension or length. Can anyone replicate?
+Yes, we have gotten reports of issues with Google Drive filtering. I cannot replicate it, but others can. We'll look into it. Thanks for the report
+Yes, we have gotten reports of issues with Google Drive filtering. I cannot replicate it, but others can. We'll look into it. Thanks for the report
+Fixed in v2.0.0
+Fixed in v2.0.0

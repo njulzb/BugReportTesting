@@ -1,0 +1,10 @@
+title:Straight away app crashes on start
+
+i am getting this ERROR,
+java.lang.RuntimeException: Unable to start activity ComponentInfo{naman14.timber.debug/com.naman14.timber.activities.MainActivity}: android.view.InflateException: Binary XML file line #11: Error inflating class android.support.design.widget.NavigationView
+Should have been fixed now. Try again after pulling latest commits.
+Or is the crash in the play store version?
+Should have been fixed now. Try again after pulling latest commits.
+Or is the crash in the play store version?
+Yeah!!! It works now .. Thank You. And play store version works fine.
+Yeah!!! It works now .. Thank You. And play store version works fine.

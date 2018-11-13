@@ -1,0 +1,3 @@
+title:Multi Split transaction between multiple currencies does not ask for exchange rates
+
+The exchange rate window DOES pop-up if I choose 3 splits of the same currency, then change one of them to another currency account. Which is a decent workaround to get me going.

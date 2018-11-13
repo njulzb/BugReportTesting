@@ -1,0 +1,10 @@
+title:Crash when sliding the seek bar to the tracks end
+
+Sometimes Timber crashes when you slide the seek bar to the end while a track is playing. I tested this with 10 different tracks and it crashes in about half of the cases.  Can you confirm this?
+Here is some information about my phone and I also included my error log.
+Phone: Samsung Galaxy S3 GT-I9305
+Android version 4.4.4.
+CyanogenMod version 11-20150406-NIGHTLY-i9305
+http://pastebin.com/CR3nrLGE
+I also noticed that this usually happens when the repeat song setting is on and you have pressed "shuffle all".
+I also noticed that this usually happens when the repeat song setting is on and you have pressed "shuffle all".

@@ -1,0 +1,5 @@
+title:Now Playing Section
+
+When we press a loop song button in the now playing section , then it is not reflected in the UI for the loop button
+Fixed in db7df60
+Fixed in db7df60

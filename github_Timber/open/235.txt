@@ -1,0 +1,4 @@
+title:Home Widgets is not Working
+
+In Home Widgets when i start to play songs from Notification at that time in widgets Display Play icon instead of pause icon.
+when i start Songs from NowPlaying Screen then pause  from Widgets it is working but you can't start that songs from Widgets  once pause  songs in my Asus Device

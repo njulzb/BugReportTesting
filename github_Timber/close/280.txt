@@ -1,0 +1,8 @@
+title:Battery drain
+
+Hi!
+I started using the app this morning and noticed a significant battery drain since then: 15% since last charge.
+Has anyone else noticed this?
+Note:
+One day occurrences could easy just be an anomaly. Try to gather more evidence that this app is related to the issue.
+One day occurrences could easy just be an anomaly. Try to gather more evidence that this app is related to the issue.

@@ -1,0 +1,6 @@
+title:Use implicit decimals in account fields for currencies with 2 decimal places
+
+This is a UserVoice request.
+Amounts entered would always start input from the decimal fields, allowing quick input of amounts.
+This feature existed before and was removed on popular request by those whose currencies did not support decimals.
+One option would be to make it default on for currencies with decimals and off for those without. In addition, a setting could force it on or off.

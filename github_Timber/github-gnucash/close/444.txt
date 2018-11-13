@@ -1,0 +1,42 @@
+title:Last export time is not correctly set when import
+
+see https://gnucash.uservoice.com/admin/forums/320493-gnucash-android/suggestions/10812390-please-fix-the-export-function-to-export-only-tran?tracking_code=1d574edb46e2bbbff9f8a8e7ad3c92f3#/comments?filter=all&sort=newest
+The last modification time is set when the import is done.
+See https://github.com/codinguser/gnucash-android/blob/master/app/src/main/java/org/gnucash/android/importer/GncXmlImporter.java#L97
+But apparently, it didn't exclude everything. I just tried with my own data, and a little part of it does got exported (but not all of them). For people who do not have a lot of data, maybe they would see that everything got exported.
+I don't quite get it. The last export time is set, which means any transactions entered after that time should be the ones exported right?
+How does the size of the data set play a role in excluding some stuff then?
+Is it then a timing issue? Should we set it to like the currentTime + 1minute or something?
+I don't quite get it. The last export time is set, which means any transactions entered after that time should be the ones exported right?
+How does the size of the data set play a role in excluding some stuff then?
+Is it then a timing issue? Should we set it to like the currentTime + 1minute or something?
+Yeah, this is a timing issue. The last few imported records may somehow get the same time stamp as the last exported time stamp (I guess). And when export chose the export everything equal or greater than the last export timestamp, then something would get exported.
+I didn't review the related code. In certain conditions, maybe the last imported records even have time stamps AFTER the last export timestamp. E.g., it can happen if the modification time stamp is set by a db trigger and actual commit of the transactions happens in a separate thread.
++1 min may be a solution. But it definitely not a solution that's perfectly safe. Maybe 99.99% safe though. And what if the user made a quick edit to the db within a minute?
+Maybe we can query the db to get the latest modification time after import, but not use the current time.
+Yeah, this is a timing issue. The last few imported records may somehow get the same time stamp as the last exported time stamp (I guess). And when export chose the export everything equal or greater than the last export timestamp, then something would get exported.
+I didn't review the related code. In certain conditions, maybe the last imported records even have time stamps AFTER the last export timestamp. E.g., it can happen if the modification time stamp is set by a db trigger and actual commit of the transactions happens in a separate thread.
++1 min may be a solution. But it definitely not a solution that's perfectly safe. Maybe 99.99% safe though. And what if the user made a quick edit to the db within a minute?
+Maybe we can query the db to get the latest modification time after import, but not use the current time.
+That's a good idea with querying the database. But if we do not know when the db commit actually finishes, then we don't know what "after import" means.
+I thought of the SQLiteTransactionListener but it doesn't say when the commit finishes, only when it is about to start.
+Until we find a more permanent fix, maybe we can just use the 99.99% safe one for now. (You're right, maybe 1 min is too long, more like 20s) :)
+That's a good idea with querying the database. But if we do not know when the db commit actually finishes, then we don't know what "after import" means.
+I thought of the SQLiteTransactionListener but it doesn't say when the commit finishes, only when it is about to start.
+Until we find a more permanent fix, maybe we can just use the 99.99% safe one for now. (You're right, maybe 1 min is too long, more like 20s) :)
+There should be some synchronization mechanism on the db side. Just have to go through the document. This mechanism should assure that what the query returned is the final status of the db, but not int the middle of a transaction. (This is what a transaction is about)
+And as we are now using only one db connection, it is less likely that we got trapped in the middle of a transaction. When the query comes back, it should be the final status after the transaction, but not in the middle. We can even use another db transaction to wrap the query, if it is required for synchronization.
+There should be some synchronization mechanism on the db side. Just have to go through the document. This mechanism should assure that what the query returned is the final status of the db, but not int the middle of a transaction. (This is what a transaction is about)
+And as we are now using only one db connection, it is less likely that we got trapped in the middle of a transaction. When the query comes back, it should be the final status after the transaction, but not in the middle. We can even use another db transaction to wrap the query, if it is required for synchronization.
+I now think that a simple query should be enough, the db back-end should be able to make sure what we see is after the transaction.
+If the transaction is still committing, the query can wait (which should be handled by the db back-end). A transaction just means that it exists entirely, or nothing at all. We should not be able get in the middle of it.
+In the same thread after endTransaction() is called, the transaction is there. When the db is queried again, everything should be after the transaction. (It should be irrelevant where the commit actually happen)
+I now think that a simple query should be enough, the db back-end should be able to make sure what we see is after the transaction.
+If the transaction is still committing, the query can wait (which should be handled by the db back-end). A transaction just means that it exists entirely, or nothing at all. We should not be able get in the middle of it.
+In the same thread after endTransaction() is called, the transaction is there. When the db is queried again, everything should be after the transaction. (It should be irrelevant where the commit actually happen)
+True. That makes sense. Will you handle this, or should I add the query?
+True. That makes sense. Will you handle this, or should I add the query?
+Please help yourself. I'm stilling struggling with my development environment.
+Please help yourself. I'm stilling struggling with my development environment.
+👍
+👍

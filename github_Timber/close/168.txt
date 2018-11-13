@@ -1,0 +1,3 @@
+title:Gradle plugin is too old, can't build project with a latest gradle plugin version
+
+Hi there, please update project and all deps like com.github.naman14:app-theme-engine:-SNAPSHOT to the latest gradle plugin version, otherwise project cannot be build with a newest gradle plugin versions

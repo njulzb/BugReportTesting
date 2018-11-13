@@ -1,0 +1,8 @@
+Why does SimpleCursorSwipeAdapter not use support.v4 like CursorSwipeAdapter does?
+No way to disable swipe gesture
+Is it possible to add drawable selectors for internal views? Looks like it doesn't work.
+can't disable item in list view
+ScrollView inside SwipeLayout
+SeekBar inside the SurfaceView
+GridView错乱
+demo minSdkVersion 18?

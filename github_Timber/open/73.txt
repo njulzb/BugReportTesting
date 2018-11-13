@@ -1,0 +1,12 @@
+title:[Enhancement request] Capitalization inconsistencies throughout the app
+
+In some places, it's the "Word word" system, and others it's the "Word Word" system.
+As this is a Material Design-focused app, there is no better place to look for guidance/precedence than in Google's own apps.
+And Google's apps follow the "Word word" system.
+So these parts of Timber should be changed:
+Navigation drawer:
+Action overflow:
+Settings
+And any other ones that I missed by accident, of course!
+Feel free to update the strings 😜
+Feel free to update the strings 😜

@@ -1,0 +1,6 @@
+title:there are duplicate title_settings entry in all string.xml
+
+codinguser
+there are duplicate title_settings entry in all string.xml.
+done in develop branch
+done in develop branch

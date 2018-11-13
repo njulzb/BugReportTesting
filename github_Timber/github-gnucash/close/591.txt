@@ -1,0 +1,13 @@
+title:Scheduled exports run with each service run until missed executions are recovered
+
+rivaldi8
+The scheduled export isn't executed until the next planned execution.
+The scheduled export is executed every time the ScheduledActionService runs until the missed executions have been done. For example, if two executions have been missed, two exports will be done, then it won't be run again until the next planned date.
+Is this still an issue in the current code base in hotfix/patches?
+I vaguely remember running into this and fixing it. But I may be wrong
+Is this still an issue in the current code base in hotfix/patches?
+I vaguely remember running into this and fixing it. But I may be wrong
+I think you refer to #583 which is similar but not the same. There's still another bug related with scheduled action that I'll report shortly.
+I think you refer to #583 which is similar but not the same. There's still another bug related with scheduled action that I'll report shortly.
+Fixed in hotfix/patches.
+Fixed in hotfix/patches.

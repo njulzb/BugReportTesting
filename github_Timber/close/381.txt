@@ -1,0 +1,3 @@
+title:Notifications not shown in Android 8.0
+
+Notifications are not shown in notification bar nor on lockscreen! How can I fix this?

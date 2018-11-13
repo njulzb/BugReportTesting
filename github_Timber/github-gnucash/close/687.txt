@@ -1,0 +1,31 @@
+title:Import GnuCash XML: EACCES (Permission denied)
+
+Accounts are being imported
+open failed: EACCES (Permission denied) Imgur
+http://stackoverflow.com/questions/8854359/exception-open-failed-eacces-permission-denied-on-android
+GnuCash Android since v2.2.0  does not have permission to read from any location on the SD card.
+I would suggest going through the Navigation Drawer --> Open and then select the file
+If your SD card isn't not showing, tap the menu on upper right of the file picker and enable "internal storage".
+Let me know if that works for you!
+GnuCash Android since v2.2.0  does not have permission to read from any location on the SD card.
+I would suggest going through the Navigation Drawer --> Open and then select the file
+If your SD card isn't not showing, tap the menu on upper right of the file picker and enable "internal storage".
+Let me know if that works for you!
+Yes that works. Thanks!
+BTW: What is the described "Import GnuCash XML" action actually for?
+Yes that works. Thanks!
+BTW: What is the described "Import GnuCash XML" action actually for?
+It allows you to pick a place to import from, and actually used to work as you expect it to.
+We only recently removed the permissions for direct access to the SD card.
+So maybe we need to revisit that option and adapt it to the new procedures.
+It allows you to pick a place to import from, and actually used to work as you expect it to.
+We only recently removed the permissions for direct access to the SD card.
+So maybe we need to revisit that option and adapt it to the new procedures.
+Alright, thanks for the explanation!
+Alright, thanks for the explanation!
+Hi,
+I've the same or a similar problem on the android version. I faces the same error when I try to import a gnucash file from my dropbox where I saved the file I've created in Ubuntu.
+Circumventing is not possible since "opening" is only available for google drive (but in "importint" dropbox is there).
+Hi,
+I've the same or a similar problem on the android version. I faces the same error when I try to import a gnucash file from my dropbox where I saved the file I've created in Ubuntu.
+Circumventing is not possible since "opening" is only available for google drive (but in "importint" dropbox is there).

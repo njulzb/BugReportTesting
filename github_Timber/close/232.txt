@@ -1,0 +1,8 @@
+title:App crash in support developer
+
+If Internet is not connected then app crash after few seconds.
+Steps :> Turn off internet connection -> Click Support Developer -> After some time app crash
+Crash device :> Lg Nexus 4
+OS Version :> 5.0 Lollipop
+Fixed
+Fixed

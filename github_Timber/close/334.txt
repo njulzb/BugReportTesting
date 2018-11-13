@@ -1,0 +1,63 @@
+title:App crashing while moving the Circularseekbar button to forward the song.
+
+App crashing while moving the Circularseekbar button to forward the song. Kindly find the error message below.
+11-04 21:15:01.123 11152-11152/ com.naman14.timber E/AndroidRuntime: FATAL EXCEPTION: main
+Process:  com.naman14.timber, PID: 11152
+java.lang.IllegalStateException
+at android.os.Parcel.readException(Parcel.java:1607)
+at android.os.Parcel.readException(Parcel.java:1552)
+at  com.naman14.timber.ITimberService$Stub$Proxy.seek(ITimberService.java:854)
+at  com.naman14.timber.MusicPlayer.seek(MusicPlayer.java:618)
+at  com.naman14.timber.nowplaying.BaseNowplayingFragment$11.onProgressChanged(BaseNowplayingFragment.java:459)
+at  com.naman14.timber.widgets.CircularSeekBar.onTouchEvent(CircularSeekBar.java:793)
+at android.view.View.dispatchTouchEvent(View.java:9297)
+at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2555)
+at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2555)
+at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2555)
+at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2555)
+at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2555)
+at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2555)
+at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2555)
+at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2555)
+at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2555)
+at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2555)
+at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2555)
+at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+at com.android.internal.policy.PhoneWindow$DecorView.superDispatchTouchEvent(PhoneWindow.java:2445)
+at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent_aroundBody0(PhoneWindow.java:1756)
+at com.android.internal.policy.PhoneWindow$AjcClosure1.run(PhoneWindow.java:1)
+at android.view.PhoneWindowAO.ajc$around$android_view_PhoneWindowAO$2$99ce526bproceed(PhoneWindowAO.aj:113)
+at android.view.PhoneWindowAO.ajc$around$android_view_PhoneWindowAO$2$99ce526b(PhoneWindowAO.aj:117)
+at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:1756)
+at android.app.Activity.dispatchTouchEvent(Activity.java:2800)
+at android.support.v7.view.WindowCallbackWrapper.dispatchTouchEvent(WindowCallbackWrapper.java:68)
+at android.support.v7.view.WindowCallbackWrapper.dispatchTouchEvent(WindowCallbackWrapper.java:68)
+at com.android.internal.policy.PhoneWindow$DecorView.dispatchTouchEvent(PhoneWindow.java:2406)
+at android.view.View.dispatchPointerEvent(View.java:9517)
+at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:4309)
+at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4175)
+at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3682)
+at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3735)
+at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3701)
+at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3709)
+at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3682)
+at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3735)
+at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3701)
+at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3828)
+at android.view.ViewRootImpl$InputStage.apply(ViewRootIm
+@sathya4code crash happens every time you use circular seekbar?
+@sathya4code crash happens every time you use circular seekbar?
+Hi, most of the time it's crashing...
+Hi, most of the time it's crashing...
+Why you use AIDL in this project. What is the use of AIDL service in music player.
+Why you use AIDL in this project. What is the use of AIDL service in music player.

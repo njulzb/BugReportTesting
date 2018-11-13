@@ -1,0 +1,12 @@
+title:T9 keypad not activated for transaction description entry by default
+
+codinguser
+When entering a new transaction, the Description text field is activated by default and the keyboard is ready to go, but as T9 mode is not activated by default, auto completion/spelling correction does not occur.
+In my case all of the words that I enter into the Description field are in my keyboard dictionary, so T9 is useful for me.
+If disabling T9 for this field was a conscious design decision, maybe "Enable/disable T9 keyboard by default for transaction descriptions" could be introduced as a user-adjustable checkbox setting.
+This is because the description field is used for autocomplete.
+This is a feature of the app, allowing you to use transaction templates.
+We do not have plans to implement this as a setting at the moment
+This is because the description field is used for autocomplete.
+This is a feature of the app, allowing you to use transaction templates.
+We do not have plans to implement this as a setting at the moment

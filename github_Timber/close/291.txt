@@ -1,0 +1,9 @@
+title:资源文件中有缺失
+
+String里面缺少这两个fabric_api_key和play_billing_license_key和对应的值
+add this to string.xml:
+any string you like i do what i want
+and its good to go.
+add this to string.xml:
+any string you like i do what i want
+and its good to go.

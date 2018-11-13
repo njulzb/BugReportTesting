@@ -1,0 +1,61 @@
+title:Discussion: Multi-currency support
+
+This is already implemented in GnuCash Android, and works well.
+This is not officially supported by GnuCash Android. Currently, a use cannot create new transactions between different currencies. However, throw importing, such transactions can be added to GnuCash Android, and should also be edited and exported (maybe not correctly).
+Implement proper support for this possible, but the problem is, the user will ultimately export the transactions and import them into GnuCash Desktop. Currently I see no possible way to do this.
+So I think even we implement the feature, we should limit what users can do with these transactions.
+i. When importing form GnuCash, multi-currency transactions should be kept, in order get correct account balance. Amounts in the split's currency (split:quantity, instead of the transaction's split::value) should be used. Multi-currency support is only need for balancing these transactions.
+ii. Transactions involving multiple currencies cannot be edited or created (as they cannot be transferred to GnuCash Android). However, they can be deleted.
+iii. Transactions involving multiple currencies cannot be exported to QIF. QIF does not support these transactions so the result would be in error. They can be filtered out when exporting.
+iv. Proper multi-currency support should be needed to generate correct GncXML export. Both split:quantity and split:value should exist, and they will differ if the transactions currency is different from the split's currency.
+I think ii and iii should be enforced from now on, until we can find a way to transfer such transactions into GnuCash. i and iv can wait for proper multi-currency support.
+We are in agreement on this. Until we have proper multi-currency support and currency conversion (with current rates), we should limit the use of multi-currency.
+AFAIK, ii is already implemented. it is not possible to transfer to another account of a different currency nor can you create a split to an account with different currency.
+iii is also implemented (in a manner of speaking, since transactions with multiple currencies cannot exist anyway)
+The only issue we can/should solve for now is exporting different QIF files for differrent currencies. (and you basically already started work on this in #219 )
+We are in agreement on this. Until we have proper multi-currency support and currency conversion (with current rates), we should limit the use of multi-currency.
+AFAIK, ii is already implemented. it is not possible to transfer to another account of a different currency nor can you create a split to an account with different currency.
+iii is also implemented (in a manner of speaking, since transactions with multiple currencies cannot exist anyway)
+The only issue we can/should solve for now is exporting different QIF files for differrent currencies. (and you basically already started work on this in #219 )
+Transactions involving multiple currencies can come into the App through importing, and after that they can be edited and exported. But the result are meaningless.
+I do not want reject these transactions when importing, as they will affect the account balance. But what a user can do with them should be restricted.
+Transactions involving multiple currencies can come into the App through importing, and after that they can be edited and exported. But the result are meaningless.
+I do not want reject these transactions when importing, as they will affect the account balance. But what a user can do with them should be restricted.
+I see. Yes I agree, ii and ii should be enforced.
+I see. Yes I agree, ii and ii should be enforced.
+For i, I think currently we can let the balancing code ignore multi-currency transactions. Then split:quantity can be imported instead of split:value. This will let all accounts have correct opening balance.
+For i, I think currently we can let the balancing code ignore multi-currency transactions. Then split:quantity can be imported instead of split:value. This will let all accounts have correct opening balance.
+I just found that in the App, the account currency can be changed when there're already transactions in the account. This will be disastrous.
+In the Desktop version, when an account's currency is changed, it seems that a 1:1 exchange rate between the two currencies is applied to all transactions in the account.
+I just found that in the App, the account currency can be changed when there're already transactions in the account. This will be disastrous.
+In the Desktop version, when an account's currency is changed, it seems that a 1:1 exchange rate between the two currencies is applied to all transactions in the account.
+This let me think of more ways of how such transactions can result in the DB. e.g. when we are deleting an account but keeping the transactions, the transactions would go to the parent account. The parent account and the deleted account may not share the same currency.
+// Just remembered the function is there, but never called. The user cannot access this yet ...
+This let me think of more ways of how such transactions can result in the DB. e.g. when we are deleting an account but keeping the transactions, the transactions would go to the parent account. The parent account and the deleted account may not share the same currency.
+// Just remembered the function is there, but never called. The user cannot access this yet ...
+So now we have to check each time a transaction's account is changed if the old and new accounts have the same currency.
+When changing the account currency, we need to check all its transactions.
+Seems rather involved...
+We could just do a simple 1:1 conversion, that means changing an account currency changes all it's transactions to that currency. Same goes for moving transactions, they take on the currency of the target account. So accounts will kind of be the currency determinator.
+So now we have to check each time a transaction's account is changed if the old and new accounts have the same currency.
+When changing the account currency, we need to check all its transactions.
+Seems rather involved...
+We could just do a simple 1:1 conversion, that means changing an account currency changes all it's transactions to that currency. Same goes for moving transactions, they take on the currency of the target account. So accounts will kind of be the currency determinator.
+But now, a transaction does not belong to one account. It involves at least two accounts. So there's no transaction's account. A split is attached to only one account.
+A user can only change one of the accounts involved in the transaction at a time. So this is a problem. The (multiple) accounts in the transaction would have different currencies after the edit.
+The solution may be, when there is any transactions (splits) using the account, the account's currency should be fixed and not changeable. An account's currency can be changed only when there is not transactions at all involving the account.
+When changing a split's account, a check out whether the two accounts have the same currency should be made.
+But now, a transaction does not belong to one account. It involves at least two accounts. So there's no transaction's account. A split is attached to only one account.
+A user can only change one of the accounts involved in the transaction at a time. So this is a problem. The (multiple) accounts in the transaction would have different currencies after the edit.
+The solution may be, when there is any transactions (splits) using the account, the account's currency should be fixed and not changeable. An account's currency can be changed only when there is not transactions at all involving the account.
+When changing a split's account, a check out whether the two accounts have the same currency should be made.
+My mistake, splits, not transactions.
+I like your proposal, but what about users who sometimes want to change the currency of the account without a conversion taking place. For example after creating accounts with the wrong currency and then changing (with no intent of a currency conversion). This would now be impossible.
+My mistake, splits, not transactions.
+I like your proposal, but what about users who sometimes want to change the currency of the account without a conversion taking place. For example after creating accounts with the wrong currency and then changing (with no intent of a currency conversion). This would now be impossible.
+I didn't thought that much. But consider this,
+I didn't thought that much. But consider this,
+How about we just do 3 and 4 and exclude changing the currency for all other cases.
+How about we just do 3 and 4 and exclude changing the currency for all other cases.
+Sounds good.
+Sounds good.

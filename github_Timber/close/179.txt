@@ -1,0 +1,3 @@
+title:Add release/tag on new versions
+
+so it's picked up and build on F-droid

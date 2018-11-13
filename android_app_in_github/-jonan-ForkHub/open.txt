@@ -1,0 +1,8 @@
+Filter by assignee is not working on third party repos
+Relative links in markdown files don't work
+Issues with check boxes aren't properly shown
+Closing or reopening an issue doesn't add the event
+Submodules aren't being shown in the code tree view
+Issue filter disappears if no issues are found
+Changing the username forces a logout
+Some activities still have the old refresh button

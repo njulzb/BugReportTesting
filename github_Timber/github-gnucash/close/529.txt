@@ -1,0 +1,51 @@
+title:If an export through "Sharing" is cancelled, the transaction are still deleted
+
+If I try to export, but then change my mind (go back without exporting because I do not see the application I am looking for) all transactions are deleted. I have selected that all transactions should be deleted, but this should happen only if the export is successful.
+Steps to reproduce:
+The transactions will be deleted but no application will have received the file.
+The data is not totally lost, really. It can be restored from the backup in the folder org.gnucash.android/backups/. The exported transactions can also be found in the folder org.gnucash.android/exports/. These folders should be in the internal storage of the device.
+Received through User Voice.
+This is an important one. But I can't think of an easy fix, since we do not get feedback from the third-party apps.
+One way would be to make a simple undo button which can be displayed once the user returns to the app. Then we hold restore the last backup.
+But it still feels inelegant and doesn't really solve the problem.
+This is an important one. But I can't think of an easy fix, since we do not get feedback from the third-party apps.
+One way would be to make a simple undo button which can be displayed once the user returns to the app. Then we hold restore the last backup.
+But it still feels inelegant and doesn't really solve the problem.
+Ok, I see. I'll try to think some solution.
+Ok, I see. I'll try to think some solution.
+It just occurred to me that we always make a backup before exporting.
+I'll add an article to the knowledgebase in UserVoice explaining how to recover data. Users can see those in the Help section.
+Also, if you have any guides or help articles, let me know and we can publish them there too.
+On 05.08.2016, at 18:39, Àlex Magaz Graça notifications@github.com wrote:
+Ok, I see. I'll try to think some solution.
+—
+You are receiving this because you commented.
+Reply to this email directly, view it on GitHub, or mute the thread.
+It just occurred to me that we always make a backup before exporting.
+I'll add an article to the knowledgebase in UserVoice explaining how to recover data. Users can see those in the Help section.
+Also, if you have any guides or help articles, let me know and we can publish them there too.
+On 05.08.2016, at 18:39, Àlex Magaz Graça notifications@github.com wrote:
+Ok, I see. I'll try to think some solution.
+—
+You are receiving this because you commented.
+Reply to this email directly, view it on GitHub, or mute the thread.
+Yes, I've been thinking about writing some help, but never find the time...
+Yes, I've been thinking about writing some help, but never find the time...
+I so know what you mean.
+Same here 😅
+On 05.08.2016, at 19:03, Àlex Magaz Graça notifications@github.com wrote:
+Yes, I've been thinking about writing some help, but never find the time...
+—
+You are receiving this because you commented.
+Reply to this email directly, view it on GitHub, or mute the thread.
+I so know what you mean.
+Same here 😅
+On 05.08.2016, at 19:03, Àlex Magaz Graça notifications@github.com wrote:
+Yes, I've been thinking about writing some help, but never find the time...
+—
+You are receiving this because you commented.
+Reply to this email directly, view it on GitHub, or mute the thread.
+I added a help topic explaining how to recover data from backups.
+That should suffice for now
+I added a help topic explaining how to recover data from backups.
+That should suffice for now

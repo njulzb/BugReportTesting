@@ -1,0 +1,11 @@
+title:jniLibs Folder
+
+sorry for my english @codinguser
+what's it for the jniLibs folder?
+Thanks in advance :)
+It's binaries for DropBox integration
+It's binaries for DropBox integration
+@juandiego26 please do not use issues to ask questions.
+You can send questions to gnucash.org@gmail.com
+@juandiego26 please do not use issues to ask questions.
+You can send questions to gnucash.org@gmail.com

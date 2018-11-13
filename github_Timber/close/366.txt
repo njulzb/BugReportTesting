@@ -1,0 +1,5 @@
+title:Licensing issue using Google Cast
+
+This app is currently licensed with GPL 3.0, which doesn't allow the usage of closed source libraries. While inspecting the code, I found that the package 'com.google.android.gms:play-services-cast-framework:11.6.0' which is used for Google Cast, as I understand it.
+Please drop this dependency if you want to comply with the GPL 3.0, otherwise change the license and use one that allows using google play services.
+I hope that this issue will be taken into consideration, for the sake of the whole open source community.

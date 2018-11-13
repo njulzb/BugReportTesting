@@ -1,0 +1,11 @@
+title:787 foreign key constraint error caused by unfixed balance split
+
+codinguser
+When importing the attached .gnucash file, it fails with a constraint error:
+There seems to be some issue with the scheduled transaction defined in the file, because the splits aren't balanced. This causes a template transaction to be created with an imbalance split (in GncXmlHandler.endElement) and with a currency code as account UID.
+The currency code as account UID in the split should be fixed when we finish parsing in GncXmlHandler.endDocument, however, the scheduled actions are parsed first, and here's the problem. When a scheduled action has been parsed, GncXmlHandler.generateMissedScheduledTransactions is called. This method clones the template transaction, but the split with the currency code as account UID isn't added to mAutoBalanceSplits so as to be fixed at the end.
+Received through User Voice (110).
+Minimal file to reproduce the problem (edited by hand). Attached as .txt, as GitHub doesn't accept .gnucash or .xml.
+Minimal file to reproduce the problem (edited by hand). Attached as .txt, as GitHub doesn't accept .gnucash or .xml.
+By the way, the desktop version of GnuCash (2.6.12) also crashes when opening the original file.
+By the way, the desktop version of GnuCash (2.6.12) also crashes when opening the original file.

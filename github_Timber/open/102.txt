@@ -1,0 +1,3 @@
+title:Metadata not shown of some tracks
+
+For example with this track only the title is displayed and not the artist and cover art, but they're in the metadata...

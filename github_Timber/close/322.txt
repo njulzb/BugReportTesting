@@ -1,0 +1,5 @@
+title:Recent version is not released in F-Droid
+
+The version in F-Droid is 0.2b. But the latest release is 0.3b. Is it not updated in F-Droid?
+Duplicate of #259.
+Duplicate of #259.

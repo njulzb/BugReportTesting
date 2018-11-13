@@ -1,0 +1,157 @@
+title:[unverified] Crash - Failed to generate export with parameters
+
+Email report:
+Android version 2.1.7 downloaded from Amazon Appstore.
+Exported accounts from desktop version 3.0
+Seems to function on the Android - can enter transactions.
+Crashes when I try to export those transactions.
+E/AndroidRuntime(29975): Process: org.gnucash.android, PID: 29975
+E/AndroidRuntime(29975): at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:197)
+E/AndroidRuntime(29975): at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:88)
+I/ActivityManager(14907): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=org.gnucash.android/.ui.account.AccountsActivity (has extras)} from uid 10035 on display 0
+I/ActivityManager(14907): Start proc 31865:org.gnucash.android/u0a199 for activity org.gnucash.android/.ui.account.AccountsActivity
+E/AlarmManager(14907): RTC Alarm: 2 null org.gnucash.android org.gnucash.android/.service.ScheduledActionService
+I/ActivityManager(14907): START u0 {act=android.intent.action.VIEW cmp=org.gnucash.android/.ui.transaction.TransactionsActivity (has extras)} from uid 10199 on display 0
+I/ActivityManager(14907): START u0 {act=android.intent.action.VIEW cmp=org.gnucash.android/.ui.transaction.TransactionsActivity (has extras)} from uid 10199 on display 0
+I/ActivityManager(14907): START u0 {act=android.intent.action.VIEW cmp=org.gnucash.android/.ui.transaction.TransactionsActivity (has extras)} from uid 10199 on display 0
+I/ActivityManager(14907): START u0 {act=android.intent.action.VIEW cmp=org.gnucash.android/.ui.transaction.TransactionsActivity (has extras)} from uid 10199 on display 0
+I/ActivityManager(14907): START u0 {cmp=org.gnucash.android/.ui.common.FormActivity (has extras)} from uid 10199 on display 0
+E/AndroidRuntime(31865): Process: org.gnucash.android, PID: 31865
+E/AndroidRuntime(31865): at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:197)
+E/AndroidRuntime(31865): at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:88)
+W/ActivityManager(14907): Force finishing activity org.gnucash.android/.ui.account.AccountsActivity
+W/ActivityManager(14907): Activity pause timeout for ActivityRecord{a329824 u0 org.gnucash.android/.ui.common.FormActivity t1296 f}
+W/ActivityManager(14907): Force finishing activity org.gnucash.android/.ui.common.FormActivity
+W/ActivityManager(14907): Force finishing activity org.gnucash.android/.ui.account.AccountsActivity
+I/ActivityManager(14907): Killing 31865:org.gnucash.android/u0a199 (adj 900): crash
+I/ActivityManager(14907): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=org.gnucash.android/.ui.account.AccountsActivity (has extras)} from uid 10035 on display 0
+I/ActivityManager(14907): Start proc 1331:org.gnucash.android/u0a199 for activity org.gnucash.android/.ui.account.AccountsActivity
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 198 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 37 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 2 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 51 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 4 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 8 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 12 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 1 line
+I/ActivityManager(14907): Displayed org.gnucash.android/.ui.account.AccountsActivity: +999ms
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 40 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 37 lines
+I/ActivityManager(14907): START u0 {cmp=org.gnucash.android/com.uservoice.uservoicesdk.activity.PortalActivity} from uid 10199 on display 0
+I/ActivityManager(14907): Displayed org.gnucash.android/com.uservoice.uservoicesdk.activity.PortalActivity: +141ms
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 12 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 1 line
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 30 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 31 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 2 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 10 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 8 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 8 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 4 lines
+I/ActivityManager(14907): START u0 {cmp=org.gnucash.android/.ui.settings.PreferenceActivity} from uid 10199 on display 0
+I/ActivityManager(14907): Displayed org.gnucash.android/.ui.settings.PreferenceActivity: +229ms
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 2 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 6 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 8 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 17 lines
+I/chatty ( 1331): uid=10199(org.gnucash.android) expire 6 lines
+I/ActivityManager(14907): START u0 {cmp=org.gnucash.android/.ui.common.FormActivity (has extras)} from uid 10199 on display 0
+I/ActivityManager(14907): Displayed org.gnucash.android/.ui.common.FormActivity: +204ms
+E/AndroidRuntime( 1331): Process: org.gnucash.android, PID: 1331
+E/AndroidRuntime( 1331): at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:197)
+E/AndroidRuntime( 1331): at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:88)
+W/ActivityManager(14907): Force finishing activity org.gnucash.android/.ui.account.AccountsActivity
+W/ActivityManager(14907): Activity pause timeout for ActivityRecord{a1e5c3d u0 org.gnucash.android/.ui.common.FormActivity t1300 f}
+I/ActivityManager(14907): Killing 1331:org.gnucash.android/u0a199 (adj 900): crash
+I/ActivityManager(14907): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10300000 cmp=org.gnucash.android/.ui.account.AccountsActivity bnds=[850,871][1030,1051] (has extras)} from uid 10035 on display 0
+I/ActivityManager(14907): Start proc 2133:org.gnucash.android/u0a199 for activity org.gnucash.android/.ui.account.AccountsActivity
+I/chatty ( 2133): uid=10199(org.gnucash.android) expire 200 lines
+I/chatty ( 2133): uid=10199(org.gnucash.android) expire 1 line
+I/chatty ( 2133): uid=10199(org.gnucash.android) expire 37 lines
+I/chatty ( 2133): uid=10199(org.gnucash.android) expire 51 lines
+I/chatty ( 2133): uid=10199(org.gnucash.android) expire 2 lines
+I/chatty ( 2133): uid=10199(org.gnucash.android) expire 5 lines
+I/chatty ( 2133): uid=10199(org.gnucash.android) expire 6 lines
+I/chatty ( 2133): uid=10199(org.gnucash.android) expire 1 line
+I/ActivityManager(14907): Displayed org.gnucash.android/.ui.account.AccountsActivity: +976ms
+I/chatty ( 2133): uid=10199(org.gnucash.android) expire 8 lines
+I/chatty ( 2133): uid=10199(org.gnucash.android) expire 17 lines
+I/ActivityManager(14907): START u0 {cmp=org.gnucash.android/.ui.common.FormActivity (has extras)} from uid 10199 on display 0
+I/ActivityManager(14907): Displayed org.gnucash.android/.ui.common.FormActivity: +204ms
+I/chatty ( 2133): uid=10199(org.gnucash.android) expire 1 line
+E/AndroidRuntime( 2133): Process: org.gnucash.android, PID: 2133
+E/AndroidRuntime( 2133): at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:197)
+E/AndroidRuntime( 2133): at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:88)
+W/ActivityManager(14907): Force finishing activity org.gnucash.android/.ui.account.AccountsActivity
+W/ActivityManager(14907): Activity pause timeout for ActivityRecord{31b7fbd u0 org.gnucash.android/.ui.common.FormActivity t1300 f}
+W/ActivityManager(14907): Force finishing activity org.gnucash.android/.ui.common.FormActivity
+W/ActivityManager(14907): Force finishing activity org.gnucash.android/.ui.account.AccountsActivity
+I/ActivityManager(14907): Killing 2133:org.gnucash.android/u0a199 (adj 900): crash
+I/ActivityManager(14907): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=org.gnucash.android/.ui.account.AccountsActivity (has extras)} from uid 10035 on display 0
+I/ActivityManager(14907): Start proc 3394:org.gnucash.android/u0a199 for activity org.gnucash.android/.ui.account.AccountsActivity
+I/chatty ( 3394): uid=10199(org.gnucash.android) expire 4 lines
+I/chatty ( 3394): uid=10199(org.gnucash.android) expire 8 lines
+I/chatty ( 3394): uid=10199(org.gnucash.android) expire 1 line
+D/Kiwi ( 3394): Kiwi: Starting initialization process for application: org.gnucash.android
+D/Kiwi ( 3394): ResourceManagerImpl: Registering resource: org.gnucash.android.app.GnuCashApplication@5bd4b13
+D/Kiwi ( 3394): ResourceManagerImpl: Populating: org.gnucash.android.app.GnuCashApplication@5bd4b13
+D/Kiwi ( 3394): ResourceManagerImpl: Ignoring: org.gnucash.android.app.GnuCashApplication@5bd4b13, not a kiwi class
+D/Kiwi ( 3394): Kiwi: onCreate: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity->onCreate. Activity: org.gnucash.android.ui.account.AccountsActivity@30957b0, Total Activities: 1
+D/Kiwi ( 3394): Kiwi: onCreate: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity->onCreate. Activity: org.gnucash.android.ui.account.AccountsActivity@30957b0, Total Activities: 2
+D/Kiwi ( 3394): Kiwi: onCreate: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity->onCreate. Activity: org.gnucash.android.ui.account.AccountsActivity@30957b0, Total Activities: 3
+D/Kiwi ( 3394): Kiwi: onCreate: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity->onCreate. Activity: org.gnucash.android.ui.account.AccountsActivity@30957b0, Total Activities: 4
+D/Kiwi ( 3394): Kiwi: onCreate: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity->onCreate. Activity: org.gnucash.android.ui.account.AccountsActivity@30957b0, Total Activities: 5
+D/Kiwi ( 3394): Kiwi: onCreate: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity->onCreate. Activity: org.gnucash.android.ui.account.AccountsActivity@30957b0, Total Activities: 6
+D/Kiwi ( 3394): Kiwi: onStart: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity started: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): Kiwi: onStart: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity started: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): Kiwi: onStart: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity started: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): Kiwi: onStart: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity started: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): Kiwi: onResume: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity resumed: org.gnucash.android.ui.account.AccountsActivity@30957b0, is child: false
+D/Kiwi ( 3394): ContextManagerImpl: Setting visible to: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity now visible: org.gnucash.android.ui.account.AccountsActivity@30957b0, publishing resume event
+D/Kiwi ( 3394): Kiwi: onResume: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity resumed: org.gnucash.android.ui.account.AccountsActivity@30957b0, is child: false
+D/Kiwi ( 3394): ContextManagerImpl: Setting visible to: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity now visible: org.gnucash.android.ui.account.AccountsActivity@30957b0, publishing resume event
+D/Kiwi ( 3394): Kiwi: onResume: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity resumed: org.gnucash.android.ui.account.AccountsActivity@30957b0, is child: false
+D/Kiwi ( 3394): ContextManagerImpl: Setting visible to: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity now visible: org.gnucash.android.ui.account.AccountsActivity@30957b0, publishing resume event
+D/Kiwi ( 3394): Kiwi: onResume: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity resumed: org.gnucash.android.ui.account.AccountsActivity@30957b0, is child: false
+D/Kiwi ( 3394): ContextManagerImpl: Setting visible to: org.gnucash.android.ui.account.AccountsActivity@30957b0
+D/Kiwi ( 3394): ContextManagerImpl: Activity now visible: org.gnucash.android.ui.account.AccountsActivity@30957b0, publishing resume event
+W/HollywoodAppstore.ContentMetadataCache(30034): Could not find a valid content metadata for the given content ID: org.gnucash.android
+I/ActivityManager(14907): Displayed org.gnucash.android/.ui.account.AccountsActivity: +1s34ms
+E/HollywoodAppstore.CommandServiceStub(30034): Failed to get content metadata details for pkg: org.gnucash.android
+D/Kiwi ( 3394): DataAuthenticationKeyLoader: Opening apk: /data/app/org.gnucash.android-1/base.apk
+I/ActivityManager(14907): START u0 {cmp=org.gnucash.android/.ui.common.FormActivity (has extras)} from uid 10199 on display 0
+I/ActivityManager(14907): Displayed org.gnucash.android/.ui.common.FormActivity: +260ms
+W/System.err( 3394): org.gnucash.android.export.Exporter$ExporterException: Failed to generate export with parameters: Export all transactions created since 2018-04-02 03:01:33.317 UTC as QIF to SHARING - split quantity has illegal denominator: 1000000
+W/System.err( 3394): at org.gnucash.android.export.qif.QifExporter.generateExport(QifExporter.java:206)
+W/System.err( 3394): at org.gnucash.android.export.ExportAsyncTask.doInBackground(ExportAsyncTask.java:147)
+W/System.err( 3394): at org.gnucash.android.export.ExportAsyncTask.doInBackground(ExportAsyncTask.java:88)
+E/AndroidRuntime( 3394): Process: org.gnucash.android, PID: 3394
+E/AndroidRuntime( 3394): at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:197)
+E/AndroidRuntime( 3394): at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:88)
+W/ActivityManager(14907): Force finishing activity org.gnucash.android/.ui.account.AccountsActivity
+W/ActivityManager(14907): Activity pause timeout for ActivityRecord{8918333 u0 org.gnucash.android/.ui.common.FormActivity t1302 f}
+W/ActivityManager(14907): Force finishing activity org.gnucash.android/.ui.common.FormActivity
+W/ActivityManager(14907): Force finishing activity org.gnucash.android/.ui.account.AccountsActivity
+I/ActivityManager(14907): Killing 3394:org.gnucash.android/u0a199 (adj 900): crash
+I/ActivityManager(14907): Start proc 4074:org.gnucash.android/u0a199 for service org.gnucash.android/.service.ScheduledActionService
+W/System ( 4074): ClassLoader referenced unknown path: /data/app/org.gnucash.android-1/lib/arm
+D/UV ( 4074): https://by.uservoice.com/t/k/gnucash/d/g/track.js?_=1523761742915&c=_&d=eyJ1Ijp7ImFwcF92ZXJzaW9uX2NvZGUiOjIxNzAwLCJhbmRyb2lkX3ZlcnNpb24iOiI3LjEuMiIsImFwcF92ZXJzaW9uX25hbWUiOiIyLjEuNyJ9fQ%3D%3D
+I/ScheduledActionService( 4074): Processing 0 total scheduled actions for Book: gnucash-accounts.gnucash
+W/SQLiteConnectionPool( 4074): A SQLiteConnection object for database '/data/user/0/org.gnucash.android/databases/30a03d2791bf423ebb2c39f5024ec764' was leaked! Please fix your application to end transactions in progress properly and to close the database when it is no longer needed.

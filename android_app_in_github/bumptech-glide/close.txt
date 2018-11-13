@@ -1,0 +1,378 @@
+Cannot override error placeholder drawable by using resource id
+can't import version 4.7.0
+Wrong package of ProGuard ImageHeaderParser config
+NullPointerException
+GlideModule annotation not provided in compile dependency for 4.6.0
+Can't load net url in version 4.5.0.
+java.lang.IllegalArgumentException(Bitmap not large enough to support new configuration)
+OkHttpClient Leak after FileNotFoundException (No Image)
+MemorySizeCalculator.setMemoryCacheScreens()  logic mistake
+Make PMD depend on compiled .class files
+java.lang.IllegalStateException: Already released
+NPE on Glide 4.4 in com.bumptech.glide.load.engine.DecodeJob.runLoadPath
+Random fail when loading asset images
+Interlaced or downsampled GIFs with transparent pixels decode as static images
+IllegalStateException: Already released
+StateVerifier throw if needed 4.4.0
+Compiler crash when compiling with kapt and in-process execution strategy
+Glide doesn't skip cache when skipMemoryCache(true) and/or diskCacheStrategy(DiskCacheStrategy.NONE))
+ImageView does not load new resoure if I use byte array
+API 18 emulator on travis can OOM in DownsamplerEmulatorTest
+Emulator tests can fail with com.android.builder.testing.ConnectedDevice > No tests found
+URL with semicolon not working.
+IllegalStateException: Cannot obtain size for recycled Bitmap
+NoSuchElementException during memory trimming
+Race condition with memory cache?NPE: 4.3.0 and GIFs lifecycle
+Change from Glide 4.2.0 to 4.3.0 = crash. Revert to 4.2.0 and all is fine again
+Glide v4s gradle dependencies are incorrect
+On 4.3 Gifs do not always play
+Gifs appear in multiple views when start/stopped
+Image display exception when call transforms(new fitcenter(), new RoundedCorners(10))
+GIF glitchy rendering with RoundedCorners in Glide 4.2
+Unable to manage OutOfMemoryError exception
+bug : Glide load failed when clear app cache and clearDiskCache
+remote gif url load exception
+strange behaviour when upscaling image using CENTER_OUTSIDE DownsampleStrategy
+Compile error when use version 4.2.0----Error: RequestOptionsGenerator$1 cannot be accessed
+Crash in RequestManager
+Bug: SVG sample crashes
+View sizes are hard.
+Glide NPE
+NoClassDefFoundError: com/google/common/base/Function building with --parallel
+in glide V3.6 , it can't find some thumbnail of local video ,but i can find thumbnails in other ways ,for excample use "MediaMetaDataRetriever"
+findBugs report "defines clone() but doesn't implement Cloneable"
+Warning "Possible heap pollution" in generated code
+Report a bug when using Glide.with(view)
+HttpUrlFetcher leaks resources
+Why is the picture like this?
+BITMAP_POOL_TARGET_SCREENS should be >= O not > O
+okhttp3 User-Agent Unexpected char exceptionGlide 4.1.0 - Can't compile with android studio 3.0 Beta 4
+App Crash in StrictMode
+Fix minSdkVersion in readme (fixes #2134)
+com.android.dex.DexException with Glide 4.1.0 and Android Studio Beta 4
+WARNING: Module 'com.github.bumptech.glide:glide:4.1.0' depends on one or more Android Libraries but is a jar
+Delayed unsubscribe timing to unsubscribe after displaying the last i…
+GIF overdraw
+Null model ignores Log level
+IllegalStateException in OnDestroy() "Failed to remove target from managers"
+java.lang.IllegalStateException: Had two simultaneous puts for:***
+How to use glide for big video file?
+ConcurrentModificationException with RequestBuilder as a thumbnail
+StrictMode: resources leak (glide 4 with okhttp integration)
+Fix typos in README.md
+Glide won't load certain images
+Fix typo
+Prevent NullPointerException by not setting the static instance
+Conflicting dependencies in annotation processors
+RecyclerView integration should default to AAR instead of JAR
+fix some documents
+NullPointerException: Attempt to invoke interface method 'void java.util.List.clear()' on a null object reference
+Placeholder and many other methods not available in 4.0.0 RC0
+OkHttp resource leak with 4.0
+NullPointerException: Attempt to invoke interface method 'void java.util.List.clear()' on a null object reference
+NullPointerException in RequestManagerRetriever.findAllSupportFragmentsWithViewsGlide 4.0.0-RC0: Duplicate method "as" in generated GlideRequests prevents compilation
+Error drawable not shown on null model.
+[Glide 4.0.0-RC0][Lint] -  Error: This method should only be accessed from tests or within private scope [VisibleForTests]     Glide.tearDown();
+documentation of fluent api - wrong order of calls
+Glide 4.0.0-RC0: problems with recyclerview-integration
+Glide 4 - extension annotation procesor, error, fallback
+GlideException doesn't return anymore HTTP response code
+4.0.0-RC0 Failed to resolve gifdecoder
+AppModuleProcessor failed
+NotificationTarget.update fc
+Fix wrong interpretation of the Netscape iteration count in an animated GIF
+NullPointerException: Attempt to invoke interface method 'void java.util.List.clear()' on a null object reference
+glide load gif never loop with  LOOP_INTRINSIC mode
+exif auto rotation broken in Android.
+Instances of ImageViewTarget increase during the activity lifecycle
+Delays on last GIF frames are ignored
+Images are not fit ImageView with wrap_content height
+Load video frames with different time , it always show the first frame.
+show gif problem
+Gif only show partly.
+Problem with glide in conjunction with robolectric
+android 7.0  cache does not update? please solve intime ~  Thank you!
+java.lang.IllegalStateException: Activity has been destroyed on Nested Fragment (Demo Project Inside)
+Glide load images in disorder
+Lots of large size image decoding requests in Recyclerview may cause process killed on Galaxy S3Native crash on Nexus 5x with October patches (NBD90W)
+{java.lang.RuntimeException}error:24064064:random number generator:SSLEAY_RAND_BYTES:PRNG not seeded
+Error in loading specific image!
+GIF Loading order of operations
+SupportRequestManagerFragment.onLowMemory(SupportRequestManagerFragment.java) #NoSuchElementException
+Fixes #1464
+Error:Failed to resolve: glide-parent.third_party:gif decoder:unspecified
+Close the OkHttp response in case of error. Fixes https://github.com/…
+Non-2xx responses leak connections with OkHttp integrations
+Glide Activity has been destroyed
+Loading images from local storage for listview in appwidget may cause SecurityException
+GIF problem in version 3.8.0
+Class com.bumptech.glide.Glide failed lock verification and will run slower.
+NullPointerException ManifestParser.parse(ManifestParser.java:27)
+asGif()
+Volley Integeration 2.0.0 snapshot not compile
+Forward port GIF fixes
+Forward port PR #1281: Use application Context in GifResourceDecoder
+Local GIF is incorrectly decoded for playback
+GifResourceDecoder leaks activity once in memory cache
+GIF show  strange phenomenon
+setting large .placeholder() leads to vertically stretched image
+Vector drawable can't be used as error drawable
+Using placeholder ruins aspect ratio of loaded image
+App crash if loading image is gifForward port 3.8.0 changes
+Glide loads with lower image quality when height is set to wrap_content
+glide can't load the image of HD video
+Gson serialize/deserialize causes exception in GlideUrl because of Headers interface
+calculateBestThreadCount does disk IO so had bad performance
+Failed to resolve okhttp3-integration:1.4.0@jar and okhttp3-integration:1.4.0
+can not show gif image with last frame broken
+Fill only the area that was modified by the previous GIF frame
+Fixes #970 gif disposal backporting to v3
+Get frame delay before advancing to show the current frame for the correct amount of time
+Fix thread-unsafe behaviours in GifDecoder
+GIF animation sometimes continues for a while even after clearing the target
+IOException occured, showing 'Unable to put to disk cache'
+Highly customized loads may leak Activity through EngineKey by DiskCache
+black square background appears under the transparent gif.
+The RequestFutureTarget  violates the Future contract.
+Gif exceptional display
+GIF - Significant delay before showing the second frame for the very first loop.
+The Gif load problem, can't display well
+Failed to resolve:glide-parent:library:unspecified
+ViewTarget MemoryLeak
+can not stop gif animating right now
+Glide error after activity was destroyed and restarted
+Catch IllegalStateException in onAttach
+decoder->decode returned falseError:Could not find glide-parent:library:unspecified. Required by: com.github.bumptech.glide:okhttp3-integration:1.4.0
+Change invalid okhttp3-integration dep
+Backport GIF overdraw fixes
+Gradle compile failed on okhttp3 integration using dependency
+Fixes issue #836, always clear previous frame when drawing first frame
+Background bleeds through when cross-fading
+OkHttp3 integration lib wrong pom xml
+Gif frames getting dropped into wrong ImageView
+Padded dynamic sized ImageViews load low-quality blured images
+A problem for Glide used for loading gif.
+NPE: 'int com.bumptech.glide.gifdecoder.GifHeader.frameCount'
+Fixed 3.6.0 Javadocs link
+Gif animation in recyclerview stop playing after scrolling
+Crash when clear memory
+Thread starting during runtime shutdown
+cleans up Memory leak, because raw data was not released
+Integration lib version discrepancies
+Fix breaking build for SNAPSHOT users
+Bug:Delete the journal, Glide can't work.
+Lower efficiency loading gif than android-gif-drawable
+fix bug of DiskCacheStrategy.RESOURCE
+Caused by: java.lang.IllegalStateException: Activity has been destroyed
+Some GIFs overdraw on previous frames
+Problems with EXIF orientation
+AnimatedGifEncoder.java has bug:Fix circle crop rect bug.
+Glide with VectorDrawables
+fix for issue #738 Some images simply do not download (Black image) -…
+Getting Bitmap Reconfigure warning on Android M
+Some images simply do not download (Black image) - Android
+NoSuchElementException from SupportRequestManagerFragment.onLowMemory
+Swap clearing memory cache and pool to prevent re-pooling Bitmaps
+ImageVideoBitmapDecoder.getId doesn't delegate
+Bitmap loaded into ImageView with undesired padding on Android 6.0
+Gif memory usage
+Remove aar qualifier since Glide is distributed as jar
+About bitmap recycle
+Glide.get fails if PackageManager IPC fails
+Loading an alias'd drawable.xml does not work
+Fix run task in gallery sample
+Maven dependency type issue
+GIFs drop frames when many of them are displayed
+crossFade and placeHolder
+Canvas: trying to use a recycled bitmap randomly when cycling through images
+Glide v4.0 throwing NullPointerException after 404 response
+When ImageView scaleType is centerInside, the result bitmap size may be wrong!
+NoSuchMethodError: Resources.getDisplayMetrics at MemorySizeCalculator:35
+Fix spelling error in ResourceTranscoder
+NoSuchMethodError being thrown in Glide.get() in Application onCreate
+NullPointerExceptionGlide default animation scale images up after they're loaded
+Http user agent changed after 3.6.1 release
+When placeholder is replaced by image it keeps with the size of placeholder when using .override(size, size)
+Docs confuse
+Documentation (or packaging) issue with OkHttp integration
+android:tint not working on Android Lollipop
+Glide shows greenish image
+Size multiplayer is changing Target.SIZE_ORIGINAL constant
+Glide Transformation of GIF Image
+Gallery sample app doesn't retain it's position
+IllegalStateException in getSupportRequestManagerFragment
+Getting frames from video don't return anything but the very first frame
+Small typo on IllegalArgumentException
+StrictMode warning about an unclosed resourse
+Handle WebP images without content length headers.
+why
+Image Exif Issue
+CircleCrop's paint needs to use SRC_IN only when drawing the Bitmap
+Handle null url in GlideUrl without crashing
+.thumbnail() uses the load() transform
+Potential issues around HttpUrlFetcher
+Image loads with stock, but can't be loaded with okhttp-integration
+Missing error handling for Errors
+Downsampler.AT_MOST is broken.
+Thread race - Same image url will get fetched even though there is already an on-going requestIntegration comments
+DecodeJob.cancel may be racing with DecodeJob.decodeSource
+Incorrect background on Lollipop for a GIF displayed asBitmap()
+Potential problem with OKHTTP integration library
+Invalid resource ID crashes the app
+Image quality
+Doc : Update the configuration part about cache as it's deprecated
+Images do not load with OkHttp
+Loading .webp images using thumbor
+Complex synchronization issue.
+Do not try to clear a non existent request
+MediaStore thumbnails aren't rotated correctly.
+[Bug] crossFade(xxx) duration not respected
+Inconsistent behavior with WebP images
+distorted image with dynamically sized image views
+Image orientation error when load image from network
+fitCenter does not work if used with placeholder
+PreloadTargets call to clear() is ignored
+Placeholders is not properly set
+Can't load image with URL from sample with "SkImageDecoder::Factory returned null"
+Set view tag to null in clear(View view) to avoid memory leak.
+ConcurrentModificationException on activity start
+Possible NPE when Disk Cache fails
+SIGSEGV on android 4.3 (galaxy nexus) JWR66Y
+ImageView.setTag cannot be used for ViewHolder when root of layoutAnti-alias vs FilterBitmap flags
+nullpointerexception
+Headers should be grouped in order
+RuntimeException: Canvas: trying to use a recycled bitmap
+Very long time before play GIF begins
+okhttp-integration 1.1.0 doesn't contain OkHttpGlideModule
+NPE on low memory
+Crash when mutating SquaringDrawable (getConstantState is not overridden) - v3.5.2
+java.lang.NullPointerException at com.bumptech.glide.manager.RequestTracker.clearRequests (RequestTracker.java:80)
+Requests started before onStart may never run
+ImageHeaderParser.getType() is incorrect for JPEGs
+Add a Size + Config Strategy.
+BitmapPool hit rate decreased in Glide 3.5
+Bitmaps may be encoded as PNGs unecessarily
+Target.SIZE_ORIGINAL is ignored
+java.lang.NullPointerException at com.bumptech.glide.util.Util.getBitmapByteSize
+Stackoverflow when reusing the same request instance
+java.lang.NullPointerException at com.bumptech.glide.manager.RequestManagerFragment
+A mistake for Glide release page
+com.bumptech.glide.manager.RequestTracker.pauseRequests (SourceFile:57) (NullPointerException)
+java.lang.NoClassDefFoundError: com.bumptech.glide.RequestManager
+Meta tag parsing cause exception
+Unable to build on Windows
+Main thread assertion is redundant when using Glide with RemoteViews
+Glide.load(File file) performance issuesBackground image loaded from cache
+ConcurrentModificationException when resuming requests
+Rendering glitch with animated GIFs and some hardware
+Reduce Glide setup time
+getPhotoCacheDir causes a strict mode violation on L
+Thumbnail request do nothing, because it's model is null
+Can't create handler inside thread that has not called Looper.prepare()
+OOM when decode large GIF file
+Downloaded images are not displayed
+Downsampler issue
+IndexOutOfBoundsException when parseExifSegment
+OkHttp integration causes very slow loads in RecyclerView
+Exception occurred when loading large .bmp file
+Have to fix Transformations (Wiki)
+Cancelling the Image Request on the basis of progress
+Images are misplaced when the gridview is scrolling
+DataFetcher#cancel() should be called on a background thread
+GlideBitmapDrawable sometimes shares state (including ColorFilter)
+TransformationUtils.rotateImageExif may cause rotate all bitmaps, even it needn't rotation
+Receiving NoSuchElementException when trimming memory
+image displayed get blur or pixelated in listview
+requests with skipMemoryCache should not check memory cache
+NetworkOnMainThreadException when using Glide with OkHttp
+Exif data not using to image rotation while downloaded from network
+Robolectric 2.4 is outGif image frames spill into each other.
+Cancel thumb requests even if there is a parent coordinator.
+Clear thumbnails after full load completes
+override should be passed through to thumbnail requests
+NPE caused by SourceEncoder
+Crash on API 8 Collections.newSetFromMap
+Glide doesn't work on Archos 50 Platinum
+ImageHeaderParser may read most/all of images with ICP segments
+Glide's BufferedInputStream grows to the size of the image
+Downsampler doesn't account for sample size when re-using Bitmaps
+Pull changes into disklrucache
+NPE in GenericRequest
+Native crash playing Gifs
+Frame transformations are not applied to gifs cached using SOURCE
+Frames of transformed GIFs are sometimes transparent
+Black areas of GIFs can be encoded as transparent
+NPE recycling null Bitmap
+Glide can leak a single Activity
+Gif frames are sometimes partially decoded
+Gravity isn't applied for GifDrawables
+Gif frame timing is not always obeyed
+First frames of Gifs can appear partially decoded
+Certain GIFs are only partially decoded
+GifDrawable may try to draw with recycled bitmaps
+Gifs with transparent frames are not encoded as transparentGif decoder displays blank when given certain gifs
+Decoding single frame gifs can fail
+Fix underdraw in FitCenter
+SizeStrategy should handle Bitmaps with null configs
+Synchronize get key in TranscoderRegistry
+BitmapRequestBuilder#format doesn't change the format for the cache decoder
+Concurrency bug obtaining DataLoadProviders
+NPE due to recent commit
+Using DiskCacheStrategy.SOURCE with file descriptors fails
+Glide should not generically cache Uris
+Drawables should have build-based cache id
+GifHeaderParser BufferUnderflowException
+Change getSize to allow adding/removing callbacks in Target
+java.lang.IllegalArgumentException: Cannot add a callback twice
+Exception@ com.bumptech.glide.load.engine.EngineJob 126 line
+Glide's String/Uri handling breaks for some file paths
+GifDecoder should decode first frame before returning Drawable
+Glide.with(plain old activity) throws pre 3.0
+ParcelFileDescriptor image loading is broken pre 4.1.1_r1
+Bitmap transformations should set alpha on pooled bitmaps appropriately
+KitKat NPE in Bitmap.getAllocationByteCount
+Image parts are missing
+Cache image only if it was downloaded completely
+Document width/height values
+Documentation for FutureTarget is out of dateGlide is displaying random images
+java.lang.IllegalStateException: Recursive entry to executePendingTransactions
+Cannot handle placehold.it GIFs
+Unable to load images whose URL contains accent marks
+Transparent images overlapping while reusing views
+Image space occupied but not Image is shown
+Image skewing
+RequestTracker should not restart cleared requests in onResume
+Error Handling in Glide
+Workaround for inSampleSize bug on Android 4.4.3+
+Fails on Redirects - Request Failed 302
+Image disappears after setAlpha/setColorFilter on ImageView containing GlideBitmapDrawable
+Glide in Fragment error: recursive entry to executePendingTransactions
+Don't use junit.framework.Assert in Robolectric tests
+NPE in 3.0a, in EngineJob
+A bug in ImageManagerJob.cancel
+A simple calculation mistake
+Sample Not Working
+Errors reading from HttpUrlConnection streams are not handled correctly
+OOM loading huge gifs
+Exception loading Gifs
+Compile errors generating individual project javadocs
+Scroll issue - not loading image from memory cache
+App crash when uri is invalid (v.2.0.3)
+Strict mode violation opening disk cacheCannot fit center image to within width=-2 or height=-2
+View recycle causes multiple loads in same view if scrolled really fast in a grid
+gradle build failing
+Getting a lot of "java.lang.IllegalArgumentException: Cannot draw recycled bitmaps" after adding the clear memory in LruMemoryCache
+Not possible load image on ImageView with WRAP_CONTENT?
+call recycle on discarded bitmaps
+Bypass BitmapPool for gif images
+IllegalArgument IP:null
+Possible disc cache key conflict - Wrong image returned
+Getting IllegalArgument exception several times
+Out of memory error
+Disk cache images as-is
+IllegalArgumentException in BitmapFactory.decodeStream
+Crashes when matchparent/wrapcontent
+errorResourceId should be tested with 0 not -1
+DiskCache initialization is wrong
+Wrapped views must not use wrap_content
+Bitmap recycling race

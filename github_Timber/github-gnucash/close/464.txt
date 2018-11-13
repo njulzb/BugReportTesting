@@ -1,0 +1,6 @@
+title:Export Transactions: wrong time suggestion in first export
+
+How to reproduce
+Additional information
+@fefe982 could you verify this bug please?
+@fefe982 could you verify this bug please?

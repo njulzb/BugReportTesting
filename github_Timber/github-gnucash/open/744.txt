@@ -1,0 +1,9 @@
+title:Better layout for resizing the widget
+
+There is currently one widget available with all the functionality I'm looking for: account name, balance, and the ability to create new transaction straight from the widget.
+However, it is taking too much space. What I like to do is resize the widget to 1x1 size only and still have all the options layed out correctly.
+I will look into adjusting this.
+All the information and functionality retained in the new layout.
+The layout hides most of the information and the plus button for creating transactions.
+The method is already user here. The number of columns is calculated and then a different layout is loaded. It is enough if only the 1x1 layout is created. Perhaps 2x1, also.
+The method is already user here. The number of columns is calculated and then a different layout is loaded. It is enough if only the 1x1 layout is created. Perhaps 2x1, also.

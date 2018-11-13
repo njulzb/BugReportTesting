@@ -1,0 +1,11 @@
+title:Crash after putting the timer at the end of the song
+
+Hey, when I pull the timer all the way to the end of the song and hold it there it crashes the app. (It seems to be reproduceable tell me if you want a logcat)
+Timer as in slider? Was unable to reproduce it on my device. Please share logcat
+Timer as in slider? Was unable to reproduce it on my device. Please share logcat
+Yes! The slider (forgot the word, English is not my native language).
+Here's the logcat
+Yes! The slider (forgot the word, English is not my native language).
+Here's the logcat
+No problem:) Looking into the crash
+No problem:) Looking into the crash

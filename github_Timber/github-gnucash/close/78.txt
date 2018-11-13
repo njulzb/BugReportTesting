@@ -1,0 +1,8 @@
+title:Debit/credit mixed up?
+
+Are debit and credit used correctly, or is the display just awkward? Hit me if I'm wrong, but a debit on an asset account should increase the balance while a credit should decrease the balance. The posting should also show up as positive on the asset account if debit, and as negative if credit.
+Currently, when I add a transaction on an asset account 'A', enter value 50 and chose debit (a red "DEBIT" with a green bar below is displayed), then the amount is displayed as negative and A's balance will be decreased. Or is it that if 'DEBIT' is displayed, it means, 'If you press this button, the transaction will be a debit?' That would be quite confusing.
+Cheers,
+Martin
+You*re right. Currently the app doesn't take the account type into consideration when handling Debit/Credit transactions.
+You*re right. Currently the app doesn't take the account type into consideration when handling Debit/Credit transactions.

@@ -1,0 +1,5 @@
+title:Export book in CSV format
+
+GnuCash desktop will include a new CSV importer which can handle splits and prices etc.
+Would be good if the app can support this format and maybe eventually switch to CSV export as the default.
+Template for the CSV format would be that which GnuCash desktop itself currently exports. (Up till v2.6, it was not possible for GnuCash desktop to consume it's own CSV exports. But that should change from v3.0)

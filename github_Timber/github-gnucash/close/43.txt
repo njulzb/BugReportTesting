@@ -1,0 +1,134 @@
+title:ReOpen: GNUChash cannot detect encoding in new version of OFX file (my comment in issue #16)
+
+Hello, codinguser.
+It is SERIOUS problem for users use CJK characters.
+Gnucash supporse import OFX is SGML type.
+For example (http://www.ofx.net/OFXExamplesPage/OFXExamples.aspx).
+But,  GnucashMobile exports XML type OFX.
+Gnucash (exactly libofx) cannot interpret XML header like
+So, Gnucash(libofx) judge OFX file(UTF-8) is encoded by "CP1252" .
+I tested to use Japanese characters, it all changed garbage bad characters when it was imported !!
+libofx's header reading code is around line 202 of https://github.com/bdonlan/libofx/blob/master/lib/ofx_preproc.cpp
+And, default value "CP1252" defined line 50 of same file.
+But we tried adding the encoding to the OFX header in the file a while back and it did not help much. Have you tried importing a file with ENCODING specified in the OFX header (not the xml header)?
+If not, open one of the OFX files and add ENCODING="UTF-8" to the OFX header and try importing it and let me know what results you get.
+But we tried adding the encoding to the OFX header in the file a while back and it did not help much. Have you tried importing a file with ENCODING specified in the OFX header (not the xml header)?
+If not, open one of the OFX files and add ENCODING="UTF-8" to the OFX header and try importing it and let me know what results you get.
+You tried adding "ENCODING="UTF-8"" inside header between < >, and it seemed ignored by GnuCash.
+For me it works only if I add this string: ENCODING:UTF-8 in first line of file (actually I do it every time after export).
+So we have workaround for this problem, but the problem marked as wontfix... dead-end and if you using language with different charset forget it, right?
+You tried adding "ENCODING="UTF-8"" inside header between < >, and it seemed ignored by GnuCash.
+For me it works only if I add this string: ENCODING:UTF-8 in first line of file (actually I do it every time after export).
+So we have workaround for this problem, but the problem marked as wontfix... dead-end and if you using language with different charset forget it, right?
+That is more of a hack than a workaround as it is not in the standard. It
+will render the OFX file useless for anything other than Gnucash (and only
+at the current version). That, I do want to avoid.
+This issue sounds like something that needs to be fixed in the desktop
+GnuCash import and not the mobile client.
+I do feel your pain in having to modify the exported file each time though.
+But we need to find a more lasting solution to the problem and I'm open to
+ideas. I do care about my CJK users.
+That is more of a hack than a workaround as it is not in the standard. It
+will render the OFX file useless for anything other than Gnucash (and only
+at the current version). That, I do want to avoid.
+This issue sounds like something that needs to be fixed in the desktop
+GnuCash import and not the mobile client.
+I do feel your pain in having to modify the exported file each time though.
+But we need to find a more lasting solution to the problem and I'm open to
+ideas. I do care about my CJK users.
+Hello, codinguser and  maxim-ilinov.
+Thank you for your reply.
+-1-  assignment
+I tried import OFX file with colon type (ENCODING:UTF-8) header.
+And, the file was imported Japanese characters correctly.
+Attribute "encoding" of "<?xml" type header is not worked.
+-2- proposal
+The better way is GnucashMobile to output old type OFX file, because this project sings "companion application for desktop Gnucash".
+example:  http://www.ofx.net/OFXExamplesPage/OFXExamples.aspx
+It is not hack, but standard.
+Libofx obviously can not read "<?xml" type header and "<?OFX" type header. (see. ofx_preproc.cpp of libofx)
+Libofx is used in desktop GnuCash.
+Hello, codinguser and  maxim-ilinov.
+Thank you for your reply.
+-1-  assignment
+I tried import OFX file with colon type (ENCODING:UTF-8) header.
+And, the file was imported Japanese characters correctly.
+Attribute "encoding" of "<?xml" type header is not worked.
+-2- proposal
+The better way is GnucashMobile to output old type OFX file, because this project sings "companion application for desktop Gnucash".
+example:  http://www.ofx.net/OFXExamplesPage/OFXExamples.aspx
+It is not hack, but standard.
+Libofx obviously can not read "<?xml" type header and "<?OFX" type header. (see. ofx_preproc.cpp of libofx)
+Libofx is used in desktop GnuCash.
+Hi guys,
+I did some changes and I need your help testing them. Please make sure to back up your data first just in case.
+Download a new beta of the app from here: https://skydrive.live.com/redir?resid=F67049B8543614F7!8054&authkey=!AEBNWGVmtnmQV7Y
+and then install it on your phone. It is properly signed, so if you access the link on your phone, it should be able to replace the old version. (But again, back up your data first)
+Now please test the following two scenarios and tell me your results:
+Looking forward to your responses. Cheers,
+Hi guys,
+I did some changes and I need your help testing them. Please make sure to back up your data first just in case.
+Download a new beta of the app from here: https://skydrive.live.com/redir?resid=F67049B8543614F7!8054&authkey=!AEBNWGVmtnmQV7Y
+and then install it on your phone. It is properly signed, so if you access the link on your phone, it should be able to replace the old version. (But again, back up your data first)
+Now please test the following two scenarios and tell me your results:
+Looking forward to your responses. Cheers,
+Hello, Ngewi.
+Very thanks for your works.
+I tested this version.
+My android version is 2.3.5.
+Test 1. (your numbering)
+Of cource, not impoted properly. It is same as formerly versions.
+Test 2.
+Output OFX file only has header, not has body.
+I add a new transaction just before export, and checked "Export all transaction".
+The file is below,
+--Start
+ENCODING:UTF-8
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:211
+SECURITY:NONE
+CHARSET:UTF-8
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+--End
+No body.
+Hello, Ngewi.
+Very thanks for your works.
+I tested this version.
+My android version is 2.3.5.
+Test 1. (your numbering)
+Of cource, not impoted properly. It is same as formerly versions.
+Test 2.
+Output OFX file only has header, not has body.
+I add a new transaction just before export, and checked "Export all transaction".
+The file is below,
+--Start
+ENCODING:UTF-8
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:211
+SECURITY:NONE
+CHARSET:UTF-8
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+--End
+No body.
+Hello, Ngewi.
+I modified source code to fix the problem that was mentioned my previous comment.
+I  checked it, and import Japanese characters properly.
+Please check the pull request.
+Thanks.
+Hello, Ngewi.
+I modified source code to fix the problem that was mentioned my previous comment.
+I  checked it, and import Japanese characters properly.
+Please check the pull request.
+Thanks.
+Thanks for trying that out. I wrote the code, tested it and then made a breaking change before committing which resulted in only the header being written. Mea culpa.
+Thanks for the pull request.
+Thanks for trying that out. I wrote the code, tested it and then made a breaking change before committing which resulted in only the header being written. Mea culpa.
+Thanks for the pull request.
+Code merged.
+Code merged.

@@ -1,0 +1,13 @@
+title:[Bug] [UX] App "crashes" when exiting now playing
+
+100% repro on rooted verizon galaxy S4, SCH-I545, lollipop 5.0.1
+Steps to reproduce:
+Expected result: App returns to library
+Actual result: Return home with "Unfortunately, Timber has stopped." message. However, Timber continues to play music.
+If you can't reproduce this bug, let me know what logs you need and I'll be happy to provide them.
+Can't reproduce, working fine on my nexus 6.
+Please provide crash log
+Can't reproduce, working fine on my nexus 6.
+Please provide crash log
+Will be working as expected in next release
+Will be working as expected in next release

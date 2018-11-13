@@ -1,0 +1,10 @@
+title:[feature request] Allow to share music files
+
+When selecting a single track please allow to share the music file to other apps (ContextMenu popup, before the delete track option maybe).
+If possible, also allow it from the toolbar overflow-menu while playing a song, and showing the playback view.
+Sometimes I playback some track I would like to listen on my media center, or want to send somebody. Would be really great if this player could also allow me to do this like my old one.
+Note: May be about 3 lines of code (new Intent()..), and the xml entries.
+Added in 895a060
+Added in 895a060
+thx!
+thx!

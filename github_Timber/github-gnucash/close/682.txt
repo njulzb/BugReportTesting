@@ -1,0 +1,16 @@
+title:Default account on new transactions shall be last account used there
+
+The pre-selected other account (in the Picker below Amount), where the amount will be charged from, should be the last account used. (This functionality was already there in previous GNUCash versions, as I remember.)
+For instance, if I add a transaction in Food:Dining, and at my last transaction in Food:Dining was charged from Expensed:Credit Card, then the preselected account for new transactions in Food:Dining should be again Expensed:Credit Card.
+The first item from the list of accounts is preselected.
+Note: I have defined Favourite accounts. These are listed first, so the first favourite account is always my default account, on every new transaction.
+As far as I know, the functionality you describe has never existed.
+You can set a default transfer account for a particular account and it will always be selected.
+If you set the default for a parent account, it will be propagated to all the children accounts.
+Does the default account setting not meet your needs?
+As far as I know, the functionality you describe has never existed.
+You can set a default transfer account for a particular account and it will always be selected.
+If you set the default for a parent account, it will be propagated to all the children accounts.
+Does the default account setting not meet your needs?
+Hi, thanks for your response. Yes, that default account setting meets my needs!
+Hi, thanks for your response. Yes, that default account setting meets my needs!

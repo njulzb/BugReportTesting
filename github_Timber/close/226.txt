@@ -1,0 +1,24 @@
+title:[Feature request] Add support for showing lyrics
+
+Hi!
+I think it will be more wonderful if timber support to show lyrics while playing music,do you think so?
+I (personally) agree.) That'd be a wonderful feature to add.
+I (personally) agree.) That'd be a wonderful feature to add.
+Good idea, but what services can be used for it?
+Good idea, but what services can be used for it?
+In some songs lyrics may be added in the file itself. Then it would be nice to be able to see them.
+In some songs lyrics may be added in the file itself. Then it would be nice to be able to see them.
+To better explain what I mean - here is the spec (if I got it correctly): http://id3.org/Lyrics3v2
+To better explain what I mean - here is the spec (if I got it correctly): http://id3.org/Lyrics3v2
+The Lyrics3v2 tag is Deprecated as far as I know, only with the ID3v1 tag.
+There is now the USLT Field in ID3v2.
+Though if I read this right this is already in the LyricsExtractor.java.
+In addition to that, would it also be possible to implement timed lyrics (SYLT field) and let them scroll? It's not really important, QuickLyric also does scrolling though, if you want to implement it and need some inspiration :)
+The Lyrics3v2 tag is Deprecated as far as I know, only with the ID3v1 tag.
+There is now the USLT Field in ID3v2.
+Though if I read this right this is already in the LyricsExtractor.java.
+In addition to that, would it also be possible to implement timed lyrics (SYLT field) and let them scroll? It's not really important, QuickLyric also does scrolling though, if you want to implement it and need some inspiration :)
+Lyrics support have been added now, will publish a new release on Play Store soon
+Lyrics support have been added now, will publish a new release on Play Store soon
+Great! I hope that F-droid version will also be available...
+Great! I hope that F-droid version will also be available...

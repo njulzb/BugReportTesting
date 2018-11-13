@@ -1,0 +1,889 @@
+Bug: "%" are duplicated in "Deck options"
+Crash when adding image using camera
+When I renamed a model, it will automatically create a deck with the same name.
+Anki crashes everytime i sync
+Problem introduced in 2.9alpha4
+Webview update leads to scrolling issues
+AnkiDroid API Permission Request Description has some unnecessary words
+Instant-Add API crashes AnkiDroid when AnkiDroid is not running in the background on Android N.
+syncMessage is ignored on successful sync
+statistics don't update
+Glosbe translations broken
+Wrong coloring of card type statistics pie cart when there are no unseen but some buried cards
+Dollar sign dropped from media file names in imported deck
+Cards with cloze fields with same ID number give error
+"Preview new cards" show 0 cards with 99999 days but all with 9999
+"Start of next day" is reset on next sync after syncing Anki Desktop
+Android 2.3.x crash :: android.os.BadParcelableException: ClassNotFoundException when unmarshalling
+Tablet dual-panel enhancement
+2.6beta1 crashes on Android 2.3.7 when changing deck options
+Move "Cram" bar to top in Review Count/Review Time
+Sound recording does not stop
+Minor bug: On screen of "Choose a saved search", descenders aren't displayed entirely
+Minor bug: The color of strings of "tag_editor_add_feedback" may be wrong
+Error -1 wal during synchronization
+There aren't four texts for translation on CrowdinNotification is unable to be observed
+Answer button size stetting not changing answer button size
+installation of decks on kindle worked after 3rd attempt
+Trying to open settings crashes AnkiDroid
+Ankidroid stuck on the loading screen with the message that report is being sent to the developers
+"Application not installed" message after reinstalation
+Media sync error
+java.lang.IllegalStateException: Couldn't read row 0, col 0 from CursorWindow. Make sure the Cursor is initialized correctly before accessing data from it.
+'Relative overdueness' is missing in filtered decks options
+Syncing ankidroid while storing it on an external sd card
+2131624605 error
+"Answer Buttons" stats graph should not show cumulative lines
+Counters don't update after the first card being reviewed
+<span style="color:black;"> is seen as white on Night mode.
+On windows pc, anki is displaying part of answer (2nd column) on 1st page, then rest on 2nd page
+Wrong due card amount on notification
+App wrongly displays "o͞o" character.
+Unable to rest number of new cards for individual decks
+Cards don't show number of days until next display and number of cards to repeat is always 100 or the number of cards
+red blocks don't appear S6
+red blocks don't appear S6
+False positives for detection of video on some devices
+some problem after generating apk file using Eclipse
+Anki plays no sound mp3 on tablet LG 8tab
+Custom Study does not default to "Reschedule cards based on my answers in this deck" and ignores "cards selected by""No such file or directory" after sync
+Bug: long-tapping on a line of the card browser won't show a menu at first
+Android: Small displaying bug in horizontal mode
+Ankidroid crashed after first start
+The underline of the textbox of 'Reschedule card' is red when any strings aren't entered
+Play media icon has been shrunk (height is too small) after turning phone into landscape mode
+Easy interval 2 days despite deck options set otherwise.
+No longer autoplays more than one video
+Duplicate marking difficult to see in 5.0.0
+Widget should open app even if no cards available
+Auto-sync keep trying to sync after user cancel request (when back on home screen)
+Image search does not return any results
+Automatic display answer has inconsistent behavior when using gestures
+Night mode is breaking text to speech
+Temporarily displaying the menu bar in landscape mode with fullscreen enabled hides the rightmost menu button and the timer under the Android control buttons
+parenthesis removed when creating subdeck
+Advancing my "Start of next day" advanced several cards by additional years
+'Undo' button isn't displayed when 'Again' is tapped with learn ahead limit set to 0
+Can't sync data if the network is behind proxy
+Crash rescheduling card with empty value for num days
+"Daily study limit reached / Study more" snackbar after "No cards are due yet." seems odd
+Fullscreen is not *really* fullscreen in the menu
+Answer buttons size not always respected
+"Collection not opened" after sync
+Collection suddenly went out of sync with AnkiWeb (cannot be merged) while in use on a single deviceCan't get Ankidriod to find media when I move file to external SD card
+Problem with custom study
+Card sort by answer in Card Browser does not work (does not sort alphabetically by answer)
+Custom URL Schemes not supported
+Sync Broken on Android 5
+Siblings / Card Order
+SSLException while building HttpClient
+It's stopping the learning, although there are some more cards...
+v2.5alpha27-cannot save audio/media.
+There is no whiteboard button  on tablet
+Safe Display mode crashing Ankidroid
+Play media in Android version
+AnkiDroid displays dots above characters incorrectly in review mode
+Synchronization is canceled with blank message.
+{Unknown field XXXXX } on Ankidroid display for title.
+Due count too high
+I would like to look saved data`s word in a dictionary automatically
+I lost my 200 decks when upgranding
+ImageOcclusion SVG overlay color is incorrect on AnkiDroid
+2.4.1 broke cloze
+Collection not opened
+Sync error
+template error only with ankidroid beta, not with anki desktop
+Some issues in ankidroid text to speech
+Prefs show whiteboard brush width of 0 (should show 6)'next day starts at x hours after midnight' setting not synchronized in Android version
+2.5alpha46 Sometimes content area scrolls, sometimes it doesn't
+ACRA dialog buttons in wrong order for API ≥ 14
+AnkiDroid not reporting errors
+Crash after sync
+"Notify when: Pending messages available" Doesn't Work
+Can't clear the "saved data" list
+Selected deck not marked in the list on the left on a tablet
+Crash: AnkiDroid
+First sync always shows error
+Deck options not correctly shown in night mode on tablet
+Top status bar white on white
+Odd back button behavior on tablets
+App crashes after answer checking
+Forgot to invert colors for text input field?
+Menu is unreadable white-on-light-grey
+Video not played
+Media not exported
+X cards imported dialog should use plurals
+mistake in Anki Manual "Fonts on a Mac"
+Top left ← icon in preview does not take you back
+Crash when starting reviewing
+How to move Ankidroid + Decks to SD Card on Galaxy S5
+Crashes (at start)  -  Samsung Galaxy S5
+Horizontal spacing of furigana contains additional spacesCan't sync
+Cloze display does not appear to support {{#c1}} ... {{/c1}} syntax (Conditional Replacement)
+Errors while importing project in android studio
+java.lang.IllegalArgumentException: View not attached to window manager : at com.ichi2.anki.DeckPicker$16.onPostExecute
+media not loading to ankiweb
+Cloze cards sometimes don't work with multiple fields
+Hebrew font has disappeared
+menu button in some mobile phone
+Can not delete TAB from TAB list.
+Problem with Kitkat 4.4.2
+First card reviewed in deck doesn't update number of cards due (when widget is enabled)
+Problem with Anki that effected my database and now Ankidroid is crashing
+Custom study by tag ending with ')' creates empty deck
+Front and back fields content switched in editor when changing device orientation
+Issue on AnkiDroid without SD Card
+Add Stack traces to inline errors
+AnkiDroid does not recognize Field Delimiter Substitution in Card Templates
+Can't switch language when entering text in ChromeOS
+SOS! You say new supportation of video in version 2.4,  But my cards fail to play video
+Reset to the desktop
+I cannot restore decks form backup for ankidroid. please help me.
+Preference upgrade results in infinite upgrade loop
+All study cards are zoomed by default
+Anki is creating cards that are empty
+Resource error in es_ESNotification is unable to be observed
+Answer button size stetting not changing answer button size
+installation of decks on kindle worked after 3rd attempt
+Trying to open settings crashes AnkiDroid
+Ankidroid stuck on the loading screen with the message that report is being sent to the developers
+"Application not installed" message after reinstalation
+Media sync error
+java.lang.IllegalStateException: Couldn't read row 0, col 0 from CursorWindow. Make sure the Cursor is initialized correctly before accessing data from it.
+'Relative overdueness' is missing in filtered decks options
+Syncing ankidroid while storing it on an external sd card
+2131624605 error
+"Answer Buttons" stats graph should not show cumulative lines
+Counters don't update after the first card being reviewed
+<span style="color:black;"> is seen as white on Night mode.
+On windows pc, anki is displaying part of answer (2nd column) on 1st page, then rest on 2nd page
+Wrong due card amount on notification
+App wrongly displays "o͞o" character.
+Unable to rest number of new cards for individual decks
+Cards don't show number of days until next display and number of cards to repeat is always 100 or the number of cards
+red blocks don't appear S6
+red blocks don't appear S6
+False positives for detection of video on some devices
+some problem after generating apk file using Eclipse
+Anki plays no sound mp3 on tablet LG 8tab
+Custom Study does not default to "Reschedule cards based on my answers in this deck" and ignores "cards selected by"Can't get Ankidriod to find media when I move file to external SD card
+Problem with custom study
+Card sort by answer in Card Browser does not work (does not sort alphabetically by answer)
+Custom URL Schemes not supported
+Sync Broken on Android 5
+Siblings / Card Order
+SSLException while building HttpClient
+It's stopping the learning, although there are some more cards...
+v2.5alpha27-cannot save audio/media.
+There is no whiteboard button  on tablet
+Safe Display mode crashing Ankidroid
+Play media in Android version
+AnkiDroid displays dots above characters incorrectly in review mode
+Synchronization is canceled with blank message.
+{Unknown field XXXXX } on Ankidroid display for title.
+Due count too high
+I would like to look saved data`s word in a dictionary automatically
+I lost my 200 decks when upgranding
+ImageOcclusion SVG overlay color is incorrect on AnkiDroid
+2.4.1 broke cloze
+Collection not opened
+Sync error
+template error only with ankidroid beta, not with anki desktop
+Some issues in ankidroid text to speech
+Prefs show whiteboard brush width of 0 (should show 6)AnkiDroid sometimes doesn't show "can't open collection" dialog when the collection is corrupt and hangs instead
+AnkiDroid can't start
+stuck on "opening collection" forever
+“Paste the "debug info" from AnkiDroid below.” not very helpful.
+Wrong title when returning from e.g. statitstics to review
+java.lang.NullPointerException at com.ichi2.anki.AbstractFlashcardViewer$23.getDrawable(AbstractFlashcardViewer.java:3020)
+rooted  note 2 (GT-N7105)  crash with ankidroid version 2.4
+problems while trying to sync ankiweb decks with my ankidroid tablet app
+Where is main menu with import option?
+Fuzzy syncing issues
+All translations of "Advanced editor" hasn't been reflected in AnkiDroid
+The number of "Cards due" notification isn't consistent?
+Changing "Options group" doesn't change its "Steps" immediately.
+{VaShIkArAn} +91-8875513486 VaShIkArAn fOr LoVe in MuMbAi~
+{VaShIkArAn} +91-8875513486 VaShIkArAn fOr LoVe in HyDeRaBaD~
+{VaShIkArAn} +91-8875513486 VaShIkArAn fOr LoVe in PuNe~
+{VaShIkArAn} +91-8875513486 VaShIkArAn fOr LoVe in BaNgALOrE~
+sync error type -1 : timeout
+"Replay question" doesn't work with video files properly.
+Video files which include a space in their file names can't be played properly.
+AnkiDroid 2.0.1 crashes when trying to sync
+In Brazil, the time of the northeast area is different from the capital of the time because of daylight saving time (BRST)
+Crash when switching to a different deck after finishing reviews of the previous one
+Though I want to edit learning steps in the deck options, there isn't a space key on the screen keyboard
+Grammatical errorCan't Zoom
+Images too small
+Crashes and says the database is not real or is corrupt
+no sound on samsung s3 mini
+Make links to manual and help page language dependent
+Furigana and Clozes do not work if used both in the same field
+Error on Media Sync
+cards that are marked seem to become unmarked randomly
+when adding new tags sometimes pre existing tags are randomly selected as well
+Adding a new tag after selecting existing tags in tag editor causes the wrong tags to be selected
+Spanish existing decks do not download
+Timeout while uploading changes during sync
+SOME self-created cards turn invisible during review
+Basic note type not showing answers
+Transfer of 16k media files to sd card over usb takes too long
+Media check find "unused" LaTeX images (but they are used actually)
+The order of the pie graph's pieces of "Cards Types" is not consistent with that of Anki Desktop.
+Synchronization Error -1 java.lang.integer
+Auto Sync like the Desktop Application does
+Activities with radio groups/buttons are not usable
+Saved data dialog doesn't show clear all button
+Can't download new deck
+Embedded font does not display
+Zoom feature in 2.3.2
+core6k japanese sentence pack audio stopped playing automatically when answer shownCan't sync
+Cloze display does not appear to support {{#c1}} ... {{/c1}} syntax (Conditional Replacement)
+Errors while importing project in android studio
+java.lang.IllegalArgumentException: View not attached to window manager : at com.ichi2.anki.DeckPicker$16.onPostExecute
+media not loading to ankiweb
+Cloze cards sometimes don't work with multiple fields
+Hebrew font has disappeared
+menu button in some mobile phone
+Can not delete TAB from TAB list.
+Problem with Kitkat 4.4.2
+First card reviewed in deck doesn't update number of cards due (when widget is enabled)
+Problem with Anki that effected my database and now Ankidroid is crashing
+Custom study by tag ending with ')' creates empty deck
+Front and back fields content switched in editor when changing device orientation
+Issue on AnkiDroid without SD Card
+Add Stack traces to inline errors
+AnkiDroid does not recognize Field Delimiter Substitution in Card Templates
+Can't switch language when entering text in ChromeOS
+SOS! You say new supportation of video in version 2.4,  But my cards fail to play video
+Reset to the desktop
+I cannot restore decks form backup for ankidroid. please help me.
+Preference upgrade results in infinite upgrade loop
+All study cards are zoomed by default
+Anki is creating cards that are empty
+Resource error in es_ESAnkiDroid sometimes doesn't show "can't open collection" dialog when the collection is corrupt and hangs instead
+AnkiDroid can't start
+stuck on "opening collection" forever
+“Paste the "debug info" from AnkiDroid below.” not very helpful.
+Wrong title when returning from e.g. statitstics to review
+java.lang.NullPointerException at com.ichi2.anki.AbstractFlashcardViewer$23.getDrawable(AbstractFlashcardViewer.java:3020)
+rooted  note 2 (GT-N7105)  crash with ankidroid version 2.4
+problems while trying to sync ankiweb decks with my ankidroid tablet app
+Where is main menu with import option?
+Fuzzy syncing issues
+All translations of "Advanced editor" hasn't been reflected in AnkiDroid
+The number of "Cards due" notification isn't consistent?
+Changing "Options group" doesn't change its "Steps" immediately.
+{VaShIkArAn} +91-8875513486 VaShIkArAn fOr LoVe in MuMbAi~
+{VaShIkArAn} +91-8875513486 VaShIkArAn fOr LoVe in HyDeRaBaD~
+{VaShIkArAn} +91-8875513486 VaShIkArAn fOr LoVe in PuNe~
+{VaShIkArAn} +91-8875513486 VaShIkArAn fOr LoVe in BaNgALOrE~
+sync error type -1 : timeout
+"Replay question" doesn't work with video files properly.
+Video files which include a space in their file names can't be played properly.
+AnkiDroid 2.0.1 crashes when trying to sync
+In Brazil, the time of the northeast area is different from the capital of the time because of daylight saving time (BRST)
+Crash when switching to a different deck after finishing reviews of the previous one
+Though I want to edit learning steps in the deck options, there isn't a space key on the screen keyboard
+Grammatical error[2.3.2] Cannot add a card with the same 'front' content to a different deck.
+Existing notes are not updated on import
+Wrong encoding in statistics->today
+Use better default values for swipe thresholds
+color of the text isn't displayed
+Cards added agnostically of deck options
+Win Anki: too small pictures
+com.ichi2.anki.exception.UnknownHttpResponseException: Bad Gateway
+Long Press Gesture Not Working Anymore
+New cards/day applies to all decks
+v2.4alpha24: Note viewer (eye icon) miissing missing in edit mode.
+Sound does not automatically play on the back card if the front card includes a command to play a sound file first.
+[2.3alpha26 -> 2.3.2] Regression - Wrong deck preselected when adding new cards.
+Can't display custom font
+Too few cards shown in a 'block'
+Database not reopened properly after sanity check error
+Russian words get 'y' added in front of word when queried
+Ankidroid resets back to main screen when switching to another app and then back again
+Tap gestures on: audio button non-functional
+When downloading own deck off anki server on new computer for the first time, AssertionError occurs and download aborts
+Cloze doesn't work always correct with html
+Widget drains phone battery
+Card editing crashed anki
+anki is black
+NPE crash on createStatisticOverviewCan't Zoom
+Images too small
+Crashes and says the database is not real or is corrupt
+no sound on samsung s3 mini
+Make links to manual and help page language dependent
+Furigana and Clozes do not work if used both in the same field
+Error on Media Sync
+cards that are marked seem to become unmarked randomly
+when adding new tags sometimes pre existing tags are randomly selected as well
+Adding a new tag after selecting existing tags in tag editor causes the wrong tags to be selected
+Spanish existing decks do not download
+Timeout while uploading changes during sync
+SOME self-created cards turn invisible during review
+Basic note type not showing answers
+Transfer of 16k media files to sd card over usb takes too long
+Media check find "unused" LaTeX images (but they are used actually)
+The order of the pie graph's pieces of "Cards Types" is not consistent with that of Anki Desktop.
+Synchronization Error -1 java.lang.integer
+Auto Sync like the Desktop Application does
+Activities with radio groups/buttons are not usable
+Saved data dialog doesn't show clear all button
+Can't download new deck
+Embedded font does not display
+Zoom feature in 2.3.2
+core6k japanese sentence pack audio stopped playing automatically when answer showncards written on windows version sometimes display in bold on ankidroid
+cards written on windows version sometimes display in bold on ankidroid
+Remove reference to the option to use internal memory when no SD card detected
+Answer scrolled down every time
+Can't download shared decks
+Crash on db check
+TTS doesn't work anymore
+Crashes with filtered decks in 2.3.2
+Case sensitive search with non-english letters
+"Again" cards don't appear when tapping "Study".
+AnkiDroid 2.4alpha1 - sync broken
+AnkiDroid not syncing
+syncing then updating issue
+hide field does not work
+Cards due notifications not shown at first
+X cards due notification pop up even when set to "never notify"
+where are the saved cards in new version of ankidroid
+bug Exporting indivitual decks
+fron text is in english ans the back is in hebrw and well displayed in browser. but when u study u get the answer (back) in gibrish
+A card's changed card deck is not immediately shown
+"Study" button make no response.
+Shared deck not imported
+Anki shows flag icon instead of question
+Anki displays flag icon instead of question
+AnkiDroid forces a full sync even when there shouldn't be a conflict after upgrading to 2.3Audio recording made within Anki Note will not playback once saved.
+Wrong icon/link created for multi-window mode
+unable to save images from googe imagesearch
+Update v2.3 breaks shortcut on homescreen
+Candid Feedback
+Inconsistent behavior on Search 'back' button
+AnkiDroid - missing com.ichi2.anki.R
+Ankidroid 2.3: Syncing with Windows client out of sync
+ankidroid 2.3: text is not displayed for some cards
+Latex equations disappearing from card answer on Android 2.2
+Make database error dialog async
+Removing tags only works when not using tag search
+Many media: Update takes forever even when no media changed
+The full list of tags dont show up
+Chrome OS: crash on login, "leaked window"
+Full Sync Error from Ankidroid Triage
+Image names with hash mark not displayed in reviewer
+Crash when connection times out during login
+Chrome OS: fails to send crash reports
+the Screen of "Congratulations!" is displayed only in a moment.
+Tablet mode: Dropdown deck selector not updated when Today view skipped in Statistics
+Tablet mode: Crash when changing language
+Crash when changing language in Statistics
+Tablet mode: StatisticsViewPager showing tabs in the main action bar
+Tablet mode: Crash on sync while switching windows[2.3.2] Cannot add a card with the same 'front' content to a different deck.
+Existing notes are not updated on import
+Wrong encoding in statistics->today
+Use better default values for swipe thresholds
+color of the text isn't displayed
+Cards added agnostically of deck options
+Win Anki: too small pictures
+com.ichi2.anki.exception.UnknownHttpResponseException: Bad Gateway
+Long Press Gesture Not Working Anymore
+New cards/day applies to all decks
+v2.4alpha24: Note viewer (eye icon) miissing missing in edit mode.
+Sound does not automatically play on the back card if the front card includes a command to play a sound file first.
+[2.3alpha26 -> 2.3.2] Regression - Wrong deck preselected when adding new cards.
+Can't display custom font
+Too few cards shown in a 'block'
+Database not reopened properly after sanity check error
+Russian words get 'y' added in front of word when queried
+Ankidroid resets back to main screen when switching to another app and then back again
+Tap gestures on: audio button non-functional
+When downloading own deck off anki server on new computer for the first time, AssertionError occurs and download aborts
+Cloze doesn't work always correct with html
+Widget drains phone battery
+Card editing crashed anki
+anki is black
+NPE crash on createStatisticOverviewJSONException on server sync
+Wrong ND indicator state in AB on first startup, ND does not open
+Tablet mode: creating a custom study deck from study options does not refresh deck list
+Tablet mode: showcase highlights the wrong button
+Type in answer cards problem, I want to do it to individual cards, not whole decks.
+accidentally i marked a basic card 'later' and it disappeared. how to find it.
+Clozes on several fields: the cloze only works in one of the fields
+AnkiDroid crashes on Sync
+Downloaded shared deck does not open from Firefox
+Unable to use ANKI Android when connected to the internet in China
+AnkiDroid crash when network lost
+Regression: Swipe shows navigation drawer when whiteboard is active
+cloze button does not show up in ankidroid and unable to add tags
+Lint error in latest 2.3 release branch
+Latex not reliably syncing
+I can't delete Default deck
+NPE at DeckOptions.buildLists when pressing Deck Options button
+Sudden Audio problems (only some files)
+Warn about full sync required when deleting options groups
+Unable to sync due to insufficent memory
+The sound of question plays twice if reviewer font scaling is not set to default 100%
+The gesture for  "Answer better than recommended" doesn't work like the gestures for the other answer-button actions.
+Label names
+On some decks, "Deck options" button doesn't work and lead to a crash.
+"Create Tutorial" button in welcome screen does nothingcards written on windows version sometimes display in bold on ankidroid
+cards written on windows version sometimes display in bold on ankidroid
+Remove reference to the option to use internal memory when no SD card detected
+Answer scrolled down every time
+Can't download shared decks
+Crash on db check
+TTS doesn't work anymore
+Crashes with filtered decks in 2.3.2
+Case sensitive search with non-english letters
+"Again" cards don't appear when tapping "Study".
+AnkiDroid 2.4alpha1 - sync broken
+AnkiDroid not syncing
+syncing then updating issue
+hide field does not work
+Cards due notifications not shown at first
+X cards due notification pop up even when set to "never notify"
+where are the saved cards in new version of ankidroid
+bug Exporting indivitual decks
+fron text is in english ans the back is in hebrw and well displayed in browser. but when u study u get the answer (back) in gibrish
+A card's changed card deck is not immediately shown
+"Study" button make no response.
+Shared deck not imported
+Anki shows flag icon instead of question
+Anki displays flag icon instead of question
+AnkiDroid forces a full sync even when there shouldn't be a conflict after upgrading to 2.3v2.3alpha40: editted note disappears from filtered deck after saving.
+ANKI Displaying Backside First!
+java.lang.RuntimeException: org.json.JSONException:Value <!DOCTYPE of type java.lang.String cannot be converted to JSONObject
+Change card deck in browser doesn't update
+Kindle fire hd won't sync online account
+The title in the upper-left corner doesn't changed properly
+In the set up..  What is on the screen doent make sense
+On type-in answer cards, Soft Keyboard not opening automatically after first card
+TTS does not work on Galaxy tab 4
+Image on front of card will not load
+v2.3alpha28 crashes when trying to save an editted note.
+Answering "good" for new cards puts them in the "again" pile
+Deck not being imported
+NPE in AbstractFlashcardViewer.onActivityResult when pressing back in card editor
+Sync issue with one set of items on computer/web and another on phone
+cannot select the cards that I want ot learn and review
+java.lang.RuntimeException: org.json.JSONException:Value <!DOCTYPE of type java.lang.String cannot be converted to JSONObject
+Increase default number of backups
+Disabling "show remaining" in preferences should also hide the bar that holds these numbers
+ankidroid reboots my phone!
+Is not displayed $ in Checking Answer (compare input to the real answer)
+"unbury" button doesn't show up in filtered decks
+Android L crash long press
+No Sound Shared Deck
+Reseting the  "reset language" every day to have the pronunciation!Audio recording made within Anki Note will not playback once saved.
+Wrong icon/link created for multi-window mode
+unable to save images from googe imagesearch
+Update v2.3 breaks shortcut on homescreen
+Candid Feedback
+Inconsistent behavior on Search 'back' button
+AnkiDroid - missing com.ichi2.anki.R
+Ankidroid 2.3: Syncing with Windows client out of sync
+ankidroid 2.3: text is not displayed for some cards
+Latex equations disappearing from card answer on Android 2.2
+Make database error dialog async
+Removing tags only works when not using tag search
+Many media: Update takes forever even when no media changed
+The full list of tags dont show up
+Chrome OS: crash on login, "leaked window"
+Full Sync Error from Ankidroid Triage
+Image names with hash mark not displayed in reviewer
+Crash when connection times out during login
+Chrome OS: fails to send crash reports
+the Screen of "Congratulations!" is displayed only in a moment.
+Tablet mode: Dropdown deck selector not updated when Today view skipped in Statistics
+Tablet mode: Crash when changing language
+Crash when changing language in Statistics
+Tablet mode: StatisticsViewPager showing tabs in the main action bar
+Tablet mode: Crash on sync while switching windowsImport replace broken in 2.3alpha19
+Scrolling error
+cards display backwards- answers on front and questions on back
+images sometimes don't appear
+2.2.3 Browsing different deck during review results in cards temporary disappearing
+2.1.3 -> 2.2.3 Regression - access to 'statistics' and 'browse' buttons
+closing browser after search takes 3 presses of the back button
+Crashes when entering Custom Study
+'t move application to external SD card
+Can't create files on external SD card
+audio doesn't play for any of my cards or downloaded decks
+Multimedia images disappear
+Custom study :: Limit to tags Includes tags which were not selected
+Custom steps on filtered decks
+Unbury on a deck unburies all cards in the collection
+an error occurs whenever I click on the "Cards..." button within the "Add" window.
+Ankidroid skips last 20 or so cards needing review for one specific deck
+Syncing error with long media filename (Linux Debian Anki Version 2.0.28)
+Zero review time
+temporary files are not cleaned up
+Daily repetition, same old vocab every day been asked
+Can't remove decks
+AnkiDroid >v2.0.1
+Letters  ṯ ṭ ḥ  doesn't show in Ankidroid
+New cards are created in wrong deckJSONException on server sync
+Wrong ND indicator state in AB on first startup, ND does not open
+Tablet mode: creating a custom study deck from study options does not refresh deck list
+Tablet mode: showcase highlights the wrong button
+Type in answer cards problem, I want to do it to individual cards, not whole decks.
+accidentally i marked a basic card 'later' and it disappeared. how to find it.
+Clozes on several fields: the cloze only works in one of the fields
+AnkiDroid crashes on Sync
+Downloaded shared deck does not open from Firefox
+Unable to use ANKI Android when connected to the internet in China
+AnkiDroid crash when network lost
+Regression: Swipe shows navigation drawer when whiteboard is active
+cloze button does not show up in ankidroid and unable to add tags
+Lint error in latest 2.3 release branch
+Latex not reliably syncing
+I can't delete Default deck
+NPE at DeckOptions.buildLists when pressing Deck Options button
+Sudden Audio problems (only some files)
+Warn about full sync required when deleting options groups
+Unable to sync due to insufficent memory
+The sound of question plays twice if reviewer font scaling is not set to default 100%
+The gesture for  "Answer better than recommended" doesn't work like the gestures for the other answer-button actions.
+Label names
+On some decks, "Deck options" button doesn't work and lead to a crash.
+"Create Tutorial" button in welcome screen does nothingHow to delete entry from saved data?
+Syncing conflict when connexion is slow
+New card is always added to default deck no matter what you set it to be added to
+java.lang.RuntimeException: java.lang.NullPointerException: magnitude == null
+New cards per day option affects all decks
+"Add new media" action wipes existing field content
+Ankidroid crashes whenever I edit a card
+Adding an audio recording deletes text
+AnkiDroid crashes when trying to show pictures which don't exist
+database path problem in verbose its cant open database
+Bring the "switch" or "reverse" button back!
+Don't replay questions
+embedded sound in answer does not always automatically play
+Type cloze with repeated word works different then on Anki desktop
+Image resizing is inconsistent
+Override onStop method in Previewer
+my front and back cards are showing up in the front card together
+Crash after selecting Nciku dictionary
+Unbury button doesn't appear for filtered decks
+pictures (often) not displayed under new version
+Fix case Ankidroid/AnkiDroid in all resource files and source code
+Can't replay sound before previous sound ends
+Previewer doesn't take into account any changes to fields in NoteEditor
+Add image by Camera doesn't work - Ankidroid 2.2
+Links are not opened in external browser anymorev2.3alpha40: editted note disappears from filtered deck after saving.
+ANKI Displaying Backside First!
+java.lang.RuntimeException: org.json.JSONException:Value <!DOCTYPE of type java.lang.String cannot be converted to JSONObject
+Change card deck in browser doesn't update
+Kindle fire hd won't sync online account
+The title in the upper-left corner doesn't changed properly
+In the set up..  What is on the screen doent make sense
+On type-in answer cards, Soft Keyboard not opening automatically after first card
+TTS does not work on Galaxy tab 4
+Image on front of card will not load
+v2.3alpha28 crashes when trying to save an editted note.
+Answering "good" for new cards puts them in the "again" pile
+Deck not being imported
+NPE in AbstractFlashcardViewer.onActivityResult when pressing back in card editor
+Sync issue with one set of items on computer/web and another on phone
+cannot select the cards that I want ot learn and review
+java.lang.RuntimeException: org.json.JSONException:Value <!DOCTYPE of type java.lang.String cannot be converted to JSONObject
+Increase default number of backups
+Disabling "show remaining" in preferences should also hide the bar that holds these numbers
+ankidroid reboots my phone!
+Is not displayed $ in Checking Answer (compare input to the real answer)
+"unbury" button doesn't show up in filtered decks
+Android L crash long press
+No Sound Shared Deck
+Reseting the  "reset language" every day to have the pronunciation!Pictures added with camera don't get a valid reference
+Crash on deck with audio every few cards.
+Crash on tablet when opening deck options after building custom study deck
+Preferrences not applied while reviewing
+White screen flashes during card changes distracting
+Reversed cards: only one side shows up
+Network error always occurrs when attempting to get shared decks
+Failure to sync to AnkiWeb
+Moto G 4G speakerphone disabled after unplugging headphones
+Android Clipboard data removed after saving a card
+Unable to Increase Card Limit
+The navigation drawer makes the keyboard *not* hide when answer shown.
+Congratulations message not shown/hidden when filtered deck rebuilt/emptied
+Tag dialog needs to separate add tag and save functions
+Unable to resume activity {com.ichi2.anki/com.ichi2.anki.StudyOptionsActivity}: java.lang.NullPointerException at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2774) at com.ichi2.anki.StudyOptionsFragment.updateValuesFromDeck(StudyOptionsFragment.java:1036)
+After sync between pc and android the old latex formula is displayed instead of an updated latex formula
+Double night mode button
+Two versions of the deck picker confusing.
+NullPointerException at NavigationDrawerActivity.initNavigationDrawer
+No "Synchronization" dialogue on some devices
+AnkiDroid spends a lot of time "opening collection" on startup with network connection
+App/deck name temporarily black on dark gray
+JSONException: No value for rev
+Error 400 - Bad Request when sending crash report
+Cloze deletions are brokenImport replace broken in 2.3alpha19
+Scrolling error
+cards display backwards- answers on front and questions on back
+images sometimes don't appear
+2.2.3 Browsing different deck during review results in cards temporary disappearing
+2.1.3 -> 2.2.3 Regression - access to 'statistics' and 'browse' buttons
+closing browser after search takes 3 presses of the back button
+Crashes when entering Custom Study
+'t move application to external SD card
+Can't create files on external SD card
+audio doesn't play for any of my cards or downloaded decks
+Multimedia images disappear
+Custom study :: Limit to tags Includes tags which were not selected
+Custom steps on filtered decks
+Unbury on a deck unburies all cards in the collection
+an error occurs whenever I click on the "Cards..." button within the "Add" window.
+Ankidroid skips last 20 or so cards needing review for one specific deck
+Syncing error with long media filename (Linux Debian Anki Version 2.0.28)
+Zero review time
+temporary files are not cleaned up
+Daily repetition, same old vocab every day been asked
+Can't remove decks
+AnkiDroid >v2.0.1
+Letters  ṯ ṭ ḥ  doesn't show in Ankidroid
+New cards are created in wrong deckHidden subdecks under different deck
+Open "cards saved for later" and card details are in wrong place
+Crash after adding card from saved data
+Kanji info erroneous
+Ankidroid and desktop Anki review time statistics are different
+Card browser search does not show results
+NullPointerException at DeckOptions.buildLists
+Sound plays on both question and answer when it only exists in the question
+no cards shown after sync
+Dismiss menu does not open
+Cards were marked as leech, even with 'good' answer
+Initial custom study screen displays night mode button twice
+Cards lost when Reviewer activity is deleted while answer showing
+answer does not show
+Incorrect Japanese characters (most likely not using the correct font)
+At the beginning, images doesn't fit to width of the screen
+Full sync after "Syncing conflict" not working
+Custom font not displayed leads to very slow text display
+Answers of notes with javascript take forever to load
+extremely long time to open a card
+Instant add feature doesn't work
+Freezes with the "Show Answer" area outlined in red
+Crash when moving empty forecast chart
+Very Odd Problem With Nexus 7
+Out-of date translations confusing in 2.2alpha deck browserHow to delete entry from saved data?
+Syncing conflict when connexion is slow
+New card is always added to default deck no matter what you set it to be added to
+java.lang.RuntimeException: java.lang.NullPointerException: magnitude == null
+New cards per day option affects all decks
+"Add new media" action wipes existing field content
+Ankidroid crashes whenever I edit a card
+Adding an audio recording deletes text
+AnkiDroid crashes when trying to show pictures which don't exist
+database path problem in verbose its cant open database
+Bring the "switch" or "reverse" button back!
+Don't replay questions
+embedded sound in answer does not always automatically play
+Type cloze with repeated word works different then on Anki desktop
+Image resizing is inconsistent
+Override onStop method in Previewer
+my front and back cards are showing up in the front card together
+Crash after selecting Nciku dictionary
+Unbury button doesn't appear for filtered decks
+pictures (often) not displayed under new version
+Fix case Ankidroid/AnkiDroid in all resource files and source code
+Can't replay sound before previous sound ends
+Previewer doesn't take into account any changes to fields in NoteEditor
+Add image by Camera doesn't work - Ankidroid 2.2
+Links are not opened in external browser anymoreNote type "Front/Back" fires up "Duplicate note" error dialogue when trying to save a
+java.lang.IllegalStateException: Already attached at android.support.v4.app.FragmentManagerImpl.attachActivity(FragmentManager.java:1878) at com.ichi2.anki.CardBrowser.onCreate(CardBrowser.java:243)
+Crash when browsing cards on 2.1.3
+Corrupt Database
+(At least) some settings get always overwritten after full sync
+Reverse deck only creates one side after a while
+Buttons pressed in pocket without actual review
+Editing a card and changing deck at the same time
+Card browser loading all cards
+Decks unsorted in card browser spinner
+I can't use a study function with error
+Browser drop down deck selector cuts off text when in landscape
+Toast message given for all leeches, even when you just said Good on review
+new tags are not added when the "select" button is pressed
+replay question option doesn't work
+IllegalStateException: Already attached at android.support.v4.app.FragmentManagerImpl.attachActivity
+Unnecessary full sync when syncing near day rollover
+Cards due in 1 or 10 min do not show up until hours later
+Blank cards
+Problem removing tags and filters
+Clear Whiteboard is in overflow button
+Sync Stuck on "Finding Changed Media"
+pronunciation of words
+Show answer button too high
+Investigation into Application freezing OSPictures added with camera don't get a valid reference
+Crash on deck with audio every few cards.
+Crash on tablet when opening deck options after building custom study deck
+Preferrences not applied while reviewing
+White screen flashes during card changes distracting
+Reversed cards: only one side shows up
+Network error always occurrs when attempting to get shared decks
+Failure to sync to AnkiWeb
+Moto G 4G speakerphone disabled after unplugging headphones
+Android Clipboard data removed after saving a card
+Unable to Increase Card Limit
+The navigation drawer makes the keyboard *not* hide when answer shown.
+Congratulations message not shown/hidden when filtered deck rebuilt/emptied
+Tag dialog needs to separate add tag and save functions
+Unable to resume activity {com.ichi2.anki/com.ichi2.anki.StudyOptionsActivity}: java.lang.NullPointerException at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2774) at com.ichi2.anki.StudyOptionsFragment.updateValuesFromDeck(StudyOptionsFragment.java:1036)
+After sync between pc and android the old latex formula is displayed instead of an updated latex formula
+Double night mode button
+Two versions of the deck picker confusing.
+NullPointerException at NavigationDrawerActivity.initNavigationDrawer
+No "Synchronization" dialogue on some devices
+AnkiDroid spends a lot of time "opening collection" on startup with network connection
+App/deck name temporarily black on dark gray
+JSONException: No value for rev
+Error 400 - Bad Request when sending crash report
+Cloze deletions are brokenSwap button behavior odd with complex models
+SQLiteDatabase.openDatabase at AnkiDb.<init>: Could not open the database in read/write mode
+Possible non-thread-safe behavior in Android 4.4
+Preview hiding status bar
+Preview showing only answer
+Card audio present on the back side no longer autoplays.
+Long tap of deck from home screen selects deck
+Anki won't download deck from server to android phone
+Statistics
+Implement DatabaseErrorHandler.onCorruption to backup collection in case of corruption
+Sync Windows Anki ⇒ Overwrites Ankidroid Progress
+answer very slow to display since ankidroid version 2.1.2
+Can't add card from "saved data" intent on alpha15
+Export option is not available any more
+New Update make the reviewing time very slow
+Note Deck name do not automatically select the current deck after temp change
+"Note deck field" not the same as current working deck name.
+Cards are added to the wrong deck
+Huge lag when showing the answer of a card
+"Init TTS" prevents Ankidroid from loading decks
+Custom Study Inconsistent with Desktop Version
+If I use the "undo review" button, answers are no longer showed
+Failure starting deckpicker in Android 2.1 emulator when no SD Card
+AnkiDroid doesn't install on Android 1.6
+Card Previewer -- text does not render against black background of night modeHidden subdecks under different deck
+Open "cards saved for later" and card details are in wrong place
+Crash after adding card from saved data
+Kanji info erroneous
+Ankidroid and desktop Anki review time statistics are different
+Card browser search does not show results
+NullPointerException at DeckOptions.buildLists
+Sound plays on both question and answer when it only exists in the question
+no cards shown after sync
+Dismiss menu does not open
+Cards were marked as leech, even with 'good' answer
+Initial custom study screen displays night mode button twice
+Cards lost when Reviewer activity is deleted while answer showing
+answer does not show
+Incorrect Japanese characters (most likely not using the correct font)
+At the beginning, images doesn't fit to width of the screen
+Full sync after "Syncing conflict" not working
+Custom font not displayed leads to very slow text display
+Answers of notes with javascript take forever to load
+extremely long time to open a card
+Instant add feature doesn't work
+Freezes with the "Show Answer" area outlined in red
+Crash when moving empty forecast chart
+Very Odd Problem With Nexus 7
+Out-of date translations confusing in 2.2alpha deck browserBackground flickers in night mode in version greater than 2.0.1 on Xperia Tipo (Android 4.0.4)
+Stubborn card doesn't move to the newly assigned deck
+Make showing of unbury button consistent with Anki Desktop
+Option "Deck for new cards" is not working
+it is not crashing anymore
+Issues with crash reporter screen on 320x240
+Custom Study Session description text cut off on 320x240 screen
+Deleting cram/filter decks without reviewing cards seems to instigate changes although no cards seen
+Sync log error
+"Select Text" menu item broken on Android 4.1 +
+Ankidroid 2.0.4 sometimes crashes while syncing then all decks are lost
+Cannot sync from China
+Crash when deleting empty filtered deck
+Anki starts to crash everytime
+First review card is skipped after a "Init TTS" message after deck is opened for v2.1beta4
+Change deck in note editor doesn't remove from filtered deck (JSONException: No value for separate at com.ichi2.libanki.Sched._newConf)
+JSONException: No value for replayq
+Database is okay, but can't sync. disk I/O error: vacuum
+Anki skips to next card without user direction
+the answer is not listening properly
+Some cards are displayed without text, only with the soundfile
+Statistics have been wacky for 6 months
+Custom Japanese fonts not read and occasional images missing in 2.0.4...
+Crashes every time after reviewing ~30 cards on Android 4.2 [java.lang.IllegalStateException: eglMakeCurrent failed EGL_BAD_ALLOC at android.view.HardwareRenderer$GlRenderer.createSurface(HardwareRenderer.java:1120)]
+Make Collapse / Inflate deck options more clearNote type "Front/Back" fires up "Duplicate note" error dialogue when trying to save a
+java.lang.IllegalStateException: Already attached at android.support.v4.app.FragmentManagerImpl.attachActivity(FragmentManager.java:1878) at com.ichi2.anki.CardBrowser.onCreate(CardBrowser.java:243)
+Crash when browsing cards on 2.1.3
+Corrupt Database
+(At least) some settings get always overwritten after full sync
+Reverse deck only creates one side after a while
+Buttons pressed in pocket without actual review
+Editing a card and changing deck at the same time
+Card browser loading all cards
+Decks unsorted in card browser spinner
+I can't use a study function with error
+Browser drop down deck selector cuts off text when in landscape
+Toast message given for all leeches, even when you just said Good on review
+new tags are not added when the "select" button is pressed
+replay question option doesn't work
+IllegalStateException: Already attached at android.support.v4.app.FragmentManagerImpl.attachActivity
+Unnecessary full sync when syncing near day rollover
+Cards due in 1 or 10 min do not show up until hours later
+Blank cards
+Problem removing tags and filters
+Clear Whiteboard is in overflow button
+Sync Stuck on "Finding Changed Media"
+pronunciation of words
+Show answer button too high
+Investigation into Application freezing OSjava.io.IOException: open failed: EINVAL (Invalid argument)
+mp3 files are shut down too fast
+Designated / Custom Font problem Anki 2.0.4
+Coloured "Remaining card count" and "Progress Bar" disappears after editing a card mid-way during reviewing.
+Large decks with hyperlinks crash on "Import of cards"
+Image Bug
+Arabic Characters Defaulting to Arial, Even with Custom Font Installed
+Buried cards unburied after exiting Ankidroid and opening it again
+Sync conflict every (other) day and new cards for review reapper after upload all from local
+show answer moves on to next card instead of showing answer
+Restoring from AnkiDroid
+After edition a card disappear
+Reviewing all decks simultanously - cards come seperately anyway
+2.0beta20 crashes on Android 2.2.2
+Clicking the preference button on a filtered deck with "cards selected by relative overdueness" crashes Anki
+Ankidroid will fore close when I add note from "saved data"
+error in lexicographical order of Polish letters
+leeches not being suspended
+AnkiDroid doesn't show the 〜 (Japanese ~) character, messes up furigana
+Crashed when compared answer
+AnkiDroid fails to finish sync properly
+Force close when pressing "show answer" button while the keyboard is not minimized. Nexus 4 Android 4.3
+Soft hyphen is rendered as a hyphen
+the app can't open the database when it starts
+New audio not working on ankiweb and ankidroidSwap button behavior odd with complex models
+SQLiteDatabase.openDatabase at AnkiDb.<init>: Could not open the database in read/write mode
+Possible non-thread-safe behavior in Android 4.4
+Preview hiding status bar
+Preview showing only answer
+Card audio present on the back side no longer autoplays.
+Long tap of deck from home screen selects deck
+Anki won't download deck from server to android phone
+Statistics
+Implement DatabaseErrorHandler.onCorruption to backup collection in case of corruption
+Sync Windows Anki ⇒ Overwrites Ankidroid Progress
+answer very slow to display since ankidroid version 2.1.2
+Can't add card from "saved data" intent on alpha15
+Export option is not available any more
+New Update make the reviewing time very slow
+Note Deck name do not automatically select the current deck after temp change
+"Note deck field" not the same as current working deck name.
+Cards are added to the wrong deck
+Huge lag when showing the answer of a card
+"Init TTS" prevents Ankidroid from loading decks
+Custom Study Inconsistent with Desktop Version
+If I use the "undo review" button, answers are no longer showed
+Failure starting deckpicker in Android 2.1 emulator when no SD Card
+AnkiDroid doesn't install on Android 1.6
+Card Previewer -- text does not render against black background of night mode

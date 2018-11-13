@@ -1,0 +1,5 @@
+title:Track numbers wrong for Multi-CD albums
+
+For Multi-CD albums the track numbers look like 100, 200, and so on. Also, the track numbers do not increment by one. There are many tracks labeled with »100«, many with »101«, many with »200« and so on.
+Thank you for fixing this!
+Thank you for fixing this!

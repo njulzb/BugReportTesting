@@ -1,0 +1,19 @@
+[v2] Dock & App Drawer background are broken
+Can't place some (Huawei) 4x3 widgets
+'Trimming' icons
+Samsung gadgets can't be placed on launcher
+Folder transparency only appearsnin home page
+Weather widget not showing on lawnchair.
+Dragging out a widget while navigation bar is hidden, then toggling navigation bar causes visual glitch
+App shortcuts  another widget button glitch
+Landscape orientation on tablets.
+Translation
+LawnChair crashes when placing shortcut in folder
+Superposition of app drawer and homescreen
+Squirle icons
+libswresample.so: text relocations on x86 CPU
+libavcodec.so: text reloactions on x86 CPU
+Shortcuts from the Phone app do not work
+Tablet Support
+BUG: Rendering error.
+Pixel Bar keeps disappearing

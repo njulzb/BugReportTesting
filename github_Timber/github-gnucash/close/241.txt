@@ -1,0 +1,62 @@
+title:Cursor position problem in amount field
+
+The cursor is always moved to the end of the field during transaction's amount editing.
+Reproduction steps:
+Current behavior: The cursor is moved to the end of the number deleting ciphers in front of it while typing.
+Expected behavior: The cursor stays in place while typing without replacing existing ciphers..
+This is actually by design.
+On 07.10.2014, at 16:18, LoneShooter notifications@github.com wrote:
+The cursor is always moved to the end of the field during transaction's amount editing.
+Reproduction steps:
+Create new transaction with amount e.g. 1,234.56 and save it
+Open the transaction again and try to change or delete any cipher
+Current behavior: The cursor is moved to the end of the number deleting ciphers in front of it while typing.
+Expected behavior: The cursor stays in place while typing without replacing existing ciphers..
+—
+Reply to this email directly or view it on GitHub.
+This is actually by design.
+On 07.10.2014, at 16:18, LoneShooter notifications@github.com wrote:
+The cursor is always moved to the end of the field during transaction's amount editing.
+Reproduction steps:
+Create new transaction with amount e.g. 1,234.56 and save it
+Open the transaction again and try to change or delete any cipher
+Current behavior: The cursor is moved to the end of the number deleting ciphers in front of it while typing.
+Expected behavior: The cursor stays in place while typing without replacing existing ciphers..
+—
+Reply to this email directly or view it on GitHub.
+Hi,
+Is there any particular reason, i.e. use case, for this strange behavior?
+Hi,
+Is there any particular reason, i.e. use case, for this strange behavior?
+The reason is different formatting formats for money amounts for different countries and also support for different number of decimal places (or the lack thereof).
+So amount input is taken in from the right and then formatted according to the user locale. Deletion also occurs from the right too.
+The reason is different formatting formats for money amounts for different countries and also support for different number of decimal places (or the lack thereof).
+So amount input is taken in from the right and then formatted according to the user locale. Deletion also occurs from the right too.
+Well, the formatting itself is clear, but not understand why the cursor should change its position and why deleting occurs from the end.
+For example, the formatting logic could be fired on onTextChanged event while the cursor stays in place, i.e. remember its position and restore it after the change.
+Or I'm missing something?
+Well, the formatting itself is clear, but not understand why the cursor should change its position and why deleting occurs from the end.
+For example, the formatting logic could be fired on onTextChanged event while the cursor stays in place, i.e. remember its position and restore it after the change.
+Or I'm missing something?
+Guys, I have another problem: gnucash doesnt let to manipulate cursor in ANY field. So if I want to edit a description of a transaction I should retype it entirely.
+Is it a variation of this problem, or should I file a new bug?
+This is most similar place I found for my issue.
+Guys, I have another problem: gnucash doesnt let to manipulate cursor in ANY field. So if I want to edit a description of a transaction I should retype it entirely.
+Is it a variation of this problem, or should I file a new bug?
+This is most similar place I found for my issue.
+@searoso you mean this happens for you not just in the account field, but in all other text fields as well?
+@searoso you mean this happens for you not just in the account field, but in all other text fields as well?
+Yes, indeed.
+13.02.2015 13:50 пользователь "Ngewi Fet" notifications@github.com
+написал:
+@searoso you mean this happens for you not just in the account field, but
+in all other text fields as well?
+—
+Reply to this email directly or view it on GitHub.
+Yes, indeed.
+13.02.2015 13:50 пользователь "Ngewi Fet" notifications@github.com
+написал:
+@searoso you mean this happens for you not just in the account field, but
+in all other text fields as well?
+—
+Reply to this email directly or view it on GitHub.

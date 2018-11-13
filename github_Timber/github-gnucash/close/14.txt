@@ -1,0 +1,23 @@
+title:Bump version code more often
+
+F-droid has beta 1 of this app, but can't include beta 2 because the version code hasn't changed. F-droid plans to include different apks with the same version code but that won't happen for a while yet,
+I hear you. But the version code will only be bumped once the app goes
+final. And only for subsequent stable releases.
+Sorry for any inconvenience.
+On 24.09.2012, at 20:43, dalb8 notifications@github.com wrote:
+F-droid has beta 1 of this app, but can't include beta 2 because the
+version code hasn't changed. F-droid plans to include different apks with
+the same version code but that won't happen for a while yet,
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/GnucashMobile/issues/14.
+I hear you. But the version code will only be bumped once the app goes
+final. And only for subsequent stable releases.
+Sorry for any inconvenience.
+On 24.09.2012, at 20:43, dalb8 notifications@github.com wrote:
+F-droid has beta 1 of this app, but can't include beta 2 because the
+version code hasn't changed. F-droid plans to include different apks with
+the same version code but that won't happen for a while yet,
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/GnucashMobile/issues/14.

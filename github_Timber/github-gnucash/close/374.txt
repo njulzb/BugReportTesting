@@ -1,0 +1,14 @@
+title:Scheduled transactions not working
+
+I've scheduled a transaction but it's not working.
+No transactions are created.
+@xavrin it works for me. I have several.
+@codinguser I noticed this some time ago.I think every time the app is updated the scheduled transactions stop working.
+@xavrin it works for me. I have several.
+@codinguser I noticed this some time ago.I think every time the app is updated the scheduled transactions stop working.
+@elmerehbi @xavrin we're working on improving scheduled transactions
+@elmerehbi @xavrin we're working on improving scheduled transactions
+@xavrin v2.1.0 which is currently in beta should significantly improve the reliability of scheduled transactions.
+Final release coming in the next few weeks
+@xavrin v2.1.0 which is currently in beta should significantly improve the reliability of scheduled transactions.
+Final release coming in the next few weeks

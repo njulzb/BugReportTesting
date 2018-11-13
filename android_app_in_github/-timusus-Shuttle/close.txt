@@ -1,0 +1,25 @@
+Stuck Notification
+Controls are off screen in landscape
+"Play Next" Incorrect Behavior on Song in Queue Prior to Current Song
+Cannot remove songs from playlists
+Swiping through albums of an artist doesn't work half the time.
+Music takes very long to load
+Back press handled incorrectly when 'folders' is displayed in main tabs
+Unable to remove songs from queue
+Genre list shows song count placeholder on tablets
+Mini Player View sizing issue on tablets
+Up Next View text color incorrect in landscape mode
+Status bar view disappears when expanding now playing in landscape mode.
+Equalizer not updating after changes
+Crash whitelisting song
+Creating a new playlist from a folder gets stuck at "Gathering songs..."
+UI breaks when changing number of columns in "Album view"
+Bad alignment of right album row in album view.
+Suggested Tab shows a blank page
+Playback doesn't stop when disconnecting bluetooth
+Crash when changing from album grid to album list
+Remove from queue - removes all instances of song
+Play next from queue - song is duplicated.
+Toast notification has dark text
+Reinstate folder whitelist
+Sorting not working for artist, albums & songs tabs

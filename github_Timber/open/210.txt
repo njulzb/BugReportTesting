@@ -1,0 +1,7 @@
+title:Equalizer not working in Mash mallow OS.
+
+Hi,
+Nice player found few issues.
+Equalizer not working in Mash mallow OS.
+It use system equalizer, if it provided by your system
+It use system equalizer, if it provided by your system

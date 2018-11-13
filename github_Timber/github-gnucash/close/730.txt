@@ -1,0 +1,21 @@
+title:Save information to a file (gnucash xml)
+
+Similar to TODO.txt (android) where it saves the modifications to a file. It would be interesting to have the same "functionality" that would facilitate synchronization with other devices (with help with syncthink or some cloud service for example)
+Your request is not clear (to me at least).
+GnuCash Android can export to a file already.
+Your request is not clear (to me at least).
+GnuCash Android can export to a file already.
+@codinguser Yes, it can export, but every time we need to synchronize we have to export the XML file.
+My example with TODO.txt (Android application) is that it saves a physical file on the smartphone and writes in this file, this is good because it is not necessary to be exporting but simply copy from the smartphone to other places.
+@codinguser Yes, it can export, but every time we need to synchronize we have to export the XML file.
+My example with TODO.txt (Android application) is that it saves a physical file on the smartphone and writes in this file, this is good because it is not necessary to be exporting but simply copy from the smartphone to other places.
+@gutierri I see what you mean.
+GnuCash Android works internally with a database where all accounts and transactions are stored and only creates an XML when you export.
+If we want to work with purely with a file, it would mean loading all the contents (and they can be big) into memory each time the app opens and then dumping it when it closes (or if the app goes into the background for any reason).
+This model works on the desktop, but I do not think it is a good one to use on mobile.
+@gutierri I see what you mean.
+GnuCash Android works internally with a database where all accounts and transactions are stored and only creates an XML when you export.
+If we want to work with purely with a file, it would mean loading all the contents (and they can be big) into memory each time the app opens and then dumping it when it closes (or if the app goes into the background for any reason).
+This model works on the desktop, but I do not think it is a good one to use on mobile.
+I'll close this issue now
+I'll close this issue now

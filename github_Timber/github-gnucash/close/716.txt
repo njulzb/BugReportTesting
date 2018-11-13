@@ -1,0 +1,11 @@
+title:Mutual fund, stock, other "XXX currency" assets are not calculated.
+
+codinguser
+It should be expected that asset value is calculated and shown at each parent level. The quantity of shares at the fund or stock account level should also be shown.
+$0 and 0# of shares is shown at all account levels.
+Thanks for the bug report @mutedbytes
+Sorry, but the app does not support stock or mutual fund type accounts.
+The account types are only listed there to support importing data from GnuCash desktop without messing it up. But the app doesn't have any support for those account types.
+Thanks for the bug report @mutedbytes
+Sorry, but the app does not support stock or mutual fund type accounts.
+The account types are only listed there to support importing data from GnuCash desktop without messing it up. But the app doesn't have any support for those account types.

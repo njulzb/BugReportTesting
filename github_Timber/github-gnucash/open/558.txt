@@ -1,0 +1,12 @@
+title:Enhancement Request: Option to keep Favorites in Place Between Imports
+
+Business Case:
+We use gnucash-android to view balances while on the go using xml data imported from gnucash desktop. We don't necessarily export to gnucash desktop at this time. As transactions are added to gnucash desktop, the xml file is saved to dropbox. We then manually import into gnucash-android. On initial set up we identify and typically mark five Favorites for easy access. On the next import the Favorites are blank (erased). A selectable option to 'Keep Favorites in Between Imports' would provide an adequate working feature.
+Current Functionality:
+Favorites are erased if a new import with the same accounts/etc is performed.
+Expected Functionality:
+A selectable option, that when checked saves the Favorites for redisplay when the new import with the same accounts/ets is performed.
+Impact:
+Would reduce the need to mark Favorites on each import. In our case this could mean a reduction in the number of clicks from 25 to 0. Ultimately, it would provide a more user friendly experience.
+Priority:
+Low/Nice to have. However, we suspect if others are doing the same they too may have run in to this situation and would also appreciate a reduction in the number of clicks.

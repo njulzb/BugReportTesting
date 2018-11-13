@@ -1,0 +1,7 @@
+title:Transaction Time Lost on Export/Import With PC
+
+Create transactions, including varying times along with the dates.
+Perform a full xml export and import into the PC version, making an edit to the books on the PC.
+Import  from the PC back into the Android version.
+All transactions should come back into the Android version with unchanged dates / times, or at least all the transactions that were not edited on the PC.
+All the time portions of every transaction are set to the same value after import.  The day portions are preserved, but not the time of day portions.

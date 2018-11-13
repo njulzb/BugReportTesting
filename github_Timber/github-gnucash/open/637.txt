@@ -1,0 +1,4 @@
+title:All pages of the main interface did not update the UI when the collection is canceled.
+
+all pages interface update
+all pages interface do not refresh

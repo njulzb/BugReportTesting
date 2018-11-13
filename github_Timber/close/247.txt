@@ -1,0 +1,10 @@
+title:Does not fetch album art
+
+in the library, in the "artists" view the app downloads and displays the artist's images correctly. in "album" view however, it does not display any album art except the embedded ones.
+since i installed this from f-droid, i am stil on v0.2b.
+please let me know, if you need more information on this!
+thanks for your efforts with this really nice player!
+Not a bug, this feature is not implemented yer.
+Not a bug, this feature is not implemented yer.
+ok, thank you! =)
+ok, thank you! =)

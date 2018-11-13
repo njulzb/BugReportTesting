@@ -1,0 +1,5 @@
+title:issue with the reload of the palylist when i pause/resume the song
+
+when i pause or resume the song in the first now playing screen the playlist be reload, making slow the app and damaging the user experince
+There's no reloading of Playlists, just notifyDataSetChanged
+There's no reloading of Playlists, just notifyDataSetChanged

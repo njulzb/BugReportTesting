@@ -1,0 +1,5 @@
+title:Zip multiple exported QIF files into one for all export destinations
+
+rivaldi8
+Fixed in develop (c4f6a26).
+Fixed in develop (c4f6a26).

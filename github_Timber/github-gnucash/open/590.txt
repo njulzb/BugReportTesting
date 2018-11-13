@@ -1,0 +1,22 @@
+title:Feature: allow configuring a max depth for reports
+
+I was thinking if you had something like assets:entertainment:food and assets:entertainment:drinks then it would sometimes be more useful to just show the combined assets:entertainment in the reports.
+An additional feature would be to drill into that account more when you click on that slice and a new report is shown just for those subaccounts.
+Dunno if this would be easier as a max depth config option or setting on the account level something like "accumulate subaccounts for report". The latter is very much stronger I would say.
+Happy to help code this with some guidance on the area to focus on.
+I think it would be a nice feature. The problem I see is getting the usability right.
+Personally, I don't like the idea of having an account option for accumulating or not subaccounts. A max depth option also seems cumbersome. At most I'd add an option at report level to toggle grouping subaccounts (like "Group Smaller Slices" option already present). But I'm really not sure, just some quick thoughts coming to my mind :-)
+Right now I'm busy with other stuff, so if you want to work on it, go ahead. I can't give you much guidance on this, as it's the part of the code that I know the less. However, after a quick look, it seem pretty straightforward. I'd say all you need is under the package org.gnucash.android.ui.report.
+Please, have a look at the contributing guidelines before starting and don't hesitate to ask, if you have any doubt.
+I think it would be a nice feature. The problem I see is getting the usability right.
+Personally, I don't like the idea of having an account option for accumulating or not subaccounts. A max depth option also seems cumbersome. At most I'd add an option at report level to toggle grouping subaccounts (like "Group Smaller Slices" option already present). But I'm really not sure, just some quick thoughts coming to my mind :-)
+Right now I'm busy with other stuff, so if you want to work on it, go ahead. I can't give you much guidance on this, as it's the part of the code that I know the less. However, after a quick look, it seem pretty straightforward. I'd say all you need is under the package org.gnucash.android.ui.report.
+Please, have a look at the contributing guidelines before starting and don't hesitate to ask, if you have any doubt.
+I agree with @rivaldi8 that I would also prefer not to add another option for maximum depth. If necessary, the "group small slices" option could be used. But I think there is an even better way....
+@hughdavenport What I planned to do if I had the time would be to implement a text Balance Sheet report that would display a summary for all accounts like the way this app does: https://play.google.com/store/apps/details?id=com.syrkus.finances
+We already have a good base architecture for building reports. If you would like to work on this, that'd be great. All you would need is to create a fragment that displays that information and throw it into the right package.
+As @rivaldi8 pointed out, all you need is in the org.gnucash.android.ui.report package. You can start with the BaseReportFragment and work from there. There are other example reports in the reporting package you could use to see how things work.
+I agree with @rivaldi8 that I would also prefer not to add another option for maximum depth. If necessary, the "group small slices" option could be used. But I think there is an even better way....
+@hughdavenport What I planned to do if I had the time would be to implement a text Balance Sheet report that would display a summary for all accounts like the way this app does: https://play.google.com/store/apps/details?id=com.syrkus.finances
+We already have a good base architecture for building reports. If you would like to work on this, that'd be great. All you would need is to create a fragment that displays that information and throw it into the right package.
+As @rivaldi8 pointed out, all you need is in the org.gnucash.android.ui.report package. You can start with the BaseReportFragment and work from there. There are other example reports in the reporting package you could use to see how things work.

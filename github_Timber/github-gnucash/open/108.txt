@@ -1,0 +1,25 @@
+title:Check number
+
+Would be useful to have a place to enter check number for the newly entered transaction.
+Do you mean cheque number?
+Do you mean cheque number?
+Yes. Here in the US we use checks instead of cheques but the UI is about the same.
+Yes. Here in the US we use checks instead of cheques but the UI is about the same.
+But not every transaction has a cheque number right?
+But not every transaction has a cheque number right?
+Sure, but for the ones that do, there should be a space to enter it. (Did I
+miss something?)
+On Mon, Aug 26, 2013 at 12:38 PM, Ngewi Fet notifications@github.comwrote:
+But not every transaction has a cheque number right?
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/108#issuecomment-23276433
+.
+Sure, but for the ones that do, there should be a space to enter it. (Did I
+miss something?)
+On Mon, Aug 26, 2013 at 12:38 PM, Ngewi Fet notifications@github.comwrote:
+But not every transaction has a cheque number right?
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/108#issuecomment-23276433
+.
+That reference to #461 seems to be a separate issue. I just deposited a few checks that I recently received, and in the app I put the check numbers, in the "add Note" Field in the new transaction dialog to have a record of the check numbers.
+That reference to #461 seems to be a separate issue. I just deposited a few checks that I recently received, and in the app I put the check numbers, in the "add Note" Field in the new transaction dialog to have a record of the check numbers.

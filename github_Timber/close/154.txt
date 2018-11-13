@@ -1,0 +1,19 @@
+title:[Feature request] Home screen widget
+
+Is it possible to add a home screen widget? I liked the one from the HTC player with album art, prev, play / pause, and next (4x1). It's a nice alternative to the notification bar.
+👍
+👍
+Preferably transparent (or configurable) widget.
+I'm going to replace mighty proprietary PowerAmp with this player, currently my widget looks like this:
+Preferably transparent (or configurable) widget.
+I'm going to replace mighty proprietary PowerAmp with this player, currently my widget looks like this:
+Already added
+Already added
+I've seen it already, it looks nice in 4x1 size, but doesn't scale well for 4x2 (don't think more makes sense).
+Could you center on bigger sizes like on screenshot above?
+I've seen it already, it looks nice in 4x1 size, but doesn't scale well for 4x2 (don't think more makes sense).
+Could you center on bigger sizes like on screenshot above?
+Complete transparency would be a nice option too if not too difficult to implement.
+Complete transparency would be a nice option too if not too difficult to implement.
+Ok, I'll do it
+Ok, I'll do it

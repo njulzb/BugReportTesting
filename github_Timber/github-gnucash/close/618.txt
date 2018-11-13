@@ -1,0 +1,7 @@
+title:Transactions shouldn't be deleted if there's some error when exporting
+
+Export with:
+If there's an error exporting the file to the selected target, no transactions are deleted.
+Transactions are deleted even when the file hasn't made to the target.
+Fixed in hotfix/patches (f153a6f).
+Fixed in hotfix/patches (f153a6f).

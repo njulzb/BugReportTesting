@@ -1,0 +1,8 @@
+title:Where can I change the title "review" to my language?
+
+I would like to know where I could modify the word review to my language in Spanish because I can not find it in the file es\ strings.xml.
+I would also like to change the currency from the local currency of my default u $$ to the local currency of my country.
+Translation are done through Crowdin.
+You can change the currency in Settings > Accounts > Default Currency (Ajustes > Cuentas > Divisa por defecto).
+Translation are done through Crowdin.
+You can change the currency in Settings > Accounts > Default Currency (Ajustes > Cuentas > Divisa por defecto).

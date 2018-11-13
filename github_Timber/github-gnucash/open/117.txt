@@ -1,0 +1,11 @@
+title:Feature request: a way to import budget
+
+a way to export budget info from gnucash (to ofx or to google drive or box) and import into one of the home mobile and sync it with other mobiles.
+budget progress bars, with used level, current day marker, over usage part with different color, $ numbers on progress bars.
+sync transactions and budget info thru box and/or google drive.
+a way to sync gnucash desktop application with google drive or box.
+Thanks for amazing app :)
+Sync is already covered in issue #375
+But at the moment you can already import and export through Google Drive
+Sync is already covered in issue #375
+But at the moment you can already import and export through Google Drive

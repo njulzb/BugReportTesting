@@ -1,0 +1,34 @@
+title:QIF export has no file extension
+
+For Windows users, and apparently the desktop version of GnuCash, file extensions are key. The default file name for a QIF export is "GnuCash Android QIF Export", which GnuCash Desktop does not expect in it's default filename filter, so any import attempt starts with a blank folder. Setting an extension on an export does not carry over the next export.
+This is a workflow blocker, especially for inexperienced Windows users where extensions sort out much complexity. Is there a negative impact to setting a suffix by default?
+OK, I got all pleased with myself having synchronised the repo in Github for Windows to a share on my Linux box, locating the applicable string in strings.xml, installing the SDK and Maven, building the APK (first ever), sending it to my device, unlocking unknown sources, uninstalling the Play Store app due to conflicting keys, installing the APK I built (wow, it works), and now find...
+1.5.0-beta1 has a .qif extension on the generated export filename (which is radically different from the 1.4.3 generated filename). Was not expecting that, as ".qif" is nowhere to be found in any of the strings xml files. And here I was ready to make a branch and send my first ever public pull request...
+:(
+Anyway, it looks like this issue is no longer applicable to 1.5.0. Can anyone confirm my findings?
+OK, I got all pleased with myself having synchronised the repo in Github for Windows to a share on my Linux box, locating the applicable string in strings.xml, installing the SDK and Maven, building the APK (first ever), sending it to my device, unlocking unknown sources, uninstalling the Play Store app due to conflicting keys, installing the APK I built (wow, it works), and now find...
+1.5.0-beta1 has a .qif extension on the generated export filename (which is radically different from the 1.4.3 generated filename). Was not expecting that, as ".qif" is nowhere to be found in any of the strings xml files. And here I was ready to make a branch and send my first ever public pull request...
+:(
+Anyway, it looks like this issue is no longer applicable to 1.5.0. Can anyone confirm my findings?
+I've always had file extensions on the exported files even in 1.4.x versions.
+Are you sure your machine does not hide file extensions or something similar?
+I've always had file extensions on the exported files even in 1.4.x versions.
+Are you sure your machine does not hide file extensions or something similar?
+Quite sure. In the dialog on Android I would not expect the extension to be hidden; it is shared with Google Drive and when that arrives on my Windows 7 system it has no extension.
+As I mentioned though 1.5.0 seems to have an extension - though the filename is hideously complex.
+Quite sure. In the dialog on Android I would not expect the extension to be hidden; it is shared with Google Drive and when that arrives on my Windows 7 system it has no extension.
+As I mentioned though 1.5.0 seems to have an extension - though the filename is hideously complex.
+ok, I'll look into it.
+But Windows hides file extensions by default, unless you explicitly disable it.
+The file name is basically the [date]_[time]gnucash_export[currency].qif
+ok, I'll look into it.
+But Windows hides file extensions by default, unless you explicitly disable it.
+The file name is basically the [date]_[time]gnucash_export[currency].qif
+Understood, it's one of the first things I disable in Windows for the same reason. Screenshot above is of the Drive folder as viewed in Firefox, so extensions are always shown; the second file is a copy I made to attempt to use the association (the space after the period is thanks to horrible on-screen keyboards), the first is the filename as created by the export function; note the lack of extension.
+As I mentioned this is with 1.4.x, so may not be applicable to 1.5.x.
+Understood, it's one of the first things I disable in Windows for the same reason. Screenshot above is of the Drive folder as viewed in Firefox, so extensions are always shown; the second file is a copy I made to attempt to use the association (the space after the period is thanks to horrible on-screen keyboards), the first is the filename as created by the export function; note the lack of extension.
+As I mentioned this is with 1.4.x, so may not be applicable to 1.5.x.
+I'm exporting via Dropbox and don't see this issue. Could you try to export to SD Card or some other share service? That way could pinpoint where the issue originates.
+I'm exporting via Dropbox and don't see this issue. Could you try to export to SD Card or some other share service? That way could pinpoint where the issue originates.
+Sorry, I cannot reproduce this issue. I will close it now.
+Sorry, I cannot reproduce this issue. I will close it now.

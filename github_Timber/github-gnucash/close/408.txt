@@ -1,0 +1,3 @@
+title:Remember the last export destination
+
+GnuCash should remember the last export destination used, so the next time the user doesn't have to set it again.

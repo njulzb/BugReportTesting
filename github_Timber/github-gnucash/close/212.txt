@@ -1,0 +1,25 @@
+title:Currency for app settings not from the system settings when creating default account
+
+I have set my system to English UK language and in the App I have set € as currency. When creating the default accounts I get £ as currency, but I want € like set in the App settings.
+Sorry, at the moment, the created default accounts do not use the default
+currency setting.
+We hope to improve this in future versions.
+On Sun, Sep 14, 2014 at 4:21 PM, sniperle notifications@github.com wrote:
+I have set my system to English UK language and in the App I have set € as
+currency. When creating the default accounts I get £ as currency, but I
+want € like set in the App settings.
+—
+Reply to this email directly or view it on GitHub
+#212.
+Sorry, at the moment, the created default accounts do not use the default
+currency setting.
+We hope to improve this in future versions.
+On Sun, Sep 14, 2014 at 4:21 PM, sniperle notifications@github.com wrote:
+I have set my system to English UK language and in the App I have set € as
+currency. When creating the default accounts I get £ as currency, but I
+want € like set in the App settings.
+—
+Reply to this email directly or view it on GitHub
+#212.
+Good to hear and thank you in advance. ☺
+Good to hear and thank you in advance. ☺

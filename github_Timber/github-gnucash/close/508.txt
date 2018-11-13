@@ -1,0 +1,10 @@
+title:NullPointerException when migrating data to 2.1.0
+
+Migrating database from 2.0.7 to 2.1.0 fails with the following stack trace:
+Steps to reproduce:
+I'm working on a fix.
+I'm working on a fix.
+Could you please test again?
+Could you please test again?
+I works now. I've tried both with the default accounts and with my own ones with one year and a half worth of transactions.
+I works now. I've tried both with the default accounts and with my own ones with one year and a half worth of transactions.

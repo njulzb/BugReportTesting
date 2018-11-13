@@ -1,0 +1,5 @@
+title:Playlist empty in landscape
+
+Playlists are empty when viewing them in landscape, they also remain empty when you rotate the device back to portrait. http://imgur.com/MiWFbqb
+Proper landscape support is currently not there (rest of the screens are restricted to portrait only). Will restrict playlist detail to portrait also for now till basic features are added into the app. Then tablet and landscape support will also be added.
+Proper landscape support is currently not there (rest of the screens are restricted to portrait only). Will restrict playlist detail to portrait also for now till basic features are added into the app. Then tablet and landscape support will also be added.

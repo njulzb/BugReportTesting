@@ -1,0 +1,6 @@
+title:[BUG] Reset at boot
+
+Hi,
+The player doesn't keep in cache the current track after a reboot.
+Each time I reboot I have to manually select the track and move the slider to start playing again.
+Thank you.

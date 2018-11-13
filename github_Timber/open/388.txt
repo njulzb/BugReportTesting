@@ -1,0 +1,3 @@
+title:Album and Artist show blank screen
+
+Sometimes click on Album item or Artist item shows white blank screen, i think the data is not loaded or something. Please fix this

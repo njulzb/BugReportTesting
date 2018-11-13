@@ -1,0 +1,260 @@
+title:Error export OFX with single-entry account
+
+Before version 1.5.0 when I export my single-entry account to gnucash, it works correctly.
+After upgrade to new version the OFX export has 2 tags , one with CREDIT the other with DEBIT. So gnucash isn't able to import correctly.
+I have only one account called "Portafoglio" that I used to put my expense (after to gnucash desktop I put them inside the correct category (account)).
+I'm inserting new trasaction: "Test" with value -50€
+The OFX generated is:
+Let me see you that there are two account id (STMTRS):
+I have the same issue, extremely painful when you have hundreds of entry to transfer :(
+I have the same issue, extremely painful when you have hundreds of entry to transfer :(
+You are correct. We need to fix this.
+OFX does not support double-entry transactions but GnuCash always uses double-entry (even when you can't see it).
+I propose 2 modifications:
+I think that would fix it and make it work like it did before v1.5.0
+You are correct. We need to fix this.
+OFX does not support double-entry transactions but GnuCash always uses double-entry (even when you can't see it).
+I propose 2 modifications:
+I think that would fix it and make it work like it did before v1.5.0
+Yes I'm agree. Thanks!
+Yes I'm agree. Thanks!
+Would using another export format solve this issue?
+Any recommendation as per the most compatible format for export?
+Would using another export format solve this issue?
+Any recommendation as per the most compatible format for export?
+Yes QIF is better supported in the app than OFX
+However, if you are using single-entry, then it might not solve the issue
+for you because there will still be transaction splits in the imbalance
+account.
+You could always choose to ignore the imbalance account on the desktop
+though
+On Wed, Aug 19, 2015 at 3:58 AM, nodje notifications@github.com wrote:
+Would using another export format solve this issue?
+Any recommendation as per the most compatible format for export?
+—
+Reply to this email directly or view it on GitHub
+#362 (comment)
+.
+Yes QIF is better supported in the app than OFX
+However, if you are using single-entry, then it might not solve the issue
+for you because there will still be transaction splits in the imbalance
+account.
+You could always choose to ignore the imbalance account on the desktop
+though
+On Wed, Aug 19, 2015 at 3:58 AM, nodje notifications@github.com wrote:
+Would using another export format solve this issue?
+Any recommendation as per the most compatible format for export?
+—
+Reply to this email directly or view it on GitHub
+#362 (comment)
+.
+Good to know, but too bad it doesn't solve the problem!
+It's actually very confusing and difficult to know which transactions to import from the GnuCash desktop import dialog. I skip the explanation but, really, it's on the edge of what is feasible...
+To be honest, it feels weird to suddenly be imposed double-entry when you have an option to deactivate it in the app.
+Especially when it used to work fine, and after upgrading, it just doesn't anymore.
+The use case for single entry usage is quite important and you should keep it.
+In my case for instance, I have way too much Expenses accounts to import them in my phone. I tried once, it was a hell to import and do the matching with Gnucash accounts. Ever since then, I keep the simplest usage of gnucash-android and rely on the Gnucash import process to match my tx with an expense account.
+Good to know, but too bad it doesn't solve the problem!
+It's actually very confusing and difficult to know which transactions to import from the GnuCash desktop import dialog. I skip the explanation but, really, it's on the edge of what is feasible...
+To be honest, it feels weird to suddenly be imposed double-entry when you have an option to deactivate it in the app.
+Especially when it used to work fine, and after upgrading, it just doesn't anymore.
+The use case for single entry usage is quite important and you should keep it.
+In my case for instance, I have way too much Expenses accounts to import them in my phone. I tried once, it was a hell to import and do the matching with Gnucash accounts. Ever since then, I keep the simplest usage of gnucash-android and rely on the Gnucash import process to match my tx with an expense account.
+GnuCash desktop works with double-entry and so to better align the the
+companion app with the desktop, it is necessary to support that same
+default mode of operation.
+If you only use the app (no GnuCash desktop), then you can enable single
+entry and it will be fine. But if you integrate with GnuCash desktop, then
+the expectation is that you use double-entry for both.
+I don't know how many accounts you have and when you last tried to import
+your .gnucash file, but the performance of the app with many accounts was
+improved a lot since v1.5.0.
+If you have matching accounts on desktop and Android, then using QIF should
+be a breeze to move data from the app to the desktop (matching with OFX was
+a lot of trouble, I know).
+I'd say give it another go with importing your accounts into the Android
+app and use QIF.
+That said, the current OFX implementation is not entirely right since it
+tries to simulate double-entry transactions although OFX does not support
+that.
+In future releases, I plan to modify OFX to be used for single-entry
+exports only and ignore the imbalance accounts. That should suffice for
+those who wish to use the app in single-entry mode only.
+But the default app operation and exports (in QIF and XML) will always be
+double-entry.
+On Wed, Aug 19, 2015 at 10:27 AM, nodje notifications@github.com wrote:
+Good to know, but too bad it doesn't solve the problem!
+It's actually very confusing and difficult to know which transactions to
+import from the GnuCash desktop import dialog. I skip the explanation but,
+really, it's on the edge of what is feasible...
+To be honest, it feels weird to suddenly be imposed double-entry when you
+have an option to deactivate it in the app.
+Especially when it used to work fine, and after upgrading, it just doesn't
+anymore.
+The use case for single entry usage is quite important and you should keep
+it.
+In my case for instance, I have way too much Expenses accounts to import
+them in my phone. I tried once, it was a hell to import and do the matching
+with Gnucash accounts. Ever since then, I keep the simplest usage of
+gnucash-android and rely on the Gnucash import process to match my tx with
+an expense account.
+—
+Reply to this email directly or view it on GitHub
+#362 (comment)
+.
+GnuCash desktop works with double-entry and so to better align the the
+companion app with the desktop, it is necessary to support that same
+default mode of operation.
+If you only use the app (no GnuCash desktop), then you can enable single
+entry and it will be fine. But if you integrate with GnuCash desktop, then
+the expectation is that you use double-entry for both.
+I don't know how many accounts you have and when you last tried to import
+your .gnucash file, but the performance of the app with many accounts was
+improved a lot since v1.5.0.
+If you have matching accounts on desktop and Android, then using QIF should
+be a breeze to move data from the app to the desktop (matching with OFX was
+a lot of trouble, I know).
+I'd say give it another go with importing your accounts into the Android
+app and use QIF.
+That said, the current OFX implementation is not entirely right since it
+tries to simulate double-entry transactions although OFX does not support
+that.
+In future releases, I plan to modify OFX to be used for single-entry
+exports only and ignore the imbalance accounts. That should suffice for
+those who wish to use the app in single-entry mode only.
+But the default app operation and exports (in QIF and XML) will always be
+double-entry.
+On Wed, Aug 19, 2015 at 10:27 AM, nodje notifications@github.com wrote:
+Good to know, but too bad it doesn't solve the problem!
+It's actually very confusing and difficult to know which transactions to
+import from the GnuCash desktop import dialog. I skip the explanation but,
+really, it's on the edge of what is feasible...
+To be honest, it feels weird to suddenly be imposed double-entry when you
+have an option to deactivate it in the app.
+Especially when it used to work fine, and after upgrading, it just doesn't
+anymore.
+The use case for single entry usage is quite important and you should keep
+it.
+In my case for instance, I have way too much Expenses accounts to import
+them in my phone. I tried once, it was a hell to import and do the matching
+with Gnucash accounts. Ever since then, I keep the simplest usage of
+gnucash-android and rely on the Gnucash import process to match my tx with
+an expense account.
+—
+Reply to this email directly or view it on GitHub
+#362 (comment)
+.
+Hi nodje,
+Waiting that Ngwey Fet will fix the OFX export with single-entry account, I
+suggest you to export to OFX and then to edit the file deleting the section
+between the two tag  that are wrong, then import it to gnucash
+desktop. It works to me.
+Bye
+Il 19/ago/2015 10:27 AM, "nodje" notifications@github.com ha scritto:
+Good to know, but too bad it doesn't solve the problem!
+It's actually very confusing and difficult to know which transactions to
+import from the GnuCash desktop import dialog. I skip the explanation but,
+really, it's on the edge of what is feasible...
+To be honest, it feels weird to suddenly be imposed double-entry when you
+have an option to deactivate it in the app.
+Especially when it used to work fine, and after upgrading, it just doesn't
+anymore.
+The use case for single entry usage is quite important and you should keep
+it.
+In my case for instance, I have way too much Expenses accounts to import
+them in my phone. I tried once, it was a hell to import and do the matching
+with Gnucash accounts. Ever since then, I keep the simplest usage of
+gnucash-android and rely on the Gnucash import process to match my tx with
+an expense account.
+—
+Reply to this email directly or view it on GitHub
+#362 (comment)
+.
+Hi nodje,
+Waiting that Ngwey Fet will fix the OFX export with single-entry account, I
+suggest you to export to OFX and then to edit the file deleting the section
+between the two tag  that are wrong, then import it to gnucash
+desktop. It works to me.
+Bye
+Il 19/ago/2015 10:27 AM, "nodje" notifications@github.com ha scritto:
+Good to know, but too bad it doesn't solve the problem!
+It's actually very confusing and difficult to know which transactions to
+import from the GnuCash desktop import dialog. I skip the explanation but,
+really, it's on the edge of what is feasible...
+To be honest, it feels weird to suddenly be imposed double-entry when you
+have an option to deactivate it in the app.
+Especially when it used to work fine, and after upgrading, it just doesn't
+anymore.
+The use case for single entry usage is quite important and you should keep
+it.
+In my case for instance, I have way too much Expenses accounts to import
+them in my phone. I tried once, it was a hell to import and do the matching
+with Gnucash accounts. Ever since then, I keep the simplest usage of
+gnucash-android and rely on the Gnucash import process to match my tx with
+an expense account.
+—
+Reply to this email directly or view it on GitHub
+#362 (comment)
+.
+@giursino Good point, it's probably much easier this way!
+@codinguser the thing is Gnucash desktop forces you to balance your transaction upon import, and their matching based on description pattern is not too bad. This way I can keep a very light and fast way to keep record of my transactions on Gnucash-android, and do the balancing toil on import only.
+This has proven to be hassle free and really convenient up to now. Also I can reset Gnucash-android and start fresh anytime because I have only a couple of accounts on it.
+I'll give a try to importing my account list again though.
+@giursino Good point, it's probably much easier this way!
+@codinguser the thing is Gnucash desktop forces you to balance your transaction upon import, and their matching based on description pattern is not too bad. This way I can keep a very light and fast way to keep record of my transactions on Gnucash-android, and do the balancing toil on import only.
+This has proven to be hassle free and really convenient up to now. Also I can reset Gnucash-android and start fresh anytime because I have only a couple of accounts on it.
+I'll give a try to importing my account list again though.
+I'm agree with nodje. Me too use the gnucash-android in the same mode.
+The app should be easy, speedy and bother free. So for me is better work
+with single entry transition in the app and then arrange it later to my
+desktop.
+Il 20/ago/2015 04:08 AM, "nodje" notifications@github.com ha scritto:
+@giursino https://github.com/giursino Good point, it's probably much
+easier this way!
+@codinguser https://github.com/codinguser the thing is Gnucash desktop
+forces you to balance your transaction upon import, and their matching
+based on description pattern is not too bad. This way I can keep a very
+light and fast way to keep record of my transactions on Gnucash-android,
+and do the balancing toil on import only.
+This has proven to be hassle free and really convenient up to now. Also I
+can reset Gnucash-android and start fresh anytime because I have only a
+couple of accounts on it.
+I'll give a try to importing my account list again though.
+—
+Reply to this email directly or view it on GitHub
+#362 (comment)
+.
+I'm agree with nodje. Me too use the gnucash-android in the same mode.
+The app should be easy, speedy and bother free. So for me is better work
+with single entry transition in the app and then arrange it later to my
+desktop.
+Il 20/ago/2015 04:08 AM, "nodje" notifications@github.com ha scritto:
+@giursino https://github.com/giursino Good point, it's probably much
+easier this way!
+@codinguser https://github.com/codinguser the thing is Gnucash desktop
+forces you to balance your transaction upon import, and their matching
+based on description pattern is not too bad. This way I can keep a very
+light and fast way to keep record of my transactions on Gnucash-android,
+and do the balancing toil on import only.
+This has proven to be hassle free and really convenient up to now. Also I
+can reset Gnucash-android and start fresh anytime because I have only a
+couple of accounts on it.
+I'll give a try to importing my account list again though.
+—
+Reply to this email directly or view it on GitHub
+#362 (comment)
+.
+I've been trying to use QIF to import my expenses, and I must say that the experience wasn't good:
+So keeping OFX as my favourite, I've tried to delete the 'auto balancing' accounts directly in the exported file but the result is pretty terrible after importation. In any case, importation is now very painful.
+In my case, I don't see any better solution than to revert to the 1.5.x branch for now.
+Generally speaking, it feels that the 1.6 branch is made for fully balanced transaction, and as such creates many odd behaviors when used in a simple fashion (unbalanced transactions).
+It is my experience that older branches, though simple, worked well for my use case, and that the newer have introduced more and more odd behaviors in my workflow (for instance the Equity account created when you delete transaction. And in 1.6 branch it now deletes all existing transaction upon suppression, thus conflicting with the 'Save account opening balance')
+I've been trying to use QIF to import my expenses, and I must say that the experience wasn't good:
+So keeping OFX as my favourite, I've tried to delete the 'auto balancing' accounts directly in the exported file but the result is pretty terrible after importation. In any case, importation is now very painful.
+In my case, I don't see any better solution than to revert to the 1.5.x branch for now.
+Generally speaking, it feels that the 1.6 branch is made for fully balanced transaction, and as such creates many odd behaviors when used in a simple fashion (unbalanced transactions).
+It is my experience that older branches, though simple, worked well for my use case, and that the newer have introduced more and more odd behaviors in my workflow (for instance the Equity account created when you delete transaction. And in 1.6 branch it now deletes all existing transaction upon suppression, thus conflicting with the 'Save account opening balance')
+In v2.0.0, when in single-entry mode, the imbalance accounts are ignored. Hope this fixes the issue.
+But you're right @nodje , the app is optimized for double-entry bookkeeping, just like the desktop version.
+In v2.0.0, when in single-entry mode, the imbalance accounts are ignored. Hope this fixes the issue.
+But you're right @nodje , the app is optimized for double-entry bookkeeping, just like the desktop version.

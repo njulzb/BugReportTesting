@@ -1,0 +1,6 @@
+title:Translation
+
+Hi Naman,
+thank you for Timber. Great work!
+Can you please integrate weblate.org to make translations much more easier.
+https://weblate.org/en-gb/features/

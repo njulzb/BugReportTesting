@@ -1,0 +1,9 @@
+title:New feature requests
+
+I've been trying a number of players and not a single one has every feature I'd like to see.  My suggestions for new features:
+-- "Songs" has a list view, but "Albums" and Artists" have only an icon view.  They should have optional list views.
+-- A way to see the track number so if you're playing 70 out of 100 tracks it shows "70/141" somewhere.  Right now if you sdelect an album it shows the album art with the track listing under it, and the track listing just lists the name and length--plenty of room to put a track number.  I have large folders of old time radio shows and I write down which one I'm on, so being able to see that a track is track 70 is very useful.
+-- Fast forward when pressing the >| icon.  Alternately, add a >> icon for fast forward.
+-- cover.jpg for cover art.  (I'm still not sure if this is a needed feature or if it's just having problems loading it sometimes)
+-- Per-song album art
+-- A way to completely disable downloading cover art off the Internet.

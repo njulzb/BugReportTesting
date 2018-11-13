@@ -1,0 +1,6 @@
+title:Add option to restore deleted transactions after export
+
+codinguser
+If the export was unsuccessful, GnuCash Android does not know and still prompts the user to delete files. Once the user deletes, there is potential data loss if the export was unsuccessful.
+Fixed in 3dde0ab
+Fixed in 3dde0ab

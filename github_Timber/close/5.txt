@@ -1,0 +1,3 @@
+title:Wrong album art
+
+In the scenario where the current playing song doesn't have an album art, it shows the blurred album art of the previous song in the background. Check this screenshot -

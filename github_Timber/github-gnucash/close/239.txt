@@ -1,0 +1,41 @@
+title:Reporting
+
+Hi,
+It would be useful if a user can see income and expenses for selected period of time.
+Is there any plan for some kind of reporting feature?
+Right now I'm working on the chart reports feature. A pie chart is almost done. With time I'm going to add a line chart and maybe a bar chart.
+
+Right now I'm working on the chart reports feature. A pie chart is almost done. With time I'm going to add a line chart and maybe a bar chart.
+
+This looks great.
+On Oct 3, 2014 6:46 PM, "Oleksandr Tyshkovets" notifications@github.com
+wrote:
+Right now I'm working on the chart reports feature. A pie chart is almost
+done. With time I'm going to add line chart and maybe bar chart.
+[image: screen shot 2014-10-03 at 6 35 45 pm]
+https://cloud.githubusercontent.com/assets/3179252/4508250/11c910a2-4b14-11e4-84ac-4388043c958e.png
+[image: screen shot 2014-10-03 at 6 32 28 pm]
+https://cloud.githubusercontent.com/assets/3179252/4508262/30426416-4b14-11e4-95b4-255ce707e094.png
+[image: 65cf0b8a-3461-11e4-99d9-fbb872ac20ba]
+https://cloud.githubusercontent.com/assets/3179252/4506581/220a54a4-4b04-11e4-9945-5b4a86dc048b.png
+—
+Reply to this email directly or view it on GitHub
+#239 (comment)
+.
+This looks great.
+On Oct 3, 2014 6:46 PM, "Oleksandr Tyshkovets" notifications@github.com
+wrote:
+Right now I'm working on the chart reports feature. A pie chart is almost
+done. With time I'm going to add line chart and maybe bar chart.
+[image: screen shot 2014-10-03 at 6 35 45 pm]
+https://cloud.githubusercontent.com/assets/3179252/4508250/11c910a2-4b14-11e4-84ac-4388043c958e.png
+[image: screen shot 2014-10-03 at 6 32 28 pm]
+https://cloud.githubusercontent.com/assets/3179252/4508262/30426416-4b14-11e4-95b4-255ce707e094.png
+[image: 65cf0b8a-3461-11e4-99d9-fbb872ac20ba]
+https://cloud.githubusercontent.com/assets/3179252/4506581/220a54a4-4b04-11e4-9945-5b4a86dc048b.png
+—
+Reply to this email directly or view it on GitHub
+#239 (comment)
+.
+👍
+👍

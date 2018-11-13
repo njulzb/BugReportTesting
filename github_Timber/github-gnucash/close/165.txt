@@ -1,0 +1,196 @@
+title:Double Entry Accounting - Implementation
+
+Questioning GNUCash for Android's implementation of Double Entry Accounting.
+GNUCash documentation explains "Accountants record increases in asset, expense, and equity accounts on the debit (left) side, and they record increases in liability, revenue, and capital accounts on the credit (right) side. GnuCash follows this convention in the register."
+In GNUCash for Android when I deposit my pay (income) in my checking account (asset) my pay balance increases by crediting and my checking account balance decreases by debiting.
+In GNUCash on my PC  when I deposit my pay (income) in my checking account (asset) my pay balance increases by crediting and my checking account balance increases by debiting.
+Can this discrepancy be explained?
+Glenn
+No it cannot be explained. Will be improved.
+GnuCash Android started on a very simple model of debit goes down, credit
+goes up.
+With time I am upgrading these legacy options to properly use the
+accounting principles.
+On Mon, Jun 2, 2014 at 5:24 PM, Glenn46 notifications@github.com wrote:
+Questioning GNUCash for Android's implementation of Double Entry
+Accounting.
+GNUCash documentation explains "Accountants record increases in asset,
+expense, and equity accounts on the debit (left) side, and they record
+increases in liability, revenue, and capital accounts on the credit (right)
+side. GnuCash follows this convention in the register."
+In GNUCash for Android when I deposit my pay (income) in my checking
+account (asset) my pay balance increases by crediting and my checking
+account balance decreases by debiting.
+In GNUCash on my PC when I deposit my pay (income) in my checking account
+(asset) my pay balance increases by crediting and my checking account
+balance increases by debiting.
+Can this discrepancy be explained?
+Glenn
+—
+Reply to this email directly or view it on GitHub
+#165.
+No it cannot be explained. Will be improved.
+GnuCash Android started on a very simple model of debit goes down, credit
+goes up.
+With time I am upgrading these legacy options to properly use the
+accounting principles.
+On Mon, Jun 2, 2014 at 5:24 PM, Glenn46 notifications@github.com wrote:
+Questioning GNUCash for Android's implementation of Double Entry
+Accounting.
+GNUCash documentation explains "Accountants record increases in asset,
+expense, and equity accounts on the debit (left) side, and they record
+increases in liability, revenue, and capital accounts on the credit (right)
+side. GnuCash follows this convention in the register."
+In GNUCash for Android when I deposit my pay (income) in my checking
+account (asset) my pay balance increases by crediting and my checking
+account balance decreases by debiting.
+In GNUCash on my PC when I deposit my pay (income) in my checking account
+(asset) my pay balance increases by crediting and my checking account
+balance increases by debiting.
+Can this discrepancy be explained?
+Glenn
+—
+Reply to this email directly or view it on GitHub
+#165.
+Thanks for the feed back. I look forward to  this change so that this app works properly with the Desktop Version.
+Thanks for the feed back. I look forward to  this change so that this app works properly with the Desktop Version.
+Fixed in: 3dde0ab
+Fixed in: 3dde0ab
+Thanks ... I'm looking forward to trying it.  How do I sign up for a Beta
+copy.
+Glenn
+On Tue, Jul 22, 2014 at 1:04 PM, Ngewi Fet notifications@github.com wrote:
+Fixed in: 3dde0ab
+3dde0ab
+—
+Reply to this email directly or view it on GitHub
+#165 (comment)
+.
+Glenn
+613-282-4536 cell
+Thanks ... I'm looking forward to trying it.  How do I sign up for a Beta
+copy.
+Glenn
+On Tue, Jul 22, 2014 at 1:04 PM, Ngewi Fet notifications@github.com wrote:
+Fixed in: 3dde0ab
+3dde0ab
+—
+Reply to this email directly or view it on GitHub
+#165 (comment)
+.
+Glenn
+613-282-4536 cell
+You can join the beta group by first joining this Google+ community:
+https://plus.google.com/u/0/communities/104728406764752407046
+and afterwards signing up here:
+https://play.google.com/apps/testing/org.gnucash.android
+On Thu, Jul 24, 2014 at 2:24 PM, Glenn46 notifications@github.com wrote:
+Thanks ... I'm looking forward to trying it. How do I sign up for a Beta
+copy.
+Glenn
+On Tue, Jul 22, 2014 at 1:04 PM, Ngewi Fet notifications@github.com
+wrote:
+Fixed in: 3dde0ab
+<
+3dde0ab
+—
+Reply to this email directly or view it on GitHub
+<
+https://github.com/codinguser/gnucash-android/issues/165#issuecomment-49768556>
+.
+Glenn
+613-282-4536 cell
+—
+Reply to this email directly or view it on GitHub
+#165 (comment)
+.
+You can join the beta group by first joining this Google+ community:
+https://plus.google.com/u/0/communities/104728406764752407046
+and afterwards signing up here:
+https://play.google.com/apps/testing/org.gnucash.android
+On Thu, Jul 24, 2014 at 2:24 PM, Glenn46 notifications@github.com wrote:
+Thanks ... I'm looking forward to trying it. How do I sign up for a Beta
+copy.
+Glenn
+On Tue, Jul 22, 2014 at 1:04 PM, Ngewi Fet notifications@github.com
+wrote:
+Fixed in: 3dde0ab
+<
+3dde0ab
+—
+Reply to this email directly or view it on GitHub
+<
+https://github.com/codinguser/gnucash-android/issues/165#issuecomment-49768556>
+.
+Glenn
+613-282-4536 cell
+—
+Reply to this email directly or view it on GitHub
+#165 (comment)
+.
+Thanks ... I joined the group and signed up for the beta version.
+Glenn
+On 24 Jul 2014 08:35, "Ngewi Fet" notifications@github.com wrote:
+You can join the beta group by first joining this Google+ community:
+https://plus.google.com/u/0/communities/104728406764752407046
+and afterwards signing up here:
+https://play.google.com/apps/testing/org.gnucash.android
+On Thu, Jul 24, 2014 at 2:24 PM, Glenn46 notifications@github.com
+wrote:
+Thanks ... I'm looking forward to trying it. How do I sign up for a Beta
+copy.
+Glenn
+On Tue, Jul 22, 2014 at 1:04 PM, Ngewi Fet notifications@github.com
+wrote:
+Fixed in: 3dde0ab
+<
+3dde0ab
+—
+Reply to this email directly or view it on GitHub
+<
+https://github.com/codinguser/gnucash-android/issues/165#issuecomment-49768556>
+.
+Glenn
+613-282-4536 cell
+—
+Reply to this email directly or view it on GitHub
+<
+https://github.com/codinguser/gnucash-android/issues/165#issuecomment-50001603>
+.
+—
+Reply to this email directly or view it on GitHub
+#165 (comment)
+.
+Thanks ... I joined the group and signed up for the beta version.
+Glenn
+On 24 Jul 2014 08:35, "Ngewi Fet" notifications@github.com wrote:
+You can join the beta group by first joining this Google+ community:
+https://plus.google.com/u/0/communities/104728406764752407046
+and afterwards signing up here:
+https://play.google.com/apps/testing/org.gnucash.android
+On Thu, Jul 24, 2014 at 2:24 PM, Glenn46 notifications@github.com
+wrote:
+Thanks ... I'm looking forward to trying it. How do I sign up for a Beta
+copy.
+Glenn
+On Tue, Jul 22, 2014 at 1:04 PM, Ngewi Fet notifications@github.com
+wrote:
+Fixed in: 3dde0ab
+<
+3dde0ab
+—
+Reply to this email directly or view it on GitHub
+<
+https://github.com/codinguser/gnucash-android/issues/165#issuecomment-49768556>
+.
+Glenn
+613-282-4536 cell
+—
+Reply to this email directly or view it on GitHub
+<
+https://github.com/codinguser/gnucash-android/issues/165#issuecomment-50001603>
+.
+—
+Reply to this email directly or view it on GitHub
+#165 (comment)
+.

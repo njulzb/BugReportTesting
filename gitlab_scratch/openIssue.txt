@@ -1,0 +1,232 @@
+NullPointerException: Attempt to read from field 'java.lang.String org.fdroid.fdroid.data.App.packageName' on a null object reference
+[Feature Request] Let Android System silently add repositories
+Crash reporter should use a notification, not a popup
+Updates tab's icon shows a count of updates that do not exist
+IllegalAccessError: Method 'void org.spongy
+RFE: `About F-Droid` needs a link to the F-Droid Forum
+Less aggressive app enumeration
+Bouncy updating field
+App "icon.png" in locale folder ignored by client
+Some icons are black
+Crash on show versions
+bump targetSdkVersion to 27
+`Include touchscreen apps` setting
+F-Droid fails to uninstall apps installed by other app stores
+Many never-installed apps listed in 'Installed Apps'
+Don't show update availability notification when updates are auto-installed
+WIP FROZEN: New UI / UX  [ TV ONLY ]  (concern future TV layout, Keyboard, d-pad... but for TV]
+use ConnectivityManager to improve swap reliability
+Show and allow download apps available in local repo only
+Fdroid says install failed even if it succeded
+App page shows no update button even if update is available.
+Copying links etc.
+Error when uninstalling, getPackageInfo() says the app is not installed
+F-droid fails to request storage permission for OBB files
+Samsung: free up space -> constant fdroid crash, until starting manually
+"What's New" in App Details shown for wrong version
+Repo refresh on every user switch when users' locales differ
+On android-4.2 installed apps show also not installed apps (all available apps)
+handle VPN mode gracefully when swapping
+Not upgrading on Cyanogenmod 10: F-Droid application disappears
+IndexV1Updater: Explicit termination method 'close' not called
+support repos on SDCards and OTG USB drives
+406cdd6d java.lang.NullPointerException: Attempt to read from field 'java.lang.String org.fdroid.fdroid.data.App.packageName' on a null object reference
+Include short description in package dateils
+Some UI actions lead to temporary freeze / no instant feedback at all
+F-Droid Client Optimization : Recyclerview of What's new
+Show also screenshots when app is incompatible
+Notify us about abandonware, updates needed
+Highlight/mark currently installed version of an app under "versions"
+overhaulling the Versions list in AppDetails
+Version list in App Details is empty after installing the app
+Add option to show also versionCode (apart from versionName)
+[feature request] Highlight installed version in app details
+Icons' labels do not display fully when display size is set to large and language is set to French
+Installing a F-droid alpha version (simplified procedure)
+NullPointerException: Attempt to invoke virtual method 'java.lang.String org.fdroid.fdroid.data.Apk.getUrl()'
+Search performance
+Add adaptive icon
+Download notification should open updates page
+State in app description (or as comment suggest list it as AntiFeature) if app violates laws or terms of service
+[Solved] (Bug) Asking to update updated applications and showing them as not installed
+Error -110
+Find apps by language
+Sometimes the wrong "What's New" is displayed
+client should detect Janus exploits and block them.
+strip images down to only the image data
+No update notification if one repo marked an older release "preferred"
+UI/UX "Ignore XY" is confusing/contradictory
+[feature request] list/track stale apps installed by f-droid
+Does this app "F-Droid Reference" on Google Play have relation with F-Droid?
+Fdroid client: race condition in ApkCache causing some updates to fail?
+Red "Unsigned" under signed custom repository
+Support Android 7.1+ App Shortcuts
+animated icons not loaded and flickering
+Unable to download app Remotedroid
+Detailed application view: Collapsed description should not scroll
+IllegalStateException: attempt to re-open an already-closed object: SQLiteQuery: SELECT fdroid_app.name, fdroid_package.packageName AS package_packageName, fdroid_app.summary,
+Confusing vulnerability information
+enabling Archive repo prevents icons from being downloaded
+crash after trying to upgrade/uninstall app with KnownVuln
+after update to 1.0.1 a second F-Droid icon is created
+Uninstalling app from "Installed" list may cause UI breakage
+allow search by New and Recently Updated
+Allow app downgrade with an expert setting.
+Fields in metadata don't take precedence over gradle play publisher
+Don't show feature graphics in Latest view
+Improve error handling on app upgrades / SDK changes
+Application "F-Droid" is missing
+Improve Tor connection handling and information
+Option to show list of updateable apps by default
+Installed apps list not searchable in new UI
+Signature confusion for I2P
+Disabling a repository again before the index update completes leads to inconsistent UI state
+Summary of all apps not visible
+decide locale precedence: exact language/country match or first language regardless of country
+Searching "Fdroid" in the search list
+Permission popup background color not changed when using Dark and Night F-Droid themes
+Repository update gets slower over time
+Add category name to app page
+"Proxy" repositories
+Apps not updating when "Unstable updates" setting is unchecked
+Jumpy version list first time after opening app details
+Repositories update too early when setting up
+bookmark / fav / watch list for apps
+Duplicated URL in download error message
+Hard to visually distinguish to-update and updated apps in the update screen
+Bump version and release date on Wikipedia with each official F-Droid client app release
+Icon z-depth wrong on click
+No icon of self built apps
+Display issue in Categories Tab
+StrictMode violations on app launch: I/O on UiThread
+Generate error page for non-F-Droid apps
+Media support TODOs - Storage space check, tests, and installed files list.
+rework APK downloading to mark files as partial or complete
+refactor UpdateService to be more "event-based", using LocalBroadcastManager
+overhaul the app icon delivery and display
+IllegalStateException in ApkTable renders phone unusable
+provide method for getting more info about items in the Updates view
+Uninstalling an apk no longer in repo causes crash
+normalize CurrentVersionCode/suggestedVersionCode/upstreamVersionCode across the project
+Support notion of "preferred signature".
+Do not auto-download APKs that are signed with a different key than the installed version
+Allow HTTP redirect of download URLs to another server
+F-Droid throws TLS error when connecting to TLS 1.3
+Updated app notfication has black icon
+F-Droid crashed while upgrading to 0.103,  leaving F-Droid setup in broken state
+New updates view often shows incorrect info
+Unobtrusively prompt user to donate after several updates
+New UI / UX [ General Topic ]
+Update notifications link to wrong app
+Categories app tabs position error
+Updates badge is just showed after download
+Bookmark Apps
+support displaying basic HTML in app descriptions in App Details
+Showing alpha upgrade available even when "unstable updates" is unchecked in settings
+Night theme does not appear to be different from dark theme
+nail down locale selection process for localized app data
+audit F-Droid's TLS/HTTP usage for info leaks
+Nearby Swap screen does not follow configured theme and device's orientation
+Crash when installing priviledged extension
+Don't show manual update buttons when auto-fetch downloads is enabled
+The "Install" button does not work with Talkback
+Add space after colon for new issue page on this tracker
+Enable "Incompatible versions" by default
+Sketch for improved "Add Repository" experience
+Decouple information about notifications and updates tab
+Hide installed apps from Latest view
+Similar apps
+Author page
+In Latest tab, group apps changed since last repo update
+Enable "auto fetch updates" for new users, encourage old users to enable it.
+Summaries should always be shown on the next line
+Mark apps requiring root
+f-droid crashes after removing and re-adding repo
+Send F-Droid apk via Bluetooth on >= android-23
+Initiate search when user starts typing
+Strip semicolons from supplied repository fingerprint
+table temp_fdroid_app has no column named repold
+F-Droid crashes when trying to update app
+Remove all 'Swap' language and replace with 'Nearby' only
+Offline view of app details
+Display 'No internet' when the user is offline
+Category chip tweeks
+Repository is shown as disabled, but all apps are available
+flag all Amazon re-signed APKs for tracking
+Non-removable "Updating package sources" notification after network d/c
+Error getting index file
+Requirements for incompatible versions show superfluous comma
+auto refresh of installed apps immediately after uninstal
+F-droid no longer connects through reverse tether in version 0.102
+"chip" functionality in the new search field
+investigate client tracking based on TLS Sessions
+Ability to save the error log
+Toggling on a repo should update only that repo
+Updater swallowing important exceptions
+allow Device Admin app to provide whitelist of "trusted" repos
+Failed to verify
+Repo.getName() NullPointerException
+signing key fingerprint should be sole ID for repos in the database
+Dialog Disappears on Device Rotation
+Index update slows down when screen is turned off
+maintain app list privacy when swapping with new people
+index updates via diff-only files
+Implementing app rating and comments
+Don't show the uninstall button for system apps
+Do not suggest updates for incompatible apps
+Warn user if added repository is not a valid repository
+search chip to show apps in a specific repo
+Optionally filter out anti-features
+Feature Request: Simple results filtering
+Configurable font size
+Make sticky error notifications for bad index signature or no index update within alloted timeout
+Make Tor hidden service repos visible in the UI
+Expand the lists  in the right by default when the landscape layout is used
+Flipping the "unstable updates" setting hangs the UI
+show informative screen on first run, instead of warning about out of date index
+Process index and save to database while downloading (not after)
+Don't delay updating buttons upon deleting apps
+Report apps (missing links)
+install button should change if there is no internet connection
+Use delta apk updates.
+F-Droid should warn the user when it is updating itself
+There is no way to abort background updates
+Unclear why I can't update
+Unstable updates per application
+Mark debug apks as such
+Popularity Contest
+Downloads abruptly stop with unhelpful message if /data/data is full
+When enabling unstable updates, CV is shown incorrectly
+Updates count not updated after enabling unstable updates
+use "Full Text Search" features to improve search results
+Refactoring
+remember repo signing keys to make TOFU in swap
+Use library for scanning QR Codes
+"Open with" dialog if we don't have an app from a link
+Push information to users (of a specific app)
+allow swap service to run indefinitely
+pin HTTPS certificates for repos that are included by default and added by the user
+support self-signed HTTPS certificates with TOFU/POP
+Mark for installation
+Does not install for other users
+Add support for app ratings and comments
+Build, release and support "F-Droid Light"
+Incompatible apps are listed in my client
+client should scan APKs for "Master Key" exploits before installing
+support OpenPGP sigs on APKs
+use "Full Text Search" features to improve search results
+Refactoring
+remember repo signing keys to make TOFU in swap
+Use library for scanning QR Codes
+"Open with" dialog if we don't have an app from a link
+Push information to users (of a specific app)
+allow swap service to run indefinitely
+pin HTTPS certificates for repos that are included by default and added by the user
+support self-signed HTTPS certificates with TOFU/POP
+Mark for installation
+Does not install for other users
+Add support for app ratings and comments
+Build, release and support "F-Droid Light"
+Incompatible apps are listed in my client
+client should scan APKs for "Master Key" exploits before installing
+support OpenPGP sigs on APKs

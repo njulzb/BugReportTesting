@@ -1,0 +1,6 @@
+title:a crash for click the button of search
+
+1.i met a problem ,when i click 'search',the player will stop running ,but the music is still playing .
+2.I download from appmarket ;version:0.1b,
+You have some other copy of the app as the current version on play store for Timber is 0.4b
+You have some other copy of the app as the current version on play store for Timber is 0.4b

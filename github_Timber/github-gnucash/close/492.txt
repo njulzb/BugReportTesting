@@ -1,0 +1,23 @@
+title:Build failure due to "peer not authenticated"
+
+I tried to build with gradlew following instructions in the README but failed here:
+By Google, I found a few quick suggestions:
+By Google, I found a few quick suggestions:
+Must be the JDK, any chance to build the package with only Debian/Ubuntu packaged tools ?
+Must be the JDK, any chance to build the package with only Debian/Ubuntu packaged tools ?
+I'm using Ubuntu's OpenJDK 8 and before version 7, so this shouldn't be a problem.
+I'm using Ubuntu's OpenJDK 8 and before version 7, so this shouldn't be a problem.
+openjdk-8-jdk here, 8u91-b14-0ubuntu4~14.04
+Building as root makes no difference.
+openjdk-8-jdk here, 8u91-b14-0ubuntu4~14.04
+Building as root makes no difference.
+@strk do you still experience build issues?
+@strk do you still experience build issues?
+Yes, but different error now, so could be unrelated.
+New error is (as of bc9159c):
+Yes, but different error now, so could be unrelated.
+New error is (as of bc9159c):
+Seems like you're missing the Google Repository component in the SDK?
+Seems like you're missing the Google Repository component in the SDK?
+@strk if this issue is now fixed, could we close this?
+@strk if this issue is now fixed, could we close this?

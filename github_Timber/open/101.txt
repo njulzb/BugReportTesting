@@ -1,0 +1,7 @@
+title:Can't set Timber as default music player
+
+I wanted to set Timber as default music player in "Settings > Manage apps > Default apps > Music", but it isn't listed there...
+I think this is probably related to #94.
+I think this is probably related to #94.
+Can confirm this. It is not shown as app that can open music files.
+Can confirm this. It is not shown as app that can open music files.

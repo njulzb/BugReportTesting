@@ -1,0 +1,36 @@
+title:Transactions cannot be edited in 1.4.0
+
+codinguser
+The app was updated to 1.4.0 automatically on a LG-E460, Android 4.1.2. In the new version, I'm unable to edit any existing transaction: Every change seems to get discarded after I press "Save". Also, when the transaction quickfill is chosen during entering, the values from the quickfill get saved regardless of whether I've changed them before pressing "Save".
+Am Samstag, 23. August 2014, 11:29:39 schrieb Ngewi Fet:
+Can you please tell me more about your setup?
+No, the double-entry checkbox is not activated.
+I have two problems: On creating a new txn from autofill, the changed amount
+is ignored. Secondly, when editing that txn later, the changed amount is still
+ignored. However, I can't tell whether this second problem also occurred when
+editing a non-autofill txn.
+I don't think I actively used autofill when editing the transaction, only
+during creating it.
+Regards,
+Christian
+Am Samstag, 23. August 2014, 11:29:39 schrieb Ngewi Fet:
+Can you please tell me more about your setup?
+No, the double-entry checkbox is not activated.
+I have two problems: On creating a new txn from autofill, the changed amount
+is ignored. Secondly, when editing that txn later, the changed amount is still
+ignored. However, I can't tell whether this second problem also occurred when
+editing a non-autofill txn.
+I don't think I actively used autofill when editing the transaction, only
+during creating it.
+Regards,
+Christian
+I found the bug. Thanks for reporting the issue!
+I found the bug. Thanks for reporting the issue!
+Unfortunately, the bug still exists: Gnucash 1.4.2 on another device, Sony Xperia Tipo with Android 4.0.4. But as before, I'm still using no double-Entry (the double-entry checkbox is deactivated). As before, I have two problems: Editing any existing transactions will ignore the changes and still have the values from before; secondly, when entering a new txn and accepting the proposed autofill, changing the value into something else is not saved but instead the value from the autofilled txn is saved.
+Unfortunately, the bug still exists: Gnucash 1.4.2 on another device, Sony Xperia Tipo with Android 4.0.4. But as before, I'm still using no double-Entry (the double-entry checkbox is deactivated). As before, I have two problems: Editing any existing transactions will ignore the changes and still have the values from before; secondly, when entering a new txn and accepting the proposed autofill, changing the value into something else is not saved but instead the value from the autofilled txn is saved.
+True, it was previously fixed only when double-entry was enabled.
+A new release is going into beta now, please test and let me know if it's fixed.
+Thank you!
+True, it was previously fixed only when double-entry was enabled.
+A new release is going into beta now, please test and let me know if it's fixed.
+Thank you!

@@ -1,0 +1,3 @@
+title:[Feature Request] Kindly add genres in the library if you can!
+
+[Feature Request] Kindly add genres and let the user retrieve a list of songs related to that genre in the library if you can!

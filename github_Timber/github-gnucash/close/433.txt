@@ -1,0 +1,5 @@
+title:Crash if intent to open a file is canceled
+
+Selecting "Open" in the navigation drawer and then pressing back to cancel it, crashes the application:
+Well, it seems it was only affecting develop branch. Fixed in 732fa5a.
+Well, it seems it was only affecting develop branch. Fixed in 732fa5a.

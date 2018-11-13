@@ -1,0 +1,5 @@
+title:Migrate from ActionBarSherlock to ActionBarCompat
+
+We should migrate from ActionBarSherlock to ActionBarCompat. The former was left unmaintained when Google included ActionBarCompat in Android's support library.
+This change should solve some problems like #344 and provide better integration with other functionalities.
+Some blog posts about how to approach the migration:

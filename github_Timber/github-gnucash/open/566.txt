@@ -1,0 +1,4 @@
+title:Backup SQLite Database before upgrades. Enable downgrades
+
+Make a backup of SQLite database before attempting an upgrade.
+In case that fails, allow the user to uninstall and reinstall the app, then auto-detect the previous existing database and use

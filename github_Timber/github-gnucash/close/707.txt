@@ -1,0 +1,13 @@
+title:[UNVERIFIED] Update ownCloud library version
+
+[USER REPORT]
+I've been testing out OwnCloud and NextCloud support, and I have a question. Exporting to OwnCloud appears to work, but NextCloud doesn't. I've set up OwnCloud and NextCloud to use the same username and password, and with OwnCloud, it says "OC server OK", "OC username/password OK", "Dir name OK". When I change the URL to the NextCloud install, it says "OC server OK", "Dir name OK", but "OC username/password invalid". Login from the web uses the same username and password for both accounts.
+Dialog says "OC username/password invalid"
+Seeing the same behavior (Gnucash Android 2.2.1, Nextcloud 12.0.3). From the access.log:
+My guess is that Nextcloud wants to use a different URL and the App doesn't handle the redirect correctly.
+Seeing the same behavior (Gnucash Android 2.2.1, Nextcloud 12.0.3). From the access.log:
+My guess is that Nextcloud wants to use a different URL and the App doesn't handle the redirect correctly.
+Probably a duplicate of #651
+Probably a duplicate of #651
+Fixed develop branch (fc261f7).
+Fixed develop branch (fc261f7).

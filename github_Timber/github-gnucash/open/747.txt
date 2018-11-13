@@ -1,0 +1,5 @@
+title:Allow manually setting the Opening Balance
+
+Related to #273.
+I would like to be able to manually set the account balance when no other transactions are present.
+From what I see in #273, the feature that might satisfy this would be allowing manual adjustment of the Exported flag?

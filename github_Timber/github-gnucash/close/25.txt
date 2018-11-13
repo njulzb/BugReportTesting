@@ -1,0 +1,13 @@
+title:Potential data loss when exporting
+
+codinguser
+I have notice that it is possible to accidentally delete your data.
+In the menu select Export OFX.
+As destination keep "Share file..."
+Tick "Delete after export"
+Press the Export button.
+The usual share dialog  (GMail, Drive, etc) will appear, then press the back button.
+The transactions will be deleted anyway.
+I don't know if it is possible to wait until the share has successfully completed before deleting the data.
+This is a very good point. The thing is that the system has total control over the share dialog and the app gets no callbacks. So there is no way to know if the export was successful or not. So one way would be to separate the exporting into two deliberate operations. The alternative is to allow the user to always export the last export (keep the file on disk even though the entries have been removed from the database). I am leaning more towards the latter.
+This is a very good point. The thing is that the system has total control over the share dialog and the app gets no callbacks. So there is no way to know if the export was successful or not. So one way would be to separate the exporting into two deliberate operations. The alternative is to allow the user to always export the last export (keep the file on disk even though the entries have been removed from the database). I am leaning more towards the latter.

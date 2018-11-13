@@ -1,0 +1,6 @@
+title:app crashes when an account from another book is opened via widget
+
+The app should not crash but open the account linked to the widget.
+The app crashes.
+Fixed in ff894a5 (hotfix/patches).
+Fixed in ff894a5 (hotfix/patches).

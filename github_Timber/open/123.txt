@@ -1,0 +1,19 @@
+title:[UI bug] Complete seekbar not shown in two of the Now Playing Themes.
+
+The COMPLETE seekbar in non circular themes seem to not appear when playing. By this I mean that, say you are half way through the song, the seekbar should be such that its half way "filled" and half way greyed out. But in the non circular themes, the greyed out ares do not appear. I have attached screen shots in case you want to look at it. Observe that the circular themes are fine, the non circular ones do not show the greyed areas of the seekbar.
+Hmm, looks fine in my device
+
+Which android version and device?
+Hmm, looks fine in my device
+
+Which android version and device?
+Hmm, weird! Perhaps its specific to few devices? Speaking of which, I am sorry, I should have realised that I did not provide my device details!
+Device details:
+Model: A001 (One Plus One a.k.a Bacon)
+Cyanogen OS Version: 12.1-YOG4PAS3JL
+Android Version: 5.1.1
+Hmm, weird! Perhaps its specific to few devices? Speaking of which, I am sorry, I should have realised that I did not provide my device details!
+Device details:
+Model: A001 (One Plus One a.k.a Bacon)
+Cyanogen OS Version: 12.1-YOG4PAS3JL
+Android Version: 5.1.1

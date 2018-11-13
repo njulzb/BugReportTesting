@@ -1,0 +1,12 @@
+https://github.com//cSploit/android
+https://github.com//surespot/android
+https://github.com//daimajia/AndroidSwipeLayout
+https://github.com//etsy/AndroidStaggeredGrid
+https://github.com//loopj/android-async-http
+https://github.com//android10/Android-CleanArchitecture
+https://github.com//mapzen/android
+https://github.com//liaohuqiu/android-Ultra-Pull-To-Refresh
+https://github.com//QMUI/QMUI_Android
+https://github.com//bingoogolapple/BGAQRCode-Android
+https://github.com//futuresimple/android-floating-action-button
+https://github.com//h6ah4i/android-advancedrecyclerview

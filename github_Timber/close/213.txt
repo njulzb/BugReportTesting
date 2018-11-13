@@ -1,0 +1,11 @@
+title:Toolbar error
+
+@override
+public int getToolbarColor() {
+return Color.TRANSPARENT;
+}
+This code has an error.
+Yea Me too.. Is there anyone who faces this problem too?
+Yea Me too.. Is there anyone who faces this problem too?
+Fixed in d2b0c96
+Fixed in d2b0c96

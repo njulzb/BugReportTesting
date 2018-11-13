@@ -1,0 +1,8 @@
+title:Button sign not changing
+
+In a view where music is playing, when I pause the music and choose "shuffle on" than music starts but the button still shows play icon instead pause icon.
+Steps :> Turn on the music -> click bottom part where it displays the song detail -> Music screen appears  -> Click overflow icon -> choose shuffle all
+Device :> Lg Nexus 4
+OS Version :> 5.0 Lollipop
+Not able to reproduce , works just fine for me
+Not able to reproduce , works just fine for me

@@ -1,0 +1,5 @@
+title:[Feature] Delete and rename Playlists
+
+Currently, one can only create a new playlist, but not rename or delete those. As these are basic functions, I think, that Timber should support them.
+Lots of new features related to playlists have been added in latest release
+Lots of new features related to playlists have been added in latest release

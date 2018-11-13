@@ -1,0 +1,51 @@
+Fix one missed reference to api level 9
+NotClassDefFoundError
+Fix AnimatorCompatHelper ClassNotFoundException
+Fix onViewRecycled() method not invoked issue (#376)
+Unexpected onClick() event fired after finished dragging item (issue #378)
+onitemclicked sometimes triggered after long pressed
+ExpandableItemIndicator incorrect animation behavior on sample app
+View.OVER_SCROLL_NEVER not work when dragging
+Fix swipe amount not applied before laid out item views in proportional mode (issue #361)
+utilizing setSwipeItemHorizontalSlideAmount with proportional mode disabled during initial layout doesn't work
+fixed crash during dragging items and device rotation
+Null pointer RecyclerViewDragDropManager.java:2222
+Fatal crash found in Fabric
+illegalStateException: Cannot call this method while RecyclerView is computing a layout or scrolling
+Improve dragging item image bitmap creation process
+Incorrect default Animator animations of items after Drag and Drop items
+GridView disappears from drag contener during dragging
+Swipe out animation does not seem to be executed.
+Item loses Remove Animation properties when removed + undo
+IllegalStateException
+Apply README update fixed by AsCat
+Improve drag sort behavior for GridLayoutManager
+Crash isGroupExpanded Need a fix
+NullPointerException
+crash bugsDragging with only 2 items in list lags significantly more than if it had more than 2 items..
+Help understanding IllegalStateException
+NPE in 0.8.5
+Bug: happens on Sumsung S3 4.1.1(genymotion),when the user remove items frequently and quickly
+Bug:happens as the user dragging,and the item root view's margin is set
+bug:Samsung S3 4.1.1(genymotion) with  swipe left
+NPE in BaseWrapperAdapter
+Expand Indicator Not Animating on Android 6.0
+SwipeableItemWrapperAdapter.onViewRecycled crash
+Issue https://github.com/h6ah4i/android-advancedrecyclerview/issues/1…
+Recycler View crash on destroy
+Fix padding handling while dragging
+Apply patch from hroberts693 2
+Item swipe completes after holder recycled
+Apply patch from hroberts693
+Wrong item position used when data set changes during swipe
+Bottom padding of recycler view offsets the dragging item [Drag drop]
+Long press should cancel when recycler view scrolls
+Exception on dragging outside [Grid layout]
+Drag is not working when a drag handle is small
+Error In -->Expandable(Add/Remove Items)
+Fix crashing issue after swipe dismissed a group item (#64)
+Fix crashing issue after swipe dismissed a group item
+After swipe/remove of a group crash in some cases
+Can not refresh expandable adapterClassCastException, MyPlatformChildViewHolder cannot be MyPlatformGroupViewHolder
+onMoveItem() crash?
+ClassCastException bug

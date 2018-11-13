@@ -1,0 +1,8 @@
+title:Equalizer issue when using headphones
+
+I have experienced it with a couple of apps, so I am not sure if its an issue with the apps or Cyanogen. The issue is when playing a music, sometimes swtiching music, or playing music after closing the app causes the sound to be really bad.
+To reproduce the issue, I just exit the app completely (close notification, close all apps, then restart the app).
+Going to Menu->Equalizer immediately fixes the problem, sound becomes much more clearer. Note that no option was changed, simply going to the equalizer screen seems to fix the problem for some weird reason. Also if you pause and play a couple of times, it seems to fix the sound. Only appears to occur when using headphones.
+Device: One Plus One, Running Cyanogen OS 12.1, Android 5.1.1
+Edit: Update:
+My recent searches have led me to believe that its probably an issue with the inbuilt equalizer (AudioFX). If you can confirm it, you can close the issue!

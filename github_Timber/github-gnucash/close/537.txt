@@ -1,0 +1,4 @@
+title:After new installation, transfer account spinner is not shown
+
+If the double-entry setting is toggled off and on, then the spinner is shown.
+It seems there is a disconnect between the overall app shared preferences and the book preferences.

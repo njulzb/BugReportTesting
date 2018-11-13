@@ -1,0 +1,25 @@
+title:Feature Request : Custom Quick Purchase Menu
+
+Idea for a new useful convenience feature in the GNUCash Android App : Shortcut menu for purchasing options users can set-up themselves.
+Enter the new transaction window, have a button for "Quick Transaction" - loads page with a list of companies/establishments you routinely go to, sub-menu of common item you usually purchase (for instance drinks at your local establishments or set meals).
+Having this would be helpful in quite a few ways:
+Saves time entering the transaction for regular entries multiple times a day in common locations
+Helps keep all those transactions entered the same way as you initially entered them so less sync issues.
+From the new transaction window you click 2 entries on a shortlist (most commonly used / alphabetical) to enter the purchase made at the time. (Saves the amount & Transaction type)
+I hope this is the correct place to put this suggestion and that I have articulated the idea correctly.
+Kind Regards
+Koryo
+Thanks for the suggestion @Koryo191
+What you suggest sounds very much like transaction templates.
+While we do not yet have explicit templates, the app can suggest transactions based on past transaction history. However, this has the limitation that it does not work if you delete transactions after export (which many do).
+So this will be taken into consideration again in due time. At the moment, there are other issues with higher priorities we are working on.
+Thanks for the suggestion @Koryo191
+What you suggest sounds very much like transaction templates.
+While we do not yet have explicit templates, the app can suggest transactions based on past transaction history. However, this has the limitation that it does not work if you delete transactions after export (which many do).
+So this will be taken into consideration again in due time. At the moment, there are other issues with higher priorities we are working on.
+I think this wouldn't be necessary if location-based suggestions (#172) were implemented. What do you think?
+I think this wouldn't be necessary if location-based suggestions (#172) were implemented. What do you think?
+I think explicit templates still have their place. Location-based suggestions would build on top of that because they would rely on saved templates with a location for geo-fencing.
+I think explicit templates still have their place. Location-based suggestions would build on top of that because they would rely on saved templates with a location for geo-fencing.
+Personally I would suggest that these are separate - This suggestion is a manually set-up hierarchy that users can customize themselves for ease of entry. The other suggests using location based information linked to recent transactions for suggested transactions you could be about to make. The second has a downside of if recent transactions are removed then there is no reference to make the suggestions from?
+Personally I would suggest that these are separate - This suggestion is a manually set-up hierarchy that users can customize themselves for ease of entry. The other suggests using location based information linked to recent transactions for suggested transactions you could be about to make. The second has a downside of if recent transactions are removed then there is no reference to make the suggestions from?

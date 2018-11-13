@@ -1,0 +1,18 @@
+title:[Bug] Major issue, causes phone to lockdown and become unresponsive
+
+I had discovered a serious bug that causes the phone to lockdown and not respond at all. I am not sure which app is responsible, but I am posting it here anyway, maybe you (dev) can take a look at the issue and see if you can do something about it.
+WARNING: PHONE DOES NOT RESPOND. If you are reproducing the issue, make sure you are able to reset the device or you might have no option but to wait for your phone to shutdown.
+To reproduce the issue, the following are needed:
+->Timber Music Player
+->Vanilla Music player
+->Headphones
+(Note: None of them are my default app)
+Now, the following steps can be used to reproduce the issue:
+->Let Timber play a song. Headphones must be plugged in.
+->Now lock the phone.
+->Hold the Volume up or voume down button for a few seconds.
+This causes Vanilla Music Player to launch, despite Timber actually playing the music. Holding volume up or down is equivalent of changing the track in Vanilla (I think in Timber too). Now is the part where both the music players collide and all hell breaks loose. You cannot do anything to stop it. The OLNY way to stop the music is to unplug the headphones. This DOES NOT unlock your phone, It stops the music. After a couple of minutes one the the two things will happen:
+This issue is not very consistent, I have been able to reproduce it a few times. Sometimes Timber stops and Vanila Plays. Other times, both of them play and the result is chaos. But nevertheless, I think vanilla should not launch when Timber is playing music. The surprising part is that Vanilla Music Player is not even running, even in the background! It is also a concern as I cannot actually reset my phone. I will have to wait for one of the apps to stop. Luckily for me, the default behaviour of timber is to exit when it does not play anything after a few minutes (is it intentional? If so good, it saved my life!).
+Also, this issue appears to only occur when headphones are plugged in. I did not observe when playing it over the phone speakers. And as I pointed out, the phone has to be locked in order for this to occur.
+My Phone Details;
+One Plus One (A0001 aka Bacon), running Cyanogen OS 12.1-YOG4PAS3JL, Android 5.1.1

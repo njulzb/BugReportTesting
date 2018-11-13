@@ -1,0 +1,19 @@
+title:Do not use .Dialog Themes from ActionBarSherlock
+
+codinguser
+According to JakeWharton/ActionBarSherlock#892, all .Dialog themes are removed in the latest version of ABS. Is it possible to replace the use of Theme.Sherlock.Light.Dialog?
+From AndroidManifest.xml, line 65:
+android:theme="@style/Theme.Sherlock.Light.Dialog"
+Not sure how to replace it, yet.
+Thanks for the heads up! I don't know what's recommended to use instead. I'll try to find out.
+Thanks for the heads up! I don't know what's recommended to use instead. I'll try to find out.
+This here helped me: http://stackoverflow.com/questions/16585962/no-resource-found-that-matches-the-given-name-theme-sherlock-dialog/16586127#16586127.
+So:
+But then R.color.abs__holo_blue_light does not exist, used in org.gnucash.android.ui.accounts.AccountsListFragment and org.gnucash.android.ui.transactions.TransactionsListFragment. I cannot see if this was a problem previously, or because of upgrading to ABS 4.3.1. Working on it, maybe file another issue.
+This here helped me: http://stackoverflow.com/questions/16585962/no-resource-found-that-matches-the-given-name-theme-sherlock-dialog/16586127#16586127.
+So:
+But then R.color.abs__holo_blue_light does not exist, used in org.gnucash.android.ui.accounts.AccountsListFragment and org.gnucash.android.ui.transactions.TransactionsListFragment. I cannot see if this was a problem previously, or because of upgrading to ABS 4.3.1. Working on it, maybe file another issue.
+It appears abs__holo_blue_light was removed as part of the .Dialogs removal. For now, I just added <color name="abs__holo_blue_light">#ff33b5e5</color> to /GnucashMobile/res/values/colors.xml. Not sure whether you want to replace the color with something else.
+It appears abs__holo_blue_light was removed as part of the .Dialogs removal. For now, I just added <color name="abs__holo_blue_light">#ff33b5e5</color> to /GnucashMobile/res/values/colors.xml. Not sure whether you want to replace the color with something else.
+No, I don't want to replace it. Adding the color to resources would be fine. Thanks for the patch.
+No, I don't want to replace it. Adding the color to resources would be fine. Thanks for the patch.

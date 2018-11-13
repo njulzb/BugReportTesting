@@ -1,0 +1,16 @@
+title:Sometimes amount text boxes in the split editor fail getting the focus
+
+Sometimes, when trying to switch the focus from a split memo text box to a amount text box, the focus remains in the memo one. However, the system keyboard is closed and the calculator one is opened. If something is typed with the calculator, the application crashes:
+To reproduce, just keep tapping between the amount and memo text boxes until it happens.
+There are two strange things about this issue. One is that it fails in the split editor but not in the transaction editor, although I haven't found anything special about the split editor. The other is that the fix doesn't make much sense.  So, in case the issue appears again, I'll add some notes here with what I've found while looking for the cause.
+By logging calls to event handlers I found that when it fails it gets these events:
+However, when it works it gets these instead:
+It seems it only fails when the system keyboard is visible.
+My bq Aquaris E4 (Android 5, API 21) was affected, but not the Huawei Ascend G300 (Android 2.3.6, API 10).
+There are two strange things about this issue. One is that it fails in the split editor but not in the transaction editor, although I haven't found anything special about the split editor. The other is that the fix doesn't make much sense.  So, in case the issue appears again, I'll add some notes here with what I've found while looking for the cause.
+By logging calls to event handlers I found that when it fails it gets these events:
+However, when it works it gets these instead:
+It seems it only fails when the system keyboard is visible.
+My bq Aquaris E4 (Android 5, API 21) was affected, but not the Huawei Ascend G300 (Android 2.3.6, API 10).
+Fixed in hotfix/patches.
+Fixed in hotfix/patches.

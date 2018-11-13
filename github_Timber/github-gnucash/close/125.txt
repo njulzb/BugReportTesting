@@ -1,0 +1,19 @@
+title:Translation to Turkish language
+
+Can i help to trasnlate this app for turkish peaple?
+Yes you absolutely can.
+Visit https://github.com/codinguser/gnucash-android/blob/develop/app/src/main/res/values/strings.xml
+and download the file, translate it and email it to me and I will take care of the rest.
+Or you can do it through GitHub and send me a pull request to my develop branch.
+Also see this post for guidelines on the translation: http://www.codinguser.com/2012/09/gnucash-for-android-beta-2-lost-in-translation/
+Thanks
+Yes you absolutely can.
+Visit https://github.com/codinguser/gnucash-android/blob/develop/app/src/main/res/values/strings.xml
+and download the file, translate it and email it to me and I will take care of the rest.
+Or you can do it through GitHub and send me a pull request to my develop branch.
+Also see this post for guidelines on the translation: http://www.codinguser.com/2012/09/gnucash-for-android-beta-2-lost-in-translation/
+Thanks
+Hi @renkov , any progress with the translation?
+Hi @renkov , any progress with the translation?
+The app can be translated here: https://crowdin.com/project/gnucash-android
+The app can be translated here: https://crowdin.com/project/gnucash-android

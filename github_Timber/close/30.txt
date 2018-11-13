@@ -1,0 +1,11 @@
+title:Music keeps playing after headphones are removed
+
+Well, that or the auxiliary cable. This isn't an ideal behaviour - it'd be better if it stopped when this happened, kinda like Apollo does.
+Thanks for mentioning. Working on it
+Thanks for mentioning. Working on it
+Must music players pause on disconnecting headphones, some make it a setting. Stopping is most likely not what you want, because you lose where you were in the song. I'm most likely nitpicking word choice here, though.
+Must music players pause on disconnecting headphones, some make it a setting. Stopping is most likely not what you want, because you lose where you were in the song. I'm most likely nitpicking word choice here, though.
+@TheLastProject Yeah, you are nitpicking, but it's a sensible nitpick. I meant 'pause'.
+@TheLastProject Yeah, you are nitpicking, but it's a sensible nitpick. I meant 'pause'.
+This also adds headset controls for play/pause, next and previous
+This also adds headset controls for play/pause, next and previous

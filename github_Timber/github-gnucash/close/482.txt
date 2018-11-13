@@ -1,0 +1,17 @@
+title:Scheduled transactions are corrupted after import from .gnucash
+
+I have many scheduled transactions that are working fine on the desktop version. However, after importing to Android, the transactions are not working as defined. If I open transaction split in the Android version one side (the Asset part) of the balance is in the Imbalance account rather than in the correct account where I find 0 instead. This way only the Expense is counted correctly but the Asset part goes to Imbalance always.
+Sorry, forgot to add some screenshots. I am using GnuCash for Android version 2.0.6
+
+
+
+Sorry, forgot to add some screenshots. I am using GnuCash for Android version 2.0.6
+
+
+
+Is it possible to send me the file sample which causes this problem?
+You can redact all important information and send only a minimal data which would generate this problem.
+Is it possible to send me the file sample which causes this problem?
+You can redact all important information and send only a minimal data which would generate this problem.
+Fixed by #563
+Fixed by #563

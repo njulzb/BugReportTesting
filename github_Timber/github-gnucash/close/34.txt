@@ -1,0 +1,19 @@
+title:Possibility to switch back to credit/debit if non english localisation is used
+
+A possibility to switch back to credit/debit would be nice. Because in some languages credit and debit are used in a business term.
+I'm sorry I don't quite understand what you mean. You statements seem conflicting. Switch from what to credit/debit? Also, what locale (or language) are you using?
+I'm sorry I don't quite understand what you mean. You statements seem conflicting. Switch from what to credit/debit? Also, what locale (or language) are you using?
+Sorry.
+My Problem: In the german localisation the button is labelled with soll and haben thats right for german accountant. But in other areas (business / bank) credit and debit is often used. For some people credit and debit fell more "natural".
+I hope my matter is understandable.
+Sorry.
+My Problem: In the german localisation the button is labelled with soll and haben thats right for german accountant. But in other areas (business / bank) credit and debit is often used. For some people credit and debit fell more "natural".
+I hope my matter is understandable.
+Well, even on your bank statement in Germany, it is written Soll/Haben instead of Credit and Debit. The "Kredit" term may be better known in Germany, but Debit is not.
+The translator thinks Soll/Haben are the appropriate terms to use here and I agree.
+Well, even on your bank statement in Germany, it is written Soll/Haben instead of Credit and Debit. The "Kredit" term may be better known in Germany, but Debit is not.
+The translator thinks Soll/Haben are the appropriate terms to use here and I agree.
+I think this is linked to the bug report in #36
+Fixing that should solve this problem
+I think this is linked to the bug report in #36
+Fixing that should solve this problem

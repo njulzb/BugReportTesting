@@ -1,0 +1,80 @@
+title:Account balances are not calculated properly.
+
+The balances ("Total sum:") of accounts and sub-accounts are not calculated properly. It appears as though transactions are still properly registered as debit/credit in transaction list (they have the appropriate color for their type), but the sum does not appear to make the distinction in all cases (it may consider all transactions to be credits or all debits).
+This affects the current version on the Android play store as of 2014-05-26, namely 1.3.2.
+Thanks for the feedback and I apologize for not better communicating this change.
+The issue comes from the way debits/credits are handled for the different accounts. For example debit transactions increase the balance expense accounts, while credits decrease it. Income accounts work another way, the more "intuitive" way with debits decreasing the balance and credits increasing it. So the balance varies depending on the account.
+This is also how GnuCash desktop computes balances, but which is unexpected for users using the app as a simple expense register. I am working to remedy this.
+Can you please tell me if double-entry accounting is enabled for you in GnuCash Android? Thanks
+Thanks for the feedback and I apologize for not better communicating this change.
+The issue comes from the way debits/credits are handled for the different accounts. For example debit transactions increase the balance expense accounts, while credits decrease it. Income accounts work another way, the more "intuitive" way with debits decreasing the balance and credits increasing it. So the balance varies depending on the account.
+This is also how GnuCash desktop computes balances, but which is unexpected for users using the app as a simple expense register. I am working to remedy this.
+Can you please tell me if double-entry accounting is enabled for you in GnuCash Android? Thanks
+I noticed the same behavior, and I have enabled double-entry accounting.
+I also exported transactions to the desktop version, and the data are correct.
+Thanks!
+I noticed the same behavior, and I have enabled double-entry accounting.
+I also exported transactions to the desktop version, and the data are correct.
+Thanks!
+
+This seems however very inaccurate - the amounts are credited from this account, but in the bottom row (and anywhere up from this) they are shown as debits.
+
+This seems however very inaccurate - the amounts are credited from this account, but in the bottom row (and anywhere up from this) they are shown as debits.
+This behaviour is consistent with the type of the account. The recent update changed the computation of account balances to be in-line with GnuCash desktop.
+Basically, for some account types, e.g. (CASH, ASSET, BANK, and EXPENSE accounts), debits increase the overall account balance, while credits decrease the balance. See here for details: http://gnucash.org/docs/v2.4/C/gnucash-guide/accts-types1.html
+Maybe I should change the color of the individual transactions to reflect the effect on the overall account balance, then it will be more intuitive. But the overall balance is computed correctly.
+This behaviour is consistent with the type of the account. The recent update changed the computation of account balances to be in-line with GnuCash desktop.
+Basically, for some account types, e.g. (CASH, ASSET, BANK, and EXPENSE accounts), debits increase the overall account balance, while credits decrease the balance. See here for details: http://gnucash.org/docs/v2.4/C/gnucash-guide/accts-types1.html
+Maybe I should change the color of the individual transactions to reflect the effect on the overall account balance, then it will be more intuitive. But the overall balance is computed correctly.
+I think there's a misunderstanding here.
+The account on the picture is an Asset account, serving as credit account for 3 transactions, where all these transactions debit Expenses:Dining.
+I expected that in "Total sum", a balance of the actual account will be drawn, which could be either negative (red) or positive (green), depending if it was credited or debited more.
+For example, if I credit Assets:LunchCard with 55 Euros and debit it to Expenses:Dining, in the account structure Assets seem to be green (indicating debit), and Expenses seem to be red (indicating credit), which after all is the opposite of what actually happened.
+Daniel
+I think there's a misunderstanding here.
+The account on the picture is an Asset account, serving as credit account for 3 transactions, where all these transactions debit Expenses:Dining.
+I expected that in "Total sum", a balance of the actual account will be drawn, which could be either negative (red) or positive (green), depending if it was credited or debited more.
+For example, if I credit Assets:LunchCard with 55 Euros and debit it to Expenses:Dining, in the account structure Assets seem to be green (indicating debit), and Expenses seem to be red (indicating credit), which after all is the opposite of what actually happened.
+Daniel
+Asset accounts have a normal DEBIT balance. Which means "debits" in an Asset account, increase the overall balance of the account. This is exactly what is pictured. I do realize that seeing the transactions in red and balance green causes confusion. So I will revert it until I fix the display of the transactions.
+What you see is correct, the "debit" in the asset account will raise the balance and be a "credit" in the expense account. But Expense accounts also have a normal debit balance. So the "credit" in expense account instead decreases the balance.
+It took me a while to wrap my head around these accounting principles, because they are counter-intuitive to the normal credit goes up, debit goes down for a simple expense tracker.
+Asset accounts have a normal DEBIT balance. Which means "debits" in an Asset account, increase the overall balance of the account. This is exactly what is pictured. I do realize that seeing the transactions in red and balance green causes confusion. So I will revert it until I fix the display of the transactions.
+What you see is correct, the "debit" in the asset account will raise the balance and be a "credit" in the expense account. But Expense accounts also have a normal debit balance. So the "credit" in expense account instead decreases the balance.
+It took me a while to wrap my head around these accounting principles, because they are counter-intuitive to the normal credit goes up, debit goes down for a simple expense tracker.
+Hi,
+Which means "debits" in an Asset account, increase the overall balance of the account. This is exactly what is pictured.
+If you mean my picture, my 3 transactions credited the asset account. Since the Asset account started from 0 (since there's no initial value support in Gnucash Android), and received 3 credits, it's relative balance should be in Credit, therefore red. At least in my opinion.
+I don't understand how can we talk about the same thing but not understand eachother.:)
+So take an example: I buy a hamburger for 12 Euros. I will be crediting an Asset, and debit an Expense. Therefore in other words, I decrease (credit) my assets and increase (debit) my Expenses. In contrast, 1.3.2, represents this transaction in a way which means the following to me: "my assets were increasing and my expenses were decreasing because I ate a hamburger", which makes not much sense for me:
+
+(of course, I started without transactions, therefore the accounts had 0 balance before the first and only transaction)
+Hi,
+Which means "debits" in an Asset account, increase the overall balance of the account. This is exactly what is pictured.
+If you mean my picture, my 3 transactions credited the asset account. Since the Asset account started from 0 (since there's no initial value support in Gnucash Android), and received 3 credits, it's relative balance should be in Credit, therefore red. At least in my opinion.
+I don't understand how can we talk about the same thing but not understand eachother.:)
+So take an example: I buy a hamburger for 12 Euros. I will be crediting an Asset, and debit an Expense. Therefore in other words, I decrease (credit) my assets and increase (debit) my Expenses. In contrast, 1.3.2, represents this transaction in a way which means the following to me: "my assets were increasing and my expenses were decreasing because I ate a hamburger", which makes not much sense for me:
+
+(of course, I started without transactions, therefore the accounts had 0 balance before the first and only transaction)
+ok, I see what you mean now :)
+Thanks you!
+ok, I see what you mean now :)
+Thanks you!
+Glad to help, thanks for caring with our needs :)
+Glad to help, thanks for caring with our needs :)
+I appreciate that you are working towards parity with the desktop application, @codinguser  (and I thank you for all your effort), but the update came as a bit of a shock because all of my account balances were no longer "correct".
+I use the double entry mode, and basically have one Income, one Expense, and two Asset accounts. What is the correct configuration to make this setup work?
+I appreciate that you are working towards parity with the desktop application, @codinguser  (and I thank you for all your effort), but the update came as a bit of a shock because all of my account balances were no longer "correct".
+I use the double entry mode, and basically have one Income, one Expense, and two Asset accounts. What is the correct configuration to make this setup work?
+[ EDIT : Sorry, just noticed on the Play store that you've added a new update to revert the way account balances are calculated. Will give that a go and see if it fixes the below issue, in the meantime, left for reference ].
+I find that the new version (1.3.2) simply cannot add up correctly - I have a cash account with double entry. A debit and a credit transaction in the same account both increase the balance.
+I personally would be happier if all credits are negative and all debits are positive. That way I'm not constantly trying to second guess how the software will interpret them.
+
+[ EDIT : Sorry, just noticed on the Play store that you've added a new update to revert the way account balances are calculated. Will give that a go and see if it fixes the below issue, in the meantime, left for reference ].
+I find that the new version (1.3.2) simply cannot add up correctly - I have a cash account with double entry. A debit and a credit transaction in the same account both increase the balance.
+I personally would be happier if all credits are negative and all debits are positive. That way I'm not constantly trying to second guess how the software will interpret them.
+
+@sambl sorry about that.
+There is an update v1.3.3 which reverts to the old way of computing balances. You should be able to get it from the play store by now.
+@sambl sorry about that.
+There is an update v1.3.3 which reverts to the old way of computing balances. You should be able to get it from the play store by now.

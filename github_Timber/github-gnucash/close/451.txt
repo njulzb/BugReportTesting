@@ -1,0 +1,95 @@
+title:Exporting data since a certain date to QIF is exporting all data instead
+
+I'm using version 2.0.4 on a galaxy S4 running Android 5.0.1
+Thanks for the detail report.
+@rivaldi8 could you look into it?
+Thanks for the detail report.
+@rivaldi8 could you look into it?
+Sure!
+Sure!
+I've been doing some testing and verifying the code. All seems to be working correctly. I think you may have had the same misunderstanding I had when I did the first test.
+When you specify the date in the export form you are exporting transactions modified (newly added or edited) since that day. This is not the same date as the one specified in the transaction, usually the date you added it.
+Are some of your transactions coming from an import? In this case, all these transactions would have as the modified date the date you made the import. As a consequence, an export with a date including the date of the import would include all transactions, independently of de date of each transaction.
+I've been doing some testing and verifying the code. All seems to be working correctly. I think you may have had the same misunderstanding I had when I did the first test.
+When you specify the date in the export form you are exporting transactions modified (newly added or edited) since that day. This is not the same date as the one specified in the transaction, usually the date you added it.
+Are some of your transactions coming from an import? In this case, all these transactions would have as the modified date the date you made the import. As a consequence, an export with a date including the date of the import would include all transactions, independently of de date of each transaction.
+Oh, that would explain it. I imported all my data and then entered in new
+entries from before the date I imported the data. It was those entries I
+was trying to get out. Is there no way to have it grab data based on the
+transaction date instead?
+On Dec 10, 2015 2:41 PM, "Àlex Magaz Graça" notifications@github.com
+wrote:
+I've been doing some testing and verifying the code. All seems to be
+working correctly. I think you may have had the same misunderstanding I had
+when I did the first test.
+When you specify the date in the export form you are exporting
+transactions modified (newly added or edited) since that day. This is not
+the same date as the one specified in the transaction, usually the date you
+added it.
+Are some of your transactions coming from an import? In this case, all
+these transactions would have as the modified date the date you made the
+import. As a consequence, an export with a date including the date of the
+import would include all transactions, independently of de date of each
+transaction.
+—
+Reply to this email directly or view it on GitHub
+#451 (comment)
+.
+Oh, that would explain it. I imported all my data and then entered in new
+entries from before the date I imported the data. It was those entries I
+was trying to get out. Is there no way to have it grab data based on the
+transaction date instead?
+On Dec 10, 2015 2:41 PM, "Àlex Magaz Graça" notifications@github.com
+wrote:
+I've been doing some testing and verifying the code. All seems to be
+working correctly. I think you may have had the same misunderstanding I had
+when I did the first test.
+When you specify the date in the export form you are exporting
+transactions modified (newly added or edited) since that day. This is not
+the same date as the one specified in the transaction, usually the date you
+added it.
+Are some of your transactions coming from an import? In this case, all
+these transactions would have as the modified date the date you made the
+import. As a consequence, an export with a date including the date of the
+import would include all transactions, independently of de date of each
+transaction.
+—
+Reply to this email directly or view it on GitHub
+#451 (comment)
+.
+No sorry, there is no way to export entries based on the posted date.
+We need to be able to export transactions again if you change some property after having exported them. This means relying on the date when the transaction was last modified.
+We may consider adding some description to the form to explain better what the date actually means.
+No sorry, there is no way to export entries based on the posted date.
+We need to be able to export transactions again if you change some property after having exported them. This means relying on the date when the transaction was last modified.
+We may consider adding some description to the form to explain better what the date actually means.
+thanks @rivaldi8
+thanks @rivaldi8
+@yelneerg, you say you just wanted to export the transactions entered after the import. Note that, independently of the date of these transactions, the modified date still follows the one of the imported transactions. So, if you had done the export leaving the default export date in the form, it should had exported the transactions you expected.
+@yelneerg, you say you just wanted to export the transactions entered after the import. Note that, independently of the date of these transactions, the modified date still follows the one of the imported transactions. So, if you had done the export leaving the default export date in the form, it should had exported the transactions you expected.
+Hmm, it did not seem to do that. I'll do some testing and double check.
+On Dec 11, 2015 6:00 AM, "Àlex Magaz Graça" notifications@github.com
+wrote:
+@yelneerg https://github.com/yelneerg, you say you just wanted to
+export the transactions entered after the import. Note that, independently
+of the date of these transactions, the modified date still follows the one
+of the imported transactions. So, if you had done the export leaving the
+default export date in the form, it should had exported the transactions
+you expected.
+—
+Reply to this email directly or view it on GitHub
+#451 (comment)
+.
+Hmm, it did not seem to do that. I'll do some testing and double check.
+On Dec 11, 2015 6:00 AM, "Àlex Magaz Graça" notifications@github.com
+wrote:
+@yelneerg https://github.com/yelneerg, you say you just wanted to
+export the transactions entered after the import. Note that, independently
+of the date of these transactions, the modified date still follows the one
+of the imported transactions. So, if you had done the export leaving the
+default export date in the form, it should had exported the transactions
+you expected.
+—
+Reply to this email directly or view it on GitHub
+#451 (comment)
+.

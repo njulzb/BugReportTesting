@@ -1,0 +1,9 @@
+title:Request for CSV export
+
+Hi GNUCash developers,
+I really like the powerful model of GNU Cash.
+I wish the app can export to CSV so I can use Excel to make further visualization reports as I want. Thank you very much!
+Cheers,
+Khon
+Fixed by #758
+Fixed by #758

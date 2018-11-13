@@ -1,0 +1,50 @@
+title:Export to Google Drive silently fails
+
+rivaldi8
+Not sure if this is an issue related to 2.1.3, or if Google changed their API, but export to Google Drive seems to be silently failing.
+Transactions to be deleted
+Message "Exported to: Google Drive -> GnuCash"
+QIF file to be in appropriate directory in Google Drive
+Transactions are deleted (!)
+Message "Exported to: Google Drive -> GnuCash"
+No new file anywhere in Google Drive
+I can't reproduce it.
+Please, could you confirm that adding a transaction just before exporting, no file is created in Google Drive.
+In some of my tests I couldn't see any folder or file listed. However, the .qif file appeared in the Activity tab of the Show details pane on the right. Could you check that no exported file appears there either (you may have to press the "i" button at the top right to show the pane).
+I can't reproduce it.
+Please, could you confirm that adding a transaction just before exporting, no file is created in Google Drive.
+In some of my tests I couldn't see any folder or file listed. However, the .qif file appeared in the Activity tab of the Show details pane on the right. Could you check that no exported file appears there either (you may have to press the "i" button at the top right to show the pane).
+Yes, I added a test transaction, and then immediately exported. It said it was exporting to Google Drive, but no QIF files appear in the Activity tab in Google Drive.
+Yes, I added a test transaction, and then immediately exported. It said it was exporting to Google Drive, but no QIF files appear in the Activity tab in Google Drive.
+@bgainor did you recently delete a GnuCash folder from Google Drive? Because the app uses folder IDs, sometimes, it happens that it keeps exporting to that folder even if it is in the trash.
+Alternatively you could try disconnecting and re-connecting Google Drive authorisation in the Export settings.
+@bgainor did you recently delete a GnuCash folder from Google Drive? Because the app uses folder IDs, sometimes, it happens that it keeps exporting to that folder even if it is in the trash.
+Alternatively you could try disconnecting and re-connecting Google Drive authorisation in the Export settings.
+I don't remember deleting any folders (in fact, I had two different folders named GnuCash; I think as a result of switching to a new phone), but deauthorizing and reauthorizing Google Drive in the export settings seems to have done the trick (I now have three folders named GnuCash). It still would be helpful, however, to not silently fail and especially not delete transactions when this happens, since in my case it seems to have been for no apparent reason, and resulted in data loss.
+I don't remember deleting any folders (in fact, I had two different folders named GnuCash; I think as a result of switching to a new phone), but deauthorizing and reauthorizing Google Drive in the export settings seems to have done the trick (I now have three folders named GnuCash). It still would be helpful, however, to not silently fail and especially not delete transactions when this happens, since in my case it seems to have been for no apparent reason, and resulted in data loss.
+@bgainor Data loss sucks... sorry about that.
+Always remember that a backup is always generated immediately before deleting transactions. So you should be able to restore the state of your book before export.
+We are continuously working to improve our backup/export workflow.
+Cheers,
+@bgainor Data loss sucks... sorry about that.
+Always remember that a backup is always generated immediately before deleting transactions. So you should be able to restore the state of your book before export.
+We are continuously working to improve our backup/export workflow.
+Cheers,
+Thanks, that's good to know. Sorry if I overreacted. I still think there should be a ticket for only deleting transactions if the export was successful, but should I close this one and open a new one specifically for that issue?
+Thanks, that's good to know. Sorry if I overreacted. I still think there should be a ticket for only deleting transactions if the export was successful, but should I close this one and open a new one specifically for that issue?
+Don't close this one, it should be fixed too. I've filled another issue for the deletion of transactions: #618
+Don't close this one, it should be fixed too. I've filled another issue for the deletion of transactions: #618
+@codinguser the code in ExportAsyncTask.moveExportToGoogleDrive is run asynchronously, but the code that calls the method seems to expect it to run synchronously. I'd say the easiest way to fix these issues would be to make it synchronous. If you don't have any objection I can make the change.
+@codinguser the code in ExportAsyncTask.moveExportToGoogleDrive is run asynchronously, but the code that calls the method seems to expect it to run synchronously. I'd say the easiest way to fix these issues would be to make it synchronous. If you don't have any objection I can make the change.
+I had the same problem a few days ago.
+Device Type: LG G3
+Android Version: 6.0
+GnuCash version: 2.1.3
+I had the same problem a few days ago.
+Device Type: LG G3
+Android Version: 6.0
+GnuCash version: 2.1.3
+I've looked into it again and finally decided to make it run synchronously. I've just made a minimum fix for 2.1.4. I'll try to improve the error reporting for exports in general for the next release.
+Fixed in hotfix/patches (a082531).
+I've looked into it again and finally decided to make it run synchronously. I've just made a minimum fix for 2.1.4. I'll try to improve the error reporting for exports in general for the next release.
+Fixed in hotfix/patches (a082531).

@@ -1,0 +1,9 @@
+title:Account rename bug
+
+codinguser
+Steps to reproduce:
+Expected results:
+2. Window title is «Foo».
+4. Window title is «Bar».
+Actual results:
+4. Window title is «Foo», not «Bar».

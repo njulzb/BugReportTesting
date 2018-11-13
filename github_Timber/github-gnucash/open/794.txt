@@ -1,0 +1,8 @@
+title:Scheduled transactions not maintaining date set, possible causing crash
+
+Entered a transaction which went through my bank account yesterday. It's a regular payment every two weeks on a Friday.
+When I scheduled the repeat transactions on the to-post transaction (of yesterday), the date that appeared in the repeated transactions is two weeks (which I set) today (not yesterday).
+When I tried to change the posted transaction to correct the error, Android GnuCash crashed. It isn't obvious what is crashing, no error message, but the delay/hang before crashing makes me think it's failing to post to the database through a conflict.
+BTW I don't think I should really be posting the reoccurring transactions in Android. Probably better on the desktop version. Depends whether the delete after export function deletes the transaction scheduler/repeater.
+Beware: overlaps 792, maybe 789
+Beware: overlaps 792, maybe 789

@@ -1,0 +1,10 @@
+title:sometimes the plus to add a transaction is missing
+
+codinguser
+the right + next to a account is some times missing. I open a account and on the actual showed display the + is shown in the screen. When I now scroll down/up these + disappear. I use the German version 1.5.1
+This is when open the account:
+This is after scrolling down/up
+Thanks for reporting that!
+Thanks for reporting that!
+Fixed in v2.0.0
+Fixed in v2.0.0

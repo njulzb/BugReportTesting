@@ -1,0 +1,7 @@
+title:[Feature request] Album artwork downloading
+
+This is not a necessary feature at all, because there are so many other apps that already do this.
+However, the idea came to my mind on a whim and I thought it couldn't hurt to have it on the issue tracker.
+But if you do decide for some reason to add this feature, please do it as a separate plug in.
+What I love about Timber is that it is strictly local-only, and does not ask for ridiculous permissions.
+I hate how so many apps these days feel the need to needlessly integrate "cloud" stuff, and do shady stuff like phone home with users' personal data.

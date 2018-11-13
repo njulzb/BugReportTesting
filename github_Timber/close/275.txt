@@ -1,0 +1,5 @@
+title:With a dark substratum theme, the now playing notification is unreadable.
+
+Title pretty much says everything, i'm using 7.1.1, I don't really think logs are necessary as its easily testable.
+Just play a song, look at the notification, while using a dark substratum theme.
+A simple tickbox that asks whether or not you're using a dark theme would fix this, but i'm sure there are other, better ways to auto-detect.

@@ -1,0 +1,8 @@
+Crashing if remote server contains a lot of torrents
+Error writing parcel when having too many torrents
+Delete torrent shows snackbar error for synology nas
+Keyboard opens on delete
+Connecting to Transmission 2.84 results in "internal error building request" until refreshed
+History results still with white font
+Transdrone+ktorrent does not supports thousands separator in numbers
+Widget sizes need tweaking on 10 inch screens

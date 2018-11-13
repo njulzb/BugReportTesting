@@ -1,0 +1,10 @@
+title:Cannot find option to delete one transaction
+
+Seems this option was available earlier, but now long tap on transaction does nothing.
+Nexus 7 2012 with 4.4. KitKat, Gnucash 1.2.5, from GooglePlay.
+Long tap on the transaction has never done anything in the app. There is a checkbox to the left of every transaction. Check it to manipulate the transaction.
+Granted, the checkbox is very faint on some devices, I'll look into that.
+Long tap on the transaction has never done anything in the app. There is a checkbox to the left of every transaction. Check it to manipulate the transaction.
+Granted, the checkbox is very faint on some devices, I'll look into that.
+At least you shew the way to get result...
+At least you shew the way to get result...

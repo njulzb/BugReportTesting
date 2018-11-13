@@ -1,0 +1,9 @@
+title:Favorites / Recent Tab show all Accounts
+
+Hi,
+when opening GNUCash out of ram when it was opened a while before, the Account Tabs "Recent" and "Favourites" just show all accounts.
+A workaround is completely closing the application (removing it out of the RAM).
+Using LG G2 (D802)
+Android 6.0.1 (CyanogenMod 13.0)
+This is a known issue. It was fixed in develop branch by 4a34625. It will be included in the next release.
+This is a known issue. It was fixed in develop branch by 4a34625. It will be included in the next release.

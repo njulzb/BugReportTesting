@@ -1,0 +1,3 @@
+title:problemas with search
+
+When i press the search button on the top of the app this crashand i can not search in muy catalogue of music

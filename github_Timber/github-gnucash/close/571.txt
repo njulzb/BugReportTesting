@@ -1,0 +1,17 @@
+title:Multi-currency transactions are ignored by QIF
+
+rivaldi8
+All transactions should be included in the file, even if they are only using the converted amount
+Multicurrency transactions are completely ignored
+@rivaldi8 would it be possible for you to look into this?
+I will move it to milestone 2.1.4 so that I can go ahead and release 2.1.3 and all the fixes already in it.
+@rivaldi8 would it be possible for you to look into this?
+I will move it to milestone 2.1.4 so that I can go ahead and release 2.1.3 and all the fixes already in it.
+Ok! I'll look into it.
+Ok! I'll look into it.
+I've sent a pull request, hopefully fixing the issue.
+Now the multi-currency transactions are exported, but I'm not sure if they're exported in the expected way. In my tests I got two cases.
+I've sent a pull request, hopefully fixing the issue.
+Now the multi-currency transactions are exported, but I'm not sure if they're exported in the expected way. In my tests I got two cases.
+Fixed in hotfix/patches (f9b3a30).
+Fixed in hotfix/patches (f9b3a30).

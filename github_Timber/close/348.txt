@@ -1,0 +1,9 @@
+title:Pause on detach not working
+
+Music does not pause when the headphones are disconnected, regardless of what is set in the settings.
+Used to work in previous versions.
+Using Timber 1.6 from release page
+Nexus 5X
+Android 8.0.0
+Same bug, with Android 8.1 on Nexus 5X and Timber 1.6
+Same bug, with Android 8.1 on Nexus 5X and Timber 1.6

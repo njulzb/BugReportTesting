@@ -1,0 +1,28 @@
+title:Exchange rate limited to two decimal places when tranferring between accounts with different currencies
+
+The dialog that appears when a transaction transfers money between accounts with different currencies, doesn't allow to enter an exchange rate with more than 2 decimal places.
+Reported through User Voice.
+Fixed in 2.0.6.
+Fixed in 2.0.6.
+No, it's not fixed in v2.0.6. That was already released and propagating to all users.
+It will be released in v2.0.7
+No, it's not fixed in v2.0.6. That was already released and propagating to all users.
+It will be released in v2.0.7
+Oops! Sorry, I didn't notice.
+Oops! Sorry, I didn't notice.
+No problemo :)
+On Tue, Feb 23, 2016 at 7:13 PM, Àlex Magaz Graça notifications@github.com
+wrote:
+Oops! Sorry, I didn't notice.
+—
+Reply to this email directly or view it on GitHub
+#474 (comment)
+.
+No problemo :)
+On Tue, Feb 23, 2016 at 7:13 PM, Àlex Magaz Graça notifications@github.com
+wrote:
+Oops! Sorry, I didn't notice.
+—
+Reply to this email directly or view it on GitHub
+#474 (comment)
+.

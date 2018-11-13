@@ -1,0 +1,6 @@
+title:Withdrawal and different currency liabilities
+
+When I split a withdrawal from an account that is not in the default currency between expenses and liabilities (that are in the default currency),  the part of the withdrawal in the expenses is OK, but the part in the liabilities is not converted to the liabilities' currency.
+An example:
+My default currency is CZK, so liabilities and expenses are in CZK. I also have an account with RUB as the currency. I paid something with the money from RUB account and I wanted to split that between CZK expenses and CZK liabilities (300 RUB - 60 RUB to expenses, 240 RUB liabilities).
+The amount in the CZK expenses account is correct (60 RUB, that's approximately 24 CZK). But the liabilites' part was not converted by the exchange rate I've entered, instead 1:1 was used, so the amount in the liabilities is 240 CZK,  but there should be approximately 98 CZK.

@@ -1,0 +1,71 @@
+title:Export notes with QIF
+
+No description provided.
+Not exporting notes in QIF and/or XML currently is a no-go for me.
+Would love to see that implemented.
+Not exporting notes in QIF and/or XML currently is a no-go for me.
+Would love to see that implemented.
+@hargi notes are exported in XML.
+QIF is the tricky one
+@hargi notes are exported in XML.
+QIF is the tricky one
+Which QIF field should be used?
+Which QIF field should be used?
+Isn't M used for notes/description? And it is already utilised.
+Isn't M used for notes/description? And it is already utilised.
+That's right. M is used for the description of transactions. We need another field for notes.
+That's right. M is used for the description of transactions. We need another field for notes.
+Ah, I see, you are using the terminology from GnuCash, which does not match QIF 100%.
+Unfortunately, with QIF, description = notes.
+What is missing here is the Payee (P).
+Which brings up an interesting point. I'm also very interested in adjusting the QIF export (starting with #690) and it might be useful to reshuffle the current field values. The GnuCash Description should be exported as the Payee (P) QIF field, and the GC Notes would go as the memo (M) QIF field.
+This would also solve my issues as I'm actually currently exporting to Quicken. Unfortunately, over the years, I was unable to transition to desktop GnuCash due to the lack of investment features but that's another story.
+In any case, I'm happy to contribute to these changes (I'm also actively contributing to Money Manager Ex for Android) in QIF export & other features, if there's a concensus on how to proceed.
+Ah, I see, you are using the terminology from GnuCash, which does not match QIF 100%.
+Unfortunately, with QIF, description = notes.
+What is missing here is the Payee (P).
+Which brings up an interesting point. I'm also very interested in adjusting the QIF export (starting with #690) and it might be useful to reshuffle the current field values. The GnuCash Description should be exported as the Payee (P) QIF field, and the GC Notes would go as the memo (M) QIF field.
+This would also solve my issues as I'm actually currently exporting to Quicken. Unfortunately, over the years, I was unable to transition to desktop GnuCash due to the lack of investment features but that's another story.
+In any case, I'm happy to contribute to these changes (I'm also actively contributing to Money Manager Ex for Android) in QIF export & other features, if there's a concensus on how to proceed.
+Thanks for the input @MisterY
+But isn't Payee a person to whom money is paid or is to be paid, especially the person to whom a check is made payable.
+Would that not represent a conflict if in the future the app actually supports a Payee?
+Thanks for the input @MisterY
+But isn't Payee a person to whom money is paid or is to be paid, especially the person to whom a check is made payable.
+Would that not represent a conflict if in the future the app actually supports a Payee?
+Hi, @codinguser . While I can't comment on how the app will develop in the future and whether it will include additional fields, I am fairly certain that QIF will not change. So, here I was strictly speaking about QIF export and fields, and what to put in there. I, for example, am using Quicken and would like to import the transactions there.
+I see no point in adding another field for the other party in a transaction when the amount already identifies in which direction the money flows.
+But, yes, one of the issues I have with GnuCash is the lack of the Payee field.
+Currently, the Description field is used for this purpose and I guess that is bastardisation to a degree and users would have to adapt to such a change.
+It would be good if the desktop application supported the same functionality.
+Hi, @codinguser . While I can't comment on how the app will develop in the future and whether it will include additional fields, I am fairly certain that QIF will not change. So, here I was strictly speaking about QIF export and fields, and what to put in there. I, for example, am using Quicken and would like to import the transactions there.
+I see no point in adding another field for the other party in a transaction when the amount already identifies in which direction the money flows.
+But, yes, one of the issues I have with GnuCash is the lack of the Payee field.
+Currently, the Description field is used for this purpose and I guess that is bastardisation to a degree and users would have to adapt to such a change.
+It would be good if the desktop application supported the same functionality.
+@MisterY I see what you mean.
+So my question would be, does GnuCash desktop import the QIF description correctly when the description is set to the Payee field. If it works there, then we can implement it. Because our goal is to maximise compatibility with GnuCash desktop.
+@MisterY I see what you mean.
+So my question would be, does GnuCash desktop import the QIF description correctly when the description is set to the Payee field. If it works there, then we can implement it. Because our goal is to maximise compatibility with GnuCash desktop.
+Yes, this is something to be confirmed. Having both Description and Notes fields makes Payee unnecessary. Either that or one of the other fields​ would be redundant.
+I'll check tomorrow. If not, it would rather call for a bug report on the side of the desktop application, I believe.
+Yes, this is something to be confirmed. Having both Description and Notes fields makes Payee unnecessary. Either that or one of the other fields​ would be redundant.
+I'll check tomorrow. If not, it would rather call for a bug report on the side of the desktop application, I believe.
+I use also OFX as intermediary (from CSV to OFX with the help of "ofxstatement" and eventually manual import to GnuCash) and AFAIK:
+I would call it a bastardisation, too. Having separate Payee, Description and Note in GnuCash would be nice, but that's another story.
+EDIT: A description is a short single line info. Note is for lengthy stuff. (Who worked as an accountant, he may know the difference.)
+I use also OFX as intermediary (from CSV to OFX with the help of "ofxstatement" and eventually manual import to GnuCash) and AFAIK:
+I would call it a bastardisation, too. Having separate Payee, Description and Note in GnuCash would be nice, but that's another story.
+EDIT: A description is a short single line info. Note is for lengthy stuff. (Who worked as an accountant, he may know the difference.)
+@milankni, thanks for the confirmation.
+While having both Description and Notes, in addition to Payee, would be handy, I believe that not all the fields are supported in QIF, unfortunately. Quicken also has a long memo field in addition to description and the payee, but I don't think that can be transferred via .qif file.
+Still expecting some guidance as to how to move forward on this one. :)
+@milankni, thanks for the confirmation.
+While having both Description and Notes, in addition to Payee, would be handy, I believe that not all the fields are supported in QIF, unfortunately. Quicken also has a long memo field in addition to description and the payee, but I don't think that can be transferred via .qif file.
+Still expecting some guidance as to how to move forward on this one. :)
+I've just checked. GnuCash desktop imports correctly the Payee as the transaction description. If both Payee (P) and Memo (M) fields are set, it imports them as the Description and Notes respectively.
+So we should just change to use Payee for the description and add the Memo field for notes.
+I've just checked. GnuCash desktop imports correctly the Payee as the transaction description. If both Payee (P) and Memo (M) fields are set, it imports them as the Description and Notes respectively.
+So we should just change to use Payee for the description and add the Memo field for notes.
+Fixed in hotfix/patches.
+Fixed in hotfix/patches.

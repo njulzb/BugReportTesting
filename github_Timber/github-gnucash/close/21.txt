@@ -1,0 +1,27 @@
+title:Internationalization bug: incorrect comma-handling
+
+When setting the phone-language to e.g. German, the overviews (both "Accounts" overview and the list of transactions) incorrectly handle the "," in the amount and display 100 times the amount of the transactons.
+Example:
+used version: Gnucash 1.0 on Cyanogenmod 9
+Are you sure you are using the beta 2? Because this issue has been fixed.
+See issues #3 and #11.
+On Oct 8, 2012 1:55 AM, "rkoe" notifications@github.com wrote:
+When setting the phone-language to e.g. German, the overviews (both
+"Accounts" overview and the list of transactions) incorrectly handle the
+"," in the amount and display 100 times the amount of the transactons.
+Example:
+used version: Gnucash 1.0 on Cyanogenmod 9
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/GnucashMobile/issues/21.
+Are you sure you are using the beta 2? Because this issue has been fixed.
+See issues #3 and #11.
+On Oct 8, 2012 1:55 AM, "rkoe" notifications@github.com wrote:
+When setting the phone-language to e.g. German, the overviews (both
+"Accounts" overview and the list of transactions) incorrectly handle the
+"," in the amount and display 100 times the amount of the transactons.
+Example:
+used version: Gnucash 1.0 on Cyanogenmod 9
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/GnucashMobile/issues/21.
+Thanks. It seems to be fixed in beta2.
+Thanks. It seems to be fixed in beta2.

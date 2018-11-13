@@ -1,0 +1,11 @@
+title:Jumping images in RecyclerView
+
+In the artists recyclerview, doing a quick scroll results in the images changing very frequently 2-3 times and then finally settling upon the correct one.
+This is a known issue with recyclerview and images, With Volley this maybe fixed if we cancel the request when item has disappeared from the screen but I am still looking for a better solution to this problem.
+This is a known issue with recyclerview and images, With Volley this maybe fixed if we cancel the request when item has disappeared from the screen but I am still looking for a better solution to this problem.
+I'll have a look once at the code and see if I can help here.
+I'll have a look once at the code and see if I can help here.
+haven't fixed yet?
+haven't fixed yet?
+Will check it for sure ,btw you have put a lot of afford in this project and i am currently testing it ,so how can i contribute to it?
+Will check it for sure ,btw you have put a lot of afford in this project and i am currently testing it ,so how can i contribute to it?

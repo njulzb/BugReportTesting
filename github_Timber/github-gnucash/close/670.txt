@@ -1,0 +1,5 @@
+title:Migrate backup/export files to new internal location
+
+codinguser
+Move backup files to app-private storage while we still hold WRITE_EXTERNAL_STORAGE permission.
+From v2.2.0, WRITE/READ external storage permissions will be removed.

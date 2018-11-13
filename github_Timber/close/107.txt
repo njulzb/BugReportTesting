@@ -1,0 +1,7 @@
+title:[Minor Issue] "Now playing" theme changing
+
+There is a minor issue with changing the "Now Playing" theme changer. If you are on the now playing screen and change the theme, the change does not reflect immediately. You have to re open the now playing app for it to take place. Not restarting the app in typical sense, but for instance, pressing back to browse the albums and again going back to the now playing screen. Only then it gets updated. I am almost certain that it was not the behaviour before the update. Nothing major, but worth noting.
+This was the behaviour all along as no code is there to recreate the screen on theme change, fixing that
+This was the behaviour all along as no code is there to recreate the screen on theme change, fixing that
+Fixed in da0e74e
+Fixed in da0e74e

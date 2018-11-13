@@ -1,0 +1,16 @@
+glide 4.7.1  Error
+Requests canceling does not work with okhttp3-integration
+load gif formatted with PREFER_RGB_565,  black background appears under the transparent gif
+In a weak network (3G), the local picture is displayed only after the network picture fails to load.
+NPE in SourceGenerator.onDataReady because of null DiskCacheStrategy
+ArrayIndexOutOfBoundsException in FactoryPools
+Glide trying to load from assets directory instead of internet
+java.lang.IllegalStateException: Failed to find any load path from class java.lang.String to class android.graphics.drawable.Drawable
+Glide 4.6.1: 3 kind of crashes with Android 4.4
+Annotation processor uses class name as package name causing conflicts
+Fix nullable item handling in LruCache/LruResourceCache
+Why does SizeConfigStrategy.decrementBitmapOfSize throws NPE instead of giving a warning and what am i doing wrong?
+java.lang.IllegalStateException when load gif
+NullPointerException: Attempt to invoke virtual method 'int com.b.a.i.ordinal()' on a null object reference
+java.lang.IllegalArgumentException: register too many Broadcast Receivers
+GIF artifacts on < Android 4.3

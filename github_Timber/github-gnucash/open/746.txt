@@ -1,0 +1,25 @@
+title:Check Licensing
+
+Take a look at "Stacks"
+https://play.google.com/store/apps/details?id=com.vanoxite.stacks
+I know this is an Open Source app and it is positive that people keep developing different features on top of it. At the same time, it is quite sad when there's a lot of effort being wasted on rebranding instead of pooling it together and contributing to something useful.
+At MMEX we had a case where a guy from India simply replaced all references to MoneyManagerEx project with his name, removed all references to any Open Source library used, and inserted ads into the app. At the same time we did not have (and still don't) the translations into any of the languages used there, which is pathetic considering the number of users there.
+Here's the link, if anyone is interested.
+Crazy! Hadn't seen that one before. I'm also not sure what can be done about it.
+Anything you can share from your experience?
+Crazy! Hadn't seen that one before. I'm also not sure what can be done about it.
+Anything you can share from your experience?
+I'd recommend installing the app and checking if the licenses and references to other people's work are clearly and easily identifiable. That should be enough.
+This is what I did and the app was taken offline. Basically, the problem is not that someone is using the source code - after all, it is open for everyone to use - but that the license is not being respected. And the license is pretty clear in that the resulting code has to be open sourced and the references to previous work clearly marked.
+I would still prefer if people submitted pull requests so that the features go to the original app but ...
+I'd recommend installing the app and checking if the licenses and references to other people's work are clearly and easily identifiable. That should be enough.
+This is what I did and the app was taken offline. Basically, the problem is not that someone is using the source code - after all, it is open for everyone to use - but that the license is not being respected. And the license is pretty clear in that the resulting code has to be open sourced and the references to previous work clearly marked.
+I would still prefer if people submitted pull requests so that the features go to the original app but ...
+Yeah, the code is open source and people can use it (and, as you say, hopefully send PRs upstream)
+But stuff like the GnuCash logo image, I'm not sure if that can just be passed around. I'd have to check.
+Yeah, the code is open source and people can use it (and, as you say, hopefully send PRs upstream)
+But stuff like the GnuCash logo image, I'm not sure if that can just be passed around. I'd have to check.
+If the license is not respected, a complaint can be made to Google's Play Store support team. There is a form for that.
+However, in this case it does not seem like a blatant copyright infringement but I have not installed the app to confirm yet.
+If the license is not respected, a complaint can be made to Google's Play Store support team. There is a form for that.
+However, in this case it does not seem like a blatant copyright infringement but I have not installed the app to confirm yet.

@@ -1,0 +1,16 @@
+title:Play music from URL
+
+I'm trying to play music from a URL, and the MusicPlayer class doesnt have a setDataSource method, only the MusicSerice class has a setDataSource method, but I'm not sure which is the best way to use that class.
+Can you help out on how to play music from a url?
+I found a method:
+MusicPlayer.openFile(URL);
+so I used that and the method below to play the music
+MusicPlayer.playOrPause()
+I found a method:
+MusicPlayer.openFile(URL);
+so I used that and the method below to play the music
+MusicPlayer.playOrPause()
+How did you go about this please? I want to play songs from a URL too
+How did you go about this please? I want to play songs from a URL too
+I have same question with you, how to play music from url in this lib, can you show me
+I have same question with you, how to play music from url in this lib, can you show me

@@ -1,0 +1,9 @@
+title:Crash when trying to drag scroll bar
+
+I have version 0.14b from f-droid and when I try to drag the scroll bar it instantly crashes.
+@vzjrz Please provide logcat of the crash if possible and device details
+@vzjrz Please provide logcat of the crash if possible and device details
+Nexus 5 with 6.0.1 vanilla android
+2016-01-12-00-03-46.txt
+Nexus 5 with 6.0.1 vanilla android
+2016-01-12-00-03-46.txt

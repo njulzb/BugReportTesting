@@ -1,0 +1,3 @@
+title:Remove tracks from queue
+
+Add a button to remove a song from the playing queue, maybe a "clear all" button too.

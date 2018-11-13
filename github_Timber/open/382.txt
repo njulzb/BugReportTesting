@@ -1,0 +1,3 @@
+title:Dumb Question
+
+Can this library load songs from assets file?

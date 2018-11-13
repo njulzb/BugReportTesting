@@ -1,0 +1,33 @@
+title:Widget Resizing
+
+When you long press and release a widget to get into resizing mode, on my phone (G2 running an ICS ROM)  the drag bars appear as if the widget can be resized but it does not work.  After experimenting with it on my Nexus 7, it appears the widget can be resized, but it has a minimum width, which takes up the full width of the screen on the G2, giving the illusion that it is not functioning, since it can't be sized bigger (no room on screen) and can't be made smaller since it's at it's minimum width.
+The widget cannot be resized. Android normally shows the drag bars, but you cannot change the size of the widget. The widget will always remain at 1x4. For phones, this is usually the full width. Maybe on a tablet you could make it bigger, but not smaller.
+The widget cannot be resized. Android normally shows the drag bars, but you cannot change the size of the widget. The widget will always remain at 1x4. For phones, this is usually the full width. Maybe on a tablet you could make it bigger, but not smaller.
+I know some other widgets I've played with if they can't be resized won't sow the dragger handles, but m not sure how t change that. You are correct on my tablet I can only make it bigger not smaller.
+I know some other widgets I've played with if they can't be resized won't sow the dragger handles, but m not sure how t change that. You are correct on my tablet I can only make it bigger not smaller.
+That is why the handle bars are shown. Because I explicitly declared that
+you can make it bigger. If I remove the ability to resize the widget
+completely, you won't see the resize handles anymore (I presume)
+On Aug 6, 2012 2:57 PM, "deusinvictus" <
+reply@reply.github.com>
+wrote:
+I know some other widgets I've played with if they can't be resized won't
+sow the dragger handles, but m not sure how t change that. You are correct
+on my tablet I can only make it bigger not smaller.
+Reply to this email directly or view it on GitHub:
+https://github.com/codinguser/GnucashMobile/issues/6#issuecomment-7523124
+That is why the handle bars are shown. Because I explicitly declared that
+you can make it bigger. If I remove the ability to resize the widget
+completely, you won't see the resize handles anymore (I presume)
+On Aug 6, 2012 2:57 PM, "deusinvictus" <
+reply@reply.github.com>
+wrote:
+I know some other widgets I've played with if they can't be resized won't
+sow the dragger handles, but m not sure how t change that. You are correct
+on my tablet I can only make it bigger not smaller.
+Reply to this email directly or view it on GitHub:
+https://github.com/codinguser/GnucashMobile/issues/6#issuecomment-7523124
+Ah, that makes sense.
+Ah, that makes sense.
+Closing the issue then.
+Closing the issue then.

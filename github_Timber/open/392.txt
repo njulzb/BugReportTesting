@@ -1,0 +1,13 @@
+title:App crashes when go to artist/album is accessed from search results
+
+No response is received on clicking either delete or share from the three dots menu on each of the fetched music files. In other words both options are inactive.
+You should arrive at the music library on launching the app
+From the library, locate the songs tab
+Just at the right corner, above the songs tab, you will find a search icon.
+Click on the search icon and input a keyword. The results should appear simultaneously.
+Click on the three dots attached to any of the results and choose either delete or share from the pop up menu.
+You should find them dormant, which is similar to my experience.
+Browser/App version: v1.6
+Operating system: Android v6.0 marshmallow
+Device: Itel p12 (spread chipset)
+https://vimeo.com/272626588

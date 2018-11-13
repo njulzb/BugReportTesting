@@ -1,0 +1,13 @@
+title:App crashes when a transaction amount is being entered
+
+codinguser
+Also happens on Motorola Defy, Android 2.3.4
+Also happens on Motorola Defy, Android 2.3.4
+I have downloaded the repository and played a bit around in the emulator using Android 4.0.4
+After changing the system language to German, the Euro symbol is displayed behind the amount number on the "Edit Transaction" activity. After clicking in the amount field and hitting any button on the software keyboard, the app crashes immediately.
+I have downloaded the repository and played a bit around in the emulator using Android 4.0.4
+After changing the system language to German, the Euro symbol is displayed behind the amount number on the "Edit Transaction" activity. After clicking in the amount field and hitting any button on the software keyboard, the app crashes immediately.
+This issue should be fixed by the latest commit.
+If you can compile, please check that it is fixed, else wait for the alpha 2 and check. So for now I will leave it open
+This issue should be fixed by the latest commit.
+If you can compile, please check that it is fixed, else wait for the alpha 2 and check. So for now I will leave it open

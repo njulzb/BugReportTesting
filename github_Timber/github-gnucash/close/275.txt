@@ -1,0 +1,3 @@
+title:Automatically select the user's default currency on the currency preference dialog
+
+Automatically select the user's default currency on the currency preference dialog of the first run wizard. This would avoid having the user looking through the long list of currencies for the correct one.

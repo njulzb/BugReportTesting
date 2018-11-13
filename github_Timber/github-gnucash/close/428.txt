@@ -1,0 +1,3 @@
+title:Unable to finish wizard on first start
+
+On the first start of GnuCash, it asks some questions which I can finish with a big yellow "Done" button. However, clicking on this button does not work.

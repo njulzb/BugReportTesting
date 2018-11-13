@@ -1,0 +1,32 @@
+title:Missing docs on multi currency setup: is this implemented at all?
+
+Say, I have a EUR asset account and a USD liability. There seems no way to raise the liability in USD with corresponding EUR asset increase. Only similar currency asset accounts are offered for selection.
+Is this by design? No cross currency transactions allowed?
+Yes, that is correct, this is by design.
+Multiple currencies are not supported for transfers and splits (yet)
+Yes, that is correct, this is by design.
+Multiple currencies are not supported for transfers and splits (yet)
+How about the balances on non-default currency accounts? Looks like these balances are simply ignored, there is no options for setting the exchange rates?
+How about the balances on non-default currency accounts? Looks like these balances are simply ignored, there is no options for setting the exchange rates?
+There is no support for exchange rates or anything similar, sorry.
+Yes, I think when computing the account balance, any transactions with a
+different currency are skipped (as there is no support for conversion).
+On Sun, Aug 24, 2014 at 1:31 PM, srustamo notifications@github.com wrote:
+How about the balances on non-default currency accounts? Looks like these
+balances are simply ignored, there is no options for setting the exchange
+rates?
+—
+Reply to this email directly or view it on GitHub
+#183 (comment)
+.
+There is no support for exchange rates or anything similar, sorry.
+Yes, I think when computing the account balance, any transactions with a
+different currency are skipped (as there is no support for conversion).
+On Sun, Aug 24, 2014 at 1:31 PM, srustamo notifications@github.com wrote:
+How about the balances on non-default currency accounts? Looks like these
+balances are simply ignored, there is no options for setting the exchange
+rates?
+—
+Reply to this email directly or view it on GitHub
+#183 (comment)
+.

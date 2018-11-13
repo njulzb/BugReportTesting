@@ -1,0 +1,75 @@
+title:Account import fails with no explanation
+
+I tried to import a large account structure from my desktop gnucash. The program imported a couple of entries, then failed with no explanation. The accounts already imported functioned poperly.
+I would love to provide more data, but i'm not sure how (providing the structure is not an option).
+The error message should give information about tbe line/entry that failed and the error encountered.
+Hi,
+What version of the app are you using? 1.2.0 or 1.2.1.
+Please if you have 1.2.0, pleas update and try again and let me know.
+On 22.06.2013, at 23:51, Andrei Cipu notifications@github.com wrote:
+I tried to import a large account structure from my desktop gnucash. The
+program imported a couple of entries, then failed with no explanation. The
+accounts already imported functioned poperly.
+I would love to provide more data, but i'm not sure how (providing the
+structure is not an option).
+The error message should give information about tbe line/entry that failed
+and the error encountered.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/97
+.
+Hi,
+What version of the app are you using? 1.2.0 or 1.2.1.
+Please if you have 1.2.0, pleas update and try again and let me know.
+On 22.06.2013, at 23:51, Andrei Cipu notifications@github.com wrote:
+I tried to import a large account structure from my desktop gnucash. The
+program imported a couple of entries, then failed with no explanation. The
+accounts already imported functioned poperly.
+I would love to provide more data, but i'm not sure how (providing the
+structure is not an option).
+The error message should give information about tbe line/entry that failed
+and the error encountered.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/97
+.
+Latest -1.2.1. I had just installed it last night on a lg nexus 4, android 4.2.2
+Latest -1.2.1. I had just installed it last night on a lg nexus 4, android 4.2.2
+Fixed in 4dc8cf9
+Version 1.2.2 includes this changes and will be available soon from the Play store
+Fixed in 4dc8cf9
+Version 1.2.2 includes this changes and will be available soon from the Play store
+Still reproducing with 1.2.2. Assuming the accounts are loaded in order, this is the one that fails:
+XXXX - I changed the ID, but it exists in the file. Its entry reads:
+Still reproducing with 1.2.2. Assuming the accounts are loaded in order, this is the one that fails:
+XXXX - I changed the ID, but it exists in the file. Its entry reads:
+Has the same problem with 1.2.2. Only able to import when I manually deleted all account not using real money, such as the ones with manually created currencies in "INET_VIRTUAL" space.
+Has the same problem with 1.2.2. Only able to import when I manually deleted all account not using real money, such as the ones with manually created currencies in "INET_VIRTUAL" space.
+Also failing EQUITY-type accounts
+Also failing EQUITY-type accounts
+thanks for the feedback
+thanks for the feedback
+FWIW, same problem here with 1.2.2.  Running Android 4.1.1.  Fairly large account tree: I was importing 1MB XML file--been a gnucash user forever!
+FWIW, same problem here with 1.2.2.  Running Android 4.1.1.  Fairly large account tree: I was importing 1MB XML file--been a gnucash user forever!
+This issue should be fixed in version 1.2.3. Please confirm.
+This issue should be fixed in version 1.2.3. Please confirm.
+yes, was able to import the acct list successfully--generated no errors.
+however, the exported transactions don't seem to have the account
+information when the exported OFX file is read back into GNUcash. I get
+asked to map the account "manually"
+On Fri, Aug 30, 2013 at 5:30 AM, Ngewi Fet notifications@github.com wrote:
+This issue should be fixed in version 1.2.3. Please confirm.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/97#issuecomment-23550144
+.
+yes, was able to import the acct list successfully--generated no errors.
+however, the exported transactions don't seem to have the account
+information when the exported OFX file is read back into GNUcash. I get
+asked to map the account "manually"
+On Fri, Aug 30, 2013 at 5:30 AM, Ngewi Fet notifications@github.com wrote:
+This issue should be fixed in version 1.2.3. Please confirm.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/97#issuecomment-23550144
+.
+QIF export format is now supported and enables easier mapping to accounts in desktop GnuCash
+QIF export format is now supported and enables easier mapping to accounts in desktop GnuCash

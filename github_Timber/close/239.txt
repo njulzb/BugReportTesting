@@ -1,0 +1,13 @@
+title:change music Error
+
+when music finished and going to play next music on list , see the dialog Unfortunately timber has stoped, and if i dont click on ok , next music is playing , but if i click on ok , music stop and app going to lag(not playing any thing) just when i change the them in setting and back to the list then music can be played
+Can you provide more details?
+Can you provide more details?
+log1.txt
+log2.txt
+LogCat
+Thanks  @nv95
+log1.txt
+log2.txt
+LogCat
+Thanks  @nv95

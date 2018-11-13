@@ -1,0 +1,7 @@
+title:Tracks not sorted by their number
+
+On every album I have, the tracks are not properly ordered. It looks random.
+This has been resolved in 8a6717d and is available in 0.12b release -https://github.com/naman14/Timber/blob/master/Changelog.md
+This has been resolved in 8a6717d and is available in 0.12b release -https://github.com/naman14/Timber/blob/master/Changelog.md
+Oh, okay. My bad, this version has not been pushed to F-Droid yet. Thanks for your work !
+Oh, okay. My bad, this version has not been pushed to F-Droid yet. Thanks for your work !

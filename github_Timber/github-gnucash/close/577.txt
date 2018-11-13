@@ -1,0 +1,6 @@
+title:Can't save transactions on single entry mode
+
+The transaction is saved and the transaction form is closed when the "Save" button is pressed.
+The button gives feedback when pressed, but nothing happens. No error message.
+I'm working on a fix.
+I'm working on a fix.

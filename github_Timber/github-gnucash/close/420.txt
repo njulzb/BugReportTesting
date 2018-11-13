@@ -1,0 +1,10 @@
+title:Sum of sub accounts doesn't match on parent
+
+Taked two screenshoots to show it https://drive.google.com/folder/d/0B53SUBL4S1oQWERoRkt4eVVCS0E/edit
+Checked in 2.0.1
+Does this still occur in v2.0.2?
+Does this still occur in v2.0.2?
+Not looking it again. Great job.
+Thanks!
+Not looking it again. Great job.
+Thanks!

@@ -1,0 +1,6 @@
+title:Please release the Latest Version in F-Droid
+
+Hi,
+Timber application latest version is not updated in F-Droid as in Google Play. Please check and update the application in F-Droid too.
+Timber (Play Store) - 1.6
+Timber (F-Droid) - Version 0.2b (14) - Added on 2016-11-02

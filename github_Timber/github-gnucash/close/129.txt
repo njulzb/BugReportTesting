@@ -1,0 +1,65 @@
+title:Randomly sorted accounts in picker
+
+In the screenshot below the accounts are sorted in a seemingly random manner: they are sorted alphabetically by the deepest account name; capital letters before non-capital. This can result in very weird listings:
+Aufwendungen:Lebensmittel:Getränke (Expenses on beverages)
+Aktiva:Barvermögen:Giro (my giro account)
+Erträge:Zinsen:Girokonto (interest on giro)
+Aufwendungen:Versicherungen:Haftpflicht (an insurance)
+I'd expect the accounts to be sorted "like a tree"[0] as it is in gnc desktop. In my example this would result in:
+Aktiva:Barvermögen:Giro (my giro account)
+Aufwendungen:Lebensmittel:Getränke (Expenses on beverages)
+Aufwendungen:Versicherungen:Haftpflicht (an insurance)
+Erträge:Zinsen:Girokonto (interest on giro)
+[0]
+The (seemingly) random also annoys me, but I think it would be better if the app sorted the transfer accounts by usage.
+For example, most of the time I pay the bus with a pre-paid card, which I always insert credits into using money in my wallet, so when selecting a transfer account for a transaction created on the "Pre-paid bus card" account the first two accounts in the selector would be "Wallet" and "Bus".
+Or the list could have two divisions, like the font selector in LibreOffice Writer. In the first division there would be the most used transfer accounts and in the second division all accounts, sorted as @ironjan suggests.
+The (seemingly) random also annoys me, but I think it would be better if the app sorted the transfer accounts by usage.
+For example, most of the time I pay the bus with a pre-paid card, which I always insert credits into using money in my wallet, so when selecting a transfer account for a transaction created on the "Pre-paid bus card" account the first two accounts in the selector would be "Wallet" and "Bus".
+Or the list could have two divisions, like the font selector in LibreOffice Writer. In the first division there would be the most used transfer accounts and in the second division all accounts, sorted as @ironjan suggests.
+It would also be useful to be able to specify a default transfer account in
+the settings.  That would at least populate the field in the transaction
+entry such that you could get to a less-frequently-used expense account
+more quickly even if it weren't your default pick.
+On Thu, Jan 23, 2014 at 1:21 PM, Ygor Mutti notifications@github.comwrote:
+The (seemingly) random also annoys me, but I think it would be better if
+the app sorted the transfer accounts by usage.
+For example, most of the time I pay the bus with a pre-paid card, which I
+always insert credits into using money in my wallet, so when selecting a
+transfer account for a transaction created on the "Pre-paid bus card"
+account the first two accounts in the selector would be "Wallet" and "Bus".
+Or the list could have two divisions, like the font selector in
+LibreOffice Writer. In the first division there would be the most used
+transfer accounts and in the second division all accounts, sorted as
+@ironjan https://github.com/ironjan suggests.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/129#issuecomment-33169885
+.
+Brian Burns
+bburns@aundae.com
++1 (503) 941-0782
+It would also be useful to be able to specify a default transfer account in
+the settings.  That would at least populate the field in the transaction
+entry such that you could get to a less-frequently-used expense account
+more quickly even if it weren't your default pick.
+On Thu, Jan 23, 2014 at 1:21 PM, Ygor Mutti notifications@github.comwrote:
+The (seemingly) random also annoys me, but I think it would be better if
+the app sorted the transfer accounts by usage.
+For example, most of the time I pay the bus with a pre-paid card, which I
+always insert credits into using money in my wallet, so when selecting a
+transfer account for a transaction created on the "Pre-paid bus card"
+account the first two accounts in the selector would be "Wallet" and "Bus".
+Or the list could have two divisions, like the font selector in
+LibreOffice Writer. In the first division there would be the most used
+transfer accounts and in the second division all accounts, sorted as
+@ironjan https://github.com/ironjan suggests.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/129#issuecomment-33169885
+.
+Brian Burns
+bburns@aundae.com
++1 (503) 941-0782
+@brianpburns Default transfer accounts is already implemented and will be available out with the next major release.
+Also, @ygormutti I was thinking of doing either recent accounts or make it possible to specify favorites. What do you think of those? I'm not decided yet though....
+@brianpburns Default transfer accounts is already implemented and will be available out with the next major release.
+Also, @ygormutti I was thinking of doing either recent accounts or make it possible to specify favorites. What do you think of those? I'm not decided yet though....

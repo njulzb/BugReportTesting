@@ -1,0 +1,12 @@
+title:Error:(58, 13) Failed to resolve: com.github.naman14:app-theme-engine:-SNAPSHOT
+
+After I loaded the project I got this error, only this one [Error:(58, 13) Failed to resolve: com.github.naman14:app-theme-engine:-SNAPSHOT].
+Can you explain to me what's wrong?
+Did you update gradle plugin version locally ? I've updated and received this error #168
+Did you update gradle plugin version locally ? I've updated and received this error #168
+Try use 0.5.1 instead of -SNAPSHOT
+Try use 0.5.1 instead of -SNAPSHOT
+Solved, Thank you
+Solved, Thank you
+I have fixed build errors in previous commit
+I have fixed build errors in previous commit

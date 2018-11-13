@@ -1,0 +1,955 @@
+title:Import accounts schema from GNUCash (feature)
+
+While the double-entry feature is really usefull, it need you to have created every account you want to use, previously to use it.
+If the software is an add-on for desktop gnucash, I think it would be great if you could import the whole account schema (without transactions) from the desktop version, so you'll have ready every account you have to use.
+thanks
+Yes,
+I agree with you completely. That feature is planned.
+Cheers,
+On Fri, Mar 8, 2013 at 9:11 AM, Jesus-M notifications@github.com wrote:
+While the double-entry feature is really usefull, it need you to have
+created every account you want to use, previously to use it.
+If the software is an add-on for desktop gnucash, I think it would be
+great if you could import the whole account schema (without transactions)
+from the desktop version, so you'll have ready every account you have to
+use.
+thanks
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/67
+.
+Yes,
+I agree with you completely. That feature is planned.
+Cheers,
+On Fri, Mar 8, 2013 at 9:11 AM, Jesus-M notifications@github.com wrote:
+While the double-entry feature is really usefull, it need you to have
+created every account you want to use, previously to use it.
+If the software is an add-on for desktop gnucash, I think it would be
+great if you could import the whole account schema (without transactions)
+from the desktop version, so you'll have ready every account you have to
+use.
+thanks
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/67
+.
+Landed in de24fa3
+Landed in de24fa3
+Hello folks,
+i cannot import my exported account structure into the app. version is 1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which lead to a file with extension .gnucash. Is that the file format required by the app?
+The app itself seems not to be able to import any files. When i select "import gnucash accounts" all i can see allmost empty folders. only very few files are shown up and my $accountstructure.gnucash is one of them.
+Kind regards
+Lorenz
+Hello folks,
+i cannot import my exported account structure into the app. version is 1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which lead to a file with extension .gnucash. Is that the file format required by the app?
+The app itself seems not to be able to import any files. When i select "import gnucash accounts" all i can see allmost empty folders. only very few files are shown up and my $accountstructure.gnucash is one of them.
+Kind regards
+Lorenz
+Hey,
+What exactly do you mean by you see empty folders? When you click on the
+"Import Accounts", It should open a file picker dialog for you to choose
+the file to import.
+That said, I am aware of some users reporting issues with importing. It is
+being looked into. Thanks for your patience.
+Cheers,
+Ngewi
+On 03.07.2013, at 12:07, lorenzo-greifswald notifications@github.com
+wrote:
+Hello folks,
+i cannot import my exported account structure into the app. version is
+1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which lead
+to a file with extension .gnucash. Is that the file format required by the
+app?
+The app itself seems not to be able to import any files. When i select
+"import gnucash accounts" all i can see allmost empty folders. only very
+few files are shown up and my $accountstructure.gnucash is one of them.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/67#issuecomment-20406250
+.
+Hey,
+What exactly do you mean by you see empty folders? When you click on the
+"Import Accounts", It should open a file picker dialog for you to choose
+the file to import.
+That said, I am aware of some users reporting issues with importing. It is
+being looked into. Thanks for your patience.
+Cheers,
+Ngewi
+On 03.07.2013, at 12:07, lorenzo-greifswald notifications@github.com
+wrote:
+Hello folks,
+i cannot import my exported account structure into the app. version is
+1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which lead
+to a file with extension .gnucash. Is that the file format required by the
+app?
+The app itself seems not to be able to import any files. When i select
+"import gnucash accounts" all i can see allmost empty folders. only very
+few files are shown up and my $accountstructure.gnucash is one of them.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/67#issuecomment-20406250
+.
+Hello and thanks for your reply,
+maybe I should say that i am running cyanogenmod 10.1.0. I don't know, if that
+makes any difference.
+As you described a file picker dialog appears and I can see all the directories
+on my sdcard. When accessing one of them, subdirectories are shown but no
+files. I checked a series folders. Same thing everywhere.
+Please let me know, how i can help solve this problem and improve gnucash-
+android.
+kind regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 00:30:44 schrieb Ngewi Fet:
+Hey,
+What exactly do you mean by you see empty folders? When you click on the
+"Import Accounts", It should open a file picker dialog for you to choose
+the file to import.
+That said, I am aware of some users reporting issues with importing. It is
+being looked into. Thanks for your patience.
+Cheers,
+Ngewi
+On 03.07.2013, at 12:07, lorenzo-greifswald notifications@github.com
+wrote:
+Hello folks,
+i cannot import my exported account structure into the app. version is
+1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which lead
+to a file with extension .gnucash. Is that the file format required by the
+app?
+The app itself seems not to be able to import any files. When i select
+"import gnucash accounts" all i can see allmost empty folders. only very
+few files are shown up and my $accountstructure.gnucash is one of them.
+—
+Reply to this email directly or view it on
+GitHub<#67 (comment)
+-20406250> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+67
+Hello and thanks for your reply,
+maybe I should say that i am running cyanogenmod 10.1.0. I don't know, if that
+makes any difference.
+As you described a file picker dialog appears and I can see all the directories
+on my sdcard. When accessing one of them, subdirectories are shown but no
+files. I checked a series folders. Same thing everywhere.
+Please let me know, how i can help solve this problem and improve gnucash-
+android.
+kind regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 00:30:44 schrieb Ngewi Fet:
+Hey,
+What exactly do you mean by you see empty folders? When you click on the
+"Import Accounts", It should open a file picker dialog for you to choose
+the file to import.
+That said, I am aware of some users reporting issues with importing. It is
+being looked into. Thanks for your patience.
+Cheers,
+Ngewi
+On 03.07.2013, at 12:07, lorenzo-greifswald notifications@github.com
+wrote:
+Hello folks,
+i cannot import my exported account structure into the app. version is
+1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which lead
+to a file with extension .gnucash. Is that the file format required by the
+app?
+The app itself seems not to be able to import any files. When i select
+"import gnucash accounts" all i can see allmost empty folders. only very
+few files are shown up and my $accountstructure.gnucash is one of them.
+—
+Reply to this email directly or view it on
+GitHub<#67 (comment)
+-20406250> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+67
+When the dialog appears, which application do you select?
+Many different applications can be providers and it is the application
+responsibility to provide the file.
+I've tested SkyDrive, DropBox, Google Drive and OpenIntents FileManager
+(for SD card) and they all work fine.
+The interactions inside the application is independent of GnuCash Android.
+Double-check that the file is where it's supposed to be.
+On 04.07.2013, at 10:43, lorenzo-greifswald notifications@github.com
+wrote:
+Hello and thank for your reply,
+maybe I should say that i am running cyanogenmod 10.1.0. I don't know, if
+that
+makes any difference.
+As you described a file picker dialog appears and I can see all the
+directories
+on my sdcard. When accessing one of them, subdirectories are shown but no
+files. I checked a series folders. Same thing everywhere.
+Please let me know, how i can help solve this problem and improve gnucash-
+android.
+kind regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 00:30:44 schrieb Ngewi Fet:
+Hey,
+What exactly do you mean by you see empty folders? When you click on the
+"Import Accounts", It should open a file picker dialog for you to choose
+the file to import.
+That said, I am aware of some users reporting issues with importing. It
+is
+being looked into. Thanks for your patience.
+Cheers,
+Ngewi
+On 03.07.2013, at 12:07, lorenzo-greifswald notifications@github.com
+wrote:
+Hello folks,
+i cannot import my exported account structure into the app. version is
+1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which
+lead
+to a file with extension .gnucash. Is that the file format required by
+the
+app?
+The app itself seems not to be able to import any files. When i select
+"import gnucash accounts" all i can see allmost empty folders. only very
+few files are shown up and my $accountstructure.gnucash is one of them.
+—
+Reply to this email directly or view it on
+GitHub<
+#67 (comment)
+-20406250> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+67
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/67#issuecomment-20465648
+.
+When the dialog appears, which application do you select?
+Many different applications can be providers and it is the application
+responsibility to provide the file.
+I've tested SkyDrive, DropBox, Google Drive and OpenIntents FileManager
+(for SD card) and they all work fine.
+The interactions inside the application is independent of GnuCash Android.
+Double-check that the file is where it's supposed to be.
+On 04.07.2013, at 10:43, lorenzo-greifswald notifications@github.com
+wrote:
+Hello and thank for your reply,
+maybe I should say that i am running cyanogenmod 10.1.0. I don't know, if
+that
+makes any difference.
+As you described a file picker dialog appears and I can see all the
+directories
+on my sdcard. When accessing one of them, subdirectories are shown but no
+files. I checked a series folders. Same thing everywhere.
+Please let me know, how i can help solve this problem and improve gnucash-
+android.
+kind regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 00:30:44 schrieb Ngewi Fet:
+Hey,
+What exactly do you mean by you see empty folders? When you click on the
+"Import Accounts", It should open a file picker dialog for you to choose
+the file to import.
+That said, I am aware of some users reporting issues with importing. It
+is
+being looked into. Thanks for your patience.
+Cheers,
+Ngewi
+On 03.07.2013, at 12:07, lorenzo-greifswald notifications@github.com
+wrote:
+Hello folks,
+i cannot import my exported account structure into the app. version is
+1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which
+lead
+to a file with extension .gnucash. Is that the file format required by
+the
+app?
+The app itself seems not to be able to import any files. When i select
+"import gnucash accounts" all i can see allmost empty folders. only very
+few files are shown up and my $accountstructure.gnucash is one of them.
+—
+Reply to this email directly or view it on
+GitHub<
+#67 (comment)
+-20406250> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+67
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/67#issuecomment-20465648
+.
+Hello again,
+I do not get asked for an application, I just can browse my local directories
+and do not use any of skydrive, Dropbox, UbuntuOne, google drive and such.
+There definitely is a file gnucashaccounts.gnucash with the path
+/storage/sdcard0/gnucash/gnucashaccounts.gnucash
+and with the imho usual permissions ----rwxr-x. The owner is system (UID
+01000) and group is sdcard_rw (GID 01015).
+I can even open it with a text editor. Since there are quiet a few accounts in
+my hierarchyIs I wonder, whether it might be to large (107kB) for gnucash-
+android?
+There are lots of other files in many of my other local directories and none of
+them appears in gc-androids pick-a-file-dialog.
+My only idea at the moment is to reinstall the gnucash app. Any other
+suggestions?
+Regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 13:05:19 schrieb Ngewi Fet:
+When the dialog appears, which application do you select?
+Many different applications can be providers and it is the application
+responsibility to provide the file.
+I've tested SkyDrive, DropBox, Google Drive and OpenIntents FileManager
+(for SD card) and they all work fine.
+The interactions inside the application is independent of GnuCash Android.
+Double-check that the file is where it's supposed to be.
+On 04.07.2013, at 10:43, lorenzo-greifswald notifications@github.com
+wrote:
+Hello and thank for your reply,
+maybe I should say that i am running cyanogenmod 10.1.0. I don't know, if
+that
+makes any difference.
+As you described a file picker dialog appears and I can see all the
+directories
+on my sdcard. When accessing one of them, subdirectories are shown but no
+files. I checked a series folders. Same thing everywhere.
+Please let me know, how i can help solve this problem and improve gnucash-
+android.
+kind regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 00:30:44 schrieb Ngewi Fet:
+Hey,
+What exactly do you mean by you see empty folders? When you click on the
+"Import Accounts", It should open a file picker dialog for you to choose
+the file to import.
+That said, I am aware of some users reporting issues with importing. It
+is
+being looked into. Thanks for your patience.
+Cheers,
+Ngewi
+On 03.07.2013, at 12:07, lorenzo-greifswald notifications@github.com
+wrote:
+Hello folks,
+i cannot import my exported account structure into the app. version is
+1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which
+lead
+to a file with extension .gnucash. Is that the file format required by
+the
+app?
+The app itself seems not to be able to import any files. When i select
+"import gnucash accounts" all i can see allmost empty folders. only very
+few files are shown up and my $accountstructure.gnucash is one of them.
+—
+Reply to this email directly or view it on
+GitHub<
+#67 (comment)
+-20406250> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+67
+—
+Reply to this email directly or view it on
+GitHub<#67 (comment)
+-20465648> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+33
+Hello again,
+I do not get asked for an application, I just can browse my local directories
+and do not use any of skydrive, Dropbox, UbuntuOne, google drive and such.
+There definitely is a file gnucashaccounts.gnucash with the path
+/storage/sdcard0/gnucash/gnucashaccounts.gnucash
+and with the imho usual permissions ----rwxr-x. The owner is system (UID
+01000) and group is sdcard_rw (GID 01015).
+I can even open it with a text editor. Since there are quiet a few accounts in
+my hierarchyIs I wonder, whether it might be to large (107kB) for gnucash-
+android?
+There are lots of other files in many of my other local directories and none of
+them appears in gc-androids pick-a-file-dialog.
+My only idea at the moment is to reinstall the gnucash app. Any other
+suggestions?
+Regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 13:05:19 schrieb Ngewi Fet:
+When the dialog appears, which application do you select?
+Many different applications can be providers and it is the application
+responsibility to provide the file.
+I've tested SkyDrive, DropBox, Google Drive and OpenIntents FileManager
+(for SD card) and they all work fine.
+The interactions inside the application is independent of GnuCash Android.
+Double-check that the file is where it's supposed to be.
+On 04.07.2013, at 10:43, lorenzo-greifswald notifications@github.com
+wrote:
+Hello and thank for your reply,
+maybe I should say that i am running cyanogenmod 10.1.0. I don't know, if
+that
+makes any difference.
+As you described a file picker dialog appears and I can see all the
+directories
+on my sdcard. When accessing one of them, subdirectories are shown but no
+files. I checked a series folders. Same thing everywhere.
+Please let me know, how i can help solve this problem and improve gnucash-
+android.
+kind regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 00:30:44 schrieb Ngewi Fet:
+Hey,
+What exactly do you mean by you see empty folders? When you click on the
+"Import Accounts", It should open a file picker dialog for you to choose
+the file to import.
+That said, I am aware of some users reporting issues with importing. It
+is
+being looked into. Thanks for your patience.
+Cheers,
+Ngewi
+On 03.07.2013, at 12:07, lorenzo-greifswald notifications@github.com
+wrote:
+Hello folks,
+i cannot import my exported account structure into the app. version is
+1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which
+lead
+to a file with extension .gnucash. Is that the file format required by
+the
+app?
+The app itself seems not to be able to import any files. When i select
+"import gnucash accounts" all i can see allmost empty folders. only very
+few files are shown up and my $accountstructure.gnucash is one of them.
+—
+Reply to this email directly or view it on
+GitHub<
+#67 (comment)
+-20406250> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+67
+—
+Reply to this email directly or view it on
+GitHub<#67 (comment)
+-20465648> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+33
+Ok, I don't know how it works on Cyanogenmod, but there should be a dialog.
+Unfortunately, I cannot test it since I have no device with your
+configuration.
+It is definitely not because the file is too large. GnuCash does no create
+a dialog, the system does. Which is why I'm at a loss as to what you're
+seeing.
+Can you make some screenshots and email them to me?
+On 04.07.2013, at 14:36, lorenzo-greifswald notifications@github.com
+wrote:
+Hello again,
+I do not get asked for an application, I just can browse my local
+directories
+and do not use any of skydrive, Dropbox, UbuntuOne, google drive and such.
+There definitely is a file gnucashaccounts.gnucash with the path
+/storage/sdcard0/gnucash/gnucashaccounts.gnucash
+and with the imho usual permissions ----rwxr-x. The owner is system (UID
+01000) and group is sdcard_rw (GID 01015).
+I can even open it with a text editor. Since there are quiet a few accounts
+in
+my hierarchyIs I wonder, whether it might be to large (107kB) for gnucash-
+android?
+There are lots of other files in many of my other local directories and
+none of
+them appears in gc-androids pick-a-file-dialog.
+My only idea at the moment is to reinstall the gnucash app. Any other
+suggestions?
+Regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 13:05:19 schrieb Ngewi Fet:
+When the dialog appears, which application do you select?
+Many different applications can be providers and it is the application
+responsibility to provide the file.
+I've tested SkyDrive, DropBox, Google Drive and OpenIntents FileManager
+(for SD card) and they all work fine.
+The interactions inside the application is independent of GnuCash
+Android.
+Double-check that the file is where it's supposed to be.
+On 04.07.2013, at 10:43, lorenzo-greifswald notifications@github.com
+wrote:
+Hello and thank for your reply,
+maybe I should say that i am running cyanogenmod 10.1.0. I don't know, if
+that
+makes any difference.
+As you described a file picker dialog appears and I can see all the
+directories
+on my sdcard. When accessing one of them, subdirectories are shown but no
+files. I checked a series folders. Same thing everywhere.
+Please let me know, how i can help solve this problem and improve
+gnucash-
+android.
+kind regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 00:30:44 schrieb Ngewi Fet:
+Hey,
+What exactly do you mean by you see empty folders? When you click on
+the
+"Import Accounts", It should open a file picker dialog for you to
+choose
+the file to import.
+That said, I am aware of some users reporting issues with importing. It
+is
+being looked into. Thanks for your patience.
+Cheers,
+Ngewi
+On 03.07.2013, at 12:07, lorenzo-greifswald notifications@github.com
+wrote:
+Hello folks,
+i cannot import my exported account structure into the app. version is
+1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which
+lead
+to a file with extension .gnucash. Is that the file format required by
+the
+app?
+The app itself seems not to be able to import any files. When i select
+"import gnucash accounts" all i can see allmost empty folders. only
+very
+few files are shown up and my $accountstructure.gnucash is one of them.
+—
+Reply to this email directly or view it on
+GitHub<
+#67 (comment)
+-20406250> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+67
+—
+Reply to this email directly or view it on
+GitHub<
+#67 (comment)
+-20465648> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+33
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/67#issuecomment-20474763
+.
+Ok, I don't know how it works on Cyanogenmod, but there should be a dialog.
+Unfortunately, I cannot test it since I have no device with your
+configuration.
+It is definitely not because the file is too large. GnuCash does no create
+a dialog, the system does. Which is why I'm at a loss as to what you're
+seeing.
+Can you make some screenshots and email them to me?
+On 04.07.2013, at 14:36, lorenzo-greifswald notifications@github.com
+wrote:
+Hello again,
+I do not get asked for an application, I just can browse my local
+directories
+and do not use any of skydrive, Dropbox, UbuntuOne, google drive and such.
+There definitely is a file gnucashaccounts.gnucash with the path
+/storage/sdcard0/gnucash/gnucashaccounts.gnucash
+and with the imho usual permissions ----rwxr-x. The owner is system (UID
+01000) and group is sdcard_rw (GID 01015).
+I can even open it with a text editor. Since there are quiet a few accounts
+in
+my hierarchyIs I wonder, whether it might be to large (107kB) for gnucash-
+android?
+There are lots of other files in many of my other local directories and
+none of
+them appears in gc-androids pick-a-file-dialog.
+My only idea at the moment is to reinstall the gnucash app. Any other
+suggestions?
+Regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 13:05:19 schrieb Ngewi Fet:
+When the dialog appears, which application do you select?
+Many different applications can be providers and it is the application
+responsibility to provide the file.
+I've tested SkyDrive, DropBox, Google Drive and OpenIntents FileManager
+(for SD card) and they all work fine.
+The interactions inside the application is independent of GnuCash
+Android.
+Double-check that the file is where it's supposed to be.
+On 04.07.2013, at 10:43, lorenzo-greifswald notifications@github.com
+wrote:
+Hello and thank for your reply,
+maybe I should say that i am running cyanogenmod 10.1.0. I don't know, if
+that
+makes any difference.
+As you described a file picker dialog appears and I can see all the
+directories
+on my sdcard. When accessing one of them, subdirectories are shown but no
+files. I checked a series folders. Same thing everywhere.
+Please let me know, how i can help solve this problem and improve
+gnucash-
+android.
+kind regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 00:30:44 schrieb Ngewi Fet:
+Hey,
+What exactly do you mean by you see empty folders? When you click on
+the
+"Import Accounts", It should open a file picker dialog for you to
+choose
+the file to import.
+That said, I am aware of some users reporting issues with importing. It
+is
+being looked into. Thanks for your patience.
+Cheers,
+Ngewi
+On 03.07.2013, at 12:07, lorenzo-greifswald notifications@github.com
+wrote:
+Hello folks,
+i cannot import my exported account structure into the app. version is
+1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which
+lead
+to a file with extension .gnucash. Is that the file format required by
+the
+app?
+The app itself seems not to be able to import any files. When i select
+"import gnucash accounts" all i can see allmost empty folders. only
+very
+few files are shown up and my $accountstructure.gnucash is one of them.
+—
+Reply to this email directly or view it on
+GitHub<
+#67 (comment)
+-20406250> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+67
+—
+Reply to this email directly or view it on
+GitHub<
+#67 (comment)
+-20465648> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+33
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/67#issuecomment-20474763
+.
+Here is a series of screenshots attached. The chronologically first three show:
+whereas the last four pictures show my way using the systems file manager along
+the path to the file i want to import. The very last picture shall be proof,
+that the file is there and readable.
+Just reinstalled gnucash app - no change ;(
+thank you so much for helping me out.
+Regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 15:01:29 schrieb Ngewi Fet:
+Ok, I don't know how it works on Cyanogenmod, but there should be a dialog.
+Unfortunately, I cannot test it since I have no device with your
+configuration.
+It is definitely not because the file is too large. GnuCash does no create
+a dialog, the system does. Which is why I'm at a loss as to what you're
+seeing.
+Can you make some screenshots and email them to me?
+On 04.07.2013, at 14:36, lorenzo-greifswald notifications@github.com
+wrote:
+Hello again,
+I do not get asked for an application, I just can browse my local
+directories
+and do not use any of skydrive, Dropbox, UbuntuOne, google drive and such.
+There definitely is a file gnucashaccounts.gnucash with the path
+/storage/sdcard0/gnucash/gnucashaccounts.gnucash
+and with the imho usual permissions ----rwxr-x. The owner is system (UID
+01000) and group is sdcard_rw (GID 01015).
+I can even open it with a text editor. Since there are quiet a few accounts
+in
+my hierarchyIs I wonder, whether it might be to large (107kB) for gnucash-
+android?
+There are lots of other files in many of my other local directories and
+none of
+them appears in gc-androids pick-a-file-dialog.
+My only idea at the moment is to reinstall the gnucash app. Any other
+suggestions?
+Regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 13:05:19 schrieb Ngewi Fet:
+When the dialog appears, which application do you select?
+Many different applications can be providers and it is the application
+responsibility to provide the file.
+I've tested SkyDrive, DropBox, Google Drive and OpenIntents FileManager
+(for SD card) and they all work fine.
+The interactions inside the application is independent of GnuCash
+Android.
+Double-check that the file is where it's supposed to be.
+On 04.07.2013, at 10:43, lorenzo-greifswald notifications@github.com
+wrote:
+Hello and thank for your reply,
+maybe I should say that i am running cyanogenmod 10.1.0. I don't know, if
+that
+makes any difference.
+As you described a file picker dialog appears and I can see all the
+directories
+on my sdcard. When accessing one of them, subdirectories are shown but no
+files. I checked a series folders. Same thing everywhere.
+Please let me know, how i can help solve this problem and improve
+gnucash-
+android.
+kind regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 00:30:44 schrieb Ngewi Fet:
+Hey,
+What exactly do you mean by you see empty folders? When you click on
+the
+"Import Accounts", It should open a file picker dialog for you to
+choose
+the file to import.
+That said, I am aware of some users reporting issues with importing. It
+is
+being looked into. Thanks for your patience.
+Cheers,
+Ngewi
+On 03.07.2013, at 12:07, lorenzo-greifswald notifications@github.com
+wrote:
+Hello folks,
+i cannot import my exported account structure into the app. version is
+1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which
+lead
+to a file with extension .gnucash. Is that the file format required by
+the
+app?
+The app itself seems not to be able to import any files. When i select
+"import gnucash accounts" all i can see allmost empty folders. only
+very
+few files are shown up and my $accountstructure.gnucash is one of them.
+—
+Reply to this email directly or view it on
+GitHub<
+#67 (comment)
+-20406250> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+67
+—
+Reply to this email directly or view it on
+GitHub<
+#67 (comment)
+-20465648> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+33
+—
+Reply to this email directly or view it on
+GitHub<#67 (comment)
+-20474763> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+33
+Here is a series of screenshots attached. The chronologically first three show:
+whereas the last four pictures show my way using the systems file manager along
+the path to the file i want to import. The very last picture shall be proof,
+that the file is there and readable.
+Just reinstalled gnucash app - no change ;(
+thank you so much for helping me out.
+Regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 15:01:29 schrieb Ngewi Fet:
+Ok, I don't know how it works on Cyanogenmod, but there should be a dialog.
+Unfortunately, I cannot test it since I have no device with your
+configuration.
+It is definitely not because the file is too large. GnuCash does no create
+a dialog, the system does. Which is why I'm at a loss as to what you're
+seeing.
+Can you make some screenshots and email them to me?
+On 04.07.2013, at 14:36, lorenzo-greifswald notifications@github.com
+wrote:
+Hello again,
+I do not get asked for an application, I just can browse my local
+directories
+and do not use any of skydrive, Dropbox, UbuntuOne, google drive and such.
+There definitely is a file gnucashaccounts.gnucash with the path
+/storage/sdcard0/gnucash/gnucashaccounts.gnucash
+and with the imho usual permissions ----rwxr-x. The owner is system (UID
+01000) and group is sdcard_rw (GID 01015).
+I can even open it with a text editor. Since there are quiet a few accounts
+in
+my hierarchyIs I wonder, whether it might be to large (107kB) for gnucash-
+android?
+There are lots of other files in many of my other local directories and
+none of
+them appears in gc-androids pick-a-file-dialog.
+My only idea at the moment is to reinstall the gnucash app. Any other
+suggestions?
+Regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 13:05:19 schrieb Ngewi Fet:
+When the dialog appears, which application do you select?
+Many different applications can be providers and it is the application
+responsibility to provide the file.
+I've tested SkyDrive, DropBox, Google Drive and OpenIntents FileManager
+(for SD card) and they all work fine.
+The interactions inside the application is independent of GnuCash
+Android.
+Double-check that the file is where it's supposed to be.
+On 04.07.2013, at 10:43, lorenzo-greifswald notifications@github.com
+wrote:
+Hello and thank for your reply,
+maybe I should say that i am running cyanogenmod 10.1.0. I don't know, if
+that
+makes any difference.
+As you described a file picker dialog appears and I can see all the
+directories
+on my sdcard. When accessing one of them, subdirectories are shown but no
+files. I checked a series folders. Same thing everywhere.
+Please let me know, how i can help solve this problem and improve
+gnucash-
+android.
+kind regards
+Lorenz
+Am Donnerstag, 4. Juli 2013, 00:30:44 schrieb Ngewi Fet:
+Hey,
+What exactly do you mean by you see empty folders? When you click on
+the
+"Import Accounts", It should open a file picker dialog for you to
+choose
+the file to import.
+That said, I am aware of some users reporting issues with importing. It
+is
+being looked into. Thanks for your patience.
+Cheers,
+Ngewi
+On 03.07.2013, at 12:07, lorenzo-greifswald notifications@github.com
+wrote:
+Hello folks,
+i cannot import my exported account structure into the app. version is
+1.2.2.
+In the Desktop programm i selected "file|export|exoprt accounts",which
+lead
+to a file with extension .gnucash. Is that the file format required by
+the
+app?
+The app itself seems not to be able to import any files. When i select
+"import gnucash accounts" all i can see allmost empty folders. only
+very
+few files are shown up and my $accountstructure.gnucash is one of them.
+—
+Reply to this email directly or view it on
+GitHub<
+#67 (comment)
+-20406250> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+67
+—
+Reply to this email directly or view it on
+GitHub<
+#67 (comment)
+-20465648> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+33
+—
+Reply to this email directly or view it on
+GitHub<#67 (comment)
+-20474763> .
+Reply to this email directly or view it on GitHub:
+#67 (comment)
+33
+GitHub does not support attachments from email (I think). Can you send the screenshots to me via email at ngewif@codinguser.com
+GitHub does not support attachments from email (I think). Can you send the screenshots to me via email at ngewif@codinguser.com
+I can confirm that account import doesn't work with the native CyanogenMod file browser (as of CyanogenMod version 10.1.2). When the import dialog opens the file browser, it doesn't display anything but directories (i.e., no .xml files). Import works fine with the OpenIntents FileManager ( https://f-droid.org/repository/browse/?fdfilter=oi%20file&fdid=org.openintents.filemanager ).
+I think it would be helpful to make note of this somewhere in the documentation.
+I can confirm that account import doesn't work with the native CyanogenMod file browser (as of CyanogenMod version 10.1.2). When the import dialog opens the file browser, it doesn't display anything but directories (i.e., no .xml files). Import works fine with the OpenIntents FileManager ( https://f-droid.org/repository/browse/?fdfilter=oi%20file&fdid=org.openintents.filemanager ).
+I think it would be helpful to make note of this somewhere in the documentation.
+Thanks for that piece of info. It depends on the file browser app being
+able to respond to the appropriate intents. But I'll look into it if there
+is something I can do to improve the situation.
+On 11.08.2013, at 05:58, ddpppntg notifications@github.com wrote:
+I can confirm that account import doesn't work with the native CyanogenMod
+file browser (as of CyanogenMod version 10.1.2). When the import dialog
+opens the file browser, it doesn't display anything but directories (i.e.,
+no .xml files). Import works fine with the OpenIntents FileManager (
+https://f-droid.org/repository/browse/?fdfilter=oi%20file&fdid=org.openintents.filemanager).
+I think it would be helpful to make note of this somewhere in the
+documentation.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/67#issuecomment-22452035
+.
+Thanks for that piece of info. It depends on the file browser app being
+able to respond to the appropriate intents. But I'll look into it if there
+is something I can do to improve the situation.
+On 11.08.2013, at 05:58, ddpppntg notifications@github.com wrote:
+I can confirm that account import doesn't work with the native CyanogenMod
+file browser (as of CyanogenMod version 10.1.2). When the import dialog
+opens the file browser, it doesn't display anything but directories (i.e.,
+no .xml files). Import works fine with the OpenIntents FileManager (
+https://f-droid.org/repository/browse/?fdfilter=oi%20file&fdid=org.openintents.filemanager).
+I think it would be helpful to make note of this somewhere in the
+documentation.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/67#issuecomment-22452035
+.
+same problem here on an Nexus4 with newest Android and fresh installed GnuCash. Export happened on the Ubuntu binary and the XML file looks fine in vim. I coud deliver some logs if they exist and somebody points me to a way to look into them on Android. It just says that there was an error importing the accounts file but it doesn't give me any more infos in the App itself.
+same problem here on an Nexus4 with newest Android and fresh installed GnuCash. Export happened on the Ubuntu binary and the XML file looks fine in vim. I coud deliver some logs if they exist and somebody points me to a way to look into them on Android. It just says that there was an error importing the accounts file but it doesn't give me any more infos in the App itself.
+Hi @erikb85 , I think your problem is different from the one being discussed in this thread. Your issue is with the import functionality while this thread discusses being able to select the file to import in the first place.
+However if you would be willing to send me the account structure you are trying to import, I may be able to look into why it doesn't work.
+Hi @erikb85 , I think your problem is different from the one being discussed in this thread. Your issue is with the import functionality while this thread discusses being able to select the file to import in the first place.
+However if you would be willing to send me the account structure you are trying to import, I may be able to look into why it doesn't work.
+Could you please test it with generated start accounting sets from the Desktop GUI? That's basically what I am using and I think the only additional data is my own account data which I would not like to share. If the starting sets of accounts don't result in import errors then it might be because I sometimes use German characters like üöß. But I didn't add new Accounts or anything. Everything is the default starting set of private accounts plus maybe one or two additional accounts, but all is clicked in the starting account set wizard.
+Could you please test it with generated start accounting sets from the Desktop GUI? That's basically what I am using and I think the only additional data is my own account data which I would not like to share. If the starting sets of accounts don't result in import errors then it might be because I sometimes use German characters like üöß. But I didn't add new Accounts or anything. Everything is the default starting set of private accounts plus maybe one or two additional accounts, but all is clicked in the starting account set wizard.
+I did not mean you should send me your data file, only the account structure which you will get by "File-> Export -> Export Accounts" in the desktop GnuCash. I hope that this is the file you have been trying to import, because it is the only one the Android app accepts. This exported account file does not include any transactions.
+Note: Your whole GnuCash file (including transactions) will not be imported by the app, only the exported account structure.
+I have indeed tested it with the starting set of commonly-used accounts (also for German locale) from desktop GnuCash. In fact the current version in beta has those files within the app itself. But I will still test it with the whole set of all accounts.
+I did not mean you should send me your data file, only the account structure which you will get by "File-> Export -> Export Accounts" in the desktop GnuCash. I hope that this is the file you have been trying to import, because it is the only one the Android app accepts. This exported account file does not include any transactions.
+Note: Your whole GnuCash file (including transactions) will not be imported by the app, only the exported account structure.
+I have indeed tested it with the starting set of commonly-used accounts (also for German locale) from desktop GnuCash. In fact the current version in beta has those files within the app itself. But I will still test it with the whole set of all accounts.
+I just installed on a Moto X.  Everything seems to be working fine, including export, except the import.  I exported an accounts file from my Windows XP desktop GnuCash.  Trying to import on the phone from either Google Drive or Downloads, the file shows up and is highlighted when I touch it, but nothing happens.
+I just installed on a Moto X.  Everything seems to be working fine, including export, except the import.  I exported an accounts file from my Windows XP desktop GnuCash.  Trying to import on the phone from either Google Drive or Downloads, the file shows up and is highlighted when I touch it, but nothing happens.
+This issue should be fixed in version 1.3.0 which is currently in beta
+On Feb 8, 2014 3:22 AM, "LdeG" notifications@github.com wrote:
+I just installed on a Moto X. Everything seems to be working fine,
+including export, except the import. I exported an accounts file from my
+Windows XP desktop GnuCash. Trying to import on the phone from either
+Google Drive or Downloads, the file shows up and is highlighted when I
+touch it, but nothing happens.
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/67#issuecomment-34525967
+.
+This issue should be fixed in version 1.3.0 which is currently in beta
+On Feb 8, 2014 3:22 AM, "LdeG" notifications@github.com wrote:
+I just installed on a Moto X. Everything seems to be working fine,
+including export, except the import. I exported an accounts file from my
+Windows XP desktop GnuCash. Trying to import on the phone from either
+Google Drive or Downloads, the file shows up and is highlighted when I
+touch it, but nothing happens.
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/67#issuecomment-34525967
+.
+Thanks.  I installed the current version on a NOOK last night and it imported fine.  Haven't tried our Samsung phone yet.  Will put the beta on the Moto X, maybe.
+Thanks.  I installed the current version on a NOOK last night and it imported fine.  Haven't tried our Samsung phone yet.  Will put the beta on the Moto X, maybe.
+You can join the beta testing group here:
+https://plus.google.com/u/0/communities/104728406764752407046
+and afterwards visit this link:
+https://play.google.com/apps/testing/org.gnucash.android to subscribe to
+the beta updates from the Google Play store.
+On Sat, Feb 8, 2014 at 3:18 PM, LdeG notifications@github.com wrote:
+Thanks. I installed the current version on a NOOK last night and it
+imported fine. Haven't tried our Samsung phone yet. Will put the beta on
+the Moto X, maybe.
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/67#issuecomment-34544947
+.
+You can join the beta testing group here:
+https://plus.google.com/u/0/communities/104728406764752407046
+and afterwards visit this link:
+https://play.google.com/apps/testing/org.gnucash.android to subscribe to
+the beta updates from the Google Play store.
+On Sat, Feb 8, 2014 at 3:18 PM, LdeG notifications@github.com wrote:
+Thanks. I installed the current version on a NOOK last night and it
+imported fine. Haven't tried our Samsung phone yet. Will put the beta on
+the Moto X, maybe.
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/67#issuecomment-34544947
+.
+Just wanted to say thank you for this nice app. About 8 months ago I had problems importing my account structure and we had a small discussion. sadly i was a little defocused at that time so i missed the info to use the OpenIntent Filemanager instead of the CM default.
+Today i installed OI, launched my gnucash-android, succesfully inported my accounts and am now very happy. So happy, that i would love to make a little donation. How would i do that?
+Just wanted to say thank you for this nice app. About 8 months ago I had problems importing my account structure and we had a small discussion. sadly i was a little defocused at that time so i missed the info to use the OpenIntent Filemanager instead of the CM default.
+Today i installed OI, launched my gnucash-android, succesfully inported my accounts and am now very happy. So happy, that i would love to make a little donation. How would i do that?
+Thank you @lorenzo-greifswald I am glad it works for you!
+At the moment, there is no framework for receiving donations. Maybe I should look into that... ;)
+If/when I get that sorted out, I'll let you know.
+In the meantime, I'm just happy if you keep using the app and providing your feedback!
+Cheers,
+Thank you @lorenzo-greifswald I am glad it works for you!
+At the moment, there is no framework for receiving donations. Maybe I should look into that... ;)
+If/when I get that sorted out, I'll let you know.
+In the meantime, I'm just happy if you keep using the app and providing your feedback!
+Cheers,

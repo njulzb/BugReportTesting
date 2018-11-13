@@ -1,0 +1,15 @@
+title:Allow for editing amount values in the middle positions more easily
+
+I put the cursor in the middle to delete a char and write another, but the cursor gets back to the end making me curse. This forces me to delete lots of chars and reenter them, wasting my time.
+470,00 to 480,00 today I need to do <= <= <= <= 8 0 0 0
+I would like to do:
+470,00 <tap just after 7> <= 8
+It could be a setting I opt in, so that users that like the current behavior keep it that way...
+You cannot delete from the middle. Only from the end. This is by design.
+This has to do with the different formatting of currency for different locales.
+You cannot delete from the middle. Only from the end. This is by design.
+This has to do with the different formatting of currency for different locales.
+Then a clear-all micro-button would help immensely
+Then a clear-all micro-button would help immensely
+Nice idea 👍
+Nice idea 👍

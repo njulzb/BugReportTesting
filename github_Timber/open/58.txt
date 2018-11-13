@@ -1,0 +1,19 @@
+title:Add Opus support
+
+Opus is a great format and it would be really good to see this app support it
+Opus should have the same tags as ogg and Android already supports it.
+Hopefully there is not much to do until it runs
+Opus should have the same tags as ogg and Android already supports it.
+Hopefully there is not much to do until it runs
+👍 +1
+I would love to see Opus support
+👍 +1
+I would love to see Opus support
+I also need this to use the app
+I also need this to use the app
+I also need this to continue using the app
+I also need this to continue using the app
+Opus playback is actually working already, the player just needs to list the files and read the tags
+Opus playback is actually working already, the player just needs to list the files and read the tags
+Any progress on this?
+Any progress on this?

@@ -1,0 +1,39 @@
+title:Parent account doesn't represent nested accounts transactions
+
+Hi,
+I create nested accounts "Bank" and "Cash" with Assets as parent account and enter transactions into both but assets account shows no transactions and a value of $0.00.
+P.S - Thanks for your work on this app =)
+The total of sub accounts is not yet shown when inside the account, only
+when in the accounts list (assuming you are on the latest version of the
+app)
+This will be fixed soon.
+On 27.03.2013, at 09:59, Mossyfunk notifications@github.com wrote:
+Hi,
+I create nested accounts "Bank" and "Cash" with Assets as parent account
+and enter transactions into both but assets account shows no transactions
+and a value of $0.00.
+P.S - Thanks for your work on this app =)
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/72
+.
+The total of sub accounts is not yet shown when inside the account, only
+when in the accounts list (assuming you are on the latest version of the
+app)
+This will be fixed soon.
+On 27.03.2013, at 09:59, Mossyfunk notifications@github.com wrote:
+Hi,
+I create nested accounts "Bank" and "Cash" with Assets as parent account
+and enter transactions into both but assets account shows no transactions
+and a value of $0.00.
+P.S - Thanks for your work on this app =)
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/72
+.
+I am on 1.1.2. It shows up as zero in accounts list also. Thank you for the quick reply =) I realize the app is in early stages of development. Cheers.
+I am on 1.1.2. It shows up as zero in accounts list also. Thank you for the quick reply =) I realize the app is in early stages of development. Cheers.
+Did you make sure to set Assets as the parent account? By default, no parent account is set. The parent account field is deactivated by default. (You can see the Assets account only because of alphabetical listing, but it is deactivated). You need to click on the checkbox to activate the field and be able to set a parent account.
+So by default, the accounts you create a top-level accounts, which have no parent. If you set a parent account properly, you should see the correct balance in the accounts list
+Did you make sure to set Assets as the parent account? By default, no parent account is set. The parent account field is deactivated by default. (You can see the Assets account only because of alphabetical listing, but it is deactivated). You need to click on the checkbox to activate the field and be able to set a parent account.
+So by default, the accounts you create a top-level accounts, which have no parent. If you set a parent account properly, you should see the correct balance in the accounts list

@@ -1,0 +1,9 @@
+title:Back up before destructive actions
+
+rivaldi8
+A backup has been done before the operation so the user is able to restore the data in case the action has been done by mistake.
+The data can't be restored unless there was some backup with the previous state.
+Fixed in develop.
+I've dealt with all delete-related actions I've found, but still might've missed some.
+Fixed in develop.
+I've dealt with all delete-related actions I've found, but still might've missed some.

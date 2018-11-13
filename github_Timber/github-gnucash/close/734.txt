@@ -1,0 +1,31 @@
+title:General export seems to corrupt the backup
+
+The error is both the same even when I try the zip or the (unzipped qif)
+import the books
+as described before
+Recently updated to Android 7.1.x (LineageOS) as well.
+Just tried to export for the first time since that switch. Same problem as OP.
+But I think I might have a clue on why it's not working:
+After the export via Save As... one get's back to Gnucash-android. Below the Save As... selection the path to which was exported to is shown.
+Notice the beginning of the path: content://com.android.externalstorage.......
+I recently had problems with KeepassDroid saving changes to its database.
+Back then I searched around until I found this: bpellin/keepassdroid#75
+As taylormarshall states in his third post, it seems to come down to supporting content:// URI.
+Recently updated to Android 7.1.x (LineageOS) as well.
+Just tried to export for the first time since that switch. Same problem as OP.
+But I think I might have a clue on why it's not working:
+After the export via Save As... one get's back to Gnucash-android. Below the Save As... selection the path to which was exported to is shown.
+Notice the beginning of the path: content://com.android.externalstorage.......
+I recently had problems with KeepassDroid saving changes to its database.
+Back then I searched around until I found this: bpellin/keepassdroid#75
+As taylormarshall states in his third post, it seems to come down to supporting content:// URI.
+This issue should be fixed in the recently released beta. Please join the beta program:
+https://play.google.com/apps/testing/org.gnucash.android
+and let me know if it now works alright for you!
+This issue should be fixed in the recently released beta. Please join the beta program:
+https://play.google.com/apps/testing/org.gnucash.android
+and let me know if it now works alright for you!
+Alright I just tried the previously described export procedure with the latest beta (2.3.0-beta1).
+Worked fine for me first try. Good job and thanks!
+Alright I just tried the previously described export procedure with the latest beta (2.3.0-beta1).
+Worked fine for me first try. Good job and thanks!

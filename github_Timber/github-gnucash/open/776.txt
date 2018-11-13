@@ -1,0 +1,16 @@
+title:Enhancement - Change [+] icon to add transactions instead of new account by default
+
+This is not so much a defect as it is a new feature that would be nice to have.
+As account creation is not bidirectional with GnuCash desktop, it would be nice to have [+] yellow icon defaulting to create transaction than to create account, I'd argue.
+At least to have such option on the settings.
+Click [+] yellow icon.
+Expect to get new transaction screen
+Prompts to create new account
+In the accounts screen, the plus indicates creating an account. In the transactions view, it indicates creating a transaction.
+Transaction cannot exist outside of accounts, which is why you need to enter an account view in order to create a transaction. Otherwise you would need to create a transaction and then specify both sides each time.
+In the accounts screen, the plus indicates creating an account. In the transactions view, it indicates creating a transaction.
+Transaction cannot exist outside of accounts, which is why you need to enter an account view in order to create a transaction. Otherwise you would need to create a transaction and then specify both sides each time.
+True what you say but I'd argue that in terms of end-user functionality having the following would be a nice to:
+if not all ok, user could adjust accounts to credit/debit and hit OK. Makes it simpler.
+True what you say but I'd argue that in terms of end-user functionality having the following would be a nice to:
+if not all ok, user could adjust accounts to credit/debit and hit OK. Makes it simpler.

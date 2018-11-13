@@ -1,0 +1,5 @@
+title:Improve the seek bar
+
+Could you implement seek bar similar to this library: Discrete SeekBar library
+It would be more Material, for example Solid Explorer app uses it and it's very nice!
+Anyway thanks for the job done on this open source app 👍

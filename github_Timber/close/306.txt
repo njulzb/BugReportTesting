@@ -1,0 +1,10 @@
+title:Add some sort of empty view when no music files are on the phone
+
+Awesome music player!
+Just one suggestion. This is how the app looks on a newly setup phone:
+
+I think that a better design could be applied here, i.e. some sort of empty state. See https://material.io/guidelines/patterns/empty-states.html.
+Added now
+Added now
+Awesome. Thanks! 🎉
+Awesome. Thanks! 🎉

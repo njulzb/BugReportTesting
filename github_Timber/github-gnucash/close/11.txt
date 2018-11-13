@@ -1,0 +1,50 @@
+title:Saving new transaction crashes app
+
+codinguser
+Steps:
+App immediately crashes, and from here on, app keeps crashing as soon as it is opened, until I clean its data.
+Details: Nexus S, Jelly Bean, Brazilian Real (currency), installed from F-Droid.
+Hi kepler,
+Thanks for the report. Unfortunately I cannot replicate it. It sounds very similary to #3 which was fixed some commits ago. Are you sure you are on the latest beta?
+Hi kepler,
+Thanks for the report. Unfortunately I cannot replicate it. It sounds very similary to #3 which was fixed some commits ago. Are you sure you are on the latest beta?
+Hi Ngewi,
+I'm using version v1.0-beta1.
+On Wed, Sep 5, 2012 at 2:08 PM, Ngewi Fet notifications@github.com wrote:
+Hi kepler,
+Thanks for the report. Unfortunately I cannot replicate it. It sounds very
+similary to #3 https://github.com/codinguser/GnucashMobile/issues/3which was fixed some commits ago. Are you sure you are on the latest beta?
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/GnucashMobile/issues/11#issuecomment-8306124.
+Hi Ngewi,
+I'm using version v1.0-beta1.
+On Wed, Sep 5, 2012 at 2:08 PM, Ngewi Fet notifications@github.com wrote:
+Hi kepler,
+Thanks for the report. Unfortunately I cannot replicate it. It sounds very
+similary to #3 https://github.com/codinguser/GnucashMobile/issues/3which was fixed some commits ago. Are you sure you are on the latest beta?
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/GnucashMobile/issues/11#issuecomment-8306124.
+Then that is really strange. I'll check again.
+Then that is really strange. I'll check again.
+Kepler, do you have a dev environment setup? Can you capture the log output and send to me?
+Kepler, do you have a dev environment setup? Can you capture the log output and send to me?
+I now know why I could not replicate this issue. It was fixed post-beta, specifically in commit 529479f
+Thanks for posting though. I'll close this now.
+I now know why I could not replicate this issue. It was fixed post-beta, specifically in commit 529479f
+Thanks for posting though. I'll close this now.
+Great! I'll wait for the next beta, then. Thanks.
+Em 10/09/2012 09:01, "Ngewi Fet" notifications@github.com escreveu:
+I now know why I could not replicate this issue. It was fixed post-beta,
+specifically in commit 529479fhttps://github.com/codinguser/GnucashMobile/commit/529479f8fd1dfa8706118529dfa46a2cbfdeeb91
+Thanks for posting though. I'll close this now.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/GnucashMobile/issues/11#issuecomment-8421256.
+Great! I'll wait for the next beta, then. Thanks.
+Em 10/09/2012 09:01, "Ngewi Fet" notifications@github.com escreveu:
+I now know why I could not replicate this issue. It was fixed post-beta,
+specifically in commit 529479fhttps://github.com/codinguser/GnucashMobile/commit/529479f8fd1dfa8706118529dfa46a2cbfdeeb91
+Thanks for posting though. I'll close this now.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/GnucashMobile/issues/11#issuecomment-8421256.
+Now working as of version v1.0-beta2. Thanks.
+Now working as of version v1.0-beta2. Thanks.

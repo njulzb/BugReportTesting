@@ -1,0 +1,32 @@
+title:Choosing the Correct "Transfer Account" for a transaction.
+
+I exported my accounts out of GnuCash Desktop and imported them into GnuCash Android
+The problem I had: Choosing the Correct "Transfer Account" for a transaction.
+I go to the supermarket
+After paying I go to enter the transaction in GnuCash.
+In GnuCash Android I I go to
+Liabilities: Tom's Visa
+Add transaction:
+What I need is "Expenses: Groceries". Why don't I find that?
+Is it a problem with just scrolling down the list? I can't scroll down.
+If I begin by going to
+"Expenses: Groceries"
+I still can't choose credit card
+Here I see many accounts but not the "Liabilities: Tom's Credit Card" that I'm looking for.
+I see:
+What do you think the problem is? I really want to get this working.
+I'm using two currencies, could that be what's messing this up?
+Two currencies now will cause problems now. Transactions involving multiple currencies is not supported yet, the when selecting a transfer account, the two account must have the same currency.
+If your "Expenses: Groceries" and Credit card account do not use the same currency, you will not be create transactions between them.
+Two currencies now will cause problems now. Transactions involving multiple currencies is not supported yet, the when selecting a transfer account, the two account must have the same currency.
+If your "Expenses: Groceries" and Credit card account do not use the same currency, you will not be create transactions between them.
+Okay, so my Expense Accounts are in USD. But I have a couple of bank accounts in ILS. My work around (which I'm trying) is to create an Expense Account in ILS named "_Fake ILS Expense". I want to move the transaction from my phone to my desktop. Once it's on the Desktop I can correct the expense account part.
+I created "_Fake ILS Expense" on GnuCash Desktop.
+Deleted all accounts on GnuCash Android.
+Exported GnuCash Desktop accounts as QIF
+Imported to GnuCash Android.
+Okay, so my Expense Accounts are in USD. But I have a couple of bank accounts in ILS. My work around (which I'm trying) is to create an Expense Account in ILS named "_Fake ILS Expense". I want to move the transaction from my phone to my desktop. Once it's on the Desktop I can correct the expense account part.
+I created "_Fake ILS Expense" on GnuCash Desktop.
+Deleted all accounts on GnuCash Android.
+Exported GnuCash Desktop accounts as QIF
+Imported to GnuCash Android.

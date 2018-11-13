@@ -1,0 +1,4 @@
+title:Ignore placeholder accounts
+
+codinguser
+When importing the account structure from the desktop version, placeholder accounts should be ignored, so that you don't accidentally add transactions to them. These would be illegal to import later on.

@@ -1,0 +1,10 @@
+title:Weekday is ignored in scheduled exports
+
+rivaldi8
+The export is done weekly on the day set in the recurrence (Thursday in the example).
+The export is done weekly, but on the weekday the scheduled export was created instead (Monday in the example).
+The problem is ScheduledActionService looks only at the elapsed time since the last export.
+@rivaldi8 Will this issue make it for 2.2.0 release?
+@rivaldi8 Will this issue make it for 2.2.0 release?
+I think so. I'll work on it this weekend.
+I think so. I'll work on it this weekend.

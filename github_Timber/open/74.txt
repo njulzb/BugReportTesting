@@ -1,0 +1,4 @@
+title:[Feature request] Long-press/double-tap volume buttons to trigger previous/next track
+
+I'm not sure if this is possible without rooting (I don't think it is), but I'm posting this on the off-chance that something maybe changed in Android 6.0 Marshmallow to allow this to finally happen without root.
+Otherwise, feel free to close the issue.

@@ -1,0 +1,4 @@
+Writing to external storage seems to fail, app handles this poorly
+Restart necessary when adding stations through pls download
+Adding / renaming stations during playback
+Certain OPUS streams do not show "artist - title" and stop playing on song change

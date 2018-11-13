@@ -1,0 +1,27 @@
+title:one last export date is saved for all books
+
+rivaldi8
+Last export date is saved per book.
+One last export date is saved for all books.
+I can't seem to reproduce the issue, I see each book with its export date. Also the code looks correct.
+You refer to the "since" date that appears in the export form, don't you? Which format are you exporting to? These books were created in a previous version of GnuCash or did you create them in the one you report?
+I can't seem to reproduce the issue, I see each book with its export date. Also the code looks correct.
+You refer to the "since" date that appears in the export form, don't you? Which format are you exporting to? These books were created in a previous version of GnuCash or did you create them in the one you report?
+You refer to the "since" date that appears in the export form, don't you?
+No. I just checked and that is ok. Sorry to be unclear about that.
+I refer to the "manage books" section that can be selected via the menu and the drop down for the books (last entry). All books are listed there together with the number of accounts and the number of transactions. The last line is the date of the last export and it is the same for all books.
+Which format are you exporting to?
+QIF
+These books were created in a previous version of GnuCash or did you create them in the one you report?
+They were created with the one I reported.
+You refer to the "since" date that appears in the export form, don't you?
+No. I just checked and that is ok. Sorry to be unclear about that.
+I refer to the "manage books" section that can be selected via the menu and the drop down for the books (last entry). All books are listed there together with the number of accounts and the number of transactions. The last line is the date of the last export and it is the same for all books.
+Which format are you exporting to?
+QIF
+These books were created in a previous version of GnuCash or did you create them in the one you report?
+They were created with the one I reported.
+Thanks for the clarification! I see the problem now :) I'll work on a fix.
+Thanks for the clarification! I see the problem now :) I'll work on a fix.
+Fixed in hotfix/patches. Will be included in version 2.1.3.
+Fixed in hotfix/patches. Will be included in version 2.1.3.

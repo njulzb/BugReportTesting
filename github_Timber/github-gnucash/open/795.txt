@@ -1,0 +1,4 @@
+title:Scheduled Exports: when, what time, do they take place?
+
+Exported file to appear in directory either at 00:00 on day or first use of gnucash-android after that time.
+Exported using same filename as original export. Wasn't expecting this because the default original filename includes a date-stamp, which is manifestly wrong on the subsequent export.

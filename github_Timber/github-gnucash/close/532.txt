@@ -1,0 +1,4 @@
+title:Selecting custom date range in reports causes the app to crash
+
+Open (any) reports section and select the spinner for custom date range.
+The app crashes.

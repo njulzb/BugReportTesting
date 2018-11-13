@@ -1,0 +1,4 @@
+title:Widget creation crashes opening accounts list
+
+I already sent a report a couple of days ago. Everytime I try to add a widget and opening the accounts list to select one the app crashes.
+Also the app is too slow on opening and navigating after the latest upgrade.

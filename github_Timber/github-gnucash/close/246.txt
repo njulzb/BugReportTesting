@@ -1,0 +1,47 @@
+title:Chekbox before transactions are hard to see
+
+The UI need to be improved, #196 and #244 are both issues about cannot find a way to delete a transaction.
+I concur. I just not have found an easy to make the checkbox more visible on all devices. Some have it, others show it very faint.
+I plan to add long-press option to select transactions. At least that's what a lot of users try out of habit. Just didn't make it in time for 1.5.0
+I concur. I just not have found an easy to make the checkbox more visible on all devices. Some have it, others show it very faint.
+I plan to add long-press option to select transactions. At least that's what a lot of users try out of habit. Just didn't make it in time for 1.5.0
+Long-press to select transactions has now been added from v1.5.2
+Long-press to select transactions has now been added from v1.5.2
+While trying to delete multiple accounts, I've found the UI only allow to select one. By looking at the code I've seen this limitation only applies to accounts (it's possible with transactions). Is there any problem in allowing to select multiple accounts?
+While trying to delete multiple accounts, I've found the UI only allow to select one. By looking at the code I've seen this limitation only applies to accounts (it's possible with transactions). Is there any problem in allowing to select multiple accounts?
+This was a decision I made earlier mostly because apart from deleting,
+there are really no other actions which (at the moment) can be applied to
+multiple accounts.
+And since deleting accounts is something we want to be done with caution
+anyways, it made sense to limit it to one account selection.
+This is even more true when using the new account delete dialog (in develop
+branch) to move sub-accounts, or transactions.
+On Wed, Apr 1, 2015 at 9:15 PM, Àlex Magaz Graça notifications@github.com
+wrote:
+While trying to delete multiple accounts, I've found the UI only allow to
+select one. By looking at the code I've seen this limitation only applies
+to accounts (it's possible with transactions). Is there any problem in
+allowing to select multiple accounts?
+—
+Reply to this email directly or view it on GitHub
+#246 (comment)
+.
+This was a decision I made earlier mostly because apart from deleting,
+there are really no other actions which (at the moment) can be applied to
+multiple accounts.
+And since deleting accounts is something we want to be done with caution
+anyways, it made sense to limit it to one account selection.
+This is even more true when using the new account delete dialog (in develop
+branch) to move sub-accounts, or transactions.
+On Wed, Apr 1, 2015 at 9:15 PM, Àlex Magaz Graça notifications@github.com
+wrote:
+While trying to delete multiple accounts, I've found the UI only allow to
+select one. By looking at the code I've seen this limitation only applies
+to accounts (it's possible with transactions). Is there any problem in
+allowing to select multiple accounts?
+—
+Reply to this email directly or view it on GitHub
+#246 (comment)
+.
+Ok, thanks for the clarification.
+Ok, thanks for the clarification.

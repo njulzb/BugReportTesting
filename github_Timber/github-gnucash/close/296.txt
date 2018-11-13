@@ -1,0 +1,4 @@
+title:Allow parallel installation of development and production APKs
+
+It would be nice to be able to install two GnuCash APKs. One for every day use and another for development.
+Gradle allows this by defining flavors with different package names.

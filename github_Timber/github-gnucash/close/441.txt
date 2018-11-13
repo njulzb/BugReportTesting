@@ -1,0 +1,5 @@
+title:IllegalArgumentException when deleting a scheduled export
+
+When a scheduled transaction is deleted, GnuCash fails with the following exception:
+It can be reproduced by adding a scheduled export with default options from the export dialog, then deleting it from the scheduled actions section.
+Reported through UserVoice.

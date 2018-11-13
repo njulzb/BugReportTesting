@@ -1,0 +1,45 @@
+Sign-in issue on Android 4.4.4
+error when link from chrome
+Application crashes when trying to access a non existing repository
+java.lang.NullPointerException Attempt to invoke virtual method 'boolean java.lang.Boolean.booleanValue()'
+Can't see issues created in 3rd party repos
+Unable to load list of branches and unable to switch to other branches
+Editing of comments broken
+Commenting on commits crashes
+scala file not parsed
+Not able to press the post comments button (minor bug)
+Inner task in fragment might cause memory leak
+Labels are not shown in pull requests
+Code viewer regression
+Material Tab's Title Inconsistencies
+Can't close tickets I opened
+Can't login after password change: 'please enter a valid login & password'
+Only show issue admin UI when appropriate
+V1.7 avatars bug
+Hardware keyboard doesn't work in issue comment box
+Issue not updating
+Comment preview not updating
+Repositories starting with numbers are not listed
+Fails to package with OS X 10.8 / Java 7
+When browsing code files are shown as empty
+Source code cut offBuild Error
+When I add an Account, then delete it and then add another account, the old account is used an throw Error 500
+Wrong text formatting
+Account Management
+Verify email address when set to default GitHub URL handler
+Can't select the "logged in user" in follower and followed list
+App wants to open non-repository links
+Detect "failed" logins and/or add "Logout" button
+Gist horizontal scrolling not working
+keyboard input lacks capitalisation
+Unavailable actions are shown all over the place
+Hit Targets For Secondary Navigation Too Small
+Use upstream of Android Maven Plugin
+Consistent Navigation
+crash on startup if hubdroid is installed
+Bookmark icon #fail
+Wont scroll left and right in Gist view
+crash after adding issue
+can't load repository list
+handle repositories with issues disabled better
+reliable crash on some repositories

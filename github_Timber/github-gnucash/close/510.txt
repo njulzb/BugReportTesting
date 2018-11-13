@@ -1,0 +1,137 @@
+title:Crash on export with Xiaomi5
+
+I'm using 2.0.3 at the moment, with a new install.
+logcat displays the following:
+/data/user/0/org.gnucash.android/cache/OFX/20160621_183543_gnucash_export.ofx: open failed: ENOENT (No such file or directory)
+The odd thing is that on first ever export, gnucash-android created the export folder where expected, just next to the backup folder in /sdcard/org.gnucash.android/ but apparently was not able to create the file in it.
+Any idea on how to change this folder?
+No, the problem is not access to the export folder on your SD card. The problem seems to be with the generation of the export file on the internal storage (before it is copied to external SD card).
+@rivaldi8 this might be up your alley? Have you seen this error before?
+No, the problem is not access to the export folder on your SD card. The problem seems to be with the generation of the export file on the internal storage (before it is copied to external SD card).
+@rivaldi8 this might be up your alley? Have you seen this error before?
+@codinguser Yes, this looks like #448.
+@nodje Upgrading to the latest version should fix the problem. Could you upgrade and check if it's fixed?
+@codinguser Yes, this looks like #448.
+@nodje Upgrading to the latest version should fix the problem. Could you upgrade and check if it's fixed?
+@rivaldi8 I was trying to build from source but got a problem.
+A problem occurred configuring project ':app'. > Could not find actionbarsherlock.aar (com.actionbarsherlock:actionbarsherlock:4.4.0)
+I don't know why I can't get this lib, maybe it has to do with my repository config. I guess this should be available from the std Maven repo, isn't it?
+I'll try with 2.0.7 otherwise (I don't use Google Play and F-Droid doesn't seem to propose gnucash-android anymore, which makes it a bit difficult to get the latest app)
+@rivaldi8 I was trying to build from source but got a problem.
+A problem occurred configuring project ':app'. > Could not find actionbarsherlock.aar (com.actionbarsherlock:actionbarsherlock:4.4.0)
+I don't know why I can't get this lib, maybe it has to do with my repository config. I guess this should be available from the std Maven repo, isn't it?
+I'll try with 2.0.7 otherwise (I don't use Google Play and F-Droid doesn't seem to propose gnucash-android anymore, which makes it a bit difficult to get the latest app)
+@nodje hmm, that's a weird error, since @rivaldi8 removed our dependency on actionbarsherlock a while back.
+@nodje hmm, that's a weird error, since @rivaldi8 removed our dependency on actionbarsherlock a while back.
+I close the bug since it's working with 2.0.7. Sorry about that btw, I should  have checked before posting the issue.
+Just curious about why gnucash-android is not available on F-Droid repo anymore?
+(And sorry with the confusion, I mistakenly checkout an older version for tag 2.0.7 no actionbarsherlock problem...)
+I close the bug since it's working with 2.0.7. Sorry about that btw, I should  have checked before posting the issue.
+Just curious about why gnucash-android is not available on F-Droid repo anymore?
+(And sorry with the confusion, I mistakenly checkout an older version for tag 2.0.7 no actionbarsherlock problem...)
+@nodje Don't worry, it happens to me all the time :)
+The application isn't in F-Droid because of some non-free dependencies. See #435 for more details.
+@nodje Don't worry, it happens to me all the time :)
+The application isn't in F-Droid because of some non-free dependencies. See #435 for more details.
+👍 got it
+👍 got it
+@nodje if you are not interested in running the tests, skip the build
+command and run only gradle installDevelopmentDebug
+A quick googling suggests that the error occurs if you try to run the build
+offline. Was this the case with yours?
+On Thu, Jun 23, 2016 at 7:29 PM, nodje notifications@github.com wrote:
+I'm sorry to abuse this issue, but as it is closed and as you're being
+very nice & friendly, I dare ask an unrelated question regarding a build
+problem:
+I'm trying to build the master branch. The only changes are gradle and
+the Android Studio gradle plugins which have been updated to latest
+version.
+I seem to have problem passing the tests when running gradle build
+installDevelopmentDebug for reasons that are beyond my understanding
+:app:testBetaDebugUnitTest
+org.gnucash.android.test.unit.db.AccountsDbAdapterTest > shouldClearAllTablesWhenDeletingAllAccounts FAILED
+org.apache.tools.ant.BuildException
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException
+org.gnucash.android.test.unit.db.AccountsDbAdapterTest > shouldGetDescendantAccounts FAILED
+org.apache.tools.ant.BuildException
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException
+Building 82% > :app:testBetaDebugUnitTest > 2 tests completed, 2 failed[1]  + 99064 done       ./tools/android
+org.gnucash.android.test.unit.db.AccountsDbAdapterTest > shouldRecursivelyDeleteAccount FAILED
+org.apache.tools.ant.BuildException
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException
+org.gnucash.android.test.unit.db.AccountsDbAdapterTest > simpleAccountListShouldNotContainTransactions FAILED
+org.apache.tools.ant.BuildException
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException
+74 tests completed, 4 failed
+:app:testBetaDebugUnitTest FAILED
+FAILURE: Build failed with an exception.
+What went wrong:
+Execution failed for task ':app:testBetaDebugUnitTest'.
+A build operation failed.
+Could not write XML test results for org.gnucash.android.test.unit.db.AccountsDbAdapterTest to file /Users/nodje/Documents/project/fork/gnucash-android/app/build/test-results/betaDebug/TEST-org.gnucash.android.test.unit.db.AccountsDbAdapterTest.xml.
+Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+BUILD FAILED
+And it takes forever for each test to fail. Any quick idea on what could
+cause this?
+—
+You are receiving this because you were mentioned.
+Reply to this email directly, view it on GitHub
+#510 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe/AAQ424L-UUPBC0H6uo-DTglI89Y4HWE4ks5qOsKIgaJpZM4I68IK
+.
+@nodje if you are not interested in running the tests, skip the build
+command and run only gradle installDevelopmentDebug
+A quick googling suggests that the error occurs if you try to run the build
+offline. Was this the case with yours?
+On Thu, Jun 23, 2016 at 7:29 PM, nodje notifications@github.com wrote:
+I'm sorry to abuse this issue, but as it is closed and as you're being
+very nice & friendly, I dare ask an unrelated question regarding a build
+problem:
+I'm trying to build the master branch. The only changes are gradle and
+the Android Studio gradle plugins which have been updated to latest
+version.
+I seem to have problem passing the tests when running gradle build
+installDevelopmentDebug for reasons that are beyond my understanding
+:app:testBetaDebugUnitTest
+org.gnucash.android.test.unit.db.AccountsDbAdapterTest > shouldClearAllTablesWhenDeletingAllAccounts FAILED
+org.apache.tools.ant.BuildException
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException
+org.gnucash.android.test.unit.db.AccountsDbAdapterTest > shouldGetDescendantAccounts FAILED
+org.apache.tools.ant.BuildException
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException
+Building 82% > :app:testBetaDebugUnitTest > 2 tests completed, 2 failed[1]  + 99064 done       ./tools/android
+org.gnucash.android.test.unit.db.AccountsDbAdapterTest > shouldRecursivelyDeleteAccount FAILED
+org.apache.tools.ant.BuildException
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException
+org.gnucash.android.test.unit.db.AccountsDbAdapterTest > simpleAccountListShouldNotContainTransactions FAILED
+org.apache.tools.ant.BuildException
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException
+74 tests completed, 4 failed
+:app:testBetaDebugUnitTest FAILED
+FAILURE: Build failed with an exception.
+What went wrong:
+Execution failed for task ':app:testBetaDebugUnitTest'.
+A build operation failed.
+Could not write XML test results for org.gnucash.android.test.unit.db.AccountsDbAdapterTest to file /Users/nodje/Documents/project/fork/gnucash-android/app/build/test-results/betaDebug/TEST-org.gnucash.android.test.unit.db.AccountsDbAdapterTest.xml.
+Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+BUILD FAILED
+And it takes forever for each test to fail. Any quick idea on what could
+cause this?
+—
+You are receiving this because you were mentioned.
+Reply to this email directly, view it on GitHub
+#510 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe/AAQ424L-UUPBC0H6uo-DTglI89Y4HWE4ks5qOsKIgaJpZM4I68IK
+.
+Thanks for answering. I don't know what happened, maybe a temporary loss of connection. In any case it didn't work for a few times then suddenly started working. Then I used -x test to get rid of test, but gradle installDevelopmentDebug is even simpler.
+But I've never been able to deploy the dev version on my phone alongside 2.0.7. I always get this error, for which I haven't found a solution for online.
+Installing APK 'GnucashAndroid_v2.0.7-dev2_rc427f21.apk' on 'MI 5 - 6.0' for app:developmentDebug Unable to install /Users/nodje/Documents/project/gnucash-android/app/build/outputs/apk/GnucashAndroid_v2.0.7-dev2_rc427f21.apk com.android.ddmlib.InstallException: Failed to establish session
+I can see my device with adb devices though.
+Thanks for answering. I don't know what happened, maybe a temporary loss of connection. In any case it didn't work for a few times then suddenly started working. Then I used -x test to get rid of test, but gradle installDevelopmentDebug is even simpler.
+But I've never been able to deploy the dev version on my phone alongside 2.0.7. I always get this error, for which I haven't found a solution for online.
+Installing APK 'GnucashAndroid_v2.0.7-dev2_rc427f21.apk' on 'MI 5 - 6.0' for app:developmentDebug Unable to install /Users/nodje/Documents/project/gnucash-android/app/build/outputs/apk/GnucashAndroid_v2.0.7-dev2_rc427f21.apk com.android.ddmlib.InstallException: Failed to establish session
+I can see my device with adb devices though.

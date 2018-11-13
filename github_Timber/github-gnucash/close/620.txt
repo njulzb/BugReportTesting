@@ -1,0 +1,7 @@
+title:When an account is edited, its color is lost
+
+rivaldi8
+The color of the account remains the same.
+The color is unset.
+Fixed in hotfix/patches.
+Fixed in hotfix/patches.

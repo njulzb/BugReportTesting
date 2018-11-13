@@ -1,0 +1,4 @@
+title:App crashes on export after previously opening files which included mutual fund accounts
+
+A QIF file is created per currency.
+App crashes, no files are exported.

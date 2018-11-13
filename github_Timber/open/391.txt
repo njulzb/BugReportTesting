@@ -1,0 +1,15 @@
+title:Bug on Timber Music Player - Force close when login lastFM in the app Timber Music Player
+
+Project Information
+Repository: github
+Project Name: Timber Music Player
+Expected behavior
+Supposedly after I login LastFM in Timber Music Player application will open the next view and automatically work properly.
+Actual behavior
+After I click Login to LastFM suddenly the application is not running properly and the forced closure. this is certainly an unknown constraint.
+How to reproduce
+Browser: Timber Music Player (1.6)
+Operating system: Android 4.4
+Smartphone : Himax polymer
+Recording Of The Bug
+https://www.youtube.com/watch?v=dB56McxNaXU

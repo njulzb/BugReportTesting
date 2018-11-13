@@ -1,0 +1,21 @@
+title:Provide pure floss build flavor
+
+Crashlytics has recently been added (#217). This is non-free software and we at f-droid cannot build further versions. Could you provide a pure gradle vuld flavor that does not use non-free software?
+Hi, I have pushed a new branch (f-droid) that doesn't have crashlytics.
+Let me know if its fine or if something else is required.
+Hi, I have pushed a new branch (f-droid) that doesn't have crashlytics.
+Let me know if its fine or if something else is required.
+If that's easier to maintain for you, I am fine with that. https://gitlab.com/fdroid/fdroiddata/commit/3be232f9bd7331309743934b304a496773ddd55f should build tonight. Thanks for the quick fix.
+If that's easier to maintain for you, I am fine with that. https://gitlab.com/fdroid/fdroiddata/commit/3be232f9bd7331309743934b304a496773ddd55f should build tonight. Thanks for the quick fix.
+@krt16s There were some crashes on the previous version which I have fixed now. Can you please initiate the latest build process for f-droid.
+Thanks
+@krt16s There were some crashes on the previous version which I have fixed now. Can you please initiate the latest build process for f-droid.
+Thanks
+I don't see any new commits in the f-droid branch, 0.2b (14) is build from 3406f4e which is still the latest commit there.
+I don't see any new commits in the f-droid branch, 0.2b (14) is build from 3406f4e which is still the latest commit there.
+Sorry, just checked the commit history on Gitlab and the update to 14(0.2b) is there, but the repository page on f-droid has v13 currently (https://f-droid.org/repository/browse/?fdfilter=Timber&fdid=naman14.timber)
+Sorry, just checked the commit history on Gitlab and the update to 14(0.2b) is there, but the repository page on f-droid has v13 currently (https://f-droid.org/repository/browse/?fdfilter=Timber&fdid=naman14.timber)
+It's already build, see https://f-droid.org/wiki/page/naman14.timber, just waiting for publishing. Should be fixed in a couple of hours.
+It's already build, see https://f-droid.org/wiki/page/naman14.timber, just waiting for publishing. Should be fixed in a couple of hours.
+Okay, thanks
+Okay, thanks

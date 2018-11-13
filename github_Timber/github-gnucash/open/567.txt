@@ -1,0 +1,55 @@
+title:Adapt GnuCash Android database schema to match desktop
+
+codinguser
+This would allow for some interesting levels of interoperability.
+Desktop schema can be found here: http://wiki.gnucash.org/wiki/SQL
+This needs a lot more time to make work reliably.
+Might break some stuff, so push to major release
+This needs a lot more time to make work reliably.
+Might break some stuff, so push to major release
+Are you sure about this? Won't it complicate the database access code? Schema changes between desktop versions, schema differences between desktop and Android, SQLite features not available in our supported devices...
+Are you sure about this? Won't it complicate the database access code? Schema changes between desktop versions, schema differences between desktop and Android, SQLite features not available in our supported devices...
+I think its worth a shot. It will greatly improve our sync story as we seek to get closer to GnuCash desktop / offer a fuller GnuCash experience on Android.
+The points you raise are very valid issues we'll have to deal with:
+All in all, I think it will be worth it. GnuCash Android will then be able to open any .gnucash files, regardless if they are XML or SQLite and also keep them in sync. This will also be the getaway to eventually supporting some more advanced features. Given that many people's primary computing experience will be on a mobile device (and even Chromebooks now support Android apps), I think this might be a worthwhile investment.
+What do you think?
+I think its worth a shot. It will greatly improve our sync story as we seek to get closer to GnuCash desktop / offer a fuller GnuCash experience on Android.
+The points you raise are very valid issues we'll have to deal with:
+All in all, I think it will be worth it. GnuCash Android will then be able to open any .gnucash files, regardless if they are XML or SQLite and also keep them in sync. This will also be the getaway to eventually supporting some more advanced features. Given that many people's primary computing experience will be on a mobile device (and even Chromebooks now support Android apps), I think this might be a worthwhile investment.
+What do you think?
+I think this is perfect, and eliminates one of the pain points of having two separate apps, which is syncing transactions between them.
+My current workflow is exporting to qif since the last export, import on Linux, add more changes and import it back on Android.
+I think this is perfect, and eliminates one of the pain points of having two separate apps, which is syncing transactions between them.
+My current workflow is exporting to qif since the last export, import on Linux, add more changes and import it back on Android.
+@codinguser Ok, I had some database changes in mind, so I wanted to be sure you wanted to go ahead with this. I don't have much experience with databases, so I'll trust you :) I'll have a deeper look at the desktop schema then.
+@codinguser Ok, I had some database changes in mind, so I wanted to be sure you wanted to go ahead with this. I don't have much experience with databases, so I'll trust you :) I'll have a deeper look at the desktop schema then.
+@rivaldi8 Right now I would just like to finish with v2.2.0 and then I think we can put everything else on hold on only work on this db change. I would like us to implement and thoroughly test the migration so that as much as possible, users don't even notice such a big change under the hood.
+For most of the new db tables I added after the basic transactions and accounts, I tried to follow the schema of the desktop. So a lot of stuff is already in place. We will need to move out some extras (like favourite accounts etc) to the slots table. And then comes the fun of SQL joins and views...
+@rivaldi8 Right now I would just like to finish with v2.2.0 and then I think we can put everything else on hold on only work on this db change. I would like us to implement and thoroughly test the migration so that as much as possible, users don't even notice such a big change under the hood.
+For most of the new db tables I added after the basic transactions and accounts, I tried to follow the schema of the desktop. So a lot of stuff is already in place. We will need to move out some extras (like favourite accounts etc) to the slots table. And then comes the fun of SQL joins and views...
+@codinguser This would be fantastic!
+Also, regardless of the DB schema, it would be very helpful if it could (optionally) use an SQLite file that's outside of the application context. That would let me script up some synchronization/reporting things right away.
+Thanks for all your work!
+@codinguser This would be fantastic!
+Also, regardless of the DB schema, it would be very helpful if it could (optionally) use an SQLite file that's outside of the application context. That would let me script up some synchronization/reporting things right away.
+Thanks for all your work!
+@chrisberkhout you could script them for the app and then everyone would benefit ;)
+@chrisberkhout you could script them for the app and then everyone would benefit ;)
+Honestly, I see no reason not to utilise the "desktop" database. The current phones/tablets probably have as much power (or more) as the PCs when GnuCash was starting and the line is getting blurrier by the day.
+This leads to a conclusion that there is no reason for a mismatch in functionality between the applications. And this goes for all the single-user apps out there. So here's my vote for it.
+If you would utilise the SQLite User Version field, the migrations would be fairly simple both on the desktop and in the mobile environment.
+Honestly, I see no reason not to utilise the "desktop" database. The current phones/tablets probably have as much power (or more) as the PCs when GnuCash was starting and the line is getting blurrier by the day.
+This leads to a conclusion that there is no reason for a mismatch in functionality between the applications. And this goes for all the single-user apps out there. So here's my vote for it.
+If you would utilise the SQLite User Version field, the migrations would be fairly simple both on the desktop and in the mobile environment.
+Thinking along #736, I am considering @chrisberkhout 's approach of creating a separate app that reads the database and allows building Asset Allocation around it. Having access to the database file would be required, in that case.
+Edit: As a matter of fact, this is now implemented here. Requires a GnuCash database in SQLite format.
+Thinking along #736, I am considering @chrisberkhout 's approach of creating a separate app that reads the database and allows building Asset Allocation around it. Having access to the database file would be required, in that case.
+Edit: As a matter of fact, this is now implemented here. Requires a GnuCash database in SQLite format.
+Any updates on this?
+Any updates on this?
+@dkbast It will take some time. But I do push progress from time to time here:
+https://github.com/codinguser/gnucash-android/tree/horizon/v3.0
+@dkbast It will take some time. But I do push progress from time to time here:
+https://github.com/codinguser/gnucash-android/tree/horizon/v3.0
+Once the same db file is used as for the desktop app, the android app should watch for changes and merge them automatically (e.g. as Keepass2Android does). This might require a syncing functionality within the android app rather than by external application (like FolderSync).
+Once the same db file is used as for the desktop app, the android app should watch for changes and merge them automatically (e.g. as Keepass2Android does). This might require a syncing functionality within the android app rather than by external application (like FolderSync).

@@ -1,0 +1,9 @@
+title:Scheduled exports are always executed twice a day
+
+Scheduled exports are executed according to the frequency set (daily, weekly...).
+Scheduled exports are always executed twice a day, independently of the actual frequency set.
+Every day from now on, transactions will be exported instead of once per week on Mondays.
+I'm working on a fix.
+I'm working on a fix.
+Fixed in hotfix/patches.
+Fixed in hotfix/patches.

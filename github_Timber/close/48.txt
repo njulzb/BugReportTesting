@@ -1,0 +1,7 @@
+title:add option to pause when unplugging headphones
+
+Would be nice to have
+Timber already has this integrated, see #39.
+Timber already has this integrated, see #39.
+Still not released, right? Because there is no option nor does it work
+Still not released, right? Because there is no option nor does it work

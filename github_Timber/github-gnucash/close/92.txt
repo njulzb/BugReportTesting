@@ -1,0 +1,7 @@
+title:Slow performance for loading deeply nested accounts
+
+codinguser
+If the "Common accounts" structure from GnuCash for desktop is imported, the performance for opening activities becomes painfully slow.
+Find ways to optimize the performance
+Fixed in 847e1c8
+Fixed in 847e1c8

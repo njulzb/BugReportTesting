@@ -1,0 +1,57 @@
+title:Do not export opening balances
+
+No description provided.
+@fefe982 could you look into this as well?
+@fefe982 could you look into this as well?
+OK. But first we should decide how to handle this issue.
+The strategy I prefer would be that we do not provide the option to choose whether the opening balance is exported. But, when we export NEW transactions, opening balances is not exported. But if we export ALL transactions, opening balances will be exported.
+Another choice would be add a check-box on the export confirm dialog (do we have something like this?) for the user to choose whether the opening balances should be exported.
+A tweak on the db may be needed depending on the strategy.
+btw, just for memo: When opening balance is not exported, and keep opening balance is chosen, the open balance should merge with new one. I cannot remember how it is handled now.
+OK. But first we should decide how to handle this issue.
+The strategy I prefer would be that we do not provide the option to choose whether the opening balance is exported. But, when we export NEW transactions, opening balances is not exported. But if we export ALL transactions, opening balances will be exported.
+Another choice would be add a check-box on the export confirm dialog (do we have something like this?) for the user to choose whether the opening balances should be exported.
+A tweak on the db may be needed depending on the strategy.
+btw, just for memo: When opening balance is not exported, and keep opening balance is chosen, the open balance should merge with new one. I cannot remember how it is handled now.
+I would also prefer not to provide an option. When NEW transactions are exported, no opening balances are exported; when ALL transactions are exported, then the opening balances go along for the ride.
+Something similar should be done for deleting transactions. When deleting after export, we should not delete opening balances. When deleting ALL transactions (from Settings->Transactions) then everything goes away.
+I would also prefer not to provide an option. When NEW transactions are exported, no opening balances are exported; when ALL transactions are exported, then the opening balances go along for the ride.
+Something similar should be done for deleting transactions. When deleting after export, we should not delete opening balances. When deleting ALL transactions (from Settings->Transactions) then everything goes away.
+I see that new open balance transactions are already marked as "exported" on creation, so they automatically match the criterion. They would not be exported when exporting NEW, but will be exported when exporting ALL.
+I see that new open balance transactions are already marked as "exported" on creation, so they automatically match the criterion. They would not be exported when exporting NEW, but will be exported when exporting ALL.
+Oh, good then!
+Just a future thought, you suggested once that we could export based on timestamp. So I added the automatic timestamps to the database which we could use for that purpose.
+I was thinking that maybe we could get rid of the exported flag and then just always export everything modified (modified_at timestamp) since the last export (or from a user defined date).
+However, how would we handle the opening balances in that scenario? If there is no export flag, then they will be exported at least once, which is not desirable.
+Or maybe we keep the export flag around.
+What do you think?
+On 28.03.2015, at 10:43, Yongxin Wang notifications@github.com wrote:
+I see that new open balance transactions are already marked as "exported" on creation, so they automatically match the criterion. They would not be exported when exporting NEW, but will be exported when exporting ALL.
+—
+Reply to this email directly or view it on GitHub.
+Oh, good then!
+Just a future thought, you suggested once that we could export based on timestamp. So I added the automatic timestamps to the database which we could use for that purpose.
+I was thinking that maybe we could get rid of the exported flag and then just always export everything modified (modified_at timestamp) since the last export (or from a user defined date).
+However, how would we handle the opening balances in that scenario? If there is no export flag, then they will be exported at least once, which is not desirable.
+Or maybe we keep the export flag around.
+What do you think?
+On 28.03.2015, at 10:43, Yongxin Wang notifications@github.com wrote:
+I see that new open balance transactions are already marked as "exported" on creation, so they automatically match the criterion. They would not be exported when exporting NEW, but will be exported when exporting ALL.
+—
+Reply to this email directly or view it on GitHub.
+I must take a look at the logic of modified_at timestamp to be sure.
+For now, I think the timestamp can be set to special values (0 or -1) for special DB records. That would be easy to check, and seldom falls into any range.
+I must take a look at the logic of modified_at timestamp to be sure.
+For now, I think the timestamp can be set to special values (0 or -1) for special DB records. That would be easy to check, and seldom falls into any range.
+The modified_at timestamp is updated using a database trigger. So it is all done inside the database and not in the code.
+On 28.03.2015, at 14:12, Yongxin Wang notifications@github.com wrote:
+I must take a look at the logic of modified_at timestamp to be sure.
+For now, I think the timestamp can be set to special values (0 or -1) for special DB records. That would be easy to check, and seldom falls into any range.
+—
+Reply to this email directly or view it on GitHub.
+The modified_at timestamp is updated using a database trigger. So it is all done inside the database and not in the code.
+On 28.03.2015, at 14:12, Yongxin Wang notifications@github.com wrote:
+I must take a look at the logic of modified_at timestamp to be sure.
+For now, I think the timestamp can be set to special values (0 or -1) for special DB records. That would be easy to check, and seldom falls into any range.
+—
+Reply to this email directly or view it on GitHub.

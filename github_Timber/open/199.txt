@@ -1,0 +1,5 @@
+title:Album art zoomed in when playing individual track
+
+Go to Albums and select an album.  You see cover art displayed properly.  Then play one of the tracks.  The cover art gets zoomed in and is too big for the screen.
+I always thought of this as a design choice, and I personally like it. I can see how it can ruin certain cover images though, an option would be optimal.
+I always thought of this as a design choice, and I personally like it. I can see how it can ruin certain cover images though, an option would be optimal.

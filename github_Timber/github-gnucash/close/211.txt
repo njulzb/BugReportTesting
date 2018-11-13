@@ -1,0 +1,30 @@
+title:Some thought on DB.
+
+Now the join :
+transactions , splits ON transactions.uid = splits.transaction_uid , accounts ON accounts.uid = splits.account_uid
+is used a lot. What about creating a VIEW on this? The duplicate column name may cause some problems though ...
+I may try to play with a temporary view first.
+With FOREIGN KEY constraint, which already exists in the DB, ON DELETE CASCADE can be add to the FOREIGN EKY constraint, so that when the parent key is deleted, the row referencing the key is also delete. This will save some work when deleting Accounts/Transactions, as the splits get deleted automatically.
+This would result in unbalanced transactions. The current App does enforce the transactions to be balanced, and a lot operation will result in unbalanced transactions.
+With ON DELETE CASCADE, we must be careful not to delete account/transaction first if splits are meant to be kept. Their account_id and transaction_id must be set to other appropriate values before deleting the account/transactions.
+According to this, ON DELETE CASCADE should work from Android 2.2 , which is API level 8.
+For foreign key, seems that only adding it to create table is not enough. It has to explicitly enabled. See here. As the result of not honoring the foreign key constraint, we got issue #191 , as the account uid in split referenced an non-existent account.If foreign key is enforced, insertion of the split should fail, maybe throwing an exception.
+For foreign key, seems that only adding it to create table is not enough. It has to explicitly enabled. See here. As the result of not honoring the foreign key constraint, we got issue #191 , as the account uid in split referenced an non-existent account.If foreign key is enforced, insertion of the split should fail, maybe throwing an exception.
+Thanks for catching that. The foreign key will need to be enabled in the next database migration.
+Yes, care must be taken not to delete only one end of the split and have unbalanced transactions.
+Thanks for catching that. The foreign key will need to be enabled in the next database migration.
+Yes, care must be taken not to delete only one end of the split and have unbalanced transactions.
+Foreign keys have been enabled and "on delete cascade" added to the database where appropriate.
+For transactions, it is easy, whenever they are deleted, all their splits go along.
+For accounts, there is an updated account delete dialog which will offer the option to reassign the splits. And even if the user chooses only to delete, the splits will be re-assigned to an imbalance account before the account is deleted. So no unbalanced transactions should result.
+@fefe982 I think you already added a VIEW to the db, right? So can we close this issue?
+Foreign keys have been enabled and "on delete cascade" added to the database where appropriate.
+For transactions, it is easy, whenever they are deleted, all their splits go along.
+For accounts, there is an updated account delete dialog which will offer the option to reassign the splits. And even if the user chooses only to delete, the splits will be re-assigned to an imbalance account before the account is deleted. So no unbalanced transactions should result.
+@fefe982 I think you already added a VIEW to the db, right? So can we close this issue?
+There's one thing I'm thinking about this, what would happen if all splits of a transaction is moved to Imbalance account? Should the account be deleted in that case?
+btw, does the imbalance account has a special attribute? Or it only identified by name? If the Imbalanced account is identified only name, I would prefer not to do anything to the transactions with only splits in Imbalance for now, and the issue can be closed.
+There's one thing I'm thinking about this, what would happen if all splits of a transaction is moved to Imbalance account? Should the account be deleted in that case?
+btw, does the imbalance account has a special attribute? Or it only identified by name? If the Imbalanced account is identified only name, I would prefer not to do anything to the transactions with only splits in Imbalance for now, and the issue can be closed.
+Imbalance accounts have no special attribute, just like in GnuCash desktop. At the moment, we don't delete transactions when all it's splits are assigned to imbalance accounts. We could do so easily, I can add a fix for that. At the moment, the splits just add up to 0 anyway, so there is nothing to notice in the account balance.
+Imbalance accounts have no special attribute, just like in GnuCash desktop. At the moment, we don't delete transactions when all it's splits are assigned to imbalance accounts. We could do so easily, I can add a fix for that. At the moment, the splits just add up to 0 anyway, so there is nothing to notice in the account balance.

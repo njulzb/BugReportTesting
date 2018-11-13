@@ -1,0 +1,4 @@
+title:Editing accounts
+
+Each time I edit an account eg to change the title, all transactions against that account are deleted.  The other side of the transaction remains but an imbalance doesn't appear. Something ain't working properly here. Any suggestions?
+Peter

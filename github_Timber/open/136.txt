@@ -1,0 +1,5 @@
+title:Why the music service is not destroyed by the system when the user exits the app?
+
+Hello, your player is great! Thanks for it.
+But I looked at MusicClass.java and i can't understand one thing.
+When the user start playing some track and  exits the app the system doesn't destroy the service as it is launched in foreground mode. But when the user pauses the audio (from notification, the app is closed) the service is still alive. Is this happens because the service is launched in a separate thread?

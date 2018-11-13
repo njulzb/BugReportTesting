@@ -1,0 +1,5 @@
+title:Notification widget out of sync
+
+When skipping a track using the controls in the notification widget the widget skips 2 tracks while the player correctly only skips to the next track.
+Yes, I confirm this, very annoying.
+Yes, I confirm this, very annoying.

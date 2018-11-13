@@ -1,0 +1,25 @@
+timers on the hosts list
+Possible Memory Leak
+Scrolling is broken
+Terminal gets covered by keyboard
+Tries only the first IP address when connecting
+Cannot access context menu on Android 4.2.2 Jellybean on Samsung Galaxy Tab 3 10.1
+Use SSH agent option not saved since last update
+Show keyboard overwrite console history
+F keys don't work
+Latest develop breaks certain Alt-{letter} keys
+Menu overlay redrawing broken with altscreen
+Sometimes gets stuck forcing a particular profile on re-foregrounding
+Pubkey authentication fails on Ubuntu servers
+Intermittent "Key exchange was not finished, connection is closed."
+Function keys on BT keyboard not working
+Crash while disconnecting (unable to reproduce)
+Bluetooth keyboard doesn't work with Samsung S5
+Running commands-on-connect via local shell only sometimes works
+Impossible to add port forwarding to a non-database connection
+Sometimes the terminal gets stuck on the last line
+ECDSA host identification errors after 1.8.2 release
+ConnectBot isn't consistent with UNIX telnet client
+Cannot type at first with swiftkey
+Connectbot keeps trying to connect although no more authentication methods available.
+Stuck at Verified host 'RSA' key: xxxxxxxxSlow operations in UI thread

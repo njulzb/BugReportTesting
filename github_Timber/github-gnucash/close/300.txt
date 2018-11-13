@@ -1,0 +1,9 @@
+title:Account balance should show real-time balance (and ignore future transactions)
+
+Some transactions may be saved with a timestamp in the future. These should be ignored when computing the account balance. The transaction timestamp is set by the user.
+There are always the created_at and modified_at timestamps in the db (develop) which we can lookup for other purposes.
+@fefe982 could you look into this? Thanks
+OK. No problem.
+OK. No problem.
+Fixed in f606399
+Fixed in f606399

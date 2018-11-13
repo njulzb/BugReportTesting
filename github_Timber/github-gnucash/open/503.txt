@@ -1,0 +1,50 @@
+title:Feature request: take pictures
+
+Sometimes I would like to take a picture of bills but no way to do it now.
+Could be interesting to implement it.
+Imagine if they could be OCRd too... whistles
+Imagine if they could be OCRd too... whistles
+To motivate development of this, I have set up a bounty for this feature. Open to anyone who can accomplish the task. Feel free to sweeten the offer if you care to.
+To motivate development of this, I have set up a bounty for this feature. Open to anyone who can accomplish the task. Feel free to sweeten the offer if you care to.
+It would indeed be nice to take a picture of bills. Of course you would still have to manually enter the transaction details in GnuCash, and when you sync with desktop, the images will be ignored. But apart from that, it could work.
+@bugmenot2 OCR is almost completely out of the question.
+It would indeed be nice to take a picture of bills. Of course you would still have to manually enter the transaction details in GnuCash, and when you sync with desktop, the images will be ignored. But apart from that, it could work.
+@bugmenot2 OCR is almost completely out of the question.
+If you do keep a long-term feature wishlist for the project somewhere, I suggest adding the concept of GnuCashAndroid OCR on image capturing to it, in case someone decides to make that happen, or if tools become available in the future to do that more easily - it may sound like a long shot now, but it will not hurt to have such long term goals being noted officially as goals by the project. With enough development effort, it should be technically possible to somehow convert some graphic information to text for transaction entry. I have a business card scanner with some proprietary Chinese software that does that with reasonable success.
+Regarding the first (hopefully attainable task) of doing image capture and transfer - I suggest consideration of accomplishing the transfer for sync of file attachments from GnuCashAndroid to a Gnucash thus:
+If you do keep a long-term feature wishlist for the project somewhere, I suggest adding the concept of GnuCashAndroid OCR on image capturing to it, in case someone decides to make that happen, or if tools become available in the future to do that more easily - it may sound like a long shot now, but it will not hurt to have such long term goals being noted officially as goals by the project. With enough development effort, it should be technically possible to somehow convert some graphic information to text for transaction entry. I have a business card scanner with some proprietary Chinese software that does that with reasonable success.
+Regarding the first (hopefully attainable task) of doing image capture and transfer - I suggest consideration of accomplishing the transfer for sync of file attachments from GnuCashAndroid to a Gnucash thus:
+Regarding item No. 2 above and some continuity with bugzilla. A Gnucash relative path enhancement request exists.
+https://bugzilla.gnome.org/show_bug.cgi?id=767773
+Regarding item No. 2 above and some continuity with bugzilla. A Gnucash relative path enhancement request exists.
+https://bugzilla.gnome.org/show_bug.cgi?id=767773
+Following up this discussion, as I am planning on getting it going, No.2 has been implemented, but looks like it'll only be available by late spring of 2017 with release 2.7. This makes things difficult.
+Following up this discussion, as I am planning on getting it going, No.2 has been implemented, but looks like it'll only be available by late spring of 2017 with release 2.7. This makes things difficult.
+@gabrielsimoes good to hear that you're looking into getting this off the ground.
+I would suggest writing out your plan for the feature and how it will impact other parts of the system so that it can be discussed and you get input before starting work.
+Off the top of my head, topics like:
+And much more...
+@gabrielsimoes good to hear that you're looking into getting this off the ground.
+I would suggest writing out your plan for the feature and how it will impact other parts of the system so that it can be discussed and you get input before starting work.
+Off the top of my head, topics like:
+And much more...
+Sure.
+Sure.
+It is rather incomplete, but you can check what I'm trying to do here: https://github.com/gabrielsimoes/gnucash-android/tree/develop
+It is rather incomplete, but you can check what I'm trying to do here: https://github.com/gabrielsimoes/gnucash-android/tree/develop
+Great to see this feature has been started! Well done and thank you! :-)
+If my programming expertise wasn't limited to bash and .ods sheet formulae I'd give you a hand. I'd be willing to contribute some $$ as an incentive though.
+Great to see this feature has been started! Well done and thank you! :-)
+If my programming expertise wasn't limited to bash and .ods sheet formulae I'd give you a hand. I'd be willing to contribute some $$ as an incentive though.
+@gabrielsimoes Last commit was 9 months ago. Have you abandoned this?
+@gabrielsimoes Last commit was 9 months ago. Have you abandoned this?
+I'm not working on it now, and probably won't do so until January next year. Thus you can say I abandoned it, sorry. Feel free to tackle it.
+I'm not working on it now, and probably won't do so until January next year. Thus you can say I abandoned it, sorry. Feel free to tackle it.
+imho:
+The image could be stored in the "slot" elements.
+The attachment could be an image or document, and encoded as Base64.
+The image should be converted to grayscale or black+white to save space.
+imho:
+The image could be stored in the "slot" elements.
+The attachment could be an image or document, and encoded as Base64.
+The image should be converted to grayscale or black+white to save space.

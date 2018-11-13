@@ -1,0 +1,8 @@
+Crash MotionEvent.java
+Google Drive Backup Function Crashes
+Wrong units when graphing body weight readings
+App crashes on android after adding datapoint through android wear watch
+CVS Export doesn't escape commas and linebreaks
+Scanning values from FreeStyle Libre is always in mg/dL
+FreeStyle Libre while scanning you have to choose which app to scan for
+Design inconsistencies and usability issues

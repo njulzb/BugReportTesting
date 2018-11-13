@@ -1,0 +1,3 @@
+title:asynctask in preferenceutils
+
+why do you use async task to apply changes in the shared preferences? apply() itself writes to the disk asynchronously.

@@ -1,0 +1,14 @@
+title:Account Total does not match desktop after import
+
+From Google+ user group:
+I met a strange bug on the mismatch of the transaction history and the total.
+So I'm wondering if there is a bug with time zone? My computer uses GMT +8, so is my Android device.
+I've checked the details of the transactions and found that the time was logged with 18:59:00 but were actually created on 11:30 (GMT +8)
+GnuCash desktop version: 2.6.15
+GnuCash Android version: 2.1.4
+Device: BlackBerry PRIV with Android 6.0.1
+All the numbers matched again after the time passed 18:59:00.
+GnuCash desktop version: 2.6.15
+GnuCash Android version: 2.1.4
+Device: BlackBerry PRIV with Android 6.0.1
+All the numbers matched again after the time passed 18:59:00.

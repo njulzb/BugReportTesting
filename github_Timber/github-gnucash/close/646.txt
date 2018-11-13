@@ -1,0 +1,17 @@
+title:Use Android SAF for selecting the backup folder
+
+codinguser
+For API level 19 and above, the storage access framework can be used to select folders for backup.
+This will greatly increase the number of third-party sync services which could potentially be used with GnuCash Android and also increase reliability of backup/export
+During my implementation, I've run into two issues:
+Both points makes the Intent ACTION_OPEN_DOCUMENT_TREE almost completely useless in the Android ecosystem at the moment.
+So I will be closing this issue now, as there is no reasonable way to implement it that will be useful to users. May be worth revisiting in the future if things change with regard to the adoption of ACTION_OPEN_DOCUMENT_TREE
+During my implementation, I've run into two issues:
+Both points makes the Intent ACTION_OPEN_DOCUMENT_TREE almost completely useless in the Android ecosystem at the moment.
+So I will be closing this issue now, as there is no reasonable way to implement it that will be useful to users. May be worth revisiting in the future if things change with regard to the adoption of ACTION_OPEN_DOCUMENT_TREE
+Instead of selecting a backup folder, a backup file would be selected instead and this would be used to store backups.
+This means only the most recent backup will be kept.
+In addition, export file destinations can now also be selected using SAF
+Instead of selecting a backup folder, a backup file would be selected instead and this would be used to store backups.
+This means only the most recent backup will be kept.
+In addition, export file destinations can now also be selected using SAF

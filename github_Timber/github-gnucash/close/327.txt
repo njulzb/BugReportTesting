@@ -1,0 +1,8 @@
+title:Provide UI option for dynamic switching of currency in reports
+
+When you open the reports view, if your accounts are in a different currency from the default (can happen due to importing an GnuCash XML), no data will be shown.
+If you didn't already know that there was a setting to change the currency, it can be very confusing.
+It will be nice to have an option to dynamically switch the currency from within the reports view itself.
+@aint could you look into this?
+Of course.
+Of course.

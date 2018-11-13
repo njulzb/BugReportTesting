@@ -1,0 +1,31 @@
+title:Default transaction type is always DEBIT in non-English locale
+
+codinguser
+Option "default transaction type" does not have effect in non-English locale, so in transaction creation window transaction type is always set to "DEBIT".
+I think that you compare localized and non-localized values. But it's wrong because "CREDIT" != "КРЕДИТ".
+Steps to reproduce:
+1.1. set phone localization to Russian (Русский)
+1.2. open GnuCash and set default transaction type to "КРЕДИТ"
+1.3. create new transaction and check transaction type in the corresponding field
+2.1. set phone localization to English (United States)
+2.2. open GnuCash and set default transaction type to "CREDIT"
+2.3. create new transaction and check transaction type in the corresponding field
+Results:
+1.3. FAIL: transaction type is "ДЕБЕТ"
+2.3 OK: transaction type is "CREDIT"
+I am using version 1.0.1 from f-droid.org repository.
+I am using version 1.0.1 from f-droid.org repository.
+Thanks for that detailed report. I'll start working on it immediately.
+On 08.11.2012, at 07:34, Alexander Galanin notifications@github.com wrote:
+I am using version 1.0.1 from f-droid.org repository.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/GnucashMobile/issues/36#issuecomment-10178079.
+Thanks for that detailed report. I'll start working on it immediately.
+On 08.11.2012, at 07:34, Alexander Galanin notifications@github.com wrote:
+I am using version 1.0.1 from f-droid.org repository.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/GnucashMobile/issues/36#issuecomment-10178079.
+OK, really fixed in 1.0.2. Thank you!
+OK, really fixed in 1.0.2. Thank you!

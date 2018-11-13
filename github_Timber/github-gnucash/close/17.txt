@@ -1,0 +1,9 @@
+title:One-click export
+
+Please add configuration options for selecting default email and export mode («delete after export», «export all»). After that add a button for quick export using these options.
+There will not be a default email account because that sharing is handled by the Android system and it depends on which apps are configured with what email accounts. The other stuff could definitely be made into settings.
+There will not be a default email account because that sharing is handled by the Android system and it depends on which apps are configured with what email accounts. The other stuff could definitely be made into settings.
+You can use «shareIntent.putExtra(Intent.EXTRA_EMAIL, new String[] { mail });» to specify e-mail address for e-mail message.
+You can use «shareIntent.putExtra(Intent.EXTRA_EMAIL, new String[] { mail });» to specify e-mail address for e-mail message.
+Can you also move "export" button upper than checkboxes in export dialog? In russian locale I need to scroll down to click this button.
+Can you also move "export" button upper than checkboxes in export dialog? In russian locale I need to scroll down to click this button.

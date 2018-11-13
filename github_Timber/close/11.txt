@@ -1,0 +1,4 @@
+title:Improve .gitignore
+
+Hi,
+I think files related to a specific IDE like .idea, .iml files should be added to .gitignore file. Same for apk files they are huge so slowing down download when you need to fetch data from remote branches.

@@ -1,0 +1,10 @@
+title:Export format incorrectly defaults to QIF
+
+codinguser
+Nexus 5
+Android v4.4, build KRT16M
+GnuCash for Android v1.2.6, installed via Google Play
+Set default export format to OFX
+Exporting transactions will result in a file of the chosen format
+Export Transactions window shows OFX radio button selected for export format, however, the exported file is of QIF format.  Problem does not occur if the user selects first the QIF radio button and then switches back to the OFX button; in that case, an OFX file is produced as expected.
+See attached images.

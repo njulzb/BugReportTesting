@@ -1,0 +1,17 @@
+title:[FEATURE] Use templates
+
+High,
+I am long time user of the desktop GNUCash and have always been struggling with how to deal with small cash disbursements - your android app fits the place very well, despite the troublesome syncing with the desktop database.
+Anyway, while the android app allows to have "favourite" accounts and also set their default "transfer account", it would be even better and faster for data entry if the user could create templates with optionally predefined items (value, account, transfer account).
+When you start typing the transaction description, you are presented options from previous matching transactions.
+You can select anyone and it will be used as a template for the new transaction.
+When you start typing the transaction description, you are presented options from previous matching transactions.
+You can select anyone and it will be used as a template for the new transaction.
+Thanks for your quick attention.
+Interesting, I was not aware about this since during the tests I always exported & deleted all transactions. (NB: I use the Android app as an data-entry interface for the desktop app, I would not feel comfortable having my expense data on Android phone in a long-run, even with the password.)
+That said: this method does unfortunately not work when there are no transactions in the Android app database.
+Anyway, my use and approach might be of minor interest, I'll leave it up to you whether to close or keep this feature request.
+Thanks for your quick attention.
+Interesting, I was not aware about this since during the tests I always exported & deleted all transactions. (NB: I use the Android app as an data-entry interface for the desktop app, I would not feel comfortable having my expense data on Android phone in a long-run, even with the password.)
+That said: this method does unfortunately not work when there are no transactions in the Android app database.
+Anyway, my use and approach might be of minor interest, I'll leave it up to you whether to close or keep this feature request.

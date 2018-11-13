@@ -1,0 +1,9 @@
+title:Feature proposal: add a monthly view
+
+Via a monthly view a user could easily see expenses and income.
+Do you mean an alternate view for viewing transaction lists? List a calendar view and the transaction sum per day? Or do you mean expenses report?
+Do you mean an alternate view for viewing transaction lists? List a calendar view and the transaction sum per day? Or do you mean expenses report?
+I mean a view of transactions that lists transactions and sums of this month, last month, August to give the user a quick overview of expenses and income.
+I mean a view of transactions that lists transactions and sums of this month, last month, August to give the user a quick overview of expenses and income.
+Reporting has been now added to the app
+Reporting has been now added to the app

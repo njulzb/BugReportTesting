@@ -1,0 +1,57 @@
+title:Crash when saving existing transaction (that is recurring)
+
+
+It should acknowledge the recurrence this way, it does on the API27 emulator.
+
+Even on the emulator the behaviour wasn't perfect though it didn't crash I had 3 scheduled transactions and upon clicking save the two £78.99 ones merged leaving just 2 visible.
+D/SplitsDbAdapter: Replace transaction split in db
+D/SplitsDbAdapter: Adding Split record to database:
+D/TransactionsDbAdapter: 2 splits added
+D/TransactionsDbAdapter: 0 splits deleted
+E/SQLiteLog: (1) no such column: recurrence_uid
+D/AndroidRuntime: Shutting down VM
+E/AndroidRuntime: FATAL EXCEPTION: main
+Process: org.gnucash.android, PID: 6600
+android.database.sqlite.SQLiteException: no such column: recurrence_uid (code 1): , while compiling: SELECT recurrence_uid FROM recurrences WHERE uid = ?
+at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:500)
+at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+at android.database.sqlite.SQLiteProgram.(SQLiteProgram.java:58)
+at android.database.sqlite.SQLiteQuery.(SQLiteQuery.java:37)
+at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:44)
+at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1318)
+at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1165)
+at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1036)
+at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1204)
+at org.gnucash.android.db.adapter.DatabaseAdapter.getAttribute(DatabaseAdapter.java:743)
+at org.gnucash.android.db.adapter.DatabaseAdapter.getAttribute(DatabaseAdapter.java:726)
+at org.gnucash.android.db.adapter.ScheduledActionDbAdapter.updateRecurrenceAttributes(ScheduledActionDbAdapter.java:108)
+at org.gnucash.android.ui.transaction.TransactionFormFragment.scheduleRecurringTransaction(TransactionFormFragment.java:909)
+at org.gnucash.android.ui.transaction.TransactionFormFragment.saveNewTransaction(TransactionFormFragment.java:870)
+at org.gnucash.android.ui.transaction.TransactionFormFragment.onOptionsItemSelected(TransactionFormFragment.java:948)
+at android.support.v4.app.Fragment.performOptionsItemSelected(Fragment.java:2474)
+at android.support.v4.app.FragmentManagerImpl.dispatchOptionsItemSelected(FragmentManager.java:3307)
+at android.support.v4.app.FragmentController.dispatchOptionsItemSelected(FragmentController.java:344)
+at android.support.v4.app.FragmentActivity.onMenuItemSelected(FragmentActivity.java:367)
+at android.support.v7.app.AppCompatActivity.onMenuItemSelected(AppCompatActivity.java:195)
+at android.support.v7.view.WindowCallbackWrapper.onMenuItemSelected(WindowCallbackWrapper.java:108)
+at android.support.v7.view.WindowCallbackWrapper.onMenuItemSelected(WindowCallbackWrapper.java:108)
+at android.support.v7.app.ToolbarActionBar$2.onMenuItemClick(ToolbarActionBar.java:65)
+at android.support.v7.widget.Toolbar$1.onMenuItemClick(Toolbar.java:202)
+at android.support.v7.widget.ActionMenuView$MenuBuilderCallback.onMenuItemSelected(ActionMenuView.java:780)
+at android.support.v7.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:822)
+at android.support.v7.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:171)
+at android.support.v7.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:973)
+at android.support.v7.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:963)
+at android.support.v7.widget.ActionMenuView.invokeItem(ActionMenuView.java:624)
+at android.support.v7.view.menu.ActionMenuItemView.onClick(ActionMenuItemView.java:150)
+at android.view.View.performClick(View.java:5637)
+at android.view.View$PerformClick.run(View.java:22433)
+at android.os.Handler.handleCallback(Handler.java:751)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:154)
+at android.app.ActivityThread.main(ActivityThread.java:6186)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:889)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:779)

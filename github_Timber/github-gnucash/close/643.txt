@@ -1,0 +1,39 @@
+title:Inform the user when a scheduled action fails
+
+rivaldi8
+Now, the user isn't informed when a scheduled action fails. For example, if an scheduled export fails because of some problem uploading the files to Google Drive, the user won't notice until he or she checks for the exported files. This may happen too late, when the user is looking for a backup to recover from a data loss.
+The scheduled actions service should register any error so the user is informed the next time the application is run.
+The idea I have in mind is to add two new fields to scheduled_actions table: error_count and error_message.
+error_count stores how many times a scheduled action has failed. It's reset to 0 when the action succeeds or when the user is informed.
+error_message stores information about the last time the action failed.
+The next time the user runs the application, it checks if any scheduled actions has failed. If any error has been registered, a Snackbar is shown informing of it. It would have an action to show the details of the actions that have failed and the error messages.
+The idea I have in mind is to add two new fields to scheduled_actions table: error_count and error_message.
+error_count stores how many times a scheduled action has failed. It's reset to 0 when the action succeeds or when the user is informed.
+error_message stores information about the last time the action failed.
+The next time the user runs the application, it checks if any scheduled actions has failed. If any error has been registered, a Snackbar is shown informing of it. It would have an action to show the details of the actions that have failed and the error messages.
+@rivaldi8 you mean adding that to the db table? I have reservations about this.
+The way Android is designed, we are not responsible for what happens outside of the app. Once we hand over a file, we should not care how it is handled.
+We only have issues now because my Google Drive integration is a bit buggy. I am working to switch this to the storage access framework in v2.2 which should make the export very very reliable. Eventually, we would phase out our own sync implementations for API levels >= 19 and let the users use the app of their favourite service with SAF support.
+Also, I would prefer not to modify the db with extra fields not present in the GnuCash schema, because if we later on want to sync the db files, that would be another thing to handle.
+We should just ensure that backups always work reliably before exports so that users can avoid data loss. One way would be to create a UI which offers the user a chance to undo the last delete. Then we can transparently restore from that backup for the user in case they want to. The UI can either be a SnackBar or an option in Settings. What say you?
+@rivaldi8 you mean adding that to the db table? I have reservations about this.
+The way Android is designed, we are not responsible for what happens outside of the app. Once we hand over a file, we should not care how it is handled.
+We only have issues now because my Google Drive integration is a bit buggy. I am working to switch this to the storage access framework in v2.2 which should make the export very very reliable. Eventually, we would phase out our own sync implementations for API levels >= 19 and let the users use the app of their favourite service with SAF support.
+Also, I would prefer not to modify the db with extra fields not present in the GnuCash schema, because if we later on want to sync the db files, that would be another thing to handle.
+We should just ensure that backups always work reliably before exports so that users can avoid data loss. One way would be to create a UI which offers the user a chance to undo the last delete. Then we can transparently restore from that backup for the user in case they want to. The UI can either be a SnackBar or an option in Settings. What say you?
+Oh! I didn't remember you were working on switching to SAF. That would make this issue invalid then. I'll close it.
+About the undo feature, I think we should have both the SnackBar and the option in Settings. The SnackBar showing up after some destructive actions, like "delete after export". The option in Settings for any time the user needs it. However, now that I think, there's an option already under "Backup & export". Do you mean to implement it differently?
+Oh! I didn't remember you were working on switching to SAF. That would make this issue invalid then. I'll close it.
+About the undo feature, I think we should have both the SnackBar and the option in Settings. The SnackBar showing up after some destructive actions, like "delete after export". The option in Settings for any time the user needs it. However, now that I think, there's an option already under "Backup & export". Do you mean to implement it differently?
+@rivaldi8 I agree that we should have both.
+The current option in Settings makes the user select the file by date. This is easy but not the most convenient thing to do. We can leave that in place.
+But the undo option (via SnackBar) would definitely be a great addition. It will give the user the option to immediately restore the deleted transactions without going through any further dialogs.
+A temporary backup file will be generated (which doesn't even need to go into the backups folder), it can just be a short-lived file created for the express purpose of doing an undo. When SnackBar is dismissed, the file is also deleted.
+Something like that is what I was thinking about.
+@rivaldi8 I agree that we should have both.
+The current option in Settings makes the user select the file by date. This is easy but not the most convenient thing to do. We can leave that in place.
+But the undo option (via SnackBar) would definitely be a great addition. It will give the user the option to immediately restore the deleted transactions without going through any further dialogs.
+A temporary backup file will be generated (which doesn't even need to go into the backups folder), it can just be a short-lived file created for the express purpose of doing an undo. When SnackBar is dismissed, the file is also deleted.
+Something like that is what I was thinking about.
+👍 I like the idea.
+👍 I like the idea.

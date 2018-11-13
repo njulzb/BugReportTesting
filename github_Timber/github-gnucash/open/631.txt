@@ -1,0 +1,8 @@
+title:Date and time format should be per system settings
+
+Time should be 24-hour format
+Time shows with "a.m"/"p.m"
+It seems it formats the time according to the default for your locale (see TransactionFormFragment.TIME_FORMATTER), which might not be the same as the one set in Android settings. In my case it's the reverse. I have a.m./p.m. in the settings but the time is shown in 24-hour format in the application.
+It seems it formats the time according to the default for your locale (see TransactionFormFragment.TIME_FORMATTER), which might not be the same as the one set in Android settings. In my case it's the reverse. I have a.m./p.m. in the settings but the time is shown in 24-hour format in the application.
+We could try to change it to something similar to that described here: http://stackoverflow.com/a/3401023
+We could try to change it to something similar to that described here: http://stackoverflow.com/a/3401023

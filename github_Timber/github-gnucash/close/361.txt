@@ -1,0 +1,18 @@
+title:Unable to Import XML file if it contains a budget
+
+If I attempt to import a GnuCash XML file that has a budget with in it, the operation fails. The error message flashes to briefly to for me to record it fully but it returns something like "An error occurred while importing GnuCash accounts. Attempts to invoke virtual method void org.gnucash.android.model.Scheduled.action.set.period (org.gnucash.model.Period.type) on a null object reference"
+If I import the same XML file without the budget included the operation succeeds
+What version are you using? Are you on the latest version, v1.6.4?
+What version are you using? Are you on the latest version, v1.6.4?
+1.6.3. Looks like 1.6.4 hasn't been pushed out to f-droid yet. Will update once 1.6.4 is available
+1.6.3. Looks like 1.6.4 hasn't been pushed out to f-droid yet. Will update once 1.6.4 is available
+Ok. I think v1.6.4 fixed the issue.
+On 17.08.2015, at 05:35, Carl Janousek notifications@github.com wrote:
+1.6.3. Looks like 1.6.4 hasn't been pushed out to f-droid yet. Will update once 1.6.4 is available
+—
+Reply to this email directly or view it on GitHub.
+Ok. I think v1.6.4 fixed the issue.
+On 17.08.2015, at 05:35, Carl Janousek notifications@github.com wrote:
+1.6.3. Looks like 1.6.4 hasn't been pushed out to f-droid yet. Will update once 1.6.4 is available
+—
+Reply to this email directly or view it on GitHub.

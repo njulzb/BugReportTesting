@@ -1,0 +1,9 @@
+title:Import Music From Google Play
+
+At the moment the music on the app is only importing from that I manually transferred to my device rather than the music I downloaded from my Google Play Music Account. Please Fix This! This app is awesome and if this issue is fixed I will use this entirely instead of Google Play Music.
+Music pinned to your device through Play Music cannot be read by other players without root access.
+Music pinned to your device through Play Music cannot be read by other players without root access.
+I have Root Access but had Timber didn't request root access, so I had no option to import the music from Play Music.
+I have Root Access but had Timber didn't request root access, so I had no option to import the music from Play Music.
+Another use-case of #7 & #8
+Another use-case of #7 & #8

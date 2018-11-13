@@ -1,0 +1,4 @@
+title:Delete existing accounts does not work reliably when exporting via Sharing
+
+codinguser
+The delete confirmation dialog is never shown. Possible fix is to trigger it only when returning to the app

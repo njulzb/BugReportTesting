@@ -1,0 +1,17 @@
+title:the same database for desktop and android
+
+Hi all,
+Obviously it should be discussed somewhere before but I was unable to find it :-/
+Suggestion: make android app able to use the same data file as desktop version. This would let to live without exports/imports, just synchronization of data file (e.g. using cloud).
+Yeah, you're right, this has been discussed a lot previously in several issues here on GitHub.
+Unfortunately, it's not going to be happening any time soon due to feature incompatibility between the apps, and also to avoid data corruption
+Yeah, you're right, this has been discussed a lot previously in several issues here on GitHub.
+Unfortunately, it's not going to be happening any time soon due to feature incompatibility between the apps, and also to avoid data corruption
+gnucash  database sqlite/postgress/mysql  + symmetric-ds  <-SYNC->  gca compiled w/ symmetric-ds android jars
+gnucash  database sqlite/postgress/mysql  + symmetric-ds  <-SYNC->  gca compiled w/ symmetric-ds android jars
+This is almost possible now, if you do an XML export and overwrite the gnucash file you imported, you basically get this. Just need an option to save to a particular file instead of also to an app-specific directory.
+This is almost possible now, if you do an XML export and overwrite the gnucash file you imported, you basically get this. Just need an option to save to a particular file instead of also to an app-specific directory.
+Merge into #567
+Issue will be tracked there
+Merge into #567
+Issue will be tracked there

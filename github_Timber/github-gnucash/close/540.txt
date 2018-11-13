@@ -1,0 +1,87 @@
+title:save button not working for new transactions
+
+I installed 2.1 beta via the google play beta feature and could not enter new transactions because the save button had no effect.
+are you on beta1 or beta2?
+are you on beta1 or beta2?
+I'm afraid I don't know. I installed it from Google play store and after I
+realized that it didn't work, I uninstalled it.
+Ngewi Fet notifications@github.com schrieb am Fr., 12. Aug. 2016, 18:10:
+are you on beta1 or beta2?
+—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub
+#540 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AALZriyNO0LDKXrgWYJBoj_Fck_2HutYks5qfJqFgaJpZM4JixsK
+.
+I'm afraid I don't know. I installed it from Google play store and after I
+realized that it didn't work, I uninstalled it.
+Ngewi Fet notifications@github.com schrieb am Fr., 12. Aug. 2016, 18:10:
+are you on beta1 or beta2?
+—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub
+#540 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AALZriyNO0LDKXrgWYJBoj_Fck_2HutYks5qfJqFgaJpZM4JixsK
+.
+I cannot reproduce this.
+Might have been related to the missing transfer account field issue which is now fixed.
+Let me know if you see it again at some point
+I cannot reproduce this.
+Might have been related to the missing transfer account field issue which is now fixed.
+Let me know if you see it again at some point
+@codinguser I just switched to beta again and the very same problem occurs. I can't save new transactions. There is a visual feedback (a light dot) when I tap on save but nothing happens.
+But it seems to be temporary! So it only happens as long as I try to use widgets to enter ne transactions.
+As soon as I open the app via icon on the home screen, the save button works again!
+@codinguser I just switched to beta again and the very same problem occurs. I can't save new transactions. There is a visual feedback (a light dot) when I tap on save but nothing happens.
+But it seems to be temporary! So it only happens as long as I try to use widgets to enter ne transactions.
+As soon as I open the app via icon on the home screen, the save button works again!
+I still can't reproduce it by using the widget.
+Are you using double entry? If you are, is there a list of transfer accounts to select the one you are transferring from?
+I still can't reproduce it by using the widget.
+Are you using double entry? If you are, is there a list of transfer accounts to select the one you are transferring from?
+Yes and yes.
+Maybe it has something to do with old widgets...
+And if I have opened the app once via icon, the save button also works
+after using the + of a widget.
+Àlex Magaz Graça notifications@github.com schrieb am Mo., 12. Sep. 2016,
+18:25:
+I still can't reproduce it by using the widget.
+Are you using double entry? If you are, is there a list of transfer
+accounts to select the one you are transferring from?
+—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub
+#540 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AALZrj0hsZBRUho5nkJ0jaXIruofVpNCks5qpXzsgaJpZM4JixsK
+.
+Yes and yes.
+Maybe it has something to do with old widgets...
+And if I have opened the app once via icon, the save button also works
+after using the + of a widget.
+Àlex Magaz Graça notifications@github.com schrieb am Mo., 12. Sep. 2016,
+18:25:
+I still can't reproduce it by using the widget.
+Are you using double entry? If you are, is there a list of transfer
+accounts to select the one you are transferring from?
+—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub
+#540 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AALZrj0hsZBRUho5nkJ0jaXIruofVpNCks5qpXzsgaJpZM4JixsK
+.
+It's strange, the only conditions to allow a transaction to be saved are: double entry enabled, valid amount, and at least one transfer account. I can't see anything else that could prevent it from being saved.
+Just to be sure, could you confirm that no transaction is created when you press save and the form remains opened? Also to discard, could you try removing and adding the widget again?
+It's strange, the only conditions to allow a transaction to be saved are: double entry enabled, valid amount, and at least one transfer account. I can't see anything else that could prevent it from being saved.
+Just to be sure, could you confirm that no transaction is created when you press save and the form remains opened? Also to discard, could you try removing and adding the widget again?
+I was having the same problem: save button disabled when trying to insert an expense. Reading the comments, what I did was:
+At this time, the app showed me a popup listing the new features of an upgrade. After I pressed ok, everything started to work fine, even inserting through the widget. It seems loading the app through the widget bypasses this screen and causes the problem.
+I was having the same problem: save button disabled when trying to insert an expense. Reading the comments, what I did was:
+At this time, the app showed me a popup listing the new features of an upgrade. After I pressed ok, everything started to work fine, even inserting through the widget. It seems loading the app through the widget bypasses this screen and causes the problem.
+@rivaldi8 No transaction is created when I press save and the form remains open.
+I did not try removing and adding the widget. But the guess from @rcrivano sounds plausible.
+@rivaldi8 No transaction is created when I press save and the form remains open.
+I did not try removing and adding the widget. But the guess from @rcrivano sounds plausible.

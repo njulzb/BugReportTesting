@@ -1,0 +1,7 @@
+title:[Bug] Now playing playlist empty when accessing app from notification
+
+When you select the first two "Now Playing" themes, you get to see the songs in the album you are playing. Now when I click the notification to access the app, the playlist shows up as blank. However, when you launch the app normally, it shows up just fine.
+Fixed
+Fixed
+Thanks! Can confirm it is fixed!
+Thanks! Can confirm it is fixed!

@@ -1,0 +1,32 @@
+title:Auto balancing transactions upon save
+
+From 6b3dd40 , it is assumed that all transactions have at least two splits.
+It is assured that new transaction got at least two splits, but existing transactions are not handled. This results in that transactions with only one split cannot be edited (the path handling it is deleted).
+Also, there is an old problem that transactions are not automatically balanced.
+If all transactions are automatically balanced upon save, the problem of one-split transaction would be solved (as the other split is automatically created to balance the transaction, making it have at least two splits).
+I planned to handle pre-existing single split transactions with the database migration (haven't implemented it yet since things are still in flux and changing). It will create additional splits for an imbalance account.
+One thing that you mentioned which isn't handled in develop branch at the moment, is the imbalanced transactions with more than two splits. I can add that, so that all transactions are balanced on save and always sum up to zero.
+I can also do that during a migration which will automatically balance all pre-existing transactions in the database.
+On 27.03.2015, at 09:11, Yongxin Wang notifications@github.com wrote:
+From 6b3dd40 , it is assumed that all transactions have at least two splits.
+It is assured that new transaction got at least two splits, but existing transactions are not handled. This results in that transactions with only one split cannot be edited (the path handling it is deleted).
+Also, there is an old problem that transactions are not automatically balanced.
+If all transactions are automatically balanced upon save, the problem of one-split transaction would be solved (as the other split is automatically created to balance the transaction, making it have at least two splits).
+—
+Reply to this email directly or view it on GitHub.
+I planned to handle pre-existing single split transactions with the database migration (haven't implemented it yet since things are still in flux and changing). It will create additional splits for an imbalance account.
+One thing that you mentioned which isn't handled in develop branch at the moment, is the imbalanced transactions with more than two splits. I can add that, so that all transactions are balanced on save and always sum up to zero.
+I can also do that during a migration which will automatically balance all pre-existing transactions in the database.
+On 27.03.2015, at 09:11, Yongxin Wang notifications@github.com wrote:
+From 6b3dd40 , it is assumed that all transactions have at least two splits.
+It is assured that new transaction got at least two splits, but existing transactions are not handled. This results in that transactions with only one split cannot be edited (the path handling it is deleted).
+Also, there is an old problem that transactions are not automatically balanced.
+If all transactions are automatically balanced upon save, the problem of one-split transaction would be solved (as the other split is automatically created to balance the transaction, making it have at least two splits).
+—
+Reply to this email directly or view it on GitHub.
+Of course the existing one can be handled by database migration (it is great!), but modified transactions should still be balanced, as the user may generate unbalanced transactions using the splits edit view. There is a check at the bottom at the splits view, but I'm expecting everybody to check it and keep the transaction balanced.
+Another place where unbalanced transaction may came in is through import. Importing a GnuXML (created by versions that allow unbalanced transactions or single-split transactions) will result in unbalanced transactions in the db.
+When balancing transactions, please keep an eye on transactions involving multiple currencies. They should not be touched.
+Of course the existing one can be handled by database migration (it is great!), but modified transactions should still be balanced, as the user may generate unbalanced transactions using the splits edit view. There is a check at the bottom at the splits view, but I'm expecting everybody to check it and keep the transaction balanced.
+Another place where unbalanced transaction may came in is through import. Importing a GnuXML (created by versions that allow unbalanced transactions or single-split transactions) will result in unbalanced transactions in the db.
+When balancing transactions, please keep an eye on transactions involving multiple currencies. They should not be touched.

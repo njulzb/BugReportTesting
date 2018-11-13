@@ -1,0 +1,50 @@
+title:Multiple Currencies, Export Multiple QIF files
+
+Derek Atkins wrote:
+You will need to get the accounts in different currencies exported into
+different QIF files.  Unfortunately that is the only way.  QIF does not
+have any way to specify a currency, so there's really nothing we can do.
+The QIF format does not mark currency. When you import a QIF into GnuCash Desktop you may select one (and only one) currency per import, and that is applied to all transactions in that import.
+Therefore, GnuCash Android needs to be able to export multiple QIF files. If a user of GnuCash is using two different currencies then he/she should be able to (with one click) export two QIF files (one for currency A, and one for currency B). The user will then do two imports into GnuCash Desktop, and select the correct currency for each QIF file imported.
+I think what you propose is a good idea.
+I think what you propose is a good idea.
+Thank you.
+I'm not a programmer. Would you be willing to write a script that I could run on my exported QIF, to create two QIF's by currency. Maybe later you could implement that in the GnuCash Android app.
+Thank you.
+I'm not a programmer. Would you be willing to write a script that I could run on my exported QIF, to create two QIF's by currency. Maybe later you could implement that in the GnuCash Android app.
+The currency information is already gone in the QIF file, so there is no way to identify which transaction is which currency in the exported file. There for, it will be impossible to split the QIF file by currency.
+The currency information is already gone in the QIF file, so there is no way to identify which transaction is which currency in the exported file. There for, it will be impossible to split the QIF file by currency.
+I'm sorry, but your exported QIF does not have currency information. There will be no basis upon which to split the file. This is something that will have to be implemented in GnuCash Android which knows about the account currencies, and that will not be immediately. Sorry.
+I'm sorry, but your exported QIF does not have currency information. There will be no basis upon which to split the file. This is something that will have to be implemented in GnuCash Android which knows about the account currencies, and that will not be immediately. Sorry.
+@fefe982 you beat me to it :)
+@fefe982 you beat me to it :)
+There are work-arounds (e.g. name accounts "#Yen#_Checking", "#Yen#_Saving", "#USD#_Checking", "#USD#_Saving", etc.). Then the script to splits the QIF file according to the "#" tags I put in the account names. The result being two or more QIFs, which can then be imported separately into GnuCash Desktop.
+Or I just specify in the script that "Bank of China Checking" (Yen), and "Bank of America Checking" (USD) need to be output to two separate .QIF files.
+There are work-arounds (e.g. name accounts "#Yen#_Checking", "#Yen#_Saving", "#USD#_Checking", "#USD#_Saving", etc.). Then the script to splits the QIF file according to the "#" tags I put in the account names. The result being two or more QIFs, which can then be imported separately into GnuCash Desktop.
+Or I just specify in the script that "Bank of China Checking" (Yen), and "Bank of America Checking" (USD) need to be output to two separate .QIF files.
+Geert Janssens wrote:
+http://lists.gnucash.org/pipermail/gnucash-user/2014-September/056138.html
+"I do advise you though to file a bug report against GnuCash on Android. If qif doesn't support multiple currencies, GoA shouldn't be generating such qif files. It should be up to GoA to generate separate qif files, one per currency.
+.- For me this is backwards for the reason I mentioned before. If I understand it correctly there shouldn't be any qif files with multiple currencies. The fact that Gnucash on Android generates them is a bug.
+.- Disclaimer: I don't know zip about qif. My reaction is purely based on what I read in this thread. So if I'm really talking nonsense, you are free to tell me so :)"
+No, I think Geert understands the QIF file format well.
+Geert Janssens wrote:
+http://lists.gnucash.org/pipermail/gnucash-user/2014-September/056138.html
+"I do advise you though to file a bug report against GnuCash on Android. If qif doesn't support multiple currencies, GoA shouldn't be generating such qif files. It should be up to GoA to generate separate qif files, one per currency.
+.- For me this is backwards for the reason I mentioned before. If I understand it correctly there shouldn't be any qif files with multiple currencies. The fact that Gnucash on Android generates them is a bug.
+.- Disclaimer: I don't know zip about qif. My reaction is purely based on what I read in this thread. So if I'm really talking nonsense, you are free to tell me so :)"
+No, I think Geert understands the QIF file format well.
+Thank you. I'm on that list too :)
+That will be planned, but I'm sure when it can be rolled out.
+Thank you. I'm on that list too :)
+That will be planned, but I'm sure when it can be rolled out.
+Thank you for all your quick responses. I look forward to seeing this feature in GnuCash Android.
+Thank you for all your quick responses. I look forward to seeing this feature in GnuCash Android.
+I guess the decision to use QIF (the lesser evil between QIF and OFX) was bound to lead to some setbacks.
+https://github.com/Gnucash/gnucash/blob/master/src/import-export/qif-imp/file-format.txt
+"The QIF is an old and rather broken file format defined by Intuit for exporting Quicken data. It is 'broken' because the format is ambiguous in many places, non-standard between different releases and applications, and even varies subtly from country to country (in particular, the way dates and amounts are represented), and fails to define important data (such as the currency denomination, or the exchange rates when transferring between accounts marked in different currencies). Importing a QIF file can require significant manual intervention by the user in order to get the data straight."
+I guess the decision to use QIF (the lesser evil between QIF and OFX) was bound to lead to some setbacks.
+https://github.com/Gnucash/gnucash/blob/master/src/import-export/qif-imp/file-format.txt
+"The QIF is an old and rather broken file format defined by Intuit for exporting Quicken data. It is 'broken' because the format is ambiguous in many places, non-standard between different releases and applications, and even varies subtly from country to country (in particular, the way dates and amounts are represented), and fails to define important data (such as the currency denomination, or the exchange rates when transferring between accounts marked in different currencies). Importing a QIF file can require significant manual intervention by the user in order to get the data straight."
+Today I went to export my transactions and I was excited to see "A separate QIF file will be generated for each currency in use". I use two currencies, so I was left with two files. Then, using GnuCash Desktop I did two separate imports, selecting the appropriate currency for each file. It worked great! Thank you to the GnuCash Android team.
+Today I went to export my transactions and I was excited to see "A separate QIF file will be generated for each currency in use". I use two currencies, so I was left with two files. Then, using GnuCash Desktop I did two separate imports, selecting the appropriate currency for each file. It worked great! Thank you to the GnuCash Android team.

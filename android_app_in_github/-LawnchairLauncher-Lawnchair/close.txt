@@ -1,0 +1,39 @@
+Crash when long clicking date.
+Fire HD - Your device isn't comaptible with this version.
+No notification dot for missed calls in Android M
+When installing Lawnfeed Google Now is checked but not activated
+On-screen buttons are hidden
+Can't set custom Google Calendar icon in app drawer
+Try to fix Pill widget when Google Now page disabled (WIP)
+java.lang.OutOfMemoryError when lawnchair starts up
+(Bug) Reboot Lawnchair cause change language
+Lawnchair is not functional on Android 8.0.0 (bullhead-opr6.170623.0) (using Nexus 5X)
+Some glitch
+Notification bubble's poiner out of center
+Crashes when battery saver is on.
+Lawnchair force closes after app that's had its icon changed manually is updated via play store
+When creating a shortcut in folder, it crashes.
+Drawer fade in with transparent dock
+Not fully blured tray and menu
+Color mismatch between fast scroll popup and its scrollbar
+Icon's titles
+Analytics replacement
+Labels in app drawer black instead of white
+Lawnchair crashes
+Crash on Press-and-Hold action on Homescreen Folders
+Dropping widgets from the shortcut menu crashes Lawnchair
+Wallpaper does not centerGoogle Pill widget does not re-scale when column number changes
+Restarting phone restores hidden apps from app drawer.
+Search bar issue
+Correctly support other aspect ratios
+Long press menu doesn't disappear when pressing home
+The app drawer does not open on small screens
+Weird font in shortcuts
+Shortcut widgets dissapeared
+App freezes when picking up icons from the drawer
+Scaling settings not applied to folder items
+Folder renaming crashes Lawnchair
+Notification Badges broken in dock
+198 - some widgets missing
+Preference changes aren't properly applied
+Wallpaper button is broken

@@ -1,0 +1,8 @@
+title:Split memos disappear
+
+Splits have their memos.
+Split do not have their memos anymore.
+caused by commit 96a2045 in TransactionFormFragment#extractSplitsFromView
+caused by commit 96a2045 in TransactionFormFragment#extractSplitsFromView
+Merged into hotfix/patches (957ae86). Thanks!
+Merged into hotfix/patches (957ae86). Thanks!

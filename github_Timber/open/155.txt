@@ -1,0 +1,3 @@
+title:Add whole albums to queue
+
+Add feature to insert whole album to existing queue, maybe also to play next whole album.

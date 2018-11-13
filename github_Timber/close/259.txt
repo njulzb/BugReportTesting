@@ -1,0 +1,34 @@
+title:F-Droid version outdated
+
+HI there,
+I just wanted to point out that the F-Droid version of Timber is outdated.
+Build log:
+https://f-droid.org/wiki/page/naman14.timber
+It appears that @naman14 may have accidentally re-added the the Fabric API entry to AndroidManifest.xml on the f-droid branch in 926127c
+I'm guessing this is what's preventing F-Droid from building v16
+Tagging @krt16s as the original filer of #219
+It appears that @naman14 may have accidentally re-added the the Fabric API entry to AndroidManifest.xml on the f-droid branch in 926127c
+I'm guessing this is what's preventing F-Droid from building v16
+Tagging @krt16s as the original filer of #219
+Any news on this?
+Any news on this?
+This is a major issue and should be resolved ASAP!
+This is a major issue and should be resolved ASAP!
+Anything we can do to solve this problem?
+Anything we can do to solve this problem?
+@464247853 https://f-droid.org/packages/ch.blinkenlights.android.vanilla/ :D
+@464247853 https://f-droid.org/packages/ch.blinkenlights.android.vanilla/ :D
+@gsantner more like https://play.google.com/store/apps/details?id=com.foobar2000.foobar2000
+Opus support ftw.
+@gsantner more like https://play.google.com/store/apps/details?id=com.foobar2000.foobar2000
+Opus support ftw.
+At this point the latest release is one year old anyway. Rushing to get that on F-droid rather than pushing a new version doesn't seem like a priority.
+At this point the latest release is one year old anyway. Rushing to get that on F-droid rather than pushing a new version doesn't seem like a priority.
+I've stopped using / did use   Timber a long time ago and I'm happy with Vanilla. Closing.
+I've stopped using / did use   Timber a long time ago and I'm happy with Vanilla. Closing.
+@gsantner This bug is not solved even if our interest in the app may decrease. Please re-open this bug, some people may be still interested. :)
+@gsantner This bug is not solved even if our interest in the app may decrease. Please re-open this bug, some people may be still interested. :)
+@naman14 Could you please make a flavor for the newest version as the current one on F-Droid is still 0.2b?
+@naman14 Could you please make a flavor for the newest version as the current one on F-Droid is still 0.2b?
+Dont ask, owner seems not to be further interested in getting users via F-Droid.
+Dont ask, owner seems not to be further interested in getting users via F-Droid.

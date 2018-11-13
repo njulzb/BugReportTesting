@@ -1,0 +1,1 @@
+swipeLayout gone when something on swipe view changed

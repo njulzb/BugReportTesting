@@ -1,0 +1,37 @@
+title:Export deleted transactions to desktop
+
+Hi!
+I've recently started using the mobile Gnucash companion.
+I see that all new transactions can be exported to GoogleDrive and the imported on the desktop.
+However, I've noticed that if I delete transactions on the mobile app, the actions cannot be exported (included in the qif files) to be later imported in the desktop application. Which means that I cannot sync my "delete" actions with the desktop app, only new entries.
+Is there a way to change this?
+No, sorry. You cannot sync delete actions. You can only export newly
+created transactions.
+On Sep 21, 2015 01:47, "andrewculda" notifications@github.com wrote:
+Hi!
+I've recently started using the mobile Gnucash companion.
+I see that all new transactions can be exported to GoogleDrive and the
+imported on the desktop.
+However, I've noticed that if I delete transactions on the mobile app, the
+actions cannot be exported (included in the qif files) to be later imported
+in the desktop application. Which means that I cannot sync my "delete"
+actions with the desktop app, only new entries.
+Is there a way to change this?
+—
+Reply to this email directly or view it on GitHub
+#387.
+No, sorry. You cannot sync delete actions. You can only export newly
+created transactions.
+On Sep 21, 2015 01:47, "andrewculda" notifications@github.com wrote:
+Hi!
+I've recently started using the mobile Gnucash companion.
+I see that all new transactions can be exported to GoogleDrive and the
+imported on the desktop.
+However, I've noticed that if I delete transactions on the mobile app, the
+actions cannot be exported (included in the qif files) to be later imported
+in the desktop application. Which means that I cannot sync my "delete"
+actions with the desktop app, only new entries.
+Is there a way to change this?
+—
+Reply to this email directly or view it on GitHub
+#387.

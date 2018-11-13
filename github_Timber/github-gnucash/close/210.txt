@@ -1,0 +1,4 @@
+title:Crash when creating new transaction after exporting and deleting transactions
+
+The app gets stooped on doing following
+Also everytime I update app the finanical data is preserved, but I have to create the widget again giving the account number.

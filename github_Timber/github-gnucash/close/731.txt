@@ -1,0 +1,8 @@
+title:Persian currency symbol is doubled
+
+It should show only one character currency symbol
+It shows two consecutive IRR currency symbols
+Similar bug in the main application and the fix:
+Bug 787479 - Persian currency symbol is doubled
+Thanks for the bug report
+Thanks for the bug report

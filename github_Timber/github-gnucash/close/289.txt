@@ -1,0 +1,17 @@
+title:Passcode screen can be skipped
+
+From user feedback:
+I found a bug in 1.5.5(Play Store).
+What?
+Skip Passcode-Screen
+Reproduce?
+Open GnuCash. Passcode screen comes up. Press Android-TaskList-Button. Select GnuCash. Passcode-Screen is skiped.
+I use Lollipop(CM12)
+I can confirm this bug on Lollipop
+@aint could you look into this? thanks
+I can confirm this bug on Lollipop
+@aint could you look into this? thanks
+Sure.
+Sure.
+Fixed in 896329d
+Fixed in 896329d

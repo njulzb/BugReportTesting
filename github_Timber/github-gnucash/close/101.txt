@@ -1,0 +1,9 @@
+title:android-maven-plugin cannot find aapt
+
+New SDKs put aapt under $ANDROID_HOME/build-tools. android-maven-plugin prior to 3.6.0 cannot handle this. Is it possible for you to use the latest version for building?
+In the meantime, here is a workaround:
+http://stackoverflow.com/questions/16619143/android-maven-could-not-find-tool-aapt
+will fix
+will fix
+Done in develop branch.
+Done in develop branch.

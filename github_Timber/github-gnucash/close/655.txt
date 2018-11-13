@@ -1,0 +1,54 @@
+title:QIF export uses commas instead of dots as decimal separators (italian EUR accounts)
+
+rivaldi8
+Import process should proceed without problems
+It seems GnuCash uses the decimal separator corresponding to the user's locale, both when exporting and importing. In my case (Spanish and Euro), QIFs are exported using a comma as decimal separator and GnuCash desktop imports them just fine.
+Is your GnuCash desktop running with the Italian locale? What decimal separator is it using? If I'm not wrong, it uses the locale defined in the standard environment variables (LC_*). You can check it by running the locale command from a terminal.
+It seems GnuCash uses the decimal separator corresponding to the user's locale, both when exporting and importing. In my case (Spanish and Euro), QIFs are exported using a comma as decimal separator and GnuCash desktop imports them just fine.
+Is your GnuCash desktop running with the Italian locale? What decimal separator is it using? If I'm not wrong, it uses the locale defined in the standard environment variables (LC_*). You can check it by running the locale command from a terminal.
+Thanks for your reply!
+I forgot to mention my desktop is running OS X El Capitan.
+Locale is set to it_IT.UTF8 (and GnuCash desktop correctly displays amounts with comma as decimal separator.
+Seems like I have to check something on my mac (brand new installation, GnuCash installed via homebrew cask).
+Thanks for your reply!
+I forgot to mention my desktop is running OS X El Capitan.
+Locale is set to it_IT.UTF8 (and GnuCash desktop correctly displays amounts with comma as decimal separator.
+Seems like I have to check something on my mac (brand new installation, GnuCash installed via homebrew cask).
+All looks correct. Also, I've been doing some tests and it doesn't seem to make any difference using a dot or a comma as separator. I've tested from version 2.6.13. Which one are you using?
+With what error does it complain when you try to import the QIF? Could you also confirm that the only change you make for it to succeed is replacing commas with dots?
+All looks correct. Also, I've been doing some tests and it doesn't seem to make any difference using a dot or a comma as separator. I've tested from version 2.6.13. Which one are you using?
+With what error does it complain when you try to import the QIF? Could you also confirm that the only change you make for it to succeed is replacing commas with dots?
+Today I tried to import the last week transactions and everything went fine.
+Replacing commas with dost was not the only thing I did, because at first GNUCash desktop complained about an unrecognized transaction amount, and I needed to change the double minus in two split transactions to a single minus. After that, the import process gave a generic import problem error (cannot remember whet it is), fixed only by changing the decimal separator.
+Here is a sample of the split transaction that gave troubles:
+IIRC this is one of the transaction imported from GNUCash desktop when I set up the mobile version.
+Today I tried to import the last week transactions and everything went fine.
+Replacing commas with dost was not the only thing I did, because at first GNUCash desktop complained about an unrecognized transaction amount, and I needed to change the double minus in two split transactions to a single minus. After that, the import process gave a generic import problem error (cannot remember whet it is), fixed only by changing the decimal separator.
+Here is a sample of the split transaction that gave troubles:
+IIRC this is one of the transaction imported from GNUCash desktop when I set up the mobile version.
+Ok, I see. The problem is there's a mix of decimal separators. GnuCash supports all dots or all commas, but not mixed.
+I'd say the double minus is caused by the amount having been stored with the sign. If I'm not wrong we should always be storing absolute numbers.
+I'll try to find out what has happened. If you don't mind sending the .gnucash file you imported into GnuCash Android to rivaldi8@gmail.com, it would help.
+Ok, I see. The problem is there's a mix of decimal separators. GnuCash supports all dots or all commas, but not mixed.
+I'd say the double minus is caused by the amount having been stored with the sign. If I'm not wrong we should always be storing absolute numbers.
+I'll try to find out what has happened. If you don't mind sending the .gnucash file you imported into GnuCash Android to rivaldi8@gmail.com, it would help.
+Today I had the same problem, and indeed there is a decimal separator mixup and the double minus sign that cause troubles.
+Unfortunately I don't have the original .gnucash file I imported, but I found out that the recurring transaction I set up in gnucash desktop were wrong (at the time of the import in GC android) because they went in the wrong direction.
+Now I corrected the behavior in GC desktop and deleted the recurring transaction in GC android (since I don't need to export them to desktop, they are already there!).
+I'll let you know if this solves my problem.
+Today I had the same problem, and indeed there is a decimal separator mixup and the double minus sign that cause troubles.
+Unfortunately I don't have the original .gnucash file I imported, but I found out that the recurring transaction I set up in gnucash desktop were wrong (at the time of the import in GC android) because they went in the wrong direction.
+Now I corrected the behavior in GC desktop and deleted the recurring transaction in GC android (since I don't need to export them to desktop, they are already there!).
+I'll let you know if this solves my problem.
+Thanks for the information! The problem is probably here. It's using String.format while for other amounts it uses BigDecimal.toPlainString(). Not sure how to reproduce the double minus problem yet.
+Thanks for the information! The problem is probably here. It's using String.format while for other amounts it uses BigDecimal.toPlainString(). Not sure how to reproduce the double minus problem yet.
+I was wrong. String.format uses the default locale, so it should be using a comma.
+Were all the problematic transactions generated from a scheduled transaction?
+I was wrong. String.format uses the default locale, so it should be using a comma.
+Were all the problematic transactions generated from a scheduled transaction?
+Sorry for the delay... Yes, I can confirm that the problematic transacions were generated from imported scheduled transactions.
+Sorry for the delay... Yes, I can confirm that the problematic transacions were generated from imported scheduled transactions.
+Finally I could look into it. It was right in front of my face, the amounts written with String.format were the problematic ones.
+I've opened another issue (#693) for the double minus problem. I haven't been able to reproduce it yet.
+Finally I could look into it. It was right in front of my face, the amounts written with String.format were the problematic ones.
+I've opened another issue (#693) for the double minus problem. I haven't been able to reproduce it yet.

@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="zh">
+
+<head>
+<title>紫荆站 | ZiJingBT v2 | Torrent server</title>
+<link rel="stylesheet" title="external" type="text/css" href="/xbnbt.css">
+<style type="text/css" title="internal">
+<!--
+html{overflow-x:auto}
+td{empty-cells:show}
+-->
+</style>
+<link rel="Shortcut Icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+<link rel="Icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+<script language="JavaScript" type="text/javascript" src="/files/js/common.js"></script>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="generator" content="XBNBT 81b.3.5 ZiJing Mod">
+<META http-equiv="Author" content="紫荆站 | ZiJingBT v2">
+<META name="robots" content="noindex">
+<META http-equiv="Content-Script-Type" content="text/javascript">
+<META name="MSSmartTagsPreventParsing" content="true">
+</head>
+
+<body>
+
+<table class="top_bar">
+<tr class="top_bar">
+<td class="top_login">
+你未登录. 单击 <a class="red" title="登录" href="/login.html">此处</a> 登录.</td>
+<td class="top_trigger"><a class="black" target="_blank" title="RSS" href="/rss.html">RSS</a>
+</td>
+</tr></table>
+<table class="top_header">
+<tr class="top_header">
+<td class="top_avatar" rowspan=2>
+<a class="top_avatar" href="/index.html"><img class="avatar" src="/files/avatar.png"></a></td>
+<td class="static_header">
+<!-- XBNBT HEADER.HTML START -->
+<div class="static_header" style="text-align:center; padding-top:5px; padding-bottom:5px">
+<!--
+<span style="color:red;font-size:15px;font-weight:bold"></span>
+<br><span>关注CCF校园邀请计划! 详情请点击 <a href="/announcements.html?post=10">这里</a></span>
+</td>
+<span style="font-size:10pt; font-weight:bold; color:black">请新注册但没有收到密码邮件的用户到登录页面使用“重置密码”功能重新发送密码邮件</span>
+<span style="font-size:10pt; font-weight:bold; color:black">有任何问题或者没有问题都可以通过右上角“细语”来交流</span>
+<span style="font-size:10pt; font-weight:bold; color:black">紫荆站新增积分博彩功能，积分多得无处花的或者想试试运气的欢迎点击下面的“博彩”按钮</span>
+<span style="font-size:10pt; font-weight:bold; color:black">下载时可以只选择下载种子中的部分文件而不需要下载所有文件</span>
+<span style="font-size:10pt; font-weight:bold; color:black">紫荆站已开通<a style="font-size:10pt; color:purple" target="_blank" href="http://page.renren.com/601070835">人人公共主页</a>，欢迎关注</span>
+<span style="font-size:12pt; font-weight:bold; color:#630360">热烈庆祝南京大学建校 110 周年!</span>
+<a style="font-size:12pt; font-weight:bold; text-decoration:none; color:red" href="http://bbs.nju.edu.cn/bbscon?board=M_NIC&file=M.1341125237.A&num=12000">重要通知: 7月2号0点起鼓楼校区南园以下宿舍仅提供网页认证方式，原BRAS接入功能关闭</a>
+<span style="font-size:12pt; font-weight:bold; color:#630360">有空常回来看看</span><br>
+<span style="font-size:12pt; font-weight:bold; color:#630360">热烈庆祝南京大学仙林校区学生宿舍开通校园网!</span>
+<span style="font-size:12pt; font-weight:bold; color:red">欢迎新同学!</span><span style="font-size:12pt; font-weight:bold; color:blue"> 南京大学12级本科新生已可以注册, 学号开头不需要加字母 b .<br>
+研究生新生学号开头依然需要加 mg 或 dg .</span><br>
+<span style="font-size:12pt; font-weight:bold; color:red">当最后一天来临的时候, 你想和谁待在一起?</span>
+<span style="font-size:12pt; font-weight:bold; color:red">假期将至，春节临近，愿各位考试顺利，回家平安，留守快乐</span>
+<span style="font-size:12pt; font-weight:bold; color:white">除夕快乐，阖家团圆</span>
+<span style="font-size:12pt; font-weight:bold; color:red">你知道吗？种子按“添加时间”排序可以避免被提升上来的补种干扰</span>
+<span style="font-size:12pt; font-weight:bold; color:black">为响应学校促进在校人员合理作息的行动，紫荆站作为网游的变体，将于</span><span style="font-size:12pt; font-weight:bold; color:red">即日起每天晚上 11 点休站<span><span style="font-size:12pt; font-weight:bold; color:black">。<br>休站期间紫荆站页面将不可浏览，而 Tracker 将正常工作，挂种依然有流量和积分！</span>
+<span style="font-size:12pt; font-weight:bold; color:black">因为开了某加速器导致校园网无法连接，没及时上来关站……<br>貌似时间已过，这次黑得真不够专业，在此表示诚挚的歉意</span>
+<span style="font-size:12pt; font-weight:bold; color:red">成绩属于所有管理组成员，和所有付出过劳动的人。不足是站长的失职。</span>
+<span style="font-size:12pt; font-weight:bold; color:purple">ZiJing is JUST intermediate, not great.</span>
+<span style="font-size:12pt; font-weight:bold; color:red">因网络改造, 紫荆站近期访问特别是 IPv6 访问可能不稳定, 请谅解</span>
+<span style="font-size:12pt; font-weight:bold; color:red">之前由于网络问题导致新用户注册密码邮件以及重置密码邮件没有发出，请各位收不到密码邮件的用户使用重置密码功能重新获取邮件，造成不便敬请谅解<br></span><span style="font-size:12pt; font-weight:bold; color:#ccccff">貌似答辩通过了要开全站免费？</span>
+<span style="font-size:12pt; font-weight:bold; color:purple">6.20</span>
+<span style="font-size:12pt; font-weight:bold; color:purple">6.21</span>
+<span style="font-size:12pt; font-weight:bold; color:purple">6.22 ~ 2004, 6.23 ~ 2005, 6.24 ~ 2006, 6.25 ~ 2007, 6.26 ~ 2008</span>
+<p style="font-size:12pt; font-weight:bold; color:purple; text-align:center">6.22 ~ 2004, 6.23 ~ 2005, 6.24 ~ 2006, 6.25 ~ 2007, 6.26 ~ 2008, 6.27 ~ 2009, 6.28 ~ 2010</p>
+<p style="background-color:black"><span style="font-family: Monospace; font-size:12pt; font-weight:bold; color:white">EL8LatSPQ@ZiJingBT: ~$ 再见，南京大学</span><span style="font-family: Monospace; font-size:12pt; font-weight:bold; color:white" id="spanHint">&nbsp</span></p>
+<script type="text/javascript">
+	var spanChange = document.getElementById( 'spanHint' )
+	var text = spanChange.innerHTML;
+	setInterval( change, 1000 );
+	function change() {
+		if ( text == '&nbsp' ) {
+			text = '_'; }
+		else {
+			text = '&nbsp'; }
+		spanChange.innerHTML = text;
+	}
+</script>
+<p style="font-size:12pt; font-weight:bold; color:purple; text-align:center">6.22 ~ 2004, 6.23 ~ 2005, 6.24 ~ 2006, 6.25 ~ 2007, 6.26 ~ 2008, 6.27 ~ 2009, 6.28 ~ 2010, 6.29 ~ 2011, 6.30 ~ 2012, 7.1 ~ 2013</p>
+<p style="font-size:12pt; font-weight:bold; color:blue; text-align:left; line-height:0em"><a style="font-size:12pt; font-weight:bold; color:#009f00; text-decoration:none" href="/login.html?uid=22636">yfhay</a>：</p><span style="font-size:12pt; font-weight:bold; color:blue; text-align:left; padding-left:2em">喜欢你那么久，终于在行将毕业的时候说出口。我会弥补本该属于你的快乐时光，只希望你能给我这次机会。</span><p style="font-size:12pt; font-weight:bold; color:purple; text-align:right; line-height:0em">From：<a style="font-size:12pt; font-weight:bold; color:#dc143c; text-decoration:none" href="/talk.html?uid=6152">george</a> wqh</p>
+<span style="font-size:12pt; font-weight:bold; color:red">欢迎新同学!<br>13级本科新生使用学生邮箱注册时学号前不需要加字母 b</span>
+<span style="font-size:12pt; font-weight:bold; color:red">四岁了!</span>
+<span style="font-size:12pt; font-weight:bold; color:red">囍 2014.1.10 农历十二月初十 囍</span>
+<span style="font-size:12pt; font-weight:bold; color:red">非常热烈地欢迎新同学!</span>
+<span style="font-size:12pt; font-weight:bold; color:red">光棍不是你的错，要怪就怪这个世界</span>
+<span style="font-size:12pt; font-weight:bold; color:red">新年快乐！</span>
+<span style="font-size:12pt; font-weight:bold; color:red">热烈庆祝南京大学建校 113 周年！</span>
+<span style="font-size:12pt; font-weight:bold; color:red">各位端午节快乐</span><br/>
+<span style="font-size:10pt; font-weight:bold; color:red">端午了，马上就要说再见了呢 — by <a style="font-size:10pt; font-weight:bold; color:#4b0082; text-decoration:none" href="/login.html?uid=35219">七彩乱码</a></span>
+<span style="font-size:12pt; font-weight:bold; color:red">国庆快乐！<br>邮箱注册时学号前不需要添加字母 b<br>紫荆使用问题请看置顶种子以及常见问题！</span>
+-->
+</div>
+<div id="tdClient" class="top_tool_right" style="display:none" onMouseOver="javascript: showToolRight('tdClient','tdClientTrigger');" onMouseOut="javascript: hideTool(event,'tdClient','tdClientTrigger');">
+<a class="black" target="_blank" href="stats.html?id=83310"><span style="color:red">新手指引</span></a><hr>
+推荐客户端: <img src="/files/client/utorrent.PNG"><a class="black" href="/files/client/uTorrent.zip">μTorrent 2.0.4</a><br>
+推荐BRAS客户端: <a class="black" target="_blank" href="http://www.yaoge123.com/blog/bras">yaoge123版 南京大学BRAS</a><hr>
+紫荆PT咨询群: 141852458 <a target="_blank" href="http://qun.qq.com/#jointhegroup/gid/141852458"><img border="0" src="/files/join.PNG" alt="点击这里加入此群" title="点击这里加入此群"></a><br>
+<a style="color:purple; text-decoration:none" target="_blank" href="http://page.renren.com/601070835">紫荆站人人公共主页</a>
+</div>
+<!-- XBNBT HEADER.HTML END -->
+
+</td>
+</tr>
+<tr class="top_navbar">
+<td class="top_navbar"><div class="navbar_index">
+<table class="navbar">
+<tr class="navbar">
+<td class="navbar"><a title="登录" class="navbar_login" href="/login.html">登录</a></td>
+<td class="navbar"><a title="学校注册" class="navbar_signup" href="/signupschool.html">学校注册</a> / <a title="邀请注册" class="navbar_signup" href="/invite.html">邀请注册</a></td>
+<td class="navbar"><a class="navbar_info" title="信息" href="/info.html">信息</a></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table class="main_table">
+<tr class="main_table_torrent">
+<td class="main_table_torrent">
+<p class="unauthorized">403 Forbidden</p>
+<p class="denied">你不能查看这个页面, 可能是因为你设置了代理. 请检查你的浏览器设置, 把本站地址设置为代理例外或者取消代理.</p>
+
+</td></tr><tr class="static_footer">
+<td class="static_footer">
+<div class="static_footer">
+<!-- XBNBT FOOTER.HTML START -->
+
+<div class="friendly_link">
+	<span>友情链接：</span>
+	<a target="_blank" href="http://www.iminisd.com/"><img class="friendly_link" alt="米饭网" title="米饭网" src="/files/links/www.iminisd.com.gif"></a>
+	<a target="_blank" href="http://pt.gztown.net/"><img class="friendly_link" alt="港知堂社区PT站" title="港知堂社区PT站" src="/files/links/pt.gztown.net.png"></a>
+</div>
+<p>免责条款：本站列出的文件并没有保存在本站的服务器上。本站的链接均由用户自发提供。本站的管理员无法对用户的提交内容负责。如果您没有对其它用户提供的文件有使用许可，那么请不要下载这些文件以及材料，由此引起的后果由您自己承担。</p>
+<p class="links">紫荆站 | ZiJingBT v2 | <a href="http://zijingbt.njuftp.org">http://zijingbt.njuftp.org</a></p>
+
+<!-- XBNBT FOOTER.HTML END -->
+
+</div>
+
+</td></tr>
+</table><script type="text/javascript">
+<!--
+var toolMessage = document.getElementById( 'tdMessage' );
+var toolTalk = document.getElementById( 'tdTalk' );
+if( toolMessage && toolMessage.style.display=="" ) {
+  toolMessage.style.display="none";
+  showToolRight('tdMessage','tdMessageTrigger'); }
+if( toolTalk && toolTalk.style.display=="" ) {
+  toolTalk.style.display="none";
+  showToolLeft('tdTalk','tdTalkTrigger'); }
+//-->
+</script>
+
+</body>
+</html>

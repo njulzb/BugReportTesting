@@ -1,0 +1,10 @@
+title:0.15b on F-Droid
+
+Would it be possible to publish the latest release v0.15b on F-Droid as well?
+Thanks!
+A tag for 0.15b would be helping as well to check the diff.
+A tag for 0.15b would be helping as well to check the diff.
+0.21 already there
+/close there
+0.21 already there
+/close there

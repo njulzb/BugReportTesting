@@ -1,0 +1,14 @@
+title:Scheduled transaction imported with imbalanced splits
+
+From user report:
+I've come across a problem with scheduled actions. On GnuCash on my Linux desktop I have several scheduled actions that run every month. On android though so of them are missing the one of the amounts. For example i have £10 going from my bank account to a savings account. On android when I look at the scheduled action it has £0 coming out of my bank and £10 going into the savings account, leaving the transaction -£10 imbalanced.
+The issue appears when the scheduled transaction has both credit and debit slots in each split:
+The parser first reads the credit-numeric slot and sets the split value to 20 (handleEndOfTemplateNumericSlot). Then it reads the debit-numeric slot and sets the split value to 0. The pair split is read correctly, as the value appears in the debit-numeric slot, so the transaction ends up imbalanced.
+I've found an scheduled transaction like this in my expenses file (created 2 years ago). With a current version of GnuCash desktop the behaviour seems to have changed (not sure of the reason). Now it writes just one debit/credit slot in each split:
+This might be the same issue as #482. Here are just 2 splits instead of 3, however, I think in a previous beta there appeared 3 splits too.
+The issue appears when the scheduled transaction has both credit and debit slots in each split:
+The parser first reads the credit-numeric slot and sets the split value to 20 (handleEndOfTemplateNumericSlot). Then it reads the debit-numeric slot and sets the split value to 0. The pair split is read correctly, as the value appears in the debit-numeric slot, so the transaction ends up imbalanced.
+I've found an scheduled transaction like this in my expenses file (created 2 years ago). With a current version of GnuCash desktop the behaviour seems to have changed (not sure of the reason). Now it writes just one debit/credit slot in each split:
+This might be the same issue as #482. Here are just 2 splits instead of 3, however, I think in a previous beta there appeared 3 splits too.
+Fixed in develop branch.
+Fixed in develop branch.

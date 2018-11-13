@@ -1,0 +1,11 @@
+title:Unable to select the equilizer option etc
+
+I had also sent an email about this and with few more suggestions....
+Please do acknowledge my email as well as this issue
+22mehta22@gmail.com
+Regarding the equalizer issue you mentioned. If I'm not mistaken the app uses the system equalizer and on some different vendor implementations ( such as HTC roms ) you don't have a system eq. available .
+On samsung for example ,I can access the equalizer without any problems , but on an HTC one I can't
+Regarding the equalizer issue you mentioned. If I'm not mistaken the app uses the system equalizer and on some different vendor implementations ( such as HTC roms ) you don't have a system eq. available .
+On samsung for example ,I can access the equalizer without any problems , but on an HTC one I can't
+Equalizer should be accesible in release 0.13b on Google Play (If your device has an audio effects intent)
+Equalizer should be accesible in release 0.13b on Google Play (If your device has an audio effects intent)

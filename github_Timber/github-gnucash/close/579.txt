@@ -1,0 +1,28 @@
+title:multiple books - widget says that the account was deleted
+
+The widget shows the amount of the account.
+The widget says that the account was deleted.
+@codinguser This is fixed in ff894a5, isn't it?
+@codinguser This is fixed in ff894a5, isn't it?
+Ok, I've verified it's fixed by that commit. It'll appear fixed in version 2.1.3. You may need to remove the widget and add it again for it to work.
+Ok, I've verified it's fixed by that commit. It'll appear fixed in version 2.1.3. You may need to remove the widget and add it again for it to work.
+@rivaldi8 yes, that commit adds support for selecting the book when adding a widget
+@rivaldi8 yes, that commit adds support for selecting the book when adding a widget
+@rivaldi8 The problem is still present in 2.1.3. I did remove the widgets and added them again.
+But it happens only sometimes, not as often as with 2.1.2.
+And the widgets start working again without recreating.
+I couldn't find out why they stop or why restart working. There seems to be no obvious trigger.
+I also had the case that only some widgets for one book show the message while others still work fine.
+Do you want to reopen this bug or should I file a new one?
+@rivaldi8 The problem is still present in 2.1.3. I did remove the widgets and added them again.
+But it happens only sometimes, not as often as with 2.1.2.
+And the widgets start working again without recreating.
+I couldn't find out why they stop or why restart working. There seems to be no obvious trigger.
+I also had the case that only some widgets for one book show the message while others still work fine.
+Do you want to reopen this bug or should I file a new one?
+I also had the case that only some widgets for one book show the message while others still work fine.
+This makes me think we are dealing with a different, although similar, bug. If you don't mind, I'll rather have it filed as new bug. Thanks!
+I also had the case that only some widgets for one book show the message while others still work fine.
+This makes me think we are dealing with a different, although similar, bug. If you don't mind, I'll rather have it filed as new bug. Thanks!
+I filed #613.
+I filed #613.

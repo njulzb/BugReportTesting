@@ -1,0 +1,3 @@
+title:Lag on UI thread.
+
+There seems to be some noticeable lag in in the interface, particularly when a song is has been playing for a while. It is after a while, the animations lag behind user input by as much as 2 seconds. I can't tell what's causing this.

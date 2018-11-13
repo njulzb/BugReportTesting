@@ -1,0 +1,141 @@
+title:Total balance is incorrect for one of my accounts
+
+For one of my accounts the total balance is not correct. At the moment the total balance should be 1656.01BGN but the total balance shown is 1714.77BGN. There are no future transactions. I actually went through all transactions and calculated them by hand and came up with the exact same number as is shown in my actual bank account: 1656.01BGN.
+I'm managing 9 accounts but this seems to be the only one exhibiting the problem. What is special about this account is that it is in BGN, but it contains several transactions that are done between this account and a couple of my other accounts which are in EUR. Possibly something has gone wrong in the currency conversion.
+I'm willing to privately share a backup of my data files if this could help in debugging the problem.
+What version of the software are you using?
+It does indeed sound like something to do with the currency conversion.
+Did you enter the transactions first in the EUR accounts or in the BGN accounts?
+What version of the software are you using?
+It does indeed sound like something to do with the currency conversion.
+Did you enter the transactions first in the EUR accounts or in the BGN accounts?
+I'm using 2.0.7. For the entry of the transactions, I have done both. Some were entered on the EUR side, some on the BGN side. Proportionally the large majority have been entered on the BGN side.
+The UI for entering conversion rates is not 100% reliable. The currency conversion needs to be entered in a modal dialog, but this does not appear consistently. For example it does not appear when editing a value which on a transaction which had already been saved. It is possible something went wrong here.
+What is also a likely cause is that for some transactions I had corrected these values on both sides in earlier versions of the app, back when it was not possible to enter the exact currency conversion value because there were not enough significant digits.
+I'm using 2.0.7. For the entry of the transactions, I have done both. Some were entered on the EUR side, some on the BGN side. Proportionally the large majority have been entered on the BGN side.
+The UI for entering conversion rates is not 100% reliable. The currency conversion needs to be entered in a modal dialog, but this does not appear consistently. For example it does not appear when editing a value which on a transaction which had already been saved. It is possible something went wrong here.
+What is also a likely cause is that for some transactions I had corrected these values on both sides in earlier versions of the app, back when it was not possible to enter the exact currency conversion value because there were not enough significant digits.
+Is there anything I can do to help debug this?
+Is there anything I can do to help debug this?
+@pfrenssen  I will let you know if we do. I've just not had the time to look at this.
+@rivaldi8 You've worked on currency conversions recently. Is it possible for you to look into this?
+@pfrenssen  I will let you know if we do. I've just not had the time to look at this.
+@rivaldi8 You've worked on currency conversions recently. Is it possible for you to look into this?
+@codinguser Yes, sure, I'll have a look.
+@pfrenssen If you could send your data to rivladi8 at gmail.com, it would help, thanks.
+@codinguser Yes, sure, I'll have a look.
+@pfrenssen If you could send your data to rivladi8 at gmail.com, it would help, thanks.
+I've been testing these days and, while I've found some small issues, like the opening of the conversion dialog you mention, so far I haven't been able to reproduce the balance issue. Maybe knowing this would help:
+I've been testing these days and, while I've found some small issues, like the opening of the conversion dialog you mention, so far I haven't been able to reproduce the balance issue. Maybe knowing this would help:
+@rivaldi8, can you tell me where the data files are located?
+@rivaldi8, can you tell me where the data files are located?
+The data is under /data/data/org.gnucash.android/databases/, but you won't be able to access it unless your device is rooted. You can export it though:
+The data is under /data/data/org.gnucash.android/databases/, but you won't be able to access it unless your device is rooted. You can export it though:
+@rivaldi8  thanks! I will export the data and e-mail it to you. Just to confirm, does your e-mail address start with 'rivladi8' or 'rivaldi8'?
+@rivaldi8  thanks! I will export the data and e-mail it to you. Just to confirm, does your e-mail address start with 'rivladi8' or 'rivaldi8'?
+Sorry, I mistyped it. It's 'rivaldi8'.
+Sorry, I mistyped it. It's 'rivaldi8'.
+@rivaldi8, thanks, I have sent you the exported data.
+@rivaldi8, thanks, I have sent you the exported data.
+Finally I've found what's going on. The source of the problem is the transaction that appears with an amount of 330.93 BGN (25th may).
+Let's add some context first  (@codinguser  please, correct me if I'm wrong). A transaction is always represented by two splits (assuming no manually entered splits). Both have the same amount but with different sign. One belongs to the account of the transaction. The other to the transfer account.
+Also, each split stores two amounts: "quantity" and "value".
+For example, a transaction introduced in account A, with B as transfer account (both accounts having the same currency) and an amount of 10, would be represented like this:
+where splitA belongs to account A and splitB to B.
+If B had a different currency with an exchange rate of 0.5, we'd have:
+splitB.quantity would be in the currency of account B. The rest with the currency of A.
+Then, in the problematic transaction, which is between accounts with the same currency, we have something like this:
+splitA.value shoud be -10, to be correct.
+The reason the numbers don't add up is that the transactions list uses (in this case --same currency) split.value to calculate the transaction balance (see Transaction.computeBalance. So in the transaction appears with a balance of -5. However, in the accounts list the balance is calculated from the "quantity" instead (see SplitsDbAdapter.calculateSplitBalance. So it uses -10.
+I've tried to create a transaction with the same inconsistency, but I've haven't succeeded. @pfrenssen  do you remember what did you do with this transaction? It looks as if previously it had an account with different currency and then, it was edited somehow producing this inconsistency.
+Finally I've found what's going on. The source of the problem is the transaction that appears with an amount of 330.93 BGN (25th may).
+Let's add some context first  (@codinguser  please, correct me if I'm wrong). A transaction is always represented by two splits (assuming no manually entered splits). Both have the same amount but with different sign. One belongs to the account of the transaction. The other to the transfer account.
+Also, each split stores two amounts: "quantity" and "value".
+For example, a transaction introduced in account A, with B as transfer account (both accounts having the same currency) and an amount of 10, would be represented like this:
+where splitA belongs to account A and splitB to B.
+If B had a different currency with an exchange rate of 0.5, we'd have:
+splitB.quantity would be in the currency of account B. The rest with the currency of A.
+Then, in the problematic transaction, which is between accounts with the same currency, we have something like this:
+splitA.value shoud be -10, to be correct.
+The reason the numbers don't add up is that the transactions list uses (in this case --same currency) split.value to calculate the transaction balance (see Transaction.computeBalance. So in the transaction appears with a balance of -5. However, in the accounts list the balance is calculated from the "quantity" instead (see SplitsDbAdapter.calculateSplitBalance. So it uses -10.
+I've tried to create a transaction with the same inconsistency, but I've haven't succeeded. @pfrenssen  do you remember what did you do with this transaction? It looks as if previously it had an account with different currency and then, it was edited somehow producing this inconsistency.
+I don't remember what I did, but I see that this transaction is for a flight which I paid with my company account, where usually I pay all my flights with my VISA account. It is possible I first entered this transaction for my VISA account (which is in EUR), and then changed it to my company account (which is in BGN). If the resulting value is around half of the original value then this seems consistent with this, 1 EUR = 1.95583 BGN.
+It was around the 25th of May indeed that I started noticing that my account total was wrong. When I filed the bug report I already had the problem for a few days but thought I made a mistake when entering data. On the 28th I verified all individual transactions by hand and compared them to my bank account and realized I was dealing with a bug.
+I don't remember what I did, but I see that this transaction is for a flight which I paid with my company account, where usually I pay all my flights with my VISA account. It is possible I first entered this transaction for my VISA account (which is in EUR), and then changed it to my company account (which is in BGN). If the resulting value is around half of the original value then this seems consistent with this, 1 EUR = 1.95583 BGN.
+It was around the 25th of May indeed that I started noticing that my account total was wrong. When I filed the bug report I already had the problem for a few days but thought I made a mistake when entering data. On the 28th I verified all individual transactions by hand and compared them to my bank account and realized I was dealing with a bug.
+Ok, thanks for the information. I'll keep trying to reproduce de bug.
+By the way, I forgot to say that you should be able to fix the balance of this account by removing this transaction and entering it again.
+Ok, thanks for the information. I'll keep trying to reproduce de bug.
+By the way, I forgot to say that you should be able to fix the balance of this account by removing this transaction and entering it again.
+Thanks!
+Thanks!
+Steps to reproduce:
+"Account-BGN 2" account will be listed with a balance of -5 BGN. However, if opened, the transaction will be listed with an amount of -10 BGN.
+I'll work on a fix.
+Steps to reproduce:
+"Account-BGN 2" account will be listed with a balance of -5 BGN. However, if opened, the transaction will be listed with an amount of -10 BGN.
+I'll work on a fix.
+That's great news, really glad that you can replicate the problem. Thanks very much for your time!
+That's great news, really glad that you can replicate the problem. Thanks very much for your time!
+thanks @rivaldi8
+thanks @rivaldi8
+So I have been trying some ways to reproduce this bug. This is what I'm doing, starting from empty database:
+*8. Open Acct-EUR and press 'Edit' icon on the transaction
+9. Change the transfer account to Acct-BGN2
+10. Press 'Save' in the title bar
+11. Now the total in Acct-BGN2 is incorrectly shown as 5 BGN (instead of 10 BGN as it should be). The Acct-EUR side of the transaction still correctly shows €5
+*8. Open Acct-BGN1 and press 'Edit' icon on the transaction
+9. Do not change anything within the transaction
+10. Press 'Save' to save the transaction
+11. Acct-EUR side of the transaction now incorrectly shows €10 (instead of €5)
+The two caveats are bugs in themselves, but are not the exact some bug in this issue.
+@rivaldi8 I am having trouble replicating the bug where the transaction total and the account total mismatch. I know I succeeded in replicating it once. But now it's gone. Step 3 in your comment does not occur for me (i.e. the TF dialog doesn't open). I just switch the account from Acct-EUR to Acct-BGN2 and save. Then both splits show 10 BGN (as they should).
+Could you help me complete the steps above in detail to produce a path which shows the error? Thanks
+So I have been trying some ways to reproduce this bug. This is what I'm doing, starting from empty database:
+*8. Open Acct-EUR and press 'Edit' icon on the transaction
+9. Change the transfer account to Acct-BGN2
+10. Press 'Save' in the title bar
+11. Now the total in Acct-BGN2 is incorrectly shown as 5 BGN (instead of 10 BGN as it should be). The Acct-EUR side of the transaction still correctly shows €5
+*8. Open Acct-BGN1 and press 'Edit' icon on the transaction
+9. Do not change anything within the transaction
+10. Press 'Save' to save the transaction
+11. Acct-EUR side of the transaction now incorrectly shows €10 (instead of €5)
+The two caveats are bugs in themselves, but are not the exact some bug in this issue.
+@rivaldi8 I am having trouble replicating the bug where the transaction total and the account total mismatch. I know I succeeded in replicating it once. But now it's gone. Step 3 in your comment does not occur for me (i.e. the TF dialog doesn't open). I just switch the account from Acct-EUR to Acct-BGN2 and save. Then both splits show 10 BGN (as they should).
+Could you help me complete the steps above in detail to produce a path which shows the error? Thanks
+Ok, all is correct up to step 7, but there's a mistake in 8. Also, I defined the steps for the 2.0.7 but I guess you are on develop, then there's an additional step:
+*8. Open Acct-BGN1 (not Acct-EUR), and press the 'Edit' icon on the transaction
+9. The transaction form opens, but no TF dialog opens automatically here (because different behaviour in develop). To force it to open: change the transfer account to Acct-BGN2 and back to Acct-EUR again. Now the transfer funds dialog will open. Press "Save".
+10. Change the transfer account to Acct-BGN2 again.
+11. Press the 'Save' option in the title bar to save the transaction
+I can also reproduce the caveats. Do you want me to work on fixing them?
+Ok, all is correct up to step 7, but there's a mistake in 8. Also, I defined the steps for the 2.0.7 but I guess you are on develop, then there's an additional step:
+*8. Open Acct-BGN1 (not Acct-EUR), and press the 'Edit' icon on the transaction
+9. The transaction form opens, but no TF dialog opens automatically here (because different behaviour in develop). To force it to open: change the transfer account to Acct-BGN2 and back to Acct-EUR again. Now the transfer funds dialog will open. Press "Save".
+10. Change the transfer account to Acct-BGN2 again.
+11. Press the 'Save' option in the title bar to save the transaction
+I can also reproduce the caveats. Do you want me to work on fixing them?
+@rivaldi8 oh I see. Thank you.
+So this issue is caused by the simple fact that the TF dialog opens. hmm, interesting.
+I will write some tests and fixes.
+I think this issue and the caveats are linked. So I will just work on them.
+Would #526 interest you?
+@rivaldi8 oh I see. Thank you.
+So this issue is caused by the simple fact that the TF dialog opens. hmm, interesting.
+I will write some tests and fixes.
+I think this issue and the caveats are linked. So I will just work on them.
+Would #526 interest you?
+Well, not caused when transfer funds dialog is opened, but really when you press "Save" and the value get stored in TransactionFromFragment.mSplitQuantity. In case you get confused by the additional changes to support the fix, the key is in line 761 in 2d76e1f.
+Ok! I'll work on #526.
+Well, not caused when transfer funds dialog is opened, but really when you press "Save" and the value get stored in TransactionFromFragment.mSplitQuantity. In case you get confused by the additional changes to support the fix, the key is in line 761 in 2d76e1f.
+Ok! I'll work on #526.
+2d76e1f alone does not seem to fix it.
+I added some tests and they did not pass even after merging it.
+I managed to simplify the code for saving transactions and fix the problem in the process. I have uploaded it to the branchfix-multicurrency-editing and I would like your feedback on it, before I merge into master. I also added a few multi-currency transaction tests.
+Please check it out let me know if stuff works for you. I'll merge sometime tomorrow into develop
+2d76e1f alone does not seem to fix it.
+I added some tests and they did not pass even after merging it.
+I managed to simplify the code for saving transactions and fix the problem in the process. I have uploaded it to the branchfix-multicurrency-editing and I would like your feedback on it, before I merge into master. I also added a few multi-currency transaction tests.
+Please check it out let me know if stuff works for you. I'll merge sometime tomorrow into develop
+I've done some testing and it seems to be working properly now. Save for some small non-important issues (I'll add some inline comments), the changes seem sensible (by the way, great work with saveNewTransaction! :)
+I've done some testing and it seems to be working properly now. Save for some small non-important issues (I'll add some inline comments), the changes seem sensible (by the way, great work with saveNewTransaction! :)

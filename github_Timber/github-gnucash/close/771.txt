@@ -1,0 +1,15 @@
+title:QIF export crashes due to illegal denominator
+
+GnuCash Android crashes a few seconds after starting to export my transactions to a QIF file, either local or in Dropbox. File is created, but empty. I've been exporting my mobile transactions to desktop app this way for a long time, and it had worked last time with the same database.
+I've checked Android logs with CatLog and found this error message:
+01-18 09:59:44.314 W/System.err(23088): org.gnucash.android.export.Exporter$ExporterException: Failed to generate export with parameters: Export all transactions created since 2017-11-22 01:36:43.359 UTC as QIF to DROPBOX - split quantity has illegal denominator: 1000000
+I've searched Google for this error message, and found source code (QifExporter.java) that throws it if a split has the QUANTITY_DENOM column set to an unsupported value. It seems that allowed values are only 10, 100 or 1000.
+Then I've opened the current book's database file with SQLite and ran a query to find out which transactions had the unsupported 1.000.000 value as QUANTITY_DENOM, and found a few of them, as shown in the attached screenshot. These were transactions created with GnuCash Desktop and imported to GnuCash Android 2 months ago, with a recent beta version of the mobile app (not sure which of them).
+After deleting those few transactions (didn't try to fix them in the database, as they're already in GnuCash Desktop), export works fine.
+I don't know GnuCash internals to tell if setting the denominator column to 1.000.000 was a mistake of the desktop or the mobile app, but I believe it should be properly handled at export time.
+GnuCash Android 2.3.0 (from Play Store, not sure if it's beta1 or beta3, but also happened before last update).
+Reported through Google Plus.
+
+
+Fixed in develop (a55ec29).
+Fixed in develop (a55ec29).

@@ -1,0 +1,15 @@
+title:Ant support
+
+codinguser
+This is a suggestion for improvement.
+Now this project needs to be imported into an Eclipse environment.
+It could be useful to give a simpleway to compile and pack it in order to generate an APK.
+Anybody who wants to test this project should not get Eclipse.
+I am looking into this. But it would likely be maven instead of ant.
+I am looking into this. But it would likely be maven instead of ant.
+Ok, Maven is ok.
+The main idea is to not require Eclipse.
+Ok, Maven is ok.
+The main idea is to not require Eclipse.
+F-droid has this app and that uses ant. I entered it myself and there is no trickery
+F-droid has this app and that uses ant. I entered it myself and there is no trickery

@@ -1,0 +1,22 @@
+title:app crashes when switching between different books if recent/favorites selected
+
+Switch to selected book.
+App crashes.
+I'm not able to reproduce this on my device (Nexus 5, Android 6).
+@rivaldi8 can you reproduce this?
+I'm not able to reproduce this on my device (Nexus 5, Android 6).
+@rivaldi8 can you reproduce this?
+@nikopp yes, it helps. I'll be on the lookout for it.
+Thanks
+@nikopp yes, it helps. I'll be on the lookout for it.
+Thanks
+@codinguser I'd swear I reproduced it yesterday, but I'm unable to do so now. As I keep changing branches, maybe it was with another one or under another condition.
+@nikopp Are you able to reproduce it always?
+@codinguser I'd swear I reproduced it yesterday, but I'm unable to do so now. As I keep changing branches, maybe it was with another one or under another condition.
+@nikopp Are you able to reproduce it always?
+@rivaldi8 No. A few weeks ago it happened all the time but now it often works several times before it crashes.
+@rivaldi8 No. A few weeks ago it happened all the time but now it often works several times before it crashes.
+I now have a new phone and the problem is still there on a Samsung galaxy a3 with Oreo.
+I sent several crash reports in the past week.
+I now have a new phone and the problem is still there on a Samsung galaxy a3 with Oreo.
+I sent several crash reports in the past week.

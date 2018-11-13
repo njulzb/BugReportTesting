@@ -1,0 +1,35 @@
+title:Entering new transaction fails in 1.5.3
+
+With 1.5.3 and double-entry activated, entering a new transaction (in completely empty accounts) fails. After pressing "Save", the new transaction just vanishes and is nowhere visible.
+When de-activating double-entry, everything works fine. This is on android 4.4.4, , Sony xperia z1 compact.
+Also, in version 1.5.2, the entering of new transactions probably worked fine, but my memory might also trick me. For sure in version 1.5.1 all worked fine.
+Thanks for reporting this.
+I am at a loss because I've had a few reports of this, but cannot replicate it.
+I have tried with both double-entry enabled and disabled, with no luck.
+Maybe it could be something that carries over from upgrades since I am constantly reinstalling as part of the dev process. I'll keep trying to find out what is happening.
+Maybe can you give me an example of the account types involved and I can try to exactly replicate your environment. I tried with some simple account types and everything worked
+Thanks for reporting this.
+I am at a loss because I've had a few reports of this, but cannot replicate it.
+I have tried with both double-entry enabled and disabled, with no luck.
+Maybe it could be something that carries over from upgrades since I am constantly reinstalling as part of the dev process. I'll keep trying to find out what is happening.
+Maybe can you give me an example of the account types involved and I can try to exactly replicate your environment. I tried with some simple account types and everything worked
+Confirming, happens to me as well.
+Steps:
+Android 4.4.2
+Just checked with default accounts: records are created. So I think it has something to do with the case when there is just 1 account.
+Confirming, happens to me as well.
+Steps:
+Android 4.4.2
+Just checked with default accounts: records are created. So I think it has something to do with the case when there is just 1 account.
+The bug can be reproduced with @relgames 's procedure.
+It is because there's no valid account for the other split in the new created transaction, so the creation of the transaction fails.
+The valid transfer accounts are queried in the DB in TransactionFormFragment.updateTransferAccountsList() .
+I think a warning should be added when the user tries to create a new transaction in a account but no valid transfer account can be found. Or create an Imbalance account if no valid transfer account is found.
+The bug can be reproduced with @relgames 's procedure.
+It is because there's no valid account for the other split in the new created transaction, so the creation of the transaction fails.
+The valid transfer accounts are queried in the DB in TransactionFormFragment.updateTransferAccountsList() .
+I think a warning should be added when the user tries to create a new transaction in a account but no valid transfer account can be found. Or create an Imbalance account if no valid transfer account is found.
+Checked with 1.5.2 - no issue.
+Checked with 1.5.2 - no issue.
+Checked latest develop branch - it is fixed.
+Checked latest develop branch - it is fixed.

@@ -1,0 +1,97 @@
+title:Importing Transactions from Desktop
+
+Perhaps I'm missing something here, but I'm having difficulty importing expenses from the desktop to the mobile app. I can import my accounts, no problem. I do the following:
+In Gnu cash desktop
+In the mobile app
+And the app is filled with accounts.
+However, I don't see any option to import transactions. I import an entire .gnucash file (a copy of my desktop .gnucash file) but was unable to do so. I tried exporting all transactions to CSV and (as expected), that failed.
+I was about to roll up my sleeves and solve this bug, but--browsing the issues--this does not seem to be an issue.
+Is it just me?
+Maybe you need
+File / Export / Export Transactions to CSV.
+When I do "Export Accounts" I expect to not get transactions only accounts.
+On Oct 1, 2014 5:53 AM, "freckles-the-pirate" notifications@github.com
+wrote:
+Perhaps I'm missing something here, but I'm having difficulty importing
+expenses from the desktop to the mobile app. I can import my accounts, no
+problem. I do the following:
+In Gnu cash desktop
+In the mobile app
+And the app is filled with accounts.
+However, I don't see any option to import transactions. I import an entire
+.gnucash file (a copy of my desktop .gnucash file) but was unable to do
+so. I tried exporting all transactions to CSV and (as expected), that
+failed.
+I was about to roll up my sleeves and solve this bug, but--browsing the
+issues--this does not seem to be an issue.
+Is it just me?
+—
+Reply to this email directly or view it on GitHub
+#233.
+Maybe you need
+File / Export / Export Transactions to CSV.
+When I do "Export Accounts" I expect to not get transactions only accounts.
+On Oct 1, 2014 5:53 AM, "freckles-the-pirate" notifications@github.com
+wrote:
+Perhaps I'm missing something here, but I'm having difficulty importing
+expenses from the desktop to the mobile app. I can import my accounts, no
+problem. I do the following:
+In Gnu cash desktop
+In the mobile app
+And the app is filled with accounts.
+However, I don't see any option to import transactions. I import an entire
+.gnucash file (a copy of my desktop .gnucash file) but was unable to do
+so. I tried exporting all transactions to CSV and (as expected), that
+failed.
+I was about to roll up my sleeves and solve this bug, but--browsing the
+issues--this does not seem to be an issue.
+Is it just me?
+—
+Reply to this email directly or view it on GitHub
+#233.
+I import an entire .gnucash file (a copy of my desktop .gnucash file)
+but was unable to do so.
+No, that ".gnucash" file is not the one you want.
+When you export your accounts it will be a ".gnucash" file but not a copy
+of the GnuCash Desktop ".gnucash" file.
+I thought that after importing "accounts" to GnuCash Android that then you
+could import "transactions" to GnuCash Android. But I don't see an option
+to do that in GnuCash Android Settings or in Settings / Transactions.
+When I use GnuCash Android I assume that I'm beginning without any
+transactions. I like that while I run errands around town I can gather the
+transactions. I later export those and then import them to GnuCash Desktop.
+I haven't found the need to have all the GnuCash Desktop transactions in my
+GnuCash Android.
+I import an entire .gnucash file (a copy of my desktop .gnucash file)
+but was unable to do so.
+No, that ".gnucash" file is not the one you want.
+When you export your accounts it will be a ".gnucash" file but not a copy
+of the GnuCash Desktop ".gnucash" file.
+I thought that after importing "accounts" to GnuCash Android that then you
+could import "transactions" to GnuCash Android. But I don't see an option
+to do that in GnuCash Android Settings or in Settings / Transactions.
+When I use GnuCash Android I assume that I'm beginning without any
+transactions. I like that while I run errands around town I can gather the
+transactions. I later export those and then import them to GnuCash Desktop.
+I haven't found the need to have all the GnuCash Desktop transactions in my
+GnuCash Android.
+"GnuCash Android only imports the exported account structure file – Many people try to import their whole GnuCash file into the Android app. This will not work (at least as of this moment). The app only accepts the account structure file which is gotten by going to File -> Export -> Export Accounts. Save the output and then use it in the Android app. Again, your normal GnuCash file will not work!"
+http://www.codinguser.com/2014/03/gnucash-android-account-import-guide/
+"GnuCash Android only imports the exported account structure file – Many people try to import their whole GnuCash file into the Android app. This will not work (at least as of this moment). The app only accepts the account structure file which is gotten by going to File -> Export -> Export Accounts. Save the output and then use it in the Android app. Again, your normal GnuCash file will not work!"
+http://www.codinguser.com/2014/03/gnucash-android-account-import-guide/
+Hi,
+@webmanoffesto I need to post a new blog post detailing the new changes in v1.4.x of GnuCash Android with respect to importing.
+Indeed your full .gnucash file can be imported by GnuCash Android. The transactions and accounts will be imported and everything else will be ignored. There is no separate action for importing transactions.
+@freckles-the-pirate However you need to make sure you are not saving your GnuCash file in a compressed format. There is setting on the desktop to save uncompressed XML. The upcoming v1.5.x can import compressed files, but v1.4.x does not.
+Also make sure your GnuCash desktop is saving to uncompressed XML and not sql db. The blog post linked to by @webmanoffesto  is still worth a read. What exactly is the error you get when you try to import your full GnuCash file?
+Hi,
+@webmanoffesto I need to post a new blog post detailing the new changes in v1.4.x of GnuCash Android with respect to importing.
+Indeed your full .gnucash file can be imported by GnuCash Android. The transactions and accounts will be imported and everything else will be ignored. There is no separate action for importing transactions.
+@freckles-the-pirate However you need to make sure you are not saving your GnuCash file in a compressed format. There is setting on the desktop to save uncompressed XML. The upcoming v1.5.x can import compressed files, but v1.4.x does not.
+Also make sure your GnuCash desktop is saving to uncompressed XML and not sql db. The blog post linked to by @webmanoffesto  is still worth a read. What exactly is the error you get when you try to import your full GnuCash file?
+@codinguser, Okay, finally got it this time. Thanks. A note to anyone not paying attention like me: Importing accounts will import both ACCOUNTS AND TRANSACTIONS Not sure what I did differently, but if anyone else comes across this post, here's what you should do:
+@codinguser, Okay, finally got it this time. Thanks. A note to anyone not paying attention like me: Importing accounts will import both ACCOUNTS AND TRANSACTIONS Not sure what I did differently, but if anyone else comes across this post, here's what you should do:
+Man, I just want to sync transactions on my desktop GNU Cash book with Android and vice versa. Importing the Qif file exported by Android to the Desktop works fine. However, I can't sync the other way without creating a new book on Android.
+What am I doing wrong?
+Man, I just want to sync transactions on my desktop GNU Cash book with Android and vice versa. Importing the Qif file exported by Android to the Desktop works fine. However, I can't sync the other way without creating a new book on Android.
+What am I doing wrong?

@@ -1,0 +1,101 @@
+title:Migrate existing backups to new backups folder (per book)
+
+I just backuped my account  and cleared the apps data & cache.
+When I try to restore it says
+No backups found. There are no existing backup files to restore from.
+On my phone I can find the exported file dated with the time of backup with the extension .gnca.zip
+What can I do to restore?
+Backups only happen in XML. QIF files cannot serve as backups.
+If you have a QIF file, you should import it into GnuCash desktop, and then generate GnuCash XML which you can import into the app.
+Backups only happen in XML. QIF files cannot serve as backups.
+If you have a QIF file, you should import it into GnuCash desktop, and then generate GnuCash XML which you can import into the app.
+The "Restore backups" functionality in the app only works on automatically generated backups or the ones which you get when you click "Create backup".
+For other backup times, simply import the file using "Settings --> Accounts --> Import GnuCash XML"
+The "Restore backups" functionality in the app only works on automatically generated backups or the ones which you get when you click "Create backup".
+For other backup times, simply import the file using "Settings --> Accounts --> Import GnuCash XML"
+Please submit help and feature requests through the "Help and Feedback" section within the app. Others can then comment and vote on issues there.
+GitHub issues should be used more for reporting problems with app functionality.
+Please submit help and feature requests through the "Help and Feedback" section within the app. Others can then comment and vote on issues there.
+GitHub issues should be used more for reporting problems with app functionality.
+@codinguser I did a backup using the "Create Backup".
+@codinguser I did a backup using the "Create Backup".
+Ah I see. I guess you are on the beta version.
+Look in SDCARD/org.gnucash.android/backups for your old backups.
+The new ones are saved in book-specific folders, and that is where the restore function looks first.
+Ah I see. I guess you are on the beta version.
+Look in SDCARD/org.gnucash.android/backups for your old backups.
+The new ones are saved in book-specific folders, and that is where the restore function looks first.
+Yes, that's what I mentioned in the edited issue. Probably you read the pre-edited one.
+I copied the backuped file into a new account folder but it doesn't import it. I tried with an older one (2015) it imports well.
+Yes, that's what I mentioned in the edited issue. Probably you read the pre-edited one.
+I copied the backuped file into a new account folder but it doesn't import it. I tried with an older one (2015) it imports well.
+@elmerehbi what error message do you get when you try to import?
+@elmerehbi what error message do you get when you try to import?
+I am not getting an error. The import process takes a long time and I am not sure what happens but it is not importing all accounts and "none of the transactions".
+I tried with an old backup and it works though.
+I forgot to report that the app, after the last upgrade, was very slow in loading transactions or accounts and it was taking about 40MB of data storage totaling at about 60MB. I backuped up my account in that version and then cleared the data from Android's system settings. Reply below might be the reason.
+I am not getting an error. The import process takes a long time and I am not sure what happens but it is not importing all accounts and "none of the transactions".
+I tried with an old backup and it works though.
+I forgot to report that the app, after the last upgrade, was very slow in loading transactions or accounts and it was taking about 40MB of data storage totaling at about 60MB. I backuped up my account in that version and then cleared the data from Android's system settings. Reply below might be the reason.
+One more thing to note is that the some zipped backups show files with file sizes in GB!
+After checking all zipped backups, it seems the problems started on August 19.
+One more thing to note is that the some zipped backups show files with file sizes in GB!
+After checking all zipped backups, it seems the problems started on August 19.
+Update: I was able to rename the extension of the last backup (.gnca to .gnucash) & open it in GnuCash desktop. lost a few days of transactions but have the whole year.
+Bad news: as per a previous bug (can't seem to find it) in which I reported one of the accounts to be mis-calculating, it turns out I am broke by 3 million + euros. One cause I just found is a scheduled transaction that have been registered an un-countable number of times on June 30th.
+Update: I was able to rename the extension of the last backup (.gnca to .gnucash) & open it in GnuCash desktop. lost a few days of transactions but have the whole year.
+Bad news: as per a previous bug (can't seem to find it) in which I reported one of the accounts to be mis-calculating, it turns out I am broke by 3 million + euros. One cause I just found is a scheduled transaction that have been registered an un-countable number of times on June 30th.
+So sorry about that :(Yes I found a bug that was causing scheduled transactions to run forever and fixed it. That would explain the multi-gigabyte file. The latest beta should not have that problem. 
+Thanks for all the help with testing and providing feedback. GnuCash would not be what it is without our testers. 
+Cheers,
+On Thu, Aug 25, 2016 at 11:17 PM +0200, "Ibrahim El Merehbi" notifications@github.com wrote:
+Update: I was able to rename the extension of the last backup (.gnca to .gnucash) & open it in GnuCash desktop. lost a few days of transactions but have the whole year.
+Bad news: as per a previous bug (can't seem to find it) in which I reported one of the accounts to be mis-calculating, it turns out I am broke by 3 million + euros. One cause I just found is a scheduled transaction that have been registered an un-countable number of times on June 30th.
+—
+You are receiving this because you modified the open/close state.
+Reply to this email directly, view it on GitHub, or mute the thread.
+So sorry about that :(Yes I found a bug that was causing scheduled transactions to run forever and fixed it. That would explain the multi-gigabyte file. The latest beta should not have that problem. 
+Thanks for all the help with testing and providing feedback. GnuCash would not be what it is without our testers. 
+Cheers,
+On Thu, Aug 25, 2016 at 11:17 PM +0200, "Ibrahim El Merehbi" notifications@github.com wrote:
+Update: I was able to rename the extension of the last backup (.gnca to .gnucash) & open it in GnuCash desktop. lost a few days of transactions but have the whole year.
+Bad news: as per a previous bug (can't seem to find it) in which I reported one of the accounts to be mis-calculating, it turns out I am broke by 3 million + euros. One cause I just found is a scheduled transaction that have been registered an un-countable number of times on June 30th.
+—
+You are receiving this because you modified the open/close state.
+Reply to this email directly, view it on GitHub, or mute the thread.
+It's ok. How can I get rid of those (40,000+) transactions?
+I tried deleting the account & its transactions but GnuCash ends up freezing or crashing.
+It's ok. How can I get rid of those (40,000+) transactions?
+I tried deleting the account & its transactions but GnuCash ends up freezing or crashing.
+I would suggest doing so within the desktop app. I'm not sure the mobile app will be able to handle that many. But that is something which we are hoping to change in the future someday
+On Fri, Aug 26, 2016 at 1:31 AM +0200, "Ibrahim El Merehbi" notifications@github.com wrote:
+It's ok. How can I get rid of those (40,000+) transactions?
+I tried deleting the account & its transactions but GnuCash ends up freezing or crashing.
+—
+You are receiving this because you modified the open/close state.
+Reply to this email directly, view it on GitHub, or mute the thread.
+I would suggest doing so within the desktop app. I'm not sure the mobile app will be able to handle that many. But that is something which we are hoping to change in the future someday
+On Fri, Aug 26, 2016 at 1:31 AM +0200, "Ibrahim El Merehbi" notifications@github.com wrote:
+It's ok. How can I get rid of those (40,000+) transactions?
+I tried deleting the account & its transactions but GnuCash ends up freezing or crashing.
+—
+You are receiving this because you modified the open/close state.
+Reply to this email directly, view it on GitHub, or mute the thread.
+I was talking about the desktop app actually. I left it over night t delete the account and its transactions and it was successful but the split transactions still exist in another account. Actually the supposedly deleted transactions were moved to an Imbalance account.
+I was talking about the desktop app actually. I left it over night t delete the account and its transactions and it was successful but the split transactions still exist in another account. Actually the supposedly deleted transactions were moved to an Imbalance account.
+I'm afraid I'll not be of much help on the use of the desktop app. Sorry...
+On Fri, Aug 26, 2016 at 1:26 PM +0200, "Ibrahim El Merehbi" notifications@github.com wrote:
+I was talking about the desktop app actually. I left it over night t delete the account and its transactions and it was successful but the split transactions still exist in another account.
+—
+You are receiving this because you modified the open/close state.
+Reply to this email directly, view it on GitHub, or mute the thread.
+I'm afraid I'll not be of much help on the use of the desktop app. Sorry...
+On Fri, Aug 26, 2016 at 1:26 PM +0200, "Ibrahim El Merehbi" notifications@github.com wrote:
+I was talking about the desktop app actually. I left it over night t delete the account and its transactions and it was successful but the split transactions still exist in another account.
+—
+You are receiving this because you modified the open/close state.
+Reply to this email directly, view it on GitHub, or mute the thread.
+Existing backup files are migrated in multibook support.
+Previous issue with unending execution of scheduled transactions is fixed. So I will close this issue now.
+Existing backup files are migrated in multibook support.
+Previous issue with unending execution of scheduled transactions is fixed. So I will close this issue now.

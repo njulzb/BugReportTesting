@@ -1,0 +1,28 @@
+title:Cannot edit transactions
+
+Using 1.4.2 on Android 4.4.2 (Droid Razr MAXX HD).
+Also not using the Double Entry.
+Previously to the latest update to 1.4.2, I could easily pull in previous transactions to edit them as new.and then edit the amounts. That no longer works, I am not able to edit the dollare amount until I exit the transaction. Then, when I go into the transaction to edit the amount, the edited amount gets added tot he transaction instead of the transaction being changed.
+Steps to duplicate.
+Reverting to 1.3.3 solves this problem. Can edit historical transactions when creating new without error.
+Reverting to 1.3.3 solves this problem. Can edit historical transactions when creating new without error.
+Thanks for the elaborate report. Sorry for the troubles
+I just uploaded a new build to beta in the Play Store. Please let me know if it fixes the issue for you!
+Thanks for the elaborate report. Sorry for the troubles
+I just uploaded a new build to beta in the Play Store. Please let me know if it fixes the issue for you!
+I will try to get to this by the weekend. Thanks!
+I cannot see it in the Play Store for some reason. Where can I get it as a download? It's not showing up here:
+https://github.com/codinguser/gnucash-android/releases
+I will try to get to this by the weekend. Thanks!
+I cannot see it in the Play Store for some reason. Where can I get it as a download? It's not showing up here:
+https://github.com/codinguser/gnucash-android/releases
+I updated the link with the release on GitHub.
+Pre-releases are usually uploaded to the Play store and you get them only if you are part of the tester group on Google+ https://plus.google.com/u/0/communities/104728406764752407046
+and then signing up here https://play.google.com/apps/testing/org.gnucash.android
+I updated the link with the release on GitHub.
+Pre-releases are usually uploaded to the Play store and you get them only if you are part of the tester group on Google+ https://plus.google.com/u/0/communities/104728406764752407046
+and then signing up here https://play.google.com/apps/testing/org.gnucash.android
+1.4.3 fixes the edit problem. The column names are still backwards, but that's another Issue.
+Thanks!
+1.4.3 fixes the edit problem. The column names are still backwards, but that's another Issue.
+Thanks!

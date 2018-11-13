@@ -1,0 +1,165 @@
+title:Failed to execute goal com.simpligility.maven.plugins:android-maven-plug in:4.1.1
+
+[ERROR] Failed to execute goal com.simpligility.maven.plugins:android-maven-plug
+in:4.1.1:generate-sources (default-generate-sources) on project gnucash-android:
+Execution default-generate-sources of goal com.simpligility.maven.plugins:andro
+id-maven-plugin:4.1.1:generate-sources failed: Error reading C:\adrdoid\andriod-
+sdk\tools\source.properties -> [Help 1]
+E:\code\github\gnucash-android>mvn -version
+Apache Maven 3.1.1 (0728685237757ffbf44136acec0402957f723d9a; 2013-09-17 23:22:2
+2+0800)
+Maven home: C:\android\apache-maven-3.1.1\bin..
+Java version: 1.7.0_71, vendor: Oracle Corporation
+Java home: C:\Java\jdk1.7.0_71\jre
+Default locale: zh_CN, platform encoding: GBK
+OS name: "windows 7", version: "6.1", arch: "x86", family: "windows"
+Looks like there is a problem with your Android SDK installation?
+" Error reading C:\adrdoid\andriod-sdk\tools\source.properties -> [Help 1]"
+Looks like there is a problem with your Android SDK installation?
+" Error reading C:\adrdoid\andriod-sdk\tools\source.properties -> [Help 1]"
+i get same problem
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Android Barcode Scanner app 4.7.5
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ android ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ android ---
+[INFO]
+[INFO] --- android-maven-plugin:4.3.0:generate-sources (default-generate-sources) @ android ---
+[INFO] Manifest copied from E:\android测试项目\zxing-master\android\AndroidManifest.xml to E:\android测试项目\zxing-master\android\target\AndroidManifest.xml
+[INFO] Extracting libs
+[INFO] Generating R file for com.google.zxing:android:apk:4.7.5
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.170 s
+[INFO] Finished at: 2015-12-06T22:22:22+08:00
+[INFO] Final Memory: 26M/267M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.simpligility.maven.plugins:android-maven-plugin:4.3.0:generate-sources (default-generate-sources) on project android: Execution default-generate-sources of goal com.simpligility.maven.plugins:android-maven-plugin:4.3.0:generate-sources failed: Error reading E:\android测试项目\zxing-master\android\E:\android_ecplise\Eclipse(64位)+sdk\android_sdk_5.0.1\tools\source.properties -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+i get same problem
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Android Barcode Scanner app 4.7.5
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ android ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ android ---
+[INFO]
+[INFO] --- android-maven-plugin:4.3.0:generate-sources (default-generate-sources) @ android ---
+[INFO] Manifest copied from E:\android测试项目\zxing-master\android\AndroidManifest.xml to E:\android测试项目\zxing-master\android\target\AndroidManifest.xml
+[INFO] Extracting libs
+[INFO] Generating R file for com.google.zxing:android:apk:4.7.5
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.170 s
+[INFO] Finished at: 2015-12-06T22:22:22+08:00
+[INFO] Final Memory: 26M/267M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.simpligility.maven.plugins:android-maven-plugin:4.3.0:generate-sources (default-generate-sources) on project android: Execution default-generate-sources of goal com.simpligility.maven.plugins:android-maven-plugin:4.3.0:generate-sources failed: Error reading E:\android测试项目\zxing-master\android\E:\android_ecplise\Eclipse(64位)+sdk\android_sdk_5.0.1\tools\source.properties -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+That stack trace does not seem to come from building GnuCash Android. There
+is no dependency on the Android barcode scanner app.
+On Dec 6, 2015 15:26, "agoodcoolman" notifications@github.com wrote:
+i get same problem
+[INFO] Scanning for projects...
+[INFO]
+[INFO] Building Android Barcode Scanner app 4.7.5
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ android ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ android ---
+[INFO]
+[INFO] --- android-maven-plugin:4.3.0:generate-sources
+(default-generate-sources) @ android ---
+[INFO] Manifest copied from
+E:\android测试项目\zxing-master\android\AndroidManifest.xml to
+E:\android测试项目\zxing-master\android\target\AndroidManifest.xml
+[INFO] Extracting libs
+[INFO] Generating R file for com.google.zxing:android:apk:4.7.5
+[INFO] BUILD FAILURE
+[INFO] Total time: 10.170 s
+[INFO] Finished at: 2015-12-06T22:22:22+08:00
+[INFO] Final Memory: 26M/267M
+[ERROR] Failed to execute goal
+com.simpligility.maven.plugins:android-maven-plugin:4.3.0:generate-sources
+(default-generate-sources) on project android: Execution
+default-generate-sources of goal
+com.simpligility.maven.plugins:android-maven-plugin:4.3.0:generate-sources
+failed: Error reading
+E:\android测试项目\zxing-master\android\E:\android_ecplise\Eclipse(64位)+sdk\android_sdk_5.0.1\tools\source.properties
+-> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the
+-e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions,
+please read the following articles:
+[ERROR] [Help 1]
+http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+—
+Reply to this email directly or view it on GitHub
+#301 (comment)
+.
+That stack trace does not seem to come from building GnuCash Android. There
+is no dependency on the Android barcode scanner app.
+On Dec 6, 2015 15:26, "agoodcoolman" notifications@github.com wrote:
+i get same problem
+[INFO] Scanning for projects...
+[INFO]
+[INFO] Building Android Barcode Scanner app 4.7.5
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ android ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce) @ android ---
+[INFO]
+[INFO] --- android-maven-plugin:4.3.0:generate-sources
+(default-generate-sources) @ android ---
+[INFO] Manifest copied from
+E:\android测试项目\zxing-master\android\AndroidManifest.xml to
+E:\android测试项目\zxing-master\android\target\AndroidManifest.xml
+[INFO] Extracting libs
+[INFO] Generating R file for com.google.zxing:android:apk:4.7.5
+[INFO] BUILD FAILURE
+[INFO] Total time: 10.170 s
+[INFO] Finished at: 2015-12-06T22:22:22+08:00
+[INFO] Final Memory: 26M/267M
+[ERROR] Failed to execute goal
+com.simpligility.maven.plugins:android-maven-plugin:4.3.0:generate-sources
+(default-generate-sources) on project android: Execution
+default-generate-sources of goal
+com.simpligility.maven.plugins:android-maven-plugin:4.3.0:generate-sources
+failed: Error reading
+E:\android测试项目\zxing-master\android\E:\android_ecplise\Eclipse(64位)+sdk\android_sdk_5.0.1\tools\source.properties
+-> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the
+-e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions,
+please read the following articles:
+[ERROR] [Help 1]
+http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+—
+Reply to this email directly or view it on GitHub
+#301 (comment)
+.

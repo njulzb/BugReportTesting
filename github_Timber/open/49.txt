@@ -1,0 +1,3 @@
+title:add option for forward and backward using volume keys
+
+Some Roms already support this but it doesnt work for timber

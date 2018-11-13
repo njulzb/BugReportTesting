@@ -1,0 +1,15 @@
+title:Account import - unable to find application to perform this action
+
+Trying to import a GnuCash account structure from my Linux desktop. I transferred the file to my phone via USB, but when I select Settings > Accounts > Import GnuCash accounts I get the error "Unable to find application to perform this action"
+I installed the OI File Manager and everything now works fine.
+It appears that gnucash cannot properly call the default file manager that ships with my Galaxy S4
+The system calls the applications, not GnuCash for Android which only specifies the intents.
+So if you do not see yours in the options, then the application does not respond to intents for providing files to other applications. There is nothing GnuCash can do in that case.
+The system calls the applications, not GnuCash for Android which only specifies the intents.
+So if you do not see yours in the options, then the application does not respond to intents for providing files to other applications. There is nothing GnuCash can do in that case.
+Makes sense. I guess it figures that Samsung would ship a file browser that doesn't respond to file browser intents >.<
+Cheers,
+Jeremy
+Makes sense. I guess it figures that Samsung would ship a file browser that doesn't respond to file browser intents >.<
+Cheers,
+Jeremy

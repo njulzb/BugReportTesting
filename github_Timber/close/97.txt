@@ -1,0 +1,21 @@
+title:Palette color binding incorrect
+
+In the albumlist the color of the art is used as background color of the title view. The color of this view is not being reset when the recyclerview is bound again.
+steps to reproduce? Works fine for me
+steps to reproduce? Works fine for me
+There are no real steps, since it's really random. Just make sure you have one album without image and then start scrolling. Since there is no image the palette code will not be executed and the color of the previous item (that had an image) will still be used.
+
+Timber/app/src/main/java/com/naman14/timber/adapters/AlbumAdapter.java
+Line 80
+      in
+      9629126
+There are no real steps, since it's really random. Just make sure you have one album without image and then start scrolling. Since there is no image the palette code will not be executed and the color of the previous item (that had an image) will still be used.
+
+Timber/app/src/main/java/com/naman14/timber/adapters/AlbumAdapter.java
+Line 80
+      in
+      9629126
+Oh, understood now. Thanks for the explanation:)
+Fixing now
+Oh, understood now. Thanks for the explanation:)
+Fixing now

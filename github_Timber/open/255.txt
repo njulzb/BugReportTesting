@@ -1,0 +1,3 @@
+title:Overlaping design issue in landscape
+
+All controls like play/pause next, previous are overlapped by may be gallery control of songs. The circular progress bar is not appearing correctly.

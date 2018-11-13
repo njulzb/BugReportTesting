@@ -1,0 +1,6 @@
+title:drawer_list_item.xml uses theme values only available from API level 11 onwards
+
+The layout file drawer_list_item.xml uses theme attributes only available from API level 11 onwards, although AndroidManifests declares a minSdkVersion of 9.
+This causes GnuCash to crash when starting on my HTC Wildfire (API level 10 - Android 2.3.5).
+Thanks for picking up on that. i'll look if the fix #292 looks the same on API level 11 and up
+Thanks for picking up on that. i'll look if the fix #292 looks the same on API level 11 and up

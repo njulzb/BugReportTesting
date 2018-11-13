@@ -1,0 +1,10 @@
+title:Gradle's dependency cache may be corrupt
+
+Error:Failed to open zip file.
+Gradle's dependency cache may be corrupt (this sometimes occurs after a network connection timeout.)
+Re-download dependencies and sync project (requires network)
+Re-download dependencies and sync project (requires network)
+I import this project to android studio 2.3.2 and can't build.
+Anyone who knows the reason?
+sync gradle with an active internet connection
+sync gradle with an active internet connection

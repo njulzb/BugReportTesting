@@ -1,0 +1,4 @@
+title:Transaction Splits: non-localizable strings
+
+I found that several strings in Transaction Splits dialog are not localizable. The dialog title, to start with.
+I'm going to take care of it

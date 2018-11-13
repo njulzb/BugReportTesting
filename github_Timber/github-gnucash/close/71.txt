@@ -1,0 +1,155 @@
+title:Adding Expense accounts
+
+In adding accounts (Build Version 1.1.2,) only the Assets account is shown as a possible parent account.  This seems odd for an app used to track expenses.
+Does your Assets account have a different currency from the other accounts
+(which is the same as the currency you selected for the new account)?
+On 20.03.2013, at 21:15, CKotting notifications@github.com wrote:
+In adding accounts (Build Version 1.1.2,) only the Assets account is shown
+as a possible parent account. This seems odd for an app used to track
+expenses.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/71
+.
+Does your Assets account have a different currency from the other accounts
+(which is the same as the currency you selected for the new account)?
+On 20.03.2013, at 21:15, CKotting notifications@github.com wrote:
+In adding accounts (Build Version 1.1.2,) only the Assets account is shown
+as a possible parent account. This seems odd for an app used to track
+expenses.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/71
+.
+All are in US$.
+Ngewi Fet notifications@github.com wrote:
+Does your Assets account have a different currency from the other accounts
+(which is the same as the currency you selected for the new account)?
+On 20.03.2013, at 21:15, CKotting notifications@github.com wrote:
+In adding accounts (Build Version 1.1.2,) only the Assets account is shown
+as a possible parent account. This seems odd for an app used to track
+expenses.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/71
+.
+—
+Reply to this email directly or view it on GitHub.￼
+All are in US$.
+Ngewi Fet notifications@github.com wrote:
+Does your Assets account have a different currency from the other accounts
+(which is the same as the currency you selected for the new account)?
+On 20.03.2013, at 21:15, CKotting notifications@github.com wrote:
+In adding accounts (Build Version 1.1.2,) only the Assets account is shown
+as a possible parent account. This seems odd for an app used to track
+expenses.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/71
+.
+—
+Reply to this email directly or view it on GitHub.￼
+I'll look into it.
+On 21.03.2013, at 01:16, CKotting notifications@github.com wrote:
+All are in US$.
+Ngewi Fet notifications@github.com wrote:
+Does your Assets account have a different currency from the other accounts
+(which is the same as the currency you selected for the new account)?
+On 20.03.2013, at 21:15, CKotting notifications@github.com wrote:
+In adding accounts (Build Version 1.1.2,) only the Assets account is shown
+as a possible parent account. This seems odd for an app used to track
+expenses.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/71
+.
+—
+Reply to this email directly or view it on GitHub.￼
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/71#issuecomment-15212315
+.
+I'll look into it.
+On 21.03.2013, at 01:16, CKotting notifications@github.com wrote:
+All are in US$.
+Ngewi Fet notifications@github.com wrote:
+Does your Assets account have a different currency from the other accounts
+(which is the same as the currency you selected for the new account)?
+On 20.03.2013, at 21:15, CKotting notifications@github.com wrote:
+In adding accounts (Build Version 1.1.2,) only the Assets account is shown
+as a possible parent account. This seems odd for an app used to track
+expenses.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/71
+.
+—
+Reply to this email directly or view it on GitHub.￼
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/71#issuecomment-15212315
+.
+Thanks.  I just took another look, and the only account that allows a parent other than Assets, is Assets.  In other words:
+Expenses only allows Assets as  parent.
+Income only allows Assets as a parent.
+New accounts only allow Assets as a parent.
+Assets allows Expenses as a parent.
+Ngewi Fet notifications@github.com wrote:
+I'll look into it.
+On 21.03.2013, at 01:16, CKotting notifications@github.com wrote:
+All are in US$.
+Ngewi Fet notifications@github.com wrote:
+Does your Assets account have a different currency from the other accounts
+(which is the same as the currency you selected for the new account)?
+On 20.03.2013, at 21:15, CKotting notifications@github.com wrote:
+In adding accounts (Build Version 1.1.2,) only the Assets account is shown
+as a possible parent account. This seems odd for an app used to track
+expenses.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/71
+.
+—
+Reply to this email directly or view it on GitHub.￼
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/71#issuecomment-15212315
+.
+—
+Reply to this email directly or view it on GitHub.￼
+Thanks.  I just took another look, and the only account that allows a parent other than Assets, is Assets.  In other words:
+Expenses only allows Assets as  parent.
+Income only allows Assets as a parent.
+New accounts only allow Assets as a parent.
+Assets allows Expenses as a parent.
+Ngewi Fet notifications@github.com wrote:
+I'll look into it.
+On 21.03.2013, at 01:16, CKotting notifications@github.com wrote:
+All are in US$.
+Ngewi Fet notifications@github.com wrote:
+Does your Assets account have a different currency from the other accounts
+(which is the same as the currency you selected for the new account)?
+On 20.03.2013, at 21:15, CKotting notifications@github.com wrote:
+In adding accounts (Build Version 1.1.2,) only the Assets account is shown
+as a possible parent account. This seems odd for an app used to track
+expenses.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/71
+.
+—
+Reply to this email directly or view it on GitHub.￼
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/71#issuecomment-15212315
+.
+—
+Reply to this email directly or view it on GitHub.￼
+I'm having difficulties reproducing this. Are you certain that the checkbox is activated?
+You need to click on the checkbox near the parent accounts in order to be able to select a parent account. By default, the checkbox is deactivated, meaning the account you create will be a top-level account.
+Although you see the Assets account (they are alphabetically listed), it is greyed out and not active.
+Check this again and confirm, thanks.
+I'm having difficulties reproducing this. Are you certain that the checkbox is activated?
+You need to click on the checkbox near the parent accounts in order to be able to select a parent account. By default, the checkbox is deactivated, meaning the account you create will be a top-level account.
+Although you see the Assets account (they are alphabetically listed), it is greyed out and not active.
+Check this again and confirm, thanks.

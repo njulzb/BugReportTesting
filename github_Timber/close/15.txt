@@ -1,0 +1,45 @@
+title:No reaction to Bluetooth button presses
+
+My headset is an Sony sbh50.
+Device Samsung Galaxy s6 Edge.
+Android 5.1.1
+Can you verify if it's working in latest release?
+Can you verify if it's working in latest release?
+yeah it works
+https://drive.google.com/file/d/0B94u0_R6vixWMFllOEI0dEt4YVE/view?usp=sharing
+yeah it works
+https://drive.google.com/file/d/0B94u0_R6vixWMFllOEI0dEt4YVE/view?usp=sharing
+after the lastes uppdate it wont work again
+after the lastes uppdate it wont work again
+Hmm, I haven't done any code changes related to this which can cause it to not work again.
+I will look again though
+Hmm, I haven't done any code changes related to this which can cause it to not work again.
+I will look again though
+It also won't works for me with my Pionner in my Car:
+It also won't works for me with my Pionner in my Car:
+Same issue for me:
+Same issue for me:
+Same issue for me but with a cable headset:
+Same issue for me but with a cable headset:
+Same issue here:
+Same issue here:
+It would be nice if someone else could confirm the fix. It works for me with:
+It would be nice if someone else could confirm the fix. It works for me with:
+Here it doesn't work.
+Here it doesn't work.
+Doesn't work here:
+Doesn't work here:
+Doesn't work here too:
+Lenovo K3 Note
+Android 6.1
+Headphone Samsung, Philips
+Doesn't work here too:
+Lenovo K3 Note
+Android 6.1
+Headphone Samsung, Philips
+To make testing of the fix easier I've prepared an APK here. It will be installed as an independent application with the name "Timber devel", so it won't interfere with the official Timber you already have installed. It still doesn't solve the problem for all cases, though:
+I still haven't find out why these don't work.
+This APK also contains the changes in these pull requests. If you feel like testing them too, any feedback would be greatly appreciated. Thanks!
+To make testing of the fix easier I've prepared an APK here. It will be installed as an independent application with the name "Timber devel", so it won't interfere with the official Timber you already have installed. It still doesn't solve the problem for all cases, though:
+I still haven't find out why these don't work.
+This APK also contains the changes in these pull requests. If you feel like testing them too, any feedback would be greatly appreciated. Thanks!

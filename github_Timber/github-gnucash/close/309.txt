@@ -1,0 +1,85 @@
+title:The new transaction autocomplete behaviour in develop may have usability problems
+
+I've had some confusion with the new transaction autocomplete function based on templates and I think it make bring some usability problems.
+I've been looking for advantages of the new system, but the only I can think of is that now the user can select which transactions will appear in the autocomplete llist. This makes the list smaller and saves typing.
+However, I see some disadvantages:
+Is there any other problem that the new behaviour solves apart from the number of transactions in the autocomplete dropdown? I there isn't, I'd rather go for improving the quality of the entries. For example, listing at the top the ones matching from the same account, the more recent, avoiding duplicates, etc.
+Right now, in the worst case, the user just has to continue typing some more to filter out the unwanted entries.
+In truth, I like the concept of the change, but the real nice thing it
+would allow is to have a new widget to jump directly into adding a
+transaction with an specific template, and then after that notifications
+coming predicting transactions, mostly expenses, that are regular (like
+lunch meals) but may vary on amount, and allowing to add from the
+notifications if the amount is the same...
+Just presenting the idea. Later I'll try to open specific issues and maybe
+send some PRs.
+Rafael Teixeira
+O..:.)oooo
+On Thu, Apr 9, 2015 at 3:33 PM, Àlex Magaz Graça notifications@github.com
+wrote:
+I've had some confusion with the new transaction autocomplete function
+based on templates and I think it make bring some usability problems.
+I've been looking for advantages of the new system, but the only I can
+think of is that now the user can select which transactions will appear in
+the autocomplete llist. This makes the list smaller and saves typing.
+However, I see some disadvantages:
+Is there any other problem that the new behaviour solves apart from the
+number of transactions in the autocomplete dropdown? I there isn't, I'd
+rather go for improving the quality of the entries. For example, listing at
+the top the ones matching from the same account, the more recent, avoiding
+duplicates, etc.
+Right now, in the worst case, the user just has to continue typing some
+more to filter out the unwanted entries.
+—
+Reply to this email directly or view it on GitHub
+#309.
+In truth, I like the concept of the change, but the real nice thing it
+would allow is to have a new widget to jump directly into adding a
+transaction with an specific template, and then after that notifications
+coming predicting transactions, mostly expenses, that are regular (like
+lunch meals) but may vary on amount, and allowing to add from the
+notifications if the amount is the same...
+Just presenting the idea. Later I'll try to open specific issues and maybe
+send some PRs.
+Rafael Teixeira
+O..:.)oooo
+On Thu, Apr 9, 2015 at 3:33 PM, Àlex Magaz Graça notifications@github.com
+wrote:
+I've had some confusion with the new transaction autocomplete function
+based on templates and I think it make bring some usability problems.
+I've been looking for advantages of the new system, but the only I can
+think of is that now the user can select which transactions will appear in
+the autocomplete llist. This makes the list smaller and saves typing.
+However, I see some disadvantages:
+Is there any other problem that the new behaviour solves apart from the
+number of transactions in the autocomplete dropdown? I there isn't, I'd
+rather go for improving the quality of the entries. For example, listing at
+the top the ones matching from the same account, the more recent, avoiding
+duplicates, etc.
+Right now, in the worst case, the user just has to continue typing some
+more to filter out the unwanted entries.
+—
+Reply to this email directly or view it on GitHub
+#309.
+@rivaldi8 Thanks for the feedback.
+I agree with you that there is utility in providing auto-complete with all the transactions in the database (that's why I put the feature there in the first place).
+Maybe it could be eventually improved with some of the enhancements you mention.
+That said, there are a few things to consider:
+Development is ongoing so we might revisit the auto-complete feature again if we find ways to improve what it is now. Thanks for highlighting this issue!
+@rivaldi8 Thanks for the feedback.
+I agree with you that there is utility in providing auto-complete with all the transactions in the database (that's why I put the feature there in the first place).
+Maybe it could be eventually improved with some of the enhancements you mention.
+That said, there are a few things to consider:
+Development is ongoing so we might revisit the auto-complete feature again if we find ways to improve what it is now. Thanks for highlighting this issue!
+Updated code to include both templates and existing transactions, while improving the selection and display of suggestions. Let me know what you think @rivaldi8
+Updated code to include both templates and existing transactions, while improving the selection and display of suggestions. Let me know what you think @rivaldi8
+That was fast! I like it very much the way the autocomplete appears now. In my opinion improving the autocomplete suggestions is the way to go. Most of the time I enter transactions one-handed while walking on the street, so any additional interaction is a big pain for me.
+The widget mentioned by @monoman was the way I expected the templates feature to work. That's because I got confused when the autocompletion stopped working.
+By the way, sorry if I've complained too early on an unfinished feature. I'll better wait for the beta the next time :)
+That was fast! I like it very much the way the autocomplete appears now. In my opinion improving the autocomplete suggestions is the way to go. Most of the time I enter transactions one-handed while walking on the street, so any additional interaction is a big pain for me.
+The widget mentioned by @monoman was the way I expected the templates feature to work. That's because I got confused when the autocompletion stopped working.
+By the way, sorry if I've complained too early on an unfinished feature. I'll better wait for the beta the next time :)
+It's alright, feedback while development is ongoing also helps shape the direction of the future release.
+Keep it coming! 👍
+It's alright, feedback while development is ongoing also helps shape the direction of the future release.
+Keep it coming! 👍

@@ -1,0 +1,6 @@
+title:Not play directly through FileManager
+
+
+As You can see in the screenshot I'm not able to see Timber in the ES file manager
+Have been added in latest release
+Have been added in latest release

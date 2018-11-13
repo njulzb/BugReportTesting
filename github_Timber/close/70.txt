@@ -1,0 +1,12 @@
+title:Timber doesn't appear in Pebble's App
+
+Timber doesn't appear in official Pebble app as a music player that can be controlled directly from watch. It is weird, because Timber actually sends correct information of a playing at the moment song to the official Music watchapp to the watch. Pressing the buttons trying to pause/play the next song/etc leads to launching the chosen music player (as it can be predicted)
+
+
+I don't know anything about Watches or something similar, so don't hate me if I am wrong but I think that Timber needs to integrate the Pebble Watch. iOS Apps for example need also a specific version to be used with an Apple watch.
+I don't know anything about Watches or something similar, so don't hate me if I am wrong but I think that Timber needs to integrate the Pebble Watch. iOS Apps for example need also a specific version to be used with an Apple watch.
+I'm not very sure about integration, as long as gReader is RSS reader and Chrome is Chrome (Pebble support from Google browser, fat chance :) ). But I'm going to investigate how to add Pebble support (even occasionally) and will provide you results asap.
+I'm not very sure about integration, as long as gReader is RSS reader and Chrome is Chrome (Pebble support from Google browser, fat chance :) ). But I'm going to investigate how to add Pebble support (even occasionally) and will provide you results asap.
+Hi! I am sorry for my absense. I don't really know, what exactly changed (is it new ROM I've installed or did the app update in the right place) but Timber finally appeared in Pebble app and can now be chosen as a default Music player. Great job! Thank you!
+
+Hi! I am sorry for my absense. I don't really know, what exactly changed (is it new ROM I've installed or did the app update in the right place) but Timber finally appeared in Pebble app and can now be chosen as a default Music player. Great job! Thank you!

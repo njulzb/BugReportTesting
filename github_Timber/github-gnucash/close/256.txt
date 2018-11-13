@@ -1,0 +1,197 @@
+title:Autocomplete problems
+
+codinguser
+(My experience with this bug relates to issue #254 but is perhaps separate.)
+When I create an entry for a purchase, the autocomplete list shows up, per usual.  If I pick one of the suggestions, the previous amount associated with that suggestion populates the field (normal behavior).  Even if I change the value before saving the entry, the old value is retained.  Editing the entry later has the same result, the old transaction amount sticks.  Luckly I caught this before too many entries were affected.
+I would like to be able to completely disable the autocomplete feature, or at least disable the automatic population of the transaction amount.  The majority of my transactions are not repetitive (different dollar amounts at the same stores, varying bills each month, etc), and it ends up creating a lot more work than it saves me time.
+Thanks for your hard work on this project!
+Fixed in faf5606
+Also, in the upcoming version, autocomplete works only with explicitly-created transaction templates.
+Fixed in faf5606
+Also, in the upcoming version, autocomplete works only with explicitly-created transaction templates.
+I'm using the latest version on F-Droid, 1.5.1.  I still experience this
+issue.
+Cliff
+On Wed, Mar 25, 2015 at 2:54 AM, Ngewi Fet notifications@github.com wrote:
+This issue should be fixed, I don't remember exactly in what commit it was.
+@cliff-barry https://github.com/cliff-barry are you still experiencing
+this issue, or can it be closed?
+Also, in the upcoming version, autocomplete works only with
+explicitly-created transaction templates.
+—
+Reply to this email directly or view it on GitHub
+#256 (comment)
+.
+I'm using the latest version on F-Droid, 1.5.1.  I still experience this
+issue.
+Cliff
+On Wed, Mar 25, 2015 at 2:54 AM, Ngewi Fet notifications@github.com wrote:
+This issue should be fixed, I don't remember exactly in what commit it was.
+@cliff-barry https://github.com/cliff-barry are you still experiencing
+this issue, or can it be closed?
+Also, in the upcoming version, autocomplete works only with
+explicitly-created transaction templates.
+—
+Reply to this email directly or view it on GitHub
+#256 (comment)
+.
+The latest version on FDroid is 1.5.5.
+Could you please upgrade and let me know? Thanks
+On 27.03.2015, at 21:03, cliff-barry notifications@github.com wrote:
+I'm using the latest version on F-Droid, 1.5.1. I still experience this
+issue.
+Cliff
+On Wed, Mar 25, 2015 at 2:54 AM, Ngewi Fet notifications@github.com wrote:
+This issue should be fixed, I don't remember exactly in what commit it was.
+@cliff-barry https://github.com/cliff-barry are you still experiencing
+this issue, or can it be closed?
+Also, in the upcoming version, autocomplete works only with
+explicitly-created transaction templates.
+—
+Reply to this email directly or view it on GitHub
+#256 (comment)
+.
+—
+Reply to this email directly or view it on GitHub.
+The latest version on FDroid is 1.5.5.
+Could you please upgrade and let me know? Thanks
+On 27.03.2015, at 21:03, cliff-barry notifications@github.com wrote:
+I'm using the latest version on F-Droid, 1.5.1. I still experience this
+issue.
+Cliff
+On Wed, Mar 25, 2015 at 2:54 AM, Ngewi Fet notifications@github.com wrote:
+This issue should be fixed, I don't remember exactly in what commit it was.
+@cliff-barry https://github.com/cliff-barry are you still experiencing
+this issue, or can it be closed?
+Also, in the upcoming version, autocomplete works only with
+explicitly-created transaction templates.
+—
+Reply to this email directly or view it on GitHub
+#256 (comment)
+.
+—
+Reply to this email directly or view it on GitHub.
+Hmm, it hadn't shown the update within F-Droid itself (though it showed
+other apps).  I've manually updated it to 1.5.5.  Give me a few days to
+build up transactions in the new account and I will get back to you.
+Thanks!
+Cliff Barry
+On Fri, Mar 27, 2015 at 4:18 PM, Ngewi Fet notifications@github.com wrote:
+The latest version on FDroid is 1.5.5.
+Could you please upgrade and let me know? Thanks
+On 27.03.2015, at 21:03, cliff-barry notifications@github.com wrote:
+I'm using the latest version on F-Droid, 1.5.1. I still experience this
+issue.
+Cliff
+On Wed, Mar 25, 2015 at 2:54 AM, Ngewi Fet notifications@github.com
+wrote:
+This issue should be fixed, I don't remember exactly in what commit it
+was.
+@cliff-barry https://github.com/cliff-barry are you still
+experiencing
+this issue, or can it be closed?
+Also, in the upcoming version, autocomplete works only with
+explicitly-created transaction templates.
+—
+Reply to this email directly or view it on GitHub
+<
+#256 (comment)
+.
+—
+Reply to this email directly or view it on GitHub.
+—
+Reply to this email directly or view it on GitHub
+#256 (comment)
+.
+Hmm, it hadn't shown the update within F-Droid itself (though it showed
+other apps).  I've manually updated it to 1.5.5.  Give me a few days to
+build up transactions in the new account and I will get back to you.
+Thanks!
+Cliff Barry
+On Fri, Mar 27, 2015 at 4:18 PM, Ngewi Fet notifications@github.com wrote:
+The latest version on FDroid is 1.5.5.
+Could you please upgrade and let me know? Thanks
+On 27.03.2015, at 21:03, cliff-barry notifications@github.com wrote:
+I'm using the latest version on F-Droid, 1.5.1. I still experience this
+issue.
+Cliff
+On Wed, Mar 25, 2015 at 2:54 AM, Ngewi Fet notifications@github.com
+wrote:
+This issue should be fixed, I don't remember exactly in what commit it
+was.
+@cliff-barry https://github.com/cliff-barry are you still
+experiencing
+this issue, or can it be closed?
+Also, in the upcoming version, autocomplete works only with
+explicitly-created transaction templates.
+—
+Reply to this email directly or view it on GitHub
+<
+#256 (comment)
+.
+—
+Reply to this email directly or view it on GitHub.
+—
+Reply to this email directly or view it on GitHub
+#256 (comment)
+.
+Everything seems good!  Thank you!!
+Cliff
+On Fri, Mar 27, 2015 at 4:18 PM, Ngewi Fet notifications@github.com wrote:
+The latest version on FDroid is 1.5.5.
+Could you please upgrade and let me know? Thanks
+On 27.03.2015, at 21:03, cliff-barry notifications@github.com wrote:
+I'm using the latest version on F-Droid, 1.5.1. I still experience this
+issue.
+Cliff
+On Wed, Mar 25, 2015 at 2:54 AM, Ngewi Fet notifications@github.com
+wrote:
+This issue should be fixed, I don't remember exactly in what commit it
+was.
+@cliff-barry https://github.com/cliff-barry are you still
+experiencing
+this issue, or can it be closed?
+Also, in the upcoming version, autocomplete works only with
+explicitly-created transaction templates.
+—
+Reply to this email directly or view it on GitHub
+<
+#256 (comment)
+.
+—
+Reply to this email directly or view it on GitHub.
+—
+Reply to this email directly or view it on GitHub
+#256 (comment)
+.
+Everything seems good!  Thank you!!
+Cliff
+On Fri, Mar 27, 2015 at 4:18 PM, Ngewi Fet notifications@github.com wrote:
+The latest version on FDroid is 1.5.5.
+Could you please upgrade and let me know? Thanks
+On 27.03.2015, at 21:03, cliff-barry notifications@github.com wrote:
+I'm using the latest version on F-Droid, 1.5.1. I still experience this
+issue.
+Cliff
+On Wed, Mar 25, 2015 at 2:54 AM, Ngewi Fet notifications@github.com
+wrote:
+This issue should be fixed, I don't remember exactly in what commit it
+was.
+@cliff-barry https://github.com/cliff-barry are you still
+experiencing
+this issue, or can it be closed?
+Also, in the upcoming version, autocomplete works only with
+explicitly-created transaction templates.
+—
+Reply to this email directly or view it on GitHub
+<
+#256 (comment)
+.
+—
+Reply to this email directly or view it on GitHub.
+—
+Reply to this email directly or view it on GitHub
+#256 (comment)
+.
+👍
+👍

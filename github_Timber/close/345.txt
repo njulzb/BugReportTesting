@@ -1,0 +1,8 @@
+title:[Improvement] Widget is not resizable
+
+Hi!
+I am glad there are widgets, however they're not resizable yet, so on my screen it looks like this:
+As you can see:
+Also, I guess it would look better on tablets too if they were resizable... :)
+Thanks.
+(My device, for what it's worth: Nexus 6 on Android stock 7.1.1)

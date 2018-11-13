@@ -1,0 +1,26 @@
+title:OFX export fails with FileNotFoundException
+
+Exporting transactions in OFX format fail if there's a difference in the wall clock time between the start and end of the export.
+It happens when the second call to Export.getExportCacheFilePath() in
+OfxExporter.generateExport() returns a file name with a time stamp different to
+the first call in the same method. The root of the problem is
+getExportCacheFilePath(), which builds the file name with the current time.
+Received through Crashlitics as issue #129.
+I'm preparing a fix.
+I'm preparing a fix.
+Cool. Looking forward.
+Please send it to hotfix/patches
+On Dec 5, 2015 19:25, "Àlex Magaz Graça" notifications@github.com wrote:
+I'm preparing a fix.
+—
+Reply to this email directly or view it on GitHub
+#448 (comment)
+.
+Cool. Looking forward.
+Please send it to hotfix/patches
+On Dec 5, 2015 19:25, "Àlex Magaz Graça" notifications@github.com wrote:
+I'm preparing a fix.
+—
+Reply to this email directly or view it on GitHub
+#448 (comment)
+.

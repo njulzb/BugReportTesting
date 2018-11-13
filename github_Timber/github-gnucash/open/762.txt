@@ -1,0 +1,5 @@
+title:Problem with decimals when editing transactions
+
+Edit any simple transaction (just two acounts) without decimals. You won't be able to insert a decimal comma (or a decimal point) in the amount.
+You should be able to add decimals when editing the transaction amount.
+As a workaround, you have to select the "split transaction" button to be able to add them.

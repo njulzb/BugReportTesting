@@ -1,0 +1,35 @@
+Language temporarly resets to system language when opening external app
+Strange image decoding issues
+v.redd.it videos don't work for me (Android 4.4)
+Markdown: Code with tabs doesn't work
+Markdown: Links with references
+Markdown: &#32; in superscript doesn't work correctly
+Markdown: Sub-things in lists
+Long-pressing post content should open post context menu
+Some thumbnails don't get displayed on Android Oreo
+"Skip to front page" setting ignores "Tablet mode" setting
+[Feature Request] Cache post thumbnails as well
+Cannot upload images to Imgur
+Flairs with RTL text weirdness
+Cannot log in/add account
+Numbered lists not rendered properly
+Crashes with pull-to-refresh on old versions of Android
+Links in sidebar always open with internal browser, even if disabled
+Connectivity problems
+Some Menus options become randomly unchecked
+Markdown in quotes isn't rendered correctly
+Multiple quotes get marked as one
+Handle BPM-style links better
+"Invalid User: User does not have permission to do that" on attempt to upload Imgur image
+Handle network losses better while browsing a thread
+Saved post from context menu inside post does not show up as saved outside of the postUnexpected Storage Error
+Issues with comment collapse
+Misreporting of disk space problems
+Language setting override does not always work
+Don't apply min. comment hiding when viewing comments on a user's profile
+Indicate if a thread is locked, and disable commenting
+Image view crash due to incomplete egl implementation
+Better support for markdown headings and dividers
+Tables are not rendered
+Parse Error on Password Change
+Crashes on devices which run out of storage

@@ -1,0 +1,31 @@
+title:Help,How to use create_transaction intent?
+
+codinguser
+I want parse text SMS into payment data ,then insert into guncash. after view code ,".receivers.TransactionRecorder" maybe a way.
+But How can i know  account's UID , in code use"args.getString(Transaction.EXTRA_ACCOUNT_UID);"
+You make a good point. There is currently no way to retrieve an account UID
+via an external app.
+I will think about how to improve this in future releases. Such as letting
+other apps query accounts/transactions.
+On Wed, Mar 9, 2016 at 4:41 PM, Alex Lei 雷 notifications@github.com wrote:
+I want parse text SMS into payment data ,then insert into guncash. after
+view code ,".receivers.TransactionRecorder" maybe a way.
+But How can i know account's UID , in code
+use"args.getString(Transaction.EXTRA_ACCOUNT_UID);"
+—
+Reply to this email directly or view it on GitHub
+#483.
+You make a good point. There is currently no way to retrieve an account UID
+via an external app.
+I will think about how to improve this in future releases. Such as letting
+other apps query accounts/transactions.
+On Wed, Mar 9, 2016 at 4:41 PM, Alex Lei 雷 notifications@github.com wrote:
+I want parse text SMS into payment data ,then insert into guncash. after
+view code ,".receivers.TransactionRecorder" maybe a way.
+But How can i know account's UID , in code
+use"args.getString(Transaction.EXTRA_ACCOUNT_UID);"
+—
+Reply to this email directly or view it on GitHub
+#483.
+Thanks a lot！
+Thanks a lot！

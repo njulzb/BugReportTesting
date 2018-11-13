@@ -1,0 +1,9 @@
+title:Make GnuCash Android available outside of Google store
+
+Could you please make the .apk available on the official website for direct download ?
+Using GooglePlay requires a Google account which not everyone is willing to register.
+Thanks in advance.
+https://github.com/codinguser/gnucash-android/releases
+https://github.com/codinguser/gnucash-android/releases
+Thanks! See #493 for giving this information in the README (which I did read :)
+Thanks! See #493 for giving this information in the README (which I did read :)

@@ -1,0 +1,14 @@
+title:Android Wear Support
+
+Hello,
+I own a Moto 360, and I would find it very awesome to be able to have a next / previous control on the watch.
+For example, the Soundcloud app does this.
+Could this feature be added? Thanks!
+Started working on this
+Started working on this
+Play/Pause, Next, previous and volume controls added for wear in 386f51e
+Play/Pause, Next, previous and volume controls added for wear in 386f51e
+Also working on creating a separate UI for wear for browsing all songs and playing from watch itself
+Also working on creating a separate UI for wear for browsing all songs and playing from watch itself
+Wow, awesome ! I'll have a close look at the code, thanks for working on this !
+Wow, awesome ! I'll have a close look at the code, thanks for working on this !

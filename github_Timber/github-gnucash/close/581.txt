@@ -1,0 +1,7 @@
+title:When connecting to ownCloud, success text is red which looks like an error
+
+codinguser
+Success text should most likely be green, like in other areas of the app (maybe some other color, I'm not a designer). Specifically, I'm referring to the three text elements on the export to ownCloud dialog, after clicking Test:
+After clicking Test, the text color of these three elements is red which would usually indicate an error but in this case actually indicates success.
+Fixed in 79bc80e
+Fixed in 79bc80e

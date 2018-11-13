@@ -1,0 +1,67 @@
+title:Missing currency from Cuba
+
+In Cuba we use two currencies, right now only one is reflected in GnuCash Android version, which is the CUP (Cuban Peso)
+The missing one is the: CUC (Cuban Convertible Peso). This could be easily added to the current strings.xml file.
+Could you add it please? Thanks in advance.
+This currency is available and is called "Peso Convertible" in the
+currencies list.
+I can update the name to Cuban Convertible Peso if that's what most users
+would expect to find.
+On Thu, Jun 19, 2014 at 5:01 PM, Jota Jota notifications@github.com wrote:
+In Cuba we use two currencies, right now only one is reflected in GnuCash
+Android version, which is the CUP (Cuban Peso)
+The missing one is the: CUC (Cuban Convertible Peso). This could be easily
+added to the current strings.xml file.
+Could you add it please? Thanks in advance.
+—
+Reply to this email directly or view it on GitHub
+#170.
+This currency is available and is called "Peso Convertible" in the
+currencies list.
+I can update the name to Cuban Convertible Peso if that's what most users
+would expect to find.
+On Thu, Jun 19, 2014 at 5:01 PM, Jota Jota notifications@github.com wrote:
+In Cuba we use two currencies, right now only one is reflected in GnuCash
+Android version, which is the CUP (Cuban Peso)
+The missing one is the: CUC (Cuban Convertible Peso). This could be easily
+added to the current strings.xml file.
+Could you add it please? Thanks in advance.
+—
+Reply to this email directly or view it on GitHub
+#170.
+Updating the name would be awesome, there are several countries in our area using a currency named "Peso" so it is too generic. I would also suggest you to change the symbols for the Cuban Peso from CU to CUP. At the end would be:
+CUP = Cuban Peso
+CUC = Cuban Convertible Peso
+Thanks a lot!
+PS: I don't know if commenting on closed issues will show up in your queue. I'll give this a while and after that try to make this get to you.
+Updating the name would be awesome, there are several countries in our area using a currency named "Peso" so it is too generic. I would also suggest you to change the symbols for the Cuban Peso from CU to CUP. At the end would be:
+CUP = Cuban Peso
+CUC = Cuban Convertible Peso
+Thanks a lot!
+PS: I don't know if commenting on closed issues will show up in your queue. I'll give this a while and after that try to make this get to you.
+Comments always get through. ;)
+Yes, I updated it already in 713e96e and it should be available in the next release
+Comments always get through. ;)
+Yes, I updated it already in 713e96e and it should be available in the next release
+Wonderful! Thanks a lot.
+On Thu, Jul 24, 2014 at 12:26 PM, Ngewi Fet notifications@github.com
+wrote:
+Comments always get through. ;)
+Yes, I updated it already in 713e96e
+713e96e
+and it should be available in the next release
+—
+Reply to this email directly or view it on GitHub
+#170 (comment)
+.
+Wonderful! Thanks a lot.
+On Thu, Jul 24, 2014 at 12:26 PM, Ngewi Fet notifications@github.com
+wrote:
+Comments always get through. ;)
+Yes, I updated it already in 713e96e
+713e96e
+and it should be available in the next release
+—
+Reply to this email directly or view it on GitHub
+#170 (comment)
+.

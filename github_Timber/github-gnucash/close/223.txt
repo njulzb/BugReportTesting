@@ -1,0 +1,149 @@
+title:Crash when exporting transactions on 1.4.3
+
+Basically, the stacktrace is saying:
+NullPointerException: println needs a message at android.util.Log.println_native(Native Method)
+at android.util.Log.e(Log.java:231)
+at org.gnucash.android.export.ExporterAsyncTask.doInBackground(ExportAsyncTask.java:113)
+at org.gnucash.android.export.ExporterAsyncTask.doInBackground(ExportAsyncTask.java:48)
+Sounds pretty straightforward looking at the trace but I wonder why nobody has reported the bug earlier. It's a totally blocking bug for anyone using this app with the Gnucash desktop.
+Could it be my distribution? MI UI 5
+Cannot reproduce this. However, I can see the problem in the code, and made a quick fix.
+I'm also very interested in the stack trace printed before this crash, to see why the export failed. Can you find it?
+Cannot reproduce this. However, I can see the problem in the code, and made a quick fix.
+I'm also very interested in the stack trace printed before this crash, to see why the export failed. Can you find it?
+Easy to reproduce for me, I just have to try an export ;)
+It seemed to be the root cause of the export crash to me, but here's the handmade copy of the trace:
+RuntimeException
+...
+NullPointerException: println needs a message at android.util.Log.println_native(Native Method)
+at android.util.Log.e(Log.java:231)
+at org.gnucash.android.export.ExporterAsyncTask.doInBackground(ExportAsyncTask.java:113)
+at org.gnucash.android.export.ExporterAsyncTask.doInBackground(ExportAsyncTask.java:48)
+at android.os.AsyncTask$2.call(AsyncTask.java:287)
+at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+...5 more than I can't see.
+Actually looking at the code, there's nothing to fix because
+ExportAsyncTask:113 Log.e(TAG, e.getMessage()); does provide a message and so shoudn't crash.
+The problem seems to come from the above line, 110, writeOutput(mExporter.generateExport());
+which on my device produces an exception that, apparently, returns null on e.getMessage().
+That's how I understand it. But I can't get more information then the stacktrace provided above.
+Maybe I should check my phone status.
+Easy to reproduce for me, I just have to try an export ;)
+It seemed to be the root cause of the export crash to me, but here's the handmade copy of the trace:
+RuntimeException
+...
+NullPointerException: println needs a message at android.util.Log.println_native(Native Method)
+at android.util.Log.e(Log.java:231)
+at org.gnucash.android.export.ExporterAsyncTask.doInBackground(ExportAsyncTask.java:113)
+at org.gnucash.android.export.ExporterAsyncTask.doInBackground(ExportAsyncTask.java:48)
+at android.os.AsyncTask$2.call(AsyncTask.java:287)
+at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+...5 more than I can't see.
+Actually looking at the code, there's nothing to fix because
+ExportAsyncTask:113 Log.e(TAG, e.getMessage()); does provide a message and so shoudn't crash.
+The problem seems to come from the above line, 110, writeOutput(mExporter.generateExport());
+which on my device produces an exception that, apparently, returns null on e.getMessage().
+That's how I understand it. But I can't get more information then the stacktrace provided above.
+Maybe I should check my phone status.
+It will indeed be difficult to find out why the export failed as the exception message is null in the first place. I've sometimes had issues like this which were specific to particular Android builds and not reproducible for anyone else. We need a deeper logging solution to catch this kinds of singular events.
+The fix which @fefe982 has added will prevent the whole app from crashing, but still not fix why your QIF is not generated. From what version did you notice that you couldn't generate QIF anymore?
+It will indeed be difficult to find out why the export failed as the exception message is null in the first place. I've sometimes had issues like this which were specific to particular Android builds and not reproducible for anyone else. We need a deeper logging solution to catch this kinds of singular events.
+The fix which @fefe982 has added will prevent the whole app from crashing, but still not fix why your QIF is not generated. From what version did you notice that you couldn't generate QIF anymore?
+Right, e.getMessage() CAN be null, so it should tested beforehand.
+I guess it was from the last version I updated to, so I guess 1.4.3.
+But it could well be my phone.
+I've got this Syslog app that allows me to send all the logs of my phone. I'll have a look quickly.
+Right, e.getMessage() CAN be null, so it should tested beforehand.
+I guess it was from the last version I updated to, so I guess 1.4.3.
+But it could well be my phone.
+I've got this Syslog app that allows me to send all the logs of my phone. I'll have a look quickly.
+Problem seems to be related to my MI UI version:
+I guess libcore.icu.ICU.getCurrencySymbol(Native Method) should be working.
+I'll update to latest Mi UI and pray for them to fix it...
+Problem seems to be related to my MI UI version:
+I guess libcore.icu.ICU.getCurrencySymbol(Native Method) should be working.
+I'll update to latest Mi UI and pray for them to fix it...
+This looks like the stack trace in #191 .
+Did you delete all transactions and keep the opening balance before you export?
+This looks like the stack trace in #191 .
+Did you delete all transactions and keep the opening balance before you export?
+sounds like it yes, I remember I've tried that: I've enabled "keep the opening balance" but not delete all transaction.
+Why would libcore.icu.ICU.getCurrencySymbol(Native Method) crash? that sounds odd to me
+PS: It crashes the same with "Save accounts opening balances" disabled.
+sounds like it yes, I remember I've tried that: I've enabled "keep the opening balance" but not delete all transaction.
+Why would libcore.icu.ICU.getCurrencySymbol(Native Method) crash? that sounds odd to me
+PS: It crashes the same with "Save accounts opening balances" disabled.
+null is returned trying to get the currency for the split's account, in SplitsDbAdapter.buildSplitInstance, where the actual error is. NullPointerException is only thrown in the native method.
+null is returned trying to get the currency for the split's account, in SplitsDbAdapter.buildSplitInstance, where the actual error is. NullPointerException is only thrown in the native method.
+It's triggered by SplitsDbAdapter.buildSplitInstance but it crashes in libcore.icu.ICU.getCurrencySymbol(Native Method).
+I guess the currencyCode passed as paramter could be faulty.
+What are these libcore.icu.ICU APIs? I don't have them available in my IDE.
+PS: It's apparently an i18n framework.
+@see https://android.googlesource.com/platform/libcore/+/master/luni/src/main/java/libcore/icu/ICU.java
+It either should come from String currencyCode = getCurrencyCode(accountUID); not returning a proper or ICU has a problem on my phone.
+I remember I've messed up with the currency of an account for convenience (switched back and force to Double Entry, then later on changed an account currency): it produced a bug once, but has been ok since. Could be related.
+It's triggered by SplitsDbAdapter.buildSplitInstance but it crashes in libcore.icu.ICU.getCurrencySymbol(Native Method).
+I guess the currencyCode passed as paramter could be faulty.
+What are these libcore.icu.ICU APIs? I don't have them available in my IDE.
+PS: It's apparently an i18n framework.
+@see https://android.googlesource.com/platform/libcore/+/master/luni/src/main/java/libcore/icu/ICU.java
+It either should come from String currencyCode = getCurrencyCode(accountUID); not returning a proper or ICU has a problem on my phone.
+I remember I've messed up with the currency of an account for convenience (switched back and force to Double Entry, then later on changed an account currency): it produced a bug once, but has been ok since. Could be related.
+I suspect this has the same cause as #191, and should be fixed by #207 .
+I suspect this has the same cause as #191, and should be fixed by #207 .
+I concur!
+On Mon, Sep 22, 2014 at 11:24 AM, Yongxin Wang notifications@github.com
+wrote:
+I suspect this has the same cause as #191
+#191, and should be
+fixed by #207 #207 .
+—
+Reply to this email directly or view it on GitHub
+#223 (comment)
+.
+I concur!
+On Mon, Sep 22, 2014 at 11:24 AM, Yongxin Wang notifications@github.com
+wrote:
+I suspect this has the same cause as #191
+#191, and should be
+fixed by #207 #207 .
+—
+Reply to this email directly or view it on GitHub
+#223 (comment)
+.
+OK, can't make sense of this since I'm not familiar with Gnucash internals but can't wait for it to be fixed ;)
+I've got quite a big bunch of Tx to export by now!
+OK, can't make sense of this since I'm not familiar with Gnucash internals but can't wait for it to be fixed ;)
+I've got quite a big bunch of Tx to export by now!
+Fix will be available in the next version maybe around October. Plan is to enter beta soon.
+You could join the beta group if would like faster access to the builds.
+Join here: https://plus.google.com/u/0/communities/104728406764752407046
+Subscribe herehttps://play.google.com/apps/testing/org.gnucash.android:
+Fix will be available in the next version maybe around October. Plan is to enter beta soon.
+You could join the beta group if would like faster access to the builds.
+Join here: https://plus.google.com/u/0/communities/104728406764752407046
+Subscribe herehttps://play.google.com/apps/testing/org.gnucash.android:
+I've updated to version 1.5.1, the export function still crashes, in a cleaner fashion though thanks to @fefe982's fix.
+Any chance this would work with the beta channel version?
+I've updated to version 1.5.1, the export function still crashes, in a cleaner fashion though thanks to @fefe982's fix.
+Any chance this would work with the beta channel version?
+Does it crash with the same stack trace like before (the currency issue)?
+Does it crash with the same stack trace like before (the currency issue)?
+It does not show a stacktrace anymore as it's become a caught exception.
+It display a mall "export OFX file error" while keeping the Exporting Transaction progress window open.
+But the system logcat display the same stacktrace as before:
+It does not show a stacktrace anymore as it's become a caught exception.
+It display a mall "export OFX file error" while keeping the Exporting Transaction progress window open.
+But the system logcat display the same stacktrace as before:
+What currencies are you using?
+What currencies are you using?
+Mostly CNY and EUR.
+FYI I remember having tried to change an account's currency and back,  and Gnucash didn't seem to really like it. I can't remember the details unfortunately but it could be related.
+Mostly CNY and EUR.
+FYI I remember having tried to change an account's currency and back,  and Gnucash didn't seem to really like it. I can't remember the details unfortunately but it could be related.
+@nodje can this issue be closed?
+Or are you still experiences issues on 1.5.5?
+@nodje can this issue be closed?
+Or are you still experiences issues on 1.5.5?
+I've had to start form scratch and recreate all my accounts to get exports to work again. I guess I won't be able to reproduce this bug ever.
+I've had to start form scratch and recreate all my accounts to get exports to work again. I guess I won't be able to reproduce this bug ever.

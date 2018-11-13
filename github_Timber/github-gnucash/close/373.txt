@@ -1,0 +1,11 @@
+title:Showing the same expense multiple times in pie chart
+
+I have spent X$ in /expenses/entertainment/travels/LA. The chart shows the following entries:
+entertainment X$
+travels X$
+LA X$
+And it sums all that stuff up.
+We are working on that, thanks.
+We are working on that, thanks.
+Fixed in v2.0.0
+Fixed in v2.0.0

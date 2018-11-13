@@ -1,0 +1,4 @@
+title:Feature Request: Adjustable grid size
+
+An adjustable grid would allow more artists/albums to be displayed at a time.
+I'm not too familiar with the Android environment, but after brief skim of the code, my guess is that it has something to do with LayoutInflater and  R.layout.item_album_grid.

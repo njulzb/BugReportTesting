@@ -1,0 +1,22 @@
+title:Widgets stop functioning after changing book
+
+czan
+The widget continues to display the account it was created with.
+The widget displays "Account name" and one button which does nothing (there are two buttons if this is done on the develop branch). Clicking on the widget also does nothing.
+If you re-open Book 1 and restart your device the widget will return to displaying the correct account.
+I've taken a look at the code, and the configuration saving/restoring needs to be rewritten. It's currently stored in the SharedPreferences for the account's book, but then if/when the widget is updated it tries to read the active book's SharedPreferences. We can solve this by either
+I have a slight preference for the second option, but the first is more similar to the current implementation.
+Unless I'm missing some easy way to get the book associated to a widget, I agree with using the second option. Although I'd rather like to have a widget's preferences stored along with its book, it seems it would unnecessarily complicate the code.
+@codinguser What do you think?
+Unless I'm missing some easy way to get the book associated to a widget, I agree with using the second option. Although I'd rather like to have a widget's preferences stored along with its book, it seems it would unnecessarily complicate the code.
+@codinguser What do you think?
+@rivaldi8 I'm fine with the second option. The implementation in #608 also looks cleaner than before.
+Thanks @czan .
+@rivaldi8 I'm fine with the second option. The implementation in #608 also looks cleaner than before.
+Thanks @czan .
+@rivaldi8 how about we just move this to v2.2.0?
+The patch depends on changes already made for hiding balances, etc.
+@rivaldi8 how about we just move this to v2.2.0?
+The patch depends on changes already made for hiding balances, etc.
+@codinguser Ok, moved to 2.2.0.
+@codinguser Ok, moved to 2.2.0.

@@ -1,0 +1,7 @@
+title:Overflowmenunot working
+
+when i click on overflow menu button app crashes
+stack trace:java.lang.NoSuchMethodError: android.support.v7.view.menu.MenuPopupHelper.getPopup
+at com.afollestad.appthemeengine.ATE.setTintForMenuPopupHelper
+Fixed
+Fixed

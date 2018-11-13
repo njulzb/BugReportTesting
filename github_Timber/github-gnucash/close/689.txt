@@ -1,0 +1,6 @@
+title:Bug: Long pressing the amount input brings up QWERTY keyboard
+
+See the context menu
+
+Fixed in hotfix/patches (9543006).
+Fixed in hotfix/patches (9543006).

@@ -1,0 +1,7 @@
+title:Rotate Timber when using tablet
+
+Hi,
+AM currently using Timber as the default player. I noticed that when i rotate the tablet, the app remains static. Could you make it dynamic ?
+Thanks for such a great app.
+See #231 now :)
+See #231 now :)

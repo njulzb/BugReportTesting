@@ -1,0 +1,15 @@
+title:#Bug: Search UI alignment problem [PIC Included]
+
+Guys, i see the wierd thing, when i search the menu item is unaligned? it is supposed to be right to arrow. left margin is more!
+Check the image.
+
+it is supposed to be right to arrow. left margin is more!
+What? Try rephrasing that. I don't know what you're trying to say.
+it is supposed to be right to arrow. left margin is more!
+What? Try rephrasing that. I don't know what you're trying to say.
+Oops! Sorry for confusing you, What i'm trying to say is.
+Whenever i press search icon, the search menu is displaying. But if you see, there is more spacing from left arrow and search textview. Got it?
+Oops! Sorry for confusing you, What i'm trying to say is.
+Whenever i press search icon, the search menu is displaying. But if you see, there is more spacing from left arrow and search textview. Got it?
+Could you provide an additional screenshot to show what the app looks like both before and after pressing the search icon.
+Could you provide an additional screenshot to show what the app looks like both before and after pressing the search icon.

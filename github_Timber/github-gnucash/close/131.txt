@@ -1,0 +1,33 @@
+title:Default transaction types are swapped
+
+In settings, when I choose "credit" default transaction type, "debit" is chosen by default when creating new transaction. When I choose "debit", then "credit" is chosen.
+I have also observed this behavior.  Furthermore, the uses of Credit and
+Debit in GnuCash for Android are inconsistent (specifically, the reverse)
+with the use of Credit and Debit in the GnuCash desktop application (formal
+accounting labels).
+On Thu, Jan 23, 2014 at 12:14 PM, Dmitry notifications@github.com wrote:
+In settings, when I choose "credit" default transaction type, "debit" is
+chosen by default when creating new transaction. When I choose "debit",
+then "credit" is chosen.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/131
+.
+Brian Burns
+bburns@aundae.com
++1 (503) 941-0782
+I have also observed this behavior.  Furthermore, the uses of Credit and
+Debit in GnuCash for Android are inconsistent (specifically, the reverse)
+with the use of Credit and Debit in the GnuCash desktop application (formal
+accounting labels).
+On Thu, Jan 23, 2014 at 12:14 PM, Dmitry notifications@github.com wrote:
+In settings, when I choose "credit" default transaction type, "debit" is
+chosen by default when creating new transaction. When I choose "debit",
+then "credit" is chosen.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/131
+.
+Brian Burns
+bburns@aundae.com
++1 (503) 941-0782
+As of 3dde0ab custom account labels are used. Also the default setting of transaction type is interpreted as "start with entry which causes account balance to go down". What kind (credit or debit) which is then selected depends on the type of account
+As of 3dde0ab custom account labels are used. Also the default setting of transaction type is interpreted as "start with entry which causes account balance to go down". What kind (credit or debit) which is then selected depends on the type of account

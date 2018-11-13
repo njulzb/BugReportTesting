@@ -1,0 +1,7 @@
+title:Allow to rename books
+
+rivaldi8
+There's an option to change the book name.
+The book is named after the file from where it was imported or "Book N" for new books, but there's no option to change it.
+Fixed in develop (ad34f1b).
+Fixed in develop (ad34f1b).

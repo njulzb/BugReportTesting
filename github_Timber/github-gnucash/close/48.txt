@@ -1,0 +1,4 @@
+title:GnuCash upsets default launcher on systems with multiple launchers
+
+codinguser
+Need to remove manifest declaration indicating that it can be treated as a launcher

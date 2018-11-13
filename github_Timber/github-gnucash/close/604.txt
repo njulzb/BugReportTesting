@@ -1,0 +1,4 @@
+title:Scheduled exports aren't executed if they're checked before the next run
+
+rivaldi8
+Scheduled exports won't be executed if the scheduled action service runs before the next run. The reason is that ScheduledActionService.executeScheduledEvent sets the scheduled action's last run even if it hasn't actually been run. As the service runs twice a day, the period will never pass.

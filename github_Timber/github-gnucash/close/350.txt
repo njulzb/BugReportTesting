@@ -1,0 +1,10 @@
+title:Settings do not open with new Material theme
+
+Settings activity opens, but the different sections crash the app.
+@rivaldi8 Could you look into it?
+Sure!
+In a device with Android 4.4.2 (API 19) it fails with the following error:
+I can't reproduce it in Android 2.3.5  (API 10) as it doesn't show the sections in separate fragments.
+Sure!
+In a device with Android 4.4.2 (API 19) it fails with the following error:
+I can't reproduce it in Android 2.3.5  (API 10) as it doesn't show the sections in separate fragments.

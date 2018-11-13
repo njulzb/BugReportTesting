@@ -1,0 +1,28 @@
+title:Unable to find the mojo 'generate-sources' in the plugin 'com.jayway.maven.plugins.android.generation2:android-maven-plugin'
+
+Hi,
+After pull you last changed from your master branch (israelbuitron@fa30832), I tried to run mvn clean install to test app in my device, but it threw this:
+Is this some bug?
+I use maven 2.2.1 and java open-jdk 1.7.0_21.
+Update your maven. You need at least version 3.0.3, with 3.0.4 being recommended.
+Update your maven. You need at least version 3.0.3, with 3.0.4 being recommended.
+Thank you, I will try again with this maven version.
+I suggest to include this instruction in README.md file.
+Thank you, I will try again with this maven version.
+I suggest to include this instruction in README.md file.
+It is already in the README in the develop branch.
+Will be visible in master upon merge in a few days.
+On Mon, Jun 17, 2013 at 3:43 PM, Israel Buitron notifications@github.comwrote:
+Thank you, I will try again with this maven version.
+I suggest to include this instruction in README.md file.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/85#issuecomment-19545491
+.
+It is already in the README in the develop branch.
+Will be visible in master upon merge in a few days.
+On Mon, Jun 17, 2013 at 3:43 PM, Israel Buitron notifications@github.comwrote:
+Thank you, I will try again with this maven version.
+I suggest to include this instruction in README.md file.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/85#issuecomment-19545491
+.

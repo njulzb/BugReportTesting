@@ -1,0 +1,7 @@
+title:Feature Request: Starred by Default
+
+Setting to open GnuCash app with the Starred tab being showed (actived instead of the All tab).
+Thanks for the request. I'm not sure if there is a enough demand for this feature to justify the resources for it. Currently Gnucash Android shows the last tab you opened.
+Thanks for the request. I'm not sure if there is a enough demand for this feature to justify the resources for it. Currently Gnucash Android shows the last tab you opened.
+Will close this now. The last opened tab is used when the app loads.
+Will close this now. The last opened tab is used when the app loads.

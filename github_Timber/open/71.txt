@@ -1,0 +1,12 @@
+title:[Feature request] Accelerometer shake (example: so you can skip that one track without having to take the phone out of your pocket)
+
+That would be a killer feature.
+And it could be customized in Settings so that users could change the shake option to trigger something else, like play/pause, previous track, toggle repeat, etc.
+Root is not required. Another app (which too coincidentally is open source) has this feature already.
+But Timber is far more beautiful, polished, and easy to use, so I would rather Timber have this feature.
+@naman14 may I work on this feature?
+@naman14 may I work on this feature?
+@mayank26saxena definitely! Pull requests are very welcome!
+@mayank26saxena definitely! Pull requests are very welcome!
+@naman14 I'm facing issue #177 during build , how to proceed?
+@naman14 I'm facing issue #177 during build , how to proceed?

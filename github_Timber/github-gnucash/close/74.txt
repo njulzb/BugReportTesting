@@ -1,0 +1,20 @@
+title:Error in time editor
+
+codinguser
+Error in time editor: time shifted to 1 hour.
+Steps to reproduce:
+Results:
+3. time is 13:21:29 (example)
+5. time is 12:21
+Locale: Russian
+Time zone: Europe/Moscow (GMT+4)
+I am trying to replicate this and I have a few questions.
+So is the time shifted one hour forward or backwards?
+What were you expecting to see and what did you actually see?
+I am trying to replicate this and I have a few questions.
+So is the time shifted one hour forward or backwards?
+What were you expecting to see and what did you actually see?
+Time shifted backward (-1 hour):
+Time shifted backward (-1 hour):
+Not reproducible after timezone update.
+Not reproducible after timezone update.

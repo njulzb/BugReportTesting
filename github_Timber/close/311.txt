@@ -1,0 +1,3 @@
+title:Can't resolve Null pointer Exception on MusicPlayer.playall
+
+Can't resolve Null pointer Exception on MusicPlayer.playall . please help I am attaching the screenshot of error . Thank you

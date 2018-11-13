@@ -1,0 +1,8 @@
+title:The export progress dialog is never dismissed
+
+After exporting transactions the progress dialog remains visible.
+Steps to reproduce:
+Expected results:
+The progress dialog is dismissed when the export finishes.
+Actual results:
+The progress dialog is never dismissed.

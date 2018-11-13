@@ -1,0 +1,14 @@
+title:'Permission denied' during export
+
+Whenever I try to export, no matter which format, I get a 'permission denied' toast.
+Here is the relevant part of the log:
+Funnily enough, the parent directory of the file to be created does exist and seems to be writeable:
+My phone is a Moto G 2014 running Lolipop. I also have a MicroSD card, which is mounted at /storage/sdcard1. The app was installed via F-Droid, the version is 1.5.5.
+Found something which may be related:
+https://code.google.com/p/android/issues/detail?id=81357
+http://blog.chrisolin.com/index.php/the-dreaded-android-libcore-bug-from-hell-that-i-wasnt-actually-experiencing-it-was-really-selinux/
+Found something which may be related:
+https://code.google.com/p/android/issues/detail?id=81357
+http://blog.chrisolin.com/index.php/the-dreaded-android-libcore-bug-from-hell-that-i-wasnt-actually-experiencing-it-was-really-selinux/
+This should be fixed in v2.0.2
+This should be fixed in v2.0.2

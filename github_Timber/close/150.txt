@@ -1,0 +1,7 @@
+title:Error To Import
+
+Error:Execution failed for task ':app:compileDebugAidl'.
+java.lang.RuntimeException: com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command 'C:\Users\josel\AppData\Local\Android\sdk\build-tools\23.0.0\aidl.exe'' finished with non-zero exit value 1
+???????
+try clean project
+try clean project

@@ -1,0 +1,247 @@
+NullPointerException when syncing with a TaskServer
+Can't use self-signed certificate on Mirakel
+Recurring reminders
+Core app quality: Tests
+Metalist "This Week" not showing this weeks tasks
+Task Overview Reminder input isn't displaying properly
+I can't run Mirakel via Android Studio
+Colerpicker does not allow to select gray
+Recurring tasks don't include parent's tags
+Resurrects old done tasks to taskserver
+Problem using Subtask's - relation subtask parenttask
+Intelligent Tutorials
+Organizing projects like in taskwarrior
+All tasks lost after upgrade, calDAV sync broken
+mirakel modifies/corrupts annotation date
+Crash just after tapping backup/restore
+Truncate listname in widget
+Meta lists with tag as condition not displaying items
+Waiting tasks shouldn't be displayed
+Checking if CalDAV can sync files
+Use the same date and time format everywhere
+wrong notification sound used if custom sound is set
+Handle 301 response from taskwarrior
+Don't crash on Taskwarrior JSONParseExceptions
+Improve Database structureCalDav Sync drops task just entered in Miracle
+Fix model tests
+Fix the syncserver on mirakel.azapps.de
+Automated testing
+Improve Database structure
+CalDav Sync drops task just entered in Miracle
+Fix model tests
+Fix the syncserver on mirakel.azapps.de
+Automated testing
+MIR-7: Sorting Tasks
+MIR-25: Notifications for Tasks
+MIR-16: Search
+MIR-3: Multiline Notes
+MIR-278: Do Not Show Notification for Unimportant Tasks
+MIR-4: Create dummy-data on create
+MIR-496: Taskwarrior sync can't fetch tasks from new remote Projects
+MIR-491: Sharing does not work
+MIR-29: You can create emtpy tasks.
+Android 2.3: No sync settings
+BUG: recurring tasks
+Error Message
+Taskwarrior sync broken in 2.7.0-beta1
+Consistent line break in widget
+Fix problems with Meta List and Task template settings
+Deleted task re-introduced as "pending" after sync; adds project "Eingang"Slow UI
+Problems with meta lists and priorities.
+Recurring tasks: All former tasks are shown in Mirakel
+Meta list cannot be deleted
+Strange task modification after sync
+Checking the task as done makes App crash
+Wrong calendar with OwnCloud
+The recurrence is implemented in the wrong way
+Sync forgets to sync changes of list names
+Subtask: Add old task does not work
+Problems with selecting Tags in a task
+Stopped tasks (with taskwarrior) are restarted by mirakel
+„Later” button in notifications did not work anymore
+Sync Error: Could not find common ancestor
+Unknown response from the server - please write how this happened
+Widget should be updated at midnight
+Syncing "done" with taskwarrior
+Duplicate lists are allowed
+Mirakel closes when clicking back button in  Taskfragment
+Syncing issues with taskd and multiple Mirakel instances
+Sync ignores about 50 % of my tasks
+Changing orientation while adding a task erases the text.
+Task syncing issues
+Issue on due dates with multiple Mirakel instances and taskd
+Wrong priorities when syncing between different Mirakel instancesUI problems in the tablet layout
+Nullpointer
+task duplicated from Owncloud
+changing priority in a list is temporarily forgotten if the task is scrolled out of view, unless the list has been reopened.
+switching orientation while changing a reminder time, bleeds that time to the first task in the list and persists even if “OK” is not pressed
+switching orientation when viewing a task switches to viewing the first task in the list
+the notes field cannot select, copy, or cut text, except for in landscape orientation;
+taskwarrior syncing of recurring tasks
+notification is not updated properly
+Widget keeps disappearing
+UI desync problems
+Add quotes around task name references
+When removing a subtask, the actual task is deleted as well
+Latest DAVdroid-mirakel unable to connect to server
+Reminder for already completed tasks
+Widget does always show completed tasks
+Date/time conversion errors
+Crashes with meta lists
+Problems with switching fragments when entering note
+Dates shifted when updating to version 2.4.0R2
+Meta list with "Content"-rule doesn't work
+Recurrence picker did not work
+davdroid-mirakel crashes when trying to connect to an owncloud account
+When adding subtask a new list called „subtask“ is created
+Recursive subtasksTasks are not sorted by the priority in the minimalistic widget any more
+Due dates in task templates fall back to the beginning of the epoch
+Tasksfragment does not refresh
+TW Sync: access denied
+share file with Mirakel does not work
+Tasks synced to Taskwarrior have negative age (-1h)
+Meta-lists can form loop
+Sync Fail with OwnCloud
+Test and fix problems with owncloud
+Due dialog problems on LG Optimus V
+Widget crash on  getLayoutDirection()
+No Beta 2.4.2 online
+Task creation date appears as  due date
+Task deletion not synced
+Scroll to top when changing list
+Rework Taskwarrior sync
+Mirakel makes too many changes with the tasks
+Sometimes fragments are overdrawn
+Latest version 2.4.0-beta1 (44) is crashing upon clicking on recurrence button
+Taskwarrior sync frequency won't stay changed
+Taskwarrior recurring tasks
+Widget - Due dates dissapear when scrolling
+Issue with timezones
+Fix SQLInjections
+Startup is very slowLoading lists with many tasks is very slow
+update mirakel need delete lists, resync
+Slightly confusing behavor when adding tasks via Android's "share..."
+TaskFragment problems
+Changing reminder after pressing "Later" in notifications doesn't work
+UI-problems (no due and recurring displayed)
+Cannot set custom repeat reminders options
+set dates do not show up in mirakel (caldav sync)
+setting date sets wrong date (caldav sync)
+task change creates new task (caldav sync)
+Use the same date and time format everywhere
+Taskwarrior sync: null value for 'due' does not update in Mirakel
+Mirakel sets all tasks as modified, and changes the end dates of completed tasks after first TW sync.
+Davdroid crashes
+Davidroid not syncing if Tasks modified
+Clicking "Scan QR Code" for Task Warrior crashes app
+Trigger CalDav sync from Mirakel
+Minimalistic widget is not updated in time.
+Audio playback doesn't work
+Taskdoubling while sync to taskd
+Syncing to Mirakel causes many empty projects with name 'Inbox' to be created in Mirakel.
+CalDav Sync fails silently, does nothing (MyKolab.com)
+Sync Problems
+Mirakel Crashes When Attempting to do First Sync
+CalDAV sync: wrong/missing propertiesStart reminder service on startup
+Fix projekts in tw-sync
+Cannot add account
+Taskserver sync contains malformed JSON
+Multiple Inboxes upon syncing with Taskwarrior
+Note (annotations) field of a task is truncated to the first line upon TaskWarrior sync
+Crash on Tablet GT-P5110 with latest git ver
+Mirakel freezes when adding new account
+Problems with local accounts
+Problems with recurrence due's
+Problems with entering notes
+Explanation for Persistent reminder
+Marking tasks as completed in Mirakel and then syncing with taskwarrior yields unexpected results.
+When picking a task from the widget, getting to the wrong one.
+Checksums
+Cannot connect to azapps.de:6544
+Changelog in appa shows wrong version
+Can´t choose Portuguese language from settings
+App crashs when launched
+Show Toast or Notification if sync goes wrong
+After syncing Mirakel bar in status bar disappears
+Test if database update works
+Taskwarrior Sync: Taskwarrior does not see tasks created by Mirakel
+Taskwarrior sync problems with list update
+Taskwarrior sync problems with due dateCrash after language change
+The import of the taskdconfig should be more consistent and more failure-tolerant
+Unable to get to a task from the minimalistic widget
+Fix problems with recurrence reminders
+Fix issue on tablets
+Task view remove button removes parent list.
+Problems with entering notes
+DashClock shows (due 1969-12-31)
+DashClock widget no/delayed refresh
+Reminders shows up even if task is already done
+"Later" and "Done" are opening app
+Recurrence in new datepicker
+Done tasks should have 100% progress
+Support Taskd Beta2+
+Startup
+user time specified for notification sound.. midnight inconvenient
+Cannot add a special list
+213, reminder today, +5 min = +5 days?
+Import of taskd-config fails/adding Taskwarrior Sync impossible
+subtasks listed twice
+Delete list doesn't work for me
+Tablet-UI: Overlapping Taskfragment
+Problem with Notifications and recurrence
+Widget always shows done tasks
+Share Files doesn't workPreferences sometimes aren't applied
+List removal
+Missed notifications
+CalDAV syncing with SOGo
+Enable CalDAV syncing with self-signed server certificates
+Can't create a new list
+Cannot sync to Kolab
+Delete finished tasks don't work
+Crashes when syncing with taskwarrior server
+Test ListFragment
+Test kill-button
+Can't save task name after editing
+Bugs in Smart list and Semantic Settings
+List update error
+The sync-button does not work
+App crashes when you click on Misc in the settings
+Dark theme blinks when app is open
+Add task list crashes if Mirakel is run from widget
+All tasks task list may be deleted, Mirakel completely breaks down
+Task name editor doesn't place cursor at the end of text
+Widget blinks during refresh
+Cannot cancel editing of task note
+Widget not refreshed after switching to minimalistic
+Update widgets
+Caldav sync with OwnCloud not workingTask reminder reccurence may be set to zero
+Add list-button
+Widget update
+Task deadline set to "Now" is displayed as "Before 0 days"
+Widget crashes
+Update Taskwarrior sync
+Sync with Owncloud doesn't work
+Share icon for list with no tasks is enabled
+Use Android Accounts for Caldav sync
+Recurring tasks don't clear notification.
+Subtaskdialog is not resized on option show
+Widgetissues
+Delete button in task list does nothing
+Colorize subtasks option not re-enabled after Colorize disable and re-enable
+Mirakel crash
+Error with deleting task with reminder
+Notification: Count only undone tasks
+Canceling of add new list does not work
+Fix reported ACRA-Bugs
+Fix menus
+Update fragments after creating a task
+Fix problems with very long comments
+Old Due in Special-Lists
+Notification says: "1 Tasks today" instead of "1 Task today"
+You can create emtpy tasks.Checkbox for marking a task as done is too smal on small screens.
+List content isn't shown when switching from portrait to landscape mode.
+Strange date in empty list.
+Speedup Sync
+Replace öüä...
+Don't create such a huge amount of Activities
+Show due-date in Tasklist

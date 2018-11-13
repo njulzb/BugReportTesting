@@ -1,0 +1,6 @@
+title:Incomplete translation
+
+codinguser
+"Transactions" ("Проводки" in Russian) title in account window is not translated. See second line on the screen shot.
+Strange, I'll look whether that string is not internationalized
+Strange, I'll look whether that string is not internationalized

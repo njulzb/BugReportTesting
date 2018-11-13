@@ -1,0 +1,87 @@
+title:Export to Google Drive not working on Marshmallow
+
+I upgraded my Nexus 5 from CM12 to CM13, and just tried my first export of data. All the same notices appear (i.e. the "...exported to Google Drive GnuCash..." folder, or whatever it says, and I get no errors from the app, but the exported QIF is no where to be found. Fortunately, I don't let the app delete the transactions, so I still have them, but...
+Having used CM13 for a couple of weeks now (and I fully admit I'm neither a dev nor a programmer) I suspect it's probably a permissions issue of some sort. I've had several of those, where apps don't notify me of the new Marshmallow permissions that are needed, and so fail without any seeming cause.
+Anyway... You're now informed. :)
+I had a similar problem. I debugged a lot and finally my Drive history saved me - the app was creating a file indeed, but it was creating in a Gnucash folder which was in the bin (google drive bin). I restored the folder, merged the already existing previous folder and everything was good. I also use CM13 on my OnePlus One.
+I had a similar problem. I debugged a lot and finally my Drive history saved me - the app was creating a file indeed, but it was creating in a Gnucash folder which was in the bin (google drive bin). I restored the folder, merged the already existing previous folder and everything was good. I also use CM13 on my OnePlus One.
+That doesn't sound good at all.  Rest assured we're working on fixes for
+the file export and sync.
+Thanks for your feedback!
+On Apr 8, 2016 7:18 AM, "Dhwaneet Bhatt" notifications@github.com wrote:
+I had a similar problem. I debugged a lot and finally my Drive history
+saved me - the app was creating a file indeed, but it was creating in a
+Gnucash folder which was in the bin (google drive bin). I restored the
+folder, merged the already existing previous folder and everything was
+good. I also use CM13 on my OnePlus One.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly or view it on GitHub
+#485 (comment)
+That doesn't sound good at all.  Rest assured we're working on fixes for
+the file export and sync.
+Thanks for your feedback!
+On Apr 8, 2016 7:18 AM, "Dhwaneet Bhatt" notifications@github.com wrote:
+I had a similar problem. I debugged a lot and finally my Drive history
+saved me - the app was creating a file indeed, but it was creating in a
+Gnucash folder which was in the bin (google drive bin). I restored the
+folder, merged the already existing previous folder and everything was
+good. I also use CM13 on my OnePlus One.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly or view it on GitHub
+#485 (comment)
+dhwaneetbhatt -- Thank you for that! I also discovered that export to DropBox (still?) works fine, so I've been using that. I haven't had a chance to look into your Drive solution yet, though. I'll go do that now and report back here.
+Cheers!
+dhwaneetbhatt -- Thank you for that! I also discovered that export to DropBox (still?) works fine, so I've been using that. I haven't had a chance to look into your Drive solution yet, though. I'll go do that now and report back here.
+Cheers!
+Okay... Well... Upon further review, I have no "bin" folder anywhere in Google Drive. I do still have the GnuCash folder than the app originally created, which is the first place I looked when I discovered that it wasn't actually exporting the QIF file into the folder after  the CM13 upgrade. So... That's what I know.
+Okay... Well... Upon further review, I have no "bin" folder anywhere in Google Drive. I do still have the GnuCash folder than the app originally created, which is the first place I looked when I discovered that it wasn't actually exporting the QIF file into the folder after  the CM13 upgrade. So... That's what I know.
+thanks for the info 👍
+thanks for the info 👍
+I'm having the same issue on an asus zenphone2.
+It's using android 6.0.1
+I'm having the same issue on an asus zenphone2.
+It's using android 6.0.1
+I have this issue as well. Worked great once upon a time, however nothing shows up in my google drive. The expert seems like it is working by saying it is connected to google drive and exporting gnucash -> google drive, but nothing is there.
+I deleted the GnuCash folder in Google drive thinking a new one would be created...it hasn't yet.
+Thanks for your time and this great product.
+I have this issue as well. Worked great once upon a time, however nothing shows up in my google drive. The expert seems like it is working by saying it is connected to google drive and exporting gnucash -> google drive, but nothing is there.
+I deleted the GnuCash folder in Google drive thinking a new one would be created...it hasn't yet.
+Thanks for your time and this great product.
+@zutroy97 and @scompo Try emptying your Google Drive bin and export again. In my case the file was getting created even if the folder was present in bin.
+@zutroy97 and @scompo Try emptying your Google Drive bin and export again. In my case the file was getting created even if the folder was present in bin.
+I didn't find a "bin" folder. Is that the same as "Trash?"
+At any rate, I set up a scheduled export. After a few days I noticed 3 GnuCash folders in gDrive. How is that possible?
+One of them contained all the exports. I deleted the other two (which had no entries.)
+Seems to be working now, I have no idea what changed or what I did to "fix" it.
+Thank You for your response.
+@zutroy97 and @scompo Try emptying your Google Drive bin and export again. In my case the file was getting created even if the folder was present in bin.—
+You are receiving this because you were mentioned.
+Reply to this email directly, view it on GitHub, or mute the thread.
+I didn't find a "bin" folder. Is that the same as "Trash?"
+At any rate, I set up a scheduled export. After a few days I noticed 3 GnuCash folders in gDrive. How is that possible?
+One of them contained all the exports. I deleted the other two (which had no entries.)
+Seems to be working now, I have no idea what changed or what I did to "fix" it.
+Thank You for your response.
+@zutroy97 and @scompo Try emptying your Google Drive bin and export again. In my case the file was getting created even if the folder was present in bin.—
+You are receiving this because you were mentioned.
+Reply to this email directly, view it on GitHub, or mute the thread.
+@dhwaneetbhatt
+Deleting the folder from the trash solved the problem, now it's working for me.
+@dhwaneetbhatt
+Deleting the folder from the trash solved the problem, now it's working for me.
+Hey guys,
+@dhwaneetbhatt your suggestion is correct. For some reason, Google Drive identifies a folder as existing even if it is in the trash. So the exports keep going there.
+@zutroy97 Sometimes multiple folders get created due to the way it is implemented at the moment. This could be fixed, I think, but it's not trivial and so we just haven't gotten around to it.
+We hope to make major overhauls to Google Drive integration in the long term using the Storage Access Framework.
+Hey guys,
+@dhwaneetbhatt your suggestion is correct. For some reason, Google Drive identifies a folder as existing even if it is in the trash. So the exports keep going there.
+@zutroy97 Sometimes multiple folders get created due to the way it is implemented at the moment. This could be fixed, I think, but it's not trivial and so we just haven't gotten around to it.
+We hope to make major overhauls to Google Drive integration in the long term using the Storage Access Framework.
+For those still not getting the files exported to Google Drive, are you using multiple currencies?
+For those still not getting the files exported to Google Drive, are you using multiple currencies?
+This request is made irrelevant by #646  which is implemented in 8ad3e04
+Backups will in the future go through the SAF, which is more robust and affords more flexibility
+This request is made irrelevant by #646  which is implemented in 8ad3e04
+Backups will in the future go through the SAF, which is more robust and affords more flexibility

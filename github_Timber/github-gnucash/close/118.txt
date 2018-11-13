@@ -1,0 +1,90 @@
+title:OFX file generated with incorrect account type
+
+Possibly linked to #100 , I'm having trouble importing transactions from GnuCash Android to Desktop v 2.4.11.
+I exported an accounts file and GCA created the correct account structure, but then when I tried to create an OFX file of transactions to import back into the Desktop version it told me the accounts were unrecognized and I had to manually select them.
+I suspect this is because the account type is being set incorrectly in the OFX file.
+For example, the details of one of the accounts was:
+But the transaction I created in Android got exported as:
+As you can see, it is supposed to be an expense account, but was instead marked as a CHECKING account even though the ID is correct.
+The account type is right according to the OFX standard which has different
+types from GnuCash.
+The problem is that GnuCash does not match the account IDs when importing
+from OFX. Otherwise it would detect and match the accounts properly using
+the IDs.
+I am working on enabling QIF import which should make matching better. Stay
+tuned
+On Tue, Sep 24, 2013 at 9:58 PM, Michael Newton notifications@github.comwrote:
+Possibly linked to #100#100, I'm having trouble importing transactions from GnuCash Android to Desktop
+v 2.4.11.
+I exported an accounts file and GCA created the correct account structure,
+but then when I tried to create an OFX file of transactions to import back
+into the Desktop version it told me the accounts were unrecognized and I
+had to manually select them.
+I suspect this is because the account type is being set incorrectly in the
+OFX file.
+For example, the details of one of the accounts was:
+<gnc:account version="2.0.0">
+act:namePiano/act:name
+<act:id type="guid">fed755d4868beb275aa3a3c65bd0362a/act:id
+act:typeEXPENSE/act:type
+act:commodity
+cmdty:spaceISO4217/cmdty:space
+cmdty:idGBP/cmdty:id
+/act:commodity
+act:commodity-scu100/act:commodity-scu
+act:slots
+
+slot:keycolor/slot:key
+<slot:value type="string">Not Set/slot:value
+
+/act:slots
+<act:parent type="guid">7d4e1adda8901d6e0ed0cc581f241028/act:parent
+/gnc:account
+But the transaction I created in Android got exported as:
+As you can see, it is supposed to be an expense account, but was instead
+marked as a CHECKING account even though the ID is correct.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/118
+.
+The account type is right according to the OFX standard which has different
+types from GnuCash.
+The problem is that GnuCash does not match the account IDs when importing
+from OFX. Otherwise it would detect and match the accounts properly using
+the IDs.
+I am working on enabling QIF import which should make matching better. Stay
+tuned
+On Tue, Sep 24, 2013 at 9:58 PM, Michael Newton notifications@github.comwrote:
+Possibly linked to #100#100, I'm having trouble importing transactions from GnuCash Android to Desktop
+v 2.4.11.
+I exported an accounts file and GCA created the correct account structure,
+but then when I tried to create an OFX file of transactions to import back
+into the Desktop version it told me the accounts were unrecognized and I
+had to manually select them.
+I suspect this is because the account type is being set incorrectly in the
+OFX file.
+For example, the details of one of the accounts was:
+<gnc:account version="2.0.0">
+act:namePiano/act:name
+<act:id type="guid">fed755d4868beb275aa3a3c65bd0362a/act:id
+act:typeEXPENSE/act:type
+act:commodity
+cmdty:spaceISO4217/cmdty:space
+cmdty:idGBP/cmdty:id
+/act:commodity
+act:commodity-scu100/act:commodity-scu
+act:slots
+
+slot:keycolor/slot:key
+<slot:value type="string">Not Set/slot:value
+
+/act:slots
+<act:parent type="guid">7d4e1adda8901d6e0ed0cc581f241028/act:parent
+/gnc:account
+But the transaction I created in Android got exported as:
+As you can see, it is supposed to be an expense account, but was instead
+marked as a CHECKING account even though the ID is correct.
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/118
+.
+For anyone wanting to work around this in the mean time, I have a Python script that will insert the matching account IDs into a gnucash xml file at https://gist.github.com/davidfraser/7095779
+For anyone wanting to work around this in the mean time, I have a Python script that will insert the matching account IDs into a gnucash xml file at https://gist.github.com/davidfraser/7095779

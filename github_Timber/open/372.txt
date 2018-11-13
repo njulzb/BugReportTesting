@@ -1,0 +1,24 @@
+title:Problem with testing
+
+I have downloaded and unzip the file, but when I try to run it on a virtual device, it cannot.
+it said that there is an issue, the exit code is -1073741819 (0xC0000005)
+How do I fix it ??
+Thanks
+What file?
+What is a virtual device?
+What program outputs the exit code?
+What software are you using?
+What hardware are you using?
+What did you expect to happen?
+What are all the steps you took?
+Please elaborate. You haven't said enough to make your problem understood.
+Read this if you need help learning how to ask smart questions.
+What file?
+What is a virtual device?
+What program outputs the exit code?
+What software are you using?
+What hardware are you using?
+What did you expect to happen?
+What are all the steps you took?
+Please elaborate. You haven't said enough to make your problem understood.
+Read this if you need help learning how to ask smart questions.

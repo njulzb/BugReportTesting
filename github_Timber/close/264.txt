@@ -1,0 +1,11 @@
+title:Splash Screen
+
+How can I add a Splash Screen to the app because I've been trying to add it and have had no luck at all?
+I figured out how to add one by doing some playing around and getting mad.
+activity_splash.xml
+SplashActivity.java
+AndroidManifest.xml
+I figured out how to add one by doing some playing around and getting mad.
+activity_splash.xml
+SplashActivity.java
+AndroidManifest.xml

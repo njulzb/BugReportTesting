@@ -1,0 +1,22 @@
+title:Allow user to set music folder
+
+Hi guys, this app is amazing and highly customizable, something that I would really like to see is the ability to choose the location of the music, usually located at ~/Music in android, because most apps (including this) always include Whatsapp Audio, Telegram, etc.
+Maybe there is a way, but I haven't found it.
+Thanks for reading,
+Cheers and keep up with the good work!
+I would love this, too.
+I would love this, too.
+Hi, I also find this feature might come in handy for many users. I would like to develop a solution. Since user can already navigate to the different directories using „Folders“ from the navigation drawer, my idea would be to extend the shown overflow button (three dots in the top right corner) with an option to mark a current directory as a „music directory“.
+Hi, I also find this feature might come in handy for many users. I would like to develop a solution. Since user can already navigate to the different directories using „Folders“ from the navigation drawer, my idea would be to extend the shown overflow button (three dots in the top right corner) with an option to mark a current directory as a „music directory“.
+That's a great idea! I would really like to see the results. Keep in mind the UX for removing folders. In your flow, how would a user remove multiple folders?
+That's a great idea! I would really like to see the results. Keep in mind the UX for removing folders. In your flow, how would a user remove multiple folders?
+It's great to hear that you find the idea good!
+What do you exactly mean with removing folders ?
+It's great to hear that you find the idea good!
+What do you exactly mean with removing folders ?
+Well I mean, you select folders somehow, and the music files from those folders would be included, right?
+If I want to remove one of the selected folders, how would I do it?
+Well I mean, you select folders somehow, and the music files from those folders would be included, right?
+If I want to remove one of the selected folders, how would I do it?
+Ok, so it should be possible to set multiple standard folders, not a single one ? My idea was that user marks a single folder and whenever he/she wants to change it, navigates to a different directory and simply marks this new directory which from now becomes standard. The path would be then overridden so the previous folder is not a standard folder anymore.
+Ok, so it should be possible to set multiple standard folders, not a single one ? My idea was that user marks a single folder and whenever he/she wants to change it, navigates to a different directory and simply marks this new directory which from now becomes standard. The path would be then overridden so the previous folder is not a standard folder anymore.

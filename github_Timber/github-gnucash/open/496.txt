@@ -1,0 +1,9 @@
+title:Feature request: Subset by a date range
+
+No description provided.
+What exactly do you mean? Subset of what, transactions, reports?
+What exactly do you mean? Subset of what, transactions, reports?
+I'd like to see the transactions and net within a custom date range. The same feature for reports would be  awesome too.
+I'd like to see the transactions and net within a custom date range. The same feature for reports would be  awesome too.
+You can already select custom date ranges for reports
+You can already select custom date ranges for reports

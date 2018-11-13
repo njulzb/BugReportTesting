@@ -1,0 +1,7 @@
+title:How can I change existing REST API to my php API ?
+
+I am new to android ,
+After import this project to android studio and run the app show me blank screen with navigation menu
+, It don't have any song ,
+My question is how can I change existing API to my custom API using PHP .
+Thanks for your answer !

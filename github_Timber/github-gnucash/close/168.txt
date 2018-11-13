@@ -1,0 +1,7 @@
+title:Enhancement:  Change Default Currency for sub-accounts when Root account is changed
+
+Currently if I change the Default Currency for a Root Account (Expenses), it does not apply to the sub-accounts.  There should be an option to apply this to sub-accounts.
+I'm not sure if this would be appropriate to do, esp given support for multi-currency transactions.
+I might have an expense account for when I'm abroad and I wouldn't want to just modify the currencies in bulk.
+I'm not sure if this would be appropriate to do, esp given support for multi-currency transactions.
+I might have an expense account for when I'm abroad and I wouldn't want to just modify the currencies in bulk.

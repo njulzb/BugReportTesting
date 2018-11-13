@@ -1,0 +1,13 @@
+title:Can't edit transactions
+
+Version 1.5.1
+Can't edit any transactions: it just doesn't save my changes.
+The only way is to delete a transaction and then create a new one.
+Is this still happening or has it been fixed in the latest version?
+Is this still happening or has it been fixed in the latest version?
+Can't validate in 1.5.3 - I just can't create any record at all because of this #277
+Can't validate in 1.5.3 - I just can't create any record at all because of this #277
+Checked in 1.5.2 - the ussue is still there.
+Checked in 1.5.2 - the ussue is still there.
+Installed latest develop branch - it is fixed, thank you!
+Installed latest develop branch - it is fixed, thank you!

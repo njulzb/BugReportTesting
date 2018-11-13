@@ -1,0 +1,8 @@
+title:Edit button overlapped in transaction view
+
+The button is under the green thing in the transaction view. Also there seems to be some problem with the transparency or something. See the attached screenshot.
+GNUCash Version 2.0.4
+Android 4.4.2
+Device: Samsung Galaxy S4
+I think this was in version 2.0.3 as well, I haven't used earlier versions of the app.
+Thanks.

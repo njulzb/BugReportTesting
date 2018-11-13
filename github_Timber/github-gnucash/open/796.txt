@@ -1,0 +1,7 @@
+title:qif export from Android -> "Transaction date: Unrecognized or inconsistent format." on loading in desktop
+
+qif export from Android
+Import in gnucash desktop 3.2
+"Transaction date: Unrecognized or inconsistent format." on loading in desktop
+successful transfer of information to the gnucash desktop
+unsuccessful transfer of information to the gnucash desktop

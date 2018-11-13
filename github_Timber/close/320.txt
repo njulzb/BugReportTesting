@@ -1,0 +1,19 @@
+title:cannot find symbol variable play_billing_license_key
+
+
+when i tried to generate  signed apk a got this error
+Error:(71, 59) error: cannot find symbol variable play_billing_license_key
+in: \app\src\main\java\com\naman14\timber\activities\DonateActivity.java
+ta line: bp = new BillingProcessor(this, getString(R.string.play_billing_license_key), this);
+add this line to string.xml
+<string name="play_billing_license_key">Your google license key</string>
+please note that it's get error when you try to build apk only. ignore it and click on generate signed apk
+its work for me.
+add this line to string.xml
+<string name="play_billing_license_key">Your google license key</string>
+please note that it's get error when you try to build apk only. ignore it and click on generate signed apk
+its work for me.
+here is my fix
+bp = new BillingProcessor(this, "your license key", this);
+here is my fix
+bp = new BillingProcessor(this, "your license key", this);

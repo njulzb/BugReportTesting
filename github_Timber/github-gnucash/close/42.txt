@@ -1,0 +1,5 @@
+title:Crashes on Android 4.2
+
+When running the GnuCash app on Android 4.2 (build JOP40C) on a Nexus 7 (model ME370T) I experience fairly consistent crashes:
+I'm don't think it is required to exit the app (4) but I haven't tested that yet.
+I had thought the problem was to do with updating to version 1.0.2 ( from 1.0 beta 2), but I can reproduce the crash on the older version too. I was running Android 4.1.2 until recently so it may be something to do with the OS update.

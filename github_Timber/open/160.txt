@@ -1,0 +1,18 @@
+title:[Feature Request] Add the possibility to crawl "Folders" at the storage
+
+I would highly welcome the possibility to crawl also directly my folder structure at the storage.
+This could be useful...
+1.) ...when some artists have wrong artist's spellings inside an MP3-tag, but are all contained at one folder.
+2.) ...if I have e.g. two folders, one with "Music" and one with "Audiobooks". Now I want only to use the "Music" folder to perform "Play All", but not having the "Audiobooks" in the music playlist.
+I second this request, it would be a very usefull improvement!
+If possible, include the folder view in the main sections (likeTracks, Albums, Artists) with a default folder you can define/modify in app setup.
+Another releavant detail is to not include only audio files from the selected folder but also include all audio files found in the subfolders.
+For example, if u/therob84's "Music" folder contains subfolders such as "Artist1", "Artist2", ... "ArtistN" ; selecting "Play All" for "Music" folder should include all audio files from "Artist1", "Artist2", ... "ArtistN" folders in the queue list.
+I second this request, it would be a very usefull improvement!
+If possible, include the folder view in the main sections (likeTracks, Albums, Artists) with a default folder you can define/modify in app setup.
+Another releavant detail is to not include only audio files from the selected folder but also include all audio files found in the subfolders.
+For example, if u/therob84's "Music" folder contains subfolders such as "Artist1", "Artist2", ... "ArtistN" ; selecting "Play All" for "Music" folder should include all audio files from "Artist1", "Artist2", ... "ArtistN" folders in the queue list.
+Is this requesting the same feature as #8? Or is this different?
+Is this requesting the same feature as #8? Or is this different?
+It is quite the same with a bit more details on the requested functionnality.
+It is quite the same with a bit more details on the requested functionnality.

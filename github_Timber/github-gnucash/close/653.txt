@@ -1,0 +1,13 @@
+title:Translation of DropBox to Dropbox
+
+Please change DropBox to Dropbox in translations.
+@codinguser Shall we just run sed through all strings.xml files or may it mess things up with Crowdin?
+@codinguser Shall we just run sed through all strings.xml files or may it mess things up with Crowdin?
+@rivaldi8 It could mess things up in CrowdIn. I propose we do the change bit by bit over time.
+@jony0008 do you work for Dropbox? :D  or just particular about spelling ;)
+@rivaldi8 It could mess things up in CrowdIn. I propose we do the change bit by bit over time.
+@jony0008 do you work for Dropbox? :D  or just particular about spelling ;)
+@codinguser Haha No I have just done too many translations :)
+@codinguser Haha No I have just done too many translations :)
+Fixed in d566a3e
+Fixed in d566a3e

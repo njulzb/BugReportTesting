@@ -1,0 +1,7 @@
+title:Too many keystrokes for value typing
+
+Previous versions had a nice feature which allowed to just type "42" to get "0.42". Right now, I need the double amount of keystrokes, since I have to type "0.42" entirely.
+The amount field now supports expressions, which means we cannot format your input in a certain way for you. Also, some currencies do not support decimal places, so the old way was rather disingenuous for those users.
+I'm sorry, but we don't plan to change this at the moment.
+The amount field now supports expressions, which means we cannot format your input in a certain way for you. Also, some currencies do not support decimal places, so the old way was rather disingenuous for those users.
+I'm sorry, but we don't plan to change this at the moment.

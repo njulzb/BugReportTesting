@@ -1,0 +1,18 @@
+title:Crash during export all transactions in QIF.
+
+Transactions are exported.
+Transactions are not exported. File of transactions has 0 size and the app always crashes.
+Additional info:
+I have russian language set. And also here's stack trace after crash.
+java.lang.NullPointerException: Attempt to invoke interface method 'boolean java.util.List.isEmpty()' on a null object reference
+at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:190)
+at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:83)
+at android.os.AsyncTask.finish(AsyncTask.java:660)
+at android.os.AsyncTask.-wrap1(AsyncTask.java)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:677)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:163)
+at android.app.ActivityThread.main(ActivityThread.java:6342)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:880)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:770)

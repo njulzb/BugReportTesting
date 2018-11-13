@@ -1,0 +1,16 @@
+title:Can't import from desktop export
+
+i tried all three export options
+export account tree to csv
+export account transactions to csv
+export accounts
+the first two create a csv file, no surprise there
+the last creates an xml file automatically appended with the ".gnucash" extension.
+the gnucash file is an uncompressed xml file
+The android app doesnt show these at all in the 3rd party file browser is invokes to open the files.  This make me think its looking for something other than .csv or .gnucash
+desktop version 2.6.5
+android version 1.5.5
+You need to export your accounts to XML for them to be imported into GnuCash. Import from CSV is not supported. Or you can just import from your GnuCash XML file.
+Some of the file manages behave differently, I would recommend trying with the OI File Manager (available from the Play Store and their website.
+You need to export your accounts to XML for them to be imported into GnuCash. Import from CSV is not supported. Or you can just import from your GnuCash XML file.
+Some of the file manages behave differently, I would recommend trying with the OI File Manager (available from the Play Store and their website.

@@ -1,0 +1,9 @@
+title:Transactions deleted after renaming account
+
+After I renamed an account, all transactions inside this account were deleted. It's not very user-friendly behaviour.
+What version of the app are you using?
+What version of the app are you using?
+1.6.4
+1.6.4
+Fixed in v2.0.0
+Fixed in v2.0.0

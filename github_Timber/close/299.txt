@@ -1,0 +1,9 @@
+title:Signed APK
+
+The app is crashing when I create a signed apk
+That's not enough information. Details please.
+That's not enough information. Details please.
+I already fixed. I was having problem with the api cash lyrics.
+I already fixed. I was having problem with the api cash lyrics.
+API that requires the API key that was generated with the application's SHA1. In this case, with the application now signed, it was necessary to re-run the API data generation process, but then use the SHA1 application dp signed application.
+API that requires the API key that was generated with the application's SHA1. In this case, with the application now signed, it was necessary to re-run the API data generation process, but then use the SHA1 application dp signed application.

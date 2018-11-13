@@ -1,0 +1,9 @@
+title:Time shown in 12-hour format instead of 24-hour
+
+Shows 24-hour time, which is what my phone is set up for.
+I think this was the behavior before 2.3.0 (not 100% sure).
+Shows 12-hour time (AM/PM).
+This seems to have mysteriously fixed itself 👻
+This seems to have mysteriously fixed itself 👻
+Actually it still happens sporadically, but anyway this issue seems to be a duplicate of #631.
+Actually it still happens sporadically, but anyway this issue seems to be a duplicate of #631.

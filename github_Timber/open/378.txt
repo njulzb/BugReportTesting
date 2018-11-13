@@ -1,0 +1,6 @@
+title:when I opt to play a song from from amaze file manager with timber music player the music app crashes
+
+I expected that I should be able to play a song from amaze file manager with timber music player.
+When I select timber music player as a medium to play the music file the music player crashes
+https://vimeo.com/260719400
+

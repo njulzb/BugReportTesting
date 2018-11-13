@@ -1,0 +1,13 @@
+title:Play/Pause button bug in notification widget
+
+When a song is playing and we close the app. Timber widget in notification area shows "pause" button instead it should show a "play" button as on tapping it would resume the last song.
+To futher elaborate and add to this bug, the following issue also takes place:
+-> Open app, play some music.
+-> Pause music, clear notification, exit app.
+Now suddenly the notification appears again. And this time, as the OP pointed out, it shows a "Pause" button instead of "Play" despite the music actually being paused. Touching it resumes the song. Added a video clip in case you (dev) want to look at the behaviour.
+Telecine_2016-01-06-19-28-31.zip
+To futher elaborate and add to this bug, the following issue also takes place:
+-> Open app, play some music.
+-> Pause music, clear notification, exit app.
+Now suddenly the notification appears again. And this time, as the OP pointed out, it shows a "Pause" button instead of "Play" despite the music actually being paused. Touching it resumes the song. Added a video clip in case you (dev) want to look at the behaviour.
+Telecine_2016-01-06-19-28-31.zip

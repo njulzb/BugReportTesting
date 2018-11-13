@@ -1,0 +1,11 @@
+title:[unverified] Export to email does not work
+
+From user email:
+I can no longer export to email receiver. Whenever I start an export action and choose „Send …“ instead of „SD-Card“ as export target I am not prompted to choose a send action. Instead I get the message „Exported to SD Card“. What is going wrong? (The message texts may not be correct as I am using gnucash in german, so I don’t know the correct english messages).
+I am using the current version 2.0.7 on an android 4.4.4 Samsung device.
+I can't reproduce it with 2.1.3.
+I can't reproduce it with 2.1.3.
+I think this might be a bug which we had with translations. The menu was wrongly translated and so the action the user selected and what happened were two different things. I'll check again in the German version.
+I'll close this for now unless it pops up again.
+I think this might be a bug which we had with translations. The menu was wrongly translated and so the action the user selected and what happened were two different things. I'll check again in the German version.
+I'll close this for now unless it pops up again.

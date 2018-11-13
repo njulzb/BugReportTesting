@@ -1,0 +1,29 @@
+title:Default accounts are created in English when no region-specific is available
+
+codinguser
+Default accounts for locale Spanish (Spain) are loaded, as it's the closest translation available.
+Default accounts for default locale English are loaded instead.
+Renaming app/src/main/res/raw-es-rES to raw-es solves the problem.
+I see all raw and lots of values resources have this problem. I think we should rename all of them removing the region-specific suffix (raw-fr-rFR to raw-fr, values-pt-rPT to values-pt and so on). @codinguser what do you think?
+Renaming app/src/main/res/raw-es-rES to raw-es solves the problem.
+I see all raw and lots of values resources have this problem. I think we should rename all of them removing the region-specific suffix (raw-fr-rFR to raw-fr, values-pt-rPT to values-pt and so on). @codinguser what do you think?
+I think we can definitely do that for the raw values. If there are region specific files, we should use them, otherwise, we can rename one folder to the basic locale (without region eg. raw-pt or raw-es) as a fallback for all the other locales where we do not have specifics.
+I am more concerned about doing this for the languages though. Language is tricky, and sometimes there are big differences between the regions, even though it is the same basic language.
+But I must admit that there are more benefits than downsides to covering a basic locale. I'll try to see if it is possible to make it work through CrowdIn. (I'd hate to have to mess up the translation workflow).
+If you don't mind, assign this task to me and I'll handle it.
+I think we can definitely do that for the raw values. If there are region specific files, we should use them, otherwise, we can rename one folder to the basic locale (without region eg. raw-pt or raw-es) as a fallback for all the other locales where we do not have specifics.
+I am more concerned about doing this for the languages though. Language is tricky, and sometimes there are big differences between the regions, even though it is the same basic language.
+But I must admit that there are more benefits than downsides to covering a basic locale. I'll try to see if it is possible to make it work through CrowdIn. (I'd hate to have to mess up the translation workflow).
+If you don't mind, assign this task to me and I'll handle it.
+Yes, I agree some languages may be tricky, but we can alway adjust it depending on the feedback of the users. The problem, as you say, will be not messing up CrowdIn translations.
+Yes, I agree some languages may be tricky, but we can alway adjust it depending on the feedback of the users. The problem, as you say, will be not messing up CrowdIn translations.
+I've found this option in Crowdin settings (Export section) that may help:
+Automatically fill in regional dialects
+Untranslated strings of regional dialects (e.g. Argentine Spanish) will automatically include completed translations from the primary language (Spanish).
+I've found this option in Crowdin settings (Export section) that may help:
+Automatically fill in regional dialects
+Untranslated strings of regional dialects (e.g. Argentine Spanish) will automatically include completed translations from the primary language (Spanish).
+I'll check that out when pulling translations for next update. Then we can just have all regional dialects covered in one go.
+Thanks!
+I'll check that out when pulling translations for next update. Then we can just have all regional dialects covered in one go.
+Thanks!

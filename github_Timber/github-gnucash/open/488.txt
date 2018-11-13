@@ -1,0 +1,10 @@
+title:Feature request: Encrypted exports
+
+Why, I hope I'm not asking for something that already exists, but... Can the app export encrypted files? OFX files, but encrypted with a password, maybe using AES?
+If it doesn't already have that the feature, would it be welcomed here?
+Do you mean encrypted backups for the app, or encrypted exports?
+If we encrypt the exports, how is the receiving app supposed to decrypt them?
+Do you mean encrypted backups for the app, or encrypted exports?
+If we encrypt the exports, how is the receiving app supposed to decrypt them?
+How about an APG integration for the export? Anyways you can still encrypt the backup files manually with APG. It provides quite good key management and encryption for files, text, etc. And additional mail integration with K9 mail. Hope that helps.
+How about an APG integration for the export? Anyways you can still encrypt the backup files manually with APG. It provides quite good key management and encryption for files, text, etc. And additional mail integration with K9 mail. Hope that helps.

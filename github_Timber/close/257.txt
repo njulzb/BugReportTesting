@@ -1,0 +1,3 @@
+title:ReplayGain support
+
+Would really love to see ReplayGain support considering the extreme loudness differences between songs!

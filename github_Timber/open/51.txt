@@ -1,0 +1,5 @@
+title:No repeat single track symbol
+
+There is no icon to represent Repeat single track v/s. repeat all in list.
+In YOURAPPLICATIONNAME/nowplaying/JAVAS (all fragments in this folder where the updateRepeatState function is already available except the BaseNowplayingFragment.java) in the following function replace the complete current function with the following:
+In YOURAPPLICATIONNAME/nowplaying/JAVAS (all fragments in this folder where the updateRepeatState function is already available except the BaseNowplayingFragment.java) in the following function replace the complete current function with the following:

@@ -1,0 +1,22 @@
+MITM not working on HTC M7
+Launch failed
+Any way to manually exploit
+MITM restarts phone
+Forced reboot
+MITM features - no internet on target android 6.01
+No modules work / does not install ruby / MSF when first starts up
+Crash after wifi scan
+MITM attacks ineffective/crashing on Marshmallow
+start_daemon.sh
+MSF not working
+hosts added manually are not updated
+ruby SIGSEGV
+network radar segfault when closing the app
+Traceroute and Inspector fails ( nmap does not run on promiscuous interfaces )
+Little exploit issue
+Importing a dictionary for bruteforce.
+White screen at second startup
+Cannot update core, nor ruby and msf.
+login cracker segfault
+MITM  not active after 1.5.3 update
+'rm' does not support options

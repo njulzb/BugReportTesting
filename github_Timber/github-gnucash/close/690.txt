@@ -1,0 +1,19 @@
+title:Use the actual account name in QIF export
+
+When exporting transactions into QIF, the account name is set to "Imbalance-EUR".
+The header looks like this
+However, I'm looking for something like this:
+Is there any specific reason for using this setting? If not, I'd be happy to implement this change and send a pull request to see how the process of contributions works.
+I have some other ideas but will discuss separately.
+Using the account name should be the default behaviour. Have you disabled double entry mode? In that case an imbalance account is created, but there should also be the "My account" account. With the default accounts and settings this should not happen.
+I'd first check with the defaults to discard some customisation that may be provoking this. If you believe it's a bug, you may want to check QifExporter. Please, make sure to read the contribution guidelines first.
+Using the account name should be the default behaviour. Have you disabled double entry mode? In that case an imbalance account is created, but there should also be the "My account" account. With the default accounts and settings this should not happen.
+I'd first check with the defaults to discard some customisation that may be provoking this. If you believe it's a bug, you may want to check QifExporter. Please, make sure to read the contribution guidelines first.
+I've created the default accounts and then switched double entry off and on. Was not aware of this effects. Will try a new book with that in mind, thanks.
+Also, thank you for pointing the contribution guidelines. I've gone to the Wiki and there is a page for contribution guidelines but it is empty. Would you mind adding the link there and/or removing that page? It was a bit confusing for me as, for whatever reason, I did not think of the contributing.md file. Cheers.
+I've created the default accounts and then switched double entry off and on. Was not aware of this effects. Will try a new book with that in mind, thanks.
+Also, thank you for pointing the contribution guidelines. I've gone to the Wiki and there is a page for contribution guidelines but it is empty. Would you mind adding the link there and/or removing that page? It was a bit confusing for me as, for whatever reason, I did not think of the contributing.md file. Cheers.
+Yes, that is correct. When double-accounting is active, the full (path) name of an account is used.
+Hm, now I have a different problem (of massaging the output .qif file) but at least this issue is resolved. Thanks for the tip!
+Yes, that is correct. When double-accounting is active, the full (path) name of an account is used.
+Hm, now I have a different problem (of massaging the output .qif file) but at least this issue is resolved. Thanks for the tip!

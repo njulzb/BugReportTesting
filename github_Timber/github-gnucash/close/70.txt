@@ -1,0 +1,277 @@
+title:Importing double-entry accounts: transactions not matched
+
+I am entering double-entry transactions in gnucash-android by selecting "Activate Double Entry" in "Settings". When importing the OFX file, I select which accounts in GnuCash match the ones in the OFX file, and then a window like this appears:
+
+The two transactions highlighted in yellow are each side of the double entry. Shouldn't there be something in the OFX file that links them together?
+Unfortunately not. As I later on learned, OFX does not support double entry
+transactions.
+I am currently exploring ways of importing double transactions to the
+GnuCash app.
+But as of now, no way to cleanly import them. Sorry about that and stay
+tuned.
+On 20.03.2013, at 21:15, Rob Fisher notifications@github.com wrote:
+I am entering double-entry transactions in gnucash-android by selecting
+"Activate Double Entry" in "Settings". When importing the OFX file, I
+select which accounts in GnuCash match the ones in the OFX file, and then a
+window like this appears:
+[image: gnucash_import]https://f.cloud.github.com/assets/460618/282724/7ea79c96-919a-11e2-8e19-ad7c0874fde9.jpg
+The two transactions highlighted in yellow are each side of the double
+entry. Shouldn't there be something in the OFX file that links them
+together?
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/70
+.
+Unfortunately not. As I later on learned, OFX does not support double entry
+transactions.
+I am currently exploring ways of importing double transactions to the
+GnuCash app.
+But as of now, no way to cleanly import them. Sorry about that and stay
+tuned.
+On 20.03.2013, at 21:15, Rob Fisher notifications@github.com wrote:
+I am entering double-entry transactions in gnucash-android by selecting
+"Activate Double Entry" in "Settings". When importing the OFX file, I
+select which accounts in GnuCash match the ones in the OFX file, and then a
+window like this appears:
+[image: gnucash_import]https://f.cloud.github.com/assets/460618/282724/7ea79c96-919a-11e2-8e19-ad7c0874fde9.jpg
+The two transactions highlighted in yellow are each side of the double
+entry. Shouldn't there be something in the OFX file that links them
+together?
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/70
+.
+Thanks for the reply, at least I know I am not doing something wrong.
+As a workaround I can switch back to single entry or just select one side of the transactions for import, then manually match them up. (On my phone I have lots of expense accounts but only two cash accounts than money can come from.)
+Perhaps a feature would be to filter exports by account, that way I can export/import transactions from each cash account in turn.
+Thanks for the reply, at least I know I am not doing something wrong.
+As a workaround I can switch back to single entry or just select one side of the transactions for import, then manually match them up. (On my phone I have lots of expense accounts but only two cash accounts than money can come from.)
+Perhaps a feature would be to filter exports by account, that way I can export/import transactions from each cash account in turn.
+Please implement this. It was a lot of work to manually match all the transactions. On the GnuCash mailing list it was suggested that QIF files support this feature so maybe you should consider allowing export to QIF. Keep up the good work. Overall the App looks very promising.
+Please implement this. It was a lot of work to manually match all the transactions. On the GnuCash mailing list it was suggested that QIF files support this feature so maybe you should consider allowing export to QIF. Keep up the good work. Overall the App looks very promising.
+I feel your pain, I will work on a solution to this.
+But unfortunately, QIF is not going to happen. It's not on the roadmap.
+I'll  have to find another solution.
+Hang in there and thanks for using the app.
+On 24.03.2013, at 14:16, "Omar K." notifications@github.com wrote:
+Please implement this. It was a lot of work to manually match all the
+transactions. On the GnuCash mailing list it was suggested that QIF files
+support this feature so maybe you should consider allowing export to QIF.
+Keep up the good work. Overall the App looks very promising.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/70#issuecomment-15358735
+.
+I feel your pain, I will work on a solution to this.
+But unfortunately, QIF is not going to happen. It's not on the roadmap.
+I'll  have to find another solution.
+Hang in there and thanks for using the app.
+On 24.03.2013, at 14:16, "Omar K." notifications@github.com wrote:
+Please implement this. It was a lot of work to manually match all the
+transactions. On the GnuCash mailing list it was suggested that QIF files
+support this feature so maybe you should consider allowing export to QIF.
+Keep up the good work. Overall the App looks very promising.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/70#issuecomment-15358735
+.
+Is there a reason for not supporting QIF? I don't know much about it but I implemented a very simple CSV to QIF converter some time ago and QIF seemed simple enough plus the GnuCash-Desktop import for it works nicely. Exporting the data in one format or another should not affect the way it is stored internally, unless I'm missing something :-)
+Is there a reason for not supporting QIF? I don't know much about it but I implemented a very simple CSV to QIF converter some time ago and QIF seemed simple enough plus the GnuCash-Desktop import for it works nicely. Exporting the data in one format or another should not affect the way it is stored internally, unless I'm missing something :-)
+It seems to me that directly updating the MySQL database is the correct way to go ultimately. I found this discussion about it: http://gnucash.1415818.n4.nabble.com/MySQL-Intergration-and-Android-App-td4658165.html
+Is that planned at all?
+It seems to me that directly updating the MySQL database is the correct way to go ultimately. I found this discussion about it: http://gnucash.1415818.n4.nabble.com/MySQL-Intergration-and-Android-App-td4658165.html
+Is that planned at all?
+Writing to MySQL is not currently planned. The thing is,  it is discouraged
+to write directly to the GnuCash database (XML or MySQL) without going
+through the GnuCash C API. That could result in corruption since there are
+a lot of checks and balances which are done in the API.
+That said, there were recently some discussions (don't have the link handy)
+on the dev mailing list on a big GnuCash refactoring which may result in
+code which would easily work in Android as well. But even that is some ways
+off.
+In the meantime, the files will have to be imported regularly. So I'll
+focus my energies on making that import as seamless as possible.
+On 25.03.2013, at 11:34, Rob Fisher notifications@github.com wrote:
+It seems to me that directly updating the MySQL database is the correct way
+to go ultimately. I found this discussion about it:
+http://gnucash.1415818.n4.nabble.com/MySQL-Intergration-and-Android-App-td4658165.html
+Is that planned at all?
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/70#issuecomment-15386267
+.
+Writing to MySQL is not currently planned. The thing is,  it is discouraged
+to write directly to the GnuCash database (XML or MySQL) without going
+through the GnuCash C API. That could result in corruption since there are
+a lot of checks and balances which are done in the API.
+That said, there were recently some discussions (don't have the link handy)
+on the dev mailing list on a big GnuCash refactoring which may result in
+code which would easily work in Android as well. But even that is some ways
+off.
+In the meantime, the files will have to be imported regularly. So I'll
+focus my energies on making that import as seamless as possible.
+On 25.03.2013, at 11:34, Rob Fisher notifications@github.com wrote:
+It seems to me that directly updating the MySQL database is the correct way
+to go ultimately. I found this discussion about it:
+http://gnucash.1415818.n4.nabble.com/MySQL-Intergration-and-Android-App-td4658165.html
+Is that planned at all?
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/70#issuecomment-15386267
+.
+"directly updating" was probably an exaggeration. Seems like some remotely callable version of the GnuCash API is needed. One day I might attempt gnucash-android -> some android https or ssh library connecting to my server -> scripts on my server -> GnuCash API -> MySQL database.
+But at this stage your approach seems more realistic, especially for non-programmer end users.
+"directly updating" was probably an exaggeration. Seems like some remotely callable version of the GnuCash API is needed. One day I might attempt gnucash-android -> some android https or ssh library connecting to my server -> scripts on my server -> GnuCash API -> MySQL database.
+But at this stage your approach seems more realistic, especially for non-programmer end users.
+"Directly updating" is technically possible. But that would mean
+duplicating all the work which has gone into the validations which is a lot
+over the years.
+Risk of corruption for financial data is one thing I'm eager to avoid.
+On 25.03.2013, at 12:06, Rob Fisher notifications@github.com wrote:
+"directly updating" was probably an exaggeration. Seems like some remotely
+callable version of the GnuCash API is needed. One day I might attempt
+gnucash-android -> some android https or ssh library connecting to my
+server -> scripts on my server -> GnuCash API -> MySQL database.
+But at this stage your approach seems more realistic, especially for
+non-programmer end users.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/70#issuecomment-15387353
+.
+"Directly updating" is technically possible. But that would mean
+duplicating all the work which has gone into the validations which is a lot
+over the years.
+Risk of corruption for financial data is one thing I'm eager to avoid.
+On 25.03.2013, at 12:06, Rob Fisher notifications@github.com wrote:
+"directly updating" was probably an exaggeration. Seems like some remotely
+callable version of the GnuCash API is needed. One day I might attempt
+gnucash-android -> some android https or ssh library connecting to my
+server -> scripts on my server -> GnuCash API -> MySQL database.
+But at this stage your approach seems more realistic, especially for
+non-programmer end users.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/70#issuecomment-15387353
+.
+Hello there.
+I value the work being done on android version of GnuCash. Good one!
+I use desktop version extensively and keep track of most expenses on my mobile. I normally sit down once a week to sync things between my phone and desktop. So far the quickest method I was using was grouping expenses by which assets they were paid i.e. cash or back account (debit card). The when going to respective accounts in desktop version entering all transactions is simple but time consuming. I tried the export to email and then import from OFX and encountered exact same issue as the initial reporter of the problem.
+I see the conversation took place 3 months ago and was wondering whether solution is still being thought through as this would greatly improve the experience overall. Looking forward for the response.
+Many thanks
+Marek
+Hello there.
+I value the work being done on android version of GnuCash. Good one!
+I use desktop version extensively and keep track of most expenses on my mobile. I normally sit down once a week to sync things between my phone and desktop. So far the quickest method I was using was grouping expenses by which assets they were paid i.e. cash or back account (debit card). The when going to respective accounts in desktop version entering all transactions is simple but time consuming. I tried the export to email and then import from OFX and encountered exact same issue as the initial reporter of the problem.
+I see the conversation took place 3 months ago and was wondering whether solution is still being thought through as this would greatly improve the experience overall. Looking forward for the response.
+Many thanks
+Marek
+I fail to see why OFX doesn't support double entry accounting. In fact, all the transactions that gc-a exports contain both a  statement as well as  statements. It's just that gnucash-desktop doesn't seem to honour these on import. The work-around you have tried, with exporting every item twice with the same transaction ID, might also work but so far, no OFX parser I have tried recognises this method.
+So in short, it seems to me that the import function in gnucash-desktop needs to be upgraded to respect both  and . The OFX standard is not to blame here.
+I fail to see why OFX doesn't support double entry accounting. In fact, all the transactions that gc-a exports contain both a  statement as well as  statements. It's just that gnucash-desktop doesn't seem to honour these on import. The work-around you have tried, with exporting every item twice with the same transaction ID, might also work but so far, no OFX parser I have tried recognises this method.
+So in short, it seems to me that the import function in gnucash-desktop needs to be upgraded to respect both  and . The OFX standard is not to blame here.
+The problem seems to be that libofx (which is used by gnucash to import ofx data) has trouble parsing the files generated by gca:
+Note how libofx doesn't like the top-level BANKMSGSRSV1 (even though that seems to be allowed by the DTD). Also, BANKMSGSRSV1, STMTTRNRS and BANKACCTTO seem to be unsupported by libofx.
+Very weird.
+The problem seems to be that libofx (which is used by gnucash to import ofx data) has trouble parsing the files generated by gca:
+Note how libofx doesn't like the top-level BANKMSGSRSV1 (even though that seems to be allowed by the DTD). Also, BANKMSGSRSV1, STMTTRNRS and BANKACCTTO seem to be unsupported by libofx.
+Very weird.
+OK checking libofx's source reveals that it only supports a very limited subset of the OFX specification. BANKACCTTO is not part of the supported subset. So no wonder, we don't get this information into gnucash-desktop. It is thrown away during the parsing stage. Probably, cstimming was not aware of these limitations when recommending OFX as the transfer format.
+I see two possible solutions: switch to a format which is better supported by gnucash. Or improve libofx to support the tags needed by gca.
+OK checking libofx's source reveals that it only supports a very limited subset of the OFX specification. BANKACCTTO is not part of the supported subset. So no wonder, we don't get this information into gnucash-desktop. It is thrown away during the parsing stage. Probably, cstimming was not aware of these limitations when recommending OFX as the transfer format.
+I see two possible solutions: switch to a format which is better supported by gnucash. Or improve libofx to support the tags needed by gca.
+QIF support is in beta. Once the kinks get worked out, it should be
+released pretty soon.
+On 26.10.2013, at 23:20, hazzl notifications@github.com wrote:
+OK checking libofx's source reveals that it only supports a /very/ limited
+subset of the OFX specification. BANKACCTTO is not part of the supported
+subset. So no wonder, we don't get this information into gnucash-desktop.
+It is thrown away during the parsing stage. Probably, cstimming was not
+aware of these limitations when recommending OFX as the transfer format.
+I see two possible solutions: switch to a format which is better supported
+by gnucash. Or improve libofx to support the tags needed by gca.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/70#issuecomment-27156090
+.
+QIF support is in beta. Once the kinks get worked out, it should be
+released pretty soon.
+On 26.10.2013, at 23:20, hazzl notifications@github.com wrote:
+OK checking libofx's source reveals that it only supports a /very/ limited
+subset of the OFX specification. BANKACCTTO is not part of the supported
+subset. So no wonder, we don't get this information into gnucash-desktop.
+It is thrown away during the parsing stage. Probably, cstimming was not
+aware of these limitations when recommending OFX as the transfer format.
+I see two possible solutions: switch to a format which is better supported
+by gnucash. Or improve libofx to support the tags needed by gca.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/70#issuecomment-27156090
+.
+QIF has been implemented as of version 1.2.6
+QIF has been implemented as of version 1.2.6
+I just ran into this issue myself. QIF works fine but OFX doubled up all transactions. Have you considered showing a warning to users who select a combination of OFX and double entry. Or just show a warning when enabling double entry - let the user know that OFX will probably not work when importing to Gnucash.
+I just ran into this issue myself. QIF works fine but OFX doubled up all transactions. Have you considered showing a warning to users who select a combination of OFX and double entry. Or just show a warning when enabling double entry - let the user know that OFX will probably not work when importing to Gnucash.
+I think that is a good idea to include a warning somewhere in the app.
+Maybe when double entry is activated as you say.
+On Feb 3, 2014 4:08 PM, "Georgi Georgiev" notifications@github.com wrote:
+I just ran into this issue myself. QIF works fine but OFX doubled up all
+transactions. Have you considered showing a warning to users who select a
+combination of OFX and double entry. Or just show a warning when enabling
+double entry - let the user know that OFX will probably not work when
+importing to Gnucash.
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/70#issuecomment-33963224
+.
+I think that is a good idea to include a warning somewhere in the app.
+Maybe when double entry is activated as you say.
+On Feb 3, 2014 4:08 PM, "Georgi Georgiev" notifications@github.com wrote:
+I just ran into this issue myself. QIF works fine but OFX doubled up all
+transactions. Have you considered showing a warning to users who select a
+combination of OFX and double entry. Or just show a warning when enabling
+double entry - let the user know that OFX will probably not work when
+importing to Gnucash.
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/70#issuecomment-33963224
+.
+I just tried to export a large number of transactions in multiple currencies from gnucash-android to gnucash desktop. QIF seems to work for this transition in a single currency, but is limited to a single currency. OFX will support multiple currencies, but exports every transaction as two transactions - a debit of the debit account with a credit of the Imbalance- and a second transaction with a debit of the Imbalance- account and credit of the credit account.
+Improvements to libofx to support tags used by gnucash-android would be very helpful to me!
+I just tried to export a large number of transactions in multiple currencies from gnucash-android to gnucash desktop. QIF seems to work for this transition in a single currency, but is limited to a single currency. OFX will support multiple currencies, but exports every transaction as two transactions - a debit of the debit account with a credit of the Imbalance- and a second transaction with a debit of the Imbalance- account and credit of the credit account.
+Improvements to libofx to support tags used by gnucash-android would be very helpful to me!
+Hi Steve,
+yes OFX does not support double-entry bookkeeping and QIF does not play
+nice with multiple currencies.
+So at the moment, that is a limitation of the application - it is not easy
+to move transactions in different currencies to the desktop.
+On Sat, Sep 6, 2014 at 2:10 AM, SteveTurpin notifications@github.com
+wrote:
+I just tried to export a large number of transactions in multiple
+currencies from gnucash-android to gnucash desktop. QIF seems to work for
+this transition in a single currency, but is limited to a single currency.
+OFX will support multiple currencies, but exports every transaction as two
+transactions - a debit of the debit account with a credit of the Imbalance-
+and a second transaction with a debit of the Imbalance- account and credit
+of the credit account.
+Improvements to libofx to support tags used by gnucash-android would be
+very helpful to me!
+—
+Reply to this email directly or view it on GitHub
+#70 (comment)
+.
+Hi Steve,
+yes OFX does not support double-entry bookkeeping and QIF does not play
+nice with multiple currencies.
+So at the moment, that is a limitation of the application - it is not easy
+to move transactions in different currencies to the desktop.
+On Sat, Sep 6, 2014 at 2:10 AM, SteveTurpin notifications@github.com
+wrote:
+I just tried to export a large number of transactions in multiple
+currencies from gnucash-android to gnucash desktop. QIF seems to work for
+this transition in a single currency, but is limited to a single currency.
+OFX will support multiple currencies, but exports every transaction as two
+transactions - a debit of the debit account with a credit of the Imbalance-
+and a second transaction with a debit of the Imbalance- account and credit
+of the credit account.
+Improvements to libofx to support tags used by gnucash-android would be
+very helpful to me!
+—
+Reply to this email directly or view it on GitHub
+#70 (comment)
+.

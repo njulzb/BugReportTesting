@@ -1,0 +1,7 @@
+title:Help. Google suspended my app
+
+They suspended my app due to spam report ???i m a newbie help me with this
+Did you rename package and apps name, also did you change all the files like image, color etc etc? Google suspend apps only when they found same apps with same resources.
+Did you rename package and apps name, also did you change all the files like image, color etc etc? Google suspend apps only when they found same apps with same resources.
+You have make a totally different design than the default, otherwise google wont publish your apps. By the way, I will suggest to support the original owner by contributing here instead publish new apps based on the source code. Thanks and welcome to the Android world.
+You have make a totally different design than the default, otherwise google wont publish your apps. By the way, I will suggest to support the original owner by contributing here instead publish new apps based on the source code. Thanks and welcome to the Android world.

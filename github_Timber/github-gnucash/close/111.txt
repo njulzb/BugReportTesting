@@ -1,0 +1,10 @@
+title:Split support
+
+I need to keep track of sales taxes, especially for out-of-state purchases. Would be nice for the transaction view to support splits. Of course work would be required on the export side as well.
+The idea of a GNUcash companion for entering transactions to be imported on the desktop is a good one, but without splits I just can't use it that much. I guess I could type extra information in the note and edit it when I get to the desktop, but that's not a terribly satisfying workaround.
+The thing is that right now only OFX export is supported. And OFX does not support splits.
+Until we have support for an export format which can handle splits, implementing split transactions will be put on hold.
+The thing is that right now only OFX export is supported. And OFX does not support splits.
+Until we have support for an export format which can handle splits, implementing split transactions will be put on hold.
+Implemented in: 3dde0ab
+Implemented in: 3dde0ab

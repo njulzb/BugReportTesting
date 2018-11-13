@@ -1,0 +1,12 @@
+title:Default account structure (feature)
+
+A good feature to implement is a default account structure. When application run first time would be helpful that app offer a default structure, novice people could not know anything about GnuCash.
+This feature is given in GnuCash desktop version.
+Thanks for opening this issue, I have actually given it some thought before.
+There is dialog for creating default accounts when the app is opened for the first time. I think this is sufficient for most (novice) users. Those power GnuCash users probably already have an account structure on the desktop and would probably prefer to import it.
+Thanks for opening this issue, I have actually given it some thought before.
+There is dialog for creating default accounts when the app is opened for the first time. I think this is sufficient for most (novice) users. Those power GnuCash users probably already have an account structure on the desktop and would probably prefer to import it.
+@codinguser Ok, but suppose that a nocive user dismiss accidentaly this dialog at first time, there is no way to return back and create these default accounts.
+@codinguser Ok, but suppose that a nocive user dismiss accidentaly this dialog at first time, there is no way to return back and create these default accounts.
+That is true! I'll look into it
+That is true! I'll look into it

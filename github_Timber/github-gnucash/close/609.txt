@@ -1,0 +1,7 @@
+title:Scheduled exports always include transactions since the action's creation date
+
+rivaldi8
+The transactions exported include the ones in the period starting at the date of creation of the scheduled backup instead of the date of the last time it was executed.
+The export is done with the date in ScheduledAction.getTag() as the date at which it should start to export transactions. The problem is that this date isn't updated after an scheduled export is run and stays at the creation date.
+Fixed in hotfix/patches.
+Fixed in hotfix/patches.

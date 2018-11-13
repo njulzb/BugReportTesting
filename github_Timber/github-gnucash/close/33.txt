@@ -1,0 +1,41 @@
+title:amount input problem with Swype
+
+codinguser
+When trying to enter an amount and type '1', it repeats printing '1' around 20 times and afterwards it repeats printing '0' infinitely so I get a very big amount ;-)
+This is on Motorola Defy+ MB526 Android 2.3.4  with Swype 3.23.89
+Same here on a Samsung I9000 with Android 4.0.4 with Swype 3.26.92D.39062.t0.10977.ENSP.
+It's a beta version of swype, but still it should work.
+When I switch to the built-in Android keyboard the amount can be input without issues.
+Same here on a Samsung I9000 with Android 4.0.4 with Swype 3.26.92D.39062.t0.10977.ENSP.
+It's a beta version of swype, but still it should work.
+When I switch to the built-in Android keyboard the amount can be input without issues.
+fizze: at least it is very helpful for me to know it works without swype. I will have to test that, thanks.
+fizze: at least it is very helpful for me to know it works without swype. I will have to test that, thanks.
+This sounds like more an issue with Swype. I don't have any device with Swype preinstalled. But I'll see if I can get into the beta and test it.
+This sounds like more an issue with Swype. I don't have any device with Swype preinstalled. But I'll see if I can get into the beta and test it.
+It works as intended when Swype is disabled.
+BTW, is it a design decision that the user has to type decimal places? I would like to be able to only enter integers which is faster if you don't have to type '00' at the end.
+I propose to only display input for decimals after the user typed the decimal separator.
+It works as intended when Swype is disabled.
+BTW, is it a design decision that the user has to type decimal places? I would like to be able to only enter integers which is faster if you don't have to type '00' at the end.
+I propose to only display input for decimals after the user typed the decimal separator.
+Yes, the decimal places thing is indeed a design decision.
+Yes, the decimal places thing is indeed a design decision.
+I understand that. Maybe you can think it could be useful to make it configurable via a switch in the settings?
+I understand that. Maybe you can think it could be useful to make it configurable via a switch in the settings?
+I would like to support the request for adding a switch for automatic pre-fill of double zero instead of decimal places. There are many currencies with smallest coin equal to 1 - no cents. This would speed up new entries almost twice.
+I would like to support the request for adding a switch for automatic pre-fill of double zero instead of decimal places. There are many currencies with smallest coin equal to 1 - no cents. This would speed up new entries almost twice.
+Swype amount input still an issue (on Motorola X2)
+Swype amount input still an issue (on Motorola X2)
+I've just not been able to reliably replicate this problem. I'll keep trying.
+@sarimak Yes, that would be a nice feature to have. But it is not a priority for now and hence I don't think I'll get around to it anytime soon, sorry. But it may get added in the future
+I've just not been able to reliably replicate this problem. I'll keep trying.
+@sarimak Yes, that would be a nice feature to have. But it is not a priority for now and hence I don't think I'll get around to it anytime soon, sorry. But it may get added in the future
+Here is a patch for this issue.  It works by only reformatting the number in the
+amount entry field if it has changed since it was last reformatted.
+Here is a patch for this issue.  It works by only reformatting the number in the
+amount entry field if it has changed since it was last reformatted.
+Thanks for the patch!
+Thanks for the patch!
+Merged the patch. Can someone confirm that this issue is fixed in the latest release?
+Merged the patch. Can someone confirm that this issue is fixed in the latest release?

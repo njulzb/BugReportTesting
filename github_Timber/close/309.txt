@@ -1,0 +1,5 @@
+title:Firebase support?
+
+Can this be used for playing a constantly updating array of audio files from a Firebase node? Thank you in advance!
+yes it is
+yes it is

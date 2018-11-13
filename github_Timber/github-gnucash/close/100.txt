@@ -1,0 +1,7 @@
+title:GnuCash 2.4.11 cannot resolve imported transactions
+
+I imported the attached ofx file in GnuCash 2.4.11. I was asked to identify all accounts, which I did. GnuCash was only able to resolve 1 transaction. Could this be linked to bug #78 ?
+No, I don't think they are linked. But I'll have to check this. I don't think I've tested importing on the newest and greatest of Gnucash desktop
+No, I don't think they are linked. But I'll have to check this. I don't think I've tested importing on the newest and greatest of Gnucash desktop
+As was noted in #70 only a subset of OFX features seem to be supported by GnuCash. However QIF is not implemented and should ease importing and matching of accounts and transactions.
+As was noted in #70 only a subset of OFX features seem to be supported by GnuCash. However QIF is not implemented and should ease importing and matching of accounts and transactions.

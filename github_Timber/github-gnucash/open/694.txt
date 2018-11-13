@@ -1,0 +1,4 @@
+title:Add possibility to export to beancount file format
+
+I'm using gnucash-android application on mobile and  fava https://beancount.github.io/fava/  application on desktop. I'm exporting gnucash files in qif format and converting it to beancount format using my short script https://gist.github.com/tshevchuk/e5d91781d168dd8b9f3409497abf6252 .
+I propose to add beancount format as an option of exporting.

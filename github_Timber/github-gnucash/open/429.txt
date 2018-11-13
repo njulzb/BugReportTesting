@@ -1,0 +1,5 @@
+title:Deletion of multiple entries
+
+Previous versions of this app allowed the deletion of multiple entries. Please add at least a "clear all" method.
+Agreed, a clear all button in the transactions view would not be a bad idea
+Agreed, a clear all button in the transactions view would not be a bad idea

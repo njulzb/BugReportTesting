@@ -1,0 +1,9 @@
+title:Don't ask for permissions that you don't need
+
+As soon as I complete the setup wizard, GnuCash asks for permission to access my sdcard, and if I deny it continues to nag me every time I open it. There is no reason to ask for this permission unless I choose to import or export data.
+This is because GnuCash Android backs up internally to the SD card several times during operation.
+Before delete operations, exports etc. These are saved to the SD card so that if something goes wrong, you can always recover your data with no issues.
+So yeah, we need the SD card permission for proper functioning of GnuCash
+This is because GnuCash Android backs up internally to the SD card several times during operation.
+Before delete operations, exports etc. These are saved to the SD card so that if something goes wrong, you can always recover your data with no issues.
+So yeah, we need the SD card permission for proper functioning of GnuCash

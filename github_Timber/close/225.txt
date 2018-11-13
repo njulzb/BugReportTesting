@@ -1,0 +1,11 @@
+title:App crashes on startup on CopperheadOS based on AOSP (Android 7.0.0)
+
+Hi!
+Since version 0.21b (FDroid version), Timber crashes when I try to start the app. I'm using a Nexus 6p with CopperheadOS. I tried deleting app data, but that did not help.
+Here is a crash log:
+Have been fixed in 0cb2c09
+Will update the version on f-droid
+Have been fixed in 0cb2c09
+Will update the version on f-droid
+Great! Thank you very much for this beautiful app 👍
+Great! Thank you very much for this beautiful app 👍

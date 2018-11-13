@@ -1,0 +1,8 @@
+title:Bug: Long list of splits not fully visible
+
+Scroll down to see splits
+No scrolling.
+oops
+oops
+Fixed in hotfix/patches by badbe14.
+Fixed in hotfix/patches by badbe14.

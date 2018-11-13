@@ -1,0 +1,11 @@
+title:Bug: Sums set to zero when renaming account
+
+Applies to all amounts of all children accounts of the account renamed. OUCH!
+Confirmed on the lasted release v2.0.3.
+I also found the transaction disappeared.
+Confirmed on the lasted release v2.0.3.
+I also found the transaction disappeared.
+Fixed in v2.0.4
+Fixed in v2.0.4
+please push this to f-droid. it's still 1.6 there!
+please push this to f-droid. it's still 1.6 there!

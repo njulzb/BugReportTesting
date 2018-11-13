@@ -1,0 +1,79 @@
+'mAnswerField' displayed on cards without text input when hitting undo
+Crash on boot
+No due notifications shown since change to sdk 26
+GUI Language Seetings are partly ignored
+Typed answer comparison ignores combining characters
+Store TTS language by note type instead of deck
+[Bug]Copy&Past Problem by editig card layout
+Can't add picture to a note where the filename already exists in collection.media
+Bug: the position of the big blue + button (add button) is sometimes too high.
+Rethink strategy for saving collection in DeckPicker.onStop()
+Edit Note confirmation crash
+Bug: Setting of "Choose display order" of the card browser isn't maintained when "All decks" is selected
+Text-to-speech stops working sometimes and restart is needed
+switching to night mode while viewing card causes crash/drops card
+Widget regularly "loses" the stats
+The field 'Type in' losts focus
+DeckPicker activity might be stopped while sync continues in background and leads to undefined behaviour on resume
+Main statistics page does not use system font
+desktop anki can't import ankidroid apkg backup files due to missing media file
+Make AnkiDroid accessible with Talkback
+String in the "Search" textbox can't be seen when long-tapped
+Syncing with desktop Anki reverts settings changed in AnkiDroid
+Exporting with media is broken
+Number of action bar icons wrong when rotating device.
+Tapping the notification takes you to the deck list instead of to your open deckCorrupt collection
+MediaSyncer/ Error downloading media files java.lang.RuntimeException: java.io.IOException: open failed: EINVAL (Invalid argument)
+Anki Sync Error: Java.lang.RuntimeException:orgjson JSONException:value invalid of type java.lang.String cannot be converted to JSONObject
+Allow closing the navigation drawer via swipe when reviewing even if gestures are enabled
+Search and share icons black on dark gray
+Badly hosed database crashes AnkiDroid
+Moved card reviewed as if still part of old deck
+“Try using only lower case characters” makes no sense some of the time.
+DeckOptions subscreens don't have Toolbar
+Night mode does not change enough
+Night mode changes too much
+Changes to Ankidroid "Start of next day" hour settings can force full sync when interacting with Anki desktop
+Random assignment of new cards
+Collection / media files location  unchanged by Move to SD card option of device app manager
+Hi,i'm using android 4.3 HTC desire 516 dual sim. Intially the device restricts storing the apps like anki in the SD card and crashing followed even if i deleted the app data.
+java.lang.RuntimeException: org.json.JSONException: No value for separate
+Import/Export doesn't work in ChromeOS
+US Extended Keyboard doesn't let me input umplauts in Anki in ChromeOS
+Can't switch language when entering text in ChromeOS
+Opening cards shown in a filtered sort arbitrarily changes their assigned deck to "default"
+Exceeds the specified Time to show next question
+pie chart turns black where it should be green
+Bluetooth keyboard causes error
+Words in target language window go outside the screen
+Import fails without any further explanation when running out of space on SD CardNull template
+Crash when logging out from Anki Web
+Editing a note turns insignificant newlines into explicit line breaks
+IOException: open failed: ENOSPC (No space left on device) at com.ichi2.libanki.sync.MediaSyncer.sync
+Sharing to dictionary restarts AnkiDroid
+Question media no longer replays automatically after answering
+Media check wants to delete <embed>-ed SVGs
+Touch-gesture actions work unexpectedly when text links are tapped.
+Button labels truncated in French congratulations screen
+Editing card in filtered deck from browser sometimes doesn't add the filtered deck name to decks list
+Slideshow stops when Anki closed
+Sync doesn't work on one of my decks media
+java.lang.RuntimeException: android.database.sqlite.SQLiteException: no such table: meta (code 1): , while compiling: select dirMod from meta
+java.lang.RuntimeException: java.lang.NullPointerException at com.ichi2.libanki.sync.MediaSyncer.sync(MediaSyncer.java:180
+SD card changes in Android 4.4.2 make AnkiDroid inoperable
+Various problems with the new experimental TTS implemented
+Forgetful clipboard during copy and paste
+Crash related to mounting/unmounting
+font selecting problem
+a randomly shown field becomes random again after "flip the card"
+After editing a card, buried cards reappear
+New cards not in random order.
+Card created on Ankiweb shows &nbsp;
+Syncing Error with Ankidroid Insufficient memory
+replay media button wont run if tap button gesture enabledSoftkeyboard does not appear in CardEditor by default
+Unmounting extsd brings AnkiDroid to error screen
+Add custom lookup icon to contextual action bar after selecting text in reviewer
+Text-to-Speech Doesn't Replay for Card Templates with a Mixture of Text and Fields
+2.0: Textfield won't bring up keyboard
+media folders with 12k+ files not supported
+Do not update notification if count has not changed

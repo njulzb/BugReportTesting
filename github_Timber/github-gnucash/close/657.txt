@@ -1,0 +1,6 @@
+title:Add options to reset the app PIN
+
+This could be accomplished through adding a link to reset the PIN to the login page.
+A new PIN would be generated and sent to a recovery email address (pre-entered by the user when creating the PIN).
+The need for this would be mitigated by #677
+The need for this would be mitigated by #677

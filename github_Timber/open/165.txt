@@ -1,0 +1,20 @@
+title:[IMPROVEMENT] Make "shuffle/random" not instantly switch to next song and easily enable/disable
+
+When a song is already played and the "shuffle/random" crossed-arrows-symbol is pressed, the playback of the current song is stopped and the next song of the "randomizing" is played.
+Now the shuffle-symbol has always the same color, despite of activation state....or am I wrong?
+It should be possible to just enable or disable the shuffle mode, corresponding to make the shufle-symbol active or non-active.
+That should only apply with begin of the NEXT song, and not interrupting the current song
+This is the desired behaviour in all the 3 now playing styles except the 1st one. In 1st one, shuffle button is a primary action button which acts as a way to enable shuffle and move to next song and I agree that this is confusing. However all the rest of styles works as intended (clicking on shuffle will only change the shuffle mode).
+I will redesign the 1st now playing (maybe swap the Play/pause and shuffle buttons) I always thought it's a bit confusing however all styles were meant to provide unique actions and designs.
+This is the desired behaviour in all the 3 now playing styles except the 1st one. In 1st one, shuffle button is a primary action button which acts as a way to enable shuffle and move to next song and I agree that this is confusing. However all the rest of styles works as intended (clicking on shuffle will only change the shuffle mode).
+I will redesign the 1st now playing (maybe swap the Play/pause and shuffle buttons) I always thought it's a bit confusing however all styles were meant to provide unique actions and designs.
+OK, now after trying also all other 3 styles - I got it!
+maybe you can implement for all styles the function of "shuffle playlist" with a long tap at the shuffle symbol like this:
+shuffle symbol:
+--> short tap: enable/disable random playing, without change order of the displayed playlist
+--> long tap: shuffle the playlist once, make current song first, but not change status of shuffle symbol
+OK, now after trying also all other 3 styles - I got it!
+maybe you can implement for all styles the function of "shuffle playlist" with a long tap at the shuffle symbol like this:
+shuffle symbol:
+--> short tap: enable/disable random playing, without change order of the displayed playlist
+--> long tap: shuffle the playlist once, make current song first, but not change status of shuffle symbol

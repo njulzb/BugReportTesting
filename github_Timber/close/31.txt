@@ -1,0 +1,5 @@
+title:Top-right corner menu is not theme-respecting
+
+It's always black text on white background, even on a dark theme.
+Now using app-theme-engine (https://github.com/afollestad/app-theme-engine) which handles this
+Now using app-theme-engine (https://github.com/afollestad/app-theme-engine) which handles this

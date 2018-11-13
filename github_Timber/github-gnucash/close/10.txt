@@ -1,0 +1,29 @@
+title:Double-entry
+
+codinguser
+Hi!
+First of all I would like to congrat with you for the app.
+Do you think to implement the double-entry?
+I wish I could save if I paid in cash or by credit card, as in the desktop app.
+Cheers,
+Marco
+Thanks Marco. Sorry, but double entry is not planned for now.
+Thanks Marco. Sorry, but double entry is not planned for now.
+I think that TyraelTLK idea is good.
+I wish some functionallity like this, it is very useful to have some way to manage money in desktop app.
+I understand if this suggestion is not easy to implement now, but please keep in future work.
+I think that TyraelTLK idea is good.
+I wish some functionallity like this, it is very useful to have some way to manage money in desktop app.
+I understand if this suggestion is not easy to implement now, but please keep in future work.
+Yes, I was surprised, too, to see GnuCash without double-entry. I have to admit that I didn't test importing on desktop, yet, but won't it be a hassle to assign all my expenses to their respective accounts on import?
+To have a useful integration with the desktop, import must be fast and easy.
+Cheers,
+Martin
+Yes, I was surprised, too, to see GnuCash without double-entry. I have to admit that I didn't test importing on desktop, yet, but won't it be a hassle to assign all my expenses to their respective accounts on import?
+To have a useful integration with the desktop, import must be fast and easy.
+Cheers,
+Martin
+There is a beta version out which implements double-entry. Try it out and send feedback. You can get it here: http://sdrv.ms/Wcf4os
+Thanks.
+There is a beta version out which implements double-entry. Try it out and send feedback. You can get it here: http://sdrv.ms/Wcf4os
+Thanks.

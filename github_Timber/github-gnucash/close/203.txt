@@ -1,0 +1,12 @@
+title:word-wrap on +/- button (german version)
+
+Since the introduction of the split transaction, the button +/- button is not wide enough to display the German word Einnahme.
+
+The English "Decrease" also wrapped in this way.
+The English "Decrease" also wrapped in this way.
+This bug is not fixed in 1.5.5.
+So either b636b28 is not contained in 1.5.5 (although it says so) or the fix does not work.
+This bug is not fixed in 1.5.5.
+So either b636b28 is not contained in 1.5.5 (although it says so) or the fix does not work.
+Fixed in v2.0.0
+Fixed in v2.0.0

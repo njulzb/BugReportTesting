@@ -1,0 +1,10 @@
+title:Account-ID vs Account-Name
+
+hi!
+when I name an aacount, I use human-readable strings, but when I try to import them into GNUash, I get the account Id.
+My account "Ropa Marta" turned into "ropamarta-5c498cf34b96".
+I thouhgt it could be bacause of the blank, but it happend with single-word account names too.
+Is there any way to avoid this?
+thanks!
+No, there is no way to avoid this. There are specifications which have to be met in order for valid OFX export to be produced. Also, the account ID has to be unique. There is nothing stopping a user from having two accounts with the same name. So there is always some generated part added to the ID. Part of the name is kept so that you can still recognize the account though.
+No, there is no way to avoid this. There are specifications which have to be met in order for valid OFX export to be produced. Also, the account ID has to be unique. There is nothing stopping a user from having two accounts with the same name. So there is always some generated part added to the ID. Part of the name is kept so that you can still recognize the account though.

@@ -1,0 +1,5 @@
+title:Android auto support
+
+Android auto while connected to my car and while running AA on my phone won't list Timber as a possible music app. I have tried installing this app from F-droid and from the Play store, but it's not working.
+Wat might be the issue here?
+Thanks

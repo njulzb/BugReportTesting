@@ -1,0 +1,8 @@
+title:A few issues
+
+How do I set this app what do I need to do I installed the plugin and signed up on their site?
+This also shows up in my gradle console:
+Also when I select folders the app crashes.
+Not sure if anyone else noticed this but the app does a lot of crashing even on certain now playing screen types. The 2nd now playing crashes & playlists crashes I figured I'd let you know about those issues as well.
+I'm really needing help with this please?
+I'm really needing help with this please?

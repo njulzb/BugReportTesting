@@ -1,0 +1,5 @@
+title:Reconciliation Flag Erased when Copying XML from PC
+
+From PC create create a new book.  Transfer $1.00 from "Equity:Opening Balances" to "Assets:Current Assets:Cash in Wallet."  Click on the "R" column to set the transaction to "Cleared."  Close GnuCash, then copy the .gnucash file to the Android device and open it.  Then export it, selecting the "XML" format.  Copy the exported file to the PC and open it.  The "R" flag will now be set to "n" instead of "c".
+Copying a .xml book between the PC and the Android device should preserve the "R" flag.
+Copying a .xml book between the PC and the Android device does not preserve the "R" flag.

@@ -1,0 +1,4 @@
+title:Accounts import fails if "last weekday" recurrence is used in a scheduled transaction
+
+When importing GnuCash accounts from desktop version, it fails with the following message:
+It fails due to PeriodType not having a corresponding constant for "last weekday" recurrences:

@@ -1,0 +1,7 @@
+title:Delete the file after successful import.
+
+It would be great if this app can delete the imported file after a successful import.
+The app only reads the information from the imported file, it cannot delete the imported file from its location. We do not plan to include this functionality in the app.
+The user is responsible for managing the files at the file source.
+The app only reads the information from the imported file, it cannot delete the imported file from its location. We do not plan to include this functionality in the app.
+The user is responsible for managing the files at the file source.

@@ -1,0 +1,6 @@
+title:Lockscreen notification not visible below lollipop
+
+Lockscreen controls is a necessity for music player and this should be implemented.
+No changes have been made to the code since a long time and many issues are still pending
+Was done in #242
+Was done in #242

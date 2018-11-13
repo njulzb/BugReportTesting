@@ -1,0 +1,3 @@
+title:Enhancement: respect compilation flag or album-artist field
+
+Since I have a lot of compilations, my artist view is flooded with artists with one sing each. Play Music is the only player that then only shows various artists instead. All my music has correct album-artist field and a compilation=1 flag. It would be so great if you could support that (or add a album-artists tab)... Thanks

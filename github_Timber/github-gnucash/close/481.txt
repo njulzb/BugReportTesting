@@ -1,0 +1,11 @@
+title:Failed to open .gnucash file on GnuCash for Android
+
+When I tried to import a recently updated .gnucash file on my phone the Android app says:
+"An error occured while importing the GnuCash accounts
+foreign key constraint failed (code 19)"
+I updated the file with the PC version of GnuCash: 2.6.7 (rev 757a50c+ on 2015-06-29)
+Android version is: 2.0.6 (2016-02-17)
+On the PC it can be opened without errors.
+I tried to upgrade to PC version 2.6.11 (rev f67faa2+ on 2016-01-11) and save the file again but it shows the same error on the phone.
+In the meantime I realized that I tried to open an old version of my .gnucash file, probably a corrupt one. It is working with the (real) new file. Issue can be closed.
+In the meantime I realized that I tried to open an old version of my .gnucash file, probably a corrupt one. It is working with the (real) new file. Issue can be closed.

@@ -1,0 +1,15 @@
+title:Unable to open music files from chrome browser
+
+When music files from chrome are opened  with timber music player, the player is launched and the now playing view is displayed but the music file is not loaded and nothing is played. The last played song, however, remains on the now playing screen without playing.
+Ensure you have both Google Chrome Browser and Timber Music Player installed on your device.
+Launch chrome and download a music file. (This is not necessary, if you have an existing downloaded music file)
+Click on the three vertical dots at the upper right corner of chrome's interface and click on download to access  downloaded files on chrome browser
+Locate the download file and click on it
+It should launch chrome's built in player.
+Click on the three vertical dots at the upper right corner of the interface and click on open with.
+Choose timber music player from the list of apps to complete the operation
+Now observe how the player will execute the command.
+Browser/App version: v1.6
+Operating system: Android v6.0 marshmallow
+Device: Itel p12
+https://vimeo.com/272827801

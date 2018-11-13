@@ -1,0 +1,5 @@
+title:Income in other currencies is not shown in reports
+
+USD income should either be reported at some default exchange rate at [2], or when transferred to an AUD account at [3]
+USD income is never shown in the report
+Maybe the same as #321?

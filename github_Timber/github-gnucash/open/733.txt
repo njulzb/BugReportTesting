@@ -1,0 +1,23 @@
+title:How to add currencies (like crypto)?
+
+I would like to manage my different crypto-wallets. FTM, I use XXX and I use the currency in the account name. Is it possible to add a user-defined currency?
+At the end, I would like to be able to transfert between accounts with different currencies and mention a conversion rate. Is it possible now?
+I'm motivated to help to contribute if I can have a brief description of the project and some advice to begin to implement it.
+@dannywillems Thanks for the feedback and willingness to contribute.
+User-defined currencies are not hard to implement in the app. It would basically amount to adding a view to input the data and then adding a record in the database.
+It is more of a question of if we should do it. BTC was added in a recent release and that was highly requested. I've not heard much for totally custom commodities. Given the limited resources we have, we need to prioritize features.
+@rivaldi8 what do you think? Is this a direction we should go?
+@dannywillems Thanks for the feedback and willingness to contribute.
+User-defined currencies are not hard to implement in the app. It would basically amount to adding a view to input the data and then adding a record in the database.
+It is more of a question of if we should do it. BTC was added in a recent release and that was highly requested. I've not heard much for totally custom commodities. Given the limited resources we have, we need to prioritize features.
+@rivaldi8 what do you think? Is this a direction we should go?
+@codinguser As you say, it would require little code. So, in this respect, I wouldn't oppose to adding it. However, I also think this is a feature that very few user will need, but is a little more UI clutter that will affect all users as well as a little more code to maintain.
+In my opinion, this a low priority use case already covered by GnuCash desktop, so there's is no urgent need for it in Android. Users can add the currency from the desktop and import it in Android. If more users ask for it, like with BTC, it can always be implemented.
+In summary, I would rather not add the feature now, but I'm totally ok if you decide otherwise :)
+@codinguser As you say, it would require little code. So, in this respect, I wouldn't oppose to adding it. However, I also think this is a feature that very few user will need, but is a little more UI clutter that will affect all users as well as a little more code to maintain.
+In my opinion, this a low priority use case already covered by GnuCash desktop, so there's is no urgent need for it in Android. Users can add the currency from the desktop and import it in Android. If more users ask for it, like with BTC, it can always be implemented.
+In summary, I would rather not add the feature now, but I'm totally ok if you decide otherwise :)
+I agree with @rivaldi8 , we would not pursue this for now.
+But I'll leave this issue open for now.
+I agree with @rivaldi8 , we would not pursue this for now.
+But I'll leave this issue open for now.

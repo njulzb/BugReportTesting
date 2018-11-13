@@ -1,0 +1,9 @@
+title:Exception thrown when click "settings" menu , on android 4.3
+
+Version : org.gnucash.android/2.0.3-beta0 Android; 4.3;
+I'm not able to reproduce it. Is it still happening with 2.0.4? Does it happen every time or just sometimes? Is the application crashing or the exception just gets logged to Logcat?
+I'm not able to reproduce it. Is it still happening with 2.0.4? Does it happen every time or just sometimes? Is the application crashing or the exception just gets logged to Logcat?
+Given no feedback, I will close this issue for now.
+@lxbzmy feel free to reopen it if you still experience it.
+Given no feedback, I will close this issue for now.
+@lxbzmy feel free to reopen it if you still experience it.

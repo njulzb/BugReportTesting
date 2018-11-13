@@ -1,0 +1,217 @@
+Bug: "%" are duplicated in "Deck options"
+Crash when adding image using camera
+When I renamed a model, it will automatically create a deck with the same name.
+Anki crashes everytime i sync
+Problem introduced in 2.9alpha4
+Webview update leads to scrolling issues
+AnkiDroid API Permission Request Description has some unnecessary words
+Instant-Add API crashes AnkiDroid when AnkiDroid is not running in the background on Android N.
+syncMessage is ignored on successful sync
+statistics don't update
+Glosbe translations broken
+Wrong coloring of card type statistics pie cart when there are no unseen but some buried cards
+Dollar sign dropped from media file names in imported deck
+Cards with cloze fields with same ID number give error
+"Preview new cards" show 0 cards with 99999 days but all with 9999
+"Start of next day" is reset on next sync after syncing Anki Desktop
+Android 2.3.x crash :: android.os.BadParcelableException: ClassNotFoundException when unmarshalling
+Tablet dual-panel enhancement
+2.6beta1 crashes on Android 2.3.7 when changing deck options
+Move "Cram" bar to top in Review Count/Review Time
+Sound recording does not stop
+Minor bug: On screen of "Choose a saved search", descenders aren't displayed entirely
+Minor bug: The color of strings of "tag_editor_add_feedback" may be wrong
+Error -1 wal during synchronization
+There aren't four texts for translation on CrowdinNotification is unable to be observed
+Answer button size stetting not changing answer button size
+installation of decks on kindle worked after 3rd attempt
+Trying to open settings crashes AnkiDroid
+Ankidroid stuck on the loading screen with the message that report is being sent to the developers
+"Application not installed" message after reinstalation
+Media sync error
+java.lang.IllegalStateException: Couldn't read row 0, col 0 from CursorWindow. Make sure the Cursor is initialized correctly before accessing data from it.
+'Relative overdueness' is missing in filtered decks options
+Syncing ankidroid while storing it on an external sd card
+2131624605 error
+"Answer Buttons" stats graph should not show cumulative lines
+Counters don't update after the first card being reviewed
+<span style="color:black;"> is seen as white on Night mode.
+On windows pc, anki is displaying part of answer (2nd column) on 1st page, then rest on 2nd page
+Wrong due card amount on notification
+App wrongly displays "o͞o" character.
+Unable to rest number of new cards for individual decks
+Cards don't show number of days until next display and number of cards to repeat is always 100 or the number of cards
+red blocks don't appear S6
+red blocks don't appear S6
+False positives for detection of video on some devices
+some problem after generating apk file using Eclipse
+Anki plays no sound mp3 on tablet LG 8tab
+Custom Study does not default to "Reschedule cards based on my answers in this deck" and ignores "cards selected by""No such file or directory" after sync
+Bug: long-tapping on a line of the card browser won't show a menu at first
+Android: Small displaying bug in horizontal mode
+Ankidroid crashed after first start
+The underline of the textbox of 'Reschedule card' is red when any strings aren't entered
+Play media icon has been shrunk (height is too small) after turning phone into landscape mode
+Easy interval 2 days despite deck options set otherwise.
+No longer autoplays more than one video
+Duplicate marking difficult to see in 5.0.0
+Widget should open app even if no cards available
+Auto-sync keep trying to sync after user cancel request (when back on home screen)
+Image search does not return any results
+Automatic display answer has inconsistent behavior when using gestures
+Night mode is breaking text to speech
+Temporarily displaying the menu bar in landscape mode with fullscreen enabled hides the rightmost menu button and the timer under the Android control buttons
+parenthesis removed when creating subdeck
+Advancing my "Start of next day" advanced several cards by additional years
+'Undo' button isn't displayed when 'Again' is tapped with learn ahead limit set to 0
+Can't sync data if the network is behind proxy
+Crash rescheduling card with empty value for num days
+"Daily study limit reached / Study more" snackbar after "No cards are due yet." seems odd
+Fullscreen is not *really* fullscreen in the menu
+Answer buttons size not always respected
+"Collection not opened" after sync
+Collection suddenly went out of sync with AnkiWeb (cannot be merged) while in use on a single deviceCan't get Ankidriod to find media when I move file to external SD card
+Problem with custom study
+Card sort by answer in Card Browser does not work (does not sort alphabetically by answer)
+Custom URL Schemes not supported
+Sync Broken on Android 5
+Siblings / Card Order
+SSLException while building HttpClient
+It's stopping the learning, although there are some more cards...
+v2.5alpha27-cannot save audio/media.
+There is no whiteboard button  on tablet
+Safe Display mode crashing Ankidroid
+Play media in Android version
+AnkiDroid displays dots above characters incorrectly in review mode
+Synchronization is canceled with blank message.
+{Unknown field XXXXX } on Ankidroid display for title.
+Due count too high
+I would like to look saved data`s word in a dictionary automatically
+I lost my 200 decks when upgranding
+ImageOcclusion SVG overlay color is incorrect on AnkiDroid
+2.4.1 broke cloze
+Collection not opened
+Sync error
+template error only with ankidroid beta, not with anki desktop
+Some issues in ankidroid text to speech
+Prefs show whiteboard brush width of 0 (should show 6)'next day starts at x hours after midnight' setting not synchronized in Android version
+2.5alpha46 Sometimes content area scrolls, sometimes it doesn't
+ACRA dialog buttons in wrong order for API ≥ 14
+AnkiDroid not reporting errors
+Crash after sync
+"Notify when: Pending messages available" Doesn't Work
+Can't clear the "saved data" list
+Selected deck not marked in the list on the left on a tablet
+Crash: AnkiDroid
+First sync always shows error
+Deck options not correctly shown in night mode on tablet
+Top status bar white on white
+Odd back button behavior on tablets
+App crashes after answer checking
+Forgot to invert colors for text input field?
+Menu is unreadable white-on-light-grey
+Video not played
+Media not exported
+X cards imported dialog should use plurals
+mistake in Anki Manual "Fonts on a Mac"
+Top left ← icon in preview does not take you back
+Crash when starting reviewing
+How to move Ankidroid + Decks to SD Card on Galaxy S5
+Crashes (at start)  -  Samsung Galaxy S5
+Horizontal spacing of furigana contains additional spacesCan't sync
+Cloze display does not appear to support {{#c1}} ... {{/c1}} syntax (Conditional Replacement)
+Errors while importing project in android studio
+java.lang.IllegalArgumentException: View not attached to window manager : at com.ichi2.anki.DeckPicker$16.onPostExecute
+media not loading to ankiweb
+Cloze cards sometimes don't work with multiple fields
+Hebrew font has disappeared
+menu button in some mobile phone
+Can not delete TAB from TAB list.
+Problem with Kitkat 4.4.2
+First card reviewed in deck doesn't update number of cards due (when widget is enabled)
+Problem with Anki that effected my database and now Ankidroid is crashing
+Custom study by tag ending with ')' creates empty deck
+Front and back fields content switched in editor when changing device orientation
+Issue on AnkiDroid without SD Card
+Add Stack traces to inline errors
+AnkiDroid does not recognize Field Delimiter Substitution in Card Templates
+Can't switch language when entering text in ChromeOS
+SOS! You say new supportation of video in version 2.4,  But my cards fail to play video
+Reset to the desktop
+I cannot restore decks form backup for ankidroid. please help me.
+Preference upgrade results in infinite upgrade loop
+All study cards are zoomed by default
+Anki is creating cards that are empty
+Resource error in es_ESNotification is unable to be observed
+Answer button size stetting not changing answer button size
+installation of decks on kindle worked after 3rd attempt
+Trying to open settings crashes AnkiDroid
+Ankidroid stuck on the loading screen with the message that report is being sent to the developers
+"Application not installed" message after reinstalation
+Media sync error
+java.lang.IllegalStateException: Couldn't read row 0, col 0 from CursorWindow. Make sure the Cursor is initialized correctly before accessing data from it.
+'Relative overdueness' is missing in filtered decks options
+Syncing ankidroid while storing it on an external sd card
+2131624605 error
+"Answer Buttons" stats graph should not show cumulative lines
+Counters don't update after the first card being reviewed
+<span style="color:black;"> is seen as white on Night mode.
+On windows pc, anki is displaying part of answer (2nd column) on 1st page, then rest on 2nd page
+Wrong due card amount on notification
+App wrongly displays "o͞o" character.
+Unable to rest number of new cards for individual decks
+Cards don't show number of days until next display and number of cards to repeat is always 100 or the number of cards
+red blocks don't appear S6
+red blocks don't appear S6
+False positives for detection of video on some devices
+some problem after generating apk file using Eclipse
+Anki plays no sound mp3 on tablet LG 8tab
+Custom Study does not default to "Reschedule cards based on my answers in this deck" and ignores "cards selected by"AnkiDroid sometimes doesn't show "can't open collection" dialog when the collection is corrupt and hangs instead
+AnkiDroid can't start
+stuck on "opening collection" forever
+“Paste the "debug info" from AnkiDroid below.” not very helpful.
+Wrong title when returning from e.g. statitstics to review
+java.lang.NullPointerException at com.ichi2.anki.AbstractFlashcardViewer$23.getDrawable(AbstractFlashcardViewer.java:3020)
+rooted  note 2 (GT-N7105)  crash with ankidroid version 2.4
+problems while trying to sync ankiweb decks with my ankidroid tablet app
+Where is main menu with import option?
+Fuzzy syncing issues
+All translations of "Advanced editor" hasn't been reflected in AnkiDroid
+The number of "Cards due" notification isn't consistent?
+Changing "Options group" doesn't change its "Steps" immediately.
+{VaShIkArAn} +91-8875513486 VaShIkArAn fOr LoVe in MuMbAi~
+{VaShIkArAn} +91-8875513486 VaShIkArAn fOr LoVe in HyDeRaBaD~
+{VaShIkArAn} +91-8875513486 VaShIkArAn fOr LoVe in PuNe~
+{VaShIkArAn} +91-8875513486 VaShIkArAn fOr LoVe in BaNgALOrE~
+sync error type -1 : timeout
+"Replay question" doesn't work with video files properly.
+Video files which include a space in their file names can't be played properly.
+AnkiDroid 2.0.1 crashes when trying to sync
+In Brazil, the time of the northeast area is different from the capital of the time because of daylight saving time (BRST)
+Crash when switching to a different deck after finishing reviews of the previous one
+Though I want to edit learning steps in the deck options, there isn't a space key on the screen keyboard
+Grammatical errorCan't get Ankidriod to find media when I move file to external SD card
+Problem with custom study
+Card sort by answer in Card Browser does not work (does not sort alphabetically by answer)
+Custom URL Schemes not supported
+Sync Broken on Android 5
+Siblings / Card Order
+SSLException while building HttpClient
+It's stopping the learning, although there are some more cards...
+v2.5alpha27-cannot save audio/media.
+There is no whiteboard button  on tablet
+Safe Display mode crashing Ankidroid
+Play media in Android version
+AnkiDroid displays dots above characters incorrectly in review mode
+Synchronization is canceled with blank message.
+{Unknown field XXXXX } on Ankidroid display for title.
+Due count too high
+I would like to look saved data`s word in a dictionary automatically
+I lost my 200 decks when upgranding
+ImageOcclusion SVG overlay color is incorrect on AnkiDroid
+2.4.1 broke cloze
+Collection not opened
+Sync error
+template error only with ankidroid beta, not with anki desktop
+Some issues in ankidroid text to speech
+Prefs show whiteboard brush width of 0 (should show 6)

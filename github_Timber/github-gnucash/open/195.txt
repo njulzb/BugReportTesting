@@ -1,0 +1,39 @@
+title:Credit Card account type has columns backwards in OFX export
+
+codinguser
+Using 1.4.2 on Android 4.4.2 (Droid Razr MAXX HD).
+Also not using the Double Entry.
+The Credit Card account type makes Payments red and Charges green. When exporting via OFX, the account values are backwards. Payments get imported as charges and Charges get imported as payments.
+Steps to duplicate:
+Reverting to 1.3.3 solves this problem. Entries labeled "Debit" in GnuCash for Android credit card accounts are imported into the Credit Card accounts in the desktop version of GnuCash (currently 2.4.15 on Fedora 19) as "Charge."
+Reverting to 1.3.3 solves this problem. Entries labeled "Debit" in GnuCash for Android credit card accounts are imported into the Credit Card accounts in the desktop version of GnuCash (currently 2.4.15 on Fedora 19) as "Charge."
+This is probably related to #184.
+A credit card account's 'debit' causes an increase in the liability (a 'Charge'); a 'credit' causes a decrease in the liability (a 'Payment'). It seems appropriate to me for Charges (aka debits on the credit card account) to be shown in Red and Payments to be shown in Green.
+I have an historical data file created using the android app version 1.3.3. In 1.3.3, charge card entries are shown as 'debits' and are labeled red. That is expected behavior and is consistent with how gnucash desktop handles credit card accounts.
+When opened with beta 1.4.3 those charges that were labeled 'debits' in 1.3.3 are now labeled 'Payments' and are still shown in Red. They get imported via OFX into gnucash desktop's Credit Card account as 'Charges.'
+It seems to me that the algorithm used to display the names needs to be fixed.
+This is probably related to #184.
+A credit card account's 'debit' causes an increase in the liability (a 'Charge'); a 'credit' causes a decrease in the liability (a 'Payment'). It seems appropriate to me for Charges (aka debits on the credit card account) to be shown in Red and Payments to be shown in Green.
+I have an historical data file created using the android app version 1.3.3. In 1.3.3, charge card entries are shown as 'debits' and are labeled red. That is expected behavior and is consistent with how gnucash desktop handles credit card accounts.
+When opened with beta 1.4.3 those charges that were labeled 'debits' in 1.3.3 are now labeled 'Payments' and are still shown in Red. They get imported via OFX into gnucash desktop's Credit Card account as 'Charges.'
+It seems to me that the algorithm used to display the names needs to be fixed.
+No, credit and liability account have credit normal balances. Which means "credit" increases liability and "debit" decreases it. See: http://gnucash.org/docs/v2.4/C/gnucash-guide/accts-types1.html
+1.3.3 was not fully compatible with the accounting principles with respect to account balances, but the newer versions are.
+No, credit and liability account have credit normal balances. Which means "credit" increases liability and "debit" decreases it. See: http://gnucash.org/docs/v2.4/C/gnucash-guide/accts-types1.html
+1.3.3 was not fully compatible with the accounting principles with respect to account balances, but the newer versions are.
+Yes. You are right regarding the names. I turned on the flag in GnuCash desktop for "Use formal accounting labels." After doing that, a "Charge" becomes a "Credit" and a "Payment" becomes a "Debit."
+Nonetheless, transactions labelled as "Charge" in Gnucash for Android 1.4.3, when exported via OFX and imported into Gnucash desktop, are imported as "Payment" transactions. Both accounts (android and desktop) are identified as Credit Card accounts.
+Yes. You are right regarding the names. I turned on the flag in GnuCash desktop for "Use formal accounting labels." After doing that, a "Charge" becomes a "Credit" and a "Payment" becomes a "Debit."
+Nonetheless, transactions labelled as "Charge" in Gnucash for Android 1.4.3, when exported via OFX and imported into Gnucash desktop, are imported as "Payment" transactions. Both accounts (android and desktop) are identified as Credit Card accounts.
+Ok, I'll look into the OFX export. Thanks for bringing this up.
+On 14.09.2014, at 02:41, Tim Wunder notifications@github.com wrote:
+Yes. You are right regarding the names. I turned on the flag in GnuCash desktop for "Use formal accounting labels." After doing that, a "Charge" becomes a "Credit" and a "Payment" becomes a "Debit."
+Nonetheless, transactions labelled as "Charge" in Gnucash for Android 1.4.3, when exported via OFX and imported into Gnucash desktop, are imported as "Payment" transactions. Both accounts (android and desktop) are identified as Credit Card accounts.
+—
+Reply to this email directly or view it on GitHub.
+Ok, I'll look into the OFX export. Thanks for bringing this up.
+On 14.09.2014, at 02:41, Tim Wunder notifications@github.com wrote:
+Yes. You are right regarding the names. I turned on the flag in GnuCash desktop for "Use formal accounting labels." After doing that, a "Charge" becomes a "Credit" and a "Payment" becomes a "Debit."
+Nonetheless, transactions labelled as "Charge" in Gnucash for Android 1.4.3, when exported via OFX and imported into Gnucash desktop, are imported as "Payment" transactions. Both accounts (android and desktop) are identified as Credit Card accounts.
+—
+Reply to this email directly or view it on GitHub.

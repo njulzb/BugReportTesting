@@ -1,0 +1,69 @@
+title:Can't write in the name field when creating a new account
+
+codinguser
+When I try to create a new account, I get the window with empty name field, the default currency /EURO in my case) and the field to pickup a parent account.
+If I try to type at account name field nothing happens, but if you first choose a new currency, even if it is the default one, now you can type without problem.
+Is it an expected behaviour?
+my envorionment:
+App version: 1.1.2
+Android version: 2.3.6 (kernel 2.6.38.6-1214151 / compilation GINGERBREAD.XXLK2)
+Phone model: Samsung Galaxy Mini 2 (GT-S6500D)
+thanks!
+No, this is not expected behaviour. I will try to investigate it.
+Btw, thanks for your bug reports. Keep the feedback coming.
+No, this is not expected behaviour. I will try to investigate it.
+Btw, thanks for your bug reports. Keep the feedback coming.
+Does your phone have Swype or some other non-standard keyboard?
+Does your phone have Swype or some other non-standard keyboard?
+Yes, Swype
+El 03/04/2013 23:36, "Ngewi Fet" notifications@github.com escribió:
+Does your phone have Swype or some other non-standard keyboard?
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/68#issuecomment-15866845
+.
+Yes, Swype
+El 03/04/2013 23:36, "Ngewi Fet" notifications@github.com escribió:
+Does your phone have Swype or some other non-standard keyboard?
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/68#issuecomment-15866845
+.
+This seems to be related to #33
+This seems to be related to #33
+I don't think so because I have deactivated Swype and I still have the same
+problem.
+El 04/04/2013 22:59, "Ngewi Fet" notifications@github.com escribió:
+This seems to be related to #33#33
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/68#issuecomment-15923482
+.
+I don't think so because I have deactivated Swype and I still have the same
+problem.
+El 04/04/2013 22:59, "Ngewi Fet" notifications@github.com escribió:
+This seems to be related to #33#33
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/68#issuecomment-15923482
+.
+The new release 1.2.0 still has the same problem.
+The new release 1.2.0 still has the same problem.
+I am having trouble replicating this. But I will find other devices and keep trying.
+I am having trouble replicating this. But I will find other devices and keep trying.
+@Jesus-M do you still experience this issue in the latest versions?
+@Jesus-M do you still experience this issue in the latest versions?
+I don't use it since several months ago, sorry
+2015-10-27 10:03 GMT+01:00 Ngewi Fet notifications@github.com:
+@Jesus-M https://github.com/Jesus-M do you still experience this issue
+in the latest versions?
+—
+Reply to this email directly or view it on GitHub
+#68 (comment)
+.
+I don't use it since several months ago, sorry
+2015-10-27 10:03 GMT+01:00 Ngewi Fet notifications@github.com:
+@Jesus-M https://github.com/Jesus-M do you still experience this issue
+in the latest versions?
+—
+Reply to this email directly or view it on GitHub
+#68 (comment)
+.
+Not reproducible for me in 2.0.0.
+Not reproducible for me in 2.0.0.

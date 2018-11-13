@@ -1,0 +1,16 @@
+title:Transaction Dates aren't compatible with Gnucash
+
+Exporting transactions in OFX format and import into Gnucash results in nonsensical date fields. See here: http://d.pr/i/WidR (All values are fake, just for testing, but it demonstrates the problem.)
+The 'Opening Balance' and 'Shopping' transaction were added to Gnucash first. Then I created some transactions in GnucashMobile, and exported/imported them into Gnucash. They are then shown at the top because of the issue with dates.
+Yes, dates were not being exported in the transactions. This has been fixed in commit c63c91d in the develop branch.
+Yes, dates were not being exported in the transactions. This has been fixed in commit c63c91d in the develop branch.
+According to the OFX example and the OFX spec PDF, each STMTTRN tag should have a DTPOSTED tag, which GnucashMobile doesn't seem to do currently.
+I'll have a look at it fixing it, unless this is done on purpose?
+According to the OFX example and the OFX spec PDF, each STMTTRN tag should have a DTPOSTED tag, which GnucashMobile doesn't seem to do currently.
+I'll have a look at it fixing it, unless this is done on purpose?
+Awesome, I'll make a build and test.
+Awesome, I'll make a build and test.
+Works perfectly. Are you going to release a built apk with that commit included soon?
+Works perfectly. Are you going to release a built apk with that commit included soon?
+Yes, another beta release is coming up soon. Stay tuned.
+Yes, another beta release is coming up soon. Stay tuned.

@@ -1,0 +1,32 @@
+title:Incorrect sign displayed for credit card account
+
+Could be related to #723.
+Note that I'm writing from memory.
+At this point, everything looks OK. The credit card account is 150 in negative.
+The account should now be 200 in debt (Red, -200).
+The account is displayed as 200 in credit. If the terms are confusing, colours are not. :)
+The account is now green and has amount +200.
+In addition, reversing the transaction by changing the direction to Increase has no effect on the display at the Accounts list. The transaction details, however, are always displayed correctly in the transaction view/edit screens.
+The accounts list should display debt in red and with negative values, like in the desktop version.
+In addition to the above,
+Results
+Fortunately I have a blank database so this is possible to troubleshoot.
+I wonder what the .qif output will be.
+Note that this is a book that was created by importing the accounts from the GnuCash export file.
+In addition to the above,
+Results
+Fortunately I have a blank database so this is possible to troubleshoot.
+I wonder what the .qif output will be.
+Note that this is a book that was created by importing the accounts from the GnuCash export file.
+This sounds very close to #723 which is fixed in v2.3.0 beta1.
+Could you please confirm that this issue no longer exists?
+This sounds very close to #723 which is fixed in v2.3.0 beta1.
+Could you please confirm that this issue no longer exists?
+OK, here are the findings. v2.3.0-beta2
+So, effectively, I have no idea if this is correct or not but it definitely looks confusing.
+Will see what happens on .qif export.
+OK, here are the findings. v2.3.0-beta2
+So, effectively, I have no idea if this is correct or not but it definitely looks confusing.
+Will see what happens on .qif export.
+I'll close this issue now
+I'll close this issue now

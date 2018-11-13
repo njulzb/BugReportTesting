@@ -1,0 +1,5 @@
+title:Unable to scroll when creating/editing accounts
+
+It is noticeable when using devices with small screens or in landscape mode.
+Fixed in 4dc8cf9
+Fixed in 4dc8cf9

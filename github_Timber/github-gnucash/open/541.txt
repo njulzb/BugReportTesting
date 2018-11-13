@@ -1,0 +1,112 @@
+title:widget refresh slower for more transactions
+
+#202 fixed the bug that saving was slow because it waited for the widgets to refresh.
+The widget refresh is still slow if there are many transactions.
+How slow? Is it a momentary pause, a few seconds, minutes or more?
+On Fri, Aug 12, 2016 at 7:44 AM, nikopp notifications@github.com wrote:
+#202 #202 fixed the
+bug that saving was slow because it waited for the widgets to refresh.
+The widget refresh is still slow if there are many transactions.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub
+#541, or mute the
+thread
+https://github.com/notifications/unsubscribe-auth/AAQ42yi-uE1bplwEFnFj3eMbxIM5NM1wks5qfAg6gaJpZM4JiytI
+.
+How slow? Is it a momentary pause, a few seconds, minutes or more?
+On Fri, Aug 12, 2016 at 7:44 AM, nikopp notifications@github.com wrote:
+#202 #202 fixed the
+bug that saving was slow because it waited for the widgets to refresh.
+The widget refresh is still slow if there are many transactions.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub
+#541, or mute the
+thread
+https://github.com/notifications/unsubscribe-auth/AAQ42yi-uE1bplwEFnFj3eMbxIM5NM1wks5qfAg6gaJpZM4JiytI
+.
+At the moment it's about 2 seconds. But it seems to increase with the
+number of transactions in the book.
+It ist the same for all accounts, no matter if there are just a few
+transactions in an account or a lot.
+Are all transactions of the book processed to calculate the sum of one
+account for the widget?
+Ngewi Fet notifications@github.com schrieb am Fr., 12. Aug. 2016, 18:11:
+How slow? Is it a momentary pause, a few seconds, minutes or more?
+On Fri, Aug 12, 2016 at 7:44 AM, nikopp notifications@github.com wrote:
+#202 #202 fixed
+the
+bug that saving was slow because it waited for the widgets to refresh.
+The widget refresh is still slow if there are many transactions.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub
+#541, or mute the
+thread
+<
+https://github.com/notifications/unsubscribe-auth/AAQ42yi-uE1bplwEFnFj3eMbxIM5NM1wks5qfAg6gaJpZM4JiytI
+.
+—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub
+#541 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AALZrnAs0xIniYIYsjZLFC9_XZ4pRCuGks5qfJslgaJpZM4JiytI
+.
+At the moment it's about 2 seconds. But it seems to increase with the
+number of transactions in the book.
+It ist the same for all accounts, no matter if there are just a few
+transactions in an account or a lot.
+Are all transactions of the book processed to calculate the sum of one
+account for the widget?
+Ngewi Fet notifications@github.com schrieb am Fr., 12. Aug. 2016, 18:11:
+How slow? Is it a momentary pause, a few seconds, minutes or more?
+On Fri, Aug 12, 2016 at 7:44 AM, nikopp notifications@github.com wrote:
+#202 #202 fixed
+the
+bug that saving was slow because it waited for the widgets to refresh.
+The widget refresh is still slow if there are many transactions.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub
+#541, or mute the
+thread
+<
+https://github.com/notifications/unsubscribe-auth/AAQ42yi-uE1bplwEFnFj3eMbxIM5NM1wks5qfAg6gaJpZM4JiytI
+.
+—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub
+#541 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AALZrnAs0xIniYIYsjZLFC9_XZ4pRCuGks5qfJslgaJpZM4JiytI
+.
+oh, it seems I misread your original post.
+You don't mean that transaction saving is slow, rather that it takes some time for the widget to update right?
+oh, it seems I misread your original post.
+You don't mean that transaction saving is slow, rather that it takes some time for the widget to update right?
+Yes!
+Ngewi Fet notifications@github.com schrieb am Fr., 19. Aug. 2016, 13:57:
+oh, it seems I misread your original post.
+You don't mean that transaction saving is slow, rather that it takes some
+time for the widget to update right?
+—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub
+#541 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AALZrtSa8r8sptYywy4tlwbhJOUUcB-Oks5qhZoGgaJpZM4JiytI
+.
+Yes!
+Ngewi Fet notifications@github.com schrieb am Fr., 19. Aug. 2016, 13:57:
+oh, it seems I misread your original post.
+You don't mean that transaction saving is slow, rather that it takes some
+time for the widget to update right?
+—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub
+#541 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AALZrtSa8r8sptYywy4tlwbhJOUUcB-Oks5qhZoGgaJpZM4JiytI
+.

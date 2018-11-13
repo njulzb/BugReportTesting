@@ -1,0 +1,4 @@
+title:When using "XXX no currency" the accounts balances aren't calculated
+
+When using "XXX no currency", if some transactions are added to an account, the account and its parents are still listed with 0 balance.
+Received through User Voice.

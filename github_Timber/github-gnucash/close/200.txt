@@ -1,0 +1,74 @@
+title:Replace IDs with GUIDs internally
+
+The current database has two columns to identify Accounts, Transactions or Splits: (long) IDs and (String) GUIDs. IDs are used internally in the App in a lot of places.
+With #188, IDs for Accounts, Transactions or Splits may change during an import, backup restore, or update (seems that addXXXX functions are called for update). The GUID never changes. So it may be better to use GUIDs internally instead of IDs.
+I'll work on this if you're OK with it. This change will affect a lot of files and interfaces and will be messy. Merge conflicts and compilation problems after the merge may be expected.
+The changes may include:
+Remove the getId(String) and getUID(long) functions in dbAdapters.
+Replace all interfaces using IDs with GUIDs in dbAdapters.
+Replace all stored IDs in others classes with GUIDs.
+...
+Any suggestions on this? Or any idea on how to avoid this change?
+Or are you already working on solving this problem?
+Yes, I have given some thought to this. We cannot completely get rid of the _id column because Android uses it in a lot of places e.g. CursorAdapter will not work without an ID column. It is necessary for many UI elements, e.g. ListAdapters provide this ID to indicate which item was selected in the list. Getting rid of IDs completely will break a lot of stuff.
+The model classes (Account, Split, etc) themselves never store the IDs anyway, only the GUID.
+We can migrate stuff like passing the GUID instead of the ID as parameters to the Activity/Fragment classes, or using GUID instead of ID to identify widgets. And I propose to do this when adding new functionality or changing existing functionality rather than in one go since we don't have a full test suite to verify that everything works afterwards. I think the slower pace of changing will allow for better stability through the transition.
+As for the changes you propose:
+Overall, due to the Android architecture, I think we will need to have the IDs always present. What we can do is minimize our reliance on them, as far as is possible.
+Yes, I have given some thought to this. We cannot completely get rid of the _id column because Android uses it in a lot of places e.g. CursorAdapter will not work without an ID column. It is necessary for many UI elements, e.g. ListAdapters provide this ID to indicate which item was selected in the list. Getting rid of IDs completely will break a lot of stuff.
+The model classes (Account, Split, etc) themselves never store the IDs anyway, only the GUID.
+We can migrate stuff like passing the GUID instead of the ID as parameters to the Activity/Fragment classes, or using GUID instead of ID to identify widgets. And I propose to do this when adding new functionality or changing existing functionality rather than in one go since we don't have a full test suite to verify that everything works afterwards. I think the slower pace of changing will allow for better stability through the transition.
+As for the changes you propose:
+Overall, due to the Android architecture, I think we will need to have the IDs always present. What we can do is minimize our reliance on them, as far as is possible.
+OK.
+I do not have much experience with Android UI. I think I'd better leave this to you. I wav planning to go bottom up, rewrite the adapters and see what I have to change on the upper level. Apparently I may meet a lot problems when it reaches the UI part.
+I'll report anything that is broken by the changed ID.
+OK.
+I do not have much experience with Android UI. I think I'd better leave this to you. I wav planning to go bottom up, rewrite the adapters and see what I have to change on the upper level. Apparently I may meet a lot problems when it reaches the UI part.
+I'll report anything that is broken by the changed ID.
+There maybe a way we can keep the IDs. See http://stackoverflow.com/questions/15277373/sqlite-upsert-update-or-insert . I'll try.
+There maybe a way we can keep the IDs. See http://stackoverflow.com/questions/15277373/sqlite-upsert-update-or-insert . I'll try.
+I don't think its necessary to try to keep the IDs.
+Right now, replace seems to work fine from a UI point of view. Lists are
+usually reloaded from the db when the view is opened, so the new IDs are
+used.
+All I need to change is to make sure that the UI classes take the GUIDs
+instead of IDs as parameters for determining which Account/Transaction to
+load.
+And also use GUIDs to fix the widgets.
+I think this is easier to do and is in the direction we want to go anyways.
+On Wed, Sep 10, 2014 at 3:04 PM, Yongxin Wang notifications@github.com
+wrote:
+There maybe a way we can keep the IDs. See
+http://stackoverflow.com/questions/15277373/sqlite-upsert-update-or-insert
+. I'll try.
+—
+Reply to this email directly or view it on GitHub
+#200 (comment)
+.
+I don't think its necessary to try to keep the IDs.
+Right now, replace seems to work fine from a UI point of view. Lists are
+usually reloaded from the db when the view is opened, so the new IDs are
+used.
+All I need to change is to make sure that the UI classes take the GUIDs
+instead of IDs as parameters for determining which Account/Transaction to
+load.
+And also use GUIDs to fix the widgets.
+I think this is easier to do and is in the direction we want to go anyways.
+On Wed, Sep 10, 2014 at 3:04 PM, Yongxin Wang notifications@github.com
+wrote:
+There maybe a way we can keep the IDs. See
+http://stackoverflow.com/questions/15277373/sqlite-upsert-update-or-insert
+. I'll try.
+—
+Reply to this email directly or view it on GitHub
+#200 (comment)
+.
+Well, trying is easy. I tested with importing with my big test book. After replacing replace with insert and update, db time doubled(9s to 18s), overall time increased from 42s to 51s.
+So let's keep the replace approach :)
+Well, trying is easy. I tested with importing with my big test book. After replacing replace with insert and update, db time doubled(9s to 18s), overall time increased from 42s to 51s.
+So let's keep the replace approach :)
+Agreed 👍
+Agreed 👍
+Replaced interfaces in UI using IDs with GUIDs in f657d81
+Replaced interfaces in UI using IDs with GUIDs in f657d81

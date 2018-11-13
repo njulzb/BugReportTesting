@@ -1,0 +1,54 @@
+[Nougat] App doesnt have access to the clipboard / Cant paste anywhere in the app.
+Fullscreen video in "Internal Browser" does not work
+Superscripted brackets aren't handled correctly
+Crash during commenting
+Markdown parser doesn't handle underscores correctly
+Built in browser shows a blank page when opening a file download link
+Show subreddit names for posts when viewing r/popular
+Replying to a private message starts a new conversation
+Media downloads first before opening in external app
+Add extension to reddituploads saved images
+Images gets downloaded twice when using Opengur
+Closing bracket is not considered part of a link
+red reader crash
+Load more comments doesn't work in big posts
+Crashes when phone language is set to Arabic
+New custom subreddit field breaks swipe keyboards
+Blank title notifications
+Post author is no longer highlighted
+Cannot store images on Android 6
+Title sometimes doesn't fit into UI element
+RedReader Crashes / Not Responding without log
+Status 403 under TOR
+Impossible to disable auto comment hiding based on score
+Error: Comment is no longer visible
+Intent filter does not pick up subreddit linksWhen viewing/scrolling through an imgur album, playing songs are paused
+Posts not marked as read when using "view comments" swipe action
+notification icon on Android 5 appears like a white square instead of an R
+Failure to report incorrectly written captcha
+RedReader crashes on login
+ListView bouncing
+Collapsing big comments
+Issues with /r/random
+Don't allow voting/commenting on archived posts
+Parse error on specific page
+Deep comment threads are silently truncated
+[Feature Request] support for reddit shortlinks in app
+Entities are displayed unescaped in page header bar
+App redraws post list when returning from link/comments
+Empty quote line leads to additional quote nesting
+Editing a comment with escaped HTML entities causes them to be double escaped
+Overzealous handling of imgur links
+Occasional parse error for comments on some posts
+https links aren't made clickable/into buttons
+GIF handling
+Please add support for Markdown-style paragraph handling
+"Links in comment" displayed in random order
+Html entities in flair ate not being decoded correctly
+[bug] "Toggle Collapse" option for comments doesn't execute consistantly
+Some gifs not loading properlyLinks to comments don't properly direct to the comment
+Doesn't handle multiple pages of subreddits
+scrolling
+[Top Priority] Issue where only two posts are shown in cached version
+inbox shows incorrect points
+Bullet lists in self posts don't parse correctly

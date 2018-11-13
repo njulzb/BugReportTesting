@@ -1,0 +1,3 @@
+title:Sound clipping when repeating song
+
+For the sake of explanation, say we are playing an album. To replay the current track, we can press the "Previous Track" option and it will go to the start of the current track. However, the first second or two of the song gets clipped. Looping and//or using the "Next Track" does not show the same behaviour.

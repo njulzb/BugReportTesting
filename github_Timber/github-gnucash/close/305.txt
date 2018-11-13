@@ -1,0 +1,8 @@
+title:ClassCastException when exporting from non-AccountsActivity activity
+
+codinguser
+When exporting transactions from an activity different from AccountsActivity and with the "Delete after export" option checked, GnuCash crashes with the following exception:
+Steps to reproduce:
+The problem is ExportAsyncTask assumes mContext is an AccountsActivity but, in this case, it's a TransactionsActivity instead.
+Fixed in 6d91b5f
+Fixed in 6d91b5f

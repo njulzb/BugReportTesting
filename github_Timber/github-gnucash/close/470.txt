@@ -1,0 +1,8 @@
+title:View all Transactions in a list (or in a worksheet)
+
+Is there anyway to view all transactions in a list (or in a worksheet)? Sometimes I want to check general journal but couldn't find any entry to do so.
+If not, could it consider a new feature to develop? For mobile app, filter by date range is enough.
+At the moment, there is no way to view all transactions in a list, and no plans to implement that at the moment. I have considered it once before, but decided not to do it due to the workflows in the app.
+At the moment, there is no way to view all transactions in a list, and no plans to implement that at the moment. I have considered it once before, but decided not to do it due to the workflows in the app.
+OK, thanks for reply
+OK, thanks for reply

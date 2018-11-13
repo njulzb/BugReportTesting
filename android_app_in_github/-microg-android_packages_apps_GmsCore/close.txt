@@ -1,0 +1,9 @@
+UI Bug: Truncated text
+App count not updated
+Google Maps crashes
+Waze does not get EXTENDED_ACCESS permission
+Google Play Store Error - No account configured on this device.
+App: lokomo
+App: Advanced Download Manager
+ADREQUEST Service ID not handled
+Issues with push messages (service hanging until reboot / messages not processed)

@@ -1,0 +1,5 @@
+title:Bug: Null Pointer at org.gnucash.android.ui.transaction.TransactionsListFragment.onPrepareOptionsMenu
+
+App shouldn't crash
+App crashes (2 times from 6 tests) in the following error:
+A Null check in https://github.com/codinguser/gnucash-android/blob/master/app/src/main/java/org/gnucash/android/ui/transaction/TransactionsListFragment.java#L187 should do the job, I'm happy to throw a PR (for the null check), keep in mind that I'm not an Android dev.

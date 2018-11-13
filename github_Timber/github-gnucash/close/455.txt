@@ -1,0 +1,11 @@
+title:New scheduled transaction like an existing one
+
+Hi, All,
+I have a scheduled transaction for my home loan repayment (of course). I receive a letter from the bank saying that from a date two months away, my monthly repayment will change. So what I want to do is change the existing scheduled transaction so that it stops when appropriate and create a new one that starts the month later.
+So, I place the cursor on one of the past transactions and click on the button,"create a scheduled transaction ... ". But, instead of creating a new one, it wants to edit the old one.
+Now, of course I don't want to create a new transaction from scratch. The "create" button is just too easy. The only work around I have found is to go to a similar transaction several years ago, one, I suppose, not created by the existing scheduled transaction. Then the system does create a new scheduled transaction.
+This isn't a big deal. It just doesn't work the way I expected it to.
+Cheers
+Peter
+I think this is also an issue for GnuCash desktop.
+I think this is also an issue for GnuCash desktop.

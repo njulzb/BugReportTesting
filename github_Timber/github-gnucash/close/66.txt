@@ -1,0 +1,91 @@
+title:Show accounts in tree or indent format.
+
+Hello, I'm beginning with gnucash-android and my proposal is to use in conjunction with desktop gnucash.
+So I've some subaccounts called same than others (with different parent). When I create these accounts in gnucash-android, I can specify this dependency, but same accounts are put together and no grouped by parent account.
+Should be it possible to add this functionality?
+The dependency is there, but not shown to you.
+Indenting the accounts (showing a tree form) is not a good idea because
+GnuCash Android supports arbitrarily deeply nested accounts and will not
+fit the UI if you go like 5 levels deep or more and indent them all.
+I was thinking of just writing it as a sub-title below the account's name.
+Any ideas?
+On 02.03.2013, at 00:58, lodopidolo notifications@github.com wrote:
+Hello, I'm beginning with gnucash-android and my proposal is to use in
+conjunction with desktop gnucash.
+So I've some subaccounts called same than others (with different parent).
+When I create this accounts in gnucash-android, I can specify this
+dependency, but same accounts are put together and no grouped by parent
+account.
+Should be it possible to add this functionality?
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/66
+.
+The dependency is there, but not shown to you.
+Indenting the accounts (showing a tree form) is not a good idea because
+GnuCash Android supports arbitrarily deeply nested accounts and will not
+fit the UI if you go like 5 levels deep or more and indent them all.
+I was thinking of just writing it as a sub-title below the account's name.
+Any ideas?
+On 02.03.2013, at 00:58, lodopidolo notifications@github.com wrote:
+Hello, I'm beginning with gnucash-android and my proposal is to use in
+conjunction with desktop gnucash.
+So I've some subaccounts called same than others (with different parent).
+When I create this accounts in gnucash-android, I can specify this
+dependency, but same accounts are put together and no grouped by parent
+account.
+Should be it possible to add this functionality?
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/66
+.
+I'd suggest showing a listing of parent accounts as follows:
+Assets
+Equity
+Expenses
+Income
+Liabilities
+Have that on a full screen scrolling list. Long pressing on these will bring up options (Edit, Add, Open All). Tapping should open up the listing of sub accounts, full screen listing just like the top level.
+Under Assets for example:
+Current Assets
+Fixed Assets
+Same deal here. Long press for options, tap to dig deeper. Once you reach an account that doesn't have sub accounts, it should open the transaction listing by default when tapping.
+Better yet, have that full scroll listing, one level at a time. On the right hand side, have two icons. The first one an "Open" icon that shows the transactions, the second one is an Arrow that shows you sub accounts. How about that?
+I'd suggest showing a listing of parent accounts as follows:
+Assets
+Equity
+Expenses
+Income
+Liabilities
+Have that on a full screen scrolling list. Long pressing on these will bring up options (Edit, Add, Open All). Tapping should open up the listing of sub accounts, full screen listing just like the top level.
+Under Assets for example:
+Current Assets
+Fixed Assets
+Same deal here. Long press for options, tap to dig deeper. Once you reach an account that doesn't have sub accounts, it should open the transaction listing by default when tapping.
+Better yet, have that full scroll listing, one level at a time. On the right hand side, have two icons. The first one an "Open" icon that shows the transactions, the second one is an Arrow that shows you sub accounts. How about that?
+The issue with long-press is that it is not discoverable. Currently, a lot of users don't know that you can even edit accounts by long-pressing. One of the main goals I've had for the GnuCash Android companion app is to keep things as simple as possible.
+Also, what will be displayed in the accounts list?
+If we say only top-level accounts, then it becomes cumbersome for a user who regularly uses one particular sub-account to always have to dig deep to find it. Imagine having to always to into Expenses -> Living -> Household -> Groceries in order to enter a simple transaction.
+Then comes the question of what tapping should do? Show the transactions, or the sub-accounts?
+You suggest showing two icons, one for transactions, and another for sub-accounts. But that just further clutters the UX (IMO).
+The issue with long-press is that it is not discoverable. Currently, a lot of users don't know that you can even edit accounts by long-pressing. One of the main goals I've had for the GnuCash Android companion app is to keep things as simple as possible.
+Also, what will be displayed in the accounts list?
+If we say only top-level accounts, then it becomes cumbersome for a user who regularly uses one particular sub-account to always have to dig deep to find it. Imagine having to always to into Expenses -> Living -> Household -> Groceries in order to enter a simple transaction.
+Then comes the question of what tapping should do? Show the transactions, or the sub-accounts?
+You suggest showing two icons, one for transactions, and another for sub-accounts. But that just further clutters the UX (IMO).
+Having a quick introduction like the Wunderlist app might be appropriate to teach users the long press. That's a fairly standard way of seeing more options related to an UI element.
+The ability to Star or Favorite your most used sub accounts (and have them show up above the Top Parent accounts would be a good solution there, while still allowing you to deep dive.)
+Another option would be to have a tap on the account name allow you to edit the account, and the icons be dedicated to their two actions.
+We could also consider swiping as a method of navigation. Swiping an account to the left would dig deeper into whatever account your finger is on. Swiping to the right would take you up to a higher account.
+I think what my brain is trying to model this after is the Dropbox app navigation.
+Having a quick introduction like the Wunderlist app might be appropriate to teach users the long press. That's a fairly standard way of seeing more options related to an UI element.
+The ability to Star or Favorite your most used sub accounts (and have them show up above the Top Parent accounts would be a good solution there, while still allowing you to deep dive.)
+Another option would be to have a tap on the account name allow you to edit the account, and the icons be dedicated to their two actions.
+We could also consider swiping as a method of navigation. Swiping an account to the left would dig deeper into whatever account your finger is on. Swiping to the right would take you up to a higher account.
+I think what my brain is trying to model this after is the Dropbox app navigation.
+"If we say only top-level accounts, then it becomes cumbersome for a user who regularly uses one particular sub-account to always have to dig deep to find it. Imagine having to always to into Expenses -> Living -> Household -> Groceries in order to enter a simple transaction."
+"The ability to Star or Favorite your most used sub accounts (and have them show up above the Top Parent accounts would be a good solution there, while still allowing you to deep dive.)"
+What about aliases? If a user uses regularly one account, he could give it an alias and so it would be easier to pick up.
+"If we say only top-level accounts, then it becomes cumbersome for a user who regularly uses one particular sub-account to always have to dig deep to find it. Imagine having to always to into Expenses -> Living -> Household -> Groceries in order to enter a simple transaction."
+"The ability to Star or Favorite your most used sub accounts (and have them show up above the Top Parent accounts would be a good solution there, while still allowing you to deep dive.)"
+What about aliases? If a user uses regularly one account, he could give it an alias and so it would be easier to pick up.

@@ -1,0 +1,5 @@
+title:Issues with KLWP
+
+I found that Timber doesn't play good with Kustom's KLWP pause (play works nice), next and previous functions. I tried with other music players and it works perfectly, even with Apollo downloaded from F-Droid. I know this report doesn't give much information, but if someone could tell me how to make a better bug report I would gladly make it. I'm using Cyanogenmod 13 on a Nexus 4.
+further details (i'm technically using KWGT): timber does not respond to the generic media player control instructions from KWGT while timber's notification player is active. however KWGT is able to read the current media info from timber just fine.
+further details (i'm technically using KWGT): timber does not respond to the generic media player control instructions from KWGT while timber's notification player is active. however KWGT is able to read the current media info from timber just fine.

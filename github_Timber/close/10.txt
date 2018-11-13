@@ -1,0 +1,8 @@
+title:clicking on tab doesn't work after swiping
+
+After swiping to the next tab in the viewpager, clicking on the previous tab doesn't move back to it.
+I am guessing this is a bug in the design support library because I couldn't find any problem in your code but have a look once.
+As usual, just design library bugs-
+https://code.google.com/p/android/issues/detail?id=183123
+As usual, just design library bugs-
+https://code.google.com/p/android/issues/detail?id=183123

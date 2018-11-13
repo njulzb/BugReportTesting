@@ -1,0 +1,92 @@
+title:editing android gnucash account negative all transaction value
+
+I'm using double entry in android gnucash 1.3.1 with 2 account for example
+Cash in Wallets (type=CASH)
+Expense (type=EXPENSE)
+adds transaction
+Cash in Wallets -> Expense, 10 "Yuan Renminbi". in Cash in Wallets it's Credit,
+in Expense it's debit
+then open Cash in Wallets account, use "edit" feature to edit the account
+information, change something or nothing just save
+actual result: all transaction (1 in this case) becomes negative of current
+value
+Cash in Wallets <- Expense, 10 "Yuan Renminbi". in Cash in Wallets it's Debit,
+in Expense it's Credit
+luckily i can edit it again so everything in this account is negative again
+back to original value.
+I am having trouble replicating this.
+When I open the transaction and save in the Expense account, it remains a
+debit and also remains a credit in the transfer Cash in Wallets account.
+Cash accounts are a type of Asset account which just like Expense accounts
+has a debit normal balance (i.e. debits increase balance, and credits
+decrease it)
+On Mon, Feb 17, 2014 at 10:40 AM, Xuefer notifications@github.com wrote:
+I'm using double entry in android gnucash 1.3.1 with 2 account for example
+Cash in Wallets (type=CASH)
+Expense (type=EXPENSE)
+adds transaction
+Cash in Wallets -> Expense, 10 "Yuan Renminbi". in Cash in Wallets it's
+Credit,
+in Expense it's debit
+then open Cash in Wallets account, use "edit" feature to edit the account
+information, change something or nothing just save
+actual result: all transaction (1 in this case) becomes negative of current
+value
+Cash in Wallets <- Expense, 10 "Yuan Renminbi". in Cash in Wallets it's
+Debit,
+in Expense it's Credit
+luckily i can edit it again so everything in this account is negative again
+back to original value.
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/145
+.
+I am having trouble replicating this.
+When I open the transaction and save in the Expense account, it remains a
+debit and also remains a credit in the transfer Cash in Wallets account.
+Cash accounts are a type of Asset account which just like Expense accounts
+has a debit normal balance (i.e. debits increase balance, and credits
+decrease it)
+On Mon, Feb 17, 2014 at 10:40 AM, Xuefer notifications@github.com wrote:
+I'm using double entry in android gnucash 1.3.1 with 2 account for example
+Cash in Wallets (type=CASH)
+Expense (type=EXPENSE)
+adds transaction
+Cash in Wallets -> Expense, 10 "Yuan Renminbi". in Cash in Wallets it's
+Credit,
+in Expense it's debit
+then open Cash in Wallets account, use "edit" feature to edit the account
+information, change something or nothing just save
+actual result: all transaction (1 in this case) becomes negative of current
+value
+Cash in Wallets <- Expense, 10 "Yuan Renminbi". in Cash in Wallets it's
+Debit,
+in Expense it's Credit
+luckily i can edit it again so everything in this account is negative again
+back to original value.
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/145
+.
+Indeed I've just found exact correct required condition to reproduce
+-> the transaction has to be added (or last modified) at A account, and then edit the B account information
+any type of account should do, not just cash
+Indeed I've just found exact correct required condition to reproduce
+-> the transaction has to be added (or last modified) at A account, and then edit the B account information
+any type of account should do, not just cash
+just to be careful, i'm writing step by step
+remove all accounts
+add account A: cash
+add account B: expenses
+add transaction in B, debit from account A, amount 10.00
+edit account A, click save
+result: -10 becomes 10 or 10 becomes -10
+just to be careful, i'm writing step by step
+remove all accounts
+add account A: cash
+add account B: expenses
+add transaction in B, debit from account A, amount 10.00
+edit account A, click save
+result: -10 becomes 10 or 10 becomes -10
+I can reproduce now. Thanks a lot. That is sooo weird.
+I didn't realize that you meant editing the account, not the transaction.
+I'll fix this!
+I can reproduce now. Thanks a lot. That is sooo weird.
+I didn't realize that you meant editing the account, not the transaction.
+I'll fix this!

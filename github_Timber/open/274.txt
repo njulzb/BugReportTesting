@@ -1,0 +1,6 @@
+title:Music notification gone if user pause the music
+
+If I'm not in the app and I click the pause button then notification immediately removed and I have to start music manually from the app again. Same thing happens in Lock Screen.
+If I'm in the app and from any control, I click pause then notification removed from the status bar.
+Device: Nexus 4
+OS Version : 5.1.1

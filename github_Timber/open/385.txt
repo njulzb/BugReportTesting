@@ -1,0 +1,15 @@
+title:Cannot install on Android 5.0.2
+
+Hello,
+i tried to download apk from releases section but i can't install on my device (Android 5.0.2).
+I had the same issue with other apps and it resulted to be a bug with android build tools:
+https://issuetracker.google.com/issues/64434571
+Thanks
+Who has Android 5.0.2 installed this time? Android 9 is on the way so I would suggest to update either your Android Version or your smartphone... ;)
+Who has Android 5.0.2 installed this time? Android 9 is on the way so I would suggest to update either your Android Version or your smartphone... ;)
+Request a new phone. ;)
+Request a new phone. ;)
+I'll go with another app. Easier.
+Thanks
+I'll go with another app. Easier.
+Thanks

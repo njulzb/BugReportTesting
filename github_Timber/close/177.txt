@@ -1,0 +1,25 @@
+title:getting issue Error:(58, 13) Failed to resolve: com.github.naman14:app-theme-engine:0.5.1 on Android Studio 2.0
+
+I have already tried using local & default gradle settings
+I'm facing the same issue.
+I'm facing the same issue.
+@PratapVhatkar were you getting the following errors too ?
+@PratapVhatkar were you getting the following errors too ?
+I can't do anything here. Please report the issue to Jitpack. afollestad is in the process of moving his libraries to jcenter due to unreliable build from Jitpack
+I can't do anything here. Please report the issue to Jitpack. afollestad is in the process of moving his libraries to jcenter due to unreliable build from Jitpack
+He just moved his libraries to jcenter and they're getting compiled now!
+Still facing issue while compiling -
+compile('com.github.naman14:app-theme-engine:0.5.1@aar') {
+transitive = true
+}
+He just moved his libraries to jcenter and they're getting compiled now!
+Still facing issue while compiling -
+compile('com.github.naman14:app-theme-engine:0.5.1@aar') {
+transitive = true
+}
+Cool, I will also update my fork of app-theme-engine to include these new jcenter builds (app-theme-engine internally uses material-dialogs) then it should work
+Cool, I will also update my fork of app-theme-engine to include these new jcenter builds (app-theme-engine internally uses material-dialogs) then it should work
+Yeah, hopefully there won't be any build errors after that
+Yeah, hopefully there won't be any build errors after that
+Published a new release on https://github.com/naman14/app-theme-engine and here. Build errors should be fixed now
+Published a new release on https://github.com/naman14/app-theme-engine and here. Build errors should be fixed now

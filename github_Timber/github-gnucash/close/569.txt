@@ -1,0 +1,88 @@
+title:2.1.0 crashed on startup
+
+codinguser
+I just updated the app to 2.1.0 on my phone, and it crashes on startup. I sent the report with system logs.
+Thanks for the crash report. I have seen them and will investigate the
+issue. Hang tight.
+Sorry about the inconvenience!
+Cheers,
+On Sat, Sep 3, 2016 at 3:34 PM, poidl notifications@github.com wrote:
+I just updated the app to 2.1.0 on my phone, and it crashes on startup. I
+sent the report with system logs.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub
+#569, or mute the
+thread
+https://github.com/notifications/unsubscribe-auth/AAQ42_rYRBwRhJ4CeNvoiU4o0kHyleL9ks5qmXd3gaJpZM4J0Te7
+.
+Thanks for the crash report. I have seen them and will investigate the
+issue. Hang tight.
+Sorry about the inconvenience!
+Cheers,
+On Sat, Sep 3, 2016 at 3:34 PM, poidl notifications@github.com wrote:
+I just updated the app to 2.1.0 on my phone, and it crashes on startup. I
+sent the report with system logs.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub
+#569, or mute the
+thread
+https://github.com/notifications/unsubscribe-auth/AAQ42_rYRBwRhJ4CeNvoiU4o0kHyleL9ks5qmXd3gaJpZM4J0Te7
+.
+Crash log:
+java.lang.RuntimeException: Unable to create application org.gnucash.android.app.GnuCashApplication: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4710)
+at android.app.ActivityThread.-wrap1(ActivityThread.java)
+at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:148)
+at android.app.ActivityThread.main(ActivityThread.java:5417)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+at org.gnucash.android.db.DatabaseHelper.onUpgrade(DatabaseHelper.java:298)
+at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:256)
+at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:163)
+at org.gnucash.android.db.BookDbHelper.onCreate(BookDbHelper.java:82)
+at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:251)
+at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:163)
+at org.gnucash.android.app.GnuCashApplication.onCreate(GnuCashApplication.java:127)
+at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1013)
+at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4707)
+... 8 more
+Caused by: java.lang.reflect.InvocationTargetException
+at java.lang.reflect.Method.invoke(Native Method)
+at org.gnucash.android.db.DatabaseHelper.onUpgrade(DatabaseHelper.java:281)
+... 16 more
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.app.PendingIntent.cancel()' on a null object reference
+at org.gnucash.android.db.MigrationHelper.upgradeDbToVersion13(MigrationHelper.java:1471)
+Crash log:
+java.lang.RuntimeException: Unable to create application org.gnucash.android.app.GnuCashApplication: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4710)
+at android.app.ActivityThread.-wrap1(ActivityThread.java)
+at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1405)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:148)
+at android.app.ActivityThread.main(ActivityThread.java:5417)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+at org.gnucash.android.db.DatabaseHelper.onUpgrade(DatabaseHelper.java:298)
+at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:256)
+at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:163)
+at org.gnucash.android.db.BookDbHelper.onCreate(BookDbHelper.java:82)
+at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:251)
+at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:163)
+at org.gnucash.android.app.GnuCashApplication.onCreate(GnuCashApplication.java:127)
+at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1013)
+at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4707)
+... 8 more
+Caused by: java.lang.reflect.InvocationTargetException
+at java.lang.reflect.Method.invoke(Native Method)
+at org.gnucash.android.db.DatabaseHelper.onUpgrade(DatabaseHelper.java:281)
+... 16 more
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.app.PendingIntent.cancel()' on a null object reference
+at org.gnucash.android.db.MigrationHelper.upgradeDbToVersion13(MigrationHelper.java:1471)

@@ -1,0 +1,8 @@
+title:Multicurrency in charts
+
+I have multiple currencies in my book. In line chart and bar chart, only the absolute value is taken into account, making the whole graph less useful. The income and expense in JPY has great value, making my income in other periods (which are in other currencies) shown very small, and not very clear.
+Without  exchange rate, can I choose which currency to be shown on certain chart?
+I have this in plan, it's gonna take a while.
+I have this in plan, it's gonna take a while.
+Fixed in a59632e
+Fixed in a59632e

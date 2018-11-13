@@ -1,0 +1,5 @@
+title:Add Transaction journal
+
+Journal accounting allows viewing all transactions in the database by date of entry
+Much needed, recents showing accounts only rather than transactions is unintuitive and more time-consuming
+Much needed, recents showing accounts only rather than transactions is unintuitive and more time-consuming

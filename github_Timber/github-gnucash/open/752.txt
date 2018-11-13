@@ -1,0 +1,3 @@
+title:Include Transaction Number in transactions
+
+Please include Transaction Number in New Transaction Window / Preserve Transaction Time on exported file. I am using Gnucash Desktop on my laptop & Gnucash on Android phone. The Exported XML File (Contains whole accounts and transactions for a day - seperate book is used for each day) from Gnucash Android is open in Gnucash Desktop - Then export the transactions to a file - which is imported to Gnucash Desktop. I want to order my transactions on my Gnucash Desktop ( Transactions are entered on Gnucash Android randomly - but i can't sort the transactions in Gnucash Android by arranging transaction times).

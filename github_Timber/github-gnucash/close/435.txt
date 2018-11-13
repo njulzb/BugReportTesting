@@ -1,0 +1,132 @@
+title:Publishing on F-Droid
+
+Hi!
+There is a problem to get latest version of GnuCash for users who haven't use Google Play for some reasons.
+So i ask you to submit GnuCash to F-Droid - "an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform".
+For projects such as GnuCash F-Droid this is the place where they should be.
+F-Droid builds their own version of GnuCash Android from the source.
+I've been in touch with them about recent versions and it seems they were having some issues building the recent versions because their build system doesn't work well with Gradle generated artifacts like the version number (IIRC). If it were just about submitting an app, I would have done so.
+So unless someone comes along to customize for their build system or they get the time to do it, there won't be any updates there. Sorry
+On 24.11.2015, at 07:34, omgiafs notifications@github.com wrote:
+Hi!
+There is a problem to get latest version of GnuCash for users who haven't use Google Play for some reasons.
+So i ask you to submit GnuCash to F-Droid - "an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform".
+For projects such as GnuCash F-Droid this is the place where they should be.
+—
+Reply to this email directly or view it on GitHub.
+F-Droid builds their own version of GnuCash Android from the source.
+I've been in touch with them about recent versions and it seems they were having some issues building the recent versions because their build system doesn't work well with Gradle generated artifacts like the version number (IIRC). If it were just about submitting an app, I would have done so.
+So unless someone comes along to customize for their build system or they get the time to do it, there won't be any updates there. Sorry
+On 24.11.2015, at 07:34, omgiafs notifications@github.com wrote:
+Hi!
+There is a problem to get latest version of GnuCash for users who haven't use Google Play for some reasons.
+So i ask you to submit GnuCash to F-Droid - "an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform".
+For projects such as GnuCash F-Droid this is the place where they should be.
+—
+Reply to this email directly or view it on GitHub.
+The version code is just an inconvenience, not an issue keeping the app out of date in F-Droid.
+The use of non-free libs like dropbox and crashlytics are the problem. We cannot build an app that isn't free software to begin with.
+The version code is just an inconvenience, not an issue keeping the app out of date in F-Droid.
+The use of non-free libs like dropbox and crashlytics are the problem. We cannot build an app that isn't free software to begin with.
+@mvdan thanks for that clarification.
+@omgiafs Given that many thousand users are using the DropBox integration, I guess that means GnuCash Android won't be returning to F-Droid soon, unfortunately.
+@mvdan thanks for that clarification.
+@omgiafs Given that many thousand users are using the DropBox integration, I guess that means GnuCash Android won't be returning to F-Droid soon, unfortunately.
+Not really. You could offer two gradle flavours, one like what you ship now and another that is actually free software. You could continue to offer the first one on Google Play or anywhere else.
+Not really. You could offer two gradle flavours, one like what you ship now and another that is actually free software. You could continue to offer the first one on Google Play or anywhere else.
+@codinguser can you be persuaded to do what @mvdan suggested?
+@codinguser can you be persuaded to do what @mvdan suggested?
+Unfortunately not, I'm afraid.
+We use Dropbox library for sync as well as the Google play services for
+Google Drive sync. Then there is Crashlytics which is used almost
+everywhere a problem could occur. This aids a lot in fixing bugs. The
+feature roadmap also potentially includes more "non-free" libraries.
+That's a lot of code that would need modification to check for the F-Droid
+version and do something else, as well as new unit and integration tests
+due to the increasing number of bugs as a result. Providing support would
+also take its toll as a consequence.
+I don't have the time nor do we have the resources for that. I therefore do
+not think it is plausible to make a version only for F-Droid. Hence, we
+cannot distribute future versions there, unfortunately.
+I take solace in the fact that there is at least still a version available
+on F-Droid which can be used for tracking expenses and exporting them.
+On Jan 18, 2016 16:26, "dvarum12" notifications@github.com wrote:
+@codinguser https://github.com/codinguser can you be persuaded to do
+what @mvdan https://github.com/mvdan suggested?
+—
+Reply to this email directly or view it on GitHub
+#435 (comment)
+.
+Unfortunately not, I'm afraid.
+We use Dropbox library for sync as well as the Google play services for
+Google Drive sync. Then there is Crashlytics which is used almost
+everywhere a problem could occur. This aids a lot in fixing bugs. The
+feature roadmap also potentially includes more "non-free" libraries.
+That's a lot of code that would need modification to check for the F-Droid
+version and do something else, as well as new unit and integration tests
+due to the increasing number of bugs as a result. Providing support would
+also take its toll as a consequence.
+I don't have the time nor do we have the resources for that. I therefore do
+not think it is plausible to make a version only for F-Droid. Hence, we
+cannot distribute future versions there, unfortunately.
+I take solace in the fact that there is at least still a version available
+on F-Droid which can be used for tracking expenses and exporting them.
+On Jan 18, 2016 16:26, "dvarum12" notifications@github.com wrote:
+@codinguser https://github.com/codinguser can you be persuaded to do
+what @mvdan https://github.com/mvdan suggested?
+—
+Reply to this email directly or view it on GitHub
+#435 (comment)
+.
+Okay. I'll be marking this app as "now non-free, can't update" on F-Droid then.
+Okay. I'll be marking this app as "now non-free, can't update" on F-Droid then.
+BTW, this applies to our repo, since our inclusion policy says only free software apps. But you could set up your own F-Droid repo, like e.g. oeffi does: http://oeffi.schildbach.de/download.html
+BTW, this applies to our repo, since our inclusion policy says only free software apps. But you could set up your own F-Droid repo, like e.g. oeffi does: http://oeffi.schildbach.de/download.html
+The repo thing sounds like an interesting alternative, thanks.
+Current F-Droid users won't still be able to update, they would have to add
+the repo URL and then do fresh install right?
+(sorry if it's an obvious question, but I'm not familiar with the F-Droid
+client)
+On Tue, Jan 19, 2016 at 12:31 PM, Daniel Martí notifications@github.com
+wrote:
+BTW, this applies to our repo, since our inclusion policy says only free
+software apps. But you could set up your own F-Droid repo, like e.g. oeffi
+does: http://oeffi.schildbach.de/download.html
+—
+Reply to this email directly or view it on GitHub
+#435 (comment)
+.
+The repo thing sounds like an interesting alternative, thanks.
+Current F-Droid users won't still be able to update, they would have to add
+the repo URL and then do fresh install right?
+(sorry if it's an obvious question, but I'm not familiar with the F-Droid
+client)
+On Tue, Jan 19, 2016 at 12:31 PM, Daniel Martí notifications@github.com
+wrote:
+BTW, this applies to our repo, since our inclusion policy says only free
+software apps. But you could set up your own F-Droid repo, like e.g. oeffi
+does: http://oeffi.schildbach.de/download.html
+—
+Reply to this email directly or view it on GitHub
+#435 (comment)
+.
+The signatures are different, so no. They'd have to reinstall as if they were switching to your Google Play apks.
+The signatures are different, so no. They'd have to reinstall as if they were switching to your Google Play apks.
+I'd be totally willing to reinstall if it meant that I could get updated versions.
+With regards to Google Play Services, there is a lot of work being done currently to try and address that on gapps-free/floss-only devices: https://github.com/microg/android_packages_apps_GmsCore/
+In other words, despite depending on Google Play Services, it's still realistically possible that a non-gapps device could run and use GNUCash for Android.
+I, for one, would love a separate F-droid repo for GNUCash.
+I'd be totally willing to reinstall if it meant that I could get updated versions.
+With regards to Google Play Services, there is a lot of work being done currently to try and address that on gapps-free/floss-only devices: https://github.com/microg/android_packages_apps_GmsCore/
+In other words, despite depending on Google Play Services, it's still realistically possible that a non-gapps device could run and use GNUCash for Android.
+I, for one, would love a separate F-droid repo for GNUCash.
+I for one don't care for nonfree 2.x  versions (but it does not seem right to be using GNU name then!),  but would like to keep installing last free 1.x series from f-droid (as it contains all the features I need).
+Would it be possible that 1.x remain in f-droid repo (it is completely removed and unavailable right now)?
+I for one don't care for nonfree 2.x  versions (but it does not seem right to be using GNU name then!),  but would like to keep installing last free 1.x series from f-droid (as it contains all the features I need).
+Would it be possible that 1.x remain in f-droid repo (it is completely removed and unavailable right now)?
+MyExpenses can apparently export to GnuCash Desktop, but I haven't tried it. Otherwise, the old GnuCash version is available in the archive F-Droid repo. Add that repo (https://f-droid.org/archive/), install GnuCash, and disable the repo (that way it doesn't add noise to the available version lists for other apps and it will not add to data usage when updating repos).
+MyExpenses can apparently export to GnuCash Desktop, but I haven't tried it. Otherwise, the old GnuCash version is available in the archive F-Droid repo. Add that repo (https://f-droid.org/archive/), install GnuCash, and disable the repo (that way it doesn't add noise to the available version lists for other apps and it will not add to data usage when updating repos).
+Indeed, we usually just move deliberately obsolete apps to the archive.
+Indeed, we usually just move deliberately obsolete apps to the archive.
+thanks, f-droid.org/archive works fine
+thanks, f-droid.org/archive works fine

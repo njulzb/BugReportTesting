@@ -1,0 +1,154 @@
+title:NumberFormatException with big amount transaction
+
+codinguser
+Hi,
+I was trying the Alpha 2 and crash occurs when I entered a new transaction with 1047,00 €. The amount is not that important but it seem to produce overflow or something like this.
+Here the call stack :
+08-08 17:29:38.863 E/AndroidRuntime( 5046): FATAL EXCEPTION: main
+08-08 17:29:38.863 E/AndroidRuntime( 5046): java.lang.NumberFormatException: -1 04700
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at java.lang.Long.parse(Long.java:364)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at java.lang.Long.parseLong(Long.java:354)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at java.lang.Long.parseLong(Long.java:320)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at java.math.BigDecimal.(BigDecimal.java:387)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at java.math.BigDecimal.(BigDecimal.java:483)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at org.gnucash.android.ui.transactions.NewTransactionFragment.saveNewTransaction(NewTransactionFragment.java:288)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at org.gnucash.android.ui.transactions.NewTransactionFragment.onOptionsItemSelected(NewTransactionFragment.java:348)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at android.support.v4.app._ActionBarSherlockTrojanHorse.onMenuItemSelected(_ActionBarSherlockTrojanHorse.java:127)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at com.actionbarsherlock.ActionBarSherlock.callbackOptionsItemSelected(ActionBarSherlock.java:600)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at com.actionbarsherlock.internal.ActionBarSherlockCompat.onMenuItemSelected(ActionBarSherlockCompat.java:533)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at com.actionbarsherlock.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:738)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at com.actionbarsherlock.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:148)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at com.actionbarsherlock.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:879)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at com.actionbarsherlock.internal.view.menu.ActionMenuView.invokeItem(ActionMenuView.java:510)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at com.actionbarsherlock.internal.view.menu.ActionMenuItemView.onClick(ActionMenuItemView.java:145)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at android.view.View.performClick(View.java:2461)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at android.view.View$PerformClick.run(View.java:8890)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at android.os.Handler.handleCallback(Handler.java:587)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at android.os.Handler.dispatchMessage(Handler.java:92)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at android.os.Looper.loop(Looper.java:123)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at android.app.ActivityThread.main(ActivityThread.java:4627)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at java.lang.reflect.Method.invokeNative(Native Method)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at java.lang.reflect.Method.invoke(Method.java:521)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:858)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+08-08 17:29:38.863 E/AndroidRuntime( 5046):     at dalvik.system.NativeStart.main(Native Method)
+Also I runned it on Froyo (2.2).
+Thanks
+Thanks for the report and the log. I have however not been able to replicate the bug. The only way I can currently get it to crash is if I input a minus (-) as the very first input in the amount field. I am working on a fix for this. Maybe you hit the minus key by error? Can you please verify whether the crash happens when you actually press a number key?
+Thanks for the report and the log. I have however not been able to replicate the bug. The only way I can currently get it to crash is if I input a minus (-) as the very first input in the amount field. I am working on a fix for this. Maybe you hit the minus key by error? Can you please verify whether the crash happens when you actually press a number key?
+Just pushed a commit. Sync your repo and let me know if this is fixed for you. Thanks
+Just pushed a commit. Sync your repo and let me know if this is fixed for you. Thanks
+After pulling, setup ant and test here the result : I can't add anymore debit transaction.
+When I enter a debit transaction, when I apply it, it is automatically transformed in credit.
+Anyway, large number no more cause crash.
+After pulling, setup ant and test here the result : I can't add anymore debit transaction.
+When I enter a debit transaction, when I apply it, it is automatically transformed in credit.
+Anyway, large number no more cause crash.
+Can you please provide me with some additional information?
+What hardware are you using?
+What locale are you using?
+I am guessing you are running Android 2.2?
+Can you please provide me with some additional information?
+What hardware are you using?
+What locale are you using?
+I am guessing you are running Android 2.2?
+Samsung Galaxy Teos GT I5800 - Android 2.2 - Local FR - EUR (euros)
+Here is a drop from the DB :
+root@android:/data/data/org.gnucash.android/databases # ls
+gnucash_db
+gnucash_db-journal
+gnucash_db                                                                   <
+SQLite version 3.7.4
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite> .tables
+accounts          android_metadata  transactions
+sqlite> select * from transactions;
+1|e79b2549-5da0-49f7-8a3b-59f0fd5eab47|Vir|DEBIT|18.86||1344515834000|test-1abe3040170e|0
+sqlite> select * from transactions;
+1|e79b2549-5da0-49f7-8a3b-59f0fd5eab47|Vir|DEBIT|18.86||1344515861000|test-1abe3040170e|0
+sqlite> select * from transactions;
+1|e79b2549-5da0-49f7-8a3b-59f0fd5eab47|Vir|DEBIT|18.86||1344515861000|test-1abe3040170e|0
+sqlite> select * from transactions;
+1|e79b2549-5da0-49f7-8a3b-59f0fd5eab47|Vir|DEBIT|18.86||1344515861000|test-1abe3040170e|0
+sqlite> select * from accounts;
+1|test-1abe3040170e|Test|CHECKING|EUR
+sqlite>
+Multiple select from transaction table while I was editing an existing transaction in account. I have first entered it as Debit, but it is displayed as Credit when you look at your account.
+Here is what I have done :
+Also tested on ICS, local US, acount in EUR, the behavior is the same.
+Hope it helps.
+Samsung Galaxy Teos GT I5800 - Android 2.2 - Local FR - EUR (euros)
+Here is a drop from the DB :
+root@android:/data/data/org.gnucash.android/databases # ls
+gnucash_db
+gnucash_db-journal
+gnucash_db                                                                   <
+SQLite version 3.7.4
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite> .tables
+accounts          android_metadata  transactions
+sqlite> select * from transactions;
+1|e79b2549-5da0-49f7-8a3b-59f0fd5eab47|Vir|DEBIT|18.86||1344515834000|test-1abe3040170e|0
+sqlite> select * from transactions;
+1|e79b2549-5da0-49f7-8a3b-59f0fd5eab47|Vir|DEBIT|18.86||1344515861000|test-1abe3040170e|0
+sqlite> select * from transactions;
+1|e79b2549-5da0-49f7-8a3b-59f0fd5eab47|Vir|DEBIT|18.86||1344515861000|test-1abe3040170e|0
+sqlite> select * from transactions;
+1|e79b2549-5da0-49f7-8a3b-59f0fd5eab47|Vir|DEBIT|18.86||1344515861000|test-1abe3040170e|0
+sqlite> select * from accounts;
+1|test-1abe3040170e|Test|CHECKING|EUR
+sqlite>
+Multiple select from transaction table while I was editing an existing transaction in account. I have first entered it as Debit, but it is displayed as Credit when you look at your account.
+Here is what I have done :
+Also tested on ICS, local US, acount in EUR, the behavior is the same.
+Hope it helps.
+Confirmed, I can now replicate this. Thank you for the detailed info. I am working on it.
+Confirmed, I can now replicate this. Thank you for the detailed info. I am working on it.
+Can you please sync your repo and try again. I think I fixed it this time.
+Can you please sync your repo and try again. I think I fixed it this time.
+Thanks, this is well working now !
+I really would like to contribute to this app, but i don't know how exactly for now. What about opening translation, or whatever you think as I have little Java/Android skills ?
+Thanks for your work.
+Thanks, this is well working now !
+I really would like to contribute to this app, but i don't know how exactly for now. What about opening translation, or whatever you think as I have little Java/Android skills ?
+Thanks for your work.
+Thanks for your interest in helping.
+For now, it is just bug fixing and code scrubbing and refactoring for the
+next 2-3 weeks.
+After that, translation will probably begin. What language can you
+translate to?
+The other potential area will be contributing tests to cover various
+scenarios. GnucashMobile uses Robotium for tests. So you could start
+looking into the framework in preparation for when contributions open.
+Thanks again.
+Cheers,
+On 10.08.2012, at 22:30, JeremR notifications@github.com wrote:
+Thanks, this is well working now !
+I really would like to contribute to this app, but i don't know how exactly
+for now. What about opening translation, or whatever you think as I have
+little Java/Android skills ?
+Thanks for your work.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/GnucashMobile/issues/8#issuecomment-7655751.
+Thanks for your interest in helping.
+For now, it is just bug fixing and code scrubbing and refactoring for the
+next 2-3 weeks.
+After that, translation will probably begin. What language can you
+translate to?
+The other potential area will be contributing tests to cover various
+scenarios. GnucashMobile uses Robotium for tests. So you could start
+looking into the framework in preparation for when contributions open.
+Thanks again.
+Cheers,
+On 10.08.2012, at 22:30, JeremR notifications@github.com wrote:
+Thanks, this is well working now !
+I really would like to contribute to this app, but i don't know how exactly
+for now. What about opening translation, or whatever you think as I have
+little Java/Android skills ?
+Thanks for your work.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/GnucashMobile/issues/8#issuecomment-7655751.

@@ -1,0 +1,28 @@
+title:Wrong amount display in transactions list view
+
+codinguser
+I just installed it and tried adding a income: 1.100,00€ turned 110.000,00€. In Edit Transaction it displays 1.100,00€ but in accounts etc. it shows 110.000,00€
+I can confirm this. Maybe it is a comma and dot issue.
+I can confirm this. Maybe it is a comma and dot issue.
+silentsilence can you please provide me with some more detail like your locale and which Android version you are using?
+silentsilence can you please provide me with some more detail like your locale and which Android version you are using?
+Sure,
+Android 2.3.4
+Kernel 2.6.35.11
+Locale pt_BR
+2012/8/19 Ngewi Fet notifications@github.com
+silentsilence can you please provide me with some more detail like your
+locale and which Android version you are using?
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/GnucashMobile/issues/9#issuecomment-7857032.
+Sure,
+Android 2.3.4
+Kernel 2.6.35.11
+Locale pt_BR
+2012/8/19 Ngewi Fet notifications@github.com
+silentsilence can you please provide me with some more detail like your
+locale and which Android version you are using?
+—
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/GnucashMobile/issues/9#issuecomment-7857032.
+This issue should be now fixed in master. Thanks for the info.
+This issue should be now fixed in master. Thanks for the info.

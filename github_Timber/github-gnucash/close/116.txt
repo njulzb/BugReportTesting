@@ -1,0 +1,8 @@
+title:"Next" button on keyboard does not work in transaction editor
+
+Steps to reproduce:
+Expected result:
+3. cursor switched into amount field
+Actual result:
+3. cursor remains in description field
+Previous software version does not have this bug.

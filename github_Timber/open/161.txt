@@ -1,0 +1,6 @@
+title:[IMPROVEMENT] Make Size of Cover-Images customizable in "Album View" and "Artist View"
+
+Now the album covers and the artists pictures are either very huge ("raster/thumbnail" view) or very tiny (in "list" view).
+Why not making the size of the covers customizable?
+Could be done by a slider to choose the preferred size or by at least some intermediate sizes available between "Raster/Thumbnail" and "List".
+This would enhence the overview over the music collection much better and wouldn't waste a huge 5" display by just displaying 4 covers at one screen.

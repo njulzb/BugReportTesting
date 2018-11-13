@@ -1,0 +1,16 @@
+Login auto-complete is unreadable
+Star button for gist
+Crash in Froyo when opening an issue
+App crashes on certain repo issues
+Can't close issues I opened on repos I don't own
+Cannot auth with 2-fa
+User avatars aren't being shown when searching issues
+When searching for users avatars aren't being loaded
+Labels are not shown in pull requests
+Properly show all issue events
+Search results are duplicated
+UserUrlMatcher is too greedy
+Scale down avatar images to save memory
+Issues are not appearing
+Fix code highlighting for C files and C++ headers.
+Fix encoding in the source viewer

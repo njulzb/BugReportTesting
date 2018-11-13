@@ -1,0 +1,2 @@
+title:Add option for switching off vibrations on Calculator keyboard
+

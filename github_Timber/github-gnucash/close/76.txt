@@ -1,0 +1,6 @@
+title:Display error when selecting multiple transactions
+
+codinguser
+When selecting multiple transactions in an account, for example the first three, other transactions are automatically selected as well. After clicking "delete", only some of them are removed.
+Fixed in 2f54bc3
+Fixed in 2f54bc3

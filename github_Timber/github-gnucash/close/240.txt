@@ -1,0 +1,5 @@
+title:Name of days in transaction list
+
+codinguser
+Currently, header of transaction list for particular day has the following format: Month Day, Year, e.g October 3, 2014.
+Maybe it should also contain name of the day, for example: October 3, 2014 (Fri). There are enough space for this, even on very small devices.

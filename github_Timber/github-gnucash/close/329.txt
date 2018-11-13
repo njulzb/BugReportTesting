@@ -1,0 +1,9 @@
+title:Feature: Set Default Transfer Account to sub-accounts
+
+I would like to have an ability to set the default transfer account to all sub-accounts of currently edited account.
+@codinguser hi, is the feature of default transfer accounts also available in the desktop gnucash?
+@codinguser hi, is the feature of default transfer accounts also available in the desktop gnucash?
+@vovcacik I do not know for certain as I am not very involved in dev of the desktop version.
+But my guess is no. It is necessary here because it speeds up transaction entry. On the desktop, you can just type the account name and it autocompletes it for you. The Android version lacks that!
+@vovcacik I do not know for certain as I am not very involved in dev of the desktop version.
+But my guess is no. It is necessary here because it speeds up transaction entry. On the desktop, you can just type the account name and it autocompletes it for you. The Android version lacks that!

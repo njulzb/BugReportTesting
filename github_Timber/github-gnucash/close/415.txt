@@ -1,0 +1,22 @@
+title:Unable to Sync with Google Drive
+
+I may just be doing it wrong, but I figured I'd ask here.
+I currently am using both the Desktop version and decided to use the Android version as well today. My current book is stored in XML. I copied my gnucash data to a folder on Google Drive, and I've verified that it is syncing between devices. I can open it on the Android app just fine, and add additional transactions, but those transactions aren't reflected when I open it on the Desktop version. I have enabled Google Drive Sync in the Backup Preferences menu, and allowed it to run on my Google account. I have set the Default Export Format to XML, and have enabled Export all transactions.
+When I make a change or add a transaction, I see it reflected in the application. It does not seem to automatically sync. If I select the Export option in the Transactions section of the menu and select Google Drive as the Export Destination, I see that it has connected to Google, and it says Exported to: Google Drive -> GnuCash. However, I don't see any new or modified files in my Google Drive folder after syncing, and opening.
+When I try to export to the SD card, I can't find any files added or removed that deal with GnuCash.
+The Android version doesn't support working with the database of the desktop version directly.
+Usually, you import your .gnucash from the desktop version into the Android one, so you have the same accounts in both applications.
+Then you add transactions in the Android version as you go. From time to time, you'll export the transactions (Menu - Transactions > Export...). In your case, to Google Drive. There you should find a file named like this: `20151023_113209_gnucash_export_EUR.qif''.
+Finally, you import this file into the desktop version to get the transactions introduced from the android version (File > Import > Import QIF...).
+If you can't find the exported file in Google Drive, it may be due to a bug or some other problem. Which version of GnuCash are you using (Menu > Settings > About)?
+The Android version doesn't support working with the database of the desktop version directly.
+Usually, you import your .gnucash from the desktop version into the Android one, so you have the same accounts in both applications.
+Then you add transactions in the Android version as you go. From time to time, you'll export the transactions (Menu - Transactions > Export...). In your case, to Google Drive. There you should find a file named like this: `20151023_113209_gnucash_export_EUR.qif''.
+Finally, you import this file into the desktop version to get the transactions introduced from the android version (File > Import > Import QIF...).
+If you can't find the exported file in Google Drive, it may be due to a bug or some other problem. Which version of GnuCash are you using (Menu > Settings > About)?
+@Zymus when you enable Sync in the settings, it's more like just authorizing.
+To actually have the files exported on schedule, you need to export your transactions and set a recurring schedule in the dialog.
+Also, the file exported will not be where the original file was saved on Google Drive, but rather in a GnuCash folder in Google Drive.
+@Zymus when you enable Sync in the settings, it's more like just authorizing.
+To actually have the files exported on schedule, you need to export your transactions and set a recurring schedule in the dialog.
+Also, the file exported will not be where the original file was saved on Google Drive, but rather in a GnuCash folder in Google Drive.

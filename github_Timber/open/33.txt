@@ -1,0 +1,11 @@
+title:Enhancement: option to read album cover directly from tags
+
+Android is compressing album art in an awful way. In most music apps this option slows down the players, but I prefer having full res covers
+Can you be more specific about what "tags" you are talking about? Thank you.
+Can you be more specific about what "tags" you are talking about? Thank you.
+I'm talking about album art image stored in the audio ID3 tags.
+I'm talking about album art image stored in the audio ID3 tags.
++1 on this. What @Siphonay refers to are the regular tags that most music players use, see METADATA_BLOCK_PICTURE https://xiph.org/flac/format.html#metadata_block_picture
+I'm not sure where TImber finds its album-art right now. I'm using ogg-files from my own cd's, ripped and autotagged using rubyripper. Other players read the tags just fine but Timber does not find any album art.
++1 on this. What @Siphonay refers to are the regular tags that most music players use, see METADATA_BLOCK_PICTURE https://xiph.org/flac/format.html#metadata_block_picture
+I'm not sure where TImber finds its album-art right now. I'm using ogg-files from my own cd's, ripped and autotagged using rubyripper. Other players read the tags just fine but Timber does not find any album art.

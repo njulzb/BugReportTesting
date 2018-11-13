@@ -1,0 +1,8 @@
+title:android version 7.0 leads to crash ?
+
+This seems to be fixed in v2.1.4
+This seems to be fixed in v2.1.4
+Awesome, then I'll close this issue.
+Feel free to reopen if you notice it again.
+Awesome, then I'll close this issue.
+Feel free to reopen if you notice it again.

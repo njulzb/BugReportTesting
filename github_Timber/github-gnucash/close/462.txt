@@ -1,0 +1,4 @@
+title:Wrong balance in editor for split transactions when working with Liabilities
+
+There is a sign error for the balance of of the editor for split transactions, when making a transactions that has one part going to an Expense account and another to a Liabilities account.
+Normally, the split itself should have a zero balance, but when one of the splits goes to a Liability this split is not taken with the correct sign, so when balancing the total, one gets an additional split that goes to Imbalance. Correctly balancing the split by hand the does not get a correct total shown in the editor. The resulting transactions are correct, though.

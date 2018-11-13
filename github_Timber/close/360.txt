@@ -1,0 +1,10 @@
+title:Folder Function (321) Crashes with Large Music Directories.
+
+(Moved to Issues)
+Hi there! I'm new to (coding) Android apps, but have a long history as a FW developer and manager. I stumbled across Timber, downloaded the source, built it, and downloaded it to my Samsung Active S7. I'm a long time user of Power Amp, and a recent user of Rocket Player as PowerAmp doesn't support Android Auto and Rocket Player does. As does Timber, according to the specs.
+This folder feature is definitely key for me. I have two folders to pick up: a Music folder on my uSD card and a Playlists folder. I have been able to get to the Folders menu, and select the Music one, but the app crashes shortly after I select it. A crash log is attached. I am not yet familiar enough with the Android debugger to chase this down myself, but will start trying.
+I was more able than I thought. The crash reports gives an error that there are too many open files. I'm pretty sure it's the routine below that causes it. I'm not that skilled in Java, but I think the problem is that, when assembling a file list for the chosen parent folder, it opens each child folder as a file, and creates an array of the handles (or similar). I have 35 GB of music, so a lot of folders. I'm guessing you'd need to save the directory name in an array, but close each file after you figure out if it's a directory or not. I don't know the syntax to do that just yet.
+public class FolderChooserDialog extends DialogFragment implements MaterialDialog.ListCallback
+.......
+Thanks for making this open source!
+Timber Folder Crash.txt

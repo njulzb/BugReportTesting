@@ -1,0 +1,5 @@
+title:Posting transactions against accounts which have subaccounts shouldn't be allowed.
+
+No description provided.
+This is not accurate. There are accounts which have sub-accounts but still allowed to have own transactions. What is not possible is creating transactions in accounts which are marked as placeholder accounts.
+This is not accurate. There are accounts which have sub-accounts but still allowed to have own transactions. What is not possible is creating transactions in accounts which are marked as placeholder accounts.

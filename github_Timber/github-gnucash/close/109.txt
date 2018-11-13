@@ -1,0 +1,12 @@
+title:Auto-complete for description
+
+codinguser
+Would be nice to copy the behavior of entry in desktop GNUcash, where the description auto-completes from previous transactions, and if an auto-complete result is chosen, the most recent transaction is copied into the current transaction.
+Implemented in 6eadaba
+Implemented in 6eadaba
+It's a start. However, when a completion is selected, desktop GNUcash copies the other fields from the most recent transaction having that description, and leaves it open for editing. It's a huge data-entry time saver and would be a useful addition to your app.
+It's a start. However, when a completion is selected, desktop GNUcash copies the other fields from the most recent transaction having that description, and leaves it open for editing. It's a huge data-entry time saver and would be a useful addition to your app.
+That would indeed also render #45 unnecessary. I'll look into it.
+That would indeed also render #45 unnecessary. I'll look into it.
+As mentioned privately already: Please don't copy the date&time from the loaded transaction. This is not what is helpful during entering a new transaction, which by definition almost always needs a new date&time.
+As mentioned privately already: Please don't copy the date&time from the loaded transaction. This is not what is helpful during entering a new transaction, which by definition almost always needs a new date&time.

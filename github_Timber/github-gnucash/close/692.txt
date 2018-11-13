@@ -1,0 +1,28 @@
+title:Add possibility to parse SMS from bank and show system notification message with proposal to insert new transaction
+
+This would mean having banks adopt the format to send SMS right?
+This would mean having banks adopt the format to send SMS right?
+In my oppinion possible solution here is to create some UI for user to be able to enter pattern of SMS. For example it can be regular expression or some more easier user-friendly language like
+Your transaction: * VISA/1234 {amount} USD Shop12345 *
+For such imaginary SMS:
+Your transaction: 2017-06-17 7:05:15 AM VISA/1234 45.50 USD Shop12345 balance 1234.56 USD
+Also user should be able to specify transaction details like all GnuCash accounts and amount for each account, possibly as percentage of amount from SMS.
+In my oppinion possible solution here is to create some UI for user to be able to enter pattern of SMS. For example it can be regular expression or some more easier user-friendly language like
+Your transaction: * VISA/1234 {amount} USD Shop12345 *
+For such imaginary SMS:
+Your transaction: 2017-06-17 7:05:15 AM VISA/1234 45.50 USD Shop12345 balance 1234.56 USD
+Also user should be able to specify transaction details like all GnuCash accounts and amount for each account, possibly as percentage of amount from SMS.
+@tshevchuk While this would be nice to have, I do not think it would be a worthwhile investment of the limited time we have.
+We would have to define a format, make it known so users can adapt it to their messages. Then come other challenges like how time is written differently in different places, etc. Just getting a format that works reliably everywhere would be huge effort for both us and users. I do not think it is worth it.
+If there was some standard SMS format, it would be "easier" to adopt.
+I'm sorry, but we cannot pursue this.
+Cheers,
+@tshevchuk While this would be nice to have, I do not think it would be a worthwhile investment of the limited time we have.
+We would have to define a format, make it known so users can adapt it to their messages. Then come other challenges like how time is written differently in different places, etc. Just getting a format that works reliably everywhere would be huge effort for both us and users. I do not think it is worth it.
+If there was some standard SMS format, it would be "easier" to adopt.
+I'm sorry, but we cannot pursue this.
+Cheers,
+@codinguser In relation to the "debit" display, I believe there is a standard, for example in the US the values are represented as $100.00 in Brazil would be R$100,00 (one uses another comma). We could use a pattern that would be two houses behind the comma or point if it's number is a value to be extracted.
+@codinguser In relation to the "debit" display, I believe there is a standard, for example in the US the values are represented as $100.00 in Brazil would be R$100,00 (one uses another comma). We could use a pattern that would be two houses behind the comma or point if it's number is a value to be extracted.
+@gutierri I'm sorry, but we won't be pursuing this feature at this time.
+@gutierri I'm sorry, but we won't be pursuing this feature at this time.

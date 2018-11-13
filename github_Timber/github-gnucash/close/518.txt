@@ -1,0 +1,6 @@
+title:Color of main account balance not consistent between app and widget
+
+My main account shows the net in green in the widget while it is red in the application. Shouldn't they be consistent?
+Account type: Cash
+Yes they should. This is an open bug that we should fix!
+Yes they should. This is an open bug that we should fix!

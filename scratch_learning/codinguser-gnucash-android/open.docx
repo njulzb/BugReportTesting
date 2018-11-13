@@ -1,0 +1,12 @@
+QIF Import error
+Memo not Saved Unless Three or More Splits
+GnuCash crashes when auto backup triggers
+Multi Split transaction between multiple currencies does not ask for exchange rates
+Sometimes modifications are not reflected in the account list
+Reconciliation Flag Erased when Copying XML from PC
+Not able to export to "Encrypt with OpenKeychain"
+multiple books - widget says that acount was deleted or shows "account name"
+Bug: scheduled transactions with multiple splits end up going to imbalance
+When using "XXX no currency" the accounts balances aren't calculated
+After use the small plus to add a new record this symbol is gone
+Can't restore from backup (previous issue #355) - Multiple ROOT accounts in backup

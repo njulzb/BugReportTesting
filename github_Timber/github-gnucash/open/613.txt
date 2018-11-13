@@ -1,0 +1,4 @@
+title:multiple books - widget says that acount was deleted or shows "account name"
+
+Widgets show the account name.
+Both effects are temporary. The last time I observed 1. it happend after I added a new transaction and GnuCash reported a crash. I sent the crash report and verified the transaction had been successfully safed. After editing one transaction of the account, the widget becomes usable again.

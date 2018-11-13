@@ -1,0 +1,10 @@
+title:Need ability to delete transactions
+
+GnuCash for Android does not appear to be able to delete a single transaction. Previously, the only way to delete a transaction was to edit it and make the amount 0. Since transaction editing is broken in 1.4.2 (see previous incident), that is not an option.
+Even after editing of transactions is fixed, it would be much better if a transaction could be deleted from the UI instead of being zeroed out.
+There is a checkbox before every transaction (well, it is very hard to see). Just check it and the delete button (a recycle bin) will appear on the upper right corner.
+UI should be improve to make it more clear.
+There is a checkbox before every transaction (well, it is very hard to see). Just check it and the delete button (a recycle bin) will appear on the upper right corner.
+UI should be improve to make it more clear.
+I see. Yes, the UI should be more clear. Having the ability to delete from the edit window would also be nice. Will close this. May enter a new enhancement request for UI improvement.
+I see. Yes, the UI should be more clear. Having the ability to delete from the edit window would also be nice. Will close this. May enter a new enhancement request for UI improvement.

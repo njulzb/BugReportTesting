@@ -1,0 +1,3 @@
+title:PLAYING MUSIC WHEN DOUBLE TAP
+
+When i double tap the picture or outside it, it plays/stops the music but the pause/play button doesnt change. i dont want this feature, how do i do?

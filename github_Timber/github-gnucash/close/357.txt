@@ -1,0 +1,191 @@
+title:Export destination is always "SD Card"
+
+codinguser
+Expected result:
+Actual results:
+same issue here
+same issue here
+I'm not able to replicate this so far.
+What Android version are you running?
+I'm not able to replicate this so far.
+What Android version are you running?
+On Tue, 18 Aug 2015 00:47:31 -0700
+Ngewi Fet notifications@github.com wrote:
+I'm not able to replicate this so far.
+What Android version are you running?
+Android 2.3.6
+Alexander Galanin
+On Tue, 18 Aug 2015 00:47:31 -0700
+Ngewi Fet notifications@github.com wrote:
+I'm not able to replicate this so far.
+What Android version are you running?
+Android 2.3.6
+Alexander Galanin
+Android 5.0.2
+The problem did not occur prior to the two last updates (before 1.5.0?)
+I will post a log trace when I can find the time.
+Android 5.0.2
+The problem did not occur prior to the two last updates (before 1.5.0?)
+I will post a log trace when I can find the time.
+Same here on CyanogenMod 11 (Android 4.4.4) with gnucash from f-droid. Last export that worked for me was on 07 July, first that didn't on 17 July (don't know the gnucash versions, sry).
+Same here on CyanogenMod 11 (Android 4.4.4) with gnucash from f-droid. Last export that worked for me was on 07 July, first that didn't on 17 July (don't know the gnucash versions, sry).
+Same here on Android 4.2.2 (Fairphone OS). Pretty sure it's broken for me since version 1.6.1.
+Same here on Android 4.2.2 (Fairphone OS). Pretty sure it's broken for me since version 1.6.1.
+I am unable to export transactions via E-mail in version 2.0.0-beta1 too:
+I am unable to export transactions via E-mail in version 2.0.0-beta1 too:
+Thanks for the reports @nodje @floriankisser @lennartS @agalanin
+Could you also let me know what your device locale is set to?
+Thanks for the reports @nodje @floriankisser @lennartS @agalanin
+Could you also let me know what your device locale is set to?
+Under „Language & input“ English is set as Language. If you mean a different locale setting, please let me know how to find it and I'll happily supply it.
+Under „Language & input“ English is set as Language. If you mean a different locale setting, please let me know how to find it and I'll happily supply it.
+de_at. Android 5.1.1 works neither.
+de_at. Android 5.1.1 works neither.
+no, that's the one. Thanks
+On Sun, Oct 4, 2015 at 12:52 AM, lennartS notifications@github.com wrote:
+Under „Language & input“ English is set as Language. If you mean a
+different locale setting, please let me know how to find it and I'll
+happily supply it.
+—
+Reply to this email directly or view it on GitHub
+#357 (comment)
+.
+no, that's the one. Thanks
+On Sun, Oct 4, 2015 at 12:52 AM, lennartS notifications@github.com wrote:
+Under „Language & input“ English is set as Language. If you mean a
+different locale setting, please let me know how to find it and I'll
+happily supply it.
+—
+Reply to this email directly or view it on GitHub
+#357 (comment)
+.
+Problem is reproducible with both Russian and English (US) locales.
+Problem is reproducible with both Russian and English (US) locales.
+Please send me more details about your device, Android version, rooted or
+not, etc.
+I'm trying to find what the common denominator is for the devices where it
+doesn't work.
+On my device, I get the toast "Exported to external service" and then the
+list of apps opens to choose from.
+On Sunday, 4 October 2015, Alexander Galanin notifications@github.com
+wrote:
+Problem is reproducible with both Russian and English (US) locales.
+—
+Reply to this email directly or view it on GitHub
+#357 (comment)
+.
+Please send me more details about your device, Android version, rooted or
+not, etc.
+I'm trying to find what the common denominator is for the devices where it
+doesn't work.
+On my device, I get the toast "Exported to external service" and then the
+list of apps opens to choose from.
+On Sunday, 4 October 2015, Alexander Galanin notifications@github.com
+wrote:
+Problem is reproducible with both Russian and English (US) locales.
+—
+Reply to this email directly or view it on GitHub
+#357 (comment)
+.
+On Mon, 05 Oct 2015 00:30:39 -0700
+Ngewi Fet notifications@github.com wrote:
+Please send me more details about your device, Android version, rooted or
+not, etc.
+Android 2.3.6, Samsung GT-S6102, rooted
+Alexander Galanin
+On Mon, 05 Oct 2015 00:30:39 -0700
+Ngewi Fet notifications@github.com wrote:
+Please send me more details about your device, Android version, rooted or
+not, etc.
+Android 2.3.6, Samsung GT-S6102, rooted
+Alexander Galanin
+Same here. Gnucash version 1.6.3 installed from F-Droid. Version 1.6.1 does not work too.
+Samsung Galaxy S2, Android 4.2.2, Cyanogen mod
+Export to other sources (for example Owncloud) worked in older versions of Gnucash (maybe 1.5.*, but I'm not sure, and they are absent at F-Droid, so I cannot check which one works).
+Same here. Gnucash version 1.6.3 installed from F-Droid. Version 1.6.1 does not work too.
+Samsung Galaxy S2, Android 4.2.2, Cyanogen mod
+Export to other sources (for example Owncloud) worked in older versions of Gnucash (maybe 1.5.*, but I'm not sure, and they are absent at F-Droid, so I cannot check which one works).
+ok, so far, the thing in common I see is Android devices with custom images (either rooted or Cyanogen).
+@lennartS @floriankisser @nodje what about your devices?
+ok, so far, the thing in common I see is Android devices with custom images (either rooted or Cyanogen).
+@lennartS @floriankisser @nodje what about your devices?
+Moto G 2013 xt1032, rooted, was on cyanogenmod 11 at first occurence and didn't update for a long time before that. Now I'm on cyanogenmod 12.1. Mail client that should open is k-9 mail btw.
+Moto G 2013 xt1032, rooted, was on cyanogenmod 11 at first occurence and didn't update for a long time before that. Now I'm on cyanogenmod 12.1. Mail client that should open is k-9 mail btw.
+Export to other sources (for example Owncloud) worked in older versions of Gnucash (maybe 1.5.*, but I'm not sure, and they are absent at F-Droid, so I cannot check which one worked).
+Try to add F-Droid archive repository ( https://f-droid.org/archive ).
+Alexander Galanin
+Export to other sources (for example Owncloud) worked in older versions of Gnucash (maybe 1.5.*, but I'm not sure, and they are absent at F-Droid, so I cannot check which one worked).
+Try to add F-Droid archive repository ( https://f-droid.org/archive ).
+Alexander Galanin
+"Send file" works in old Gnucash version 1.5.5 from F-Droid archive repository. So something have been broken since that version.
+One difference I have noticed between these two versions, is that default export option in version 1.5.5 is "Send file", but in version 1.6.3 is "SD Card". So it is possible that interface of changing this option in new versions  just does not work.
+PS: I also tried Gnucash version 1.6.3 on Android 5.1.1 Lollipop, Cyanogen mod, and this feature fails to work too.
+"Send file" works in old Gnucash version 1.5.5 from F-Droid archive repository. So something have been broken since that version.
+One difference I have noticed between these two versions, is that default export option in version 1.5.5 is "Send file", but in version 1.6.3 is "SD Card". So it is possible that interface of changing this option in new versions  just does not work.
+PS: I also tried Gnucash version 1.6.3 on Android 5.1.1 Lollipop, Cyanogen mod, and this feature fails to work too.
+@codinguser I use FairPhone OS on a rooted device. GnuCash is installed via f-droid with K-9 mail as intended export target.
+@codinguser I use FairPhone OS on a rooted device. GnuCash is installed via f-droid with K-9 mail as intended export target.
+It works in current Beta.
+It works in current Beta.
+On Sat, 10 Oct 2015 06:49:22 -0700
+alpha-and-omega notifications@github.com wrote:
+It works in Beta. I think you guys just should wait for an update.
+Doesn't work for me in version 2.0.0-beta3.
+On Sat, 10 Oct 2015 06:49:22 -0700
+alpha-and-omega notifications@github.com wrote:
+It works in Beta. I think you guys just should wait for an update.
+Doesn't work for me in version 2.0.0-beta3.
+This issue is not consistently reproducible.
+Also I don't have a rooted or Cyanogen device to test, so it is difficult to pinpoint the problem.
+But I'll keep looking
+This issue is not consistently reproducible.
+Also I don't have a rooted or Cyanogen device to test, so it is difficult to pinpoint the problem.
+But I'll keep looking
+@codinguser I can install a debug version next to the real thing if I choose a different certificate, right? I might be able to install a debug version and look for the cause of this bug, if you give me some pointers where to start.
+@codinguser I can install a debug version next to the real thing if I choose a different certificate, right? I might be able to install a debug version and look for the cause of this bug, if you give me some pointers where to start.
+@lennartS if you checkout the code and run gradle iDD you will install a development version on your device. Your existing data will not be affected.
+See the README for more detailed instructions
+@lennartS if you checkout the code and run gradle iDD you will install a development version on your device. Your existing data will not be affected.
+See the README for more detailed instructions
+I'm not sure, but I may having the same issue. In my case, however, the device isn't rooted and nothing gets writen to the SD card.
+I've been debugging trying to figure out what is going on. I'll try to explain.  Sorry, if it's a bit disperse.
+What I'm seeing is that ExportAsyncTask.copyExportToSDCard() creates two files:
+dst path is supposed to point to the SD card, however it's actually writing to the internal storage. Nevertheless, I think it shouldn't be a problem, just curious.
+Next copyFile(src, dst) is called, which in turn calls splitQIF(src, dst). The latter creates 20151019_200858_gnucash_export_EUR.qif in the export directory
+(dst), but the list of files it returns is ignored.
+Then, back at ExportAsyncTask, it calls shareFile(), but with output=dst as path instead of the one ended in "_EUR.qif" created by splitQIF(). As a consequence, shareFile() fails to open it:
+I haven't looked further into it, but I'd say the problem is the reuse of copyExportToSDCard(). Both copyExportToSDCard() and shareFile() call splitQIF(), but the latter is expecting the unsplited file.
+My device is a bq Aquaris E4 with Android 5.0.
+I'm not sure, but I may having the same issue. In my case, however, the device isn't rooted and nothing gets writen to the SD card.
+I've been debugging trying to figure out what is going on. I'll try to explain.  Sorry, if it's a bit disperse.
+What I'm seeing is that ExportAsyncTask.copyExportToSDCard() creates two files:
+dst path is supposed to point to the SD card, however it's actually writing to the internal storage. Nevertheless, I think it shouldn't be a problem, just curious.
+Next copyFile(src, dst) is called, which in turn calls splitQIF(src, dst). The latter creates 20151019_200858_gnucash_export_EUR.qif in the export directory
+(dst), but the list of files it returns is ignored.
+Then, back at ExportAsyncTask, it calls shareFile(), but with output=dst as path instead of the one ended in "_EUR.qif" created by splitQIF(). As a consequence, shareFile() fails to open it:
+I haven't looked further into it, but I'd say the problem is the reuse of copyExportToSDCard(). Both copyExportToSDCard() and shareFile() call splitQIF(), but the latter is expecting the unsplited file.
+My device is a bq Aquaris E4 with Android 5.0.
+I've been working on a fix, without luck yet though. Now it opens the share intent, but nothing is attached when I choose to send it by email.
+I won't be able to work on it again until Thursday. In case someone wants to take a look meanwhile, here's what I've done so far:
+https://github.com/rivaldi8/gnucash-android/tree/bugfix-357-export-always-sd-card
+I've been working on a fix, without luck yet though. Now it opens the share intent, but nothing is attached when I choose to send it by email.
+I won't be able to work on it again until Thursday. In case someone wants to take a look meanwhile, here's what I've done so far:
+https://github.com/rivaldi8/gnucash-android/tree/bugfix-357-export-always-sd-card
+@fefe982 could you look into this?
+@fefe982 could you look into this?
+It turns out it was already fixed. Somehow I ended up without any transaction, so there was nothing to attach :P
+I've sent a pull request, but someone should test it first to ensure it's been really fixed and that nothing has been broken. It'd also be nice if someone could run the tests. As always, I can't make them run.
+It turns out it was already fixed. Somehow I ended up without any transaction, so there was nothing to attach :P
+I've sent a pull request, but someone should test it first to ensure it's been really fixed and that nothing has been broken. It'd also be nice if someone could run the tests. As always, I can't make them run.
+Hey everyone,
+please test the latest beta (v2.0.0-beta5) and let me know if this issue if fixed for you.
+If you're not in the beta program, join here: https://play.google.com/apps/testing/org.gnucash.android
+Hey everyone,
+please test the latest beta (v2.0.0-beta5) and let me know if this issue if fixed for you.
+If you're not in the beta program, join here: https://play.google.com/apps/testing/org.gnucash.android
+Hey everyone,
+please test the latest beta and let me know if this issue if fixed for you.
+Hey everyone,
+please test the latest beta and let me know if this issue if fixed for you.
+Thanks for the testing @agalanin! I've opened a new issue (#408) for remembering the last export destination.
+Thanks for the testing @agalanin! I've opened a new issue (#408) for remembering the last export destination.

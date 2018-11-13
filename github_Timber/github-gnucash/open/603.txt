@@ -1,0 +1,67 @@
+title:Bug: scheduled transactions with multiple splits end up going to imbalance
+
+Ive noticed that my scheduled transactions imported from desktop with multiple splits will chuck it in imbalance instead of where the split shows.
+One example is salary, have $100,000,000 (i wish!) in income:salary, and then all that goes to assets:bank. I also have some in same split going budget:thing1, budget:thing2 and the sum of all the budgets (inversed) to budget so it all cancels out.
+What i actually see is -$100,000,000 in imbalance and $100,000,000 in budget. And $0 in everything else.
+The budget technique is from http://allmybrain.com/2008/12/15/better-budgeting-with-gnucash/
+If it helps i can probably set up an example book to do this, this report was based off my ongoing book.
+Yes please, an example book would be awesome and would help us fix the
+problem.
+Thank you.
+On Tue, Oct 25, 2016 at 1:26 AM, Hugh Davenport notifications@github.com
+wrote:
+Ive noticed that my scheduled transactions imported from desktop with
+multiple splits will chuck it in imbalance instead of where the split shows.
+One example is salary, have $100,000,000 (i wish!) in income:salary, and
+then all that goes to assets:bank. I also have some in same split going
+budget:thing1, budget:thing2 and the sum of all the budgets (inversed) to
+budget so it all cancels out.
+What i actually see is -$100,000,000 in imbalance and $100,000,000 in
+budget. And $0 in everything else.
+The budget technique is from http://allmybrain.com/2008/12/
+15/better-budgeting-with-gnucash/
+If it helps i can probably set up an example book to do this, this report
+was based off my ongoing book.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub
+#603, or mute the
+thread
+https://github.com/notifications/unsubscribe-auth/AAQ422uDG8wbI4-D-9pAw_W0zys_DIUnks5q3T6zgaJpZM4KfZdA
+.
+Yes please, an example book would be awesome and would help us fix the
+problem.
+Thank you.
+On Tue, Oct 25, 2016 at 1:26 AM, Hugh Davenport notifications@github.com
+wrote:
+Ive noticed that my scheduled transactions imported from desktop with
+multiple splits will chuck it in imbalance instead of where the split shows.
+One example is salary, have $100,000,000 (i wish!) in income:salary, and
+then all that goes to assets:bank. I also have some in same split going
+budget:thing1, budget:thing2 and the sum of all the budgets (inversed) to
+budget so it all cancels out.
+What i actually see is -$100,000,000 in imbalance and $100,000,000 in
+budget. And $0 in everything else.
+The budget technique is from http://allmybrain.com/2008/12/
+15/better-budgeting-with-gnucash/
+If it helps i can probably set up an example book to do this, this report
+was based off my ongoing book.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub
+#603, or mute the
+thread
+https://github.com/notifications/unsubscribe-auth/AAQ422uDG8wbI4-D-9pAw_W0zys_DIUnks5q3T6zgaJpZM4KfZdA
+.
+Cool. Ill try get one this weekend
+Cool. Ill try get one this weekend
+I have similar problem, and noticed that the transaction currency was different than the split quantity and split value currencies.
+I have similar problem, and noticed that the transaction currency was different than the split quantity and split value currencies.
+I think I can reproduce it with my expenses file. In my case they are just simple transactions transferring from one account.
+@hughdavenport in your case do you have multiple currencies in the affected transactions like @pnemonic78 or just one?
+I think I can reproduce it with my expenses file. In my case they are just simple transactions transferring from one account.
+@hughdavenport in your case do you have multiple currencies in the affected transactions like @pnemonic78 or just one?
+Hey,
+Sorry I completely forgot about this one! From memory it was just the one currency. I haven't really been using this app for a while.
+Hey,
+Sorry I completely forgot about this one! From memory it was just the one currency. I haven't really been using this app for a while.

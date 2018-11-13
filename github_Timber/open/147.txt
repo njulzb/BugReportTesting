@@ -1,0 +1,7 @@
+title:Unable to seek music tracks
+
+Hi,
+My CM13 based rom has the following feature:
+When the screen is off, long pressing the volume keys will seek music tracks
+It doesn't work with this music player.
+Thank you.

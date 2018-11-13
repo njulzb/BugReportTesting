@@ -1,0 +1,5 @@
+title:bug with the bluetooth earphones
+
+when i try to use tmber with my bluetooth earphones, i cannot use the controls on the earphones to pause/resume, pass the song or anything, this is a big bug that need to be solved
+Move the conversation to #15
+Move the conversation to #15

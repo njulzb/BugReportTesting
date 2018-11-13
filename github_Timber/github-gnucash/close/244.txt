@@ -1,0 +1,13 @@
+title:Cannot find button to delete transaction
+
+I am unable to find any button or what so ever to delete a single transaction. I think this should be possible and there should be a button for this. Or am I just blind and cant find it?
+See my respondse in #196 .
+See my respondse in #196 .
+Thank you I looked for a feature to select transactions and tried to double click the transaction to select it or to press it for a second. This is what I am used from other apps. Maybe this should be another way to select a transaction.
+Thank you I looked for a feature to select transactions and tried to double click the transaction to select it or to press it for a second. This is what I am used from other apps. Maybe this should be another way to select a transaction.
+Yes, long-press to select will be added.
+Yes, long-press to select will be added.
+Added option to long-press to select transaction.
+Fixed in ccf6cb8
+Added option to long-press to select transaction.
+Fixed in ccf6cb8

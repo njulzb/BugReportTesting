@@ -1,0 +1,6 @@
+title:Include whitespace in XML file just like desktop app
+
+Diff of XML export against source file should show differences between the way both apps save data + new transactions usefully.
+Everything in the android export is on a single line, making the diff useless.
+Already implemented in develop branch (9af8b19). Not sure how well the unmodified parts will be preserved in relation with the desktop version.
+Already implemented in develop branch (9af8b19). Not sure how well the unmodified parts will be preserved in relation with the desktop version.

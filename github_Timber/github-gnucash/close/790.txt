@@ -1,0 +1,4 @@
+title:Transaction description margin
+
+Margin on "right" edge of screen
+No margin

@@ -1,0 +1,8 @@
+title:Crash when viewing generated open balance transaction
+
+codinguser
+VERSION 1.4.2
+Step to produce:
+Stack Trace:
+Fixed by #207
+Fixed by #207

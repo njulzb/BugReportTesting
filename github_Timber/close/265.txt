@@ -1,0 +1,3 @@
+title:How to fix the Folder View?
+
+Does anyone know how I can fix the folder viewer every time I open it it crashes on me?

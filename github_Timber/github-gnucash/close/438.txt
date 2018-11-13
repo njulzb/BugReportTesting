@@ -1,0 +1,10 @@
+title:First time import does not have progress bar
+
+Tried on develop and with newly installed App, when I chose to import my own book with the startup dialog, nothing is shown on the screen when the import is being done.
+I can only check the logcat to know that the import is in progress.
+Besides that everything is OK. The UI can be used.I didn't try what would happen if I try to create some accounts during import.
+Don't know if this is related to #428 .
+Is that because the import goes too fast to notice, or does it take some time and yet no dialog is shown?
+No, it's not related to #428
+Is that because the import goes too fast to notice, or does it take some time and yet no dialog is shown?
+No, it's not related to #428

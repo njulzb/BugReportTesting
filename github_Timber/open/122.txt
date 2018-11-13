@@ -1,0 +1,3 @@
+title:[Enhancement Request] Improving Replay Option
+
+Assuming I am right, the replay option has 2 modes, one to repeat a single track and the other to repeat a playlist/album. The first tap enables 'All' and the second 'Single Track'. But it is a bit confusing in the UI as there is no way to differentiate the options, the only way is to toggle it off and then on. It would be nice if you could show a '1' or 'ALL', or something about, that makes it easier to understand if the current mode is all or single.

@@ -1,0 +1,7 @@
+title:Action Bar "Up" on an Accounts
+
+The "Up" on the Action Bar doesn't seem to function on an Account screen.  Pressing the back button with take you back to the Accounts view, but the "Up" button appears to do nothing.
+In the accounts list view, there is no up button because it is not supposed to take you anywhere. If you mean the transactions list view, then yes, that is to be implemented.
+In the accounts list view, there is no up button because it is not supposed to take you anywhere. If you mean the transactions list view, then yes, that is to be implemented.
+Yes Transaction list view is what I meant.
+Yes Transaction list view is what I meant.

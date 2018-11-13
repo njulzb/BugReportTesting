@@ -1,0 +1,5 @@
+title:Autocomplete transaction entry
+
+When adding new transactions, gnucash should offer to autocomplete based on existing transactions (like in the desktop version). This eases data entry on handheld devices
+duplicate of #109 sorry for the noise
+duplicate of #109 sorry for the noise

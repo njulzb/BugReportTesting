@@ -1,0 +1,19 @@
+title:Error test on emulator
+
+Error:Execution failed for task ':app:compileDebugAidl'.
+com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command 'C:\Users\Jose\AppData\Local\Android\sdk\build-tools\23.0.1\aidl.exe'' finished with non-zero exit value 1
+How to fix it?
+Do you have installed the Android SDK build-tools? Also try Clean & rebuild.
+Some workarounds:
+http://stackoverflow.com/questions/29766830/execution-failed-for-task-appcompiledebugaidl-aidl-is-missing
+http://stackoverflow.com/questions/16682443/android-studio-gradle-build-fails-execution-failed-for-task-compiledebugai
+http://stackoverflow.com/questions/29249986/finished-with-non-zero-exit-value
+Do you have installed the Android SDK build-tools? Also try Clean & rebuild.
+Some workarounds:
+http://stackoverflow.com/questions/29766830/execution-failed-for-task-appcompiledebugaidl-aidl-is-missing
+http://stackoverflow.com/questions/16682443/android-studio-gradle-build-fails-execution-failed-for-task-compiledebugai
+http://stackoverflow.com/questions/29249986/finished-with-non-zero-exit-value
+Use Android Studio on Linux or OS X
+Use Android Studio on Linux or OS X
+Install 23.0.1 build tools and check the above mentioned links
+Install 23.0.1 build tools and check the above mentioned links

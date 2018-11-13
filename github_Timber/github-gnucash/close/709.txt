@@ -1,0 +1,11 @@
+title:Migrate Dropbox SDK to v3.0.3
+
+codinguser
+Hello,
+We are reaching out to you because we have discovered an issue with the Dropbox API v2 Java SDK that your app is currently using. Although the issue does not break any existing behavior, it limits our ability to make non-breaking changes to our API endpoints going forward.
+For that reason, we ask that you update your app to the latest version of the SDK within the next two months. This bug was fixed specifically in v3.0.3.
+If you do not update SDK versions within the next two months, return types from some endpoints may fail to deserialize correctly, raising a runtime exception.
+We apologize for the inconvenience.
+Please reach out to us if you have any questions or concerns.
+Sincerely,
+The Dropbox API Team

@@ -1,0 +1,21 @@
+title:Problems regarding foreign languages.
+
+Some letters in foreign languages, such as æ, ø, and å, does not display correctly. This is a big concern for non-english speaking countries. Having the bug fix, or at least adding the option to "Force English" would be nice.
+Where are you seeing letters displayed incorrectly? In the UI or in music tags? If the problem is with music tags, I would check that the tags are properly encoded with UTF-8. My music with non-ASCII character is displayed just fine.
+Where are you seeing letters displayed incorrectly? In the UI or in music tags? If the problem is with music tags, I would check that the tags are properly encoded with UTF-8. My music with non-ASCII character is displayed just fine.
+So far... only UI, Haven't checked for other occurrences.
+So far... only UI, Haven't checked for other occurrences.
+Ok, this is Danish, isn't it? The translation file (app/src/main/res/values-da/strings.xml) isn't properly encoded in UTF-8. Could you fix the problematic strings and send a pull request or attach the file?
+Ok, this is Danish, isn't it? The translation file (app/src/main/res/values-da/strings.xml) isn't properly encoded in UTF-8. Could you fix the problematic strings and send a pull request or attach the file?
+I would. But the file looks complete. It is already formatted in UTF-8, and the strings looks fine.
+I would. But the file looks complete. It is already formatted in UTF-8, and the strings looks fine.
+Where are you opening the file? From Android Studio it's the only language that looks wrong.
+Where are you opening the file? From Android Studio it's the only language that looks wrong.
+I looked at the XML on GitHub... On GitHub the formatting and syntax of the strings and XML looks fine.
+I might be a programmer... but I don't have Android Studio installed.
+I looked at the XML on GitHub... On GitHub the formatting and syntax of the strings and XML looks fine.
+I might be a programmer... but I don't have Android Studio installed.
+
+Isn't it correct? @davidfrp
+
+Isn't it correct? @davidfrp

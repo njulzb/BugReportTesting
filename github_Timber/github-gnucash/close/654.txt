@@ -1,0 +1,45 @@
+title:App crashes when trying modify account if default transaction account no longer exist.
+
+rivaldi8
+Open account modifying interface.
+App crashed.
+Confirmed. Stack trace:
+Confirmed. Stack trace:
+@codinguser I've been looking at this issue and it seems it's solved by just uncommenting this constraint in the accounts table. Why did you leave it commented and implemented it in code (f10b4e4) instead? Does it cause problems in other situations? In my tests I didn't find any issue.
+@codinguser I've been looking at this issue and it seems it's solved by just uncommenting this constraint in the accounts table. Why did you leave it commented and implemented it in code (f10b4e4) instead? Does it cause problems in other situations? In my tests I didn't find any issue.
+@rivaldi8 I'm not exactly sure why I removed that constraint.
+But I recall that at some point, we removed constraints because they were taking a long time to process (via triggers) in the database. Therefore, we removed some and just made sure to perform the necessary operations directly via SQL.
+In this particular case, it might be okay to re-add it and modify the constraint to use "ON DELETE SET NULL"
+But I have a question about this bug because I don't quite get why it exists (haven't looked deeper)
+Using the example the OP gave,, why does account B still have a reference to A after A has been deleted?
+I thought we set A to NULL in all places where it is referenced after deletion?
+@rivaldi8 I'm not exactly sure why I removed that constraint.
+But I recall that at some point, we removed constraints because they were taking a long time to process (via triggers) in the database. Therefore, we removed some and just made sure to perform the necessary operations directly via SQL.
+In this particular case, it might be okay to re-add it and modify the constraint to use "ON DELETE SET NULL"
+But I have a question about this bug because I don't quite get why it exists (haven't looked deeper)
+Using the example the OP gave,, why does account B still have a reference to A after A has been deleted?
+I thought we set A to NULL in all places where it is referenced after deletion?
+Yes, I was confused at first too. The culprit is DatabaseAdapter.deleteRecord(long rowId) (not overriden by AccountsDbAdapter). The unit test checks AccountsDbAdapter.deleteRecord(String uid) instead.
+That's the nice thing about defining constraints in SQL. They are concise and you can't forget about them, they are always enforced.
+Yes, I was confused at first too. The culprit is DatabaseAdapter.deleteRecord(long rowId) (not overriden by AccountsDbAdapter). The unit test checks AccountsDbAdapter.deleteRecord(String uid) instead.
+That's the nice thing about defining constraints in SQL. They are concise and you can't forget about them, they are always enforced.
+I see... sneaky. :)
+So I see 3 ways to go about this:
+Adding the foreign key constraint now will mean having to do a database migration, and since we cannot just alter tables in Sqlite, we have to drop the whole table, re-create it and then re-import it just in order to add that constraint.
+I would rather not put this effort now, especially as a few releases down the road, we will  be having a major db restructuring
+I see... sneaky. :)
+So I see 3 ways to go about this:
+Adding the foreign key constraint now will mean having to do a database migration, and since we cannot just alter tables in Sqlite, we have to drop the whole table, re-create it and then re-import it just in order to add that constraint.
+I would rather not put this effort now, especially as a few releases down the road, we will  be having a major db restructuring
+Ok, I'll avoid adding the constraint for now.
+Ok, I'll avoid adding the constraint for now.
+It seems we can prevent new invalid record created. But without DB restructuring, is it enough to solve invalid record that already exist?  I mean this function only called when deleting account, right?
+It seems we can prevent new invalid record created. But without DB restructuring, is it enough to solve invalid record that already exist?  I mean this function only called when deleting account, right?
+@pingu8007 yes it would be possible for @rivaldi8 to add a migration which does not change the db schema, but just sets the values to NULL where the account with the ID no longer exists.
+Given the other changes in the code mentioned above, no further invalid records would be created
+@pingu8007 yes it would be possible for @rivaldi8 to add a migration which does not change the db schema, but just sets the values to NULL where the account with the ID no longer exists.
+Given the other changes in the code mentioned above, no further invalid records would be created
+Yes, I'm working on it.
+Yes, I'm working on it.
+Fixed in develop.
+Fixed in develop.

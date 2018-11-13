@@ -1,0 +1,12 @@
+title:"Done" button for date editor does not fit into the screen
+
+codinguser
+My phone has screen with size 180x192. When I open date editor in portrait screen orientation "Done" button is not visible, so I can't edit transaction date.
+Is this issue fixed for you in v2.0.0
+Is this issue fixed for you in v2.0.0
+no, still present
+no, still present
+ok, will be fixed in v2.1.0
+ok, will be fixed in v2.1.0
+v2.1.0 is now in beta
+v2.1.0 is now in beta

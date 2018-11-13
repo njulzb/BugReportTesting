@@ -1,0 +1,6 @@
+title:Backups are kept forever
+
+Backups older than a week are automatically deleted.
+Backups are kept forever, unless the user deletes them manually from the storage.
+Merging this into #712
+Merging this into #712

@@ -1,0 +1,14 @@
+title:(Monthly) Scheduled transactions do not appear to follow intended schedule
+
+I would expect the first scheduled transaction to repeat every month on specified date of transaction 1, and the second schedule transaction to occur later the following month on the different date of transaction 2.
+Example:
+Transaction 1 =  Aug 1, repeat on Sep 1
+Transaction 2 = Aug 16, repeat on Sep 16
+The actual behavior appears to be that all monthly scheduled transactions take place on Sep 1.
+It also appears getting the scheduled transactions to actually run is sporadic and inconsistent; sometimes schedule transactions just never run.
+@rivaldi8 Will your new JobScheduler help here?
+@rivaldi8 Will your new JobScheduler help here?
+@codinguser I don't think so. Those changes were mainly for the restrictions of Android 8. I'd say it's more likely something to do with the code deciding when to run the transactions.
+@codinguser I don't think so. Those changes were mainly for the restrictions of Android 8. I'd say it's more likely something to do with the code deciding when to run the transactions.
+I can confirm this bug on
+I can confirm this bug on

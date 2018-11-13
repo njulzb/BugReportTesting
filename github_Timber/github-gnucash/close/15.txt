@@ -1,0 +1,10 @@
+title:Empty transaction note not empty
+
+codinguser
+Hi,
+when I don't enter a "Note" to a transaction I get a ">" note in GNUCash after importing. If I enter a note the note gets properly imported. So please don't export empty notes as a '>'. Or is this a GNUCash import bug? I'm using 2.4.2 and GnucashMobile 1.0 beta 2.
+Thanks for your cool app!
+Ok, I took a look at the oxf File and there was no '>'. There was an empty  Tag. If I completely remove the  Tag by hand GNUCash imports fine with an empty note. I would be grateful if you could change GnucashMobile to not put a  Tag if there is no note.
+Thank you!
+Ok, I took a look at the oxf File and there was no '>'. There was an empty  Tag. If I completely remove the  Tag by hand GNUCash imports fine with an empty note. I would be grateful if you could change GnucashMobile to not put a  Tag if there is no note.
+Thank you!

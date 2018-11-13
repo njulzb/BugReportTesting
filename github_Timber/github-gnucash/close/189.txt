@@ -1,0 +1,123 @@
+title:Import two different books
+
+We I'm playing with import function, I found that when I import two different book into the App, only accounts from the 1st one is shown on the main Accounts view. However, all accounts can be found from the accounts selection drop-down list. Also, a lot of accounts with the same name show up in the drop-down list. It is hard to tell which is which.
+I didn't check the code yet, but I guess it has something to do with the two ROOT accounts from the two different book. Only one of the ROOT account (the 1st) is found and used to create the main Accounts view.
+This let me think, should we allow importing two different book? If we allow it, how to merge them?
+My idea is to forbid such importing, to make things simple and clear. Importing is only allowed when:
+If the condition is not met, all accounts (and transaction) would be cleared first (with user warned) and then import the new book.
+With the old import function (not sure how the new bulk import does it, but
+you understand it better), any accounts with the same guid are not replaced
+during importing. They will just be considered as already existing. But if
+the new book has accounts with different guids, then all those will be
+added as new accounts even if they have duplicate names.
+This is kind of a merge, because transactions will be added to their
+existing accounts with matching guid.
+I don't think it is a good idea to let users import multiple books. I mean,
+it is now technically allowed, but there is currently a dialog box which
+asks the user to delete old accounts first else the new ones will just be
+added on to it.
+I like the conditions you suggest, especially since we now import
+transactions. I think we can implement them and maybe warn the user like
+twice before automatically deleting existing accounts. There should be only
+one ROOT account in the database at any given time.
+On Sun, Aug 31, 2014 at 2:30 AM, Yongxin Wang notifications@github.com
+wrote:
+We I'm playing with import function, I found that when I import two
+different book into the App, only accounts from the 1st one is shown on the
+main Accounts view. However, all accounts can be found from the accounts
+selection drop-down list. Also, a lot of accounts with the same name show
+up in the drop-down list. It is hard to tell which is which.
+I didn't check the code yet, but I guess it has something to do with the
+two ROOT accounts from the two different book. Only one of the ROOT account
+(the 1st) is found and used to create the main Accounts view.
+This let me think, should we allow importing two different book? If we
+allow it, how to merge them?
+My idea is to forbid such importing, to make things simple and clear.
+Importing is only allowed when:
+If the condition is not met, all accounts (and transaction) would be
+cleared first (with user warned) and then import the new book.
+—
+Reply to this email directly or view it on GitHub
+#189.
+With the old import function (not sure how the new bulk import does it, but
+you understand it better), any accounts with the same guid are not replaced
+during importing. They will just be considered as already existing. But if
+the new book has accounts with different guids, then all those will be
+added as new accounts even if they have duplicate names.
+This is kind of a merge, because transactions will be added to their
+existing accounts with matching guid.
+I don't think it is a good idea to let users import multiple books. I mean,
+it is now technically allowed, but there is currently a dialog box which
+asks the user to delete old accounts first else the new ones will just be
+added on to it.
+I like the conditions you suggest, especially since we now import
+transactions. I think we can implement them and maybe warn the user like
+twice before automatically deleting existing accounts. There should be only
+one ROOT account in the database at any given time.
+On Sun, Aug 31, 2014 at 2:30 AM, Yongxin Wang notifications@github.com
+wrote:
+We I'm playing with import function, I found that when I import two
+different book into the App, only accounts from the 1st one is shown on the
+main Accounts view. However, all accounts can be found from the accounts
+selection drop-down list. Also, a lot of accounts with the same name show
+up in the drop-down list. It is hard to tell which is which.
+I didn't check the code yet, but I guess it has something to do with the
+two ROOT accounts from the two different book. Only one of the ROOT account
+(the 1st) is found and used to create the main Accounts view.
+This let me think, should we allow importing two different book? If we
+allow it, how to merge them?
+My idea is to forbid such importing, to make things simple and clear.
+Importing is only allowed when:
+If the condition is not met, all accounts (and transaction) would be
+cleared first (with user warned) and then import the new book.
+—
+Reply to this email directly or view it on GitHub
+#189.
+The bulk import will do the same thing, accounts with the same GUID will be replaced, accounts whose GUID does not exist yet will be inserted.
+And I didn't see the dialog box you mentioned asking the user to delete old accounts. I import through : Settings -> Accounts -> Import.
+The bulk import will do the same thing, accounts with the same GUID will be replaced, accounts whose GUID does not exist yet will be inserted.
+And I didn't see the dialog box you mentioned asking the user to delete old accounts. I import through : Settings -> Accounts -> Import.
+Oh true, the dialog box is shown only for creating new account tree, but not for importing from a file.
+Oh true, the dialog box is shown only for creating new account tree, but not for importing from a file.
+So we agree on import being done with the conditions you mentioned in your original post.
+@fefe982 could you implement this?
+So we agree on import being done with the conditions you mentioned in your original post.
+@fefe982 could you implement this?
+Sure.
+Sure.
+When implementing this, I just thought of a simpler plan.
+What about the content of DB is ALWAYS cleared before the import? I cannot quite think of when a merge should be useful, but a merge can cause problems.
+For example:
+This will result in duplicate transactions, as the GUID generated by Gnucash android and Gnucash cash desktop would be different for the transactions created in Gnucash android.
+I also want to find a way to put clearing the DB and addition of new transactions in a single DB transaction when importing, to prevent data loss.
+When implementing this, I just thought of a simpler plan.
+What about the content of DB is ALWAYS cleared before the import? I cannot quite think of when a merge should be useful, but a merge can cause problems.
+For example:
+This will result in duplicate transactions, as the GUID generated by Gnucash android and Gnucash cash desktop would be different for the transactions created in Gnucash android.
+I also want to find a way to put clearing the DB and addition of new transactions in a single DB transaction when importing, to prevent data loss.
+I thought of that too, and it makes sense to always clear the database before import. We will of course always make a backup just in case. So if you can put all that in one database transaction, then go for it.
+I also plan to add automatic scheduled exporting before the 1.6.x release (see the Trello board).
+Btw, can you see if the desktop can open our backup (.gnca) files? Last I tried it crashed, but haven't tried again in a while.
+On 28.03.2015, at 10:40, Yongxin Wang notifications@github.com wrote:
+When implementing this, I just thought of a simpler plan.
+What about the content of DB is ALWAYS cleared before the import? I cannot quite think of when a merge should be useful, but a merge can cause problems.
+For example:
+This will result in duplicate transactions, as the GUID generated by Gnucash android and Gnucash cash desktop would be different for the transactions created in Gnucash android.
+I also want to find a way to put clearing the DB and addition of new transactions in a single DB transaction when importing, to prevent data loss.
+—
+Reply to this email directly or view it on GitHub.
+I thought of that too, and it makes sense to always clear the database before import. We will of course always make a backup just in case. So if you can put all that in one database transaction, then go for it.
+I also plan to add automatic scheduled exporting before the 1.6.x release (see the Trello board).
+Btw, can you see if the desktop can open our backup (.gnca) files? Last I tried it crashed, but haven't tried again in a while.
+On 28.03.2015, at 10:40, Yongxin Wang notifications@github.com wrote:
+When implementing this, I just thought of a simpler plan.
+What about the content of DB is ALWAYS cleared before the import? I cannot quite think of when a merge should be useful, but a merge can cause problems.
+For example:
+This will result in duplicate transactions, as the GUID generated by Gnucash android and Gnucash cash desktop would be different for the transactions created in Gnucash android.
+I also want to find a way to put clearing the DB and addition of new transactions in a single DB transaction when importing, to prevent data loss.
+—
+Reply to this email directly or view it on GitHub.
+I haven't tried using the desktop to open our backups, but I don't think that will work. A lot of things are different. Such as ROOT account, different GUID schemes (cny-xxxxxx for account GUID), extra XML element (exported, and others), etc.
+I haven't tried using the desktop to open our backups, but I don't think that will work. A lot of things are different. Such as ROOT account, different GUID schemes (cny-xxxxxx for account GUID), extra XML element (exported, and others), etc.
+Updated the PR to delete before import. Be sure to WARN the user about the possible data loss, when RESTORING backups and IMPORTING.
+Updated the PR to delete before import. Be sure to WARN the user about the possible data loss, when RESTORING backups and IMPORTING.

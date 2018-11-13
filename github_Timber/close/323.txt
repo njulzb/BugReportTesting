@@ -1,0 +1,12 @@
+title:Dependency Library Download is not available.  com.github.naman14:app-theme-engine:0.5.2@aar')
+
+compile(com.github.naman14:app-theme-engine:0.5.2@aar'){
+transitive = true
+}
+Excuse me, this library file can not download, resulting in compile project error, the library file used by the project has jar file? @ueman @airon90 @rivaldi8
+It's is working for me, even after cleaning the project and Gradle cache. Maybe I still have it downloaded in some other cache I've missed. I'm not familiar with how exactly Gradle manages dependencies, but I'd say it has something to do with https://jitpack.io.
+It's is working for me, even after cleaning the project and Gradle cache. Maybe I still have it downloaded in some other cache I've missed. I'm not familiar with how exactly Gradle manages dependencies, but I'd say it has something to do with https://jitpack.io.
+It is not working in my case too. Facing same problem as mentioned above. Library  not found
+It is not working in my case too. Facing same problem as mentioned above. Library  not found
+Working absolutely fine on my side.
+Working absolutely fine on my side.

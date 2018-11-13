@@ -1,0 +1,36 @@
+title:Feature Request: Overlays for Accounts
+
+Hey,
+I think a great feature for this app would be overlays on accounts to change the shown balance, without having a accompanied transaction.
+I track my transactions in the app and regularly export them to Gnucash on the Desktop. I have the option to either keep the running balance as new opening balance or to delete it with the exported transactions (keeping all my transactions on a device that can easily be stolen is not my thing). The problem with keeping the running balance as new opening balance, is that it always generates a transaction pair with the equity account.
+A nice mitigation for this, and the topic of this feature request, would be the ability to add custom offsets to each account, that are independent of the exported transactions.
+If I understand right, you mean to save the opening balance just within the account and not as a transaction right?
+This way of storing the opening balance was chosen for compatibility with GnuCash desktop. I considered saving just an offset, but ultimately it is better to have the two apps working in a similar fashion conceptually.
+If I understand right, you mean to save the opening balance just within the account and not as a transaction right?
+This way of storing the opening balance was chosen for compatibility with GnuCash desktop. I considered saving just an offset, but ultimately it is better to have the two apps working in a similar fashion conceptually.
+Your understanding is correct, but I don't really see how the current setup
+helps with compatibility.
+Currently, when I delete all transactions the old balance is saved as the new
+opening balance. Unfortunately, when I export my transactions the next time it
+will also the export the opening balance, which I then have to manually delete
+on the gnucash desktop.
+Having an option to not export the opening balance or have some sort of offset
+or non-exportable opening balance would be great.
+Your understanding is correct, but I don't really see how the current setup
+helps with compatibility.
+Currently, when I delete all transactions the old balance is saved as the new
+opening balance. Unfortunately, when I export my transactions the next time it
+will also the export the opening balance, which I then have to manually delete
+on the gnucash desktop.
+Having an option to not export the opening balance or have some sort of offset
+or non-exportable opening balance would be great.
+That we can do :)
+I think it makes sense not to export the opening balances by default. I will create an issue for it.
+Thanks for the feedback
+That we can do :)
+I think it makes sense not to export the opening balances by default. I will create an issue for it.
+Thanks for the feedback
+Splendid. Thanks for the great app, looking forward to this functionality. Closing this bug.
+Splendid. Thanks for the great app, looking forward to this functionality. Closing this bug.
+Just for reference, the new issue is #273 "Do not export opening balances"
+Just for reference, the new issue is #273 "Do not export opening balances"

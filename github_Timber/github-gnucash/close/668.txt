@@ -1,0 +1,7 @@
+title:What's the proper to import selected transactions from desktop to Android app?
+
+I 'm trying to sync recent transactions from desktop to Android app. I tried to use [save as] function in desktop version to export transactions to Android app but found that all transactions were imported into a new book but not the one existed. I've also tried to [export] recent transactions into a CSV file but failed to import into the app. There is an error which said syntax error.
+GnuCash Android does not support importing from CSV. Only GnuCash XML files can be imported
+See here: http://www.codinguser.com/2014/03/gnucash-android-account-import-guide/
+GnuCash Android does not support importing from CSV. Only GnuCash XML files can be imported
+See here: http://www.codinguser.com/2014/03/gnucash-android-account-import-guide/

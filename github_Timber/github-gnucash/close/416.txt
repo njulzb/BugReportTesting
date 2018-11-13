@@ -1,0 +1,7 @@
+title:Changing the transfer account of the split with the total amount set it to zero
+
+If a transaction is edited and the transfer account of the split entry with the positive amount is changed, the amount of the transaction is set to zero.
+Steps to reproduce:
+Some observations:
+Thanks for the comprehensive report 👍
+Thanks for the comprehensive report 👍

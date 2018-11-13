@@ -1,0 +1,22 @@
+title:Reversed transaction type on toggle button in "Edit Transaction" view.
+
+The text for the button used in the "Edit Transaction" view always indicates the wrong transaction type (e.g. when the button says "CREDIT" the transaction is considered a debit, when the button says "DEBIT" the transaction is considered a credit). The color of the transaction text still indicates the correct type, however (e.g. when the text is red it is a debit, when the text is green it is a credit). While not unmanageable this is certainly not desired.
+This broke during a previous update, although I did not note the version number (I just assumed it would be fixed in a later version).
+I am unfamiliar with the codebase, but with some minor digging I noticed nNormalBalance which appears as though it may be responsible for the reversed behaviour.
+For example, the accounts in question were by default set as account types which are TransactionType.DEBIT. When I change them to an account type which is TransactionType.CREDIT (e.g. INCOME) the app first crashes, and then when it restarts the button's color and text match again (e.g. CREDIT is green, DEBIT is red). This also appears to change the total balance (although does not correct it) as mentioned in #164.
+Can anyone explain in more detail what this is used for? It is not clear to me what the difference between a credit account and a debit account is.
+Thanks.
+I am unfamiliar with the codebase, but with some minor digging I noticed nNormalBalance which appears as though it may be responsible for the reversed behaviour.
+For example, the accounts in question were by default set as account types which are TransactionType.DEBIT. When I change them to an account type which is TransactionType.CREDIT (e.g. INCOME) the app first crashes, and then when it restarts the button's color and text match again (e.g. CREDIT is green, DEBIT is red). This also appears to change the total balance (although does not correct it) as mentioned in #164.
+Can anyone explain in more detail what this is used for? It is not clear to me what the difference between a credit account and a debit account is.
+Thanks.
+Hi Scott,
+The text on the buttons is actually correct. Debit doesn't always mean negative, it depends on the type of account and what kind of normal balance the account has.
+A more descriptive method will be to use names which more "intuitively" reflect the change to the account balance. For example, in Expense Accounts, we would use "Expense/Rebate", for assets "Receive/Spend" etc etc. just like in the GnuCash desktop app.
+You are correct about the variable responsible for the change, and the code comment explains the different between accounts with a credit normal balance and those with a debit normal balance.
+For more detail about the accounting principle in play here, see: http://gnucash.org/docs/v2.4/C/gnucash-guide/accts-types1.html
+Hi Scott,
+The text on the buttons is actually correct. Debit doesn't always mean negative, it depends on the type of account and what kind of normal balance the account has.
+A more descriptive method will be to use names which more "intuitively" reflect the change to the account balance. For example, in Expense Accounts, we would use "Expense/Rebate", for assets "Receive/Spend" etc etc. just like in the GnuCash desktop app.
+You are correct about the variable responsible for the change, and the code comment explains the different between accounts with a credit normal balance and those with a debit normal balance.
+For more detail about the accounting principle in play here, see: http://gnucash.org/docs/v2.4/C/gnucash-guide/accts-types1.html

@@ -1,0 +1,13 @@
+title:Cant Restore My Backup
+
+Hi,
+I did my backup and trying to restore the backup but keep getting the message, "an error occurred while importing the gnucash accounts. At line 1, column 0, not well-formed (invalid token)".
+For your info, backup format is .ofx
+anyone @codinguser here can help me to get back my data?
+Thanks in advance :)
+Hi, sorry but GnuCash does not support importing from OFX.
+You can only backup and restore from XML. Please use the Settings -> Backup & Export -> Create backup to generate your backups.
+Or schedule periodic backups with XML.
+Hi, sorry but GnuCash does not support importing from OFX.
+You can only backup and restore from XML. Please use the Settings -> Backup & Export -> Create backup to generate your backups.
+Or schedule periodic backups with XML.

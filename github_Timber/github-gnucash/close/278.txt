@@ -1,0 +1,6 @@
+title:Confusing names in the list of currencies
+
+Hi, I've noticed that the Bosnian Convertible Mark (BAM) is missing in the list of currencies. As the list of currencies is not editable, there is no way to use this currency.
+I've just noticed that some currencies have a country in the name but others don't. I've found Convertible Mark and Forint currencies. However, the naming is a bit confusing. Perhaps, adding the currency codes (+ sorting) would make things easier. Just a suggestion.
+Currencies are now sorted by country codes when creating an account.
+Currencies are now sorted by country codes when creating an account.

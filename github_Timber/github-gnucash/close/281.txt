@@ -1,0 +1,19 @@
+title:QIF export does not delete transactions
+
+Observation:
+Expected behaviour:
+Reproducibility:
+Expected results:
+3.2. All accounts should display e.g. 0,00 €.
+3.3. All accounts should display e.g. 0,00 €.
+Actual results:
+3.2. All transactions still present, accounts show their previous amount.
+3.3. All transactions still present, accounts show their previous amount.
+Android 4.3
+Gnucash Android 1.5.3
+This seems related to #285.
+This seems related to #285.
+Fixed in 6d91b5f
+Transactions will always be deleted after export and no confirmation dialog will be shown!
+Fixed in 6d91b5f
+Transactions will always be deleted after export and no confirmation dialog will be shown!

@@ -1,0 +1,9 @@
+title:Language selector (feature)
+
+A suggest to implement a language selector in Gnucash.
+Many time, a device has a set system language, but we prefer to use another one only in some applications.
+So could be great to have a way to choose your prefered language.
+I totally agree!
+Sometimes the translated strings are not very good for the default system language, so we should be able to select another one.
+I totally agree!
+Sometimes the translated strings are not very good for the default system language, so we should be able to select another one.

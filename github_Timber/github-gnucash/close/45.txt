@@ -1,0 +1,6 @@
+title:copy transactions
+
+codinguser
+an action to copy an existing transaction will help to account the daily espresso.
+Any transaction is basically a template now, since using autocomplete effectively copies the transaction
+Any transaction is basically a template now, since using autocomplete effectively copies the transaction

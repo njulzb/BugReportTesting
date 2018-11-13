@@ -1,0 +1,22 @@
+title:Folder View on Timber?
+
+I heard you will release the Folder view options a year back? did you released the folder view version?
+Looking forward to have Folder View Option in Timber. ?
+I make folder view mode, but i don`t know, how to get track id by filename. Can anyone help me?
+I make folder view mode, but i don`t know, how to get track id by filename. Can anyone help me?
+You can use MusicPlayer.openFile(String filePath)
+You can also checkout the actual implementation in MusicService.openFile(String path)
+You can use MusicPlayer.openFile(String filePath)
+You can also checkout the actual implementation in MusicService.openFile(String path)
+I will review and merge other pull requests as soon as I have a little bit of free time.
+Thanks for your contributions!
+I will review and merge other pull requests as soon as I have a little bit of free time.
+Thanks for your contributions!
+MusicPlayer.playOrPause(); should result in onMetaChanged being called.
+You can create a pull request of existing implementation. I will implement the meta fetching if you are having trouble.
+MusicPlayer.playOrPause(); should result in onMetaChanged being called.
+You can create a pull request of existing implementation. I will implement the meta fetching if you are having trouble.
+ok thanks
+ok thanks
+Added in the latest release
+Added in the latest release

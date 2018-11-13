@@ -1,0 +1,22 @@
+title:Date selector in "Export" function doesn't work.
+
+Get transactions from that specific date till now.
+Got all transactions from the first to last.
+@Explorare Do you regularly import into the GnuCash Android app as well?
+@Explorare Do you regularly import into the GnuCash Android app as well?
+I can find all transaction records from the raw data of the exported file.
+I tried to import the file into desktop version.
+I can find all transaction records from the raw data of the exported file.
+I tried to import the file into desktop version.
+Do you mean all the data imported into this app on, for example, April 4th, will be considered happened on that date. So when I tried to export the data from April 3rd till now, these records are included as well?
+Do you mean all the data imported into this app on, for example, April 4th, will be considered happened on that date. So when I tried to export the data from April 3rd till now, these records are included as well?
+@Explorare and @codinguser
+I think I had the same problem:
+The problem is when opening the gnucash file from desktop in android mobile and exporting on the same day.
+Then, because everything was entered on this day gnucash android will export every entry on this day. Maybe I'm wrong.
+This is a bug no? Because the date of the individual entry should be read out.
+@Explorare and @codinguser
+I think I had the same problem:
+The problem is when opening the gnucash file from desktop in android mobile and exporting on the same day.
+Then, because everything was entered on this day gnucash android will export every entry on this day. Maybe I'm wrong.
+This is a bug no? Because the date of the individual entry should be read out.

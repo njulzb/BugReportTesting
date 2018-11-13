@@ -1,0 +1,169 @@
+title:Sync
+
+Would be great to sync to the desktop app, I know everyone wants this in the back of their mind but I didn't see any actual new feature requests for it, so now there is one :)
+...especially if we could save it to Google Drive, then it can sync across all devices like desktop computers, any android phone or tablet.... but it would need to be able to store a local copy just in case of network outage, and it would need to be able to determine how to update everything because some tx may be added to the desktop AND some to the phone before a sync occurs, don't want to lose both so you would need to be able to combine them somehow.
+Thanks!!!  Its a great app already, I really appreciate it :)
+It's not just on the back of people's minds, but has been mentioned several
+times as well.
+Thing is, GnuCash on the desktop has been in active development for lots of
+years now. The feature set is huge!!
+The Android app doesn't even come close, and therefore it is easy to
+inadvertently mess things up in the file which is synced.
+Also, you correctly bring up the issues of conflicts in synchronization.
+That is no trivial matter and can lead to data loss if not done right
+(something I am eager to avoid).
+So for now, I choose to focus on improving the feature set of the app.
+There is a lot more to be done!
+Thanks for your input. Keep the feedback coming!
+Cheers,
+On Tue, Feb 18, 2014 at 6:49 PM, Alvinator notifications@github.com wrote:
+Would be great to sync to the desktop app, I know everyone wants this in
+the back of their mind but I didn't see any actual new feature requests for
+it, so now there is one :)
+...especially if we could save it to Google Drive, then it can sync across
+all devices like desktop computers, any android phone or tablet.... but it
+would need to be able to store a local copy just in case of network outage,
+and it would need to be able to determine how to update everything because
+some tx may be added to the desktop AND some to the phone before a sync
+occurs, don't want to lose both so you would need to be able to combine
+them somehow.
+Thanks!!! Its a great app already, I really appreciate it :)
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/147
+.
+It's not just on the back of people's minds, but has been mentioned several
+times as well.
+Thing is, GnuCash on the desktop has been in active development for lots of
+years now. The feature set is huge!!
+The Android app doesn't even come close, and therefore it is easy to
+inadvertently mess things up in the file which is synced.
+Also, you correctly bring up the issues of conflicts in synchronization.
+That is no trivial matter and can lead to data loss if not done right
+(something I am eager to avoid).
+So for now, I choose to focus on improving the feature set of the app.
+There is a lot more to be done!
+Thanks for your input. Keep the feedback coming!
+Cheers,
+On Tue, Feb 18, 2014 at 6:49 PM, Alvinator notifications@github.com wrote:
+Would be great to sync to the desktop app, I know everyone wants this in
+the back of their mind but I didn't see any actual new feature requests for
+it, so now there is one :)
+...especially if we could save it to Google Drive, then it can sync across
+all devices like desktop computers, any android phone or tablet.... but it
+would need to be able to store a local copy just in case of network outage,
+and it would need to be able to determine how to update everything because
+some tx may be added to the desktop AND some to the phone before a sync
+occurs, don't want to lose both so you would need to be able to combine
+them somehow.
+Thanks!!! Its a great app already, I really appreciate it :)
+Reply to this email directly or view it on GitHubhttps://github.com/codinguser/gnucash-android/issues/147
+.
+Let me share my use case of the synchronization. In my case, I would like to create or import existent Gnucash file (or accounts) in Android phone from the desktop application. Then, sometimes, I have to record transactions in my phone, and then just simply sync those new transactions back to Gnucash when I come back to my laptop.
+Current gnucash-android lacks both above features to simplify the synchronization. I feel it's not convenient by transferring file via copy-paste from laptop to phone. Maybe, Bluetooth is a good choice.
+Let me share my use case of the synchronization. In my case, I would like to create or import existent Gnucash file (or accounts) in Android phone from the desktop application. Then, sometimes, I have to record transactions in my phone, and then just simply sync those new transactions back to Gnucash when I come back to my laptop.
+Current gnucash-android lacks both above features to simplify the synchronization. I feel it's not convenient by transferring file via copy-paste from laptop to phone. Maybe, Bluetooth is a good choice.
+It is possible to use a file synchronization service to export your data and have it immediately available on your laptop.
+It is possible to use a file synchronization service to export your data and have it immediately available on your laptop.
+My method on my GnuCash Android
+Settings / Export Transactions
+Leave the default "Share file ..." (Important)
+Check QIF
+Uncheck "Export all transactions"
+Uncheck "Delete after export"
+Export
+Add to Drop Box
+Add
+Then in 30 seconds, after that appears in the DropBox folder on my laptop I
+go to GnuCash and Import.
+It's been working well.
+On Sat, Sep 27, 2014 at 4:01 PM, Chenxiong Qi notifications@github.com
+wrote:
+Let me share my use case of the synchronization. In my case, I would like
+to create or import existent Gnucash file (or accounts) in Android phone
+from the desktop application. Then, sometimes, I have to record
+transactions in my phone, and then just simply sync those new transactions
+back to Gnucash when I come back to my laptop.
+Current gnucash-android lacks both above features to simplify the
+synchronization. I feel it's not convenient by transferring file via
+copy-paste from laptop to phone. Maybe, Bluetooth is a good choice.
+—
+Reply to this email directly or view it on GitHub
+#147 (comment)
+.
+My method on my GnuCash Android
+Settings / Export Transactions
+Leave the default "Share file ..." (Important)
+Check QIF
+Uncheck "Export all transactions"
+Uncheck "Delete after export"
+Export
+Add to Drop Box
+Add
+Then in 30 seconds, after that appears in the DropBox folder on my laptop I
+go to GnuCash and Import.
+It's been working well.
+On Sat, Sep 27, 2014 at 4:01 PM, Chenxiong Qi notifications@github.com
+wrote:
+Let me share my use case of the synchronization. In my case, I would like
+to create or import existent Gnucash file (or accounts) in Android phone
+from the desktop application. Then, sometimes, I have to record
+transactions in my phone, and then just simply sync those new transactions
+back to Gnucash when I come back to my laptop.
+Current gnucash-android lacks both above features to simplify the
+synchronization. I feel it's not convenient by transferring file via
+copy-paste from laptop to phone. Maybe, Bluetooth is a good choice.
+—
+Reply to this email directly or view it on GitHub
+#147 (comment)
+.
+Thanks for sharing.
+I might add that the settings "Export all transactions" and "Delete after export" can be configured in the Settings -> General
+Thanks for sharing.
+I might add that the settings "Export all transactions" and "Delete after export" can be configured in the Settings -> General
+Would love to have live-data in GnuCash Android without having my data on Dropbox or G-Drive...
+GnuCash has the ability to store data in databases. So in the first step... how about adding a new resource beneath G-Drive and DropBox called "Site-Local". It contacts via WiFi to a service that runs on your GnuCah-Machine. The service is more or less simple and only a Gateway/Connector for the Databasedriver.
+All Cash-Data available in your private cloud! And no more Syncing (or overwriting) with files.
+Already thought about such a feature?
+Would love to have live-data in GnuCash Android without having my data on Dropbox or G-Drive...
+GnuCash has the ability to store data in databases. So in the first step... how about adding a new resource beneath G-Drive and DropBox called "Site-Local". It contacts via WiFi to a service that runs on your GnuCah-Machine. The service is more or less simple and only a Gateway/Connector for the Databasedriver.
+All Cash-Data available in your private cloud! And no more Syncing (or overwriting) with files.
+Already thought about such a feature?
+@marcelkoeberl Thanks for the feedback. We have given quite some thought to sync options.
+What you describe needs extra parts not just for the app, but also on the desktop.
+Sorry, but we are not considering such a feature at this time.
+@marcelkoeberl Thanks for the feedback. We have given quite some thought to sync options.
+What you describe needs extra parts not just for the app, but also on the desktop.
+Sorry, but we are not considering such a feature at this time.
+On 21/08/2015 19:13, marcelkoeberl wrote:
+Would love to have live-data in GnuCash Android without having my data
+on Dropbox or G-Drive...
+GnuCash has the ability to store data in databases. So in the first
+step... how about adding a new resource beneath G-Drive and DropBox
+called "Site-Local". It contacts via WiFi to a service that runs on
+your GnuCah-Machine. The service is more or less simple and only a
+Gateway/Connector for the Databasedriver.
+All Cash-Data available in your private cloud! And no more Syncing (or
+overwriting) with files.
+Already thought about such a feature?
+—
+Reply to this email directly or view it on GitHub
+#147 (comment).
+symmetric-ds
+On 21/08/2015 19:13, marcelkoeberl wrote:
+Would love to have live-data in GnuCash Android without having my data
+on Dropbox or G-Drive...
+GnuCash has the ability to store data in databases. So in the first
+step... how about adding a new resource beneath G-Drive and DropBox
+called "Site-Local". It contacts via WiFi to a service that runs on
+your GnuCah-Machine. The service is more or less simple and only a
+Gateway/Connector for the Databasedriver.
+All Cash-Data available in your private cloud! And no more Syncing (or
+overwriting) with files.
+Already thought about such a feature?
+—
+Reply to this email directly or view it on GitHub
+#147 (comment).
+symmetric-ds
+Another option would be to share the underlying database file between desktop and Android version.
+I mean let the Android app use/read/write to a XML or SQLite file and one can use Dropbox/Syncthing to sync and have this same database also on desktop so that Gnucash on desktop can use the same file.
+Another option would be to share the underlying database file between desktop and Android version.
+I mean let the Android app use/read/write to a XML or SQLite file and one can use Dropbox/Syncthing to sync and have this same database also on desktop so that Gnucash on desktop can use the same file.

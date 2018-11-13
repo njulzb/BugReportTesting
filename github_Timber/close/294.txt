@@ -1,0 +1,13 @@
+title:Headphones don't work
+
+The media controls on my headphones don't work
+It's already reported as #15. Maybe someone should change the description to reflect that it's not related to bluetooth.
+It's already reported as #15. Maybe someone should change the description to reflect that it's not related to bluetooth.
+Can you please close this issue it's now resolve
+thanks
+Can you please close this issue it's now resolve
+thanks
+It's not resolved
+It's not resolved
+Should be fixed now
+Should be fixed now

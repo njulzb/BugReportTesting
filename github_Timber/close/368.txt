@@ -1,0 +1,3 @@
+title:Bug in light theme
+
+Button settings white on white appbar

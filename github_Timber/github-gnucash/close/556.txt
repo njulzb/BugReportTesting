@@ -1,0 +1,6 @@
+title:After TransferFund dialog closes, immediately save the transaction
+
+From: https://plus.google.com/u/0/117605068428491461489/posts/Pciqk5iExms
+This is a fairly minor issue that I've been seeing for a while that I just haven't gotten around to posting. In fact it took me a while to realize what was going on. When doing a post with split currencies, the work flow does something unnatural. I'll try to explain:
+Since for single currency transactions, clicking save closes the transaction window and completes the transaction, is there a reason that you have to click save twice to close the split currency transaction? Isn't the expected behavior that after completing the exchange rate step, the transaction is already completed and saved (since you've already clicked the save button) and the transaction window closed?
+﻿

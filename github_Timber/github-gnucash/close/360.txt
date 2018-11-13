@@ -1,0 +1,12 @@
+title:Crash when creating backup, can't export transactions in XML
+
+I'm unable to either backup or export my gnucash data. When attempting to export, I get an error message and the export fails after a few bytes have been written. When I try to do a backup, gnucash crashes. I don't know if the crash is caused by the same error as the export failure, but it seems likely.
+The error message I see when trying to export transactions flashes past very quickly, but I believe this is the whole thing:
+The getName() in export appears in export templates and export scheduled transactions.
+I don't know why we got an empty account yet.
+The getName() in export appears in export templates and export scheduled transactions.
+I don't know why we got an empty account yet.
+@aethertap are you still having this issue?
+@aethertap are you still having this issue?
+No, it seems to be working now.
+No, it seems to be working now.

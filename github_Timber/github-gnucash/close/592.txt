@@ -1,0 +1,3 @@
+title:Widget set on a placeholder account should list the subaccounts instead of a transaction form.
+
+From uservoice feedback: https://gnucash.uservoice.com/forums/320493-gnucash-android/suggestions/16303108-widget-set-on-a-placeholder-account-should-list-th#

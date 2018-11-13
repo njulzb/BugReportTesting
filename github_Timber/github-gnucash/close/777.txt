@@ -1,0 +1,19 @@
+title:Compatibility with Desktop V 3
+
+Import XML data from desktop V3
+Currency are not recognized
+Desktop V 3.1
+Hi,
+I'm with the same issue. Currency are not recognized and the account's balance, is another problem. Shows only XXX0,000000
+GnuCash Desktop
+Versão: 3.1
+Build ID: 3.0-118-gd2ef5fd0f+ (2018-04-28)
+Smartphone Moto Z2 Play
+The account's balance, is another problem, shows only XXX0,000000
+Hi,
+I'm with the same issue. Currency are not recognized and the account's balance, is another problem. Shows only XXX0,000000
+GnuCash Desktop
+Versão: 3.1
+Build ID: 3.0-118-gd2ef5fd0f+ (2018-04-28)
+Smartphone Moto Z2 Play
+The account's balance, is another problem, shows only XXX0,000000

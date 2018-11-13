@@ -1,0 +1,8 @@
+title:"Buy" and "Sell" appear to be reversed for mutual fund/stock type asset transactions.
+
+codinguser
+Behavior is produced when creating a transaction under a mutual fund or stock asset type account and using "XXX - no currency" to buy or sell shares.
+When creating a transaction to "buy" stock under a stock defined account, using funds from an income account for example, I would expect the transaction to increase the income account by the purchase amount as well as increase the stock asset account by the same amount. This is the behavior seen in the GnuCash desktop application.
+As it stands, creating a "buy" transaction decreases the stock or mutual fund account, and "sell" increases the asset account, which is opposite of the desktop software and expected accounting behavior.
+Sorry, the app does not support transaction manipulations in stock and mutual fund accounts at this time.
+Sorry, the app does not support transaction manipulations in stock and mutual fund accounts at this time.

@@ -1,0 +1,7 @@
+title:Tried cloning the project to my pc and this is what i got
+
+Error:(108, 28) No resource found that matches the given name (at 'value' with value '@string/fabric_api_key').
+Error:Execution failed for task ':app:processDebugResources'.
+com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/home/bobsira/Android/Sdk/build-tools/24.0.3/aapt'' finished with non-zero exit value 1
+I think pull request #252 should fix your problem.
+I think pull request #252 should fix your problem.

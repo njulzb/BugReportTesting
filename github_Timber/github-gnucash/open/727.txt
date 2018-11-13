@@ -1,0 +1,4 @@
+title:Decimal input not possible after autocompleting transaction fields
+
+Normal entry including decimal point and arithmetic operations.
+Only numeric digits are permitted, even when using an external keyboard for entry.

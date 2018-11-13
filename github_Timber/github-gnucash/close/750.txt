@@ -1,0 +1,10 @@
+title:Double minus in QIF
+
+Already mentioned in #743, the exported transactions sometimes contain double minus sign at the Amount.
+The exported file should contain the expense "-10".
+Seems cause by the same issue as #723.
+Seems cause by the same issue as #723.
+Seems to be fixed in v.2.3.0
+Seems to be fixed in v.2.3.0
+Thanks for reporting! Closing...
+Thanks for reporting! Closing...

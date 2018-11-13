@@ -1,0 +1,10 @@
+title:Some transactions not exported to QIF
+
+When disabling "Activate Double Entry" option in settings, the transactions created thereafter will not be exported to QIF.
+They are missing the transfer account (category) on entry but, more importantly, will not show up in QIF file at all.
+@fefe982 could you look into this?
+@fefe982 could you look into this?
+Sure.
+Sure.
+Fixed v1.5.5
+Fixed v1.5.5

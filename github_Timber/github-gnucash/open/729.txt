@@ -1,0 +1,18 @@
+title:Memo not Saved Unless Three or More Splits
+
+codinguser
+Open the split editor for a simple transaction with only two splits.
+Enter text into a Memo field.
+Save the transaction.
+There Memo text is there.
+The Memo text is not there.
+@BroMattMiller I was just looking into this issue.
+I cannot reproduce it. I opened an existing transaction, added a memo and saved it.
+The memo was saved.
+Note that memos are not usually displayed in the transaction detail view. Only the split amount and account. But if you open the split editor again, you will see the memo.
+Or did I misundertand you?
+@BroMattMiller I was just looking into this issue.
+I cannot reproduce it. I opened an existing transaction, added a memo and saved it.
+The memo was saved.
+Note that memos are not usually displayed in the transaction detail view. Only the split amount and account. But if you open the split editor again, you will see the memo.
+Or did I misundertand you?

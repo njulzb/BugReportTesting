@@ -1,0 +1,5 @@
+title:Feature request: Enable/Disable inclusion of future transactions in total
+
+No description provided.
+Duplicate of #465
+Duplicate of #465

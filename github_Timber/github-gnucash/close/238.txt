@@ -1,0 +1,6 @@
+title:Cannot select file to import through Google Drive
+
+This happens for some devices but not for others. Since Google accounts are prevalent on most devices, we should look into this.
+Maybe something to do with the file mime type requested?
+Fixed in v2.0.0
+Fixed in v2.0.0

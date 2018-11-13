@@ -1,0 +1,8 @@
+title:issues detected in landscape mode in timber
+
+I was using my phone in landscape mode and listening to music on timber app ,when i discovered that in landscape mode some features like the pause button wasn't there anymore
+The pause button wasn't there anymore
+Start the timber music player
+play any song in landscape mode
+.
+

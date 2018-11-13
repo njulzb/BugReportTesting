@@ -1,0 +1,42 @@
+title:App loses all data when an export is cancelled
+
+Do the following in the app:
+Now, all data has been deleted even though no took place. :-( Obviously, the data should be deleted only after an export has succeeded.
+Hi Peti,
+what version of the app are you using? This issue was raised and fixed in #25
+If you are on the latest version, you should always have a delete confirmation dialog before anything is deleted.
+Hi Peti,
+what version of the app are you using? This issue was raised and fixed in #25
+If you are on the latest version, you should always have a delete confirmation dialog before anything is deleted.
+I have the latest version from the Google play store. I think it's version 1.2.2.
+I have the latest version from the Google play store. I think it's version 1.2.2.
+hmm... and your Android version is?
+hmm... and your Android version is?
+Android 4.0.4 running on a Sony Xperia Pro.
+Android 4.0.4 running on a Sony Xperia Pro.
+I've tried on Android 4.3, 4.0.3 and 2.3.3, each time I always get a dialog asking to confirm delete when I return to the app. No delete should happen without you explicitly clicking yes in that dialog.
+I cannot reproduce this bug.
+I've tried on Android 4.3, 4.0.3 and 2.3.3, each time I always get a dialog asking to confirm delete when I return to the app. No delete should happen without you explicitly clicking yes in that dialog.
+I cannot reproduce this bug.
+Okay. Thank you for your efforts!
+Okay. Thank you for your efforts!
+Sorry. :( But do you still experience this even in version 1.2.3?
+Sorry. :( But do you still experience this even in version 1.2.3?
+To be perfectly honest, I've switched to Expense Register a while ago, which works fine for my purposes.
+To be perfectly honest, I've switched to Expense Register a while ago, which works fine for my purposes.
+Ok.
+On 30.08.2013, at 12:08, Peter Simons notifications@github.com wrote:
+To be perfectly honest, I've switched to Expense Register a while ago,
+which works fine for my purposes.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/104#issuecomment-23551919
+.
+Ok.
+On 30.08.2013, at 12:08, Peter Simons notifications@github.com wrote:
+To be perfectly honest, I've switched to Expense Register a while ago,
+which works fine for my purposes.
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/104#issuecomment-23551919
+.

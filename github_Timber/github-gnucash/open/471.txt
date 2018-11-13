@@ -1,0 +1,6 @@
+title:After use the small plus to add a new record this symbol is gone
+
+In the account there is a small + to add a new record. After press this one time, doesn't mater if you safe the record or cancel it, this symbol is gone. It show up again, when you leave the account and open it again. I made two screenshots. This is, when you open the account:
+This is after press the + one time. The plus symbol is gone.
+Thanks for the feedback This is a known bug. Don't have a fix yet.
+Thanks for the feedback This is a known bug. Don't have a fix yet.

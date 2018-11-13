@@ -1,0 +1,25 @@
+title:Export to owncloud: "OC server not found"
+
+When I try to export to owncloud, I get the error "OC server not found". I use the same url in the owncloud app and it works fine (it's the server's root address).
+What does your server url look like? Mine works using https://cloud.example.com
+Would you mind telling us exactly what you typed in (substituting your domain name with example)? I also wonder if it matters whether you use http or https, but I doubt that should matter.
+What does your server url look like? Mine works using https://cloud.example.com
+Would you mind telling us exactly what you typed in (substituting your domain name with example)? I also wonder if it matters whether you use http or https, but I doubt that should matter.
+My server is at https://example.com/owncloud
+I also tried with http, but it didn't work either.
+My server is at https://example.com/owncloud
+I also tried with http, but it didn't work either.
+I have the same problem. My owncloud URL: https://oc.example.com:9943/owncloud/
+I have the same problem. My owncloud URL: https://oc.example.com:9943/owncloud/
+I tested this on a server with that extra path (the extra /owncloud at the end) and had this issue intermittently. Most of the time it worked fine, but when I repeatedly pressed the test button, eventually it would crash or give the OC server not found error. I'm not sure where to go from here.
+I tested this on a server with that extra path (the extra /owncloud at the end) and had this issue intermittently. Most of the time it worked fine, but when I repeatedly pressed the test button, eventually it would crash or give the OC server not found error. I'm not sure where to go from here.
+I have the same problem when I use a self-signed certificate in owncloud. When I have created my own CA, added them to the device keystore and reconfigure owncloud problem disappeared.
+e.g https://blog.didierstevens.com/2008/12/30/howto-make-your-own-cert-with-openssl/
+I have the same problem when I use a self-signed certificate in owncloud. When I have created my own CA, added them to the device keystore and reconfigure owncloud problem disappeared.
+e.g https://blog.didierstevens.com/2008/12/30/howto-make-your-own-cert-with-openssl/
+I tested the issue in my installation and verified the problem with self-signed certificates. As a simple workaround you could use a certificate by letsencrypt.org . Since they provide free certs I consider this anyways the better solution. Hope that helps.
+I tested the issue in my installation and verified the problem with self-signed certificates. As a simple workaround you could use a certificate by letsencrypt.org . Since they provide free certs I consider this anyways the better solution. Hope that helps.
+I have the same problem (with Nextcloud 11) using a certificate by letsencrypt.org
+Server is at https://example.com/nextcloud
+I have the same problem (with Nextcloud 11) using a certificate by letsencrypt.org
+Server is at https://example.com/nextcloud

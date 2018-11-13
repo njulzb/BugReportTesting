@@ -1,0 +1,16 @@
+title:Delete backups / exports
+
+The App now creates backups in Internal storage, and when exporting, the exported files are also created in internal storage first. As user usually does not have access to this area, I think the App should delete the outdated backups / exports.
+Backup may be deleted when new backup is generated. The current code only uses the last backup.
+Previous (incremental) exports may also be deleted when new export is made.
+Of course the strategy should depend on the how the App should make use of the backups / exports.
+Backups are always created on external storage: /sdcard/gnucash/backups
+Only exports are first created in internal storage and then copied to external.
+I didn't delete them because I was thinking of features like redo export and such. I also plan on expanding backup options to allow more flexibility than just the last backup. The latest backup may have issues or not be the one the user wants.
+We can always delete older ones. The issue would be deciding how old exports/backups should be to be considered outdated.
+Backups are always created on external storage: /sdcard/gnucash/backups
+Only exports are first created in internal storage and then copied to external.
+I didn't delete them because I was thinking of features like redo export and such. I also plan on expanding backup options to allow more flexibility than just the last backup. The latest backup may have issues or not be the one the user wants.
+We can always delete older ones. The issue would be deciding how old exports/backups should be to be considered outdated.
+Oh, my bad. Thought backups are also in internal storage.
+Oh, my bad. Thought backups are also in internal storage.

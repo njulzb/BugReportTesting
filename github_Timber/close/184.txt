@@ -1,0 +1,23 @@
+title:Urgent:Error on now playing activity
+
+@override
+public int getToolbarColor() {
+return Color.TRANSPARENT;
+}
+says method doesn't override method from superclass
+Just comment out @override
+Just comment out @override
+That will solve the error but don't do that, will not solve what this method is actually there for.
+There have been some changes in the app-theme-engine library. I will clear out all issues this weekend
+That will solve the error but don't do that, will not solve what this method is actually there for.
+There have been some changes in the app-theme-engine library. I will clear out all issues this weekend
+Commenting out @override still gives the same error. Not able to make it transparent.
+Commenting out @override still gives the same error. Not able to make it transparent.
+WORKAROUND: Import this project as library to timber project, edit build.gradle and it will fix the error.
+WORKAROUND: Import this project as library to timber project, edit build.gradle and it will fix the error.
+hey! how to import it? can you please help me! what and where to edit in build.gradle.... im new to android developing please help!!
+hey! how to import it? can you please help me! what and where to edit in build.gradle.... im new to android developing please help!!
+@HumbleBeeBumbleBee Can you send me the project after fixing it? PLEASEE?
+@HumbleBeeBumbleBee Can you send me the project after fixing it? PLEASEE?
+The above problem has been fixed in the latest build ;)
+The above problem has been fixed in the latest build ;)

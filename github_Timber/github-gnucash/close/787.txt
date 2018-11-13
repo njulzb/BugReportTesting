@@ -1,0 +1,7 @@
+title:XXX Unknown Currency when importing accounts from GNUCash desktop
+
+Currency for all imported accounts should be the same as te currency in the original (i.e. desktop) accounts configuration; it should be consistent with the default currency setting in the gnucash-android app.
+All accounts have XXX Unknown currency.
+Manually adjusting currency setting for all accounts is a pain, there is no way to propagate the change to all subaccounts.
+Duplicate #764 which is fixed in develop branch and in 2.4.0-beta1
+Duplicate #764 which is fixed in develop branch and in 2.4.0-beta1

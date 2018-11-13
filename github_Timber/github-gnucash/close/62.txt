@@ -1,0 +1,33 @@
+title:unable to export
+
+I'm running gnucash-android 1.1.2 on Android 4.1.2 on a Samsung I9000.
+I cannot export to OFX. I have tried exporting to SD card, or "share file" without success. I tried to check "Export all transaction" but to no avail.
+Expected behaviour:
+Export the OFX file
+What's the default path it tries to export to?
+Maybe its a permission issue?
+What can I do to troubleshoot this?
+Turns out my sdcard was full. After reclaiming some space exporting worked, both ways.
+Maybe you can catch that and present a proper error message intead of a generic one?
+Turns out my sdcard was full. After reclaiming some space exporting worked, both ways.
+Maybe you can catch that and present a proper error message intead of a generic one?
+I'm glad you figured it out. It will indeed be nice to give a better error
+message in the future.
+On 06.02.2013, at 18:45, fizze notifications@github.com wrote:
+Turns out my sdcard was full. After reclaiming some space exporting worked,
+both ways.
+Maybe you can catch that and present a proper error message intead of a
+generic one?
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/62#issuecomment-13195001.
+I'm glad you figured it out. It will indeed be nice to give a better error
+message in the future.
+On 06.02.2013, at 18:45, fizze notifications@github.com wrote:
+Turns out my sdcard was full. After reclaiming some space exporting worked,
+both ways.
+Maybe you can catch that and present a proper error message intead of a
+generic one?
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/gnucash-android/issues/62#issuecomment-13195001.

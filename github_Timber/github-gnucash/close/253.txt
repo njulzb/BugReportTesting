@@ -1,0 +1,19 @@
+title:QIF export does not work
+
+Steps to reproduce:
+Expected results:
+2.5. QIF file exists in the export location.
+3.1. OFX file exists in the export location.
+Actual results:
+2.5. No QIF file found.
+3.1. OFX file exists in the export location.
+Gnucash database: http://wikisend.com/download/360478/gnucash_db.bz2
+Gnucash database: http://wikisend.com/download/360478/gnucash_db.bz2
+This bug still present in 1.5.4.
+This bug still present in 1.5.4.
+Do you have double entry disabled?
+Do you have double entry disabled?
+Yes, double entry is disabled.
+Yes, double entry is disabled.
+Fixed in 1.5.5.
+Fixed in 1.5.5.

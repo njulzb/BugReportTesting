@@ -1,0 +1,13 @@
+title:Sometimes amounts are exported with double minus to QIF
+
+rivaldi8
+Import process should proceed without problems
+Related to #655
+Fixed by 2353957 in develop.
+@codinguser I'm assuming here, as stated in Split's javadoc, that splits always have positive amounts. However, there are some places where it seems it allows negative amounts (example), which is confusing. If you could confirm that my assumption is right, I'll change all this code to assume positive amounts instead.
+Fixed by 2353957 in develop.
+@codinguser I'm assuming here, as stated in Split's javadoc, that splits always have positive amounts. However, there are some places where it seems it allows negative amounts (example), which is confusing. If you could confirm that my assumption is right, I'll change all this code to assume positive amounts instead.
+@rivaldi8 yes, you are correct in your assumption.
+Splits should always be positive, and the type determines the effect of the split.
+@rivaldi8 yes, you are correct in your assumption.
+Splits should always be positive, and the type determines the effect of the split.

@@ -1,0 +1,370 @@
+title:Export Transactions: previously imported transactions are exported forever
+
+How to reproduce
+If we enter another transaction in GCA and export it again the generated QIF file will have the same previously imported transactions plus the new one.
+P.S: We cannot import the QIF file in GnuCash desktop as stated at #466
+Additional information
+Sample files
+sample-files.zip
+@rivaldi8 this sounds similar to some report we got a while back right?
+Could you verify this report? Thanks
+@rivaldi8 this sounds similar to some report we got a while back right?
+Could you verify this report? Thanks
+I've been trying, but I haven't been able to reproduce. I've tested both with the attached example file and with my own files. It never exports the imported transactions, only the newly entered.
+I'm not sure what might be provoking this. Have you changed any setting?
+In my case I've done the tests from a bq Aquaris E4 (Android 5.0).
+I've been trying, but I haven't been able to reproduce. I've tested both with the attached example file and with my own files. It never exports the imported transactions, only the newly entered.
+I'm not sure what might be provoking this. Have you changed any setting?
+In my case I've done the tests from a bq Aquaris E4 (Android 5.0).
+@rivaldi8 I wonder too, because I can't reproduce it. But a small subset of users seem to be having the issue. I haven't changed any settings with this feature.
+Either there is a disconnect between what the users expect and what the feature actually does, or there is a very subtle bug that we will hopefully find one day.
+@rivaldi8 I wonder too, because I can't reproduce it. But a small subset of users seem to be having the issue. I haven't changed any settings with this feature.
+Either there is a disconnect between what the users expect and what the feature actually does, or there is a very subtle bug that we will hopefully find one day.
+Hi guys!
+I think we are facing another time zone issue.
+My time zone is GMT -02:00 Brasilia Summer Time and the issue can be reproduced using the sample files.
+I changed my device to a non negative time zone (I used GMT +00:00 Greenwich Mean Time) and like you the problem could NOT be spotted.
+Hi guys!
+I think we are facing another time zone issue.
+My time zone is GMT -02:00 Brasilia Summer Time and the issue can be reproduced using the sample files.
+I changed my device to a non negative time zone (I used GMT +00:00 Greenwich Mean Time) and like you the problem could NOT be spotted.
+@alceurneto thanks for that additional info. That helps in fixing the problem
+@alceurneto thanks for that additional info. That helps in fixing the problem
+Hi guys,
+I've digged a little the source code in hope of better understanding of this issue.
+I've noticed the trigger responsible for updates on database column modified_at:
+and the DEFAULT CURRENT TIMESTAMP for inserts.
+On a device with timezone GMT -02:00 Brasilia Summer Time I have seen that:
+I've struggled a lot to spot the difference between modified_at for imported and new transactions, but they seen to have analogous paths.
+Of course the basecode is all new to me and I must be missing something.
+P.S.1: I've found this StackOverflow topic about the use of CURRENT_TIMESTAMP x local time (http://stackoverflow.com/questions/381371/sqlite-current-timestamp-is-in-gmt-not-the-timezone-of-the-machine). I've even changed the trigger code to use datetime(CURRENT_TIMESTAMP, 'localtime'), but without success.
+P.S.2: Because the mobile device is subject of sudden (and automated) change of timezone, I'm favour of attributes like modfied_at and lastExportTimeStamp having values without dependency on timezones. When showing these values to the end user we could transform them to set current device's timezone.
+Hi guys,
+I've digged a little the source code in hope of better understanding of this issue.
+I've noticed the trigger responsible for updates on database column modified_at:
+and the DEFAULT CURRENT TIMESTAMP for inserts.
+On a device with timezone GMT -02:00 Brasilia Summer Time I have seen that:
+I've struggled a lot to spot the difference between modified_at for imported and new transactions, but they seen to have analogous paths.
+Of course the basecode is all new to me and I must be missing something.
+P.S.1: I've found this StackOverflow topic about the use of CURRENT_TIMESTAMP x local time (http://stackoverflow.com/questions/381371/sqlite-current-timestamp-is-in-gmt-not-the-timezone-of-the-machine). I've even changed the trigger code to use datetime(CURRENT_TIMESTAMP, 'localtime'), but without success.
+P.S.2: Because the mobile device is subject of sudden (and automated) change of timezone, I'm favour of attributes like modfied_at and lastExportTimeStamp having values without dependency on timezones. When showing these values to the end user we could transform them to set current device's timezone.
+Hi guys,
+I think I've understood the issue.
+As soon as I've realized that our TIMESTAMP column is a standard TEXT column by afinity (https://www.sqlite.org/datatype3.html) the things started to make sense.
+When importing transactions the modified_at column doesn't receive a value and the DEFAULT CURRENT TIMESTAMP stores a timestamp string in UTC time. The use of UTC is correct because we need values without dependency on timezones.
+The issue arises when we insert a new transaction in the mobile app. For example, TransactionsDbAdapter.java has this method:
+Timestamp.toString() returns a string based on the current user timezone (not UTC most of times) giving us a timezone issue at created_at column. At the link https://docs.oracle.com/javase/7/docs/api/java/sql/Timestamp.html we could see Timestamp is wrapper around Date and http://stackoverflow.com/questions/4199217/what-time-zone-does-date-tostring-display discusses Date.toString() and timezones.
+The same occurs for modified_at. For example SplitsDbAdapter.java has this method:
+Our last export time has analogous issue. For example, QifExporter.java by the end of a successful export operation stores the value this way:
+We need evaluate if there is the same issue with other model entities and exporters.
+I'm capable to make a try and work to fix this problem but I need some guidance:
+Hi guys,
+I think I've understood the issue.
+As soon as I've realized that our TIMESTAMP column is a standard TEXT column by afinity (https://www.sqlite.org/datatype3.html) the things started to make sense.
+When importing transactions the modified_at column doesn't receive a value and the DEFAULT CURRENT TIMESTAMP stores a timestamp string in UTC time. The use of UTC is correct because we need values without dependency on timezones.
+The issue arises when we insert a new transaction in the mobile app. For example, TransactionsDbAdapter.java has this method:
+Timestamp.toString() returns a string based on the current user timezone (not UTC most of times) giving us a timezone issue at created_at column. At the link https://docs.oracle.com/javase/7/docs/api/java/sql/Timestamp.html we could see Timestamp is wrapper around Date and http://stackoverflow.com/questions/4199217/what-time-zone-does-date-tostring-display discusses Date.toString() and timezones.
+The same occurs for modified_at. For example SplitsDbAdapter.java has this method:
+Our last export time has analogous issue. For example, QifExporter.java by the end of a successful export operation stores the value this way:
+We need evaluate if there is the same issue with other model entities and exporters.
+I'm capable to make a try and work to fix this problem but I need some guidance:
+@alceurneto I think your analysis makes A LOT of sense. Thanks!
+One way I would suggest to fix this, is to work with created_at and modified_at timestamps in UTC completely by using a DateFormat.format() instead of Timestamp.toString(). The timezone of the DateFormat object can be set to SimpleTimeZone.UTC_TIME. When applying the fixes, also stop by DatabaseAdapter.populateBaseModelAttributes(Cursor, BaseModel), which affects all db adapters.
+I should really get around to writing more in the wiki about contributing. But basically, contributions should go into the develop branch and also add some (Robolectric) unit tests where applicable.
+@alceurneto I think your analysis makes A LOT of sense. Thanks!
+One way I would suggest to fix this, is to work with created_at and modified_at timestamps in UTC completely by using a DateFormat.format() instead of Timestamp.toString(). The timezone of the DateFormat object can be set to SimpleTimeZone.UTC_TIME. When applying the fixes, also stop by DatabaseAdapter.populateBaseModelAttributes(Cursor, BaseModel), which affects all db adapters.
+I should really get around to writing more in the wiki about contributing. But basically, contributions should go into the develop branch and also add some (Robolectric) unit tests where applicable.
+@codinguser Thanks!
+I'll work on it ASAP.
+@codinguser Thanks!
+I'll work on it ASAP.
+One thing to think about would be the modified_at timestamp of existing transactions in the database though. When importing or creating new transactions, it is set by CURRENT_TIMESTAMP which is already in UTC. However, whenever we have set it by updating some record, we have done so using Timestamp.toString() which is local time. We cannot now differentiate those two. What compromise to make. Or is the difference small enough that there will be no effect on exports? Any ideas?
+I have to think about it a little more.
+One thing to think about would be the modified_at timestamp of existing transactions in the database though. When importing or creating new transactions, it is set by CURRENT_TIMESTAMP which is already in UTC. However, whenever we have set it by updating some record, we have done so using Timestamp.toString() which is local time. We cannot now differentiate those two. What compromise to make. Or is the difference small enough that there will be no effect on exports? Any ideas?
+I have to think about it a little more.
+That's correct! We need to think about the transition from the old (some transactions in local time) and the new (all transactions in UTC) regarding existing transactions in database.
+That's correct! We need to think about the transition from the old (some transactions in local time) and the new (all transactions in UTC) regarding existing transactions in database.
+I've started working to fix this issue.
+I've started working to fix this issue.
+@alceurneto 👍
+@alceurneto 👍
+What compromise to make. Or is the difference small enough that there will be no effect on exports? Any ideas?
+Hi guys,
+Some thougts here:
+If we don't update created_at, modified_at and last_export_time I think we'll see the following outlines:
+
+On this picture we can see a time line in UTC. At the 'now' moment, or UTC + 0, occurs a GnuCash Android (GCA) update fixing the current issue without updating our fields. It's pictured in yellow.
+When we have an import (export is analogous) occurred before the version update, the modified_at of imported transactions are equal the import time occurrence and our control variable last_export_time is N hours before them. They are all pictured in red.
+The same occurs for transactions added or edited in the old version. The modified_at is located before the real event. They are are pictured in blue.
+Added or edited data in the new version has equal time occurrence and modified_at. We can see it pictured in green.
+This states that, despite the issue has been fixed, the first export operation will have the same wrong result that we see nowadays.
+After this first attempt (or after an import) I believe the exports will have correct results.
+They fortunately have no problems.
+
+As in previous case we can see the time occurrence for GCA update, but now last_export_time is positioned after an import operation (export is analogous). They are in the future and pictured in red again.
+In the future are too modified_at for added or edited transactions in the old version (pictured in blue).
+That is why users without negative time zones have not noticed the issue.
+On the other hand, after the update, all transactions added or edited in the new version will be NOT eligible for export IF they are entered at least N hours after the last import (if they are entered (N+m) hours after last import time, they will be eligible).
+CURRENT_TIMESTAMP has string format equal to YYYY-MM-DD HH:MM:SS (https://www.sqlite.org/lang_createtable.html).
+Timestamp.toString() has string format equal to yyyy-mm-dd hh:mm:ss.fffffffff (https://docs.oracle.com/javase/7/docs/api/java/sql/Timestamp.html#toString%28%29)
+I've downloaded the database used for tests and could see the differences:
+So a routine to convert the values in the database is feasible, but raises some interesting questions:
+What compromise to make. Or is the difference small enough that there will be no effect on exports? Any ideas?
+Hi guys,
+Some thougts here:
+If we don't update created_at, modified_at and last_export_time I think we'll see the following outlines:
+
+On this picture we can see a time line in UTC. At the 'now' moment, or UTC + 0, occurs a GnuCash Android (GCA) update fixing the current issue without updating our fields. It's pictured in yellow.
+When we have an import (export is analogous) occurred before the version update, the modified_at of imported transactions are equal the import time occurrence and our control variable last_export_time is N hours before them. They are all pictured in red.
+The same occurs for transactions added or edited in the old version. The modified_at is located before the real event. They are are pictured in blue.
+Added or edited data in the new version has equal time occurrence and modified_at. We can see it pictured in green.
+This states that, despite the issue has been fixed, the first export operation will have the same wrong result that we see nowadays.
+After this first attempt (or after an import) I believe the exports will have correct results.
+They fortunately have no problems.
+
+As in previous case we can see the time occurrence for GCA update, but now last_export_time is positioned after an import operation (export is analogous). They are in the future and pictured in red again.
+In the future are too modified_at for added or edited transactions in the old version (pictured in blue).
+That is why users without negative time zones have not noticed the issue.
+On the other hand, after the update, all transactions added or edited in the new version will be NOT eligible for export IF they are entered at least N hours after the last import (if they are entered (N+m) hours after last import time, they will be eligible).
+CURRENT_TIMESTAMP has string format equal to YYYY-MM-DD HH:MM:SS (https://www.sqlite.org/lang_createtable.html).
+Timestamp.toString() has string format equal to yyyy-mm-dd hh:mm:ss.fffffffff (https://docs.oracle.com/javase/7/docs/api/java/sql/Timestamp.html#toString%28%29)
+I've downloaded the database used for tests and could see the differences:
+So a routine to convert the values in the database is feasible, but raises some interesting questions:
+Thanks for the input @alceurneto
+Let me recap to see if I understood you well:
+Basically we import modified_at in UTC time (through db trigger), and then we save last_export_time in local time. If your local time is UTC-N, then all transactions you just imported (or create after import) are having time ahead of UTC-N and therefore will all be exported on next export (and again and again, until your clock becomes at least UTC).
+If a user local time is UTC+N, then the transactions have a time of UTC which is behind last_export_time (currently always localtime). In this case, nothing should be exported since all the modified timestamps are behind the current local time, right? However this export case seems to work fine as you said, and I'm not quite sure I understand why.
+A few more thoughts about fixing this bug:
+Of course, this course of action means that we would probably break the next export after the update for some people. But I guess it's just the growing pains. If we go about modifying the database, I fear we may do more damage for more users.
+What do you think?
+Thanks for the input @alceurneto
+Let me recap to see if I understood you well:
+Basically we import modified_at in UTC time (through db trigger), and then we save last_export_time in local time. If your local time is UTC-N, then all transactions you just imported (or create after import) are having time ahead of UTC-N and therefore will all be exported on next export (and again and again, until your clock becomes at least UTC).
+If a user local time is UTC+N, then the transactions have a time of UTC which is behind last_export_time (currently always localtime). In this case, nothing should be exported since all the modified timestamps are behind the current local time, right? However this export case seems to work fine as you said, and I'm not quite sure I understand why.
+A few more thoughts about fixing this bug:
+Of course, this course of action means that we would probably break the next export after the update for some people. But I guess it's just the growing pains. If we go about modifying the database, I fear we may do more damage for more users.
+What do you think?
+Hi @codinguser,
+Thanks for replying!
+Let me recap to see if I understood you well:
+My NOT native english may be doing the things a little harder ;-)
+Basically ... and therefore will all be exported on next export (and again and again, until your clock becomes at least UTC).
+Until the user do an export at least UTC. An import resets the problem in the current version.
+If a user local time is UTC+N, then the transactions have a time of UTC which is behind last_export_time (currently always localtime). In this case, nothing should be exported since all the modified timestamps are behind the current local time, right? However this export case seems to work fine as you said, and I'm not quite sure I understand why.
+The added/edited new & modified_at pictured in green are operations executed in the new version of GCA (with our fix).
+Currently the users with UTC + N don't have problems but they may experience them after the GCA update if user-entry-in-new-version < import-in-old-version + N.
+Update the saved preference last_export_time to UTC. Read it out as a local time format (it is saved with Timestamp.toString()), convert to UTC and save back. This can be done in the database migration MigrationHelper.upgradeDbToVersion11()
+If we do that for users with UTC - N the transactions pictured in blue will be NOT eligible for export.
+If we do that for users with UTC + N some transactions exported will be eligible again (not pictured).
+IMO, last_export_time and modified_at are linked and we change both or none of them.
+Do not modify the database modified_at timestamps. The reason is because they are always written by the database engine (either upon insert or through an update_trigger). So they should all be UTC and that's fine.
+SplitsDbAdapter changes modified_at of transactions in the wrong way (see the snippet I've posted in my previous comment). I'm looking for analogous problems in other DbAdapters.
+Of course, this course of action means that we would probably break the next export after the update for some people. But I guess it's just the growing pains. If we go about modifying the database, I fear we may do more damage for more users.
+I agree!
+Now guys, some new questions:
+Hi @codinguser,
+Thanks for replying!
+Let me recap to see if I understood you well:
+My NOT native english may be doing the things a little harder ;-)
+Basically ... and therefore will all be exported on next export (and again and again, until your clock becomes at least UTC).
+Until the user do an export at least UTC. An import resets the problem in the current version.
+If a user local time is UTC+N, then the transactions have a time of UTC which is behind last_export_time (currently always localtime). In this case, nothing should be exported since all the modified timestamps are behind the current local time, right? However this export case seems to work fine as you said, and I'm not quite sure I understand why.
+The added/edited new & modified_at pictured in green are operations executed in the new version of GCA (with our fix).
+Currently the users with UTC + N don't have problems but they may experience them after the GCA update if user-entry-in-new-version < import-in-old-version + N.
+Update the saved preference last_export_time to UTC. Read it out as a local time format (it is saved with Timestamp.toString()), convert to UTC and save back. This can be done in the database migration MigrationHelper.upgradeDbToVersion11()
+If we do that for users with UTC - N the transactions pictured in blue will be NOT eligible for export.
+If we do that for users with UTC + N some transactions exported will be eligible again (not pictured).
+IMO, last_export_time and modified_at are linked and we change both or none of them.
+Do not modify the database modified_at timestamps. The reason is because they are always written by the database engine (either upon insert or through an update_trigger). So they should all be UTC and that's fine.
+SplitsDbAdapter changes modified_at of transactions in the wrong way (see the snippet I've posted in my previous comment). I'm looking for analogous problems in other DbAdapters.
+Of course, this course of action means that we would probably break the next export after the update for some people. But I guess it's just the growing pains. If we go about modifying the database, I fear we may do more damage for more users.
+I agree!
+Now guys, some new questions:
+IMO, last_export_time and modified_at are linked and we change both or none of them.
+The question is, how do you changed the modified_at timestamp? It may have been written by the database itself (in UTC) or by an adapter in local time (e.g. SplitDbAdapter). We cannot know the timezone of the timestamp in either case since timezone information is not saved in the database.
+Either way, we need to fix the code to handle all times in UTC. This might result in some export duplicates or skipped transactions. (But we usually have backups and data is rarely lost even if user deletes). During export, users can just adjust the time in the form to get all their transactions out. After the initial hiccups for a few UTC-N users, it will all be fine.
+Right now, I'm open to any ideas how we can fix the code going forward and also fix existing timestamps for users. I do not think it is possible to do both for all users, but I may be wrong.
+Now guys, some new questions:
+OfxExporter retrieves records to export by AccountsDbAdapter.getExportableAccounts(TimeStamp lastexportTimeStamp) but at the end of a successfull operation last_export_time is NOT updated. Is it correct?
+The OfxExporter does set the timestamp in the generateOfxExport() method.
+I've seen we are working to provide support to multiple books. This new feature must introduce a last_export_time for each book (perhaps by a migration from preferences to database) and it is a work in progress. My question is: the develop branch is now the best branch to target this fix?
+I think this fix should go into the hotfix/patches branch. I am implementing multibook support in develop and I will migrate the last_export_time from a user preference into the books database. Each book will have it's own export time separate. I will handle this when merging from the hotfix branch.
+IMO, last_export_time and modified_at are linked and we change both or none of them.
+The question is, how do you changed the modified_at timestamp? It may have been written by the database itself (in UTC) or by an adapter in local time (e.g. SplitDbAdapter). We cannot know the timezone of the timestamp in either case since timezone information is not saved in the database.
+Either way, we need to fix the code to handle all times in UTC. This might result in some export duplicates or skipped transactions. (But we usually have backups and data is rarely lost even if user deletes). During export, users can just adjust the time in the form to get all their transactions out. After the initial hiccups for a few UTC-N users, it will all be fine.
+Right now, I'm open to any ideas how we can fix the code going forward and also fix existing timestamps for users. I do not think it is possible to do both for all users, but I may be wrong.
+Now guys, some new questions:
+OfxExporter retrieves records to export by AccountsDbAdapter.getExportableAccounts(TimeStamp lastexportTimeStamp) but at the end of a successfull operation last_export_time is NOT updated. Is it correct?
+The OfxExporter does set the timestamp in the generateOfxExport() method.
+I've seen we are working to provide support to multiple books. This new feature must introduce a last_export_time for each book (perhaps by a migration from preferences to database) and it is a work in progress. My question is: the develop branch is now the best branch to target this fix?
+I think this fix should go into the hotfix/patches branch. I am implementing multibook support in develop and I will migrate the last_export_time from a user preference into the books database. Each book will have it's own export time separate. I will handle this when merging from the hotfix branch.
+I agree with fixing the code to use UTC and to not try to fix wrong timestamps in the database. Then, the first export after the application update should select transactions where modified_at > last_export_time - N for UTC+N users. This should ensure no transactions are lost. There might be duplicated transactions, but the desktop version should detect them. It just would be a one time annoyance.  From then on, all should work properly.
+However, there might be something I haven't understood, because some numbers don't seem to add up in my tests. If I do an import at 7:00 UTC+1 it's stored as local time in PREF_LAST_EXPORT_TIME (in GncXmlImporter).
+Next, I do an export where PREF_LAST_EXPORT_TIME should be interpreted as if it were in UTC+0 and shown as 8:00 in ExportFormFragment.mExportStartTime. Instead, what I see is 6:00.
+Moreover, the transactions added just after the import are exported correctly (I understand they shouldn't). The imported ones aren't exported, as expected.
+I agree with fixing the code to use UTC and to not try to fix wrong timestamps in the database. Then, the first export after the application update should select transactions where modified_at > last_export_time - N for UTC+N users. This should ensure no transactions are lost. There might be duplicated transactions, but the desktop version should detect them. It just would be a one time annoyance.  From then on, all should work properly.
+However, there might be something I haven't understood, because some numbers don't seem to add up in my tests. If I do an import at 7:00 UTC+1 it's stored as local time in PREF_LAST_EXPORT_TIME (in GncXmlImporter).
+Next, I do an export where PREF_LAST_EXPORT_TIME should be interpreted as if it were in UTC+0 and shown as 8:00 in ExportFormFragment.mExportStartTime. Instead, what I see is 6:00.
+Moreover, the transactions added just after the import are exported correctly (I understand they shouldn't). The imported ones aren't exported, as expected.
+Hi guys,
+Thanks for helping.
+The OfxExporter does set the timestamp in the generateOfxExport()
+Ops, my bad! It's there all the time...
+Update the saved preference last_export_time to UTC. Read it out as a local time format (it is saved with Timestamp.toString()), convert to UTC and save back. This can be done in the database migration MigrationHelper.upgradeDbToVersion11()
+No problems. I'll do it but will I create MigrationHelper.upgradeDbToVersion12() or work in the current upgradeDbToVersion11()?
+I think this fix should go into the hotfix/patches branch.
+I'll do my PR in hotfix/patches. I'm working on it all my spare time. I've caught by an issue with Robolectric (robolectric/robolectric#1363) and none of workarounds solved my problem. At the end I reconfigured my development environment in a new Windows account and now I'm coding.
+Hi guys,
+Thanks for helping.
+The OfxExporter does set the timestamp in the generateOfxExport()
+Ops, my bad! It's there all the time...
+Update the saved preference last_export_time to UTC. Read it out as a local time format (it is saved with Timestamp.toString()), convert to UTC and save back. This can be done in the database migration MigrationHelper.upgradeDbToVersion11()
+No problems. I'll do it but will I create MigrationHelper.upgradeDbToVersion12() or work in the current upgradeDbToVersion11()?
+I think this fix should go into the hotfix/patches branch.
+I'll do my PR in hotfix/patches. I'm working on it all my spare time. I've caught by an issue with Robolectric (robolectric/robolectric#1363) and none of workarounds solved my problem. At the end I reconfigured my development environment in a new Windows account and now I'm coding.
+However, there might be something I haven't understood, because some numbers don't seem to add up in my tests. If I do an import at 7:00 UTC+1 it's stored as local time in PREF_LAST_EXPORT_TIME (in GncXmlImporter).
+Next, I do an export where PREF_LAST_EXPORT_TIME should be interpreted as if it were in UTC+0 and shown as 8:00 in ExportFormFragment.mExportStartTime. Instead, what I see is 6:00.
+@rivaldi8 PREF_LAST_EXPORT_TIME is always saved as local time, except immediately after export where the last modification timestamp is read from the db and saved as last export time. This time is therefore in UTC as it was created by the database trigger. Therefore in your case, the PREF_LAST_EXPORT_TIME is correctly set to 06H. When reading the time, Timestamp does not convert it to anything else. It just uses the value given but assumes it is local time. That's why you see 06H.
+No problems. I'll do it but will I create MigrationHelper.upgradeDbToVersion12() or work in the current upgradeDbToVersion11()?
+@alceurneto you're right, it should be in v12. Also make sure to update the DATABASE_VERSION in DatabaseSchema.
+So basically what we're doing is fixing the code to always save/read the last_export_time in UTC, and then in MigrationHelper.upgradeDbToVersion12() we will manually set the last_export_time to last_export_time - N for UTC+N users. So this will be used on next export. Is my understanding correct?
+Also just thought to mention that the app already has a dependence on the Joda time library which is great for time manipulation. In case you need it.
+Thanks for the attention to this issue.
+However, there might be something I haven't understood, because some numbers don't seem to add up in my tests. If I do an import at 7:00 UTC+1 it's stored as local time in PREF_LAST_EXPORT_TIME (in GncXmlImporter).
+Next, I do an export where PREF_LAST_EXPORT_TIME should be interpreted as if it were in UTC+0 and shown as 8:00 in ExportFormFragment.mExportStartTime. Instead, what I see is 6:00.
+@rivaldi8 PREF_LAST_EXPORT_TIME is always saved as local time, except immediately after export where the last modification timestamp is read from the db and saved as last export time. This time is therefore in UTC as it was created by the database trigger. Therefore in your case, the PREF_LAST_EXPORT_TIME is correctly set to 06H. When reading the time, Timestamp does not convert it to anything else. It just uses the value given but assumes it is local time. That's why you see 06H.
+No problems. I'll do it but will I create MigrationHelper.upgradeDbToVersion12() or work in the current upgradeDbToVersion11()?
+@alceurneto you're right, it should be in v12. Also make sure to update the DATABASE_VERSION in DatabaseSchema.
+So basically what we're doing is fixing the code to always save/read the last_export_time in UTC, and then in MigrationHelper.upgradeDbToVersion12() we will manually set the last_export_time to last_export_time - N for UTC+N users. So this will be used on next export. Is my understanding correct?
+Also just thought to mention that the app already has a dependence on the Joda time library which is great for time manipulation. In case you need it.
+Thanks for the attention to this issue.
+Hi @codinguser !
+So basically what we're doing is fixing the code to always save/read the last_export_time in UTC, and then in MigrationHelper.upgradeDbToVersion12() we will manually set the last_export_time to last_export_time - N for UTC+N users. So this will be used on next export.
+I'm checking if I've understood all the things: we will covert last_export_time only for UTC + N users.
+Hi @codinguser !
+So basically what we're doing is fixing the code to always save/read the last_export_time in UTC, and then in MigrationHelper.upgradeDbToVersion12() we will manually set the last_export_time to last_export_time - N for UTC+N users. So this will be used on next export.
+I'm checking if I've understood all the things: we will covert last_export_time only for UTC + N users.
+I'm checking if I've understood all the things: we will covert last_export_time only for UTC + N users.
+@alceurneto that's at least what I understood from you and @rivaldi8 analysis of the situation. But I must say you understand this bug better than I do. Do you recommend a different course of action?
+I'm checking if I've understood all the things: we will covert last_export_time only for UTC + N users.
+@alceurneto that's at least what I understood from you and @rivaldi8 analysis of the situation. But I must say you understand this bug better than I do. Do you recommend a different course of action?
+that's at least what I understood from you and @rivaldi8 analysis of the situation. But I must say you understand this bug better than I do. Do you recommend a different course of action?
+@codinguser Thanks for replying. I'll think a little more about it.
+that's at least what I understood from you and @rivaldi8 analysis of the situation. But I must say you understand this bug better than I do. Do you recommend a different course of action?
+@codinguser Thanks for replying. I'll think a little more about it.
+@alceurneto sorry about the confusion. As @codinguser points out, It seems I misunderstood what was happening with the time conversions, so my proposed solution for the first export might not be appropriate.
+You'd better solve it in the way you find more suitable :) I'll try to help if I find some time to look into it.
+@alceurneto sorry about the confusion. As @codinguser points out, It seems I misunderstood what was happening with the time conversions, so my proposed solution for the first export might not be appropriate.
+You'd better solve it in the way you find more suitable :) I'll try to help if I find some time to look into it.
+@rivaldi8 no problem. There are many variables here and we are looking for thorough understanding together.
+Thanks in advance for your help.
+@rivaldi8 no problem. There are many variables here and we are looking for thorough understanding together.
+Thanks in advance for your help.
+@alceurneto Because of the different timezones, we cannot find a one-size-fits-all solution. But I thought of a much simpler solution.
+What if we just fix the code (everything UTC going forward) and then set the export time (for the first export after update) to UTC - N for everyone. That way, we would export some duplicates for all N >= 0 users, but we will not skip any transactions for N < 0 users. Duplicates are not a problem because GnuCash desktop can detect and skip duplicates during import (and this would be a one time annoyance).
+What do you think?
+@alceurneto Because of the different timezones, we cannot find a one-size-fits-all solution. But I thought of a much simpler solution.
+What if we just fix the code (everything UTC going forward) and then set the export time (for the first export after update) to UTC - N for everyone. That way, we would export some duplicates for all N >= 0 users, but we will not skip any transactions for N < 0 users. Duplicates are not a problem because GnuCash desktop can detect and skip duplicates during import (and this would be a one time annoyance).
+What do you think?
+@codinguser
+What if we just fix the code (everything UTC going forward) and then set the export time (for the first export after update) to UTC - N for everyone. That way, we would export some duplicates for all N >= 0 users, but we will not skip any transactions for N < 0 users. Duplicates are not a problem because GnuCash desktop can detect and skip duplicates during import (and this would be a one time annoyance).
+What do you think?
+Would be an elegant solution. The same warning message could be sent to all users.
+Do you know what is the field used for GnuCash desktop to detect duplicates during imports?
+@codinguser
+What if we just fix the code (everything UTC going forward) and then set the export time (for the first export after update) to UTC - N for everyone. That way, we would export some duplicates for all N >= 0 users, but we will not skip any transactions for N < 0 users. Duplicates are not a problem because GnuCash desktop can detect and skip duplicates during import (and this would be a one time annoyance).
+What do you think?
+Would be an elegant solution. The same warning message could be sent to all users.
+Do you know what is the field used for GnuCash desktop to detect duplicates during imports?
+Do you know what is the field used for GnuCash desktop to detect duplicates during imports?
+I think GnuCash desktop uses a combination of heuristics. But I can also imagine that as the transaction ID would be the same, it could easily use that to detect duplicates. All transactions have unique IDs.
+Do you know what is the field used for GnuCash desktop to detect duplicates during imports?
+I think GnuCash desktop uses a combination of heuristics. But I can also imagine that as the transaction ID would be the same, it could easily use that to detect duplicates. All transactions have unique IDs.
+Hi guys!
+I have almost finished and I'm working now to set last-export-time to UTC - N for everyone. I'm coding MigrationHelper.upgradeDbToVersion12(SQLiteDatabase db) and all the magic will happen there.
+All is OK but I need a Context in order to retrieve and save last-export-time in Android Preferences. I've a work around with static fields but it's very ugly. A better approach would be changing the signature of MigrationHelper.upgradeDbToVersionXX to receive both SQLiteDatabase and Context.
+I've seen that this method is called by reflection and I'll make the changes with care if you agree.
+Thanks in advance.
+Hi guys!
+I have almost finished and I'm working now to set last-export-time to UTC - N for everyone. I'm coding MigrationHelper.upgradeDbToVersion12(SQLiteDatabase db) and all the magic will happen there.
+All is OK but I need a Context in order to retrieve and save last-export-time in Android Preferences. I've a work around with static fields but it's very ugly. A better approach would be changing the signature of MigrationHelper.upgradeDbToVersionXX to receive both SQLiteDatabase and Context.
+I've seen that this method is called by reflection and I'll make the changes with care if you agree.
+Thanks in advance.
+You can get a context anywhere using GnucashApplication.getAppContext() ;)
+No need to change the method signature
+You can get a context anywhere using GnucashApplication.getAppContext() ;)
+No need to change the method signature
+That's right! Thanks!
+That's right! Thanks!
+Hello guys!
+Please check the PR is OK.
+Strictly speaking our update in version migration shifts last-export-time N hours earlier on time, where N is the absolute value of user time zone offset for all users. Some values extracted from my test logs when running MigrationHelper:
+User time zone GMT-05:00 Eastern Standard Time:
+02-05 17:29:55.868 3759-3759/? D/PreferencesHelper: Retrieving '2016-02-05 07:39:07.000' as lastExportTime from Android Preferences.
+02-05 17:29:55.869 3759-3759/? D/PreferencesHelper: Storing '2016-02-05 02:39:07.000' as lastExportTime in Android Preferences.
+User time zone GMT+05:00 Pakistan Standard Time:
+02-06 03:41:18.304 8748-8748/? D/PreferencesHelper: Retrieving '2016-02-05 02:39:07.000' as lastExportTime from Android Preferences.
+02-06 03:41:18.305 8748-8748/? D/PreferencesHelper: Storing '2016-02-04 21:39:07.000' as lastExportTime in Android Preferences.
+If you have doubts please comment.
+Hello guys!
+Please check the PR is OK.
+Strictly speaking our update in version migration shifts last-export-time N hours earlier on time, where N is the absolute value of user time zone offset for all users. Some values extracted from my test logs when running MigrationHelper:
+User time zone GMT-05:00 Eastern Standard Time:
+02-05 17:29:55.868 3759-3759/? D/PreferencesHelper: Retrieving '2016-02-05 07:39:07.000' as lastExportTime from Android Preferences.
+02-05 17:29:55.869 3759-3759/? D/PreferencesHelper: Storing '2016-02-05 02:39:07.000' as lastExportTime in Android Preferences.
+User time zone GMT+05:00 Pakistan Standard Time:
+02-06 03:41:18.304 8748-8748/? D/PreferencesHelper: Retrieving '2016-02-05 02:39:07.000' as lastExportTime from Android Preferences.
+02-06 03:41:18.305 8748-8748/? D/PreferencesHelper: Storing '2016-02-04 21:39:07.000' as lastExportTime in Android Preferences.
+If you have doubts please comment.
+It looks alright to me, I've just made some minor comments inline. I've also made some (non-exhaustive) tests and it seems to be working fine.
+It looks alright to me, I've just made some minor comments inline. I've also made some (non-exhaustive) tests and it seems to be working fine.
+Thanks @rivaldi8.
+Thanks @rivaldi8.
+@alceurneto I've had a quick look and it looks alright. Thanks for your work on this issue. 👍
+I thought just the last_exported_time was affected, but clearly the scope goes beyond that (which is good). Since it touches the created_at and modified_at timestamps, it would be good to know that exported transactions in XML still have valid (local) times for date_posted and date_entered. And also that the XML importer handles these dates properly as well. Are those covered?
+@alceurneto I've had a quick look and it looks alright. Thanks for your work on this issue. 👍
+I thought just the last_exported_time was affected, but clearly the scope goes beyond that (which is good). Since it touches the created_at and modified_at timestamps, it would be good to know that exported transactions in XML still have valid (local) times for date_posted and date_entered. And also that the XML importer handles these dates properly as well. Are those covered?
+@codinguser Thanks.
+it would be good to know that exported transactions in XML still have valid (local) times for date_posted and date_entered. And also that the XML importer handles these dates properly as well. Are those covered?
+Yes. They are covered. I did some additional tests importing from GnuCash desktop (GCD) and importing to it again. The date-posted and date-enteredseems to be working well.
+Keep in mind that transactions entered on GCD receives arbitrary 00:00:00 local time:
+When desktop and mobile have not the same time zone we could see things like:
+And nothing is wrong here.
+I did a little research and seems GCD has a time field but its not used (keeping the zero value). When the desktop application receives a time zone change the data-posted could change in a weird, but not wrong, way (https://bugzilla.gnome.org/show_bug.cgi?id=137017).
+@codinguser Thanks.
+it would be good to know that exported transactions in XML still have valid (local) times for date_posted and date_entered. And also that the XML importer handles these dates properly as well. Are those covered?
+Yes. They are covered. I did some additional tests importing from GnuCash desktop (GCD) and importing to it again. The date-posted and date-enteredseems to be working well.
+Keep in mind that transactions entered on GCD receives arbitrary 00:00:00 local time:
+When desktop and mobile have not the same time zone we could see things like:
+And nothing is wrong here.
+I did a little research and seems GCD has a time field but its not used (keeping the zero value). When the desktop application receives a time zone change the data-posted could change in a weird, but not wrong, way (https://bugzilla.gnome.org/show_bug.cgi?id=137017).
+@codinguser I think I've missed a test with OFX format. Sorry! I'll do it ASAP.
+@codinguser I think I've missed a test with OFX format. Sorry! I'll do it ASAP.
+@alceurneto awesome 👍
+@alceurneto awesome 👍
+I think there are no problems with OFX export.
+OfxHelper uses a SimpleDateFormat with local time
+But adds a suffix with time zone information this way:
+The exported file contains:
+When I imported the file on GnuCash desktop (GCD) the result didn't make sense to me but it's outside the scope this issue. The new transaction date was correct but the time is always a zero value (as I could see after an export from GCD).
+Finally, one last question: is OFX the standard format used to exchange data between mobile and desktop?
+I think there are no problems with OFX export.
+OfxHelper uses a SimpleDateFormat with local time
+But adds a suffix with time zone information this way:
+The exported file contains:
+When I imported the file on GnuCash desktop (GCD) the result didn't make sense to me but it's outside the scope this issue. The new transaction date was correct but the time is always a zero value (as I could see after an export from GCD).
+Finally, one last question: is OFX the standard format used to exchange data between mobile and desktop?
+That's correct, OFX includes timezone info. So I guess we need not worry about that.
+No, QIF is the format used by default. OFX does not support double-entry transactions.
+I will merge the pull request and make a beta release available so more people will test.
+Thanks @alceurneto
+That's correct, OFX includes timezone info. So I guess we need not worry about that.
+No, QIF is the format used by default. OFX does not support double-entry transactions.
+I will merge the pull request and make a beta release available so more people will test.
+Thanks @alceurneto
+Perfect!
+I'm thrilled to have helped the team.
+Perfect!
+I'm thrilled to have helped the team.
+We'd like to continue to have your help ;)
+We'd like to continue to have your help ;)

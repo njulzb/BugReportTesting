@@ -1,0 +1,51 @@
+title:Deposit / Withdrawal change existing entry
+
+An existing entry is created as a "Withdrawal".  Try to change the existing entry from a "withdrawal" to "Deposit" button next to the amount, it does change the color of the amount to green and changes the button to say Deposit, but when you click the checkmark to save the entry it does not save the entry as a deposit.  (also vice versa deposit ->Withdrawal)  Also when entering it will auto-fill the amount from a previous transaction, and automatically mark it as withdrawal or deposit but will not save if you change it to the other.
+Thanks for the feedback. Could you please provide some more information?
+What version of the app are you using? What Android version?
+Are you using double-entry accounting?
+How many splits were in the transaction? Or was it a simple transfer from one account to another.
+Thanks for the feedback. Could you please provide some more information?
+What version of the app are you using? What Android version?
+Are you using double-entry accounting?
+How many splits were in the transaction? Or was it a simple transfer from one account to another.
+I can reproduce.
+For multi-splits transactions, edits in splits view cannot be saved.
+I can reproduce.
+For multi-splits transactions, edits in splits view cannot be saved.
+On 1.5.1 , when split's type is inverted, it will not be reflected on the transaction view. However, the transaction list view is correct.
+On develop branch, all edits on splits view are lost.
+BTW, @codinguser , I think a bug fix branch from master is need for bug fixes. The develop branch and master are very different now, cherry-picks from develop to master may not work properly. Bug fixes pull requests now can only be made directly on master.
+On 1.5.1 , when split's type is inverted, it will not be reflected on the transaction view. However, the transaction list view is correct.
+On develop branch, all edits on splits view are lost.
+BTW, @codinguser , I think a bug fix branch from master is need for bug fixes. The develop branch and master are very different now, cherry-picks from develop to master may not work properly. Bug fixes pull requests now can only be made directly on master.
+@fefe982 The develop branch is ahead of master as some bug fixes have been committed to it. But all that is in master is also in develop. I made 1.5.1 out of a hotfix branch to fix the upgrade issue and then cross-merged into develop and master. So for the next few patches, we can just continue working on develop. I still prefer to not merge patches into master directly during ongoing development.
+I usually create feature branches for bigger stuff I'm working on and only merge it later when it's ready. Small fixes and improvements can continue to go directly into the develop branch, and patch releases will be made from there.
+@fefe982 The develop branch is ahead of master as some bug fixes have been committed to it. But all that is in master is also in develop. I made 1.5.1 out of a hotfix branch to fix the upgrade issue and then cross-merged into develop and master. So for the next few patches, we can just continue working on develop. I still prefer to not merge patches into master directly during ongoing development.
+I usually create feature branches for bigger stuff I'm working on and only merge it later when it's ready. Small fixes and improvements can continue to go directly into the develop branch, and patch releases will be made from there.
+I cannot reproduce this.
+@fefe982 is the bug only on develop or on 1.5.1/master as well?
+I cannot reproduce this.
+@fefe982 is the bug only on develop or on 1.5.1/master as well?
+I have done a little more investigation.
+I have Deleted ALL accounts and created one account "Checking".  I was using it for a simple checkbook register, so single accounting.  It was working good about 2 releases ago in this fashion, but one of the updates in the last couple updates made it stop working for this.  Thank You!
+I have done a little more investigation.
+I have Deleted ALL accounts and created one account "Checking".  I was using it for a simple checkbook register, so single accounting.  It was working good about 2 releases ago in this fashion, but one of the updates in the last couple updates made it stop working for this.  Thank You!
+Even more investigation... I guess I was using the software incorrectly... if I disable the "Activate Double Entry" option in the settings, it works fine with a single account.
+Even more investigation... I guess I was using the software incorrectly... if I disable the "Activate Double Entry" option in the settings, it works fine with a single account.
+@codinguser The bug exists on 1.5.1.
+With 1.5.1 / master (using double entry):
+This is a UI update problem in 1.5.1/master, the edit in the transaction should be correctly saved if save is clicked on transaction edit view, but the UI is not correctly updated. The UI is correct when you edit the transaction again, as this time the UI is initialized with the modified transaction. #249 is meant to correct this.
+If Cancel instead of Save is clicked in Step6, edit will not be saved. All edits are lost.
+@21nds , is this the same bug you are reporting?
+@codinguser The bug exists on 1.5.1.
+With 1.5.1 / master (using double entry):
+This is a UI update problem in 1.5.1/master, the edit in the transaction should be correctly saved if save is clicked on transaction edit view, but the UI is not correctly updated. The UI is correct when you edit the transaction again, as this time the UI is initialized with the modified transaction. #249 is meant to correct this.
+If Cancel instead of Save is clicked in Step6, edit will not be saved. All edits are lost.
+@21nds , is this the same bug you are reporting?
+That is not exactly the same bug I was experiencing, but likely related... It seems that when someone deletes ALL accounts and has only ONE account (for example "Checking").  I left the "Activate Double Entry" setting on because I had no clue that setting even existed.  I was using the single account as a checkbook register to simply keep track of money in the one account.  The last couple of updates has changed the way the save works.  Below is my "best guess" at the bug.
+Fresh download
+That is not exactly the same bug I was experiencing, but likely related... It seems that when someone deletes ALL accounts and has only ONE account (for example "Checking").  I left the "Activate Double Entry" setting on because I had no clue that setting even existed.  I was using the single account as a checkbook register to simply keep track of money in the one account.  The last couple of updates has changed the way the save works.  Below is my "best guess" at the bug.
+Fresh download
+Bug is confirmed.
+Bug is confirmed.

@@ -1,0 +1,31 @@
+title:skip passcode input layout with SwipeBack
+
+SwipeBack is a Xposed module that use swipe gesture to perform back operation
+I'm have install both GnuCash and SwipeBack,
+and found that the passcode input layout can be swiped and enter the main ui directly
+I think it's a security issue
+More about SwipeBack: http://repo.xposed.info/module/us.shandian.mod.swipeback
+@aint could you look into this?
+@aint could you look into this?
+Check this pull request, please.
+Check this pull request, please.
+@iptux can you confirm that this issue is fixed in the latest version (v1.5.4)?
+Then I would close this issue
+@iptux can you confirm that this issue is fixed in the latest version (v1.5.4)?
+Then I would close this issue
+Not fixed in v1.5.4(from F-Droid).
+Not fixed in v1.5.4(from F-Droid).
+This is of course not working, because my fix not included in in the latest version.
+This is of course not working, because my fix not included in in the latest version.
+mea culpa... you are right!
+It will come in a future release
+mea culpa... you are right!
+It will come in a future release
+Not fully fixed in v1.5.5(from F-Droid).
+This time swipe the passcode don't show main ui, the app quit out. Passcode is required if app started again.
+But if I'm fast enough, that is swipe the passcode IMMEDIATELY after passcode layout shows up, I have CHANCE to enter the main ui directly at app's next start.
+So after repeating the "start app -> swipe out -> app quit" loop several times, I can enter the main ui without a passcode.
+Not fully fixed in v1.5.5(from F-Droid).
+This time swipe the passcode don't show main ui, the app quit out. Passcode is required if app started again.
+But if I'm fast enough, that is swipe the passcode IMMEDIATELY after passcode layout shows up, I have CHANCE to enter the main ui directly at app's next start.
+So after repeating the "start app -> swipe out -> app quit" loop several times, I can enter the main ui without a passcode.

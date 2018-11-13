@@ -1,0 +1,7 @@
+title:[Enhancement Request] Access music when launching app from notification
+
+A couple of people pointed this out, and I would like to point this to the dev as well. Please include the option to browse music when launching the app from the notification bar. The current behaviour is that it just shows the player, and when you press the back key, it just exits. It would be nice if we could browse music by accessing the app from the notification bar. It is inconvenient to keep searching for the app icon and launch it whenever we want to change the music. It is much more easier to access the app from the notifications.
+Fixed, will be available in next release
+Fixed, will be available in next release
+Thanks! It works!
+Thanks! It works!

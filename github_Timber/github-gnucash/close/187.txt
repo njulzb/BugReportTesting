@@ -1,0 +1,9 @@
+title:Exporting Issue
+
+When exporting latest transactions the file is empty!
+Full cleanup or the last update solved the problem.
+Now all is ok.
+Full cleanup or the last update solved the problem.
+Now all is ok.
+The last update did
+The last update did

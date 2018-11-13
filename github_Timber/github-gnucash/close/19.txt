@@ -1,0 +1,8 @@
+title:Calculator in transcation amount field
+
+Please allow to enter expressions into transaction amount fields (for example, 2*20+16).
+I can help you in string calculator implementation.
+Would be a great feature!
+Would be a great feature!
+Yes please! Indispensable!
+Yes please! Indispensable!

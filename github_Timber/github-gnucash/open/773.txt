@@ -1,0 +1,20 @@
+title:Icon/Logo design proposal
+
+Good day Sir @codinguser
+I am a designer and I want to ask your permission to design a logo/icon for the app.
+Thank you & Best regards!
+Tobaloidee
+Hi @Tobaloidee , thanks for the offer to help. Sorry for taking in while in getting back to you.
+We could actually use some help with graphic design stuff.
+For the logo, I would prefer to maintain the current logo in order to be consistent with GnuCash desktop. But it would be great to have a new feature graphic and a promo graphic for the Play Store. You can read more about these images here:
+https://support.google.com/googleplay/android-developer/answer/1078870?hl=en
+The main GnuCash logo can be gotten from the site gnucash.org in case you need it for the feature images.
+If you are open to it, I would also contact you as need arises for other graphic assets. (e.g. small icons for denoting accounts, transactions etc).
+Thanks again!
+Hi @Tobaloidee , thanks for the offer to help. Sorry for taking in while in getting back to you.
+We could actually use some help with graphic design stuff.
+For the logo, I would prefer to maintain the current logo in order to be consistent with GnuCash desktop. But it would be great to have a new feature graphic and a promo graphic for the Play Store. You can read more about these images here:
+https://support.google.com/googleplay/android-developer/answer/1078870?hl=en
+The main GnuCash logo can be gotten from the site gnucash.org in case you need it for the feature images.
+If you are open to it, I would also contact you as need arises for other graphic assets. (e.g. small icons for denoting accounts, transactions etc).
+Thanks again!

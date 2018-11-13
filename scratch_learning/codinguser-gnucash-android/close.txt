@@ -1,0 +1,73 @@
+Transaction description margin
+QIF export crashes due to illegal denominator
+ScheduledActionService crashes on Android 8
+Backups are created every hour
+General export seems to corrupt the backup
+Persian currency symbol is doubled
+New transaction is not saved correctly (sign issue)
+Split memos disappear
+Transaction details screen footer disappears
+Bug: Long list of splits not fully visible
+Sometimes amounts are exported with double minus to QIF
+Bug: Long pressing the amount input brings up QWERTY keyboard
+XML Export of transactions to GDrive generates broken XML since latest version
+Crash when exporting directly to Google Drive with multi-currency
+Device rotation causes crash
+App crashes after creating account with BYN currency
+QIF export uses commas instead of dots as decimal separators (italian EUR accounts)
+App crashes when trying modify account if default transaction account no longer exist.
+Translation of DropBox to Dropbox
+Commas in Account name causes error in reporting
+Weekday is ignored in scheduled exports
+BYN currency support not stable
+App crashes when changing orientation while viewing reports
+Default accounts are created in English when no region-specific is available
+When an account is edited, its color is lostOpening a transaction shows value divided by 10Transactions shouldn't be deleted if there's some error when exporting
+Weekly scheduled exports are listed with the wrong day
+Export to Google Drive silently fails
+Timestamp 0 when never exported.
+Custom date range doesn't work properly in reports
+Scheduled exports always include transactions since the action's creation date
+Widgets stop functioning after changing book
+Scheduled exports aren't executed if they're checked before the next run
+Scheduled actions don't run due to #583
+Scheduled exports run with each service run until missed executions are recovered
+one last export date is saved for all books
+Multi-currency transactions are ignored by QIF
+Delete book shared preferences when book is deleted
+Migrate existing backups to new backups folder (per book)
+Widget creation crashes opening accounts list
+Selecting custom date range in reports causes crash
+First run wizard currency preference is ignored when creating new book
+After new installation, transfer account spinner is not shown
+Every export creates a new scheduled export
+App drains device battery
+787 foreign key constraint error caused by unfixed balance split
+Selecting custom date range in reports causes the app to crash
+Precision may be lost when saving the exchange rate in the database
+Java.lang.IllegalArgumentException: accounts Record ID -9223372036854775808 does not exist in the db
+Export Transactions: previously imported transactions are exported foreverWrong balance in editor for split transactions when working with Liabilities
+Edit button overlapped in transaction view
+"Done" button for date editor does not fit into the screen
+[unverified] Breaks when trying to change parent account for an existing sub-account.
+skip passcode input layout with SwipeBack
+saving is slow since 1.4
+Incomplete translation
+Unable to scroll when creating/editing accounts
+Display error when selecting multiple transactions
+Error in time editor
+Can't write in the name field when creating a new account
+Delete existing accounts does not work reliably when exporting via Sharing
+GnuCash upsets default launcher on systems with multiple launchers
+Crash when creating account names with an apostrophe
+Crashes on Android 4.2
+Default transaction type is always DEBIT in non-English locale
+amount input problem with Swype
+OFX file has no encoding information
+Transaction Dates aren't compatible with Gnucash
+Saving new transaction crashes app
+Wrong amount display in transactions list view
+NumberFormatException with big amount transaction
+Actionbar up-button from Settings crashes on Nexus S
+Plus Button on Widget
+App crashes when a transaction amount is being enteredOpening a transaction shows value divided by 10

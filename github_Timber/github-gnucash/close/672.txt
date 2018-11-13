@@ -1,0 +1,28 @@
+title:Crash when exporting directly to Google Drive with multi-currency
+
+rivaldi8
+[USER REPORT] I am seeing consistent crashing during export to Google Drive. I tried my first export in about 6 months. It was the first time since different currencies exported to different files (in case this is related). I was trying to export to Google Drive (using "Share..." and selecting Google Drive). Oddly, it isn't GnuCash crashing, it is the Google Drive app crashing. But it crashes immediately after I select a folder, and the files are not uploaded. I have never seen Google Drive crash under any other circumstances.
+I tried about 5 times, and it failed consistently each time. I tried the same thing on my wife's phone and got the exact same crashing results. (Her phone is a more standard Android setup than mine.) But exporting to SD card and then doing a Google Drive upload from the file manager worked without issue.
+So there is an easy enough workaround for now.﻿
+Exporting multi-currency transactions to Google Drive should not cause app crash
+App crashes when multi-currency transactions are exported to Google Drive
+In my case it doesn't crash, maybe because I've tested in a newer version (2.1.6). However, it fails to send the files to Google Drive:
+In my case it doesn't crash, maybe because I've tested in a newer version (2.1.6). However, it fails to send the files to Google Drive:
+I'd say we're doing it wrong. We should be creating a new DriveContents for each exported file with Drive.DriveApi.newDriveContents. Otherwise, we are writing always to the same file.
+I'd say we're doing it wrong. We should be creating a new DriveContents for each exported file with Drive.DriveApi.newDriveContents. Otherwise, we are writing always to the same file.
+That's it! Now it's creating the two files correctly.
+That's it! Now it's creating the two files correctly.
+Forget all I've said. I misunderstood the problem and was fixing a different one. After reading more carefully I've been able to reproduce the crash. I'm attaching a screenshot with the stack trace as I'm not able to copy the text.
+Forget all I've said. I misunderstood the problem and was fixing a different one. After reading more carefully I've been able to reproduce the crash. I'm attaching a screenshot with the stack trace as I'm not able to copy the text.
+ok, so a FileProvider permissions issue..
+ok, so a FileProvider permissions issue..
+You seem to know what's going on. Do you want me to reassign it to you or shall I investigate?
+You seem to know what's going on. Do you want me to reassign it to you or shall I investigate?
+Maybe passing the URIs as clip data as it says here fixes the problem.
+Maybe passing the URIs as clip data as it says here fixes the problem.
+It turns out the problem wasn't how we were adding the files to the intent. startActivity takes care of copying the data to the ClipData, if it's not set. The problem was the way we were setting EXTRA_TEXT somehow confused Google Drive.
+Fixed in develop (d2611b0).
+It turns out the problem wasn't how we were adding the files to the intent. startActivity takes care of copying the data to the ClipData, if it's not set. The problem was the way we were setting EXTRA_TEXT somehow confused Google Drive.
+Fixed in develop (d2611b0).
+oh awesome! Thanks for the fix @rivaldi8
+oh awesome! Thanks for the fix @rivaldi8

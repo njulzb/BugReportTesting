@@ -1,0 +1,90 @@
+title:crashes straight away
+
+I just installed 0.11b on my Fairphone1 and it crashes straight away as soon as I open it.
+I only see the interface for a split second.
+@chtfn Can you please provide the logcat if possible for the crash?If not, then please specify your Android version. I would be more than happy to resolve this issue.
+@chtfn Can you please provide the logcat if possible for the crash?If not, then please specify your Android version. I would be more than happy to resolve this issue.
+@naman14 The Android version is 4.2.2 and... It seems I can't attach that log. Let me try again.
+I don't know why Github doesn't want my file. I will send it to you in an email. Cheers
+@naman14 The Android version is 4.2.2 and... It seems I can't attach that log. Let me try again.
+I don't know why Github doesn't want my file. I will send it to you in an email. Cheers
+Same issue. My Android version is 4.2.2 also
+Same issue. My Android version is 4.2.2 also
+@chtfn The problem is with Renderscript which is used to blur the images. Renderscript is only available for armeabi-v7a architecture and I am guessing that Fairphone has a armeabi architecture. I will add a check to prevent crash but blur wouldn't be available.
+@dfrntboy What is your device? Please attach a logcat so that i can look at the crash. Your's may be happening due to some other reason
+@chtfn The problem is with Renderscript which is used to blur the images. Renderscript is only available for armeabi-v7a architecture and I am guessing that Fairphone has a armeabi architecture. I will add a check to prevent crash but blur wouldn't be available.
+@dfrntboy What is your device? Please attach a logcat so that i can look at the crash. Your's may be happening due to some other reason
+My device is Samsung Galaxy S4 Mini
+This is my LogCat reports:
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime: FATAL EXCEPTION: AsyncTask #5
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime: java.lang.RuntimeException: An error occured while executing doInBackground()
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.os.AsyncTask$3.done(AsyncTask.java:299)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.lang.Thread.run(Thread.java:856)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:  Caused by: android.support.v8.renderscript.RSRuntimeException: Error loading libRSSupport library
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.support.v8.renderscript.RenderScript.internalCreate(RenderScript.java:1379)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.support.v8.renderscript.RenderScript.create(RenderScript.java:1504)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.support.v8.renderscript.RenderScript.create(RenderScript.java:1454)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.support.v8.renderscript.RenderScript.create(RenderScript.java:1430)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.support.v8.renderscript.RenderScript.create(RenderScript.java:1417)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at com.naman14.timber.utils.ImageUtils.createBlurredImageFromBitmap(ImageUtils.java:31)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at com.naman14.timber.subfragments.QuickControlsFragment$setBlurredAlbumArt.doInBackground(QuickControlsFragment.java:227)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at com.naman14.timber.subfragments.QuickControlsFragment$setBlurredAlbumArt.doInBackground(QuickControlsFragment.java:221)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.os.AsyncTask$2.call(AsyncTask.java:287)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230) 
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080) 
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573) 
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.lang.Thread.run(Thread.java:856) 
+10-12 20:56:23.990 8581-8581/naman14.timber E/RecyclerView: No adapter attached; skipping layout
+10-12 20:56:23.990 8581-8581/naman14.timber E/RecyclerView: No adapter attached; skipping layout
+10-12 20:56:23.990 8581-8581/naman14.timber E/RecyclerView: No adapter attached; skipping layout
+My device is Samsung Galaxy S4 Mini
+This is my LogCat reports:
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime: FATAL EXCEPTION: AsyncTask #5
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime: java.lang.RuntimeException: An error occured while executing doInBackground()
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.os.AsyncTask$3.done(AsyncTask.java:299)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.lang.Thread.run(Thread.java:856)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:  Caused by: android.support.v8.renderscript.RSRuntimeException: Error loading libRSSupport library
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.support.v8.renderscript.RenderScript.internalCreate(RenderScript.java:1379)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.support.v8.renderscript.RenderScript.create(RenderScript.java:1504)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.support.v8.renderscript.RenderScript.create(RenderScript.java:1454)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.support.v8.renderscript.RenderScript.create(RenderScript.java:1430)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.support.v8.renderscript.RenderScript.create(RenderScript.java:1417)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at com.naman14.timber.utils.ImageUtils.createBlurredImageFromBitmap(ImageUtils.java:31)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at com.naman14.timber.subfragments.QuickControlsFragment$setBlurredAlbumArt.doInBackground(QuickControlsFragment.java:227)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at com.naman14.timber.subfragments.QuickControlsFragment$setBlurredAlbumArt.doInBackground(QuickControlsFragment.java:221)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.os.AsyncTask$2.call(AsyncTask.java:287)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230) 
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080) 
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573) 
+10-12 20:56:23.970 8581-8647/naman14.timber E/AndroidRuntime:     at java.lang.Thread.run(Thread.java:856) 
+10-12 20:56:23.990 8581-8581/naman14.timber E/RecyclerView: No adapter attached; skipping layout
+10-12 20:56:23.990 8581-8581/naman14.timber E/RecyclerView: No adapter attached; skipping layout
+10-12 20:56:23.990 8581-8581/naman14.timber E/RecyclerView: No adapter attached; skipping layout
+Should be also a problem with RenderScript and blur. I don't know if the S4 also is based on armeabi.
+Should be also a problem with RenderScript and blur. I don't know if the S4 also is based on armeabi.
+Same happens with Samsung Galaxy Star Duos GT-S7262 with Android 4.1.2.
+As soon as I open the app, I can see the songs list without thumbnails and can click on a song to play. As soon as the app moves to the song playing intent, the application crashes, but song is being played in the background. It's pretty sure that it should be a problem with Renderscript and blur.
+Same happens with Samsung Galaxy Star Duos GT-S7262 with Android 4.1.2.
+As soon as I open the app, I can see the songs list without thumbnails and can click on a song to play. As soon as the app moves to the song playing intent, the application crashes, but song is being played in the background. It's pretty sure that it should be a problem with Renderscript and blur.
+@PrasannaVenkadesh Please mail me the logcat for your crash, It may not be related to RenderScript. I am looking into ways for blurring without renderscript though.
+@PrasannaVenkadesh Please mail me the logcat for your crash, It may not be related to RenderScript. I am looking into ways for blurring without renderscript though.
+Is this still happening?
+Is this still happening?
+Hi, I don't remember when I updated the app. I confirm, It's not crashing as before.
+Hi, I don't remember when I updated the app. I confirm, It's not crashing as before.
+I confirm that it works great now, no crash so far! Thank you :) (using 0.14b)
+I confirm that it works great now, no crash so far! Thank you :) (using 0.14b)

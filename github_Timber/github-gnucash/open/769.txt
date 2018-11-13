@@ -1,0 +1,5 @@
+title:Always show current book name in Acccounts activity
+
+Show the current book title as a subtitle to the Accounts title. (Book name would only be shown in main Accounts screen)
+Currently, the book name is only shown when the hamburger menu is open.
+This could be beneficial for people with multiple books to easily know where they are.

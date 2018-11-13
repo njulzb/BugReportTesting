@@ -1,0 +1,6 @@
+title:GnuCash is offered as an option to open everything
+
+codinguser
+When I open something from another application GnuCash appears always as an option. For example, when opening a contact from the phone contacts list, a folder from the file manager, etc.
+It seems for some reason the pathPattern (from the ) is ignored and only the MIME type applies (*/*).
+This happens from a Huawei Ascend G300 U8815  with Android 2.3.6 (API 10) and with GnuCash from develop branch. I haven't tested with other devices.

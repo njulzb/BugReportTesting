@@ -1,0 +1,3 @@
+title:Call to setElevation() causes crash with NoSuchMethodError on old devices
+
+Devices with API < 21 crash on start up with the following exception on branch develop:

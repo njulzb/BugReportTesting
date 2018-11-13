@@ -1,0 +1,6 @@
+title:Setup won't complete
+
+Hi
+Installing on my nexus 9 when I get to this last screen I fall into a loop.  Press Allow and return to screen. Press done and return to permissions prompt.
+Thanks for such a great app!
+Boyd

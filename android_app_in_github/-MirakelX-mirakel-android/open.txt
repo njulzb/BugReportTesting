@@ -1,0 +1,18 @@
+Crash when attempting to add task to just deleted list
+Crash just after tapping backup/restore
+App crashes when opening a task (with subtasks)
+Meta list for today omits some tasks
+Mirakel uses the condition "Has subtask" instead of "Is parent"
+Recurrence with endpoint sets endpoint to 1969
+Tasks from synced account are not included in the default "All Lists"
+Sync is broken
+Mirakel shifts due date by timezone offset forTW-originated tasks synced back to TW
+On initial sync EVERY task get touched and modified by Mirakel
+Mirakel doesn't accept root certificate chains for taskd sync
+Parent of recurring task not synced
+taskd setup instructions miss generate.client
+Overdue meta-list incoherency
+Show tags in tasksfragment
+taskwarrior sync doesn't do sub tasks
+Deleted tag restore after sync
+mirakel modifies/corrupts annotation date

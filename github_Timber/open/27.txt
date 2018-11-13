@@ -1,0 +1,3 @@
+title:add play menu on the lockscreen
+
+The app is good, but need a menu to change the song when the Phone/tablet is locked

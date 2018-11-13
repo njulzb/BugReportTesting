@@ -1,0 +1,3 @@
+title:Enhancement:  Remove item from Playlist
+
+I couldn't find how to remove item from Playlist or even remove user created playlist

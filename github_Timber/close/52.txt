@@ -1,0 +1,5 @@
+title:Pause when headphones removed
+
+Music does not pause when headphones are removed.
+This has been added already in #39, will be available in next release
+This has been added already in #39, will be available in next release

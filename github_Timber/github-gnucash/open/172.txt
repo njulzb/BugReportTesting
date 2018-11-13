@@ -1,0 +1,13 @@
+title:Suggest values based on location
+
+I know this will concern some, so make it opt-in.   I'd to see location info stored when I enter new transactions.  And that data used to suggest values for future new transactions. For example, if I go to enter a transaction, and apps sees I have entered transactions for Whole Foods, Sunoco, and Target in the past near my current location, let me select one those transactions as a template for the current one.   I tend to enter transaction from the same places over and over again.  This could work quite nicely.  Perhaps provide the top 3 closest previous (unique by description) ordered closest to furthest.
+Agreed. It's one of those nice to have features which will come down the line.
+On 19.07.2014, at 19:10, johngray1965 notifications@github.com wrote:
+I know this will concern some, so make it opt-in. I'd to see location info stored when I enter new transactions. And that data used to suggest values for future new transactions. For example, if I go to enter a transaction, and apps sees I have entered transactions for Whole Foods, Sunoco, and Target in the past near my current location, let me select one those transactions as a template for the current one. I tend to enter transaction from the same places over and over again. This could work quite nicely. Perhaps provide the top 3 closest previous (unique by description) ordered closest to furthest.
+—
+Reply to this email directly or view it on GitHub.
+Agreed. It's one of those nice to have features which will come down the line.
+On 19.07.2014, at 19:10, johngray1965 notifications@github.com wrote:
+I know this will concern some, so make it opt-in. I'd to see location info stored when I enter new transactions. And that data used to suggest values for future new transactions. For example, if I go to enter a transaction, and apps sees I have entered transactions for Whole Foods, Sunoco, and Target in the past near my current location, let me select one those transactions as a template for the current one. I tend to enter transaction from the same places over and over again. This could work quite nicely. Perhaps provide the top 3 closest previous (unique by description) ordered closest to furthest.
+—
+Reply to this email directly or view it on GitHub.

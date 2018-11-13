@@ -1,0 +1,3 @@
+title:Feature request: Gapless playback
+
+It would be great if Timber would support gapless playback.

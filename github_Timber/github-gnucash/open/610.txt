@@ -1,0 +1,8 @@
+title:[USER REPORT] Reports not displayed when there is no internet
+
+When the wifi is on, but too distant of a wifi source, and 3G is on, but without credits in the cell company, the graphics and reports show "no data avaliable".
+Reports always shown
+"No data available" is displayed.
+To solve the problem I need to turn off the 3G function in the smartphone's configuration.
+It works for me offline, but just have to wait because the report generation sometimes takes a long time.
+It works for me offline, but just have to wait because the report generation sometimes takes a long time.

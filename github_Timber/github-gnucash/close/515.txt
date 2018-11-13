@@ -1,0 +1,67 @@
+title:Restoring backup from QIF file : Not well-formed
+
+I get the error At line 1, column 0: not well-formed when importing a backup from a QIF file into GnuCash Android (file was generated using same app but maybe different version).
+Sample from QIF file.
+Also a small suggestion: while exporting to QIF, the user should be told that the timings of the transactions will not be saved.
+GnuCash Android does not support importing from QIF
+On Sun, Jul 3, 2016 at 6:11 PM, theindigamer notifications@github.com
+wrote:
+I get the error At line 1, column 0: not well-formed when importing a
+backup from a QIF file into GnuCash Android (file was generated using same
+app but maybe different version).
+Sample from QIF file.
+!Account
+NIncome:Gifts Received
+^
+!Type:Cash
+D2016/5/27
+MGift from P0
+SAssets:Current Assets:Cash in Wallet
+$-31.00
+^
+D2016/5/27
+MGift from P1
+SAssets:Current Assets:Cash in Wallet
+$-25.00
+^
+Also a small suggestion: while exporting to QIF, the user should be told
+that the timings of the transactions will not be saved.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub
+#515, or mute the
+thread
+https://github.com/notifications/unsubscribe/AAQ428stNytQBnO1SIM0QIIZFi85lRE-ks5qR99FgaJpZM4JD5br
+.
+GnuCash Android does not support importing from QIF
+On Sun, Jul 3, 2016 at 6:11 PM, theindigamer notifications@github.com
+wrote:
+I get the error At line 1, column 0: not well-formed when importing a
+backup from a QIF file into GnuCash Android (file was generated using same
+app but maybe different version).
+Sample from QIF file.
+!Account
+NIncome:Gifts Received
+^
+!Type:Cash
+D2016/5/27
+MGift from P0
+SAssets:Current Assets:Cash in Wallet
+$-31.00
+^
+D2016/5/27
+MGift from P1
+SAssets:Current Assets:Cash in Wallet
+$-25.00
+^
+Also a small suggestion: while exporting to QIF, the user should be told
+that the timings of the transactions will not be saved.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub
+#515, or mute the
+thread
+https://github.com/notifications/unsubscribe/AAQ428stNytQBnO1SIM0QIIZFi85lRE-ks5qR99FgaJpZM4JD5br
+.
+Oh, okay. Could you please add that as a comment while exporting, maybe as a small alert to the user displayed in orange or red?
+Oh, okay. Could you please add that as a comment while exporting, maybe as a small alert to the user displayed in orange or red?

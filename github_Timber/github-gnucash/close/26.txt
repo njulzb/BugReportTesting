@@ -1,0 +1,87 @@
+title:Allow empty description
+
+codinguser
+HI,
+NIce work with the GnucashMobile!
+I started using it yesterday with the release candidate.
+I noticed that a transaction can not be entered if the description field is empty.
+I think it would be nice to allow this field by empty in order to enter transactions faster
+Thanks
+This is a good point. I will consider changing this to allow for empty
+description/name of the transaction.
+Only an amount should be required.
+On 24.10.2012, at 09:24, zunbeltz notifications@github.com wrote:
+HI,
+NIce work with the GnucashMobile!
+I started using it yesterday with the release candidate.
+I noticed that a transaction can not be entered if the description field is
+empty.
+I think it would be nice to allow this field by empty in order to enter
+transactions faster
+Thanks
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/GnucashMobile/issues/26.
+This is a good point. I will consider changing this to allow for empty
+description/name of the transaction.
+Only an amount should be required.
+On 24.10.2012, at 09:24, zunbeltz notifications@github.com wrote:
+HI,
+NIce work with the GnucashMobile!
+I started using it yesterday with the release candidate.
+I noticed that a transaction can not be entered if the description field is
+empty.
+I think it would be nice to allow this field by empty in order to enter
+transactions faster
+Thanks
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/GnucashMobile/issues/26.
+Thanks,
+I will wait for it.
+Zunbeltz
+az., 2012.eko urrren 24a 11:02(e)an, Ngewi Fet(e)k idatzi zuen:
+This is a good point. I will consider changing this to allow for empty
+description/name of the transaction.
+Only an amount should be required.
+On 24.10.2012, at 09:24, zunbeltz notifications@github.com wrote:
+HI,
+NIce work with the GnucashMobile!
+I started using it yesterday with the release candidate.
+I noticed that a transaction can not be entered if the description
+field is
+empty.
+I think it would be nice to allow this field by empty in order to enter
+transactions faster
+Thanks
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/GnucashMobile/issues/26.
+—
+Reply to this email directly or view it on GitHub
+https://github.com/codinguser/GnucashMobile/issues/26#issuecomment-9732447.
+Zunbeltz Izaola
+Thanks,
+I will wait for it.
+Zunbeltz
+az., 2012.eko urrren 24a 11:02(e)an, Ngewi Fet(e)k idatzi zuen:
+This is a good point. I will consider changing this to allow for empty
+description/name of the transaction.
+Only an amount should be required.
+On 24.10.2012, at 09:24, zunbeltz notifications@github.com wrote:
+HI,
+NIce work with the GnucashMobile!
+I started using it yesterday with the release candidate.
+I noticed that a transaction can not be entered if the description
+field is
+empty.
+I think it would be nice to allow this field by empty in order to enter
+transactions faster
+Thanks
+—
+Reply to this email directly or view it on
+GitHubhttps://github.com/codinguser/GnucashMobile/issues/26.
+—
+Reply to this email directly or view it on GitHub
+https://github.com/codinguser/GnucashMobile/issues/26#issuecomment-9732447.
+Zunbeltz Izaola

@@ -1,0 +1,12 @@
+title:GnuCash crashes when auto backup triggers
+
+rivaldi8
+Nothing specific, just use your device and when the scheduled auto backup triggers a pop-up shows up that tells you that GnuCash has stopped.
+When auto backup triggers GnuCash should not crash.
+GnuCash crashes regularly every time auto backup triggers. See attachment: logcat.txt
+ok, that's not good :(
+Will look into it, thanks for the log file.
+ok, that's not good :(
+Will look into it, thanks for the log file.
+Are you storing the backups in Google Drive? You can check by going to Settings > Backup & export. Under Select backup file you should have something like com.google.android.apps.docs.storage.
+Are you storing the backups in Google Drive? You can check by going to Settings > Backup & export. Under Select backup file you should have something like com.google.android.apps.docs.storage.

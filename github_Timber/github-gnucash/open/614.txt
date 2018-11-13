@@ -1,0 +1,15 @@
+title:Several currencies export problems
+
+DB with different currencies
+When exporting app creates several files, one for each currency (in which of them multi currency transactions?). For what is it needed?
+When i import file with not main currency, gnucash create duplicate counts branchs, but in the end of branc count have my main currency, not currency of the file.
+QIF does not support currency information. So GnuCash creates a file for each of the currencies in use so that during import, you could specify what currency it is in the desktop importer.
+This works well when you use different currencies in different (non-linked) accounts. But when working with multi-currency transactions, not so much.
+If I recall correctly , during export multi-currency transactions will be exported with the amount converted to the currency of the exported file. So I think if you import only one of the files, you get all your transactions and avoid duplicates. Please correct me if I'm wrong @rivaldi8
+QIF does not support currency information. So GnuCash creates a file for each of the currencies in use so that during import, you could specify what currency it is in the desktop importer.
+This works well when you use different currencies in different (non-linked) accounts. But when working with multi-currency transactions, not so much.
+If I recall correctly , during export multi-currency transactions will be exported with the amount converted to the currency of the exported file. So I think if you import only one of the files, you get all your transactions and avoid duplicates. Please correct me if I'm wrong @rivaldi8
+@codinguser the conversion of multi-currency transactions is not merged yet (see #571).
+@codinguser the conversion of multi-currency transactions is not merged yet (see #571).
+@rivaldi8 ok, I'll get to it. Working my way through my backlog ;)
+@rivaldi8 ok, I'll get to it. Working my way through my backlog ;)

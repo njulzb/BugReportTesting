@@ -1,0 +1,5 @@
+title:Bug: Widgets not functional after upgrade or restart
+
+Every time the app updates or the phone is restarted the widgets are no longer functional and I have to remove them and set new ones.
+We will look into this
+We will look into this

@@ -1,0 +1,5 @@
+title:NowPlaying Styles
+
+How can I unlock the extra styles from code?
+There's a fullUnlocked boolean method in PreferencesUtility, retrun that as true
+There's a fullUnlocked boolean method in PreferencesUtility, retrun that as true

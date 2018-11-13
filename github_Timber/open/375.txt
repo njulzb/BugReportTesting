@@ -1,0 +1,33 @@
+title:ITimberService crash when circular seekbar seek position change by user
+
+No description provided.
+03-01 18:01:48.880 2585-2671/naman14.timber.dev:main E/MusicPlaybackService: Media player not initialized!
+03-01 18:01:48.970 2585-2671/naman14.timber.dev:main E/AndroidRuntime: FATAL EXCEPTION: MusicPlayerHandler
+Process: naman14.timber.dev:main, PID: 2585
+java.lang.IllegalStateException
+at android.media.MediaPlayer.getDuration(Native Method)
+at com.naman14.timber.MusicService$MultiPlayer.duration(MusicService.java:2527)
+at com.naman14.timber.MusicService.duration(MusicService.java:1873)
+at com.naman14.timber.MusicService.updateMediaSession(MusicService.java:1224)
+at com.naman14.timber.MusicService.notifyChange(MusicService.java:1108)
+at com.naman14.timber.MusicService.access$1100(MusicService.java:97)
+at com.naman14.timber.MusicService$MusicPlayerHandler.handleMessage(MusicService.java:2299)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:145)
+at android.os.HandlerThread.run(HandlerThread.java:61)
+03-01 18:01:48.880 2585-2671/naman14.timber.dev:main E/MusicPlaybackService: Media player not initialized!
+03-01 18:01:48.970 2585-2671/naman14.timber.dev:main E/AndroidRuntime: FATAL EXCEPTION: MusicPlayerHandler
+Process: naman14.timber.dev:main, PID: 2585
+java.lang.IllegalStateException
+at android.media.MediaPlayer.getDuration(Native Method)
+at com.naman14.timber.MusicService$MultiPlayer.duration(MusicService.java:2527)
+at com.naman14.timber.MusicService.duration(MusicService.java:1873)
+at com.naman14.timber.MusicService.updateMediaSession(MusicService.java:1224)
+at com.naman14.timber.MusicService.notifyChange(MusicService.java:1108)
+at com.naman14.timber.MusicService.access$1100(MusicService.java:97)
+at com.naman14.timber.MusicService$MusicPlayerHandler.handleMessage(MusicService.java:2299)
+at android.os.Handler.dispatchMessage(Handler.java:102)
+at android.os.Looper.loop(Looper.java:145)
+at android.os.HandlerThread.run(HandlerThread.java:61)
+Thanks for this, can you give the steps to reproduce this?
+Thanks for this, can you give the steps to reproduce this?

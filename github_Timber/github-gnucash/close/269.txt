@@ -1,0 +1,10 @@
+title:Add support for TRADING accounts (currently crashes during import)
+
+codinguser
+I can't import accounts from the desktop version. It says something like "trading is not a constant"
+Any news about this? It would be great!
+Any news about this? It would be great!
+Sorry for the delays. Will try to get it out as soon as possible!
+Sorry for the delays. Will try to get it out as soon as possible!
+Fixed in v1.5.2
+Fixed in v1.5.2

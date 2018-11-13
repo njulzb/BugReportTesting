@@ -1,0 +1,4 @@
+title:Question about getting certain unicode characters working in android
+
+I use musicbrainz to tag my music and some songs use a ’ (right single quotation mark) instead of a regular '. I've tested several music players (timber, vanilla music, blackplayer, google play) and none of them are able handle this character correctly showing up as â€™ instead. Am I doing something wrong? I'm on a Nexus 5 with 6.0.1 vanilla android.
+Using a file manger like ES File Explorer does show the correct file names though.

@@ -1,0 +1,16 @@
+title:Recurring transaction doesn't recur in the past
+
+Should create transactions until today, like desktop app.
+Only the original transaction created
+If bagsying a bug helps secure an issue then I'd like to try this before about Monday.
+If bagsying a bug helps secure an issue then I'd like to try this before about Monday.
+@ployt0 go for it :)
+Remember to read the Contribution guidelines
+@ployt0 go for it :)
+Remember to read the Contribution guidelines
+I found several other bugs on my way to fixing this, I can't spare the time to fix this one, it is only a good first-issue if the result intended is finding smaller bugs.
+I was able to force the transaction to become recurring (by judicious editing of it, only while using the Play Store release) but all recurring transactions are broken in the current master branch.
+I found several other bugs on my way to fixing this, I can't spare the time to fix this one, it is only a good first-issue if the result intended is finding smaller bugs.
+I was able to force the transaction to become recurring (by judicious editing of it, only while using the Play Store release) but all recurring transactions are broken in the current master branch.
+Thanks for finding the other bugs. If you were working on master, you should probably be working off the develop where some stuff is already fixed.
+Thanks for finding the other bugs. If you were working on master, you should probably be working off the develop where some stuff is already fixed.

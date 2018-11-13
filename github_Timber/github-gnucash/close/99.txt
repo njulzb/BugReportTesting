@@ -1,0 +1,8 @@
+title:Add an option to show full account path
+
+codinguser
+My account names are not unique accross the whole gnucash file. When selecting the destination account I need the full path (like in the desktop version of GNUCash) to correctly determine the account name. This is a good candidate for a new option.
+the thing is, if you import accounts like from the desktop version, the account names will be too long to fit in the display. This means that typically, it will mean truncating and displaying the end, which is the same thing as now.
+But I'll see whether there is a way to display the parent path as a subtitle somewhere.
+the thing is, if you import accounts like from the desktop version, the account names will be too long to fit in the display. This means that typically, it will mean truncating and displaying the end, which is the same thing as now.
+But I'll see whether there is a way to display the parent path as a subtitle somewhere.

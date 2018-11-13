@@ -1,0 +1,3 @@
+title:First run wizard currency preference is ignored when creating new book
+
+No description provided.

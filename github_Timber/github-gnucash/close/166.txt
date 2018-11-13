@@ -1,0 +1,31 @@
+title:Default accounts not using default currency
+
+Creation of default accounts does not follow the set default currency. It always creates them in pounds.
+I had the same problem.
+Gnucash:  1.3.3
+Steps to reproduce:
+Expected behaviour:
+Any account created after Default Currency is changed, should use the Default Currency setting.
+This is not occuring.
+I had the same problem.
+Gnucash:  1.3.3
+Steps to reproduce:
+Expected behaviour:
+Any account created after Default Currency is changed, should use the Default Currency setting.
+This is not occuring.
+The default accounts do no follow your default currency. They follow the currency of your locale.
+I will consider this for a future release.
+The default accounts do no follow your default currency. They follow the currency of your locale.
+I will consider this for a future release.
+Looking at the issues I opened up, if you fix issue #169, then this becomes redundant doesn't it ?
+Looking at the issues I opened up, if you fix issue #169, then this becomes redundant doesn't it ?
+Agreed.
+Closing since @codinguser also agreed on #169 over this.
+Agreed.
+Closing since @codinguser also agreed on #169 over this.
+The person that reported this to me has a locale for Australia, yet the accounts were using USD, rather than AUD.  I presume the locale is set according to the value for "System Language" in Language & Keyboard.  This was set to English (Australia) for the person.
+Should I open a new issue, or should this one be re-opened ?
+The person that reported this to me has a locale for Australia, yet the accounts were using USD, rather than AUD.  I presume the locale is set according to the value for "System Language" in Language & Keyboard.  This was set to English (Australia) for the person.
+Should I open a new issue, or should this one be re-opened ?
+No need to reopen this. A fix for #169 will cover this.
+No need to reopen this. A fix for #169 will cover this.

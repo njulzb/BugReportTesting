@@ -1,0 +1,4 @@
+title:为什么我怎么实现了接口但是总是报错status == this
+
+if (status == this) { }总是为true;
+报错throw new UnsupportedOperationException("Override the method, don't add a listener");

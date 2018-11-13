@@ -1,0 +1,8 @@
+title:No problems, just love
+
+Hi there!
+Just wanted to thank all the contributors for this good work. This music player is awesome, clean, usable, and reads m3u files, it's perfect!!
+Just one request: lyrics. But I saw the PR, I can't wait to see it merged!
+Much love for y'all <3
+So this is nice to see, and the developer does deserve praise, but it should probably be done via twitter, not as a bug in the bug tracker.
+So this is nice to see, and the developer does deserve praise, but it should probably be done via twitter, not as a bug in the bug tracker.

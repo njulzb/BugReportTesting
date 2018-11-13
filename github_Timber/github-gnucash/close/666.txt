@@ -1,0 +1,13 @@
+title:Please add Dropbox for "Open" and OneDrive for "export"
+
+This app can export directly to Dropbox but can't open from it. But for OneDrive is opposite.
+Go to Settings -> Accounts --> Import.
+You'll see Dropbox there.
+For export, select export destination "Send to.." and you'll see OneDrive
+Go to Settings -> Accounts --> Import.
+You'll see Dropbox there.
+For export, select export destination "Send to.." and you'll see OneDrive
+Yeah I had the same question, and struggled to find it:
+Go to Settings -> Accounts --> Import GnuCash XML --> Hamburger Menu --> Dropbox.
+Yeah I had the same question, and struggled to find it:
+Go to Settings -> Accounts --> Import GnuCash XML --> Hamburger Menu --> Dropbox.

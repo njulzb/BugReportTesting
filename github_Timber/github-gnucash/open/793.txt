@@ -1,0 +1,3 @@
+title:Transaction screen - actions other than just edit
+
+Only "edit" button

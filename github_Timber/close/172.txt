@@ -1,0 +1,7 @@
+title:Playlist View hard to use
+
+I have about 25 playlists, and doing a scroll to move between them one by one is very clunky. A view more like the album/artist view would be a lot more useful.
+Added list, grid and default playlist views in latest release
+Added list, grid and default playlist views in latest release
+You legend!
+You legend!

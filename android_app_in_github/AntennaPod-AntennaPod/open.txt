@@ -1,0 +1,26 @@
+When a podcast is complete, the app doesn't refresh and show complete without exiting and returning
+rx IllegalStateException
+PlaybackServiceTaskManager.getQueue IllegalArgumentException
+Data wiped due to database corruption
+Download page is not updated correctly after automatic skipping to next item in playback list
+Feed refresh is slow
+Pause-on-disconnect activates even if the disconnected device is not playing
+Download continued over Mobile Data after wifi signal was lost
+MainActivity.loadFragment(): Can not perform this action after onSaveInstanceState
+Share episode URL with position not working as intended
+Auto Download only works when connected to WiFi
+FR: Missing Sdcard should cause AP to the default data location
+Auto Delete deletes episode-in-progress after sd card unmount/remount
+Auto Download doesn't work
+Widget does not react after an other app had media focus
+Widget not working?
+"Persistent Playback Controls" doesn't work
+OutOfMemory error in background caused spurious force close (without UI running)
+Keep notification media controller alive
+Playback position regularly moves back to pre-last position after pause
+misdirected audio on resume
+Occasionally unexpectedly skips entire episode(s)
+static tracking of 'instance' in PreferenceActivity doesn't seem to be working
+update interval doesn't appear to work on version 1.3.1
+GpodnetEpisodeAction not sent for all 'PLAY' actionsPlayback Issues
+Random restart instead of resume

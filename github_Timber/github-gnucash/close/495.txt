@@ -1,0 +1,18 @@
+title:Bug: All colors in reports are grey
+
+After the latest beta upgrade the colors in the reports section (except the lines) are grey.
+Version: 2.0.7
+Thanks for reporting the issue @elmerehbi!
+It looks like it was introduced in 6d31dc8. I'll work on a fix.
+Thanks for reporting the issue @elmerehbi!
+It looks like it was introduced in 6d31dc8. I'll work on a fix.
+@rivaldi8 I'll wait for your fix before I release the next beta of 2.0.7
+@rivaldi8 I'll wait for your fix before I release the next beta of 2.0.7
+Done!
+The issue happened when the "Account color in reports" option was checked. If the account had no color set, it was shown in the report with the default color (grey). Now, a color is assigned for the reports in these cases, as when the option is unchecked.
+Done!
+The issue happened when the "Account color in reports" option was checked. If the account had no color set, it was shown in the report with the default color (grey). Now, a color is assigned for the reports in these cases, as when the option is unchecked.
+@rivaldi8 thanks for fixing that. Actually I think the option to use "Account color in reports" will have to be removed at some point. I requested it at the time, but now I don't think it makes sense anymore since there are so many accounts and sub-accounts which might share a color. This would make reports confusing if they actually used the account color.
+@rivaldi8 thanks for fixing that. Actually I think the option to use "Account color in reports" will have to be removed at some point. I requested it at the time, but now I don't think it makes sense anymore since there are so many accounts and sub-accounts which might share a color. This would make reports confusing if they actually used the account color.
+Yes, I guess what's important is having each account in a different color to differentiate them in the reports.
+Yes, I guess what's important is having each account in a different color to differentiate them in the reports.

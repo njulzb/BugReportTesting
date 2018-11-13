@@ -1,0 +1,3 @@
+Unable to share sgf via gmail when file name contains # character
+Day flicker when in Night mode
+Star rating shown when game not rated

@@ -1,0 +1,5 @@
+title:Doesn't register as able to open MP3s
+
+Going through a file explorer and opening an MP3, Timber does not appear on the list of Apps to open it with.
+Neither MP3 nor OGG files
+Neither MP3 nor OGG files

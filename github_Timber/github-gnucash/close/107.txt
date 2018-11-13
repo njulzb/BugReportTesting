@@ -1,0 +1,7 @@
+title:Account import error
+
+I have a sony xperia e dual (c1605) with android 4.1.1 (in Portuguese) and when I try to import gnucash accounts in gnucash android (ver 1.2.2) I get the following message from the mobile file commander:
+"Ocorreu erro desconhecido*
+Binary xml file line #9:  requires a valid src attribute"
+java.lang.RuntimeException
+*an unknown error as been discovered

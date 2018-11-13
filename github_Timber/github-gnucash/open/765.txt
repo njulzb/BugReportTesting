@@ -1,0 +1,4 @@
+title:Ignore diacritcs when sorting accounts
+
+When the list of accounts is open, "Água" should come before "Gás".
+When the list of accounts is open, "Gás" comes before "Água", due to the accented letter "Á". The problem does not happen if we change "Á" to "A".

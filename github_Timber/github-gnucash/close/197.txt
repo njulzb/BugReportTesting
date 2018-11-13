@@ -1,0 +1,8 @@
+title:Allow changing smallest currency fraction
+
+It seems all currencies are being displayed with two decimal places. There should be a setting for changing this behavior, or even better, autodetect the correct number of decimal places based on the selected currency (Gnucash on the desktop does this by default).
+This would be great especially because the space for entering transaction amounts doesn't fit numbers greater or equal than 10,000.00 on my screen, which isn't a lot on my (non fractional) currency.
+This is true. This is planned to be fixed eventually
+This is true. This is planned to be fixed eventually
+Fixed in v2.0.0
+Fixed in v2.0.0

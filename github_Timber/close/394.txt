@@ -1,0 +1,7 @@
+title:Can't share or delete songs from search results
+
+Hi Dev.
+I just ran into this issue and I think its a pressing one.
+The search option along with the delete option doesn't seem active for search results, and there is no work around for this since I also can't track the song from the artist or album through the search result.
+Device: Android v6.0 Marshmallow
+App version: V1.6

@@ -1,0 +1,6 @@
+title:GNUcash always opens previous version of file synced by dropbox
+
+Like in PC. Always opens last version.
+Opens previous version.
+This is essentially synchronization. I'll merge this into the existing sync request #737
+This is essentially synchronization. I'll merge this into the existing sync request #737

@@ -1,0 +1,9 @@
+title:Opening a transaction shows value divided by 10
+
+codinguser
+When opening a transaction from the list, the value of the transaction shown on the edit page has been divided by 10.
+Using a Samsung Galaxy S3, Android 4.0.4
+Occurres only, if two digits (1.8) are entered. In case there are 3 digits (1.81) the amount is displayed properly. Has something to do with NumberFormat.getCurrencyInstance().format((parsed / 100)); in NewTransactionFragment -> afterTextChanged()
+Occurres only, if two digits (1.8) are entered. In case there are 3 digits (1.81) the amount is displayed properly. Has something to do with NumberFormat.getCurrencyInstance().format((parsed / 100)); in NewTransactionFragment -> afterTextChanged()
+Fixed in: https://github.com/codinguser/GnucashMobile/commit/1406471dd6f1de8c53c17217bcc3660831363172
+Fixed in: https://github.com/codinguser/GnucashMobile/commit/1406471dd6f1de8c53c17217bcc3660831363172

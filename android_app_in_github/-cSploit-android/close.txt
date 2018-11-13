@@ -1,0 +1,49 @@
+Cannot start on Android 7
+Cant find any targets
+tcpdump failed to write pcap file
+Cant start service inspector
+error when connecting to a new network with no previous connectivity
+MITM not working on Nexus 4/w CM 12.1 -- might be arpspoof silently crashing?
+Bug with encoding in MITM
+java.lang.IndexOutOfBoundsException: Invalid index 1, size is 1
+network-radar SIGSEGV
+unable to retrieve exploits fields.
+simple sniffer: ConcurrentModificationException
+cannot load native libraries on android 2.3.x
+at org.csploit.android.MainActivity.createUpdateLayout(MainActivity.java:142)
+NullPointerException.Target$Exploit.equals(Target.java:234)
+java.lang.NullPointerException. CVEDetails$Receiver.checkCompatibility(CVEDetails.java:61)
+Cannot add custom host
+MSF rpcd fail to start
+IllegalArgumentException: Invalid name: path : at RequestParser.parseRawCookie(RequestParser.java:359)
+java.lang.ArrayIndexOutOfBoundsException: length=3; index=7 : at org.csploit.android.core.System.getTarget(System.java:1032)
+java.lang.NullPointerException : at org.csploit.android.tools.NetworkRadar.start(NetworkRadar.java:59)
+java.lang.IllegalArgumentException: Can only use lower 16 bits for requestCode
+app abort forced on start up
+show_portcount:  manually added hosts and routers not scanned
+preloadVendors() and preloadServices() takes too much time on old devices
+Exception when restarting the appCrash while searching for exploits
+subnet and "this device" targets missing after close and launch the app again
+Crash and cant download ruby on LG G4
+Launching exploits doesn't work
+*URGENT*IMPORTANT*MSF*
+Session hijack bug report
+Logcat & cSploit.log for all the issues about Ruby GEM's failure while updating MSF
+Cant change msf rpc port
+CSploit are crached if u open traceroute.
+ettercap returned #237 when password sniffer turned on
+Missing last letter in Computer/Network name
+Vulnerability Finder not working
+force closing on gingerbread.
+list of vulnerabilities gets lost
+WiFi scan deletes the key of the currently connected AP
+Problem with cyrillic encoding
+cSploit and xposed kills network if used togheter
+MSF update error
+startup crash
+ruby infinite update loop
+gem update error
+msf installation fails ( gem install ignore compiled gems )
+dlopen cannot open shared libraries
+which: standard output: Bad file number
+exec returns EACCESS

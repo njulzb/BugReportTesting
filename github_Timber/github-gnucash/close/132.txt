@@ -1,0 +1,15 @@
+title:f-droid missing apk
+
+tried ver 1.2 and 1.1 (the latest and next to latest)
+You need to contact the maintainers of f-Droid. They build and upload the apk themsves.
+On 26.01.2014, at 02:07, bkalbfus notifications@github.com wrote:
+tried ver 1.2 and 1.1 (the latest and next to latest)
+—
+Reply to this email directly or view it on GitHub.
+You need to contact the maintainers of f-Droid. They build and upload the apk themsves.
+On 26.01.2014, at 02:07, bkalbfus notifications@github.com wrote:
+tried ver 1.2 and 1.1 (the latest and next to latest)
+—
+Reply to this email directly or view it on GitHub.
+my mistake - didn't know f-droid needed me to manually update application list.  download link for latest worked when I did.
+my mistake - didn't know f-droid needed me to manually update application list.  download link for latest worked when I did.

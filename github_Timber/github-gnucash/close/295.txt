@@ -1,0 +1,284 @@
+title:Restore last backup error
+
+Hi,
+I can't restore my last backup: "An error occured while importing the Gnucash accounts".
+Can you point me towards what could go wrong?
+I have wiped my phone and reinstalled Gnucash-android, the data are still at the same place: /storage/sdcard0/gnucash/backup
+I've left only the following file in the /storage/sdcard0/gnucash folder:
+accounts.gnucash
+backup/latest-backup_gnucash_export.gnca
+If I try Settings->Accounts->Import GnuCash accounts: I pick the /storage/sdcard0/gnucash folder but nothing is displayed (fair enough, this option is not made to import transactions)
+If I try Settings->General->Restore last backup: I get an error, and more details on CyanogenMod than previously on MIUI:
+I guess it's not finding the file.
+I realise I can create account and a new transaction in newly installed Gnucash, and it won't create any folder in /storage/sdcard0/
+How can I direct Gnucash to open my existing accounts.gnucash?
+How can I direct the application to use /storage/sdcard0/gnucash/accounts.gnucash ?
+I've left only the following file in the /storage/sdcard0/gnucash folder:
+accounts.gnucash
+backup/latest-backup_gnucash_export.gnca
+If I try Settings->Accounts->Import GnuCash accounts: I pick the /storage/sdcard0/gnucash folder but nothing is displayed (fair enough, this option is not made to import transactions)
+If I try Settings->General->Restore last backup: I get an error, and more details on CyanogenMod than previously on MIUI:
+I guess it's not finding the file.
+I realise I can create account and a new transaction in newly installed Gnucash, and it won't create any folder in /storage/sdcard0/
+How can I direct Gnucash to open my existing accounts.gnucash?
+How can I direct the application to use /storage/sdcard0/gnucash/accounts.gnucash ?
+Thanks for that report. It is strange indeed. What version of the app are you on?
+Using the Import functionality should also work. Maybe try using another file manager to pick the file (like the OI File Manager).
+I don't think it's a problem of not finding the file, because it gives the error about the AccountType.
+Can you check the contents of the files in a simple file editor, just to make sure it looks ok.
+If you could also provide me more detail logs from the device, that would be very helpful!
+Thanks for that report. It is strange indeed. What version of the app are you on?
+Using the Import functionality should also work. Maybe try using another file manager to pick the file (like the OI File Manager).
+I don't think it's a problem of not finding the file, because it gives the error about the AccountType.
+Can you check the contents of the files in a simple file editor, just to make sure it looks ok.
+If you could also provide me more detail logs from the device, that would be very helpful!
+To go futher:
+To go futher:
+Some file managers (excellent as they may be) don't serve the files requested by the filter in the app. We are looking at improving it. But if this one has worked for you in the past then fine.
+The file contents you mention sounds about right. The backup is compressed, you might need to unzip it first before you can view it.
+Some file managers (excellent as they may be) don't serve the files requested by the filter in the app. We are looking at improving it. But if this one has worked for you in the past then fine.
+The file contents you mention sounds about right. The backup is compressed, you might need to unzip it first before you can view it.
+You were right, OI File Manager allowed me to import the accounts.gnucash.
+But it turned out that, despite the recent modified date, this file was an old export of my Desktop account structure, and did not contain my previous Accounts & Transactions.
+I realise now that the live data are stored in /data/data/org.gnucash.android/databases/gnucash-db, thus leaving me no chance to get back the original database.
+On my previous system, the backups were created automatically in /storage/sdcard0/gnucash/backup so hopefully I will be able to get back some data.
+As for Settings->General->Restore last backup, it does say 'No recent backup found' if the structure /storage/sdcard0/gnucash/backup doesn't exist, and keep repeating the previous error if there's a file in it.
+BTW, I couldn't uncompress the exiting backup files: unzip doesn't work, tar -xf neither.
+I have been able to find a complete stack trace in a bugreport :
+So the error comes from GncXmlHandler.java l377.
+found it in a bugreport through the adb shell, but I am now also able to get the log live from logcat in Android Studio, nice!
+But it doesn't speak to me I must admit. I attach my latest backup file in case someone would have time to reproduce the error.
+A simple question: does the Account structure have to be in place before restoring a backup ?
+You were right, OI File Manager allowed me to import the accounts.gnucash.
+But it turned out that, despite the recent modified date, this file was an old export of my Desktop account structure, and did not contain my previous Accounts & Transactions.
+I realise now that the live data are stored in /data/data/org.gnucash.android/databases/gnucash-db, thus leaving me no chance to get back the original database.
+On my previous system, the backups were created automatically in /storage/sdcard0/gnucash/backup so hopefully I will be able to get back some data.
+As for Settings->General->Restore last backup, it does say 'No recent backup found' if the structure /storage/sdcard0/gnucash/backup doesn't exist, and keep repeating the previous error if there's a file in it.
+BTW, I couldn't uncompress the exiting backup files: unzip doesn't work, tar -xf neither.
+I have been able to find a complete stack trace in a bugreport :
+So the error comes from GncXmlHandler.java l377.
+found it in a bugreport through the adb shell, but I am now also able to get the log live from logcat in Android Studio, nice!
+But it doesn't speak to me I must admit. I attach my latest backup file in case someone would have time to reproduce the error.
+A simple question: does the Account structure have to be in place before restoring a backup ?
+I've been able to debug the app while using Settings->General->Restore last backup function.
+First conclusion is that it doesn't automatically pick the latest backup. I was unable to understand how the ImportAsyncTask pick up the file though.
+If I leave only the last file in the backup folder and starts the procedure, it stops on GncXmlHandler:377 if (parentAccount.getAccountType() == AccountType.ROOT)
+but as parentAccount is null, I get an NPE.
+I don't know what defines the 'parentAccountUID' in an Account object , and I can't find any trace of the term 'parent' in the XML backup file...
+Also gunzip -Sgnca does the job to uncompress backup files. At least, I can access my transactions and reenter them manually.
+I've been able to debug the app while using Settings->General->Restore last backup function.
+First conclusion is that it doesn't automatically pick the latest backup. I was unable to understand how the ImportAsyncTask pick up the file though.
+If I leave only the last file in the backup folder and starts the procedure, it stops on GncXmlHandler:377 if (parentAccount.getAccountType() == AccountType.ROOT)
+but as parentAccount is null, I get an NPE.
+I don't know what defines the 'parentAccountUID' in an Account object , and I can't find any trace of the term 'parent' in the XML backup file...
+Also gunzip -Sgnca does the job to uncompress backup files. At least, I can access my transactions and reenter them manually.
+Hi,
+I didn't have time to investigate further yet, but I will definitely look into it. Providing your backup file helps a lot, thanks 👍
+From first glance, I would ask if you created your own hierarchy, or if you imported one from GnuCash desktop? Imported accounts always have a root parent, so there may be a bug in the way we handle simple created accounts. I will look into it.
+Thanks for the debugging effort.
+I'll keep you posted when I know more
+Hi,
+I didn't have time to investigate further yet, but I will definitely look into it. Providing your backup file helps a lot, thanks 👍
+From first glance, I would ask if you created your own hierarchy, or if you imported one from GnuCash desktop? Imported accounts always have a root parent, so there may be a bug in the way we handle simple created accounts. I will look into it.
+Thanks for the debugging effort.
+I'll keep you posted when I know more
+Hi,
+I did create my own hierarchy. So probably no parent account were created.
+Actually I tried to import my desktop hiearchy but it proved way to detailed and complex to handle on a portable device. I resigned myself to use Gnucash android to a convenient daily acccouting and I do ~weekly export of transaction.
+And btw, even though it's probably not the right place to express some functional comments, but it's convenient right now. Don't hesitate to ask me to create issues if you find it relevant:
+Hi,
+I did create my own hierarchy. So probably no parent account were created.
+Actually I tried to import my desktop hiearchy but it proved way to detailed and complex to handle on a portable device. I resigned myself to use Gnucash android to a convenient daily acccouting and I do ~weekly export of transaction.
+And btw, even though it's probably not the right place to express some functional comments, but it's convenient right now. Don't hesitate to ask me to create issues if you find it relevant:
+Hi @nodje , can you confirm that the current development branch now fixes the bug?
+About the points you raised, I have a few comments:
+Hi @nodje , can you confirm that the current development branch now fixes the bug?
+About the points you raised, I have a few comments:
+I'll need a bit of help to be able to test this, as I've started with a fresh account set and do not want to restore a backup over it.
+I'm sure I can run the current dev version in a emulator on my machine with Android Studio, but in which folder hierarchy do I have to create the gnucash/backup folders?
+Or can I maybe run a different version of Gnucash in parallel on my phone?
+I'll need a bit of help to be able to test this, as I've started with a fresh account set and do not want to restore a backup over it.
+I'm sure I can run the current dev version in a emulator on my machine with Android Studio, but in which folder hierarchy do I have to create the gnucash/backup folders?
+Or can I maybe run a different version of Gnucash in parallel on my phone?
+If you checkout the current develop branch of the code and build, you can
+install it parallel to an existing installation from the Play store on your
+mobile device.
+The development version will have it's own database which is separate from
+your main GnuCash Android installation.
+Keep in mind that the folders for export and backup will be the same
+though. (I will try to fix this in the future to give the debug version a
+separate backup path on the SD card)
+On Apr 1, 2015 11:33 AM, "nodje" notifications@github.com wrote:
+I'll need a bit of help to be able to test this, as I've started with a
+fresh account set and do not want to restore a backup over it.
+I'm sure I can run the current dev version in a emulator on my machine
+with Android Studio, but in which folder hierarchy do I have to create the
+gnucash/backup folders?
+Or can I maybe run a different version of Gnucash in parallel on my phone?
+—
+Reply to this email directly or view it on GitHub
+#295 (comment)
+.
+If you checkout the current develop branch of the code and build, you can
+install it parallel to an existing installation from the Play store on your
+mobile device.
+The development version will have it's own database which is separate from
+your main GnuCash Android installation.
+Keep in mind that the folders for export and backup will be the same
+though. (I will try to fix this in the future to give the debug version a
+separate backup path on the SD card)
+On Apr 1, 2015 11:33 AM, "nodje" notifications@github.com wrote:
+I'll need a bit of help to be able to test this, as I've started with a
+fresh account set and do not want to restore a backup over it.
+I'm sure I can run the current dev version in a emulator on my machine
+with Android Studio, but in which folder hierarchy do I have to create the
+gnucash/backup folders?
+Or can I maybe run a different version of Gnucash in parallel on my phone?
+—
+Reply to this email directly or view it on GitHub
+#295 (comment)
+.
+The dev version wants to update my running version.
+Maybe because I got my version from FDroid.
+I don't know how to test then, but I guess I should be able to run the app in an emulator.
+But how can I provide the backup file to the emulator?
+The dev version wants to update my running version.
+Maybe because I got my version from FDroid.
+I don't know how to test then, but I guess I should be able to run the app in an emulator.
+But how can I provide the backup file to the emulator?
+The dev version should be using a completely different application ID. You
+should be able to install both in parallel.
+Do you have the latest code from the develop branch on GitHub?
+But to answer your question, you can pull and push files to the virtual SD
+card of the emulator. For that I think you need to use the Android debug
+monitor tools.
+On Apr 3, 2015 13:53, "nodje" notifications@github.com wrote:
+The dev version wants to update my running version.
+Maybe because I got my version from FDroid.
+I don't know how to test then, but I guess I should be able to run the app
+in an emulator.
+But how can I provide the backup file to the emulator?
+—
+Reply to this email directly or view it on GitHub
+#295 (comment)
+.
+The dev version should be using a completely different application ID. You
+should be able to install both in parallel.
+Do you have the latest code from the develop branch on GitHub?
+But to answer your question, you can pull and push files to the virtual SD
+card of the emulator. For that I think you need to use the Android debug
+monitor tools.
+On Apr 3, 2015 13:53, "nodje" notifications@github.com wrote:
+The dev version wants to update my running version.
+Maybe because I got my version from FDroid.
+I don't know how to test then, but I guess I should be able to run the app
+in an emulator.
+But how can I provide the backup file to the emulator?
+—
+Reply to this email directly or view it on GitHub
+#295 (comment)
+.
+ok, good to know, for some reason, my system, CynogenMod 12, ask me if I want to upgrade the existing Gnucash app when I open my dev apk... I'll try either way.
+ok, good to know, for some reason, my system, CynogenMod 12, ask me if I want to upgrade the existing Gnucash app when I open my dev apk... I'll try either way.
+ok, let me know.
+There was also some conflict with the app's permissions (when both dev and
+final version are installed) on Lollipop devices. But I pushed a commit
+yesterday that should fix that!
+On Sat, Apr 4, 2015 at 5:16 AM, nodje notifications@github.com wrote:
+ok, good to know, for some reason, my system, CynogenMod 12, ask me if I
+want to upgrade the existing Gnucash app when I open my dev apk... I'll try
+either way.
+—
+Reply to this email directly or view it on GitHub
+#295 (comment)
+.
+ok, let me know.
+There was also some conflict with the app's permissions (when both dev and
+final version are installed) on Lollipop devices. But I pushed a commit
+yesterday that should fix that!
+On Sat, Apr 4, 2015 at 5:16 AM, nodje notifications@github.com wrote:
+ok, good to know, for some reason, my system, CynogenMod 12, ask me if I
+want to upgrade the existing Gnucash app when I open my dev apk... I'll try
+either way.
+—
+Reply to this email directly or view it on GitHub
+#295 (comment)
+.
+Sorry to bother you again, but I really can't launch the dev app on my phone, even if I let it upgrade exiting app, it just crashes.
+As fr Android Studio, I can't run the Configuration, it's telling me "androidmanifest.xml doesn't exist or has incorrect root tag".
+I haven't changed the location of the manifest of course, it's in src/main.
+Don't you have the error yourself?
+thanks
+Sorry to bother you again, but I really can't launch the dev app on my phone, even if I let it upgrade exiting app, it just crashes.
+As fr Android Studio, I can't run the Configuration, it's telling me "androidmanifest.xml doesn't exist or has incorrect root tag".
+I haven't changed the location of the manifest of course, it's in src/main.
+Don't you have the error yourself?
+thanks
+No, I haven't changed the manifest recently.
+But the database schema changed, so maybe you need to uninstall and
+re-install.
+(Although the schema change should not have affected launching the app)
+On Mon, Apr 13, 2015 at 12:53 PM, nodje notifications@github.com wrote:
+Sorry to bother you again, but I really can't launch the dev app on my
+phone, even if I let it upgrade exiting app, it just crashes.
+As fr Android Studio, I can't run the Configuration, it's telling me
+"androidmanifest.xml doesn't exist or has incorrect root tag".
+I haven't changed the location of the manifest of course, it's in src/main.
+Don't you have the error yourself?
+thanks
+—
+Reply to this email directly or view it on GitHub
+#295 (comment)
+.
+No, I haven't changed the manifest recently.
+But the database schema changed, so maybe you need to uninstall and
+re-install.
+(Although the schema change should not have affected launching the app)
+On Mon, Apr 13, 2015 at 12:53 PM, nodje notifications@github.com wrote:
+Sorry to bother you again, but I really can't launch the dev app on my
+phone, even if I let it upgrade exiting app, it just crashes.
+As fr Android Studio, I can't run the Configuration, it's telling me
+"androidmanifest.xml doesn't exist or has incorrect root tag".
+I haven't changed the location of the manifest of course, it's in src/main.
+Don't you have the error yourself?
+thanks
+—
+Reply to this email directly or view it on GitHub
+#295 (comment)
+.
+The development branch still contains a lot of bugs, and is very unstable. It will be very helpful if you could provide some logs to help us identify the bugs, and fix them.
+The development branch still contains a lot of bugs, and is very unstable. It will be very helpful if you could provide some logs to help us identify the bugs, and fix them.
+sorry to come back on this, it's not the right place but I don't know any other channel: Maven considers src/main/AndroidManifest.xml to be the standard place, but AndroidStudio/Intellij Run Configuration needs it to be in /.
+How do you run a Config? I guess you guys don't do it from the IDE.
+Any maven cli tip to run and debug the code? With USB and Emulator?
+sorry to come back on this, it's not the right place but I don't know any other channel: Maven considers src/main/AndroidManifest.xml to be the standard place, but AndroidStudio/Intellij Run Configuration needs it to be in /.
+How do you run a Config? I guess you guys don't do it from the IDE.
+Any maven cli tip to run and debug the code? With USB and Emulator?
+Yes, I do run the app from the IDE. The latest versions of Android Studio/IntelliJ have no problem with finding where the manifest file is.
+Also since I use Android Studio for development, it uses gradle for the default builds not maven ( The develop branch does not even support building with maven anymore). If you import the develop branch as a gradle project into Android studio, everything should resolve nicely and you can build and run from the IDE.
+P.S. But if you still use maven in master, mvn clean install from the CLI in root folder of the project should build the app and install install it on any Android instances discoverable by adb.
+Yes, I do run the app from the IDE. The latest versions of Android Studio/IntelliJ have no problem with finding where the manifest file is.
+Also since I use Android Studio for development, it uses gradle for the default builds not maven ( The develop branch does not even support building with maven anymore). If you import the develop branch as a gradle project into Android studio, everything should resolve nicely and you can build and run from the IDE.
+P.S. But if you still use maven in master, mvn clean install from the CLI in root folder of the project should build the app and install install it on any Android instances discoverable by adb.
+ok, I was on branch master since the beginning :( sorry for the confusion.
+Latest AndroidStudio 1.2beta or Intellij 14 would both declare "androidmanifest.xml doesn't exist or has incorrect root tag".
+Everything seems to works now with Gradle.
+I had a Failed install because of duplicated "org.gnucash.android.permission.RECORD_TRANSACTION", then found out "productFlavors" in build.gradle. I coudn't find a way run the app directly with the dev flavor, but used :installDevelopmentDebug which did the job.
+(How can I select which flavor to run?)
+But I wasn't able to restore backup though: it would just say 'No recent Backup found' (min was from March 9th, 2015)
+Question: what's so much better in Gradle over Maven?
+ok, I was on branch master since the beginning :( sorry for the confusion.
+Latest AndroidStudio 1.2beta or Intellij 14 would both declare "androidmanifest.xml doesn't exist or has incorrect root tag".
+Everything seems to works now with Gradle.
+I had a Failed install because of duplicated "org.gnucash.android.permission.RECORD_TRANSACTION", then found out "productFlavors" in build.gradle. I coudn't find a way run the app directly with the dev flavor, but used :installDevelopmentDebug which did the job.
+(How can I select which flavor to run?)
+But I wasn't able to restore backup though: it would just say 'No recent Backup found' (min was from March 9th, 2015)
+Question: what's so much better in Gradle over Maven?
+If you have problems restoring a backup, just import it like a normal file. Settings->Accounts->Import XML and then select the file from SDCARD/org.gnucash.android.devel
+Gradle has been selected by Google as the build tool of choice for Android going forward. So we use it!
+My Android Studio automatically runs the devel flavour on my machine. Check your run configuration again (or create one if you don't have one).
+If you have problems restoring a backup, just import it like a normal file. Settings->Accounts->Import XML and then select the file from SDCARD/org.gnucash.android.devel
+Gradle has been selected by Google as the build tool of choice for Android going forward. So we use it!
+My Android Studio automatically runs the devel flavour on my machine. Check your run configuration again (or create one if you don't have one).
+On the lower left corner of Android Studio, there is a label called "Build Variants", in which you can choose which flavor you are building.
+On the lower left corner of Android Studio, there is a label called "Build Variants", in which you can choose which flavor you are building.

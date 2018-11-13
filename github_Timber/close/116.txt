@@ -1,0 +1,14 @@
+title:[Bug] Random crashes when changing theme
+
+First off, thanks dev for the work so far! You have fixed many issues pretty quickly!
+I have tested the theme changing. Apparently there is a bug that causes random crashes while changing the theme. There appears to be no particular number of steps or a particular order to get it to crash, but if you change the theme randomly, it shows the "Unfortunately ..." dialogue box. To reproduce the issue, the following steps can be performed:
+->From the now playing screen, go to  Settings->Now Playing->Select a theme. Go back twice.
+Doing it enough times can trigger the event.
+For me personally, it happened one at the very first launch. Then I tried to reproduce the issue again, but this time it happened on 4th time, I think. I tried it once again and it happened on the 2nd try.
+For your convenience, I have attached a video recording of one of my trials.
+Telecine_2016-01-03-12-19-00.zip
+Thanks!
+Thanks for pointing out, I am able to reproduce it. Happens for me also 4th time. Fixing now
+Thanks for pointing out, I am able to reproduce it. Happens for me also 4th time. Fixing now
+Awesome! So far Play store doesnt have the update out, though I am guessing they will pretty soon. Also, I am not sure if you are in charge of the F Droid repositroy for your app, but they have an outdated version. If you are in charge of it, then please update the files there too! :)
+Awesome! So far Play store doesnt have the update out, though I am guessing they will pretty soon. Also, I am not sure if you are in charge of the F Droid repositroy for your app, but they have an outdated version. If you are in charge of it, then please update the files there too! :)

@@ -1,0 +1,33 @@
+title:Gnucash 2.7 file not importing currencies
+
+codinguser
+GnuCash Android version: F-Droid 2.3.0
+System Android version:7.1.2 RR-N-v5.8.5-20170924-cheeseburger-Final
+Device type: OnePlus5, rooted
+GnuCash desktop version: GnuCash 2.7.3, Build ID:  2.7.3+ (2017-12-30)
+I created two books with two GnuCash verions with default accounts and a couple transactions with USD currency and imported both into GnuCash-Android. The 2.6 version worked (imported as USD), and the 2.7 did not (imported as XXX).
+If you run a diff (diff -Naur <(zcat 2.6.15-base.gnucash) <(zcat 2.7.3-base.gnucash)) on the files, you'll notice (aside from guid/date differences) <cmdty:space>ISO4217</cmdty:space> has been replaced with <cmdty:space>CURRENCY</cmdty:space>. I have attached the diff and both files.
+It looks like 2.7.3 introduces breaking changes:
+Their news page mentions these breaking changes on their Update Notes page, but I can't seem to access that page at the moment.
+Under my system, the import does not work either. The same procedure. I tested with EUR.
+GnuCash Android version: F-Droid 2.3.0
+System Android version:6.0.1 LineageOS 13.0-20180305
+Device type: Huawei MediapadX2, rooted
+GnuCash desktop version: Version: 3.0. Build ID: git 3.0+ (2018-04-01)
+Under my system, the import does not work either. The same procedure. I tested with EUR.
+GnuCash Android version: F-Droid 2.3.0
+System Android version:6.0.1 LineageOS 13.0-20180305
+Device type: Huawei MediapadX2, rooted
+GnuCash desktop version: Version: 3.0. Build ID: git 3.0+ (2018-04-01)
+Can also confirm:
+Can also confirm:
+It seems that they replaced ISO4217 with CURRENCY.
+All instances of ISO4217 in current master excluding .gnucash and .xml files:
+It seems that they replaced ISO4217 with CURRENCY.
+All instances of ISO4217 in current master excluding .gnucash and .xml files:
+There is one place in GncXmlHandler.java that influence import of new format for currency. I made some fixes in #779 and it seems like working for me and can import from new and old files.
+There is one place in GncXmlHandler.java that influence import of new format for currency. I made some fixes in #779 and it seems like working for me and can import from new and old files.
+Fixed in develop via #779
+Thanks @xzfantom
+Fixed in develop via #779
+Thanks @xzfantom

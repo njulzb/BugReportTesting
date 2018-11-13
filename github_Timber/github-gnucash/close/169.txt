@@ -1,0 +1,21 @@
+title:Ask for Default Currency before creating accounts for the first time.
+
+Currently, when Gnucash is started for the first time, it only asks if you want to create counts or import accounts.  If you select "Create Accounts" it uses USD as the default.  It might be appropriate to ask what the currency should be before creating the accounts.
+Agreed!
+On Mon, Jun 16, 2014 at 6:26 PM, mnsanghvi notifications@github.com wrote:
+Currently, when Gnucash is started for the first time, it only asks if you
+want to create counts or import accounts. If you select "Create Accounts"
+it uses USD as the default. It might be appropriate to ask what the
+currency should be before creating the accounts.
+—
+Reply to this email directly or view it on GitHub
+#169.
+Agreed!
+On Mon, Jun 16, 2014 at 6:26 PM, mnsanghvi notifications@github.com wrote:
+Currently, when Gnucash is started for the first time, it only asks if you
+want to create counts or import accounts. If you select "Create Accounts"
+it uses USD as the default. It might be appropriate to ask what the
+currency should be before creating the accounts.
+—
+Reply to this email directly or view it on GitHub
+#169.

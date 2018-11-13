@@ -1,0 +1,14 @@
+title:Enhancement :: improvement in input view of transaction
+
+codinguser
+I would to suggest two possibile improvement for the input view of a new transaction:
+a new button for pre-fill the entire amount of the current account (useful for empty the account in favor of another account)
+a way to pre-fill the amount of the transation, as the difference between the current amount of the select account and a calculated delta, to reach a desired value (useful for account having a plafond like a credit card)
+I realize that the second one can be solved by just using the operation "-", in conjunction with the total amount of the current account (the first one request). I'm studing the code to implement the first one; I will pull it when/if it is ready. Thanks.
+I realize that the second one can be solved by just using the operation "-", in conjunction with the total amount of the current account (the first one request). I'm studing the code to implement the first one; I will pull it when/if it is ready. Thanks.
+Alright. Remember to read our contribution guidelines: https://github.com/codinguser/gnucash-android/blob/master/.github/CONTRIBUTING.md
+Alright. Remember to read our contribution guidelines: https://github.com/codinguser/gnucash-android/blob/master/.github/CONTRIBUTING.md
+I propose the #732 pull request in response to this issue. Thanks.
+I propose the #732 pull request in response to this issue. Thanks.
+See comment on #732
+See comment on #732

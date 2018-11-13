@@ -1,0 +1,19 @@
+unverified omemo shows with "shield" icon
+Sharing location crashes
+make nick changeable in MUC...
+App crashs when import database with wrong password
+Reconnect button in 'Add new account' crashes app
+Share button in 'Add new account' crashes app
+UnreadCount badge shows wrong counts
+FullScreenMessageView doesn't rotate correct
+EnterJID not working when trying to invite user to conference
+A restart / reconnect is causing deletion of chats
+Perhaps no file permissions on Android 4.2.2
+Don't show resend button if file was deleted
+status text/icon color in warning bubble not correct
+updater not working on Android 7 (Nougat)
+No downloadbutton in chats
+check if username already  exists
+Crash on first start
+don't switch off screen while watching video
+Color of key icons in chat bubbles is wrong

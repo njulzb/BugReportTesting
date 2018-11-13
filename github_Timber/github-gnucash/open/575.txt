@@ -1,0 +1,5 @@
+title:app crashes when using back button after import
+
+App does not crash.
+App crashes.
+Unfortunately I could not always reproduce it but while playing arround with import and several books it happend several times. :-/

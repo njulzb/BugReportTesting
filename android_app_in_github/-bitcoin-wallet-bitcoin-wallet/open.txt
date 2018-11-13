@@ -1,0 +1,3 @@
+NPE when decrypting a BIP38 encoded private key that was passed via intent extra
+"Add/edit address" should be "Edit label" as that's what it does
+Very slow response time in the UI

@@ -1,0 +1,30 @@
+title:V 2.0 crashes on my motox
+
+Hi,
+Installed the 2.0 apk from gnucash dev list while bored waiting in an airport.  I can no longer start gnucash-android.  Also was negligent enough not to have done a backup/export.  Any suggestions as to the best way to revert/recover data?  Will simple uninstall remove the data?  I can't see where this is located.  Thanks!
+No, do not uninstall!
+Does the app not start at all (crash on start), or starts before crashing?
+Send me a mail at gnucash.org@gmail.com and I can send you a build to test
+On Wed, Sep 23, 2015 at 6:44 PM, boydkelly notifications@github.com wrote:
+Hi,
+Installed the 2.0 apk from gnucash dev list while bored waiting in an
+airport. I can no longer start gnucash-android. Also was negligent enough
+not to have done a backup/export. Any suggestions as to the best way to
+revert/recover data? Will simple uninstall remove the data? I can't see
+where this is located. Thanks!
+—
+Reply to this email directly or view it on GitHub
+#388.
+No, do not uninstall!
+Does the app not start at all (crash on start), or starts before crashing?
+Send me a mail at gnucash.org@gmail.com and I can send you a build to test
+On Wed, Sep 23, 2015 at 6:44 PM, boydkelly notifications@github.com wrote:
+Hi,
+Installed the 2.0 apk from gnucash dev list while bored waiting in an
+airport. I can no longer start gnucash-android. Also was negligent enough
+not to have done a backup/export. Any suggestions as to the best way to
+revert/recover data? Will simple uninstall remove the data? I can't see
+where this is located. Thanks!
+—
+Reply to this email directly or view it on GitHub
+#388.

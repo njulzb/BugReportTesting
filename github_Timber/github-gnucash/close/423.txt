@@ -1,0 +1,62 @@
+title:Export to external service is broken in 2.0.1
+
+This happens on both of my devices i use it on. I just noticed it with GnuCash Version 2.0.1. Version 2.0.0 still did it for me.
+Both devices run Android 4.2.2 with a Kernel Version of 3.4.5. One is a ASUS MeMo Pad 7 HD, the other a Samsung S3 Mini.
+GnuCash Android version is 2.0.1 on both.
+What do i do:
+Expected outcome:
+The sharing services show up and i choose one. In my case i would use the official owncloud app to put the qif file on my private server.
+What does happen:
+Nothing. It claims to export. Then the "Export to external Service" message pops up, but the service selection never shows.
+What else did i check:
+I tried to send files via other apps. The ES Explorer opened the menu without a problem and let me put files on my owncloud as usual.
+As for now, i workaround the issue by exporting to SD card and sending with another application, but to put it frankly: That's a bit tedious.
+If you need anything else from me, just let me know.
+We are working on this.
+Thanks for the feedback
+On Tuesday, 10 November 2015, jschuck notifications@github.com wrote:
+This happens on both of my devices i use it on. I just noticed it with
+GnuCash Version 2.0.1. Version 2.0.0 still did it for me.
+Both devices run Android 4.2.2 with a Kernel Version of 3.4.5. One is a
+ASUS MeMo Pad 7 HD, the other a Samsung S3 Mini.
+GnuCash Android version is 2.0.1 on both.
+What do i do:
+Expected outcome:
+The sharing services show up and i choose one. In my case i would use the
+official owncloud app to put the qif file on my private server.
+What does happen:
+Nothing. It claims to export. Then the "Export to external Service"
+message pops up, but the service selection never shows.
+What else did i check:
+I tried to send files via other apps. The ES Explorer opened the menu
+without a problem and let me put files on my owncloud as usual.
+As for now, i workaround the issue by exporting to SD card and sending
+with another application, but to put it frankly: That's a bit tedious.
+If you need anything else from me, just let me know.
+—
+Reply to this email directly or view it on GitHub
+#423.
+We are working on this.
+Thanks for the feedback
+On Tuesday, 10 November 2015, jschuck notifications@github.com wrote:
+This happens on both of my devices i use it on. I just noticed it with
+GnuCash Version 2.0.1. Version 2.0.0 still did it for me.
+Both devices run Android 4.2.2 with a Kernel Version of 3.4.5. One is a
+ASUS MeMo Pad 7 HD, the other a Samsung S3 Mini.
+GnuCash Android version is 2.0.1 on both.
+What do i do:
+Expected outcome:
+The sharing services show up and i choose one. In my case i would use the
+official owncloud app to put the qif file on my private server.
+What does happen:
+Nothing. It claims to export. Then the "Export to external Service"
+message pops up, but the service selection never shows.
+What else did i check:
+I tried to send files via other apps. The ES Explorer opened the menu
+without a problem and let me put files on my owncloud as usual.
+As for now, i workaround the issue by exporting to SD card and sending
+with another application, but to put it frankly: That's a bit tedious.
+If you need anything else from me, just let me know.
+—
+Reply to this email directly or view it on GitHub
+#423.

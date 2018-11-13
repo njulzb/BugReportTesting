@@ -1,0 +1,4 @@
+title:Plus Button on Widget
+
+codinguser
+When tapping the main widget area outside of the Plus button you are taken into the account view that was set when the widget was dropped, as expected.  Hitting the Plus button I assumed would take me directly into a transaction editor, but only function part of the time, the rest of the time it takes me into the Account overview as if I hit somewhere else on the widget.  From experimenting with it, it would appear that if you use the systems back button to exit the app and you hit the plus it goes into Edit Transaction.  If you exit the app by hitting the system home key, it takes you into the account overview.  I haven't experimented enough to know if that is the exact issue, but at the moment it appears to be.

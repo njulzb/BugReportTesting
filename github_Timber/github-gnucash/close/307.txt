@@ -1,0 +1,11 @@
+title:Sort autocomplete suggestions from latest (in time) to oldest
+
+Inflation is back here in Brazil, and is common in many places, so prices (and thus transaction amounts) go up but rarely go back down, having to scroll down the suggestion list to get the right amount to auto-complete is cumbersome.
+In the next version, explicit saving of transaction templates is introduced and auto-complete only works with those templates (and not all transactions in the database).
+The code for this feature is already in the develop branch.
+In the next version, explicit saving of transaction templates is introduced and auto-complete only works with those templates (and not all transactions in the database).
+The code for this feature is already in the develop branch.
+💯
+💯
+Fixed in 487bc12
+Fixed in 487bc12

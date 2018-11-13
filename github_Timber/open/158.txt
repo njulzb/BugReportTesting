@@ -1,0 +1,13 @@
+title:[IMPROVEMENT] Add option "Play Album" in "Album View" and "Play Artist" in "Artist View"
+
+An entire Album can only be played, after
+Why not make it more easy?
+Add a "Play"-Symbol and/or the "Cross-arrow" symbol also available directly on top of each album in the "Album List" view!
+The same counts for the "Artist List"!
+To play an entire Album or all songs of an Artist you only need ONE tap (instead of now 2-3).
+And I also find no solution for "Add Album to Queu" and "Add Artist to Queu" (or to "Current Playlist" / "Now Playing").
+Does it not exist or did I simply not find it?
+But in my opinion it should als be available with longtap (or "...") onto an Album or Artist!
+And I also find no solution for "Add Album to Queu" and "Add Artist to Queu" (or to "Current Playlist" / "Now Playing").
+Does it not exist or did I simply not find it?
+But in my opinion it should als be available with longtap (or "...") onto an Album or Artist!

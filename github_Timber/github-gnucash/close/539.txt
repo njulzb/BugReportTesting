@@ -1,0 +1,53 @@
+title:data lost when installing beta from google play
+
+I switched to the beta in google play, got gnucash 2.1 and the transactions of the last week were gone.
+That were exactly those transactions that I did not export so far.
+Is this a problem of the beta system in google play or will this also happen when 2.1 is released?
+No, no, that should not happen.
+Are all transactions gone, or just the ones from the last week?
+No, no, that should not happen.
+Are all transactions gone, or just the ones from the last week?
+Only the ones since the last export which I did last week.
+Ngewi Fet notifications@github.com schrieb am Fr., 12. Aug. 2016, 18:08:
+No, no, that should not happen.
+Are all transactions gone, or just the ones from the last week?
+—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub
+#539 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AALZrv9XAHs2DXvCK3zcUKqCPKVpyLzUks5qfJprgaJpZM4Jixp6
+.
+Only the ones since the last export which I did last week.
+Ngewi Fet notifications@github.com schrieb am Fr., 12. Aug. 2016, 18:08:
+No, no, that should not happen.
+Are all transactions gone, or just the ones from the last week?
+—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub
+#539 (comment),
+or mute the thread
+https://github.com/notifications/unsubscribe-auth/AALZrv9XAHs2DXvCK3zcUKqCPKVpyLzUks5qfJprgaJpZM4Jixp6
+.
+I haven't been able to reproduce this.
+@nikopp did you by any chance have scheduled exports?
+One of the earlier bugs in beta1 was that scheduled actions were run too frequently, so maybe your data was exported and deleted without you realizing.
+@rivaldi8 Could you please investigate if there are some possibilities where the upgrade causes data loss? If recent transactions or something of the sort are affected.
+I haven't been able to reproduce this.
+@nikopp did you by any chance have scheduled exports?
+One of the earlier bugs in beta1 was that scheduled actions were run too frequently, so maybe your data was exported and deleted without you realizing.
+@rivaldi8 Could you please investigate if there are some possibilities where the upgrade causes data loss? If recent transactions or something of the sort are affected.
+Ok, I'll have a look.
+Ok, I'll have a look.
+@codinguser I haven't seen anything obvious in the upgrade code that might've caused this.
+@codinguser I haven't seen anything obvious in the upgrade code that might've caused this.
+@rivaldi8 ok, thanks for looking into it
+@rivaldi8 ok, thanks for looking into it
+Cannot reproduce this, sorry @nikopp . I will close this issue for now.
+We will monitor it over the gradual rollout of v2.1.0 in the month of September.
+Cannot reproduce this, sorry @nikopp . I will close this issue for now.
+We will monitor it over the gradual rollout of v2.1.0 in the month of September.
+@codinguser Sorry for not responding so far. No, I did not have scheduled exports.
+I tried the beta again today and had no data loss.
+@codinguser Sorry for not responding so far. No, I did not have scheduled exports.
+I tried the beta again today and had no data loss.

@@ -1,0 +1,5 @@
+title:Unable to play flac files
+
+Hi, I'm using the 0.122b version from F-droid. I cannot play any flac files.
+Nevermind, it seemed to be my rom.
+Nevermind, it seemed to be my rom.

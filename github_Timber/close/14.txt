@@ -1,0 +1,5 @@
+title:update gradle to newer version
+
+Any specific reason for not updating to the newer Gradle version 1.3?
+Nothing specific, except for downloading 1.3.0 😜
+Nothing specific, except for downloading 1.3.0 😜

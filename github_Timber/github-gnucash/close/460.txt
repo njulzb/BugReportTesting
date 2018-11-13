@@ -1,0 +1,9 @@
+title:Crash when deleting an account with subaccounts under certain conditions
+
+Deleting an account with subaccounts makes the application crash under certain conditions:
+Steps to reproduce with default accounts:
+The problem is due to the code in mOkButton.setOnClickListener().  The code under the condition mMoveTransactionsRadioButton.isChecked() is always executed, even when there aren't any transactions to move. This happens because, when the layout is loaded, mMoveTransactionsRadioButton is set to checked state.
+The concrete condition under which the application crashes is when mTransactionsDestinationAccountSpinner doesn't have any item. Then, the call to mTransactionsDestinationAccountSpinner.getSelectedItemId() returns INVALID_ROW_ID (-9223372036854775808, see javadoc) and accountsDbAdapter.getUID(targetAccountId) fails.
+I'm working on a fix.
+Fixed in develop.
+Fixed in develop.

@@ -1,0 +1,11 @@
+title:Opening a scheduled transaction to view causes app to crash
+
+The scheduled transaction list is displayed, but the individual items cannot be opened for editing..
+This behaviour currently occurs on develop branch.
+This can be fixed and extended so that tapping on a scheduled transaction does not directly go to editing it, but rather first displays details of it using TransactionDetailFragment. And then from there, it can be edited further.
+The crash happens when the scheduled transaction doesn't have an end date.
+When we don't set an end date, no value is stored in the corresponding field in the database. This is then read as a null value in RecurrenceDbAdapter.buildModelInstance into ScheduledAction.mRecurrence.mPeriodEnd, which provokes a NullPointerException in Recurrence.getCount().
+The crash happens when the scheduled transaction doesn't have an end date.
+When we don't set an end date, no value is stored in the corresponding field in the database. This is then read as a null value in RecurrenceDbAdapter.buildModelInstance into ScheduledAction.mRecurrence.mPeriodEnd, which provokes a NullPointerException in Recurrence.getCount().
+Fixed in 4d754cf
+Fixed in 4d754cf

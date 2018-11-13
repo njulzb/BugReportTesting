@@ -1,0 +1,23 @@
+title:Delete confirmation blocked by passcode screen
+
+From email bug report:
+"I have a passcode setup and it drops me back out to re-enter the passcode after I've exported transactions, then the delete transactions confirmation has disappeared. I've just tried turning off the passcode and the confirmation box is still there.
+I would say this is a bug as it ought to work with passcode enabled, I would suggest sensible behaviour would be to not kick you out to re-enter the passcode after exporting transactions."
+On the other hand, those delete confirmation dialogs may probably go away once backup and restore options in the UI have been improved upon, (planned for a future release). So in the long run, it will not be relevant for the purposes of confirming delete after export.
+On the other hand, those delete confirmation dialogs may probably go away once backup and restore options in the UI have been improved upon, (planned for a future release). So in the long run, it will not be relevant for the purposes of confirming delete after export.
+Not completely clear report, but it seems that I found the source of trouble. When the user try to export transactions to SD Card all works as well. But when "Share file" option is selected then starts an intent chooser. In this case displaying the dialog-as-an-Activity will cause pausing AccountsActivity what previously was there. After selected share destination calling the AccountsActivity's onResume() method. And if pause is greater than 5 seconds the passcode screen appears. So, nothing to do with delete confirmation dialogs.
+Here's the fix. Not elegant but works.
+Not completely clear report, but it seems that I found the source of trouble. When the user try to export transactions to SD Card all works as well. But when "Share file" option is selected then starts an intent chooser. In this case displaying the dialog-as-an-Activity will cause pausing AccountsActivity what previously was there. After selected share destination calling the AccountsActivity's onResume() method. And if pause is greater than 5 seconds the passcode screen appears. So, nothing to do with delete confirmation dialogs.
+Here's the fix. Not elegant but works.
+Yes, the issue with delete confirmation dialog after export is moot, because those will go away soon.
+@aint Do you the fix is still necessary then? I would personally leave it as-is,
+Because after exporting, and if it took long in another program, I see no problem with requiring the user to enter the passcode again.
+Yes, the issue with delete confirmation dialog after export is moot, because those will go away soon.
+@aint Do you the fix is still necessary then? I would personally leave it as-is,
+Because after exporting, and if it took long in another program, I see no problem with requiring the user to enter the passcode again.
+IMHO it's annoying to enter a password some additional times.
+IMHO it's annoying to enter a password some additional times.
+Fixed in 6d91b5f
+Transactions will always be deleted after export and no dialog will be shown!
+Fixed in 6d91b5f
+Transactions will always be deleted after export and no dialog will be shown!

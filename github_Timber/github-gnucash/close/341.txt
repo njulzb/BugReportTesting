@@ -1,0 +1,4 @@
+title:RuntimeException if no application selected to choose a file to import accounts
+
+GnuCash crashes with a RuntimeException if no application is selected from the dialog that appears when importing transactions.
+Steps to reproduce:

@@ -1,0 +1,19 @@
+title:Danish translation is in Norwegian
+
+I don't think there's a single string in Danish in values-da-rDK/strings.xml; from what I can tell the entire file is in Norwegian. (No idea whether it's Bokmål or Nynorsk though.) Is there a reason for this? It was added in 0d3e0c7 which doesn't give a whole lot of context in the commit message, other than mentioning CrowdIn (which isn't mentioned in the referenced help-to-translate blog post - is that what we're supposed to be using if we want to help with translations?).
+I think I uploaded translations in error.
+I will revert them to English
+I think I uploaded translations in error.
+I will revert them to English
+But is CrowdIn what I'm supposed to use if I do want to help contribute Danish translations?
+But is CrowdIn what I'm supposed to use if I do want to help contribute Danish translations?
+Yes!
+On 05.11.2015, at 10:57, Freso notifications@github.com wrote:
+But is CrowdIn what I'm supposed to use if I do want to help contribute Danish translations?
+—
+Reply to this email directly or view it on GitHub.
+Yes!
+On 05.11.2015, at 10:57, Freso notifications@github.com wrote:
+But is CrowdIn what I'm supposed to use if I do want to help contribute Danish translations?
+—
+Reply to this email directly or view it on GitHub.

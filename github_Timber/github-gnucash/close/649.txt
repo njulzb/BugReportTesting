@@ -1,0 +1,21 @@
+title:Commas in Account name causes error in reporting
+
+Inserting a comma character ',' inside an account name messes up the chart display.
+Simplified example: Say you have one account with 3 subaccounts:
+Expenses
+|----Ac1
+|----Ac2
+|----Ac3
+with transactions in each account.
+Then renaming "Ac1" to "Ac1, foo" changes the bar charts contributions. Also, the name for "Ac1, foo" appears just as "Ac1" so my suspicion is that there is some issue with parsing when generating the charts.
+Bar chart distributions should stay same.
+Bar chart distributions change
+The issue goes away when the comma is remove from the account name.﻿
+Seems to be fixed in version 2.2.0
+Seems to be fixed in version 2.2.0
+@pnemonic78 so I can close this issue?
+@pnemonic78 so I can close this issue?
+Close as non-reproducable
+Close as non-reproducable
+Can't reproduce.
+Can't reproduce.

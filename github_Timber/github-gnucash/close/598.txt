@@ -1,0 +1,49 @@
+title:Widget options (display name and whether to show balance)
+
+I'm interested in adding some extra options to the widget when it's created. In particular I'm looking at adding:
+I have already written the code to do this. It's currently on top of the changes done to support books in hotfix/patches (which I assumed was the most up-to-date widget code), although I should be able to move it without too much trouble.
+I thought it would be worth having a discussion about these options (and whether there are other options people would like to add) before I opened up a pull request, hence opening this issue.
+Thanks for the code and for creating this issue so the features can be discussed.
+Here are my thoughts on this:
+These are changes which I would rather consider for the develop branch.
+Thanks for the code and for creating this issue so the features can be discussed.
+Here are my thoughts on this:
+These are changes which I would rather consider for the develop branch.
+@codinguser I thought the same as you about 1. There should be a really good reason to justify the added complexity.
+About 2, I'd like to add something. It would be nice to have the option to show the balance checked by default, unless the user has set a passcode, then it would be unchecked. This would align more with the privacy concerns of the user.
+@codinguser I thought the same as you about 1. There should be a really good reason to justify the added complexity.
+About 2, I'd like to add something. It would be nice to have the option to show the balance checked by default, unless the user has set a passcode, then it would be unchecked. This would align more with the privacy concerns of the user.
+Yes, I like your point about 2. Unchecked by default if passcode is set 👍🏾
+On Thu, Oct 13, 2016 at 5:37 PM +0200, "Àlex Magaz Graça" notifications@github.com wrote:
+@codinguser I thought the same as you about 1. There should be a really good reason to justify the added complexity.
+About 2, I'd like to add something. It would be nice to have the option to show the balance checked by default, unless the user has set a passcode, then it would be unchecked. This would align more with the privacy concerns of the user.
+—
+You are receiving this because you were mentioned.
+Reply to this email directly, view it on GitHub, or mute the thread.
+Yes, I like your point about 2. Unchecked by default if passcode is set 👍🏾
+On Thu, Oct 13, 2016 at 5:37 PM +0200, "Àlex Magaz Graça" notifications@github.com wrote:
+@codinguser I thought the same as you about 1. There should be a really good reason to justify the added complexity.
+About 2, I'd like to add something. It would be nice to have the option to show the balance checked by default, unless the user has set a passcode, then it would be unchecked. This would align more with the privacy concerns of the user.
+—
+You are receiving this because you were mentioned.
+Reply to this email directly, view it on GitHub, or mute the thread.
+I have two main reasons for 1.
+I also don't think there's very much added complexity to the widget.
+I'll aim to move my changes onto develop over the weekend.
+I have two main reasons for 1.
+I also don't think there's very much added complexity to the widget.
+I'll aim to move my changes onto develop over the weekend.
+@czan I understand what you mean about obscuring the name, or renaming an account in the hierarchy. The added complexity is not just about the code (although that is one) but also the user experience (and decreasing clutter - feature creep is real). Also, there is the question of cost/benefit.  Code that is written has to be tested, maintained over many years.
+As far as I can tell this is not a feature that many users are asking for (and there have been many widget feature requests).. One of the main goals since started GnuCash Android was to keep it as streamlined as possible. This has meant saying no to many good features over the years.
+I'm sorry, but I'm still not convinced that renaming the account in the widget is a feature we should add.  The part about hiding the amount on the widget is a welcome addition though. Looking forward to the pull request.
+@czan I understand what you mean about obscuring the name, or renaming an account in the hierarchy. The added complexity is not just about the code (although that is one) but also the user experience (and decreasing clutter - feature creep is real). Also, there is the question of cost/benefit.  Code that is written has to be tested, maintained over many years.
+As far as I can tell this is not a feature that many users are asking for (and there have been many widget feature requests).. One of the main goals since started GnuCash Android was to keep it as streamlined as possible. This has meant saying no to many good features over the years.
+I'm sorry, but I'm still not convinced that renaming the account in the widget is a feature we should add.  The part about hiding the amount on the widget is a welcome addition though. Looking forward to the pull request.
+I've just made a pull request for the account balance checkbox.
+I still disagree with you on the account name issue. I don't think adding an extra text field to the widget creation dialog makes things significantly more complex or cluttered. Creating a widget is not something that is part of a regular workflow: once they are set up the field wouldn't be in the way or be seen.
+In the end it's your call, and I doubt I'll be able to change your mind, so I'll just leave it for now.
+I've just made a pull request for the account balance checkbox.
+I still disagree with you on the account name issue. I don't think adding an extra text field to the widget creation dialog makes things significantly more complex or cluttered. Creating a widget is not something that is part of a regular workflow: once they are set up the field wouldn't be in the way or be seen.
+In the end it's your call, and I doubt I'll be able to change your mind, so I'll just leave it for now.
+Fixed in v2.1.3
+Fixed in v2.1.3

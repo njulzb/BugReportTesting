@@ -1,0 +1,3 @@
+title:Setting for lockscreen album art
+
+Add a setting to disable using album art as the lockscreen wallpaper.

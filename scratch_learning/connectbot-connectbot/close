@@ -1,0 +1,30 @@
+Problem with ssh-agent.
+StringIndexOutOfBoundsException when generating public keys under Traditional Chinese locale
+Settings change apparently randomly
+1.9.1 - Unintended Scrolling
+Crash in 1.9.0 rollout
+NPE in Relay found during test run
+In Edit Host focus is not handled correctly
+Swipe to send page up/down does not work
+Going into recents and back into connectbot switches active terminal
+Can't hit Paste (SSH only)
+Scrolling causes selection to start during sustained touch
+Selection stays active while text is scrolling
+Unable to show the ActionBar (when set to auto hide)
+ConnectBot still appears as "Serveurs" (Locale.FRENCH) in launcher applications (git-v1.8.6-275-gd88325b)
+ConnectBot appears as "Hosts" in list of all apps
+Connection closed detection
+Local shell is not closed when disconnecting
+Scrolling does not reset timer for the soft key bar
+Elliptical curve hash algorithm lookup fails
+The text in the "generate entropy" box is very small
+Cursor jumps to the middle of the screen after 2 rotations
+ECDSA 521 bit keys auth always fails
+Window size might be incorrect on connect.
+No port range checking on Telnet transport
+abort while starting local terminalPort range is not checked in Telnet transport
+Connection instantly closed on server and hangs on ConnectBot
+Initial font size is too small
+Pub Key management doesn't have an "up" navigation
+L input bug
+No ipv6 support

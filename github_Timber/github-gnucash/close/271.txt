@@ -1,0 +1,13 @@
+title:Allow to enter amount in "calculator" style
+
+Current implementation of entering amounts is very unconvinient for currencies where fraction values does not matter mostly. For now to enter that i've spent 250 RUB I need to enter 2, 5, 0 and then add 2 zeroes to pad value with zeroes that fills fraction part.
+Input style where fraction part occurs when I explicitly enter "dot" or "comma" like with calculator is more natural and efficient (at least for some currencies): just hit 2, 5, 0 and if it some fraction part (which is seldom) add "dot" and fraction.
+Maybe it's doubtful if it is worth to fully replace current implementation, but at least it would be great to have an option to select the way of entering numbers.
+Yes, the plan is to improve this particular aspect in the future and use decimals for currencies that need it. A calculator for inputing amounts might also be added. Thanks for the feedback!
+Yes, the plan is to improve this particular aspect in the future and use decimals for currencies that need it. A calculator for inputing amounts might also be added. Thanks for the feedback!
+Similar feature request: #19
+Similar feature request: #19
+#19 is not the same. I'm requesting just change in UX of entering values, it does not include ability to perform arithmetic operations.
+To be more strict you can treat #19 as more broader feature request.
+#19 is not the same. I'm requesting just change in UX of entering values, it does not include ability to perform arithmetic operations.
+To be more strict you can treat #19 as more broader feature request.

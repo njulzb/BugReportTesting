@@ -1,0 +1,8 @@
+title:Feature Request: Asset Allocation
+
+The main obstacle to using GnuCash for Android (or GnuCash in general) for me would be inability to maintain asset allocation for investment accounts.
+I am wondering if you would be open to implementing such a module in the Android version even though there is no such thing in the desktop application.
+Since I implemented the same functionality in MoneyManagerEx for Android, I'd be willing to contribute code, if you agree.
+I would not go too much into conceptual explanation as much has been written about asset allocation. Essentially, different investment types would be assigned an asset class. Each class would be assigned a percentage of the portfolio total amount.
+Then, over time, as asset prices change, this allocation would go off balance due to price oscillations. Having ability to see the current allocation and offset from the pre-set allocation is crucial.
+I'm happy to answer any questions or comments and am looking forward to them.

@@ -1,0 +1,7 @@
+title:Integrate with Continuous Integration tool - Travis CI
+
+I'm using Travis CI in my weather application project and I must say it's really helpful. In my case, it checks if any code changes (it runs after any commit is pushed) are passing all tests or they're failing a test and than, some additional code changes are needed.
+Website: https://travis-ci.org/
+Github: https://github.com/travis-ci
+Added travis-ci integration
+Added travis-ci integration

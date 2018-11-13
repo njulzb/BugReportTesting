@@ -1,0 +1,112 @@
+title:Unable to Import Transactions into GnuCash Desktop
+
+Unable to Import Transactions into GnuCash Desktop
+I exported my accounts out of GnuCash Desktop
+I imported those to my GnuCash Android
+I created a couple of transactions.
+I exported the QIF
+I transferred that file to my desktop computer
+I was unable to import that QIF (transactions) to my GnuCash Desktop.
+And unfortunately GnuCash Desktop only says "an error occurred while loading the QIF file". There is no additional information which might help me resolve this problem.
+Would you mind creating some fake transactions and paste the exported QIF file contents here that cannot be successfully imported to GnuCash Desktop?
+QIF file are pure text files and you should be able to open them with a text editor.
+Would you mind creating some fake transactions and paste the exported QIF file contents here that cannot be successfully imported to GnuCash Desktop?
+QIF file are pure text files and you should be able to open them with a text editor.
+If it's relevant:
+GnuCash 2.6.3
+GnuCash Android 1.4.3
+Ubuntu 14
+Here is the text of the QIF file:
+!Account
+NAssets:Current Assets:Bank of America $ Debit
+^
+!Type:Bank
+D2014/9/16
+MSanta Claus
+SIncome:Other Income
+$1111.11
+^
+!Account
+NLiabilities:Leumi Visa Tom
+^
+!Type:CCard
+D2014/9/16
+MMega
+SExpenses:_Fake Shekel Expense
+$1000.00
+^
+!Account
+NIncome:Other Income
+^
+!Type:Cash
+!Account
+NExpenses:_Fake Shekel Expense
+^
+!Type:Cash
+If it's relevant:
+GnuCash 2.6.3
+GnuCash Android 1.4.3
+Ubuntu 14
+Here is the text of the QIF file:
+!Account
+NAssets:Current Assets:Bank of America $ Debit
+^
+!Type:Bank
+D2014/9/16
+MSanta Claus
+SIncome:Other Income
+$1111.11
+^
+!Account
+NLiabilities:Leumi Visa Tom
+^
+!Type:CCard
+D2014/9/16
+MMega
+SExpenses:_Fake Shekel Expense
+$1000.00
+^
+!Account
+NIncome:Other Income
+^
+!Type:Cash
+!Account
+NExpenses:_Fake Shekel Expense
+^
+!Type:Cash
+I successfully imported the QIF file into an empty book, with GnuCash 2.6.3 on Win7
+I successfully imported the QIF file into an empty book, with GnuCash 2.6.3 on Win7
+There are two transactions in your QIF file, involving four accounts. Do the four accounts use the same currency? I seem to see "American $" and "Shekel" in the account names.
+QIF file has no place to record currency. When importing to GnuCash, GnuCash lets you choose what currency they are in, and all transactions and accounts in the QIF file would be treated as they are in that currency. If they don't match the corresponding account currency in GnuCash, there may be a problem.
+When I tried to import your QIF file into GnuCash just now, I used an empty book with no account. It may just succeeded as there's no account in my book so no chance of conflict.
+There are two transactions in your QIF file, involving four accounts. Do the four accounts use the same currency? I seem to see "American $" and "Shekel" in the account names.
+QIF file has no place to record currency. When importing to GnuCash, GnuCash lets you choose what currency they are in, and all transactions and accounts in the QIF file would be treated as they are in that currency. If they don't match the corresponding account currency in GnuCash, there may be a problem.
+When I tried to import your QIF file into GnuCash just now, I used an empty book with no account. It may just succeeded as there's no account in my book so no chance of conflict.
+Thank you for the quick response.
+Yes, I also tried that test now. I WAS able to import the QIF file into an empty book.
+You wrote:
+QIF file has no place to record currency. When importing to GnuCash, GnuCash
+lets you choose what currency they are in, and all transactions and accounts in
+the QIF file would be treated as they are in that currency. If they don't match > the corresponding account currency in GnuCash, there may be a problem.
+This is a problem. If I have created all my accounts correctly on GnuCash Desktop and imported all them correctly to GnuCash Android. I will then have:
+Up to here everything is working fine.
+But when I export out of GnuCash Android and then attempt to import all that to GnuCash Desktop, then GnuCash Desktop forces me to choose one (and ONLY one) currency for all the transactions I'm importing. So, if I choose "Currency A" for all transactions then GnuCash desktop forces
+GnuCash Android: 2.B. Checking Account 2 (Currency B)
+into becoming "Currency A". And when it tries to put those transactions into the correct place in GnuCash Desktop, there is a conflict.
+Please help me to resolve this problem.
+Thank you for the quick response.
+Yes, I also tried that test now. I WAS able to import the QIF file into an empty book.
+You wrote:
+QIF file has no place to record currency. When importing to GnuCash, GnuCash
+lets you choose what currency they are in, and all transactions and accounts in
+the QIF file would be treated as they are in that currency. If they don't match > the corresponding account currency in GnuCash, there may be a problem.
+This is a problem. If I have created all my accounts correctly on GnuCash Desktop and imported all them correctly to GnuCash Android. I will then have:
+Up to here everything is working fine.
+But when I export out of GnuCash Android and then attempt to import all that to GnuCash Desktop, then GnuCash Desktop forces me to choose one (and ONLY one) currency for all the transactions I'm importing. So, if I choose "Currency A" for all transactions then GnuCash desktop forces
+GnuCash Android: 2.B. Checking Account 2 (Currency B)
+into becoming "Currency A". And when it tries to put those transactions into the correct place in GnuCash Desktop, there is a conflict.
+Please help me to resolve this problem.
+I will proceed to close this issue if there are no further objections. A commit has been added to only export transactions whose splits are of the same currency.
+Multi-currency transactions will not be exported in QIF
+I will proceed to close this issue if there are no further objections. A commit has been added to only export transactions whose splits are of the same currency.
+Multi-currency transactions will not be exported in QIF

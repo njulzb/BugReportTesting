@@ -1,0 +1,63 @@
+title:Nextcloud 11 login test not working
+
+Nextcloud 11 should still be fully compatible with owncloud, or did they change the login Api?
+Same with GnuCash 2.1.5 on a Moto G 4G (peregrine) and a Nextcloud 11.0.2 instance. Neither user/password nor user/app-pin currently work.
+Same with GnuCash 2.1.5 on a Moto G 4G (peregrine) and a Nextcloud 11.0.2 instance. Neither user/password nor user/app-pin currently work.
+@poVoq can you use the new Save As.. functionality in v2.2.0 with your NextCloud successfully?
+@poVoq can you use the new Save As.. functionality in v2.2.0 with your NextCloud successfully?
+Seems that GnuCash is using /index.php/ocs/cloud/user for logging-in, but at least on NextCloud 11 the GET request will get 302 redirected to the login page (/login)
+Seems that GnuCash is using /index.php/ocs/cloud/user for logging-in, but at least on NextCloud 11 the GET request will get 302 redirected to the login page (/login)
+@wenxin-wang are you referring to the "Save As.." functionality, or the logging in via ownCloud integration?
+@wenxin-wang are you referring to the "Save As.." functionality, or the logging in via ownCloud integration?
+You can use the "Send to..." export target for use with the Nextcloud app. It is not that much convenient (you have to choose the upload folder each time) but it works.
+IMHO, this is a more general solution and should work with other cloud storages as well - as long as they provide an Android client. ;-)
+You can use the "Send to..." export target for use with the Nextcloud app. It is not that much convenient (you have to choose the upload folder each time) but it works.
+IMHO, this is a more general solution and should work with other cloud storages as well - as long as they provide an Android client. ;-)
+Did you set a new APP-Pin for gnucash in the nextcloud settings in the webpanel?
+Did you set a new APP-Pin for gnucash in the nextcloud settings in the webpanel?
+Go to the nextcloud webpanel->press your nickname in the top right-> personal.
+Then set a new APP-PIN and copy the new passwort. Paste the passwort into the gnucash panel with your nextcloud Nickname and your Serveradress.
+Go to the nextcloud webpanel->press your nickname in the top right-> personal.
+Then set a new APP-PIN and copy the new passwort. Paste the passwort into the gnucash panel with your nextcloud Nickname and your Serveradress.
+AFAIK the app pin should only be necessary if an external auth system like SAML or LDAP is used in Nextcloud and thus no password is stored in the Nextcloud database.
+AFAIK the app pin should only be necessary if an external auth system like SAML or LDAP is used in Nextcloud and thus no password is stored in the Nextcloud database.
+@poVoq @Johnjustdoit : An app pin is necessary if you activated TOTP for your user. AFAIK, it is fully transparent to the client if you enter your password or an app pin.
+Just do as follows:
+That means it won't make any difference for GnuCash.
+BTW: Has anyone tried to use GnuCash app with NC12?
+@poVoq @Johnjustdoit : An app pin is necessary if you activated TOTP for your user. AFAIK, it is fully transparent to the client if you enter your password or an app pin.
+Just do as follows:
+That means it won't make any difference for GnuCash.
+BTW: Has anyone tried to use GnuCash app with NC12?
+Thank you for clearing it up!
+I found a workaround to sync it automatically in my private network. (Should also work with a nextcloud reachable in the www)
+I use the app Foldersync Pro (3,19€) and the app tasker (2,99€). First I set a periodic export in GnuCash to my SD Card. Then I set a task in tasker to sync all my previous added syncronisations(GnuCash, Photos,...etc) in FolderSync when my phone log into my home WLAN. This is posible for any folder and file on your phone. On my PC I use the nextcloudapp to use the file in my nextcloud folder with GnuCash.
+Thank you for clearing it up!
+I found a workaround to sync it automatically in my private network. (Should also work with a nextcloud reachable in the www)
+I use the app Foldersync Pro (3,19€) and the app tasker (2,99€). First I set a periodic export in GnuCash to my SD Card. Then I set a task in tasker to sync all my previous added syncronisations(GnuCash, Photos,...etc) in FolderSync when my phone log into my home WLAN. This is posible for any folder and file on your phone. On my PC I use the nextcloudapp to use the file in my nextcloud folder with GnuCash.
+Yep, that should do the trick. :-)
+Nevertheless, the NC Android client v1.5 (and above) has the potential to render this toolchain obsolete. See nextcloud/android#285 (it is a meta ticket gathering the work done in separate tickets).
+This would render a separate interface implementation in GnuCash for NC obsolete. All you need is a local export folder and an auto upload watcher in your NC app.
+Yep, that should do the trick. :-)
+Nevertheless, the NC Android client v1.5 (and above) has the potential to render this toolchain obsolete. See nextcloud/android#285 (it is a meta ticket gathering the work done in separate tickets).
+This would render a separate interface implementation in GnuCash for NC obsolete. All you need is a local export folder and an auto upload watcher in your NC app.
+I'm having the exact same problem with Nextcloud 11.0.3. @sehucke tip didn't work (I don't have 2FA enabled atm, which may be the cause)
+Update: Apparently neither NC 12.0.0 works
+I'm having the exact same problem with Nextcloud 11.0.3. @sehucke tip didn't work (I don't have 2FA enabled atm, which may be the cause)
+Update: Apparently neither NC 12.0.0 works
+Which tip did you mean @denysvitali ? I suppose you are referring to #651 (comment) ? My explanation of app pin usage was not meant to be a tip for getting GnuCash to work with NC. I tried to explain the exact opposite: It does not matter if you use your password or an app pin inside GnuCash. The client does not know there is a difference.
+At the moment there seem to be only two ways to get GnuCash working with NC:
+Besides that: App pins should work regardless of whether you have enabled 2FA or not. If I remember correctly, I have successfully tried that before enabling 2FA in my NC installation.
+You can easily verify if your app pins work correctly. Just generate a new pin and use an app to log in with it (NC, DAVdroid, CalDAV, CardDAV...). However, atm this won't help you with this GnuCash problem.
+Which tip did you mean @denysvitali ? I suppose you are referring to #651 (comment) ? My explanation of app pin usage was not meant to be a tip for getting GnuCash to work with NC. I tried to explain the exact opposite: It does not matter if you use your password or an app pin inside GnuCash. The client does not know there is a difference.
+At the moment there seem to be only two ways to get GnuCash working with NC:
+Besides that: App pins should work regardless of whether you have enabled 2FA or not. If I remember correctly, I have successfully tried that before enabling 2FA in my NC installation.
+You can easily verify if your app pins work correctly. Just generate a new pin and use an app to log in with it (NC, DAVdroid, CalDAV, CardDAV...). However, atm this won't help you with this GnuCash problem.
+I'm already working on a fix to integrate NextCloud into GnuCash...
+I thought NC and OC had the same authentication mechanism
+I'm already working on a fix to integrate NextCloud into GnuCash...
+I thought NC and OC had the same authentication mechanism
+With Nextcloud 12 I could successfully work around the Issue with an entry in my webserver config (in this case apache2 with virtualhosts):
+With Nextcloud 12 I could successfully work around the Issue with an entry in my webserver config (in this case apache2 with virtualhosts):
+Fixed develop branch (fc261f7).
+Fixed develop branch (fc261f7).

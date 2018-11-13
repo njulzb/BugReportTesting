@@ -1,0 +1,9 @@
+title:Importing old backups (with non-balanced splits) fails
+
+Importing old backups which do not have balanced splits fails due to a "FOREIGN key constraint fails" when bulk adding splits. This I think is the the split account uid foreign constraint.
+Auto-balancing takes place during the import process (and that includes creating the imbalance account). So db has to be cleared before importing starts. I've made the adjustments in the develop branch, but still the import fails.
+@fefe982 could you look into it? I could send you some old files if you don't have any.
+Sure. I've already know the reason, and patch may come up with some other enhancements (if possible) and bug fixes on the XML import procedure.
+Sure. I've already know the reason, and patch may come up with some other enhancements (if possible) and bug fixes on the XML import procedure.
+👍
+👍

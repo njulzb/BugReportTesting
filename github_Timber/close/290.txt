@@ -1,0 +1,4 @@
+title:why the app is cleared, the notification bar can continue to play
+
+I have a question,why the app is cleared, the notification bar can continue to play,
+I read the code，found service is in a new process，and it's a foreground process，But I still don't know how it came about，Please answer me。Thanks。

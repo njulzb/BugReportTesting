@@ -1,0 +1,5 @@
+title:popupsong_song.xml
+
+Add this lines to traduce PopUp_song.xml
+Spanish traduction
+<string name="popup_song_remove_playlist">Borrar de la playlist</string> <string name="popup_song_play">Iniciar</string> <string name="popup_song_play_next">Iniciar Siguiente</string> <string name="popup_song_addto_queue">Añadir a la cola</string> <string name="popup_song_addto_playlist">Añadir a la playlist</string> <string name="popup_song_goto_album">Ir al álbum</string> <string name="popup_song_goto_artist">Ir al artista</string> <string name="popup_song_delete">Borrar canción del dispositivo</string>

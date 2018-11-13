@@ -1,0 +1,16 @@
+title:Accounts: total balance don't show future transactions
+
+codinguser
+I'm not sure if it is intentional or not but if we enter a transaction with future date we don't see it in total balance of Accounts screen.
+For example, the following account has two transactions one today and other at the end of current month:
+Balance is
+Transactions are
+Additional information
+Thanks for the feedback. Yes this is intentional.
+However, you are right that it may be a good idea to be consistent with GnuCash desktop.
+We will consider it.
+Thanks for the feedback. Yes this is intentional.
+However, you are right that it may be a good idea to be consistent with GnuCash desktop.
+We will consider it.
+👍
+👍

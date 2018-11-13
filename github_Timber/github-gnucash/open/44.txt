@@ -1,0 +1,20 @@
+title:White theme is bruning my eyes
+
+Hi,
+I'm using a dark holo theme on my Android so when I open gnucash and his white background it burn my eyes, especially the night. Clan you add a dark theme on the options ?
+Thanks and please apologize my poor english.
+KaitoKito.
++1
++1
++1
++1
++1
++1
+I started some experimenting with dynamic theming as part of the AppCompat library. The work lives in this branch: https://github.com/codinguser/gnucash-android/tree/feature/day-night
+The remaining tasks to do are the following:
+A nice guide for theming can be found here:
+https://medium.com/@chrisbanes/appcompat-v23-2-daynight-d10f90c83e94
+I started some experimenting with dynamic theming as part of the AppCompat library. The work lives in this branch: https://github.com/codinguser/gnucash-android/tree/feature/day-night
+The remaining tasks to do are the following:
+A nice guide for theming can be found here:
+https://medium.com/@chrisbanes/appcompat-v23-2-daynight-d10f90c83e94

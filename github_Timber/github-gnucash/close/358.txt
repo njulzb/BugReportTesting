@@ -1,0 +1,15 @@
+title:"Save" and "Cancel" transaction buttons are disappeared from the menu bar
+
+Buttons for saving and cancelling transaction are disappeared from the menu bar in transaction editor since version 1.6.0. Now I need to open menu and click buttons there, but this is less comfortable. Please, re-add buttons to the menu bar.
+What Android version are you using? Do you get the app from Play Store or F-Droid?
+Does this happen in v1.6.2 as well?
+What Android version are you using? Do you get the app from Play Store or F-Droid?
+Does this happen in v1.6.2 as well?
+Android 2.3.6.
+Yes, this problem is present in v 1.6.2.
+Android 2.3.6.
+Yes, this problem is present in v 1.6.2.
+This should be fixed in v2.0.0
+This should be fixed in v2.0.0
+Yes, fixed in 2.0.0
+Yes, fixed in 2.0.0

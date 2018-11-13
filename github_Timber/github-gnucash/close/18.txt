@@ -1,0 +1,12 @@
+title:Account configuration
+
+codinguser
+Please add the following account options:
++1 for the default mode.
+I need to have credit for default.
++1 for the default mode.
+I need to have credit for default.
++1
++1
+Any more configuration for the transactions will done through transaction templates (no timeline yet, sorry)
+Any more configuration for the transactions will done through transaction templates (no timeline yet, sorry)

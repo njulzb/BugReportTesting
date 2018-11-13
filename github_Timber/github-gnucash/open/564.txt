@@ -1,0 +1,8 @@
+title:Pressing "Enable Google Drive" checkbox option leaves it unchecked
+
+Reported through Google+:
+When I tick the "enable Google drive" tick box under "backup settings", a little pop-up notification says "connected to Google drive" but the box isn't ticked. Then I close the settings and reopen the settings and it is already ticked.
+When you first check the box, you get a notification: "Connected to Google Drive" but the checkmark does not change. If you press the back button and then touch the "Restore Backup ..." option again, you can visibly seen the checkmark. See .
+When you first check the box, you get a notification: "Connected to Google Drive" but the checkmark does not change. If you press the back button and then touch the "Restore Backup ..." option again, you can visibly seen the checkmark. See .
+Yes, I can confirm this. But it was/is very low priority bug.
+Yes, I can confirm this. But it was/is very low priority bug.

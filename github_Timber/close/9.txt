@@ -1,0 +1,6 @@
+title:Duplicate permissions in AndroidManfiest.xml
+
+In your AndroidManifest, you have,
+Any reasons for having WAKE_LOCK and READ_EXTERNAL_STORAGE twice?
+Haha, No reasons, this is certainly an overlook by my side
+Haha, No reasons, this is certainly an overlook by my side

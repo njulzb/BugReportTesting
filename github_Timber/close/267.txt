@@ -1,0 +1,3 @@
+title:Blinking Screen
+
+in Android 6 The song is played perfectly when the screen is off. but when home button is pressed(wakeup screen), The Screen was Blinking. And then i was closed Song notification, the screen was normal not blinking. Please help me

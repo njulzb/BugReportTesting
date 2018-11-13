@@ -1,0 +1,24 @@
+title:Backups are created every hour
+
+rivaldi8
+Backups are created every time the ScheduledActionService is run, currently every hour. As backups are never deleted (#712), the application may end up filling a considerable amount of disk space.
+We could make the backups only when ScheduledActionService is about to run an action that'll modify the database. That would happen only with scheduled transactions. However, if there aren't any defined by the user, a backup might never be done.
+In my opinion, we should have a separate service to do automatic daily backups (apart from the ones the user might've defined). Then I'm not sure if it would be worth continue doing them from ScheduledActionService.
+@codinguser what do you think?
+We could make the backups only when ScheduledActionService is about to run an action that'll modify the database. That would happen only with scheduled transactions. However, if there aren't any defined by the user, a backup might never be done.
+In my opinion, we should have a separate service to do automatic daily backups (apart from the ones the user might've defined). Then I'm not sure if it would be worth continue doing them from ScheduledActionService.
+@codinguser what do you think?
+The main actions which modify the database are inserting scheduled transactions. I think I prefer backups on a schedule with some regularity and predictability.
+I'm fine with having a separate daily backup service which runs, backs up the code and then also deletes older backups. Right now auto backup is called every time the service is executed.
+We can just have the normal daily backup, and then backup before destructive (delete) operations.
+I would say anything older than a week can be deleted since the backups contain the whole database anyway.
+What say you?
+The main actions which modify the database are inserting scheduled transactions. I think I prefer backups on a schedule with some regularity and predictability.
+I'm fine with having a separate daily backup service which runs, backs up the code and then also deletes older backups. Right now auto backup is called every time the service is executed.
+We can just have the normal daily backup, and then backup before destructive (delete) operations.
+I would say anything older than a week can be deleted since the backups contain the whole database anyway.
+What say you?
+I think it's reasonable. I'll work on it.
+I think it's reasonable. I'll work on it.
+Fixed in develop.
+Fixed in develop.

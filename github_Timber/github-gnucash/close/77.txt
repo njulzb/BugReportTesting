@@ -1,0 +1,4 @@
+title:Needed option: Delete all transactions
+
+codinguser
+I copy the transactions manually into my GnuCash desktop software and delete them from the Android app afterwards. For now I have to select all transactions manually to delete them. An option for clearing an account (delete all transactions) would be nice.

@@ -1,0 +1,4 @@
+title:Reversed legend on barchart report income
+
+The legend should correspond with the bar that represents the source of income
+In my case, having only 2 income accounts, the legend provides the reversed color information. Pressing the bar for extra detail provides the correct name of the account

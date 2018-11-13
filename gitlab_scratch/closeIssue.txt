@@ -1,0 +1,1274 @@
+[Feature Request] Add option to import/export list of installed apps
+Hidden install log
+Saving list of installed applications
+Crash on add repo
+Error messages should mention affected repo
+Does not target Android 8.0 (Oreo, Android-O) and so installs fail
+Please List Apps With Ads In F-Droid?
+empty categories in german translation
+Feature request: Please allow to preset additional repositories in the ROM
+Layout Sketches for the App Details Design
+Layout sketches for versions list
+Clarify apks/versions interface
+Error when I tried to install an app
+F-Droid Nearby Tutorial
+Getting "minSdk" error on new app update
+Strange error message when signing key for a package has changed
+0.102-alpha 1 APKs not saved in cache/apks/repo
+0.101 repo index update duplicates pending updates APKs
+[Privileged extension] Add a hook so screen filters can pause when opening the install dialog
+text in available versions list is overlaping
+Show date added in landscape mode
+Get litecoin donation link working
+download-in-progress-notification remains forever if using ota zip
+Add an "AMOLED" color theme with completely black backgrounds.
+Switch to another PreferenceFragment implementation
+Display information when app is known to be outdated
+Suggestion: provide a detailed description of the "Swap Apps" feature
+fdroid creates 'app_keystore' while MemorizingTrustManager creates 'app_KeyStore'
+Add text wrapping in application view
+Do not update all apps at the same time with privileged extension (slowdown/freeze)
+Large icons seem to be scaled from low-res icon
+[Could be quickly solved] Icons of better quality
+Wrong signature in version selection for many apps
+Add repository of microG to F-Droid like Guardian Project
+It's possible to trigger multiple install requests in parallel
+Could not uninstall Privileged Extension
+0.103: Consider showing up-to-date apps on updates screen
+Header color should adapt to selected app
+User tests: Search FAB was difficult to find for some users
+Enhacement proposal: seeing full app desciption after touching it's name for ~2 seconds
+Add action to Create a repo from the Repository home view
+Language selector cosmetic issues
+"this has a known vuln", install in app details, uninstall/ignore/freeze in the Updates view
+Show last updated date on entries
+Show version name of recommended version in app overview
+Prominently show download/install size of recommended version
+make F-Droid Launcher that blends installing/managing apps with opening/running apps
+Privileged extension seems to not exhibit min API level
+Website download link not up-to-date
+Cache should be cleared when disabling a repo
+Editing repo entries
+[Bug] Click on app detail description
+Bitcoin donation information not shown
+WifiStateChangeService crash
+Application referenced in several categories
+voulez-vous installer une mise à jour
+Wrong metadata language is displayed
+Activating the Guardian project repository triggers Orbot installation
+[Feature Request] Show version changes in the update tab/view
+F-Droid is not responding
+Searching for "ring" only returns the app "Ring" far from reach
+[Feature Request] List of Apps by lifespan (lastupdated - added)
+can not get ropstara
+Background download is performance intensive
+Crash when attempting to use Nearby
+Suggested version not calculated when "upstream version" is too old
+Error while updating Fdroid repository (fdroid.libretro.com)
+Improvements For F-Droid - So The Model Isn't As Good As Google?
+Request: For GEO Location - Enable/Disable
+setting "Over Data" and "Over WiFi" both to none causes looking updates
+data save mode doesn't apply immeaditely
+setting automatic updates to never does not stop auto-updates
+[Feature Request] Support CDNs / different APK URLs
+disable AppDetails action buttons until they have refreshed their state
+[Bug] Keeps saying app update ready to install, but app is already updated
+F-Droid still reminding about update that already happened
+Package listed for install in "Updates" tab even after uninstallation
+Change swap icon to nearby icon in notification
+1.3-alpha2 - Settings view scolls down
+Updates - Over Data description cut off
+VoIP.ms app not updated
+jj
+Use internet only on wifi
+F-droid display multiople time the item to update
+data usage defaults broken?
+Notify user about downloaded but not installed apps
+Sony XZ2 compact install APK
+Cannot change the language
+Random language switch
+No notification displayed while refreshing
+parse error while trying to install davdroid through f-droid privileged extension
+Failing to verify signature with Öffi repo
+F-droid "Updates" tab lists duplicate items for install
+fdoid want to update package already updated
+Add a "Check for updates" button to the Updates tab for manual repo refresh
+F-droid should allow forced repo refresh
+Checkbox for using privileged extension unchecks when you leave settings tab
+1.3alpha2 breaks privileged extension
+Rollback option after upgrade
+F-Droid installs deleted applications back
+Manage Installed Apps also shows F-Droid apps I did not install
+[Feature Request] Add kind of an app Mature level
+Documentation request: include instructions for people encountering the web site
+Notification "Update ready to be installed" after installing
+Seeing apps that I didn't install among my "installed apps"
+F-droid doesn't show install button for compatible app.
+Move installed apps overview and refresh UI of "Updates"
+Please remove horrible Flemish translation
+Update notification is repeatedly shown after update is successfully performed
+USB Mountr "Couldn't get root access"
+ACRA doesn't mail user comment
+App keeps downloading updates in background
+Support of user trusted credentials
+F-Droid clients links wrong version of the license
+if a repo is not accessible, try one of the official mirrors
+Fails to install on Lineage OS, OnePlus 3T
+crash reporting and gdpr
+Show screenshots preview.
+Crash while adding new repository
+can't get current index SQLiteConstraintException: NOT NULL constraint failed: temp_fdroid_apk.version
+F-Droid installs App again after deinstalling the App
+Update after installation
+Favorite disappears when dragged if there's only one favorite
+error during update, nothing ever loads
+Installed applications list
+Error installing apk from non-default repository
+update "Only on WiFi" preference to handle very low bandwidth better
+Bug with tooltip transparency
+Changelog disappeared?
+dark buttons on dark background not visible
+Webpage - Rss
+New F-Droid App loops
+Hints are cut on smartphone portrait mode
+“Error getting index file” after upgrade to F-Droid 1.2.2
+Repository down
+Error getting index file
+F-Droid 1.x randomly shows updates and version for previously already updated and installed applications
+[ "@7F050022": not a valid Integer value ] (error getting index file) when updating
+Settings being overridden, causing index issues
+Error getting index file
+F-Droid keeps reinstalling already installed apps and updates (including uninstalled ones)
+Use JobScheduler to run index update for API 21+
+convert UpdateService to JobIntentService
+Toggling old index format corrupts something
+Rework "App compatibility" settings section
+Error Uninstalling AdAway
+Move Nearby (swap) into the nearby tab instead of its own activity
+Add a link to 'Share F-Droid over Bluetooth' to Nearby view
+Nearby Bluetooth and Wifi should be on by default after the user taps 'Find People Near Me'
+update nanohttpd to upstream
+LocalRepoKeyStore: Explicit termination method 'end' not called
+bump minimum supported Android version to 14 aka 4.0 aka Ice Cream Sandwich
+F droid reinstalls a app when I uninstall it
+Material Design
+Mark for installation
+Hide apps older than x month option
+Add "support annotations" library
+Bypass Licences Informations from playstore
+Let installation pages follow selected theme colour
+Rephrase update screen
+Floating Action Button
+Crashes and restarts in a loop showing grey screen
+F-droid wakes devices to update repositories every hour even when automatic update interval is set to weekly
+Subnet info always empty on Android 5.0
+App Swap - Donot share system apps.
+Can't install any apps that require permissions
+check etag caching on the client rather than trusting the server
+Uses GET_SIGNATURES but fetches signatures manually
+F-Droid 1.1-alpha3 - Search performance
+F-Droid Client Optimization : ImageLoader
+fdroid update allowed null versionName to pass through
+ability to add screenshots to ordinary users
+NOT NULL constraint failed: temp_fdroid_apk.version (code 1299)
+F-Droid can't update default repos. Error code 1299
+Update Notifications persist despite updating
+SQLiteConstraintException for fdroid_installedApp.hash
+"Error during update: NOT NULL constraint failed" when attempting to check repositories for updates
+Client updates index but does not suggest app updates even if they are available
+"Include anti feature apps" toggle defaults to off and doesn't seem to have any effect
+Downloading updates in the background slows down system UI
+[Bug] java.lang.OutOfMemoryError
+F-Droid Reinstalling Previously Uninstalled Apps
+FDroid reports "No such app found" when attempting to download Ghost Commander SFTP plugin
+Get rid of Apache HTTP client
+Update jmdns to 3.5.0
+Swap broken on Android 6.0 or greater
+Some errors with icons and ImageLoader
+bluetooth sharing never becomes visible when device has no internet
+wifi swap is super flaky
+Notification about update keeps re-appearing
+0.64-Test crashes in background
+Can't install app w/o enabling unknown sources
+fdroid update fails to parse the Name from some apps (Termux:API, XPosed GCM Module)
+F-Droid always tells me there's an update pending soon after new app install, and even installing the update doesn't stop the notification, reboot needed.
+Implement "install download queue"
+Conversation does not contain 2.X version
+Download bar not visible in 1.2-alpha0
+ClassCastException in 1.2-alpha0
+Unable to update/install certain apps - Permissions in APK and index.xml do not match!
+bitmask installation issues
+Installed apps in Update activity
+Index refresh for F-Droid repo on every pull
+F-Droid non-navigable using Fire TV stick remote since UI update
+“Update installed” notification returns over and over until reboot. Reinstalls uninstalled apps
+Treat apps without recommended versions gracefully
+Standardized changelog (new  feature)
+F-droid keeps on proposing applications upgrade after having already upgraded them
+Update to BC 1.54 and verify that swap still works
+[Feature Request] Separated lists style interface
+The privileged permission have not been granted to the extension!
+WARNING: Same application on Android Playstore and FDroid
+"Parse error" when trying to update certain apps while "Privileged Extension" is enabled
+Option: "Lite mode"
+repo search does not seem to index app titles
+Internal Server Error for connecting to F-Droid Repo
+preview images aren't clickable
+No results/ internet connectivity
+org.fdroid.fdroid.ota_1000013 doesn't install privileged extension to system/priv-app
+Downloading failed
+F-Droid does not respect device locale for app descriptions
+app labels do not update when the device's language changes
+Translation of "No versions with compatible signature" not shown in client
+F-droid repo "Error getting index file"
+wrong update available notification
+Install/Uninstall processes not properly reflected in UI. Sometimes multiple concurrent installs/uninstalls happen.
+Installation notification showing again and again
+F-Droid shows updated or "ready to install" after an app is already updates or installed (LinOS 15.1, =Oreo, Nexus5x)
+no more icon after update to 1.0-alpha5
+F-Droid app not updating
+Crash on changing `Keep Cached Apps`
+`Local repo name` & panic button dark/black themes - white text on white background
+Search does not use the app's title
+F-Droid Client Optimization: decoding still necessary?
+Dpad Not Working to Scroll Apk List
+Notifies ignored updates
+Unable to start DownloaderService with DownloaderService.action.CANCEL Intent
+Cancel button needs to be pressed multiple times before it the download actually stops
+IllegalArgumentException: contentIntent required: pkg=org.fdroid.fdroid id=1
+No way to show "About"-Screen
+new layout for the search activity
+Tapping install button does nothing
+alert user about poor QR support when camera does not have autofocus
+The install button doesn't work with the latest release - LG G4
+(1.1-alpha2) Bugs: Repo sync error loop; showing apps not installed as installed.
+Download progress percentage freaking out for big apps
+non-APK entries have odd Name and Versions
+Read "Whats New" data from repo metadata
+Warn users about data storage related critical changes in app update.
+Missing app icons
+app store screenshots for comparison
+F-Droid 1.1.alpha2 no more available in the version list
+Davdroid App Download Error
+Nextcloud App Download Error
+No imatges fdrois repository
+Panic button (theme problem)
+F-Droid Client Optimization : Skip debug info in Release (PROD)
+dark theme: text in input fields not readable
+F-Droid 1.1-alpha3 - Silence - version 0.13 only and marked as incompatible
+[Feature Request] Allow "swipe-down to update repo" also from "Updates"-tab
+processDownloadedApk "IOException: read failed: ENOENT (No such file or directory)"
+Notification reappear even the app already installed/updated
+new UI fails to separate "New" and "Updated" apps
+"Latest" tab display in new UI hard to read due to mixed big box / smaller box / line display
+Rotating tablet always triggers a F-Droid Repository update check
+Some activities trigger index rebuilding
+f-droid.org buildserver has too old aapt version
+No way to manually actualize/download repositories
+No way to manually actualize repositories
+Downloading Metadata every few hours
+Sort order to search
+Optionally sort search results by recently updated rather than just alphabetically
+Only shows microG apps at start
+No changelog for F-Droid client 1.0.2
+Activating RTL could produce unecessary refresh of index
+Newpipe (law state)
+Index is updated even if updates are disabled
+rebuild index when underlying OS is upgraded
+Indication for package list update is too shallow
+Error getting index file
+New versions of apps are breaking Replicant 6.0
+Add shadow to the background graphic in app details
+New feature: Alternatives of an application
+Feature Request: Refresh single app
+Cannot copy text
+I still can not find anywhere on the web where and or how to download this web . It's mind boggle-ing with a ring left in the erie.
+Not loading from China
+Your Gradle version of FdroidClient seems old (3.2.1)
+Category colors
+'Failed to play stream' during playback
+Canceling download only works for the first download
+Crash when clicking uninstall on Privileged Extension
+support longer Summary and Description fields
+Option to not display/show updates for apps with different signature
+View screenshots in full screen
+F-Droid apps
+Not being able to download anything and repositories not updating
+Can't install as a second user of the phone
+Fastlane graphics and changelogs not displaying
+Fresh F-Droid installation on fresh Android extremely slow
+Screenshots can be taken although Prevent Scrrenshots setting is enabled
+Applications screenshots support
+"Saving application details" takes a long time.
+add link to syntax for the forums
+Provide "night mode" theme (dark with dark action bar)
+f-droid changes wpa_supplicant file
+App/Category name in webpage title
+Discussion of apps considered to have good quality UX/UI
+How best to internationalise names of new languages
+Flattr rectangle is unreadable with the "dark" theme
+Make .apk storage location before install configurable
+Still can't find packages on Android5 
+Incorrect signature when updating app database
+Line breaks are stripped from Fastlane descriptions
+java.lang.IllegalStateException: Unknown loader requested: 0
+New index format fails on Lenovo A1000
+Incorrect signature of preinstalled repository
+French translation
+Notification should contain more information on ICS devices
+fdroiclient repo: Can't update submodule
+Add Hebrew translation
+Meaningless messages, lack of consistency
+Add counter to "Installed" tab, like the "Updates" tab
+Add Support for PanicKit
+Install notification pops up repeatedly
+Parse error: There as a problem parsing the package.
+Screenshot Protection
+Zom nightly builds QR code and link not working
+Enabling/disabling repos too fast causes problems
+No Apps Available For Install on 5.0
+An empty app list
+Export list of apps
+Can't install fdroidclient
+Samsung UK Android OS update to Galaxy S6 disables app install / update via F-Droid
+Share App Cache between users of the same device.
+Automatic downloading of updates
+Use delta updates for package index.
+Download keeps canceling when clicking home button or switching apps
+library for helping user install F-Droid after directly downloading an app
+library for direct self-updating from F-Droid repos
+Error: "Could not query more than 450"
+Installing any app from F-droid causes eratic behaviour.
+FDroid crash on startup.
+Bulk update of apps
+java.lang.RuntimeException: Unable to start receiver org.fdroid.fdroid.PackageUpgradedReceiver
+Crash due to partial array translation
+Better use of AppList on tablets
+Crash upon clicing any app in f-droid
+Unable to download apps/app updates while connected to WiFi network
+Descriptive message when no compatible versions of an app are found
+Can't install F-Droid privileged extension
+Show appropriate message when search results are empty
+rework notifications to work with new UX
+After upgrading from 0.100.1 to 0.101, F-Droid is not shown in the list of installed apps (inside F-Droid)
+f-droid client 0.76 crashes whenever wi-fi is available
+App crashes sometimes after update/install
+Crash when opening certain apps
+Memory issue when updating the repos.
+Remove dependence on "org.fdroid.fdroid" to make whitelabel clients easier
+Issue with white labelling the F-Droid client
+[Question] Does F-Droid make use of system priviledges if set as system app via adb?
+[Question] Does F-Droid make use of system priviledges if set as system app via adb?
+fdroid does not install anymore
+Crash report *not* by email app
+[enhancement] Ability to install the same app multiple times on the same device
+English language dissapears from options
+Overview of installed applications gone
+UI Improvement: Add Installed apps icon in the bottom panel
+How to switch back to pre 1.0 UI?
+Main view has a horrible UI design, give option to view latest apps as simple list again
+Mining on Android
+Don't show search results until the user starts typing
+Carry a flavour of F-Droid with the previous UI but current codebase
+F-Droid keeps downloading Icecabmobile and asking me to install it.
+Add fastlane metadata for F-Droid client.
+1.0-alpha4 has immediate crash loop after update
+Handle any `fdroidrepos://` URL, regardless of path.
+Possible to get UI changeable?
+Display apps in latest view as a grid
+https://f-droid.org/repo/ → 500 Internal Server Error
+Stop using top app screenshot as background in main menu!
+Show only new apps in the "Latest" (like the old "What's new")
+Top search bar missing
+F-Droid throws SSL error when attempting to connect to repository
+AppDetails: Card covered inside header graphic
+FDroid not installing on Android 5.0
+Notification keeps appearing
+OSMAnd is not dowloadable
+Negative download progress (while installing an ap)
+Animate the FAB button when selected into the fullscreen search view.
+1.0-alpha5 crash in SQLite: fdroid_appPrefs.ignoreVulnerabilities
+1.0-alpha0 - main and archive repos confusion
+1.0-alpha3 - Ignore this update not working
+Search view: Add RUN button to installed apps
+Should not be able to swap without WiFi network
+My Apps and Updates View
+Show installed app version in new app view
+Viewing media files causes crash due to `preferredSigner` not existing
+search screen bad scroll performance
+"read failed: EIO (I/O error)" while calculating hash of installed app in background
+APKs aren't classified as Cache
+Toast when no new updates on repo refresh
+Upgrading from 0.83 in Cyanogenmod 7
+error with installing packet from fdroid archive
+extended permissions flags are not output by old versions of aapt
+idea for alpha5
+Black/dark Theme: Name of local repo: White chars on white background
+Error HTTP 403 when i try to download the F-droid app
+NullPointerException: Attempt to invoke Repo.getName()
+Apps appear as "Unknown application" and don't have a description text
+Cannot download Firefox Klar
+Crash after ;atest ugrade
+Connection refused
+App downloads and runs arbitrary executables
+Some categories are empty if the system language is different from english
+Crash when checking downloaded apps upon starting F-Droid.
+XXX
+Unable to cancel a waiting install
+Crash when calculating hash of apk from disk
+Most Icons are not displayed
+Problems with FDroid Archive?
+Init.d Light (no permissions listed, no install button)
+Unable to whitelist specific domain
+make proper OTA update ZIP installer
+Link to app metadata from app details view
+Recurring installation notification after cancelling download
+Identify cases where same appid doesn't mean same app
+Automatically download updates turned off, but automatically downloada updates
+Cannot Download Apk Extractor
+Add latest K-9 Mail to repository
+f-droif 1.0-alpha2 crashes when opening some apps from "latest" page
+F-Droid 1.0-alpha2 crashing when trying to download update.
+F-Droid 1.0-alpha0 does not show any available versions for an app if it is already installed but signed by a different key
+Not cleaning repositories cache when a source is disabled
+Updates still showing
+Crash when disabling repository after downloading (but before installing) app from repo
+No fallback to available localized metadata
+Crash due to missing `other` for Russian on Gingerbread
+UnknownFormatConversionException in categories view.
+allow side by side installation of old 103/104 and new alpha-1.0 through different applicationId?
+About dialogue dismiss on touching outside
+About dialogue - no dark/black theme
+No feedback on no search result
+Purge option for uninstall
+Screenshots should get highlighted directly while scrolling (not just after lifting the finger)
+Icon not visible in dark theme
+Notifications for application-updates although already updated
+Newer versions than 0.102.3?
+Android O compatibility (Unknown App Install Permission)
+[Amazon Fire TV] Version 1.0 unusable with remote
+[Feature request] Delta updates
+Lifes good with stylo
+Terminal Emulator APK's Missing
+Can't Update. How to debug?
+handle multiple APKs per repo differing only by signing key
+"OsmAnd Parking" and "OsmAnd contour lines" not easily found in web interface
+When beta version of the app installed from Play Market, versions are not shown in F-Droid
+If no author is set do show package name (in app details at least)
+Versions section will sometimes not open
+Manage installed apps also shows not installed apps
+fdroid client build error with ant
+Swap URL can't be accessed, IP appears incorrect
+after installing f-droid, it always fails
+Move Options to cancel swap and open QR-Scanner to the action bar
+FDroid v0.99.2 - Crash on selecting 'Unstable Updates' in Settings
+Propagate all errors from the Privileged Installer
+Privileged Extension: Security enhancement
+Privileged extension fails on Android >= 5.1
+Confirm before download, not after
+Problem using/installing Privileged Extension
+privileged extension fails to uninstall apps on 7.1.1
+Sardinian does not appear in the language list anymore (the translation is 100% complete)
+Ability to send crash reports without email
+Repository index update does not remove applications that are not available any more
+Mixed language when multiple system languages are set
+Clicking Install/Update buttons has no effect
+Name of added repositories not shown
+Add Simplenote to F-Droid
+Ignore root option text conflicts with info-text
+Fdroid failed to check port connection
+Your client failed to recognize internet connection
+tame `gradle test` log output
+install non-APK files
+Updating index-v1 repos does not send progress events
+Prioritize apps with a Feature Graphic on the Latest page
+Weblate import does nothing
+Error message, no apps displayed as installed, unable to update etc
+App suggestion: microG
+Removing a repo does not remove that repo's apps from the Latest screen
+Switching language via system language chooser results in incorrect metadata
+Cleanup of old, removed versions does not work (own repo)
+how to upload a app on f droid
+The meaning of bigger icons in latest tab.
+Category View: Not able to horizontal scroll in each category
+App suggestion: Substratum
+Header background flickers
+Language switches to English when leaving from settings
+Rotating device in categories view causes crash
+Add malayalam to language list
+visual indication when one tries to install apps with known vulnerabilities
+Date calculation issues
+Review OsmAnd license
+The installation of 0.103.2 asks you to install the same version again
+Crash while trying to send apk over Bluetooth
+Sending apps via bluetooth fails
+Update of some Apps loses user data
+Client cannot access custom S3 bucket repositories pre-0.103.2 change
+Additional info missing
+text is the same color as background when viewing permissions
+0.101-alpha3 and later apps and/or repos mixing
+App grayed out even if there are compatible versions
+Fonts
+Layout Sketches for the Main App Design
+In App Details, scroll the view up when an expandable section opens
+Display Anti-Features
+L10N - singular/plural - easy fix
+f-droid repository overwrites guardian repository
+0.103-alpha2 - first app tile on top not opening app
+0.103-alpha2 - some small tiles are kinda missing
+"Manage Installed Apps" view sorting
+0.103-alpha2 - `Manage Installed Apps` view does not list all the apps
+Not showing and update notifications
+New Design of F-Droid is inefficient and chaotic
+Re-add support for dark themes
+Tries to install updates multiple times
+Tries to install updates multiple times
+Index-v1 sets suggestedVersionCode instead of upstreamVersionCode
+Include labels in bottom navigation
+Auto update apps
+After updating from 0.103 to 0.103.1, F-Droid consistently insists I update F-Droid
+Missing categories backgrounds
+Suggestion: create a backup of all installed applications
+Category items are cut off
+0.103.2 doesn't understand CV
+Nearby and Updates screen text on dark/black theme
+F-Droid  0.103.1 cannot update itself
+Rewrite F-Droid in Rust
+Misleading text when no app is found under updates
+"Swap apps" button has no icon
+F-Droid just keeps crashing after update to 0.103
+0.103 - crashing continously
+APK error on installation from F Droid
+Enhacement proposal: showing new/updated/random apps in the category bar
+DonationPrompt's and AppNotification's ViewHolder static classes are just placeholders
+GUI uses English even if another language is chosen
+Change log for 0.103 is missing
+Latest tab as list
+F-droid client as a malware?
+Feature request: option to filter out Play Store apps in upgrade list
+Update notifications never appear
+App crashes immediately when I try to open it
+Setup Local Repo crashes
+Updating repos broken on 2.2
+Cache downloads/resume partial downloads
+Nullpointer exeption and crash when trying to open/install certain apps
+proguard still stripping code needed for swap
+Iconography
+Setting for Automatic Updates
+Category View
+Correct back behavior from app details
+App content takes a few minutes to load after installing .apk
+Update Nearby graphic and text
+Bottom bar in other languages
+Show App's License
+After installation update notification for ame app is shown
+Categories remain after disabling a repo.
+Crash due to icon URL being null.
+0.103-alpha3 - Update tab ends up with multiple entries for the same app
+Two updates shown for Conversations in updates view
+Failed install breaks updates counter
+0.103-alpha3 - Updates tab can't stop download
+Updates screen does not update correctly when downloading updates
+FC on start up
+The same feature graphic is shown for all apps with feature graphics
+After uninstalling apk, the menu is not refreshed immediately
+When updating from a notification, all update notifications get dismissed
+0.103 - Change language deletes indexes
+Apps with same version but different signature "Not installed"
+Feature Request? Repository wipes when deactivated
+Feature: reduce update size
+app buttons in different sizes on overview - confusing / meaning?
+0.101-alpha1 and later, dark/black themes have white text on white background popups
+Updates for disabled apps
+Add a touch state for expandable sections in App details
+Updating repo in 0.98 is way more slower than 0.97
+Closing app while index update causes hanging download bar
+Expose targetSdkVersion in F-Droid's repo
+Long version overrides app name
+Missing "working" indicator when installing an app
+Change database structure to be faster, better support multiple repos.
+Apps with changed permissions should NOT be auto-updated
+InflateException in AppPreviewAdapter
+Icon Enhancement?
+keeps crashing on my android every time I hit category
+Crash when uninstalling app
+AppDetails view crashing due to vector drawable
+Categories view should be sorted
+Alpha3 Crashes when one enters Categories view
+Unable to install apps on Motorola phones
+App crashes when an app is opened from the latest view (and tapping the app icon)
+always use explicit Intents in PendingIntents
+Too little rooms for some longer translations in new UI
+0.103-alpha3 manage installed apps -> tick on any app -> tick "back" returns to settings instead of to the list of apps
+Termux:Float installation fails - libtermux.so not page-aligned?
+0.103-alpha2 - Install from other sources
+0.100.1 and later, notification reissued on each repo update
+Apk "Installed" status is confusing when same version code provided by different signed apks
+Suggest Related Apps
+Flag out of date
+How should f-droid export apps list to clone apps on a 2nd new device ?
+Not showing notification after update
+0.103-alpha2 – More material-design like
+ota zip installs full fdroid client as system app, but documentation suggests otherwise
+Navigation doesn't work on Android 2.3 or 4.0
+App Details buttons wrap too easily in some locales
+0.103-alpha2 - some small tiles are blank
+0.103-alpha2 – Cannot maximize screenshots
+Update list always empty in alpha2
+Realdoni esperantan tradukon
+Unexpected "Error -4: [...] didn't have enough storage space [...]" at every App install/update
+Atualizar o f-droid
+"Ignore root - Do not grey out apps requiring root privileges" does not work anymore
+Kolab Notes app build is failing
+Untranslateable string
+Publish CI builds for feature-branches
+Empty state view for updates tab and Installed apps activity
+Updates view crashing when app update status is removed.
+Changing the language in F-Droid isn't reflected until F-Droid is restarted.
+Add google free apps packet souces and APKMirror and others in Packet-MirrorSources
+Add "About" screen
+Crash when resuming main activity
+Pull to refresh
+App crashes after adding a repo
+Client is continuously allocating more and more memory, causing frequent GC runs
+F-Droid doesn't see updates to system apps done via over-the-air updates until data is cleared
+No changelog for 0.102.1 or 0.102.2
+installing updates is not allowed on 5.1 or newer
+Show unit in app download ProgressDialog
+Could client show per-version permissions/diffs, as web repository browse does?
+Improve F-Droid's repositories on GitLab
+Use CardView for App List
+Save for later
+Use continuous integration which is supported by GitLab
+Play Store-like hybrid Material design?
+Rename files
+Rename repository titles
+Translations are not always picked up
+Add warning to non-starred & older releases
+RTL: Pager shown in wrong direction
+switch to vector graphics
+Crash if repo update is triggered while another is running
+Icons for antifeatures
+metadata for app for new repo
+My repos haven't been updated in a while
+Auto-download updates not working
+Use placeholder images for screenshots rather than app icons
+Notify users when using "abandoned" apps
+Errors from v0.98 alpha 2
+Repo update causes missing .apks/versions
+Bump target and support libs to 23 (6.0)
+Searching doesn't work when the main activity has been recreated.
+tasks app doesn't allow user to add sync account in cyanogenmod 13
+fdroidrepos:// URIs not adding repo
+Can it be better to send a whole ready-to-use DB file than xmls to be parsed and integrated via sql queries?
+Show what repo each apk comes from
+Reinstallation of the apps
+Is there an "F-Droid Account"?
+Author credits and license info in detail view
+Incompatible with gradle 2.10
+rename F-Droid/ to app/ following standard project structure
+Add a Tor hidden service for official F-Droid repos
+ACRA fails to send report sometimes
+f-droid crashes following a search on cm11
+App crashes on interaction/startup
+Ignoring malformed repo URI on tapping link to other app in description
+We think tapping a version number perhaps will just show us what has changed...
+Installation of F-Droid Privileged Extension failed on cm-12.1 hlte
+globo.com content
+Installation of F-Droid Privileged Extension v.0.1 failed on cm-13.0  (Android 6.0)
+Provide k9mail 5.1 build (still unstable
+Android.mk symlink problem
+since client version 0.98-xxx updating repositories takes over 10 minutes !!
+F-Droid doesn't populate repositories on Galaxy Ace/Android Gingerbread when first started
+No icons listed in client - with http basic auth
+Cannot open application details (and thus: cannot install any software)
+f-droid crash when open search and press space key
+Keyboard stays open after entering a search
+Privileged-Extension always throw null point exception
+Investigate whether Android 2.3.4 requires `VIBRATE` permission
+Swap crashes on 2.2.2 because it assumes Android 2.3
+Disabling proxies on local networks
+Very strange, after new install cant open deeper menu to install a app from F-Droid
+disable shrinkResources
+MockApplicationInfo missing a CREATOR field
+net/bluetooth potentially broken on android-8/9
+NewApi errors in styles.xml
+Installing F-Droid Privileged Extension stays at "Installing..." dialog
+feature request: option to "update all"
+Use background downloading.
+download progress lost when exiting with back button
+UI/UX proposal for background downloading
+Application packages are listed but they are incompatible with my device
+"Error getting index file" toast doesn't tell which repo failed
+Guardian project "hostname was not verified"
+Repository information is not greyed out for incompatible apps
+"Error getting index file" when the certificate was disabled
+Default e-mail template
+Implementation proposal for background downloading
+Play Services Stub: License?
+visible swapers are stuck into a tiny little scrollbox
+lint says "WrongConstant: Incorrect constant" in AppDiff.java and PrivilegedInstaller.java
+Opening the app sometimes results in an empty apps list
+port all Provider tests to JUnit4 semantics
+RTL: Upgrade arrow wrong direction
+Export list of installed applications
+create InstallerService to run installs in the background
+nothing happened when clicking on an App
+1000 times harder than Google Play to keep apps updated,
+Rough edges after maxSdk changes in master
+edited
+Update all button
+long time to update
+"Tap to install" notification persists if installing from cache
+Always download apks in foreground service
+SanitizedFileTest are unix-like OS specific tests
+Fix PMD warnings in swap code
+AppDetails showing "Downloading" after completed
+Repo update hangs at final step
+µg UnifiedNIp cannot be upgraded, yet I get notifications for it
+TLS error on Android 4.4
+F-Droid doesn't work over https with hosts using SNI
+Build error with Android.mk
+Repo index download no longer shows progress
+Questions clarifying about whether `DownloaderService` is to be used for anything other than apks?
+"Saving Application Details" does NOT have the progress % displayed anymore. why? please bring back the % display
+Consider removing "install privileged extension on first run"
+nothing happens anymore when clicking on list's app name.
+Unable to install apps when using Twilight app
+Show app download queue in main app list
+delete files from cache based on atime
+/data/app/org.fdroid.fdroid.privileged.apk will get system privs if signed by same key
+Label not shown on "Action"-Button (Install, Upgrade, Remove..) when multiple repos serve the same app
+Always upgrade from unstable versions
+Flaky HTTP unit test
+"Cancel" button in apk download notification only works sometimes
+Updating repositories and downloading an app at the same time results in messed up progress bar
+0.100-alpha doesn't work with some repositories
+No reaction when clicking an app to show details
+error getting index file - does not show what repo is affected
+bad download jobs submitted to InstallManagerService
+Swiping pending download notifications away doesn't cancel download
+Bump minSdk to android-10
+automatically set versionName from git tag
+cannot uninstall mg unifiednlp 1.1.10; cannot upgrade to 1.6
+integrate GigaGet features or allow using it as an external doenload manager
+gitlab UX and rebasing
+Package installer has stopped
+make App implement Parcelable
+question: how to make F-droid recognize pre-installed apps and update them?
+com.github.premnirmal.tickerwidget App isn't updating anymore on F-droid
+fix final lint errors
+Add support for multiple repos with conflicting apps/apks
+Highlight apps added/changed since last repo update
+Make donation button more prominent in App details view
+Use a navigation drawer
+Shouldn't remove by clicking on installed version
+Apps get installed without needed permissions
+Improvements to InstallerService
+f-droid 0.99.2 crashes when installing apps on Android N beta
+Keep permission prefixes
+Figure out unused strings
+"Downloading Unknown" in notification for automatic downloads
+Clear cache button
+usability issue with categories menu
+Suggested feature: "Donate to this project" button.
+F-Droid 0.100 crashes after upgrade via F-Droid
+changelog per version in app page
+Impossible to build for API 24
+Non-descriptive error message with insufficient storage
+survey of "nearby" file sharing aka swapping
+permissions mismatch in 0.101-alpha1
+F-Droid community expectations and how it affects the main app design
+Error getting index file with auth_basic
+Installer Service does not stop itself (keeps running forever)
+Can't update to F-Droid 0.101-alpha2
+Backup Feature: Export and import list of installed apps
+Deleting one repo deletes all repos
+no default for "keep cache"
+auto-download notification is "Tap to install Unknown", wrong tap target, and notification is not withdrawn
+Repository QR Code URL does not include protocol
+opt-in "Popularity Contest"
+Updates use data instead of WiFi connection
+Implement a basic rating system
+Figure out what to do with user-added CAs now that we target API 24
+document how to install/flash Privileged Extension
+Enable privileged install by default if extension is available
+update build-zip script to package privileged extension
+Crash on 0.101-alpha3
+Privileged Extension should not allow circumventing "Device Administration App"
+Deprecated tab usage
+App Cache issues - Keep cached apps forever isn't working.
+Add App to Wishlist option.
+/data/data/org.fdroid.fdroid/files keeps all installed apk files
+[Third-party repo] SQLiteConstraintException: NOT NULL constraint failed: fdroid_app.description (code 1299)
+Fdroid opens Play Store urls by default
+Update DiskUsage
+"What's New" and "Recently Updated" categories empty
+HTTP basic authentication broken in f-droid 0.100.1
+Crash when opening F-Droid on older Android versions
+0.101-alpha5 resets APK keep time to 1 day
+Install button gets updated wrong after extern uninstall
+"Tap to install Unknown" notification
+add screenshot feature
+feature request: q and a / comments section
+Filter by last update
+Some string are not available for translation
+endless crash-popup-s
+Where are Android Client translations managed?
+Either fix or remove connected10
+Error getting Index file
+New App installation leads to "CertPathValidatorException"
+[Feature request] Update all apps at once
+Enable Guardian Project Repository by default
+Optionally avoid metered networks when "only on wifi" is set
+F-Droid forgets versions when second repo is disabled
+Two HTTP requests to fetch index.jar
+Run all SQL database upgrades in a test
+Missing theme for list of permissions view
+Rearrange F-Droid projects in a group
+National Geographic for Muzei is not auto updated
+downloading notification sticks
+long version numbers overflow on name of app to update
+Download client corrupt.
+Website bugs: Missing GPG Signatures
+Allow developers to put what's new
+f-droid upgrade fails
+Update repo should not start if there is no connection
+"Install / Upgrade / Run" Button hide app installed version
+Can we get "root" installer back?
+downloaded icons stopped being cached
+Filter Searches by Added On Date
+[UX/UI] Improve the design/functionality
+Unclear why a user can't install the extension on >=5.1
+It's not possible to cancel download job
+Changing theme makes options disappear
+Links on project page of /group/fdroid are broken
+Add F-Droid logo to group
+Android 7 merges download/tap-to-install notifications, making them unclickable unless expanded
+F-Droid download notification never goes away when using the privileged installed on Android 7.1.1
+Dialog captions are unreadable in darker themes
+[Feature Request]: Payment method
+[]
+Allow google plugins in the build.gradle file for non-free builds
+Please make it possible to bookmark apps
+Notification when updates are done
+Install / upgrade is prompted more than one time
+Better handling of multiple repository: preference for displayed application name
+Installed version of an app is hard to notice
+Fdroid update -c error
+Improve user experience for updating
+InstallManagerService keeps running in background
+"More" button should be clickable
+0.102 - "install" button always disabled
+Unused permission org.fdroid.fdroid.privileged.USE_SERVICE
+Install action is not clear in the app list view
+dark theme doesn't work on permissions window
+Latest View - Remove 'Recently Updated' and 'What's New' text
+Default feature image color takes too long to load and often fails
+Don't require downloading an index when first opening F-Droid
+Crash when trying to open app details - current master " Merge branch 'mvp76--notifications_742' into 'master'
+Crash when trying to open app details - built from commit "Merge branch 'mvp76--notifications_742' into 'master'"
+updated German translations
+ant-prepare.sh error: project has no target set
+Crash when installing apk from file manager
+App Updatecheck has problems
+Remove ability to download index.xml, only allow index.jar
+Crash when resuming F-Droid and SearchActivity is shown
+Resumeable downloads
+Provide changelogs to app updates
+F-Droid does not scroll to top when switching categories.
+Run fix-ellipsis
+Guess at the path to f-droid URL, given a base URL
+Orientation change during repo update causes error
+"Couldn't find app while installing" error
+Application installed via 'App swap' tries to update from original source, while update is available in F-Droid repo
+Crash after successfully installing app (v0.76)
+Null context ContentResolver crash
+Don't init cursors in the main thread
+WaitForWifiAsyncTask: InterruptedException
+java.lang.RuntimeException: Parcel android.os.Parcel@154ece6a: Unmarshalling unknown type code 3801188 at offset 1708
+F-Droid does not support arm64-v8a device
+Preferences - Update Notifications - Remember Notifications
+InstallManagerService.getAppName NPE
+SNI missing after upgrade to 0.97-alpha2
+Yet another InstallManagerService NPE crash
+Installing unsupported application always causes crash
+Index download failure error message "Error getting index file from https://f-droig.org.org/index" not sufficient
+Adult "antifeature"
+Figure out what to do with network timeouts
+Install into system: catch errors and clean up properly
+NullPointerException: InstalledAppProviderService.java:161
+Yet another InstallManagerService App.packageName NPE
+Rapid notifications from fdroid wedges system
+Add support for APK Expansion Files aka OBB
+Automatic Updates
+Error while disabling repository during apk download
+Crash while booting, due to no running processes (somehow)
+Fragment AppDetailsHeaderFragment not attached to Activity
+Utils.getBinaryHash FileNotFoundException: open failed: EISDIR
+handle all downloads in a Service
+NoSuchMethodError getDrawable in AppSecurityPermissions
+java.lang.IllegalArgumentException: Apk.packageName must not be empty: null
+Installing apps not possible on Android N
+Package manager doesn't receive install intent on Gingerbread
+Invalid system date causes downloads to fail with cryptic message
+Crash due to background process calling `AppDetails.translateCategories(...)`
+crash after returning to swap
+JmDNS bonjour crash
+NPE crash related to Swap/jmdns
+TLSv1.2 support missing
+Crash trying to view Conversations App.
+All big application icons are grey
+0.92: Crash on app page selection
+Crash before update screen
+FDroidApp NPE when combined with Xposed
+Make swap notification better
+include supported architectures in local repo metadata
+WifiStateChangeService null parse error
+Parse error when installing any application
+Error getting index file.
+Error getting index file from http://f-droid.org/repo/index.jar
+Feedback for "Setting up (wifi|bluetooth)" is not as immediate as it should be.
+Index update blocks the UI thread
+Another InstallManagerService Apk.packageName NPE
+Sardinian language missing on the list
+Swap apps doesn't respect dark theme preference
+Show F-Droid / swap icon next to bluetooth details
+Return of the "could not parse [null/24]"
+Integrate ACRA
+popup menu should honor theme background color
+Crash when resuming PreferencesFragment
+Federated network of F-Droid repositories
+Follow the Material Design color guidelines
+Internet connection should not be required to show icons of installed apps
+Regional Filter in Setting
+NPE in WifiStateChangeService
+The app breaks if rotating while downloading
+Remove old versions of apks from app cache.
+Description truncated incorrectly
+Download notification is missing pendingIntent
+Change variable names to match Android SDK
+Show update progress indication on main screen too
+F-Droid should tell which application was not found and that search operation happened
+Animate expanding/shrinking of UI elements in AppDetails view.
+Animate the icon for "Update repos" notification.
+App Swap - Share Apps from App Cache that are not installed.
+Add name-only / description advanced search filters/ranking
+index.jar vulnerable to "Master Key" style attack
+The update process has become very slow.
+spam
+spam
+spam
+spam
+spam
+spam
+spam
+spam
+spam
+spam
+spam
+spam
+spam
+Allow Repos to have bluetooth://mac-address formats.
+Notification for system installer requires "VIBRATE" permission on Android 2.3.4
+Use one logo consistently
+Fix tests on Android 5.X
+Should f-droid warn about dangerous apps?
+Automated Access Point creation/connection
+Incorrect padding
+Crash when pressing spacebar as the first key when searching
+Searching for "/" causes invalid URI for app content provider crash
+BadTokenException crash
+Background NPE crash in WifiStateChangeService
+android.database.sqlite.SQLiteDatabaseLockedException
+NPE after updating an app
+Crash when leaving app screen before installation is completed
+Crash when adding a repo without a path in its url
+SQLiteDatabaseLockedException: database is locked
+crash after removing local repo, re-enabling f-droid.org, and updating
+version 0.98 crashs in Persian locale
+crash while in swap, when clicking "Scan QR Code"
+Feature suggestion: Remember installed apps after ROM flash
+Don't copy each row from temp app table to real one.
+Change search to use action bar filter, rather than new Activity
+Bundle language names since the system's are sometimes wrong
+icon for "refresh" and "upgrade" are the same: Android's refresh icon
+Design and usability help opportunity
+crash after uninstalling apk
+Can't display original english translation
+request: show changelog on pkg page
+Firefox deprecation
+provide quality indicators
+Visual bug
+Broken install button - No text, does nothing
+Application Blurred out in list, can't Install  application
+Star app  (mark as favorite) 
+A new index update notifixation is created each time it progresses
+install button blanked out for some apps?
+Update updating instructions
+Simultaneous downloads of same app while upgrading
+permanent reset of progressbar causes UI lag
+Incorrect application sorting
+Install error trying to install LibreOffice Viewer
+Rename preferences to settings
+Declare the add repository EditText as "textUri"
+Move repository management into the Preferences screen
+Search feature does not follow Material Design
+Consider to use FAB for add repository button
+Redesign the F-Droid app icon
+Search results get cleared (no results to go back to)
+java.lang.NoClassDefFoundError when opening AppDetails on API 8
+AppDetails: Hide divider
+Description is cut off (by 1-2 chars)
+0.97 starts package list update on startup, this can not be switched off
+Deselect alpha/beta updates
+link too small, can't really touch them
+"Tap to install" notification sometimes launches wrong app when there are multiple
+Apk download over https broken in 0.97 alphas on 2.X
+Bluetooth swap hangs, then fails.
+Error parsing index for repo
+set bluetooth device name to fdroidrepo: URL to aid discoverability
+Swap screen text is unreadable
+Service org.fdroid.fdroid.localrepo.SwapService has leaked IntentReceiver
+NPE when checking subnet during Swap
+Cannot install or update apps on 0.97-alpha2 and 0.97-alpha3
+Add boolean for disable sharing
+InstallIntoSystem: Deinstall issue
+Privileged installation crashes phone
+Improvements for F-Droid Privileged Extension
+search navigation is broken
+Use gradle witness
+How to Setup F-Droid Client with an Unsigned Repo
+Dogecoin always shown
+Unable to update Fdroid Client
+F-Droid 0.95.1 crashes at startup on Wiko Rainbow
+Privileged installation problem: uninstalls F-Droid
+update translation syncing to convert to Android folder names
+Descriptions in "Recently Updated" missing last letter
+smooth out translation workflow, and look for replacements for the Translate mediawiki extension.
+crash on pressing install button
+Use dummy APK for privileged installation
+F-droid client 0.97-alpha1 crashes on "swap"
+Error getting https Index (custom https repo)
+Beta updates per app
+Allow app_name to be localized
+Remove strings in arrays
+Get update intervals right
+No support for ISO 639-2 languages
+Translation Notifications
+Modified strings not updated in translatewiki
+Old strings (removed) are still being translated and pulled
+Provide more context other than "(De-)Installation Error"
+F-Droid gone after OTA Update
+Add StrictMode to debug builds
+Pointless activity in swap apps?
+local repo notification when not expected
+Make swap workflow handle screen orientation changes
+parse app description from APK
+crash after joining
+Provide better information for the swap repo index
+make swap index generation get out of the way of the user
+fix up swap icon to work with dark/light themes
+NFC swap should include "&swap=1" in the URL
+NFC swap should use "http://" instead of "fdroidrepo://"
+Drastically speed up debug builds
+CI: Use emulator images to run tests
+swap when one of the devices is acting  as WIFI access point
+LocalRepoKeyStore fails on farsi locale
+http links in description cause force close
+Translations with ampersand (&) don't seem to work.
+Grey text after target/support version bumps
+HTML/Markup tags are broken on translatewiki
+Empty translations are being pulled as empty strings
+Old translation (-ns?)
+crash using privileged permissions since 0.95
+[root install fix] Install to /system/priv-app/FDroid.apk (root,root,0644)
+System installer confirm screen shows no permissions on 2.X
+Bootloop after privileged mode enabled
+Crash on app start after F-Droid 0.95 privileged installation
+F-Droid is announcing an update which isn't possible to install because of Android-version
+Crash when lauching the app after update to 0.95.1
+Crash on Enable NFC Send on NFC-less device
+Unable to start receiver org.fdroid.fdroid.receiver.PackageUpgradedReceiver
+Move 'update repositories' back to the top of the menu
+Test issue for webhooks
+Should not let users try to uninstall system apps
+Get rid of all compile time warnings
+Inactive button on some apps
+problem to switch back to 0.95 after v0.96-alpha1
+Language name missing in the translation system and a lot of other related problems
+F-Droid keep crashing in the background
+F-Droid 0.95 crash on Android 2.3.4
+Setting F-Droid as a privileged app removes it from app drawer
+IPV6 makes f-droid doens't get packages and updates
+Priviledged mode - permission in manifest lacking
+fdroid 0.95 fails to start if upgrading from 0.92 using theme "Light with dark action bar" 
+Have a (per-app) setting to prompt for beta-updates (builds with higher VC than CVC)
+F-Droid Install button does nothing
+Nothing happens when setting up the privileged mode
+UI changes (Nav Drawer)
+F-Droid 0.95 disappears when upgrading
+Privileged installer problems
+Installing some applications fails when using root-permission-installation
+feature : view app, back to search result
+Show permission summary before installation in root mode
+Changelogs are not shown if the database was upgraded
+Installed apps shows text from f-doid repo,  even if app installed from elsewhere 
+Something wrong with progress bar
+Fdroid installed as system app can't update other system apps.
+fills /datadata/org.fdroid.fdroid/files and doesn't clean up (0.76)
+cannot uninstall mg unified nlp
+All index entries are "Unknown application"
+Text is too faint in Material "Light" theme.
+Material icon for F-Droid
+Save user input between searches
+Return user to search result list
+Make use of SD card
+Asus ME70C (i386) Error getting index from https://f-droid.org/repo
+not seeing any updates
+Install button not activating, only Cancel.
+NPE when clicking upon an application with an update
+NPE when clicking on app listings
+I can't install „Twidere“
+crash when selecting some app.
+Can't select "System permissions" option
+Changelog field is displayed even for software that don't have Changelog field set
+InstallIntoSystem: Change notification text
+Ran into the 450 apps queried limitation. What can I do?
+cannot manually add repo that was swapped before
+client should automatically detect whether it is a system app or not
+RootInstaller 0.74: no direct downgrade
+RootInstaller: rootSession.close() prevents the InstallerCallback execution
+Add support for new changelog index element
+RootInstaller: no warning of uninstallation
+RootInstaller: warn me about new permissions when upgrading/installing
+Please allow deinstallation of multiple apps
+Can't act as a wifi hotspot (tethering) and swap repo at the same time
+Can we update spongycastle?
+SQLiteException: Can't downgrade database from version 47 to 46
+[0.89-test] "Index signature mismatch" error 
+F-Droid repo web urls do not open new repo prompt initially
+Icons should be replaced with icons from the android-21 SDK 
+Material only: Since !73 apps are not greyed out anymore
+Swap UI buttons are not shown in Material theme.
+Add repo dialog allows non-URL looking URLs, causes crash.
+Adding repos doesn't normalized URLs, allows duplicate repos.
+"Add Repo" dialog lets you add existing repo
+Error "Cannot query more than 450. You tried to query 535"
+Cached apks being stored in data folder and not on SD card
+Can't press "Install" on apps on CM12S (YNG1TAS17L) (5.0.2)
+Search with trailing space doesn't return expected result
+F-Droid doesn't build up list of apps after being fresh installed
+Category labels' translations got overridden 
+Failure due to unavailable proxy has insufficient error message "Not installed"
+Installation of application causes bad feedback (nothing except system notification "Not installed")
+Please update all value folders
+Error getting index file - Swap - Metro 24
+"Swapping" over wifi is only one way.
+selected apps for local repo do not show as selected on android-7 through android-10
+F-Droid crashes. Related to wifi?
+Add menu button 'Update all' is F-Droid is running as system app
+"cannot query more than 450"
+Display disabled builds properly
+Preferences crash on 0.85-test (uses method only available in android-21)
+LogCat spammed WaitForWifiAsyncTask
+f-droid crashes when pres preferences button
+User-Friendliness needs more attention
+Long arch line eclipses other data
+Possibility to change client language from the app options
+FDroid crashes on start after recent update
+Osmand has AntiFeature because of tracking
+Launcher activity to handle all links
+Not enough space for version number and license
+Include all libraries in fdroidclient without submodules
+Implement "search" when selecting apps to swap
+In "Swap apps" listing, pressing the first list item (description text) makes the app crash
+Select app to swap screen doesn't support API 8
+Remove swap repo and associated app metadata after process finished
+in "Swap apps" listing, the app above F-Droid is always highlighted
+Improve search engine
+Don't wait until reboot to clean cached apks
+Permanent spinner on app details menu
+Make the initial F-Droid client prominently verifiable
+fdroid should claim http/https links to app stores
+Prompt user when app list is empty
+F-Droid holds infinite copies of XML files.
+Unknown certificate popup displayed repeatedly
+Cant add apps to swap list
+spam
+Support background download/installation
+App Icons
+Scroll to the last position when leaving app information
+(De-)Installation Error
+Binder crashes with NullPointerException
+0.80-testing: Wrong character sets or languages (Japanese / Hebrew etc.) in some menus
+apps can't install if Twilight is running
+Label with install status not updated
+Crash during uninstall of non F-Droid app
+Option to reinstall an app.
+After upgrade to 0.80-test I have some Chinese characters in random(?) places
+Repository checks way too often
+spam
+Package (HN - Hacker News client) not being updated
+Revert the separation different issue trackers
+Some typos in the strings presented to the user
+Data bloat
+All downloads "corrupt".
+galaxy note 10.1 3g(sm-p601) and f-droid bug on it
+Exportable/Syncable Install List
+Fdroid client presents a downgrade as an update
+Changelog URL for each application
+Parse error when install from F-Droid
+please update ice4j.jar dependency
+please update libphonenumber regularly
+Update Serbian language
+F-droid is in /system/app but says "not system app" on lollipop
+How can I run the Term using Eclipse in Windows?
+F-Droid is installed as system app but installation using system permissions is still not available
+How the app handle the links via qrcode reader
+"No signature found in index"
+lollipop compatibility
+LOCAL REPO activity causes screen orientation switch from landscape to portrait
+What's new and Recently updated show no apps
+MTM/AndroidPinning broken in 0.71
+F-Droid is using excessive amounts of storage.
+proguard breaks index.jar signing for the local repo
+Search metadata too
+Download Dialog Update Interval
+option to exclude packages from update check
+accept repo URLs via SEND Intent
+F-Droid wants to update x86 application to the same ARM application
+Crash with Localrepo
+Update Repos sometimes just doesn't work.
+Cannot download apks via HTTPS
+Crash when using SystemInstaller
+F-Droid suggests updates to architecture-incompatible apks
+Back button works weirdly in Local Repo
+Error compiling fdroid client
+make FDroid into an update.zip so it can be flashed as a system app
+RootInstaller: error message every time
+IndexOutOfBoundsException at AvailableAppsFragment$2.onItemSelected
+Permissions display duplication
+Fingerprint in Repository URL is causing unsigned repositories
+App list layouts are broken
+Pre-Install official Guardian Project app repo to Repo-list
+what happened to "Ignore This Update" vs "Ignore All Updates?"
+LocalRepo has many NewApi warnings
+parse fingerprint from query string for URL pasted into Add Repo dialog
+Setting up a local repo crashes since AppCompat was added
+Opening the "local repo" permanent notification yields a different activity state
+Release Notes
+Add comment/star feature
+Please include Lithuanian (lt) F-Droid translation from https://f-droid.org/wiki/page/Special:Translate
+Install button doesn't work
+Applications disabled for apparently no reason
+Can't install apps
+`InstalledAppCacheUpdater.updateInBackground(getApplicationContext());` is being run before `DBHelper.onUpgrade()`
+F-Droid client not listed as installed after upgrade to 0.65
+Add comment/star feature
+Please include Lithuanian (lt) F-Droid translation from https://f-droid.org/wiki/page/Special:Translate
+Install button doesn't work
+Applications disabled for apparently no reason
+Can't install apps
+`InstalledAppCacheUpdater.updateInBackground(getApplicationContext());` is being run before `DBHelper.onUpgrade()`
+F-Droid client not listed as installed after upgrade to 0.65

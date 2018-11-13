@@ -1,0 +1,36 @@
+title:Feature request: Sort accounts
+
+One of the mainstay of GnuCash's main accounts view is the ability to sort accounts based on name, account code etc. Personally, I used account code to reorder the accounts to my liking.
+It would be nice to be able to sort the GnuCash Android accounts so that it'd be more reflective of the account orders users are used to on the desktop.
+The accounts are currently sorted by full name.  Or do you mean the short
+name?
+Also,  what do you mean by account code?
+On Apr 9, 2016 1:10 AM, "Darrell Loh" notifications@github.com wrote:
+One of the mainstay of GnuCash's main accounts view is the ability to sort
+accounts based on name, account code etc. Personally, I used account code
+to reorder the accounts to my liking.
+It would be nice to be able to sort the GnuCash Android accounts so that
+it'd be more reflective of the account orders users are used to on the
+desktop.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly or view it on GitHub
+#487
+The accounts are currently sorted by full name.  Or do you mean the short
+name?
+Also,  what do you mean by account code?
+On Apr 9, 2016 1:10 AM, "Darrell Loh" notifications@github.com wrote:
+One of the mainstay of GnuCash's main accounts view is the ability to sort
+accounts based on name, account code etc. Personally, I used account code
+to reorder the accounts to my liking.
+It would be nice to be able to sort the GnuCash Android accounts so that
+it'd be more reflective of the account orders users are used to on the
+desktop.
+—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly or view it on GitHub
+#487
+Lacking feedback, I am closing this issue.
+Accounts are currently sorted by name.
+Lacking feedback, I am closing this issue.
+Accounts are currently sorted by name.

@@ -1,0 +1,5 @@
+title:Create regular automatic backups even if user doesn't explicitly request them
+
+codinguser
+Right now backups are only created before destructive actions like export, delete.
+It would be good to also have a regular backup which the user can always restore from.

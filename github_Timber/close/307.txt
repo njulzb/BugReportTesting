@@ -1,0 +1,31 @@
+title:Pause and playback dont work on the earphones
+
+When I pause the song from my earphones it takes long to pause but eventually does but on trying to playback the song via the earphones it doesn't work.
+This issue is already reported in #15. Would you mind adding your comment there? It would also be helpful to know your Timber and Android versions as well as your device model. Thanks!
+This issue is already reported in #15. Would you mind adding your comment there? It would also be helpful to know your Timber and Android versions as well as your device model. Thanks!
+Am running android 5.1 and Timber 0.5b I bet that's the version of Timber.
+Am running android 5.1 and Timber 0.5b I bet that's the version of Timber.
+Does anyone figure it out?  I cant pause with earphone button click too?
+Does anyone figure it out?  I cant pause with earphone button click too?
+Change code in app/src/main/java/com/naman14/timber/MusicService.java
+delete This Line
+mSession.setFlags(MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS);
+add this line
+mSession.setFlags(MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS                         | MediaSessionCompat.FLAG_HANDLES_MEDIA_BUTTONS);
+Change code in app/src/main/java/com/naman14/timber/MusicService.java
+delete This Line
+mSession.setFlags(MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS);
+add this line
+mSession.setFlags(MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS                         | MediaSessionCompat.FLAG_HANDLES_MEDIA_BUTTONS);
+I too have the same issue. Can't pause or resume from my Earphone.
+Android version - 6.0.1
+Timber version - 0.2b (F-Droid)
+I too have the same issue. Can't pause or resume from my Earphone.
+Android version - 6.0.1
+Timber version - 0.2b (F-Droid)
+Can anyone close this issue, it has been fixed with the pull request of @rivaldi8
+Can anyone close this issue, it has been fixed with the pull request of @rivaldi8
+@anburocky3 This shouldn't be closed until pull request #308 gets merged.
+@anburocky3 This shouldn't be closed until pull request #308 gets merged.
+Finally working.
+Finally working.

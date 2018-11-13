@@ -1,0 +1,7 @@
+title:CreateProcess error = 2, The system can not find the specified file Open File
+
+static def gitSha() { return 'git rev-parse --short HEAD'.execute().text.trim() } ![grade](https://user-images.githubusercontent.com/5083182/38264438-fba375a2-3740-11e8-9a41-39f3ede9b4bc.png)
+@pablopy  Clone the repo and build or remove the calls to the above mentioned methods
+@pablopy  Clone the repo and build or remove the calls to the above mentioned methods
+@pablopy is git installed and available on the system path?
+@pablopy is git installed and available on the system path?

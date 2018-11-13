@@ -1,0 +1,3 @@
+title:Feature Request: ScrobbleDroid API
+
+Could there be some implementation of the popular ScrobbleDroid API for last.fm users? Documentation here: https://github.com/JJC1138/scrobbledroid/wiki/Developer-API

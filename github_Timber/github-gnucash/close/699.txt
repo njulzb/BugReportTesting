@@ -1,0 +1,6 @@
+title:Transaction details screen footer disappears
+
+Footer visible.
+Footer removed (balance and date).
+Fixed in hotfix/patches (c18b040).
+Fixed in hotfix/patches (c18b040).

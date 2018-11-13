@@ -1,0 +1,9 @@
+title:App Close
+
+When I open the application closes immediately . Sorry for my English.
+This is already mentioned in #21
+Waiting for a solution for blurring when renderscript isn't available
+This is already mentioned in #21
+Waiting for a solution for blurring when renderscript isn't available
+Thanks is a very good application
+Thanks is a very good application
