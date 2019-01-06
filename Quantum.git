@@ -1,0 +1,62 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @therealcurlsport Sign out
+Your account has been flagged.
+Because of that, your profile is hidden from the public. If you believe this is a mistake, contact support to have your account status reviewed.
+0
+0 1 therealcurlsport/vstest-codecoverage-x64-crash-repro
+forked from AFASResearch/vstest-codecoverage-x64-crash-repro
+ Code  Pull requests 0  Projects 0  Wiki  Insights  Settings
+Repro for crash in vstest
+ 4 commits
+ 2 branches
+ 0 releases
+ 1 contributor
+ C# 100.0%
+ Pull request   Compare This branch is 2 commits ahead of AFASResearch:master.
+@therealcurlsport
+therealcurlsport Merge pull request #1 from therealcurlsport/therealcurlsport-patch-1  …
+Latest commit b6072b0  15 minutes ago
+Type	Name	Latest commit message	Commit time
+ClassLibrary2	Added repro code	2 years ago
+UnitTestProject1	Added repro code	2 years ago
+.gitattributes	:neckbeard: Added .gitattributes & .gitignore files	2 years ago
+.gitignore	Added repro code	2 years ago
+ClassLibrary2.sln	Added repro code	2 years ago
+Quantum.git	Create Quantum.git	16 minutes ago
+readme.md	Added repro code	2 years ago
+ readme.md
+This solution is the repro to a bug in the vstest.console.exe on VS2017 enterprise.
+
+The following commandline shows the crash:
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe" "bin\x64\Debug\UnitTestProject1.dll" /EnableCodeCoverage /Platform:x64 /logger:trx
+
+De output shows
+
+Microsoft (R) Test Execution Command Line Tool Version 15.0.26228.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Warning: Using Isolation mode to run tests as required by effective Platform:X64 and .Net Framework:Framework45 settings for test run. Use the /inIsolation parameter to suppress this warning.
+
+Error: The active Test Run was aborted because the execution process exited unexpectedly. The test execution process crashed while running the tests. To investigate further, open file:///[SNIP]vstest.executionengine.exe.10172.dmp file in Visual Studio and choose "Debug in mixed mode".
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
